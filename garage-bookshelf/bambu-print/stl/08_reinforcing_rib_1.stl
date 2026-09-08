@@ -1,0 +1,58 @@
+solid 08_reinforcing_rib_1
+facet normal 0 -1 0
+outer loop
+vertex 0 0 0
+vertex 25 0 0
+vertex 0 0 25
+endloop
+endfacet
+facet normal 0 1 0
+outer loop
+vertex 0 5 0
+vertex 0 5 25
+vertex 25 5 0
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 0 0 0
+vertex 0 5 0
+vertex 25 5 0
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 0 0 0
+vertex 25 5 0
+vertex 25 0 0
+endloop
+endfacet
+facet normal 0.7071067811865475 0 0.7071067811865475
+outer loop
+vertex 25 0 0
+vertex 25 5 0
+vertex 0 5 25
+endloop
+endfacet
+facet normal 0.7071067811865475 0 0.7071067811865475
+outer loop
+vertex 25 0 0
+vertex 0 5 25
+vertex 0 0 25
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 0 0 25
+vertex 0 5 25
+vertex 0 5 0
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 0 0 25
+vertex 0 5 0
+vertex 0 0 0
+endloop
+endfacet
+endsolid 08_reinforcing_rib_1

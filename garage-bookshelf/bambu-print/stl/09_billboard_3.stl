@@ -1,0 +1,86 @@
+solid 09_billboard_3
+facet normal 0 0 -1
+outer loop
+vertex 0 0 0
+vertex 172 70 0
+vertex 172 0 0
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 0 0 0
+vertex 0 70 0
+vertex 172 70 0
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 0 0 6
+vertex 172 0 6
+vertex 172 70 6
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 0 0 6
+vertex 172 70 6
+vertex 0 70 6
+endloop
+endfacet
+facet normal 0 -1 0
+outer loop
+vertex 0 0 0
+vertex 172 0 0
+vertex 172 0 6
+endloop
+endfacet
+facet normal 0 -1 0
+outer loop
+vertex 0 0 0
+vertex 172 0 6
+vertex 0 0 6
+endloop
+endfacet
+facet normal 1 0 0
+outer loop
+vertex 172 0 0
+vertex 172 70 0
+vertex 172 70 6
+endloop
+endfacet
+facet normal 1 0 0
+outer loop
+vertex 172 0 0
+vertex 172 70 6
+vertex 172 0 6
+endloop
+endfacet
+facet normal 0 1 0
+outer loop
+vertex 172 70 0
+vertex 0 70 0
+vertex 0 70 6
+endloop
+endfacet
+facet normal 0 1 0
+outer loop
+vertex 172 70 0
+vertex 0 70 6
+vertex 172 70 6
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 0 70 0
+vertex 0 0 0
+vertex 0 0 6
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 0 70 0
+vertex 0 0 6
+vertex 0 70 6
+endloop
+endfacet
+endsolid 09_billboard_3
