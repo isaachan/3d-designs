@@ -90,7 +90,7 @@ for prefix, label, x in (("04_divider", "中隔板", 360), ("05_right_panel", "�
 
 # Splice plates sit on the book-side faces and bridge the Z=158 mm joints.
 add_mesh(panel_group, "04_divider_vertical_join_plate.stl", "中隔板 书侧连接片", (366, 75, 123), panel_rotation, GRAY)
-add_mesh(panel_group, "05_right_panel_vertical_join_plate.stl", "右侧板 书侧连接片", (905, 75, 123), panel_rotation, GRAY)
+add_mesh(panel_group, "05_right_panel_vertical_join_plate.stl", "右侧板 书侧连接片", (911, 75, 123), panel_rotation, GRAY)
 
 # 四个底部加强肋：两个在中隔板根部，两个在右侧板根部。
 rib_positions = ((366, 12, 8), (366, 183, 8), (914, 12, 8), (914, 183, 8))
@@ -115,7 +115,7 @@ for side, y in (("front", 0), ("rear", 195)):
 for index, x in enumerate((200, 374, 548), start=1):
     add_mesh(billboard_group, f"09_billboard_{index}.stl", f"广告牌 面板 {index}/3", (x, 220, 420), back_rotation, BLACK)
 for index, x in enumerate((352, 526), start=1):
-    add_mesh(billboard_group, f"09_billboard_join_plate_{index}.stl", f"广告牌 背面连接片 {index}/2", (x, 226, 436), back_rotation, BLACK)
+    add_mesh(billboard_group, f"09_billboard_join_plate_{index}.stl", f"广告牌 背面连接片 {index}/2", (x, 223, 436), back_rotation, BLACK)
 for index, x in enumerate((250, 520), start=1):
     add_mesh(billboard_group, f"10_billboard_post_{index}.stl", f"广告牌平面支柱 {index}/2", (x, 226, 300), back_rotation, BLACK)
 

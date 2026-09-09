@@ -43,11 +43,12 @@ let bytes = bitmap.bitmapData!
 var runs: [[Int]] = []
 for y in 0..<height {
     var x = 0
+    let rowStart = y * bitmap.bytesPerRow
     while x < width {
-        while x < width && bytes[(y * width + x) * 4 + 3] < 96 { x += 1 }
+        while x < width && bytes[rowStart + x * 4 + 3] < 96 { x += 1 }
         let start = x
-        while x < width && bytes[(y * width + x) * 4 + 3] >= 96 { x += 1 }
-        if x > start { runs.append([start, y, x - start]) }
+        while x < width && bytes[rowStart + x * 4 + 3] >= 96 { x += 1 }
+        if x > start { runs.append([start, height - 1 - y, x - start]) }
     }
 }
 let data = try! JSONSerialization.data(withJSONObject: runs)

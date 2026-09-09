@@ -71,13 +71,28 @@ function cylinder(tris, cx, cy, r, h, sides = 20, z = 0) {
   }
 }
 
+function frustum(tris, cx, cy, r1, r2, z, h, sides = 20) {
+  const low = [], high = [];
+  for (let i = 0; i < sides; i++) {
+    const a = i * 2 * Math.PI / sides;
+    low.push([cx + r1 * Math.cos(a), cy + r1 * Math.sin(a), z]);
+    high.push([cx + r2 * Math.cos(a), cy + r2 * Math.sin(a), z + h]);
+  }
+  const cb = [cx, cy, z], ct = [cx, cy, z + h];
+  for (let i = 0; i < sides; i++) {
+    const j = (i + 1) % sides;
+    tris.push([cb, low[j], low[i]], [ct, high[i], high[j]],
+      [low[i], low[j], high[j]], [low[i], high[j], high[i]]);
+  }
+}
+
 function baseOutline(hasLeftSocket, hasRightTongue) {
   // The tongue is 7.6 mm wide and the socket 8 mm wide: 0.4 mm total
   // clearance prevents impossible solid overlap while retaining alignment.
   const points = [[0, 0], [230, 0]];
   if (hasRightTongue) {
-    points.push([230, 20], [237.6, 20], [237.6, 80], [230, 80],
-      [230, 140], [237.6, 140], [237.6, 200], [230, 200]);
+    points.push([230, 21], [237.6, 21], [237.6, 79], [230, 79],
+      [230, 141], [237.6, 141], [237.6, 199], [230, 199]);
   }
   points.push([230, 220], [0, 220]);
   if (hasLeftSocket) {
@@ -140,7 +155,10 @@ for (let deck = 1; deck <= 3; deck++) {
 for (let i = 1; i <= 4; i++) {
   const tris = [];
   cylinder(tris, 10, 10, 6, 250);
-  for (const z of [54, 117, 180]) cylinder(tris, 10, 10, 14, 4, 20, z);
+  for (const z of [54, 117, 180]) {
+    frustum(tris, 10, 10, 6, 14, z - 8, 8);
+    cylinder(tris, 10, 10, 14, 4, 20, z);
+  }
   stl(`07_yellow_column_${i}`, tris);
 }
 

@@ -68,7 +68,7 @@ for n,(obj,tri) in objects.items():
                                         shade=True, lightsource=LightSource(azdeg=315,altdeg=45)))
 ax.set(xlim=(0,980),ylim=(-150,230),zlim=(0,510),xlabel='X / mm',ylabel='Y / mm',zlabel='Z / mm')
 ax.set_box_aspect((980,380,510)); ax.view_init(elev=17,azim=-65)
-ax.set_title('Actual saved FreeCAD assembly — all 55 STL meshes',fontsize=17)
+ax.set_title('Actual saved FreeCAD assembly — all 61 STL meshes',fontsize=17)
 fig.tight_layout(); fig.savefig(OUT/'actual-assembly.png',dpi=160); plt.close(fig)
 
 fig,axs=plt.subplots(1,2,figsize=(16,7),gridspec_kw={'width_ratios':[3,2]})
@@ -83,10 +83,10 @@ axs[0].set_aspect('equal')
 for n,(obj,tri) in objects.items():
     if n.startswith(('02_','06_','07_')):
         axs[1].add_collection(PolyCollection(tri[:,:,[1,2]],facecolors=color(n),edgecolors='#596570',linewidths=.3))
-axs[1].set(xlim=(-10,240),ylim=(0,320),xlabel='Y / mm',ylabel='Z / mm',title='Garage side projection: 65 mm rear gap')
+axs[1].set(xlim=(-10,240),ylim=(0,320),xlabel='Y / mm',ylabel='Z / mm',title='Garage side projection: parking depth 215 mm')
 axs[1].set_aspect('equal')
 axs[1].annotate('',xy=(150,105),xytext=(215,105),arrowprops=dict(arrowstyle='<->',color='#cf3030',lw=2))
-axs[1].text(168,110,'65 mm',color='#cf3030')
+axs[1].text(100,110,'215 mm',color='#444444')
 fig.tight_layout(); fig.savefig(OUT/'orthographic-check.png',dpi=150); plt.close(fig)
 
 fig,axs=plt.subplots(1,2,figsize=(13,7))
@@ -113,7 +113,7 @@ for ax,left,right,title in zip(axs,['01_base_01','01_base_02','01_base_03'],['01
             ax.fill(*np.array(pts).T,color='#df3737')
     ax.set(xlim=(seam-15,seam+25),ylim=(0,100),xlabel='X / mm',ylabel='Y / mm',title=title)
     ax.set_aspect('equal')
-fig.suptitle('Actual base cross-section at Z = 6 mm (red = impossible solid overlap)',fontsize=15)
+fig.suptitle('Revised base joint cross-sections at Z = 6 mm',fontsize=15)
 fig.tight_layout(); fig.savefig(OUT/'base-joints.png',dpi=160); plt.close(fig)
 
 ns={'c':'http://schemas.microsoft.com/3dmanufacturing/core/2015/02','p':'http://schemas.microsoft.com/3dmanufacturing/production/2015/06'}
