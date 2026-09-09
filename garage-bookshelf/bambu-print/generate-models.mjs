@@ -57,27 +57,34 @@ function extrudePolygon(tris, points, z) {
   for (let i = 0; i < n; i++) { const j = (i + 1) % n; tris.push([low[i], low[j], high[j]], [low[i], high[j], high[i]]); }
 }
 
-function cylinder(tris, cx, cy, r, h, sides = 20) {
+function cylinder(tris, cx, cy, r, h, sides = 20, z = 0) {
   const bottom = [], top = [];
   for (let i = 0; i < sides; i++) {
     const a = i * 2 * Math.PI / sides;
-    bottom.push([cx + r * Math.cos(a), cy + r * Math.sin(a), 0]);
-    top.push([cx + r * Math.cos(a), cy + r * Math.sin(a), h]);
+    bottom.push([cx + r * Math.cos(a), cy + r * Math.sin(a), z]);
+    top.push([cx + r * Math.cos(a), cy + r * Math.sin(a), z + h]);
   }
-  const cb = [cx, cy, 0], ct = [cx, cy, h];
+  const cb = [cx, cy, z], ct = [cx, cy, z + h];
   for (let i = 0; i < sides; i++) {
     const j = (i + 1) % sides;
     tris.push([cb, bottom[j], bottom[i]], [ct, top[i], top[j]], [bottom[i], bottom[j], top[j]], [bottom[i], top[j], top[i]]);
   }
 }
 
-function baseOutline(kind) {
-  const leftNotch = kind !== 'first';
-  const rightTail = kind !== 'last';
-  const left = [[0,0],[230,0]];
-  const right = rightTail ? [[230,20],[238,20],[238,80],[230,80],[230,140],[238,140],[238,200],[230,200],[230,220]] : [[230,220]];
-  const revLeft = leftNotch ? [[0,220],[0,200],[8,200],[8,140],[0,140],[0,80],[8,80],[8,20],[0,20]] : [[0,220]];
-  return [...left, ...right, ...revLeft];
+function baseOutline(hasLeftSocket, hasRightTongue) {
+  // The tongue is 7.6 mm wide and the socket 8 mm wide: 0.4 mm total
+  // clearance prevents impossible solid overlap while retaining alignment.
+  const points = [[0, 0], [230, 0]];
+  if (hasRightTongue) {
+    points.push([230, 20], [237.6, 20], [237.6, 80], [230, 80],
+      [230, 140], [237.6, 140], [237.6, 200], [230, 200]);
+  }
+  points.push([230, 220], [0, 220]);
+  if (hasLeftSocket) {
+    points.push([0, 200], [8, 200], [8, 140], [0, 140],
+      [0, 80], [8, 80], [8, 20], [0, 20]);
+  }
+  return points;
 }
 
 function panel(name, w, h, t) { const tris = []; box(tris, 0, 0, 0, w, h, t); stl(name, tris); }
@@ -92,19 +99,7 @@ function labelText(name, text, fontSize, width, height, vertical = false) {
 
 for (let i = 1; i <= 4; i++) {
   const tris = [];
-  const kind = i === 1 ? 'first' : i === 4 ? 'last' : 'middle';
-  if (i === 2) {
-    // 6.2 mm wide x 4 mm deep groove for the divider tongue at assembled x = 360 mm.
-    extrudePolygon(tris, baseOutline(kind), 4);
-    box(tris, 0, 0, 4, 130, 220, 4);
-    box(tris, 136.2, 0, 4, 93.8, 220, 4);
-  } else if (i === 4) {
-    // 6 mm deep edge rebate for the right panel tongue at the outer right end.
-    extrudePolygon(tris, baseOutline(kind), 4);
-    box(tris, 0, 0, 4, 224, 220, 4);
-  } else {
-    extrudePolygon(tris, baseOutline(kind), 8);
-  }
+  extrudePolygon(tris, baseOutline(i > 1, i < 4), 8);
   stl(`01_base_${String(i).padStart(2, '0')}`, tris);
 }
 
@@ -112,38 +107,70 @@ for (let i = 1; i <= 4; i++) {
 for (let row = 1; row <= 2; row++) for (let col = 1; col <= 4; col++) panel(`02_back_r${row}_c${col}`, 230, 150, 5);
 for (let i = 1; i <= 10; i++) panel(`03_back_join_plate_${String(i).padStart(2, '0')}`, 50, 35, 3);
 
-// Central divider and right end panel, each split at 150 mm to fit a 256 mm build plate.
+// Central divider and right end panel sit on the 8 mm base, touch the rear wall,
+// and meet exactly at Z=158 mm. Their wide rear/side splice plates carry lateral load.
 for (const prefix of ['04_divider', '05_right_panel']) {
-  panel(`${prefix}_lower_with_tongue`, 220, 156, 6);
-  panel(`${prefix}_upper`, 220, 150, 6);
+  panel(`${prefix}_lower`, 215, 150, 6);
+  panel(`${prefix}_upper`, 215, 150, 6);
   panel(`${prefix}_vertical_join_plate`, 45, 70, 3);
 }
 
-// Three garage decks, split through their middle to fit a 256 mm build plate.
+function garageDeckHalf(name, right) {
+  const tris = [];
+  const [left, rightEdge] = right ? [153, 167] : [3, 17];
+  // Front/rear entry notches are one continuous, watertight outline. Their
+  // 14 mm width gives 1 mm radial clearance around Ø12 columns.
+  extrudePolygon(tris, [
+    [0, 0], [left, 0], [left, 17], [rightEdge, 17], [rightEdge, 0], [180, 0],
+    [180, 215], [rightEdge, 215], [rightEdge, 188], [left, 188], [left, 215], [0, 215],
+  ], 5);
+  stl(name, tris);
+}
+
+// Three 360 × 215 mm garage decks. Each reaches the rear wall and is carried
+// by continuous columns through clearance holes, with integral support collars below.
 for (let deck = 1; deck <= 3; deck++) {
-  panel(`06_garage_deck_${deck}_left`, 180, 150, 5);
-  panel(`06_garage_deck_${deck}_right`, 180, 150, 5);
+  garageDeckHalf(`06_garage_deck_${deck}_left`, false);
+  garageDeckHalf(`06_garage_deck_${deck}_right`, true);
   panel(`06_garage_deck_${deck}_join_plate`, 42, 50, 3);
 }
 
-// Four front columns; print upright with brim (12 mm diameter x 250 mm high).
-for (let i = 1; i <= 4; i++) { const tris = []; cylinder(tris, 6, 6, 6, 250); stl(`07_yellow_column_${i}`, tris); }
-
-// Four small triangular ribs: 25 x 25 x 5, placed at the base roots of the divider and right panel.
+// Four Ø12 × 250 mm continuous columns. The Ø22 collars sit immediately under
+// every deck, so vertical load goes through a shoulder instead of a glue line.
 for (let i = 1; i <= 4; i++) {
   const tris = [];
-  const a = [0,0,0], b = [25,0,0], c = [0,0,25], d = [0,5,0], e = [25,5,0], f = [0,5,25];
+  cylinder(tris, 10, 10, 6, 250);
+  for (const z of [54, 117, 180]) cylinder(tris, 10, 10, 14, 4, 20, z);
+  stl(`07_yellow_column_${i}`, tris);
+}
+
+function reinforcingRib(name, inward) {
+  const tris = [];
+  const a = [0,0,0], b = [inward * 25,0,0], c = [0,0,25];
+  const d = [0,5,0], e = [inward * 25,5,0], f = [0,5,25];
   tris.push([a,b,c],[d,f,e],[a,d,e],[a,e,b],[b,e,f],[b,f,c],[c,f,d],[c,d,a]);
-  stl(`08_reinforcing_rib_${i}`, tris);
+  stl(name, tris);
+}
+reinforcingRib('08_reinforcing_rib_1', 1);
+reinforcingRib('08_reinforcing_rib_2', 1);
+reinforcingRib('08_reinforcing_rib_3', -1);
+reinforcingRib('08_reinforcing_rib_4', -1);
+
+// Front and rear garage headers finish the columns and keep their tops from splaying.
+for (const side of ['front', 'rear']) {
+  panel(`14_garage_header_${side}_left`, 180, 20, 6);
+  panel(`14_garage_header_${side}_right`, 180, 20, 6);
+  panel(`14_garage_header_${side}_join_plate`, 42, 20, 3);
 }
 
 // Billboard is split into three pieces, with two rear joining plates; posts are individual parts.
 for (let i = 1; i <= 3; i++) panel(`09_billboard_${i}`, i < 3 ? 174 : 172, 70, 6);
 for (let i = 1; i <= 2; i++) panel(`09_billboard_join_plate_${i}`, 44, 38, 3);
-for (let i = 1; i <= 2; i++) { const tris = []; cylinder(tris, 6, 6, 6, 120); stl(`10_billboard_post_${i}`, tris); }
+for (let i = 1; i <= 2; i++) panel(`10_billboard_post_${i}`, 28, 130, 6);
 
-panel('11_book_depot_sign', 180, 36, 6);
-labelText('12_billboard_text_lovely_car_ive_driven', "Lovely Car I've Driven", 43, 440, 64);
+// Front-facing external vertical sign: 36 mm wide × 180 mm tall × 6 mm deep.
+panel('11_book_depot_sign', 36, 180, 6);
+labelText('12_billboard_text_lovely_car_ive_driven', "Lovely Car I've Driven", 30, 440, 64);
 labelText('13_sign_text_book_depot', 'BOOK DEPOT', 16, 36, 180, true);
 
 console.log(`Wrote ${fs.readdirSync(out).filter(f => f.endsWith('.stl')).length} STL files to ${out}`);

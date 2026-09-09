@@ -85,10 +85,12 @@ for index, x in enumerate((90, 320, 550, 780), start=7):
 # 03：中隔板与右侧板。局部 x→全局 y、局部 y→全局 z、局部 z→全局 x。
 panel_rotation = rotation((1, 1, 1), 120)
 for prefix, label, x in (("04_divider", "中隔板", 360), ("05_right_panel", "右侧板", 914)):
-    add_mesh(panel_group, f"{prefix}_lower_with_tongue.stl", f"{label} 下段（含榫舌）", (x, 0, 4), panel_rotation, GRAY)
-    add_mesh(panel_group, f"{prefix}_upper.stl", f"{label} 上段", (x, 0, 156), panel_rotation, GRAY)
-    # 背面接缝片，局部平板贴在背面，仅作为装配提示。
-    add_mesh(panel_group, f"{prefix}_vertical_join_plate.stl", f"{label} 背面连接片", (x + 6, 218, 135), back_rotation, GRAY)
+    add_mesh(panel_group, f"{prefix}_lower.stl", f"{label} 下段", (x, 0, 8), panel_rotation, GRAY)
+    add_mesh(panel_group, f"{prefix}_upper.stl", f"{label} 上段", (x, 0, 158), panel_rotation, GRAY)
+
+# Splice plates sit on the book-side faces and bridge the Z=158 mm joints.
+add_mesh(panel_group, "04_divider_vertical_join_plate.stl", "中隔板 书侧连接片", (366, 75, 123), panel_rotation, GRAY)
+add_mesh(panel_group, "05_right_panel_vertical_join_plate.stl", "右侧板 书侧连接片", (905, 75, 123), panel_rotation, GRAY)
 
 # 四个底部加强肋：两个在中隔板根部，两个在右侧板根部。
 rib_positions = ((366, 12, 8), (366, 183, 8), (914, 12, 8), (914, 183, 8))
@@ -101,22 +103,26 @@ for deck, z in enumerate((66, 129, 192), start=1):
     add_mesh(garage_group, f"06_garage_deck_{deck}_right.stl", f"停车层板 第{deck}层 右", (180, 0, z), App.Rotation(), GRAY)
     add_mesh(garage_group, f"06_garage_deck_{deck}_join_plate.stl", f"停车层板 第{deck}层 连接片", (159, 50, z - 3), App.Rotation(), GRAY)
 
-for index, (x, y) in enumerate(((0, 0), (174, 0), (186, 0), (348, 0)), start=1):
+for index, (x, y) in enumerate(((0, 0), (330, 0), (0, 185), (330, 185)), start=1):
     add_mesh(garage_group, f"07_yellow_column_{index}.stl", f"黄色承重柱 {index}/4", (x, y, 8), App.Rotation(), YELLOW)
+
+for side, y in (("front", 0), ("rear", 195)):
+    add_mesh(garage_group, f"14_garage_header_{side}_left.stl", f"{side} 车库顶梁 左", (0, y, 258), App.Rotation(), GRAY)
+    add_mesh(garage_group, f"14_garage_header_{side}_right.stl", f"{side} 车库顶梁 右", (180, y, 258), App.Rotation(), GRAY)
+    add_mesh(garage_group, f"14_garage_header_{side}_join_plate.stl", f"{side} 车库顶梁连接片", (159, y, 255), App.Rotation(), GRAY)
 
 # 05：广告牌在背板上方，三片横向拼接；两根柱直接粘在背板上。
 for index, x in enumerate((200, 374, 548), start=1):
     add_mesh(billboard_group, f"09_billboard_{index}.stl", f"广告牌 面板 {index}/3", (x, 220, 420), back_rotation, BLACK)
-for index, x in enumerate((330, 504), start=1):
+for index, x in enumerate((352, 526), start=1):
     add_mesh(billboard_group, f"09_billboard_join_plate_{index}.stl", f"广告牌 背面连接片 {index}/2", (x, 226, 436), back_rotation, BLACK)
 for index, x in enumerate((250, 520), start=1):
-    add_mesh(billboard_group, f"10_billboard_post_{index}.stl", f"广告牌柱 {index}/2", (x, 214, 300), App.Rotation(), BLACK)
+    add_mesh(billboard_group, f"10_billboard_post_{index}.stl", f"广告牌平面支柱 {index}/2", (x, 226, 300), back_rotation, BLACK)
 
-# 06：右侧竖牌与白色立体字。旋转后牌子顺着右侧板的高度方向排列。
-sign_rotation = rotation((1, 0, 1), 180)
-add_mesh(sign_group, "11_book_depot_sign.stl", "BOOK DEPOT 蓝色底牌", (914, 36, 50), sign_rotation, BLUE)
-add_mesh(sign_group, "12_billboard_text_lovely_car_ive_driven.stl", "广告牌白色文字", (240, 213, 426), back_rotation, WHITE)
-add_mesh(sign_group, "13_sign_text_book_depot.stl", "BOOK DEPOT 白色文字", (913, 36, 50), sign_rotation, WHITE)
+# 06：右侧外贴竖牌与白色立体字，均朝向书架前方。
+add_mesh(sign_group, "11_book_depot_sign.stl", "BOOK DEPOT 蓝色底牌", (920, 6, 50), back_rotation, BLUE)
+add_mesh(sign_group, "12_billboard_text_lovely_car_ive_driven.stl", "广告牌白色文字", (240, 214, 426), back_rotation, WHITE)
+add_mesh(sign_group, "13_sign_text_book_depot.stl", "BOOK DEPOT 白色文字", (920, 0, 50), back_rotation, WHITE)
 
 doc.recompute()
 doc.saveAs(str(OUT))

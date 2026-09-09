@@ -30,13 +30,13 @@
           0.0
         ],
         [
-          238.0,
+          237.60001,
           220.0,
           8.0
         ]
       ],
       "size": [
-        238.0,
+        237.60001,
         220.0,
         8.0
       ],
@@ -64,7 +64,7 @@
         0.0,
         1.0
       ],
-      "facets": 100,
+      "facets": 76,
       "matches_stl": true,
       "bounds": [
         [
@@ -73,17 +73,17 @@
           0.0
         ],
         [
-          468.0,
+          467.60001,
           220.0,
           8.0
         ]
       ],
       "size": [
-        238.0,
+        237.60001,
         220.0,
         8.0
       ],
-      "shells": 3,
+      "shells": 1,
       "valid_solids": true
     },
     {
@@ -116,13 +116,13 @@
           0.0
         ],
         [
-          698.0,
+          697.60001,
           220.0,
           8.0
         ]
       ],
       "size": [
-        238.0,
+        237.60001,
         220.0,
         8.0
       ],
@@ -150,7 +150,7 @@
         0.0,
         1.0
       ],
-      "facets": 56,
+      "facets": 44,
       "matches_stl": true,
       "bounds": [
         [
@@ -169,7 +169,7 @@
         220.0,
         8.0
       ],
-      "shells": 2,
+      "shells": 1,
       "valid_solids": true
     },
     {
@@ -947,8 +947,8 @@
       "valid_solids": true
     },
     {
-      "name": "04_divider_lower_with_tongue",
-      "label": "中隔板 下段（含榫舌）",
+      "name": "04_divider_lower",
+      "label": "中隔板 下段",
       "placement": [
         0.0,
         0.0,
@@ -961,7 +961,7 @@
         0.0,
         1.0,
         0.0,
-        4.0,
+        8.0,
         0.0,
         0.0,
         0.0,
@@ -973,18 +973,18 @@
         [
           360.0,
           0.0,
-          4.0
+          8.0
         ],
         [
           366.0,
-          220.0,
-          160.0
+          215.0,
+          158.0
         ]
       ],
       "size": [
         6.0,
-        220.0,
-        156.0
+        215.0,
+        150.0
       ],
       "shells": 1,
       "valid_solids": true
@@ -1004,7 +1004,7 @@
         0.0,
         1.0,
         0.0,
-        156.0,
+        158.0,
         0.0,
         0.0,
         0.0,
@@ -1016,68 +1016,25 @@
         [
           360.0,
           0.0,
-          156.0
+          158.0
         ],
         [
           366.0,
-          220.0,
-          306.0
+          215.0,
+          308.0
         ]
       ],
       "size": [
         6.0,
-        220.0,
+        215.0,
         150.0
       ],
       "shells": 1,
       "valid_solids": true
     },
     {
-      "name": "04_divider_vertical_join_plate",
-      "label": "中隔板 背面连接片",
-      "placement": [
-        1.0,
-        0.0,
-        0.0,
-        366.0,
-        0.0,
-        2.220446049250313e-16,
-        -1.0,
-        218.0,
-        0.0,
-        1.0,
-        2.220446049250313e-16,
-        135.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0
-      ],
-      "facets": 12,
-      "matches_stl": true,
-      "bounds": [
-        [
-          366.0,
-          215.0,
-          135.0
-        ],
-        [
-          411.0,
-          218.0,
-          205.0
-        ]
-      ],
-      "size": [
-        45.0,
-        3.0,
-        70.0
-      ],
-      "shells": 1,
-      "valid_solids": true
-    },
-    {
-      "name": "05_right_panel_lower_with_tongue",
-      "label": "右侧板 下段（含榫舌）",
+      "name": "05_right_panel_lower",
+      "label": "右侧板 下段",
       "placement": [
         0.0,
         0.0,
@@ -1090,7 +1047,7 @@
         0.0,
         1.0,
         0.0,
-        4.0,
+        8.0,
         0.0,
         0.0,
         0.0,
@@ -1102,18 +1059,18 @@
         [
           914.0,
           0.0,
-          4.0
+          8.0
         ],
         [
           920.0,
-          220.0,
-          160.0
+          215.0,
+          158.0
         ]
       ],
       "size": [
         6.0,
-        220.0,
-        156.0
+        215.0,
+        150.0
       ],
       "shells": 1,
       "valid_solids": true
@@ -1133,7 +1090,7 @@
         0.0,
         1.0,
         0.0,
-        156.0,
+        158.0,
         0.0,
         0.0,
         0.0,
@@ -1145,38 +1102,38 @@
         [
           914.0,
           0.0,
-          156.0
+          158.0
         ],
         [
           920.0,
-          220.0,
-          306.0
+          215.0,
+          308.0
         ]
       ],
       "size": [
         6.0,
-        220.0,
+        215.0,
         150.0
       ],
       "shells": 1,
       "valid_solids": true
     },
     {
-      "name": "05_right_panel_vertical_join_plate",
-      "label": "右侧板 背面连接片",
+      "name": "04_divider_vertical_join_plate",
+      "label": "中隔板 书侧连接片",
       "placement": [
+        0.0,
+        0.0,
+        1.0,
+        366.0,
         1.0,
         0.0,
         0.0,
-        920.0,
-        0.0,
-        2.220446049250313e-16,
-        -1.0,
-        218.0,
+        75.0,
         0.0,
         1.0,
-        2.220446049250313e-16,
-        135.0,
+        0.0,
+        123.0,
         0.0,
         0.0,
         0.0,
@@ -1186,19 +1143,62 @@
       "matches_stl": true,
       "bounds": [
         [
-          920.0,
-          215.0,
-          135.0
+          366.0,
+          75.0,
+          123.0
         ],
         [
-          965.0,
-          218.0,
-          205.0
+          369.0,
+          120.0,
+          193.0
         ]
       ],
       "size": [
-        45.0,
         3.0,
+        45.0,
+        70.0
+      ],
+      "shells": 1,
+      "valid_solids": true
+    },
+    {
+      "name": "05_right_panel_vertical_join_plate",
+      "label": "右侧板 书侧连接片",
+      "placement": [
+        0.0,
+        0.0,
+        1.0,
+        905.0,
+        1.0,
+        0.0,
+        0.0,
+        75.0,
+        0.0,
+        1.0,
+        0.0,
+        123.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "facets": 12,
+      "matches_stl": true,
+      "bounds": [
+        [
+          905.0,
+          75.0,
+          123.0
+        ],
+        [
+          908.0,
+          120.0,
+          193.0
+        ]
+      ],
+      "size": [
+        3.0,
+        45.0,
         70.0
       ],
       "shells": 1,
@@ -1315,12 +1315,12 @@
       "matches_stl": true,
       "bounds": [
         [
-          914.0,
+          889.0,
           12.0,
           8.0
         ],
         [
-          939.0,
+          914.0,
           17.0,
           33.0
         ]
@@ -1358,12 +1358,12 @@
       "matches_stl": true,
       "bounds": [
         [
-          914.0,
+          889.0,
           183.0,
           8.0
         ],
         [
-          939.0,
+          914.0,
           188.0,
           33.0
         ]
@@ -1397,7 +1397,7 @@
         0.0,
         1.0
       ],
-      "facets": 12,
+      "facets": 44,
       "matches_stl": true,
       "bounds": [
         [
@@ -1407,13 +1407,13 @@
         ],
         [
           180.0,
-          150.0,
+          215.0,
           71.0
         ]
       ],
       "size": [
         180.0,
-        150.0,
+        215.0,
         5.0
       ],
       "shells": 1,
@@ -1440,7 +1440,7 @@
         0.0,
         1.0
       ],
-      "facets": 12,
+      "facets": 44,
       "matches_stl": true,
       "bounds": [
         [
@@ -1450,13 +1450,13 @@
         ],
         [
           360.0,
-          150.0,
+          215.0,
           71.0
         ]
       ],
       "size": [
         180.0,
-        150.0,
+        215.0,
         5.0
       ],
       "shells": 1,
@@ -1526,7 +1526,7 @@
         0.0,
         1.0
       ],
-      "facets": 12,
+      "facets": 44,
       "matches_stl": true,
       "bounds": [
         [
@@ -1536,13 +1536,13 @@
         ],
         [
           180.0,
-          150.0,
+          215.0,
           134.0
         ]
       ],
       "size": [
         180.0,
-        150.0,
+        215.0,
         5.0
       ],
       "shells": 1,
@@ -1569,7 +1569,7 @@
         0.0,
         1.0
       ],
-      "facets": 12,
+      "facets": 44,
       "matches_stl": true,
       "bounds": [
         [
@@ -1579,13 +1579,13 @@
         ],
         [
           360.0,
-          150.0,
+          215.0,
           134.0
         ]
       ],
       "size": [
         180.0,
-        150.0,
+        215.0,
         5.0
       ],
       "shells": 1,
@@ -1655,7 +1655,7 @@
         0.0,
         1.0
       ],
-      "facets": 12,
+      "facets": 44,
       "matches_stl": true,
       "bounds": [
         [
@@ -1665,13 +1665,13 @@
         ],
         [
           180.0,
-          150.0,
+          215.0,
           197.0
         ]
       ],
       "size": [
         180.0,
-        150.0,
+        215.0,
         5.0
       ],
       "shells": 1,
@@ -1698,7 +1698,7 @@
         0.0,
         1.0
       ],
-      "facets": 12,
+      "facets": 44,
       "matches_stl": true,
       "bounds": [
         [
@@ -1708,13 +1708,13 @@
         ],
         [
           360.0,
-          150.0,
+          215.0,
           197.0
         ]
       ],
       "size": [
         180.0,
-        150.0,
+        215.0,
         5.0
       ],
       "shells": 1,
@@ -1784,26 +1784,26 @@
         0.0,
         1.0
       ],
-      "facets": 80,
+      "facets": 320,
       "matches_stl": true,
       "bounds": [
         [
-          0.0,
-          0.0,
+          -4.0,
+          -4.0,
           8.0
         ],
         [
-          12.0,
-          12.0,
+          24.0,
+          24.0,
           258.0
         ]
       ],
       "size": [
-        12.0,
-        12.0,
+        28.0,
+        28.0,
         250.0
       ],
-      "shells": 1,
+      "shells": 4,
       "valid_solids": true
     },
     {
@@ -1813,7 +1813,7 @@
         1.0,
         0.0,
         0.0,
-        174.0,
+        330.0,
         0.0,
         1.0,
         0.0,
@@ -1827,26 +1827,26 @@
         0.0,
         1.0
       ],
-      "facets": 80,
+      "facets": 320,
       "matches_stl": true,
       "bounds": [
         [
-          174.0,
-          0.0,
+          326.0,
+          -4.0,
           8.0
         ],
         [
-          186.0,
-          12.0,
+          354.0,
+          24.0,
           258.0
         ]
       ],
       "size": [
-        12.0,
-        12.0,
+        28.0,
+        28.0,
         250.0
       ],
-      "shells": 1,
+      "shells": 4,
       "valid_solids": true
     },
     {
@@ -1856,11 +1856,11 @@
         1.0,
         0.0,
         0.0,
-        186.0,
+        0.0,
         0.0,
         1.0,
         0.0,
-        0.0,
+        185.0,
         0.0,
         0.0,
         1.0,
@@ -1870,26 +1870,26 @@
         0.0,
         1.0
       ],
-      "facets": 80,
+      "facets": 320,
       "matches_stl": true,
       "bounds": [
         [
-          186.0,
-          0.0,
+          -4.0,
+          181.0,
           8.0
         ],
         [
-          198.0,
-          12.0,
+          24.0,
+          209.0,
           258.0
         ]
       ],
       "size": [
-        12.0,
-        12.0,
+        28.0,
+        28.0,
         250.0
       ],
-      "shells": 1,
+      "shells": 4,
       "valid_solids": true
     },
     {
@@ -1899,11 +1899,11 @@
         1.0,
         0.0,
         0.0,
-        348.0,
+        330.0,
         0.0,
         1.0,
         0.0,
-        0.0,
+        185.0,
         0.0,
         0.0,
         1.0,
@@ -1913,24 +1913,282 @@
         0.0,
         1.0
       ],
-      "facets": 80,
+      "facets": 320,
       "matches_stl": true,
       "bounds": [
         [
-          348.0,
-          0.0,
+          326.0,
+          181.0,
           8.0
         ],
         [
-          360.0,
-          12.0,
+          354.0,
+          209.0,
           258.0
         ]
       ],
       "size": [
-        12.0,
-        12.0,
+        28.0,
+        28.0,
         250.0
+      ],
+      "shells": 4,
+      "valid_solids": true
+    },
+    {
+      "name": "14_garage_header_front_left",
+      "label": "front 车库顶梁 左",
+      "placement": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        258.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "facets": 12,
+      "matches_stl": true,
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          258.0
+        ],
+        [
+          180.0,
+          20.0,
+          264.0
+        ]
+      ],
+      "size": [
+        180.0,
+        20.0,
+        6.0
+      ],
+      "shells": 1,
+      "valid_solids": true
+    },
+    {
+      "name": "14_garage_header_front_right",
+      "label": "front 车库顶梁 右",
+      "placement": [
+        1.0,
+        0.0,
+        0.0,
+        180.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        258.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "facets": 12,
+      "matches_stl": true,
+      "bounds": [
+        [
+          180.0,
+          0.0,
+          258.0
+        ],
+        [
+          360.0,
+          20.0,
+          264.0
+        ]
+      ],
+      "size": [
+        180.0,
+        20.0,
+        6.0
+      ],
+      "shells": 1,
+      "valid_solids": true
+    },
+    {
+      "name": "14_garage_header_front_join_plate",
+      "label": "front 车库顶梁连接片",
+      "placement": [
+        1.0,
+        0.0,
+        0.0,
+        159.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        255.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "facets": 12,
+      "matches_stl": true,
+      "bounds": [
+        [
+          159.0,
+          0.0,
+          255.0
+        ],
+        [
+          201.0,
+          20.0,
+          258.0
+        ]
+      ],
+      "size": [
+        42.0,
+        20.0,
+        3.0
+      ],
+      "shells": 1,
+      "valid_solids": true
+    },
+    {
+      "name": "14_garage_header_rear_left",
+      "label": "rear 车库顶梁 左",
+      "placement": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        195.0,
+        0.0,
+        0.0,
+        1.0,
+        258.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "facets": 12,
+      "matches_stl": true,
+      "bounds": [
+        [
+          0.0,
+          195.0,
+          258.0
+        ],
+        [
+          180.0,
+          215.0,
+          264.0
+        ]
+      ],
+      "size": [
+        180.0,
+        20.0,
+        6.0
+      ],
+      "shells": 1,
+      "valid_solids": true
+    },
+    {
+      "name": "14_garage_header_rear_right",
+      "label": "rear 车库顶梁 右",
+      "placement": [
+        1.0,
+        0.0,
+        0.0,
+        180.0,
+        0.0,
+        1.0,
+        0.0,
+        195.0,
+        0.0,
+        0.0,
+        1.0,
+        258.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "facets": 12,
+      "matches_stl": true,
+      "bounds": [
+        [
+          180.0,
+          195.0,
+          258.0
+        ],
+        [
+          360.0,
+          215.0,
+          264.0
+        ]
+      ],
+      "size": [
+        180.0,
+        20.0,
+        6.0
+      ],
+      "shells": 1,
+      "valid_solids": true
+    },
+    {
+      "name": "14_garage_header_rear_join_plate",
+      "label": "rear 车库顶梁连接片",
+      "placement": [
+        1.0,
+        0.0,
+        0.0,
+        159.0,
+        0.0,
+        1.0,
+        0.0,
+        195.0,
+        0.0,
+        0.0,
+        1.0,
+        255.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "facets": 12,
+      "matches_stl": true,
+      "bounds": [
+        [
+          159.0,
+          195.0,
+          255.0
+        ],
+        [
+          201.0,
+          215.0,
+          258.0
+        ]
+      ],
+      "size": [
+        42.0,
+        20.0,
+        3.0
       ],
       "shells": 1,
       "valid_solids": true
@@ -2071,7 +2329,7 @@
         1.0,
         0.0,
         0.0,
-        330.0,
+        352.0,
         0.0,
         2.220446049250313e-16,
         -1.0,
@@ -2089,12 +2347,12 @@
       "matches_stl": true,
       "bounds": [
         [
-          330.0,
+          352.0,
           223.0,
           436.0
         ],
         [
-          374.0,
+          396.0,
           226.0,
           474.0
         ]
@@ -2114,7 +2372,7 @@
         1.0,
         0.0,
         0.0,
-        504.0,
+        526.0,
         0.0,
         2.220446049250313e-16,
         -1.0,
@@ -2132,12 +2390,12 @@
       "matches_stl": true,
       "bounds": [
         [
-          504.0,
+          526.0,
           223.0,
           436.0
         ],
         [
-          548.0,
+          570.0,
           226.0,
           474.0
         ]
@@ -2152,86 +2410,86 @@
     },
     {
       "name": "10_billboard_post_1",
-      "label": "广告牌柱 1/2",
+      "label": "广告牌平面支柱 1/2",
       "placement": [
         1.0,
         0.0,
         0.0,
         250.0,
         0.0,
+        2.220446049250313e-16,
+        -1.0,
+        226.0,
+        0.0,
         1.0,
-        0.0,
-        214.0,
-        0.0,
-        0.0,
-        1.0,
+        2.220446049250313e-16,
         300.0,
         0.0,
         0.0,
         0.0,
         1.0
       ],
-      "facets": 80,
+      "facets": 12,
       "matches_stl": true,
       "bounds": [
         [
           250.0,
-          214.0,
+          220.0,
           300.0
         ],
         [
-          262.0,
+          278.0,
           226.0,
-          420.0
+          430.0
         ]
       ],
       "size": [
-        12.0,
-        12.0,
-        120.0
+        28.0,
+        6.0,
+        130.0
       ],
       "shells": 1,
       "valid_solids": true
     },
     {
       "name": "10_billboard_post_2",
-      "label": "广告牌柱 2/2",
+      "label": "广告牌平面支柱 2/2",
       "placement": [
         1.0,
         0.0,
         0.0,
         520.0,
         0.0,
+        2.220446049250313e-16,
+        -1.0,
+        226.0,
+        0.0,
         1.0,
-        0.0,
-        214.0,
-        0.0,
-        0.0,
-        1.0,
+        2.220446049250313e-16,
         300.0,
         0.0,
         0.0,
         0.0,
         1.0
       ],
-      "facets": 80,
+      "facets": 12,
       "matches_stl": true,
       "bounds": [
         [
           520.0,
-          214.0,
+          220.0,
           300.0
         ],
         [
-          532.0,
+          548.0,
           226.0,
-          420.0
+          430.0
         ]
       ],
       "size": [
-        12.0,
-        12.0,
-        120.0
+        28.0,
+        6.0,
+        130.0
       ],
       "shells": 1,
       "valid_solids": true
@@ -2240,17 +2498,17 @@
       "name": "11_book_depot_sign",
       "label": "BOOK DEPOT 蓝色底牌",
       "placement": [
+        1.0,
+        0.0,
+        0.0,
+        920.0,
+        0.0,
         2.220446049250313e-16,
-        0.0,
-        1.0,
-        914.0,
-        0.0,
         -1.0,
+        6.0,
         0.0,
-        36.0,
         1.0,
-        0.0,
-        -2.220446049250313e-16,
+        2.220446049250313e-16,
         50.0,
         0.0,
         0.0,
@@ -2261,19 +2519,19 @@
       "matches_stl": true,
       "bounds": [
         [
-          914.0,
+          920.0,
           0.0,
           50.0
         ],
         [
-          920.0,
-          36.0,
+          956.0,
+          6.0,
           230.0
         ]
       ],
       "size": [
-        6.0,
         36.0,
+        6.0,
         180.0
       ],
       "shells": 1,
@@ -2290,7 +2548,7 @@
         0.0,
         2.220446049250313e-16,
         -1.0,
-        213.0,
+        214.0,
         0.0,
         1.0,
         2.220446049250313e-16,
@@ -2300,245 +2558,69 @@
         0.0,
         1.0
       ],
-      "facets": 6468,
+      "facets": 5556,
       "matches_stl": true,
       "bounds": [
         [
-          353.0,
-          212.0,
-          426.0
+          305.0,
+          213.0,
+          431.0
         ],
         [
-          569.0,
-          213.0,
-          489.0
+          614.0,
+          214.0,
+          461.0
         ]
       ],
       "size": [
-        216.0,
+        309.0,
         1.0,
-        63.0
+        30.0
       ]
     },
     {
       "name": "13_sign_text_book_depot",
       "label": "BOOK DEPOT 白色文字",
       "placement": [
-        2.220446049250313e-16,
-        0.0,
         1.0,
-        913.0,
         0.0,
+        0.0,
+        920.0,
+        0.0,
+        2.220446049250313e-16,
         -1.0,
         0.0,
-        36.0,
-        1.0,
         0.0,
-        -2.220446049250313e-16,
+        1.0,
+        2.220446049250313e-16,
         50.0,
         0.0,
         0.0,
         0.0,
         1.0
       ],
-      "facets": 2016,
+      "facets": 1956,
       "matches_stl": true,
       "bounds": [
         [
-          913.0,
-          -138.0,
-          50.0
+          920.0,
+          -1.0,
+          53.0
         ],
         [
-          914.0,
-          35.0,
-          86.0
+          956.0,
+          0.0,
+          227.0
         ]
       ],
       "size": [
+        36.0,
         1.0,
-        173.0,
-        36.0
+        174.0
       ]
     }
   ],
-  "clashes": [
-    {
-      "a": "01_base_01",
-      "b": "01_base_02",
-      "volume_mm3": 3840.0
-    },
-    {
-      "a": "01_base_03",
-      "b": "01_base_04",
-      "volume_mm3": 3840.0
-    },
-    {
-      "a": "02_back_r1_c2",
-      "b": "04_divider_lower_with_tongue",
-      "volume_mm3": 4500.0
-    },
-    {
-      "a": "02_back_r1_c2",
-      "b": "04_divider_upper",
-      "volume_mm3": 60.0
-    },
-    {
-      "a": "02_back_r1_c2",
-      "b": "04_divider_vertical_join_plate",
-      "volume_mm3": 3105.0
-    },
-    {
-      "a": "02_back_r1_c4",
-      "b": "05_right_panel_lower_with_tongue",
-      "volume_mm3": 4500.0
-    },
-    {
-      "a": "02_back_r1_c4",
-      "b": "05_right_panel_upper",
-      "volume_mm3": 60.0
-    },
-    {
-      "a": "02_back_r2_c2",
-      "b": "04_divider_lower_with_tongue",
-      "volume_mm3": 60.0
-    },
-    {
-      "a": "02_back_r2_c2",
-      "b": "04_divider_upper",
-      "volume_mm3": 4440.0
-    },
-    {
-      "a": "02_back_r2_c2",
-      "b": "04_divider_vertical_join_plate",
-      "volume_mm3": 6345.0
-    },
-    {
-      "a": "02_back_r2_c2",
-      "b": "10_billboard_post_1",
-      "volume_mm3": 411.841
-    },
-    {
-      "a": "02_back_r2_c3",
-      "b": "10_billboard_post_2",
-      "volume_mm3": 411.843
-    },
-    {
-      "a": "02_back_r2_c4",
-      "b": "05_right_panel_lower_with_tongue",
-      "volume_mm3": 60.0
-    },
-    {
-      "a": "02_back_r2_c4",
-      "b": "05_right_panel_upper",
-      "volume_mm3": 4440.0
-    },
-    {
-      "a": "04_divider_lower_with_tongue",
-      "b": "04_divider_upper",
-      "volume_mm3": 5280.0
-    },
-    {
-      "a": "05_right_panel_lower_with_tongue",
-      "b": "05_right_panel_upper",
-      "volume_mm3": 5280.0
-    },
-    {
-      "a": "05_right_panel_lower_with_tongue",
-      "b": "08_reinforcing_rib_3",
-      "volume_mm3": 660.0
-    },
-    {
-      "a": "05_right_panel_lower_with_tongue",
-      "b": "08_reinforcing_rib_4",
-      "volume_mm3": 660.0
-    },
-    {
-      "a": "05_right_panel_lower_with_tongue",
-      "b": "11_book_depot_sign",
-      "volume_mm3": 23760.0
-    },
-    {
-      "a": "05_right_panel_upper",
-      "b": "11_book_depot_sign",
-      "volume_mm3": 15984.0
-    },
-    {
-      "a": "06_garage_deck_1_left",
-      "b": "07_yellow_column_1",
-      "volume_mm3": 556.231
-    },
-    {
-      "a": "06_garage_deck_1_left",
-      "b": "07_yellow_column_2",
-      "volume_mm3": 278.115
-    },
-    {
-      "a": "06_garage_deck_1_right",
-      "b": "07_yellow_column_2",
-      "volume_mm3": 278.115
-    },
-    {
-      "a": "06_garage_deck_1_right",
-      "b": "07_yellow_column_3",
-      "volume_mm3": 556.231
-    },
-    {
-      "a": "06_garage_deck_1_right",
-      "b": "07_yellow_column_4",
-      "volume_mm3": 556.23
-    },
-    {
-      "a": "06_garage_deck_2_left",
-      "b": "07_yellow_column_1",
-      "volume_mm3": 556.231
-    },
-    {
-      "a": "06_garage_deck_2_left",
-      "b": "07_yellow_column_2",
-      "volume_mm3": 278.115
-    },
-    {
-      "a": "06_garage_deck_2_right",
-      "b": "07_yellow_column_2",
-      "volume_mm3": 278.115
-    },
-    {
-      "a": "06_garage_deck_2_right",
-      "b": "07_yellow_column_3",
-      "volume_mm3": 556.231
-    },
-    {
-      "a": "06_garage_deck_2_right",
-      "b": "07_yellow_column_4",
-      "volume_mm3": 556.23
-    },
-    {
-      "a": "06_garage_deck_3_left",
-      "b": "07_yellow_column_1",
-      "volume_mm3": 556.231
-    },
-    {
-      "a": "06_garage_deck_3_left",
-      "b": "07_yellow_column_2",
-      "volume_mm3": 278.115
-    },
-    {
-      "a": "06_garage_deck_3_right",
-      "b": "07_yellow_column_2",
-      "volume_mm3": 278.115
-    },
-    {
-      "a": "06_garage_deck_3_right",
-      "b": "07_yellow_column_3",
-      "volume_mm3": 556.231
-    },
-    {
-      "a": "06_garage_deck_3_right",
-      "b": "07_yellow_column_4",
-      "volume_mm3": 556.23
-    }
-  ],
+  "clashes": [],
   "projects": [
     {
       "file": "01-灰色结构件-x2d-pla.3mf",
@@ -2622,7 +2704,7 @@
             5.0,
             25.0
           ],
-          "matches_stl": true
+          "matches_stl": false
         },
         {
           "name": "08_reinforcing_rib_3.stl",
@@ -2643,7 +2725,7 @@
             5.0,
             25.0
           ],
-          "matches_stl": true
+          "matches_stl": false
         },
         {
           "name": "08_reinforcing_rib_2.stl",
@@ -2706,7 +2788,7 @@
             238.0,
             8.0
           ],
-          "matches_stl": true
+          "matches_stl": false
         },
         {
           "name": "01_base_02.stl",
@@ -2727,7 +2809,7 @@
             238.0,
             8.0
           ],
-          "matches_stl": true
+          "matches_stl": false
         },
         {
           "name": "01_base_03.stl",
@@ -2748,7 +2830,7 @@
             238.0,
             8.0
           ],
-          "matches_stl": true
+          "matches_stl": false
         },
         {
           "name": "01_base_04.stl",
@@ -2769,7 +2851,7 @@
             230.0,
             8.0
           ],
-          "matches_stl": true
+          "matches_stl": false
         },
         {
           "name": "02_back_r1_c1.stl",
@@ -3000,7 +3082,7 @@
             150.0,
             6.0
           ],
-          "matches_stl": true
+          "matches_stl": false
         },
         {
           "name": "05_right_panel_upper.stl",
@@ -3021,7 +3103,7 @@
             150.0,
             6.0
           ],
-          "matches_stl": true
+          "matches_stl": false
         },
         {
           "name": "06_garage_deck_1_left.stl",
@@ -3042,7 +3124,7 @@
             150.0,
             5.0
           ],
-          "matches_stl": true
+          "matches_stl": false
         },
         {
           "name": "06_garage_deck_1_right.stl",
@@ -3063,7 +3145,7 @@
             150.0,
             5.0
           ],
-          "matches_stl": true
+          "matches_stl": false
         },
         {
           "name": "06_garage_deck_2_left.stl",
@@ -3084,7 +3166,7 @@
             150.0,
             5.0
           ],
-          "matches_stl": true
+          "matches_stl": false
         },
         {
           "name": "06_garage_deck_2_right.stl",
@@ -3105,7 +3187,7 @@
             150.0,
             5.0
           ],
-          "matches_stl": true
+          "matches_stl": false
         },
         {
           "name": "06_garage_deck_3_left.stl",
@@ -3126,7 +3208,7 @@
             150.0,
             5.0
           ],
-          "matches_stl": true
+          "matches_stl": false
         },
         {
           "name": "06_garage_deck_3_right.stl",
@@ -3147,7 +3229,7 @@
             150.0,
             5.0
           ],
-          "matches_stl": true
+          "matches_stl": false
         },
         {
           "name": "04_divider_vertical_join_plate.stl",
@@ -3469,7 +3551,7 @@
     {
       "file": "02-黄色立柱-x2d-pla.3mf",
       "plates": 1,
-      "objects": 4,
+      "objects": 0,
       "settings": {
         "brim_type": "auto_brim",
         "brim_width": "0",
@@ -3528,92 +3610,7 @@
         ],
         "wall_loops": "2"
       },
-      "items": [
-        {
-          "name": "07_yellow_column_1.stl",
-          "bounds": [
-            [
-              139.25,
-              129.0,
-              0.0
-            ],
-            [
-              151.1022,
-              140.8523,
-              250.0
-            ]
-          ],
-          "size": [
-            11.8523,
-            11.8523,
-            250.0
-          ],
-          "matches_stl": true
-        },
-        {
-          "name": "07_yellow_column_2.stl",
-          "bounds": [
-            [
-              125.3977,
-              129.0,
-              0.0
-            ],
-            [
-              137.25,
-              140.8523,
-              250.0
-            ]
-          ],
-          "size": [
-            11.8523,
-            11.8523,
-            250.0
-          ],
-          "matches_stl": true
-        },
-        {
-          "name": "07_yellow_column_3.stl",
-          "bounds": [
-            [
-              139.25,
-              115.1477,
-              0.0
-            ],
-            [
-              151.1022,
-              127.0,
-              250.0
-            ]
-          ],
-          "size": [
-            11.8523,
-            11.8523,
-            250.0
-          ],
-          "matches_stl": true
-        },
-        {
-          "name": "07_yellow_column_4.stl",
-          "bounds": [
-            [
-              125.3978,
-              115.1478,
-              0.0
-            ],
-            [
-              137.25,
-              127.0,
-              250.0
-            ]
-          ],
-          "size": [
-            11.8523,
-            11.8523,
-            250.0
-          ],
-          "matches_stl": true
-        }
-      ]
+      "items": []
     },
     {
       "file": "03-黑色广告牌-x2d-pla.3mf",
@@ -3697,7 +3694,7 @@
             11.8523,
             120.0
           ],
-          "matches_stl": true
+          "matches_stl": false
         },
         {
           "name": "10_billboard_post_2.stl",
@@ -3718,7 +3715,7 @@
             11.8523,
             120.0
           ],
-          "matches_stl": true
+          "matches_stl": false
         },
         {
           "name": "09_billboard_1.stl",
@@ -3909,7 +3906,7 @@
             36.0,
             6.0
           ],
-          "matches_stl": true
+          "matches_stl": false
         }
       ]
     },
@@ -3995,7 +3992,7 @@
             63.0,
             1.0
           ],
-          "matches_stl": true
+          "matches_stl": false
         },
         {
           "name": "13_sign_text_book_depot.stl",
@@ -4016,7 +4013,7 @@
             36.0,
             1.0
           ],
-          "matches_stl": true
+          "matches_stl": false
         }
       ]
     }

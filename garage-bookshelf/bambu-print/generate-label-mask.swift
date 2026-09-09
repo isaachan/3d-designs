@@ -23,7 +23,9 @@ NSGraphicsContext.current = context
 context.cgContext.setFillColor(NSColor.clear.cgColor)
 context.cgContext.fill(CGRect(x: 0, y: 0, width: width, height: height))
 
-let font = NSFont(name: "STHeitiSC-Medium", size: fontSize) ?? NSFont.systemFont(ofSize: fontSize, weight: .medium)
+// The labels are English. Helvetica Bold has complete Latin glyph coverage and
+// stable metrics on macOS; the prior Chinese-first font produced cropped runs.
+let font = NSFont(name: "Helvetica-Bold", size: fontSize) ?? NSFont.systemFont(ofSize: fontSize, weight: .bold)
 let style = NSMutableParagraphStyle()
 style.alignment = .center
 let attributes: [NSAttributedString.Key: Any] = [.font: font, .foregroundColor: NSColor.white, .paragraphStyle: style]
