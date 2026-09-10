@@ -3,6 +3,3 @@ result.json
 __pycache__
 
 # 可由脚本重新生成的 3D 几何与 FreeCAD 装配检查文件
-garage-bookshelf/bambu-print/stl/
-garage-bookshelf/bambu-print/*.FCStd
-garage-bookshelf/bambu-print/*.FCBak
