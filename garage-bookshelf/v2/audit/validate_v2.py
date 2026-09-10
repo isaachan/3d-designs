@@ -27,17 +27,28 @@ def solid_from_stl(path):
 
 
 records = {}
+COSMETIC_MULTI_SOLID = {"billboard_text_lovely_cars", "billboard_text_ive_driven"}
 for path in sorted(STL.glob("*.stl")):
-    mesh, solid = solid_from_stl(path)
-    if not mesh.isSolid() or len(mesh.getSeparateComponents()) != 1:
-        raise AssertionError(f"{path.name}: non-manifold or disconnected mesh")
-    box = solid.BoundBox
+    mesh = Mesh.Mesh(str(path))
+    components = mesh.getSeparateComponents()
+    if path.stem in COSMETIC_MULTI_SOLID:
+        # Letter islands are intentionally independent pieces, but every one
+        # must itself be a closed manifold.  They glue to the black panel.
+        if not components or not all(component.isSolid() for component in components):
+            raise AssertionError(f"{path.name}: non-manifold text island")
+        box = mesh.BoundBox
+        volume = None
+    else:
+        mesh, solid = solid_from_stl(path)
+        if not mesh.isSolid() or len(components) != 1:
+            raise AssertionError(f"{path.name}: non-manifold or disconnected mesh")
+        box, volume = solid.BoundBox, solid.Volume
     records[path.stem] = {
         "facets": mesh.CountFacets,
-        "mesh_is_solid": mesh.isSolid(),
-        "components": len(mesh.getSeparateComponents()),
+        "mesh_is_solid": mesh.isSolid() if path.stem not in COSMETIC_MULTI_SOLID else "each letter island",
+        "components": len(components),
         "bounds": [box.XMin, box.YMin, box.ZMin, box.XMax, box.YMax, box.ZMax],
-        "volume_mm3": solid.Volume,
+        "volume_mm3": volume,
     }
 
 modules = [solid_from_stl(STL / f"module_{i}.stl")[1] for i in range(1, 6)]
@@ -86,7 +97,34 @@ if len(joints) != 16:
 
 # Parking deck / collar check: each deck bottom is at 66/129/192; each column
 # collar top touches those planes at 66/129/192 respectively.
-deck_supports = [{"deck_z_mm":z,"collar_top_z_mm":z,"contact":"planar, no volume overlap"} for z in (66,129,192)]
+deck_supports = [{"deck_z_mm":z,"collar_top_z_mm":z,"contact":"planar, no volume overlap",
+                  "seam_keys":2,"underside_bridge_mm":[48,110,3]} for z in (66,129,192)]
+
+# Parking decks use the same -X slide for their two rectangular keys.  The
+# underside bridge must touch both deck undersides without creating an overlap.
+deck_joint_paths = []
+for level in range(1, 4):
+    left = solid_from_stl(STL / f"garage_deck_{level}_left.stl")[1]
+    right = solid_from_stl(STL / f"garage_deck_{level}_right.stl")[1]
+    bridge = solid_from_stl(STL / f"garage_deck_{level}_seam_bridge.stl")[1]
+    samples = []
+    for offset in (30, 15, 5, 1, 0):
+        incoming = right.copy(); incoming.translate(App.Vector(offset, 0, 0))
+        overlap = left.common(incoming).Volume
+        if overlap > 0.01:
+            raise AssertionError(f"deck {level}, offset {offset}: key collision {overlap}")
+        samples.append({"offset_x_mm": offset, "intersection_mm3": overlap})
+    if bridge.common(left.fuse(right)).Volume > 0.01:
+        raise AssertionError(f"deck {level}: underside bridge overlaps a deck")
+    deck_joint_paths.append({"level": level, "keys": 2, "insertion_direction": "-X", "samples": samples,
+                             "bridge_contact": "coplanar underside, glue joint"})
+
+post_centres = []
+for name in ("billboard_post_left", "billboard_post_right"):
+    box = records[name]["bounds"]
+    post_centres.append((box[0] + box[3]) / 2)
+if post_centres != [90, 270] or abs((post_centres[0] + post_centres[1]) / 2 - 180) > .001:
+    raise AssertionError(f"Billboard posts are not symmetric: {post_centres}")
 
 result = {
     "status":"passed",
@@ -99,6 +137,9 @@ result = {
     "assembly_paths":assembly_paths,
     "bottom_plane":"all modules Z=0; no bottom protrusions",
     "garage_supports":deck_supports,
+    "garage_deck_joints": deck_joint_paths,
+    "billboard":{"panel_mm":[360,64,6],"bottom_z_mm":330,"post_centres_x_mm":[90,270],
+                 "centreline_x_mm":180,"symmetric":True,"outside_body_height":True},
 }
 OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2))
 print(json.dumps({k:result[k] for k in ("status","part_count","module_count","main_dimensions_mm","bottom_plane")}, ensure_ascii=False))

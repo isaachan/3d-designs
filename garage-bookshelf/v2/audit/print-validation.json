@@ -1,7 +1,98 @@
 {
   "status": "passed",
-  "project_count": 22,
+  "project_count": 32,
   "projects": [
+    {
+      "file": "billboard_left-x2d-pla.3mf",
+      "objects": 1,
+      "build_items": 1,
+      "zip_integrity": "passed",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4"
+      }
+    },
+    {
+      "file": "billboard_post_left-x2d-pla.3mf",
+      "objects": 1,
+      "build_items": 1,
+      "zip_integrity": "passed",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4"
+      }
+    },
+    {
+      "file": "billboard_post_right-x2d-pla.3mf",
+      "objects": 1,
+      "build_items": 1,
+      "zip_integrity": "passed",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4"
+      }
+    },
+    {
+      "file": "billboard_right-x2d-pla.3mf",
+      "objects": 1,
+      "build_items": 1,
+      "zip_integrity": "passed",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4"
+      }
+    },
+    {
+      "file": "billboard_seam_bridge-x2d-pla.3mf",
+      "objects": 1,
+      "build_items": 1,
+      "zip_integrity": "passed",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4"
+      }
+    },
+    {
+      "file": "billboard_text_ive_driven-x2d-pla.3mf",
+      "objects": 1,
+      "build_items": 1,
+      "zip_integrity": "passed",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4"
+      }
+    },
+    {
+      "file": "billboard_text_lovely_cars-x2d-pla.3mf",
+      "objects": 1,
+      "build_items": 1,
+      "zip_integrity": "passed",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4"
+      }
+    },
     {
       "file": "book_depot_sign-x2d-pla.3mf",
       "objects": 1,
@@ -94,6 +185,19 @@
       }
     },
     {
+      "file": "garage_deck_1_seam_bridge-x2d-pla.3mf",
+      "objects": 1,
+      "build_items": 1,
+      "zip_integrity": "passed",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4"
+      }
+    },
+    {
       "file": "garage_deck_2_left-x2d-pla.3mf",
       "objects": 1,
       "build_items": 1,
@@ -120,6 +224,19 @@
       }
     },
     {
+      "file": "garage_deck_2_seam_bridge-x2d-pla.3mf",
+      "objects": 1,
+      "build_items": 1,
+      "zip_integrity": "passed",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4"
+      }
+    },
+    {
       "file": "garage_deck_3_left-x2d-pla.3mf",
       "objects": 1,
       "build_items": 1,
@@ -134,6 +251,19 @@
     },
     {
       "file": "garage_deck_3_right-x2d-pla.3mf",
+      "objects": 1,
+      "build_items": 1,
+      "zip_integrity": "passed",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4"
+      }
+    },
+    {
+      "file": "garage_deck_3_seam_bridge-x2d-pla.3mf",
       "objects": 1,
       "build_items": 1,
       "zip_integrity": "passed",

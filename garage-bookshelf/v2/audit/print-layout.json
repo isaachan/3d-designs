@@ -1,5 +1,68 @@
 [
   {
+    "name": "billboard_left.stl",
+    "dimensions_mm": [
+      180.0,
+      6.0,
+      64.0
+    ],
+    "xy_margin_mm": 4.0
+  },
+  {
+    "name": "billboard_post_left.stl",
+    "dimensions_mm": [
+      24.0,
+      6.0,
+      150.0
+    ],
+    "xy_margin_mm": 4.0
+  },
+  {
+    "name": "billboard_post_right.stl",
+    "dimensions_mm": [
+      24.0,
+      6.0,
+      150.0
+    ],
+    "xy_margin_mm": 4.0
+  },
+  {
+    "name": "billboard_right.stl",
+    "dimensions_mm": [
+      180.0,
+      6.0,
+      64.0
+    ],
+    "xy_margin_mm": 4.0
+  },
+  {
+    "name": "billboard_seam_bridge.stl",
+    "dimensions_mm": [
+      50.0,
+      3.0,
+      36.0
+    ],
+    "xy_margin_mm": 4.0
+  },
+  {
+    "name": "billboard_text_ive_driven.stl",
+    "dimensions_mm": [
+      128.1000062,
+      1.0,
+      21.099975599999993
+    ],
+    "xy_margin_mm": 4.0
+  },
+  {
+    "name": "billboard_text_lovely_cars.stl",
+    "dimensions_mm": [
+      145.1000062,
+      1.0,
+      23.099975599999993
+    ],
+    "xy_margin_mm": 4.0
+  },
+  {
     "name": "book_depot_sign.stl",
     "dimensions_mm": [
       36.0,
@@ -47,7 +110,7 @@
   {
     "name": "garage_deck_1_left.stl",
     "dimensions_mm": [
-      180.0,
+      189.80000300000003,
       215.0,
       5.0
     ],
@@ -63,9 +126,18 @@
     "xy_margin_mm": 4.0
   },
   {
+    "name": "garage_deck_1_seam_bridge.stl",
+    "dimensions_mm": [
+      48.0,
+      110.0,
+      3.0
+    ],
+    "xy_margin_mm": 4.0
+  },
+  {
     "name": "garage_deck_2_left.stl",
     "dimensions_mm": [
-      180.0,
+      189.80000300000003,
       215.0,
       5.0
     ],
@@ -81,9 +153,18 @@
     "xy_margin_mm": 4.0
   },
   {
+    "name": "garage_deck_2_seam_bridge.stl",
+    "dimensions_mm": [
+      48.0,
+      110.0,
+      3.0
+    ],
+    "xy_margin_mm": 4.0
+  },
+  {
     "name": "garage_deck_3_left.stl",
     "dimensions_mm": [
-      180.0,
+      189.80000300000003,
       215.0,
       5.0
     ],
@@ -95,6 +176,15 @@
       180.0,
       215.0,
       5.0
+    ],
+    "xy_margin_mm": 4.0
+  },
+  {
+    "name": "garage_deck_3_seam_bridge.stl",
+    "dimensions_mm": [
+      48.0,
+      110.0,
+      3.0
     ],
     "xy_margin_mm": 4.0
   },

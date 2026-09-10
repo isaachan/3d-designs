@@ -1,7 +1,42 @@
 {
   "status": "passed",
-  "assembly_part_count": 16,
+  "assembly_part_count": 26,
   "parts": [
+    {
+      "name": "billboard_left",
+      "facets": 12,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "billboard_post_left",
+      "facets": 12,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "billboard_post_right",
+      "facets": 12,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "billboard_right",
+      "facets": 12,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "billboard_seam_bridge",
+      "facets": 12,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "billboard_text_ive_driven",
+      "facets": 1052,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "billboard_text_lovely_cars",
+      "facets": 1472,
+      "stl_match": "facet-count"
+    },
     {
       "name": "book_depot_sign",
       "facets": 12,
@@ -29,32 +64,47 @@
     },
     {
       "name": "garage_deck_1_left",
-      "facets": 44,
+      "facets": 76,
       "stl_match": "facet-count"
     },
     {
       "name": "garage_deck_1_right",
-      "facets": 44,
+      "facets": 76,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "garage_deck_1_seam_bridge",
+      "facets": 12,
       "stl_match": "facet-count"
     },
     {
       "name": "garage_deck_2_left",
-      "facets": 44,
+      "facets": 76,
       "stl_match": "facet-count"
     },
     {
       "name": "garage_deck_2_right",
-      "facets": 44,
+      "facets": 76,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "garage_deck_2_seam_bridge",
+      "facets": 12,
       "stl_match": "facet-count"
     },
     {
       "name": "garage_deck_3_left",
-      "facets": 44,
+      "facets": 76,
       "stl_match": "facet-count"
     },
     {
       "name": "garage_deck_3_right",
-      "facets": 44,
+      "facets": 76,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "garage_deck_3_seam_bridge",
+      "facets": 12,
       "stl_match": "facet-count"
     },
     {

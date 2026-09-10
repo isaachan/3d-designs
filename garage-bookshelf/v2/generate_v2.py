@@ -4,6 +4,8 @@ Run with:
   /Applications/FreeCAD.app/Contents/Resources/bin/freecadcmd generate_v2.py
 """
 from pathlib import Path
+import json
+import subprocess
 import FreeCAD as App
 import Part
 import Mesh
@@ -90,11 +92,25 @@ def make_module(index, x0, x1):
 
 
 def deck_half(name, right, z):
-    # Same 180 x 215 half-deck layout and column clearances as v1.
+    # Two printable 180 mm halves replace an unprintable 360 mm deck.  The
+    # inside edge has two shallow, full-thickness X-sliding keys; a separate
+    # underside bridge carries the seam in bending after it is glued.
     x0 = 180 if right else 0
     profile = [(0,0),(153,0),(153,17),(167,17),(167,0),(180,0),(180,215),(167,215),(167,188),(153,188),(153,215),(0,215)]
     wire = Part.makePolygon([App.Vector(x0 + x, y, z) for x,y in profile] + [App.Vector(x0,0,z)])
-    return Part.Face(wire).extrude(App.Vector(0,0,5))
+    shape = Part.Face(wire).extrude(App.Vector(0,0,5))
+    for y in (55, 160):
+        if right:
+            # 10 mm pocket, widened 0.2 mm on each Y side for PLA fit.
+            shape = shape.cut(Part.makeBox(10.2, 18.4, 5.2, App.Vector(179.8, y - 9.2, z - .1)))
+        else:
+            shape = shape.fuse(Part.makeBox(10, 18, 5, App.Vector(179.8, y - 9, z)))
+    return clean(shape)
+
+
+def deck_seam_bridge(z):
+    """A glued 48 x 110 x 3 mm underside doubler across the deck seam."""
+    return Part.makeBox(48, 110, 3, App.Vector(156, 55, z - 3))
 
 
 def column():
@@ -110,9 +126,30 @@ def panel_shape(width, height, thickness):
     return Part.makeBox(width, height, thickness)
 
 
-def export(name, shape):
-    if not shape.isValid() or len(shape.Solids) != 1:
+def billboard_text_shape(text, width, font_size, x0, z0):
+    """White PLA text, made from the v2-owned AppKit mask generator.
+
+    Text is printed as a separate cosmetic STL.  Letter islands are expected;
+    each island is a closed manifold, and all are glued to the black board.
+    """
+    mask = json.loads(subprocess.check_output([
+        "/usr/bin/swift", str(ROOT / "generate-label-mask.swift"), text,
+        str(font_size), str(width), "28", "horizontal",
+    ], text=True))
+    # Slight overlap turns both edge- and corner-adjacent raster pixels into
+    # real volume intersections before the Boolean union.  Mere edge contact
+    # would make a non-manifold letter in an STL.
+    boxes = [Part.makeBox(run + .10, 1, 1.10, App.Vector(x0 + x - .05, 219, z0 + y - .05)) for x, y, run in mask]
+    # Fuse adjacent raster runs before STL export so coincident faces cannot
+    # turn a letter island non-manifold.
+    return boxes[0].multiFuse(boxes[1:]).removeSplitter()
+
+
+def export(name, shape, multi_solid=False):
+    if not shape.isValid() or (not multi_solid and len(shape.Solids) != 1):
         raise RuntimeError(f"{name} is not one valid solid")
+    if multi_solid and (not shape.Solids or not all(s.isValid() for s in shape.Solids)):
+        raise RuntimeError(f"{name} has invalid text islands")
     shape.exportStl(str(OUT / f"{name}.stl"))
 
 
@@ -143,12 +180,22 @@ for i, (x0, x1) in enumerate(zip(CUTS, CUTS[1:]), 1):
 
 # Retained garage display: 3 decks, 4 support columns, no former top header or billboard.
 for level, z in enumerate((66, 129, 192), 1):
-    export(f"garage_deck_{level}_left", clean(deck_half("", False, z)))
-    export(f"garage_deck_{level}_right", clean(deck_half("", True, z)))
+    export(f"garage_deck_{level}_left", deck_half("", False, z))
+    export(f"garage_deck_{level}_right", deck_half("", True, z))
+    export(f"garage_deck_{level}_seam_bridge", clean(deck_seam_bridge(z)))
 for index in range(1,5): export(f"garage_column_{index}", column())
 export("book_depot_sign", panel_shape(36,180,6))
 
-# Text is deliberately omitted from v2 printable structural package until it is
-# regenerated from the label source in a dedicated cosmetic pass.
+# The billboard is deliberately independent of the 238 mm structural envelope.
+# Two equal 24 mm-wide posts have centres X=90 and X=270, symmetric about its
+# X=180 centreline.  Their lower 58 mm are glued against the rear back panel.
+export("billboard_left", Part.makeBox(180, 6, 64, App.Vector(0, 220, 330)))
+export("billboard_right", Part.makeBox(180, 6, 64, App.Vector(180, 220, 330)))
+export("billboard_seam_bridge", Part.makeBox(50, 3, 36, App.Vector(155, 226, 344)))
+export("billboard_post_left", Part.makeBox(24, 6, 150, App.Vector(78, 220, 180)))
+export("billboard_post_right", Part.makeBox(24, 6, 150, App.Vector(258, 220, 180)))
+# Two short lines keep every white text part inside the X2D bed.
+export("billboard_text_lovely_cars", billboard_text_shape("Lovely Cars", 180, 26, 90, 362), multi_solid=True)
+export("billboard_text_ive_driven", billboard_text_shape("I've Driven", 180, 26, 90, 334), multi_solid=True)
 test_shapes()
 print(f"Generated {len(list(OUT.glob('*.stl')))} v2 STL files in {OUT}")

@@ -1,0 +1,86 @@
+solid 
+ facet normal -1.000000e+00  0.000000e+00  0.000000e+00
+   outer loop
+     vertex  1.560000e+02  5.500000e+01  6.300000e+01
+     vertex  1.560000e+02  1.650000e+02  6.600000e+01
+     vertex  1.560000e+02  1.650000e+02  6.300000e+01
+   endloop
+ endfacet
+ facet normal -1.000000e+00  0.000000e+00  0.000000e+00
+   outer loop
+     vertex  1.560000e+02  5.500000e+01  6.600000e+01
+     vertex  1.560000e+02  1.650000e+02  6.600000e+01
+     vertex  1.560000e+02  5.500000e+01  6.300000e+01
+   endloop
+ endfacet
+ facet normal  1.000000e+00  0.000000e+00  0.000000e+00
+   outer loop
+     vertex  2.040000e+02  5.500000e+01  6.300000e+01
+     vertex  2.040000e+02  1.650000e+02  6.300000e+01
+     vertex  2.040000e+02  1.650000e+02  6.600000e+01
+   endloop
+ endfacet
+ facet normal  1.000000e+00 -0.000000e+00  0.000000e+00
+   outer loop
+     vertex  2.040000e+02  5.500000e+01  6.600000e+01
+     vertex  2.040000e+02  5.500000e+01  6.300000e+01
+     vertex  2.040000e+02  1.650000e+02  6.600000e+01
+   endloop
+ endfacet
+ facet normal  0.000000e+00 -1.000000e+00 -0.000000e+00
+   outer loop
+     vertex  2.040000e+02  5.500000e+01  6.600000e+01
+     vertex  1.560000e+02  5.500000e+01  6.300000e+01
+     vertex  2.040000e+02  5.500000e+01  6.300000e+01
+   endloop
+ endfacet
+ facet normal -0.000000e+00 -1.000000e+00  0.000000e+00
+   outer loop
+     vertex  2.040000e+02  5.500000e+01  6.600000e+01
+     vertex  1.560000e+02  5.500000e+01  6.600000e+01
+     vertex  1.560000e+02  5.500000e+01  6.300000e+01
+   endloop
+ endfacet
+ facet normal  0.000000e+00  1.000000e+00  0.000000e+00
+   outer loop
+     vertex  2.040000e+02  1.650000e+02  6.600000e+01
+     vertex  2.040000e+02  1.650000e+02  6.300000e+01
+     vertex  1.560000e+02  1.650000e+02  6.300000e+01
+   endloop
+ endfacet
+ facet normal  0.000000e+00  1.000000e+00  0.000000e+00
+   outer loop
+     vertex  2.040000e+02  1.650000e+02  6.600000e+01
+     vertex  1.560000e+02  1.650000e+02  6.300000e+01
+     vertex  1.560000e+02  1.650000e+02  6.600000e+01
+   endloop
+ endfacet
+ facet normal  0.000000e+00  0.000000e+00 -1.000000e+00
+   outer loop
+     vertex  1.560000e+02  1.650000e+02  6.300000e+01
+     vertex  2.040000e+02  5.500000e+01  6.300000e+01
+     vertex  1.560000e+02  5.500000e+01  6.300000e+01
+   endloop
+ endfacet
+ facet normal -0.000000e+00 -0.000000e+00 -1.000000e+00
+   outer loop
+     vertex  2.040000e+02  1.650000e+02  6.300000e+01
+     vertex  2.040000e+02  5.500000e+01  6.300000e+01
+     vertex  1.560000e+02  1.650000e+02  6.300000e+01
+   endloop
+ endfacet
+ facet normal  0.000000e+00  0.000000e+00  1.000000e+00
+   outer loop
+     vertex  1.560000e+02  1.650000e+02  6.600000e+01
+     vertex  1.560000e+02  5.500000e+01  6.600000e+01
+     vertex  2.040000e+02  5.500000e+01  6.600000e+01
+   endloop
+ endfacet
+ facet normal  0.000000e+00  0.000000e+00  1.000000e+00
+   outer loop
+     vertex  2.040000e+02  1.650000e+02  6.600000e+01
+     vertex  1.560000e+02  1.650000e+02  6.600000e+01
+     vertex  2.040000e+02  5.500000e+01  6.600000e+01
+   endloop
+ endfacet
+endsolid
