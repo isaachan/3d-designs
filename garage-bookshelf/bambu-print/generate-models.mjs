@@ -86,6 +86,35 @@ function frustum(tris, cx, cy, r1, r2, z, h, sides = 20) {
   }
 }
 
+// Build one watertight column from a radius profile.  The profile shares each
+// transition ring with the next section, so collars and frustums do not leave
+// coincident caps or internal duplicate faces in the exported STL.
+function profiledColumn(tris, cx, cy, sides = 20) {
+  const profile = [
+    [0, 6], [46, 6], [54, 14], [58, 14],
+    [58, 6], [109, 6], [117, 14], [121, 14],
+    [121, 6], [172, 6], [180, 14], [184, 14],
+    [184, 6], [250, 6],
+  ];
+  const rings = profile.map(([z, r]) => Array.from({ length: sides }, (_, i) => {
+    const a = i * 2 * Math.PI / sides;
+    return [cx + r * Math.cos(a), cy + r * Math.sin(a), z];
+  }));
+  const bottom = [cx, cy, profile[0][0]], top = [cx, cy, profile.at(-1)[0]];
+  for (let i = 0; i < sides; i++) {
+    const j = (i + 1) % sides;
+    tris.push([bottom, rings[0][j], rings[0][i]]);
+    tris.push([rings.at(-1)[i], rings.at(-1)[j], top]);
+  }
+  for (let k = 0; k < rings.length - 1; k++) {
+    const low = rings[k], high = rings[k + 1];
+    for (let i = 0; i < sides; i++) {
+      const j = (i + 1) % sides;
+      tris.push([low[i], low[j], high[j]], [low[i], high[j], high[i]]);
+    }
+  }
+}
+
 function baseOutline(hasLeftSocket, hasRightTongue) {
   // The tongue is 7.6 mm wide and the socket 8 mm wide: 0.4 mm total
   // clearance prevents impossible solid overlap while retaining alignment.
@@ -154,11 +183,7 @@ for (let deck = 1; deck <= 3; deck++) {
 // every deck, so vertical load goes through a shoulder instead of a glue line.
 for (let i = 1; i <= 4; i++) {
   const tris = [];
-  cylinder(tris, 10, 10, 6, 250);
-  for (const z of [54, 117, 180]) {
-    frustum(tris, 10, 10, 6, 14, z - 8, 8);
-    cylinder(tris, 10, 10, 14, 4, 20, z);
-  }
+  profiledColumn(tris, 10, 10);
   stl(`07_yellow_column_${i}`, tris);
 }
 
