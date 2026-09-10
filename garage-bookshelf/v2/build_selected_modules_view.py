@@ -11,13 +11,21 @@ import tempfile
 import zipfile
 import xml.etree.ElementTree as ET
 from pathlib import Path
+import sys
 
 ROOT = Path(__file__).resolve().parent
 STL = ROOT / "stl"
-OUT = ROOT / "print" / "projects" / "modules-2-3-5-view-x2d-pla.3mf"
-AUDIT = ROOT / "audit" / "modules-2-3-5-view.json"
 BAMBU = "/Applications/BambuStudio.app/Contents/MacOS/BambuStudio"
-PARTS = ["module_2", "module_3", "module_5"]
+PROFILES = {
+    "production": (["module_2", "module_3", "module_5"], "modules-2-3-5-view-x2d-pla.3mf", "modules-2-3-5-view.json"),
+    "narrow": (["module_2_narrow_visual", "module_5_narrow_visual"], "modules-2-5-narrow-visual-x2d-pla.3mf", "modules-2-5-narrow-visual.json"),
+}
+profile = sys.argv[1] if len(sys.argv) > 1 else "production"
+if profile not in PROFILES:
+    raise SystemExit(f"usage: {Path(__file__).name} [{'|'.join(PROFILES)}]")
+PARTS, output_name, audit_name = PROFILES[profile]
+OUT = ROOT / "print" / "projects" / output_name
+AUDIT = ROOT / "audit" / audit_name
 
 with tempfile.TemporaryDirectory() as temp:
     raw = Path(temp) / "raw.3mf"
@@ -82,7 +90,7 @@ with zipfile.ZipFile(OUT, "w", compression=zipfile.ZIP_DEFLATED) as target:
 
 AUDIT.write_text(json.dumps({
     "status": "passed", "file": OUT.name, "included_parts": PARTS,
-    "purpose": "Bambu Studio three-plate project; one selected module per printable plate",
-    "print_instruction": "Select plate 1/2/3 in Bambu Studio; each plate prints exactly one module.",
+    "purpose": f"Bambu Studio {len(PARTS)}-plate project; one selected module per printable plate",
+    "print_instruction": "Select the matching plate in Bambu Studio; each plate prints exactly one module.",
 }, ensure_ascii=False, indent=2))
 print(f"Generated {OUT}")

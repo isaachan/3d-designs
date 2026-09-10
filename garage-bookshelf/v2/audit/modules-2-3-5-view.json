@@ -6,6 +6,6 @@
     "module_3",
     "module_5"
   ],
-  "purpose": "Bambu Studio three-plate project; one selected module per printable plate",
-  "print_instruction": "Select plate 1/2/3 in Bambu Studio; each plate prints exactly one module."
+  "purpose": "Bambu Studio 3-plate project; one selected module per printable plate",
+  "print_instruction": "Select the matching plate in Bambu Studio; each plate prints exactly one module."
 }

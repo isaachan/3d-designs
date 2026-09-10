@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "part_count": 32,
+  "part_count": 34,
   "module_count": 5,
   "module_boundaries_mm": [
     0,
@@ -339,6 +339,20 @@
       ],
       "volume_mm3": 968347.6333692641
     },
+    "module_2_narrow_visual": {
+      "facets": 806,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        180.0,
+        -1.1978478977524058e-15,
+        -7.844246128371172e-16,
+        293.79998779296875,
+        220.0,
+        238.0
+      ],
+      "volume_mm3": 590047.6333692649
+    },
     "module_3": {
       "facets": 1226,
       "mesh_is_solid": true,
@@ -380,6 +394,20 @@
         238.0
       ],
       "volume_mm3": 726386.9396623821
+    },
+    "module_5_narrow_visual": {
+      "facets": 120,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        770.0,
+        -1.5307628058249954e-15,
+        -4.830140086152487e-15,
+        820.0,
+        220.0,
+        238.0
+      ],
+      "volume_mm3": 434825.1427728854
     },
     "test_back_female": {
       "facets": 28,

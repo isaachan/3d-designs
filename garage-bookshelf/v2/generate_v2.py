@@ -102,6 +102,23 @@ def make_module(index, x0, x1):
     return clean(shape)
 
 
+def shortened_visual_module(shape, keep_left_end, remove_from, remove_to, keep_right_end):
+    """Delete a central X strip and fuse the unchanged end geometries.
+
+    This is intentionally a print-time visual coupon.  It retains both real
+    interfaces and the relevant upright root, but its shortened X span cannot
+    replace the production module in the assembled bookshelf.
+    """
+    remove_width = remove_to - remove_from
+    envelope_y, envelope_z = DEPTH + 20, BODY_H + 20
+    left = shape.common(Part.makeBox(remove_from - keep_left_end, envelope_y, envelope_z,
+                                     App.Vector(keep_left_end, -10, -10)))
+    right = shape.common(Part.makeBox(keep_right_end - remove_to, envelope_y, envelope_z,
+                                      App.Vector(remove_to, -10, -10)))
+    right.translate(App.Vector(-remove_width, 0, 0))
+    return clean(left.fuse(right))
+
+
 def deck_half(name, right, z):
     # Two printable 180 mm halves replace an unprintable 360 mm deck.  The
     # inside edge has two full-thickness X-sliding dovetails; a separate
@@ -198,8 +215,16 @@ def test_shapes():
     export("test_corner_left_four_male", corner(True)); export("test_corner_right_four_female", corner(False))
 
 
+modules = {}
 for i, (x0, x1) in enumerate(zip(CUTS, CUTS[1:]), 1):
-    export(f"module_{i}", make_module(i, x0, x1))
+    modules[i] = make_module(i, x0, x1)
+    export(f"module_{i}", modules[i])
+
+# Fast visual-print variants: the centre is removed, while both original ends
+# (including real-size dovetails and the divider/right-panel roots) are fused
+# back together.  Their height and depth are unchanged.
+export("module_2_narrow_visual", shortened_visual_module(modules[2], 180, 215, 345, 423.8))
+export("module_5_narrow_visual", shortened_visual_module(modules[5], 770, 800, 900, 920))
 
 # Retained garage display: 3 decks, 4 support columns, no former top header or billboard.
 for level, z in enumerate((66, 129, 192), 1):

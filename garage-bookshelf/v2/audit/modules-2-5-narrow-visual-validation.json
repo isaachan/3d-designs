@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "build_items": 2,
+  "object_names": [
+    "module_2_narrow_visual.stl",
+    "module_5_narrow_visual.stl"
+  ],
+  "plates": 2,
+  "purpose": "individually printable X2D plates"
+}
