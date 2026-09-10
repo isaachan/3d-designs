@@ -24,29 +24,40 @@ CLEARANCE = 0.40
 BRIM = 4.0
 
 
+def tapered_prism(root, tip):
+    """Make a solid between matching four-point sections at its X ends."""
+    # OpenCascade's loft makes the four non-planar-looking side faces robustly
+    # and avoids hand-orienting a shell for every taper direction.
+    root_wire = Part.makePolygon(root + [root[0]])
+    tip_wire = Part.makePolygon(tip + [tip[0]])
+    return Part.makeLoft([root_wire, tip_wire], True, False).removeSplitter()
+
+
 def dovetail_base(x, center, depth, clearance=0):
-    """A sliding dovetail with a constant YZ profile, extruded along X."""
-    bottom, top = 15 + clearance, 12 + clearance
-    points = [
-        App.Vector(x, center - bottom, -0.2 if clearance else 0),
-        App.Vector(x, center + bottom, -0.2 if clearance else 0),
-        App.Vector(x, center + top, BASE_H + (0.2 if clearance else 0)),
-        App.Vector(x, center - top, BASE_H + (0.2 if clearance else 0)),
-    ]
-    return Part.Face(Part.makePolygon(points + [points[0]])).extrude(App.Vector(depth, 0, 0))
+    """Sliding dovetail, visibly tail-shaped in plan and locking in elevation."""
+    z0, z1 = -0.2 if clearance else 0, BASE_H + (0.2 if clearance else 0)
+    # The root is deliberately wider than the tip in both plan and elevation.
+    root_bottom, root_top = 15 + clearance, 12 + clearance
+    tip_bottom, tip_top = 12 + clearance, 9 + clearance
+    root = [App.Vector(x, center - root_bottom, z0), App.Vector(x, center + root_bottom, z0),
+            App.Vector(x, center + root_top, z1), App.Vector(x, center - root_top, z1)]
+    end = x + depth
+    tip = [App.Vector(end, center - tip_bottom, z0), App.Vector(end, center + tip_bottom, z0),
+           App.Vector(end, center + tip_top, z1), App.Vector(end, center - tip_top, z1)]
+    return tapered_prism(root, tip)
 
 
 def dovetail_back(x, center_z, depth, clearance=0):
-    """A sliding dovetail with a constant YZ profile, extruded along X."""
+    """Sliding dovetail, visibly tail-shaped when viewed along the back."""
     front_y, rear_y = 214.8 - clearance, 220 + clearance
-    front_h, rear_h = 13 + clearance, 17 + clearance
-    points = [
-        App.Vector(x, front_y, center_z - front_h),
-        App.Vector(x, front_y, center_z + front_h),
-        App.Vector(x, rear_y, center_z + rear_h),
-        App.Vector(x, rear_y, center_z - rear_h),
-    ]
-    return Part.Face(Part.makePolygon(points + [points[0]])).extrude(App.Vector(depth, 0, 0))
+    root_front_h, root_rear_h = 13 + clearance, 17 + clearance
+    tip_front_h, tip_rear_h = 10 + clearance, 14 + clearance
+    root = [App.Vector(x, front_y, center_z - root_front_h), App.Vector(x, front_y, center_z + root_front_h),
+            App.Vector(x, rear_y, center_z + root_rear_h), App.Vector(x, rear_y, center_z - root_rear_h)]
+    end = x + depth
+    tip = [App.Vector(end, front_y, center_z - tip_front_h), App.Vector(end, front_y, center_z + tip_front_h),
+           App.Vector(end, rear_y, center_z + tip_rear_h), App.Vector(end, rear_y, center_z - tip_rear_h)]
+    return tapered_prism(root, tip)
 
 
 def rib(x, y, inward):
@@ -93,7 +104,7 @@ def make_module(index, x0, x1):
 
 def deck_half(name, right, z):
     # Two printable 180 mm halves replace an unprintable 360 mm deck.  The
-    # inside edge has two shallow, full-thickness X-sliding keys; a separate
+    # inside edge has two full-thickness X-sliding dovetails; a separate
     # underside bridge carries the seam in bending after it is glued.
     x0 = 180 if right else 0
     profile = [(0,0),(153,0),(153,17),(167,17),(167,0),(180,0),(180,215),(167,215),(167,188),(153,188),(153,215),(0,215)]
@@ -101,11 +112,23 @@ def deck_half(name, right, z):
     shape = Part.Face(wire).extrude(App.Vector(0,0,5))
     for y in (55, 160):
         if right:
-            # 10 mm pocket, widened 0.2 mm on each Y side for PLA fit.
-            shape = shape.cut(Part.makeBox(10.2, 18.4, 5.2, App.Vector(179.8, y - 9.2, z - .1)))
+            shape = shape.cut(deck_dovetail(179.8, y, 10.2, z, CLEARANCE / 2))
         else:
-            shape = shape.fuse(Part.makeBox(10, 18, 5, App.Vector(179.8, y - 9, z)))
+            shape = shape.fuse(deck_dovetail(179.8, y, 10, z))
     return clean(shape)
+
+
+def deck_dovetail(x, center_y, depth, z, clearance=0):
+    """5 mm deck dovetail: root 22/16 mm, tip 16/12 mm, both axes tapered."""
+    z0, z1 = z - (.2 if clearance else 0), z + 5 + (.2 if clearance else 0)
+    root_bottom, root_top = 11 + clearance, 8 + clearance
+    tip_bottom, tip_top = 8 + clearance, 6 + clearance
+    root = [App.Vector(x, center_y - root_bottom, z0), App.Vector(x, center_y + root_bottom, z0),
+            App.Vector(x, center_y + root_top, z1), App.Vector(x, center_y - root_top, z1)]
+    end = x + depth
+    tip = [App.Vector(end, center_y - tip_bottom, z0), App.Vector(end, center_y + tip_bottom, z0),
+           App.Vector(end, center_y + tip_top, z1), App.Vector(end, center_y - tip_top, z1)]
+    return tapered_prism(root, tip)
 
 
 def deck_seam_bridge(z):
@@ -188,14 +211,15 @@ export("book_depot_sign", panel_shape(36,180,6))
 
 # The billboard is deliberately independent of the 238 mm structural envelope.
 # Two equal 24 mm-wide posts have centres X=90 and X=270, symmetric about its
-# X=180 centreline.  Their lower 58 mm are glued against the rear back panel.
-export("billboard_left", Part.makeBox(180, 6, 64, App.Vector(0, 220, 330)))
-export("billboard_right", Part.makeBox(180, 6, 64, App.Vector(180, 220, 330)))
-export("billboard_seam_bridge", Part.makeBox(50, 3, 36, App.Vector(155, 226, 344)))
-export("billboard_post_left", Part.makeBox(24, 6, 150, App.Vector(78, 220, 180)))
-export("billboard_post_right", Part.makeBox(24, 6, 150, App.Vector(258, 220, 180)))
+# X=180 centreline.  The assembly is lowered 30 mm from the prior position;
+# posts Z=150..300 retain an 88 mm glue land on the rear back panel.
+export("billboard_left", Part.makeBox(180, 6, 64, App.Vector(0, 220, 300)))
+export("billboard_right", Part.makeBox(180, 6, 64, App.Vector(180, 220, 300)))
+export("billboard_seam_bridge", Part.makeBox(50, 3, 36, App.Vector(155, 226, 314)))
+export("billboard_post_left", Part.makeBox(24, 6, 150, App.Vector(78, 220, 150)))
+export("billboard_post_right", Part.makeBox(24, 6, 150, App.Vector(258, 220, 150)))
 # Two short lines keep every white text part inside the X2D bed.
-export("billboard_text_lovely_cars", billboard_text_shape("Lovely Cars", 180, 26, 90, 362), multi_solid=True)
-export("billboard_text_ive_driven", billboard_text_shape("I've Driven", 180, 26, 90, 334), multi_solid=True)
+export("billboard_text_lovely_cars", billboard_text_shape("Lovely Cars", 180, 26, 90, 332), multi_solid=True)
+export("billboard_text_ive_driven", billboard_text_shape("I've Driven", 180, 26, 90, 304), multi_solid=True)
 test_shapes()
 print(f"Generated {len(list(OUT.glob('*.stl')))} v2 STL files in {OUT}")

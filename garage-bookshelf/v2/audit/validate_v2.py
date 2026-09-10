@@ -84,8 +84,10 @@ for interface, x in enumerate(CUTS[1:-1], 1):
     # the back profile is taller at its rear face.  Neither value is an
     # invented "root/tip" measurement.
     for kind, centers, profile in (
-        ("base", (52,168), {"bottom_width_mm": 30, "top_width_mm": 24}),
-        ("back", (66,180), {"front_height_mm": 26, "rear_height_mm": 34}),
+        ("base", (52,168), {"root_bottom_width_mm": 30, "root_top_width_mm": 24,
+                              "tip_bottom_width_mm": 24, "tip_top_width_mm": 18}),
+        ("back", (66,180), {"root_front_height_mm": 26, "root_rear_height_mm": 34,
+                               "tip_front_height_mm": 20, "tip_rear_height_mm": 28}),
     ):
         for center in centers:
             joints.append({"interface":interface,"kind":kind,"center":center, **profile,
@@ -116,7 +118,10 @@ for level in range(1, 4):
         samples.append({"offset_x_mm": offset, "intersection_mm3": overlap})
     if bridge.common(left.fuse(right)).Volume > 0.01:
         raise AssertionError(f"deck {level}: underside bridge overlaps a deck")
-    deck_joint_paths.append({"level": level, "keys": 2, "insertion_direction": "-X", "samples": samples,
+    deck_joint_paths.append({"level": level, "keys": 2, "profile": "sliding dovetail",
+                             "root_bottom_width_mm": 22, "root_top_width_mm": 16,
+                             "tip_bottom_width_mm": 16, "tip_top_width_mm": 12,
+                             "insertion_direction": "-X", "samples": samples,
                              "bridge_contact": "coplanar underside, glue joint"})
 
 post_centres = []
@@ -138,7 +143,7 @@ result = {
     "bottom_plane":"all modules Z=0; no bottom protrusions",
     "garage_supports":deck_supports,
     "garage_deck_joints": deck_joint_paths,
-    "billboard":{"panel_mm":[360,64,6],"bottom_z_mm":330,"post_centres_x_mm":[90,270],
+    "billboard":{"panel_mm":[360,64,6],"bottom_z_mm":300,"post_centres_x_mm":[90,270],
                  "centreline_x_mm":180,"symmetric":True,"outside_body_height":True},
 }
 OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2))

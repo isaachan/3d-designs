@@ -64,12 +64,12 @@
     },
     {
       "name": "garage_deck_1_left",
-      "facets": 76,
+      "facets": 806,
       "stl_match": "facet-count"
     },
     {
       "name": "garage_deck_1_right",
-      "facets": 76,
+      "facets": 374,
       "stl_match": "facet-count"
     },
     {
@@ -79,12 +79,12 @@
     },
     {
       "name": "garage_deck_2_left",
-      "facets": 76,
+      "facets": 806,
       "stl_match": "facet-count"
     },
     {
       "name": "garage_deck_2_right",
-      "facets": 76,
+      "facets": 364,
       "stl_match": "facet-count"
     },
     {
@@ -94,12 +94,12 @@
     },
     {
       "name": "garage_deck_3_left",
-      "facets": 76,
+      "facets": 806,
       "stl_match": "facet-count"
     },
     {
       "name": "garage_deck_3_right",
-      "facets": 76,
+      "facets": 364,
       "stl_match": "facet-count"
     },
     {
@@ -109,22 +109,22 @@
     },
     {
       "name": "module_1",
-      "facets": 100,
+      "facets": 954,
       "stl_match": "facet-count"
     },
     {
       "name": "module_2",
-      "facets": 204,
+      "facets": 806,
       "stl_match": "facet-count"
     },
     {
       "name": "module_3",
-      "facets": 164,
+      "facets": 1226,
       "stl_match": "facet-count"
     },
     {
       "name": "module_4",
-      "facets": 164,
+      "facets": 1226,
       "stl_match": "facet-count"
     },
     {

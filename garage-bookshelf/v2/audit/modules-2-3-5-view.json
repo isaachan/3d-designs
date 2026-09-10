@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "file": "modules-2-3-5-view-x2d-pla.3mf",
+  "included_parts": [
+    "module_2",
+    "module_3",
+    "module_5"
+  ],
+  "purpose": "Bambu Studio selection/view project; not a simultaneous one-plate print",
+  "print_instruction": "Use module_2/module_3/module_5 individual X2D projects to print."
+}

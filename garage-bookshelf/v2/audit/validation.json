@@ -24,12 +24,12 @@
       "bounds": [
         -4.155381374923106e-15,
         220.0,
-        330.0,
+        300.0,
         180.0,
         226.0,
-        394.0
+        364.0
       ],
-      "volume_mm3": 69120.00000000006
+      "volume_mm3": 69120.00000000007
     },
     "billboard_post_left": {
       "facets": 12,
@@ -38,10 +38,10 @@
       "bounds": [
         78.0,
         220.0,
-        180.0,
+        150.0,
         102.0,
         226.0,
-        330.0
+        300.0
       ],
       "volume_mm3": 21600.000000000033
     },
@@ -52,12 +52,12 @@
       "bounds": [
         258.0,
         220.0,
-        180.0,
+        150.0,
         282.0,
         226.0,
-        330.0
+        300.0
       ],
-      "volume_mm3": 21600.00000000005
+      "volume_mm3": 21600.000000000047
     },
     "billboard_right": {
       "facets": 12,
@@ -66,12 +66,12 @@
       "bounds": [
         180.0,
         220.0,
-        330.0,
+        300.0,
         360.0,
         226.0,
-        394.0
+        364.0
       ],
-      "volume_mm3": 69120.00000000006
+      "volume_mm3": 69120.00000000007
     },
     "billboard_seam_bridge": {
       "facets": 12,
@@ -80,12 +80,12 @@
       "bounds": [
         155.0,
         226.0,
-        344.0,
+        314.0,
         205.0,
         229.0,
-        380.0
+        350.0
       ],
-      "volume_mm3": 5399.999999999982
+      "volume_mm3": 5399.999999999984
     },
     "billboard_text_ive_driven": {
       "facets": 1052,
@@ -94,10 +94,10 @@
       "bounds": [
         115.94999694824219,
         219.0,
-        336.95001220703125,
+        306.95001220703125,
         244.0500030517578,
         220.0,
-        358.04998779296875
+        328.04998779296875
       ],
       "volume_mm3": null
     },
@@ -108,10 +108,10 @@
       "bounds": [
         107.94999694824219,
         219.0,
-        362.95001220703125,
+        332.95001220703125,
         253.0500030517578,
         220.0,
-        386.04998779296875
+        356.04998779296875
       ],
       "volume_mm3": null
     },
@@ -186,21 +186,21 @@
       "volume_mm3": 36360.147465277485
     },
     "garage_deck_1_left": {
-      "facets": 76,
+      "facets": 806,
       "mesh_is_solid": true,
       "components": 1,
       "bounds": [
         -8.036405270144319e-15,
-        -1.4774689333059931e-15,
+        -1.82191066895898e-15,
         66.0,
         189.8000030517578,
         215.0,
         71.0
       ],
-      "volume_mm3": 192184.00054931652
+      "volume_mm3": 192032.0615368301
     },
     "garage_deck_1_right": {
-      "facets": 76,
+      "facets": 374,
       "mesh_is_solid": true,
       "components": 1,
       "bounds": [
@@ -211,7 +211,7 @@
         215.0,
         71.0
       ],
-      "volume_mm3": 188580.00041961664
+      "volume_mm3": 188734.89051559794
     },
     "garage_deck_1_seam_bridge": {
       "facets": 12,
@@ -228,21 +228,21 @@
       "volume_mm3": 15839.999999999993
     },
     "garage_deck_2_left": {
-      "facets": 76,
+      "facets": 806,
       "mesh_is_solid": true,
       "components": 1,
       "bounds": [
         -8.036405270144319e-15,
-        -1.4774689333059931e-15,
+        -1.82191066895898e-15,
         129.0,
         189.8000030517578,
         215.0,
         134.0
       ],
-      "volume_mm3": 192184.00054931646
+      "volume_mm3": 192032.06163301994
     },
     "garage_deck_2_right": {
-      "facets": 76,
+      "facets": 364,
       "mesh_is_solid": true,
       "components": 1,
       "bounds": [
@@ -253,7 +253,7 @@
         215.0,
         134.0
       ],
-      "volume_mm3": 188580.00041961682
+      "volume_mm3": 188734.8323025957
     },
     "garage_deck_2_seam_bridge": {
       "facets": 12,
@@ -270,21 +270,21 @@
       "volume_mm3": 15839.99999999998
     },
     "garage_deck_3_left": {
-      "facets": 76,
+      "facets": 806,
       "mesh_is_solid": true,
       "components": 1,
       "bounds": [
         -8.036405270144319e-15,
-        -1.4774689333059931e-15,
+        -1.82191066895898e-15,
         192.0,
         189.8000030517578,
         215.0,
         197.0
       ],
-      "volume_mm3": 192184.00054931655
+      "volume_mm3": 192032.06163301988
     },
     "garage_deck_3_right": {
-      "facets": 76,
+      "facets": 364,
       "mesh_is_solid": true,
       "components": 1,
       "bounds": [
@@ -295,7 +295,7 @@
         215.0,
         197.0
       ],
-      "volume_mm3": 188580.00041961664
+      "volume_mm3": 188734.83230259607
     },
     "garage_deck_3_seam_bridge": {
       "facets": 12,
@@ -312,60 +312,60 @@
       "volume_mm3": 15840.000000000005
     },
     "module_1": {
-      "facets": 100,
+      "facets": 954,
       "mesh_is_solid": true,
       "components": 1,
       "bounds": [
-        -4.1288742641297574e-15,
-        -5.542652432098911e-16,
-        0.0,
+        -7.70946897851543e-15,
+        -2.0187467788857786e-15,
+        -3.151285787723016e-16,
         193.8000030517578,
         220.0,
         238.0
       ],
-      "volume_mm3": 534069.2897939198
+      "volume_mm3": 532960.7103528798
     },
     "module_2": {
-      "facets": 204,
+      "facets": 806,
       "mesh_is_solid": true,
       "components": 1,
       "bounds": [
         180.0,
         -1.1978478977524058e-15,
-        -2.2840382640057152e-15,
+        -1.625629502400688e-15,
         423.79998779296875,
         220.0,
         238.0
       ],
-      "volume_mm3": 968286.4193737844
+      "volume_mm3": 968347.6333692641
     },
     "module_3": {
-      "facets": 164,
+      "facets": 1226,
       "mesh_is_solid": true,
       "components": 1,
       "bounds": [
         410.0,
-        -3.8663165017453176e-16,
-        -4.60847774508285e-15,
+        -1.3950173313694736e-15,
+        -1.8998021097440835e-15,
         603.7999877929688,
         220.0,
         238.0
       ],
-      "volume_mm3": 523060.6301606531
+      "volume_mm3": 523121.8431382714
     },
     "module_4": {
-      "facets": 164,
+      "facets": 1226,
       "mesh_is_solid": true,
       "components": 1,
       "bounds": [
         590.0,
-        -3.8663165017453176e-16,
-        -4.60847774508285e-15,
+        -1.3950173313694736e-15,
+        -1.8998021097440835e-15,
         783.7999877929688,
         220.0,
         238.0
       ],
-      "volume_mm3": 523060.6301606538
+      "volume_mm3": 523121.84323236725
     },
     "module_5": {
       "facets": 112,
@@ -379,7 +379,7 @@
         220.0,
         238.0
       ],
-      "volume_mm3": 725217.1483690268
+      "volume_mm3": 726386.9396623821
     },
     "test_back_female": {
       "facets": 28,
@@ -393,21 +393,21 @@
         220.0,
         88.0
       ],
-      "volume_mm3": 25739.829175431365
+      "volume_mm3": 25964.789010839882
     },
     "test_back_male": {
-      "facets": 36,
+      "facets": 214,
       "mesh_is_solid": true,
       "components": 1,
       "bounds": [
-        -4.586823075220096e-15,
+        -3.353665901438673e-15,
         214.8000030517578,
         7.999999999999996,
         83.80000305175781,
         220.0,
         88.0
       ],
-      "volume_mm3": 30153.845653299053
+      "volume_mm3": 29935.488273049785
     },
     "test_base_female": {
       "facets": 28,
@@ -416,40 +416,40 @@
       "bounds": [
         -3.4843418051573965e-15,
         -1.4597406642663051e-15,
-        -7.844246128371172e-16,
+        -7.844246128371171e-16,
         70.0,
         100.0,
         8.0
       ],
-      "volume_mm3": 52755.83977752685
+      "volume_mm3": 53115.775890563964
     },
     "test_base_male": {
-      "facets": 28,
+      "facets": 510,
       "mesh_is_solid": true,
       "components": 1,
       "bounds": [
         -3.4843418051573965e-15,
-        0.0,
-        -3.1427187020987954e-16,
+        -1.948674732909096e-15,
+        -2.8235252491078445e-16,
         83.80000305175781,
         100.0,
         8.0
       ],
-      "volume_mm3": 58980.80065917968
+      "volume_mm3": 58644.86897783551
     },
     "test_corner_left_four_male": {
-      "facets": 100,
+      "facets": 1418,
       "mesh_is_solid": true,
       "components": 1,
       "bounds": [
         -4.903139756878395e-15,
-        -1.3102769213145738e-15,
-        0.0,
+        -1.6224001187063774e-15,
+        -3.151285787723016e-16,
         83.80000305175781,
         220.0,
         238.0
       ],
-      "volume_mm3": 213969.28979391913
+      "volume_mm3": 212860.71035288004
     },
     "test_corner_right_four_female": {
       "facets": 84,
@@ -457,13 +457,13 @@
       "components": 1,
       "bounds": [
         70.0,
-        -3.0393931335493622e-15,
-        -2.2840382640057152e-15,
+        -2.780370643047251e-15,
+        -7.844246128371171e-16,
         140.0,
         220.0,
         238.0
       ],
-      "volume_mm3": 192691.3402097223
+      "volume_mm3": 193861.13242684465
     }
   },
   "dovetail_pairs": [
@@ -471,8 +471,10 @@
       "interface": 1,
       "kind": "base",
       "center": 52,
-      "bottom_width_mm": 30,
-      "top_width_mm": 24,
+      "root_bottom_width_mm": 30,
+      "root_top_width_mm": 24,
+      "tip_bottom_width_mm": 24,
+      "tip_top_width_mm": 18,
       "male_projection_mm": 14,
       "socket_depth_mm": 15,
       "side_clearance_mm": 0.2,
@@ -483,8 +485,10 @@
       "interface": 1,
       "kind": "base",
       "center": 168,
-      "bottom_width_mm": 30,
-      "top_width_mm": 24,
+      "root_bottom_width_mm": 30,
+      "root_top_width_mm": 24,
+      "tip_bottom_width_mm": 24,
+      "tip_top_width_mm": 18,
       "male_projection_mm": 14,
       "socket_depth_mm": 15,
       "side_clearance_mm": 0.2,
@@ -495,8 +499,10 @@
       "interface": 1,
       "kind": "back",
       "center": 66,
-      "front_height_mm": 26,
-      "rear_height_mm": 34,
+      "root_front_height_mm": 26,
+      "root_rear_height_mm": 34,
+      "tip_front_height_mm": 20,
+      "tip_rear_height_mm": 28,
       "male_projection_mm": 14,
       "socket_depth_mm": 15,
       "side_clearance_mm": 0.2,
@@ -507,8 +513,10 @@
       "interface": 1,
       "kind": "back",
       "center": 180,
-      "front_height_mm": 26,
-      "rear_height_mm": 34,
+      "root_front_height_mm": 26,
+      "root_rear_height_mm": 34,
+      "tip_front_height_mm": 20,
+      "tip_rear_height_mm": 28,
       "male_projection_mm": 14,
       "socket_depth_mm": 15,
       "side_clearance_mm": 0.2,
@@ -519,8 +527,10 @@
       "interface": 2,
       "kind": "base",
       "center": 52,
-      "bottom_width_mm": 30,
-      "top_width_mm": 24,
+      "root_bottom_width_mm": 30,
+      "root_top_width_mm": 24,
+      "tip_bottom_width_mm": 24,
+      "tip_top_width_mm": 18,
       "male_projection_mm": 14,
       "socket_depth_mm": 15,
       "side_clearance_mm": 0.2,
@@ -531,8 +541,10 @@
       "interface": 2,
       "kind": "base",
       "center": 168,
-      "bottom_width_mm": 30,
-      "top_width_mm": 24,
+      "root_bottom_width_mm": 30,
+      "root_top_width_mm": 24,
+      "tip_bottom_width_mm": 24,
+      "tip_top_width_mm": 18,
       "male_projection_mm": 14,
       "socket_depth_mm": 15,
       "side_clearance_mm": 0.2,
@@ -543,8 +555,10 @@
       "interface": 2,
       "kind": "back",
       "center": 66,
-      "front_height_mm": 26,
-      "rear_height_mm": 34,
+      "root_front_height_mm": 26,
+      "root_rear_height_mm": 34,
+      "tip_front_height_mm": 20,
+      "tip_rear_height_mm": 28,
       "male_projection_mm": 14,
       "socket_depth_mm": 15,
       "side_clearance_mm": 0.2,
@@ -555,8 +569,10 @@
       "interface": 2,
       "kind": "back",
       "center": 180,
-      "front_height_mm": 26,
-      "rear_height_mm": 34,
+      "root_front_height_mm": 26,
+      "root_rear_height_mm": 34,
+      "tip_front_height_mm": 20,
+      "tip_rear_height_mm": 28,
       "male_projection_mm": 14,
       "socket_depth_mm": 15,
       "side_clearance_mm": 0.2,
@@ -567,8 +583,10 @@
       "interface": 3,
       "kind": "base",
       "center": 52,
-      "bottom_width_mm": 30,
-      "top_width_mm": 24,
+      "root_bottom_width_mm": 30,
+      "root_top_width_mm": 24,
+      "tip_bottom_width_mm": 24,
+      "tip_top_width_mm": 18,
       "male_projection_mm": 14,
       "socket_depth_mm": 15,
       "side_clearance_mm": 0.2,
@@ -579,8 +597,10 @@
       "interface": 3,
       "kind": "base",
       "center": 168,
-      "bottom_width_mm": 30,
-      "top_width_mm": 24,
+      "root_bottom_width_mm": 30,
+      "root_top_width_mm": 24,
+      "tip_bottom_width_mm": 24,
+      "tip_top_width_mm": 18,
       "male_projection_mm": 14,
       "socket_depth_mm": 15,
       "side_clearance_mm": 0.2,
@@ -591,8 +611,10 @@
       "interface": 3,
       "kind": "back",
       "center": 66,
-      "front_height_mm": 26,
-      "rear_height_mm": 34,
+      "root_front_height_mm": 26,
+      "root_rear_height_mm": 34,
+      "tip_front_height_mm": 20,
+      "tip_rear_height_mm": 28,
       "male_projection_mm": 14,
       "socket_depth_mm": 15,
       "side_clearance_mm": 0.2,
@@ -603,8 +625,10 @@
       "interface": 3,
       "kind": "back",
       "center": 180,
-      "front_height_mm": 26,
-      "rear_height_mm": 34,
+      "root_front_height_mm": 26,
+      "root_rear_height_mm": 34,
+      "tip_front_height_mm": 20,
+      "tip_rear_height_mm": 28,
       "male_projection_mm": 14,
       "socket_depth_mm": 15,
       "side_clearance_mm": 0.2,
@@ -615,8 +639,10 @@
       "interface": 4,
       "kind": "base",
       "center": 52,
-      "bottom_width_mm": 30,
-      "top_width_mm": 24,
+      "root_bottom_width_mm": 30,
+      "root_top_width_mm": 24,
+      "tip_bottom_width_mm": 24,
+      "tip_top_width_mm": 18,
       "male_projection_mm": 14,
       "socket_depth_mm": 15,
       "side_clearance_mm": 0.2,
@@ -627,8 +653,10 @@
       "interface": 4,
       "kind": "base",
       "center": 168,
-      "bottom_width_mm": 30,
-      "top_width_mm": 24,
+      "root_bottom_width_mm": 30,
+      "root_top_width_mm": 24,
+      "tip_bottom_width_mm": 24,
+      "tip_top_width_mm": 18,
       "male_projection_mm": 14,
       "socket_depth_mm": 15,
       "side_clearance_mm": 0.2,
@@ -639,8 +667,10 @@
       "interface": 4,
       "kind": "back",
       "center": 66,
-      "front_height_mm": 26,
-      "rear_height_mm": 34,
+      "root_front_height_mm": 26,
+      "root_rear_height_mm": 34,
+      "tip_front_height_mm": 20,
+      "tip_rear_height_mm": 28,
       "male_projection_mm": 14,
       "socket_depth_mm": 15,
       "side_clearance_mm": 0.2,
@@ -651,8 +681,10 @@
       "interface": 4,
       "kind": "back",
       "center": 180,
-      "front_height_mm": 26,
-      "rear_height_mm": 34,
+      "root_front_height_mm": 26,
+      "root_rear_height_mm": 34,
+      "tip_front_height_mm": 20,
+      "tip_rear_height_mm": 28,
       "male_projection_mm": 14,
       "socket_depth_mm": 15,
       "side_clearance_mm": 0.2,
@@ -822,6 +854,11 @@
     {
       "level": 1,
       "keys": 2,
+      "profile": "sliding dovetail",
+      "root_bottom_width_mm": 22,
+      "root_top_width_mm": 16,
+      "tip_bottom_width_mm": 16,
+      "tip_top_width_mm": 12,
       "insertion_direction": "-X",
       "samples": [
         {
@@ -850,6 +887,11 @@
     {
       "level": 2,
       "keys": 2,
+      "profile": "sliding dovetail",
+      "root_bottom_width_mm": 22,
+      "root_top_width_mm": 16,
+      "tip_bottom_width_mm": 16,
+      "tip_top_width_mm": 12,
       "insertion_direction": "-X",
       "samples": [
         {
@@ -878,6 +920,11 @@
     {
       "level": 3,
       "keys": 2,
+      "profile": "sliding dovetail",
+      "root_bottom_width_mm": 22,
+      "root_top_width_mm": 16,
+      "tip_bottom_width_mm": 16,
+      "tip_top_width_mm": 12,
       "insertion_direction": "-X",
       "samples": [
         {
@@ -910,7 +957,7 @@
       64,
       6
     ],
-    "bottom_z_mm": 330,
+    "bottom_z_mm": 300,
     "post_centres_x_mm": [
       90,
       270
