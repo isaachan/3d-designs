@@ -6,6 +6,6 @@
     "module_3",
     "module_5"
   ],
-  "purpose": "Bambu Studio selection/view project; not a simultaneous one-plate print",
-  "print_instruction": "Use module_2/module_3/module_5 individual X2D projects to print."
+  "purpose": "Bambu Studio three-plate project; one selected module per printable plate",
+  "print_instruction": "Select plate 1/2/3 in Bambu Studio; each plate prints exactly one module."
 }

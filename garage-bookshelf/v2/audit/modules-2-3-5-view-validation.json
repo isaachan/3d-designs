@@ -6,5 +6,6 @@
     "module_3.stl",
     "module_5.stl"
   ],
-  "purpose": "selection/view only; not one-plate print"
+  "plates": 3,
+  "purpose": "three individually printable X2D plates"
 }

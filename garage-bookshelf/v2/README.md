@@ -38,7 +38,7 @@ python3 audit/validate_selected_modules_view.py
 - `stl/`：五个主体模块、车库层板/跨缝加强片、承托柱、侧牌、广告牌与测试件。
 - `print/projects/`：32 个单件 X2D PLA 项目；每件实际排版到 256 × 256 × 260 mm 空间，保存为 4 圈墙、25% 填充、4 mm brim。模块 2 最大包络为 243.8 × 220 × 238 mm，预留 4 mm brim 后仍在 X2D 范围内。
 - `test_base_*`、`test_back_*`：分别验证底板和背板燕尾榫；`test_corner_*_four_*`：保留同一界面的四组榫关系，用于先做共同滑入测试。
-- `print/projects/modules-2-3-5-view-x2d-pla.3mf`：只含主体模块 2、3、5 的 Bambu 查看／选择项目。三件无法同盘打印，制造时仍应打开各自的单件项目。
+- `print/projects/modules-2-3-5-view-x2d-pla.3mf`：只含主体模块 2、3、5 的 Bambu 三盘项目；每盘恰好一件，选择对应盘即可打印，三件不会被错误地塞进同一盘。
 - [组装说明.md](组装说明.md)：从试件、施胶到五模块和车库部件的实际装配顺序。
 - [audit/验证报告.md](audit/验证报告.md)：已完成的几何／网格／3MF 检查及仍需实物试验的事项。
 

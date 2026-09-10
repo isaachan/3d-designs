@@ -27,7 +27,19 @@ with zipfile.ZipFile(PATH) as package:
     expected = {"module_2.stl", "module_3.stl", "module_5.stl"}
     if set(names) != expected:
         raise AssertionError(f"wrong objects: {names}")
+    plates = model_settings.findall("plate")
+    if len(plates) != 3:
+        raise AssertionError(f"expected 3 dedicated plates, got {len(plates)}")
+    plate_object_ids = []
+    for index, plate in enumerate(plates, 1):
+        instance = plate.find("model_instance")
+        object_id = next((m.get("value") for m in instance.findall("metadata") if m.get("key") == "object_id"), None)
+        if not object_id or f"Metadata/plate_{index}.json" not in package.namelist():
+            raise AssertionError(f"plate {index} missing object association or manifest")
+        plate_object_ids.append(object_id)
+    if len(set(plate_object_ids)) != 3:
+        raise AssertionError("plates do not map one-to-one to objects")
 
 OUT.write_text(json.dumps({"status":"passed", "build_items":3, "object_names":sorted(names),
-                            "purpose":"selection/view only; not one-plate print"}, ensure_ascii=False, indent=2))
-print(json.dumps({"status":"passed", "build_items":3, "objects":sorted(names)}, ensure_ascii=False))
+                            "plates":3, "purpose":"three individually printable X2D plates"}, ensure_ascii=False, indent=2))
+print(json.dumps({"status":"passed", "build_items":3, "plates":3, "objects":sorted(names)}, ensure_ascii=False))
