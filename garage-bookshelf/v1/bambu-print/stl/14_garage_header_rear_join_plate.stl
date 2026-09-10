@@ -1,0 +1,86 @@
+solid 14_garage_header_rear_join_plate
+facet normal 0 0 -1
+outer loop
+vertex 0 0 0
+vertex 42 20 0
+vertex 42 0 0
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 0 0 0
+vertex 0 20 0
+vertex 42 20 0
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 0 0 3
+vertex 42 0 3
+vertex 42 20 3
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 0 0 3
+vertex 42 20 3
+vertex 0 20 3
+endloop
+endfacet
+facet normal 0 -1 0
+outer loop
+vertex 0 0 0
+vertex 42 0 0
+vertex 42 0 3
+endloop
+endfacet
+facet normal 0 -1 0
+outer loop
+vertex 0 0 0
+vertex 42 0 3
+vertex 0 0 3
+endloop
+endfacet
+facet normal 1 0 0
+outer loop
+vertex 42 0 0
+vertex 42 20 0
+vertex 42 20 3
+endloop
+endfacet
+facet normal 1 0 0
+outer loop
+vertex 42 0 0
+vertex 42 20 3
+vertex 42 0 3
+endloop
+endfacet
+facet normal 0 1 0
+outer loop
+vertex 42 20 0
+vertex 0 20 0
+vertex 0 20 3
+endloop
+endfacet
+facet normal 0 1 0
+outer loop
+vertex 42 20 0
+vertex 0 20 3
+vertex 42 20 3
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 0 20 0
+vertex 0 0 0
+vertex 0 0 3
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 0 20 0
+vertex 0 0 3
+vertex 0 20 3
+endloop
+endfacet
+endsolid 14_garage_header_rear_join_plate

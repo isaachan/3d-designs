@@ -1,0 +1,663 @@
+{
+  "status": "passed",
+  "part_count": 22,
+  "module_count": 5,
+  "module_boundaries_mm": [
+    0,
+    180,
+    410,
+    590,
+    770,
+    920
+  ],
+  "main_dimensions_mm": {
+    "length": 920,
+    "depth": 220,
+    "height": 238,
+    "base_thickness": 8
+  },
+  "parts": {
+    "book_depot_sign": {
+      "facets": 12,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        -1.3178817361679193e-15,
+        -6.589408680839597e-15,
+        -6.170667075007319e-16,
+        36.0,
+        180.0,
+        6.000000000000001
+      ],
+      "volume_mm3": 38880.0
+    },
+    "garage_column_1": {
+      "facets": 10548,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        -3.9986829757690434,
+        -3.99967098236084,
+        7.999999999999997,
+        24.0,
+        23.999670028686523,
+        230.0
+      ],
+      "volume_mm3": 36360.147465277485
+    },
+    "garage_column_2": {
+      "facets": 10548,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        -3.9986829757690434,
+        -3.99967098236084,
+        7.999999999999997,
+        24.0,
+        23.999670028686523,
+        230.0
+      ],
+      "volume_mm3": 36360.147465277485
+    },
+    "garage_column_3": {
+      "facets": 10548,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        -3.9986829757690434,
+        -3.99967098236084,
+        7.999999999999997,
+        24.0,
+        23.999670028686523,
+        230.0
+      ],
+      "volume_mm3": 36360.147465277485
+    },
+    "garage_column_4": {
+      "facets": 10548,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        -3.9986829757690434,
+        -3.99967098236084,
+        7.999999999999997,
+        24.0,
+        23.999670028686523,
+        230.0
+      ],
+      "volume_mm3": 36360.147465277485
+    },
+    "garage_deck_1_left": {
+      "facets": 44,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        -8.036405270144319e-15,
+        -3.8393375949616955e-15,
+        66.0,
+        180.0,
+        215.0,
+        71.0
+      ],
+      "volume_mm3": 190419.99999999997
+    },
+    "garage_deck_1_right": {
+      "facets": 44,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        180.0,
+        -3.8393375949616955e-15,
+        66.0,
+        360.0,
+        215.0,
+        71.0
+      ],
+      "volume_mm3": 190419.99999999997
+    },
+    "garage_deck_2_left": {
+      "facets": 44,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        -8.036405270144319e-15,
+        -3.8393375949616955e-15,
+        129.0,
+        180.0,
+        215.0,
+        134.0
+      ],
+      "volume_mm3": 190419.99999999988
+    },
+    "garage_deck_2_right": {
+      "facets": 44,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        180.0,
+        -3.8393375949616955e-15,
+        129.0,
+        360.0,
+        215.0,
+        134.0
+      ],
+      "volume_mm3": 190419.99999999988
+    },
+    "garage_deck_3_left": {
+      "facets": 44,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        -8.036405270144319e-15,
+        -3.8393375949616955e-15,
+        192.0,
+        180.0,
+        215.0,
+        197.0
+      ],
+      "volume_mm3": 190419.9999999999
+    },
+    "garage_deck_3_right": {
+      "facets": 44,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        180.0,
+        -3.8393375949616955e-15,
+        192.0,
+        360.0,
+        215.0,
+        197.0
+      ],
+      "volume_mm3": 190419.9999999999
+    },
+    "module_1": {
+      "facets": 100,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        -4.1288742641297574e-15,
+        -5.542652432098911e-16,
+        0.0,
+        193.8000030517578,
+        220.0,
+        238.0
+      ],
+      "volume_mm3": 534069.2897939198
+    },
+    "module_2": {
+      "facets": 204,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        180.0,
+        -1.1978478977524058e-15,
+        -2.2840382640057152e-15,
+        423.79998779296875,
+        220.0,
+        238.0
+      ],
+      "volume_mm3": 968286.4193737844
+    },
+    "module_3": {
+      "facets": 164,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        410.0,
+        -3.8663165017453176e-16,
+        -4.60847774508285e-15,
+        603.7999877929688,
+        220.0,
+        238.0
+      ],
+      "volume_mm3": 523060.6301606531
+    },
+    "module_4": {
+      "facets": 164,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        590.0,
+        -3.8663165017453176e-16,
+        -4.60847774508285e-15,
+        783.7999877929688,
+        220.0,
+        238.0
+      ],
+      "volume_mm3": 523060.6301606538
+    },
+    "module_5": {
+      "facets": 112,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        770.0,
+        -1.5307628058249954e-15,
+        -4.830140086152487e-15,
+        920.0,
+        220.0,
+        238.0
+      ],
+      "volume_mm3": 725217.1483690268
+    },
+    "test_back_female": {
+      "facets": 28,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        -1.156917351506178e-15,
+        215.0,
+        7.999999999999999,
+        70.0,
+        220.0,
+        88.0
+      ],
+      "volume_mm3": 25739.829175431365
+    },
+    "test_back_male": {
+      "facets": 36,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        -4.586823075220096e-15,
+        214.8000030517578,
+        7.999999999999996,
+        83.80000305175781,
+        220.0,
+        88.0
+      ],
+      "volume_mm3": 30153.845653299053
+    },
+    "test_base_female": {
+      "facets": 28,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        -3.4843418051573965e-15,
+        -1.4597406642663051e-15,
+        -7.844246128371172e-16,
+        70.0,
+        100.0,
+        8.0
+      ],
+      "volume_mm3": 52755.83977752685
+    },
+    "test_base_male": {
+      "facets": 28,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        -3.4843418051573965e-15,
+        0.0,
+        -3.1427187020987954e-16,
+        83.80000305175781,
+        100.0,
+        8.0
+      ],
+      "volume_mm3": 58980.80065917968
+    },
+    "test_corner_left_four_male": {
+      "facets": 100,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        -4.903139756878395e-15,
+        -1.3102769213145738e-15,
+        0.0,
+        83.80000305175781,
+        220.0,
+        238.0
+      ],
+      "volume_mm3": 213969.28979391913
+    },
+    "test_corner_right_four_female": {
+      "facets": 84,
+      "mesh_is_solid": true,
+      "components": 1,
+      "bounds": [
+        70.0,
+        -3.0393931335493622e-15,
+        -2.2840382640057152e-15,
+        140.0,
+        220.0,
+        238.0
+      ],
+      "volume_mm3": 192691.3402097223
+    }
+  },
+  "dovetail_pairs": [
+    {
+      "interface": 1,
+      "kind": "base",
+      "center": 52,
+      "bottom_width_mm": 30,
+      "top_width_mm": 24,
+      "male_projection_mm": 14,
+      "socket_depth_mm": 15,
+      "side_clearance_mm": 0.2,
+      "axial_end_clearance_mm": 1.0,
+      "insertion_direction": "-X"
+    },
+    {
+      "interface": 1,
+      "kind": "base",
+      "center": 168,
+      "bottom_width_mm": 30,
+      "top_width_mm": 24,
+      "male_projection_mm": 14,
+      "socket_depth_mm": 15,
+      "side_clearance_mm": 0.2,
+      "axial_end_clearance_mm": 1.0,
+      "insertion_direction": "-X"
+    },
+    {
+      "interface": 1,
+      "kind": "back",
+      "center": 66,
+      "front_height_mm": 26,
+      "rear_height_mm": 34,
+      "male_projection_mm": 14,
+      "socket_depth_mm": 15,
+      "side_clearance_mm": 0.2,
+      "axial_end_clearance_mm": 1.0,
+      "insertion_direction": "-X"
+    },
+    {
+      "interface": 1,
+      "kind": "back",
+      "center": 180,
+      "front_height_mm": 26,
+      "rear_height_mm": 34,
+      "male_projection_mm": 14,
+      "socket_depth_mm": 15,
+      "side_clearance_mm": 0.2,
+      "axial_end_clearance_mm": 1.0,
+      "insertion_direction": "-X"
+    },
+    {
+      "interface": 2,
+      "kind": "base",
+      "center": 52,
+      "bottom_width_mm": 30,
+      "top_width_mm": 24,
+      "male_projection_mm": 14,
+      "socket_depth_mm": 15,
+      "side_clearance_mm": 0.2,
+      "axial_end_clearance_mm": 1.0,
+      "insertion_direction": "-X"
+    },
+    {
+      "interface": 2,
+      "kind": "base",
+      "center": 168,
+      "bottom_width_mm": 30,
+      "top_width_mm": 24,
+      "male_projection_mm": 14,
+      "socket_depth_mm": 15,
+      "side_clearance_mm": 0.2,
+      "axial_end_clearance_mm": 1.0,
+      "insertion_direction": "-X"
+    },
+    {
+      "interface": 2,
+      "kind": "back",
+      "center": 66,
+      "front_height_mm": 26,
+      "rear_height_mm": 34,
+      "male_projection_mm": 14,
+      "socket_depth_mm": 15,
+      "side_clearance_mm": 0.2,
+      "axial_end_clearance_mm": 1.0,
+      "insertion_direction": "-X"
+    },
+    {
+      "interface": 2,
+      "kind": "back",
+      "center": 180,
+      "front_height_mm": 26,
+      "rear_height_mm": 34,
+      "male_projection_mm": 14,
+      "socket_depth_mm": 15,
+      "side_clearance_mm": 0.2,
+      "axial_end_clearance_mm": 1.0,
+      "insertion_direction": "-X"
+    },
+    {
+      "interface": 3,
+      "kind": "base",
+      "center": 52,
+      "bottom_width_mm": 30,
+      "top_width_mm": 24,
+      "male_projection_mm": 14,
+      "socket_depth_mm": 15,
+      "side_clearance_mm": 0.2,
+      "axial_end_clearance_mm": 1.0,
+      "insertion_direction": "-X"
+    },
+    {
+      "interface": 3,
+      "kind": "base",
+      "center": 168,
+      "bottom_width_mm": 30,
+      "top_width_mm": 24,
+      "male_projection_mm": 14,
+      "socket_depth_mm": 15,
+      "side_clearance_mm": 0.2,
+      "axial_end_clearance_mm": 1.0,
+      "insertion_direction": "-X"
+    },
+    {
+      "interface": 3,
+      "kind": "back",
+      "center": 66,
+      "front_height_mm": 26,
+      "rear_height_mm": 34,
+      "male_projection_mm": 14,
+      "socket_depth_mm": 15,
+      "side_clearance_mm": 0.2,
+      "axial_end_clearance_mm": 1.0,
+      "insertion_direction": "-X"
+    },
+    {
+      "interface": 3,
+      "kind": "back",
+      "center": 180,
+      "front_height_mm": 26,
+      "rear_height_mm": 34,
+      "male_projection_mm": 14,
+      "socket_depth_mm": 15,
+      "side_clearance_mm": 0.2,
+      "axial_end_clearance_mm": 1.0,
+      "insertion_direction": "-X"
+    },
+    {
+      "interface": 4,
+      "kind": "base",
+      "center": 52,
+      "bottom_width_mm": 30,
+      "top_width_mm": 24,
+      "male_projection_mm": 14,
+      "socket_depth_mm": 15,
+      "side_clearance_mm": 0.2,
+      "axial_end_clearance_mm": 1.0,
+      "insertion_direction": "-X"
+    },
+    {
+      "interface": 4,
+      "kind": "base",
+      "center": 168,
+      "bottom_width_mm": 30,
+      "top_width_mm": 24,
+      "male_projection_mm": 14,
+      "socket_depth_mm": 15,
+      "side_clearance_mm": 0.2,
+      "axial_end_clearance_mm": 1.0,
+      "insertion_direction": "-X"
+    },
+    {
+      "interface": 4,
+      "kind": "back",
+      "center": 66,
+      "front_height_mm": 26,
+      "rear_height_mm": 34,
+      "male_projection_mm": 14,
+      "socket_depth_mm": 15,
+      "side_clearance_mm": 0.2,
+      "axial_end_clearance_mm": 1.0,
+      "insertion_direction": "-X"
+    },
+    {
+      "interface": 4,
+      "kind": "back",
+      "center": 180,
+      "front_height_mm": 26,
+      "rear_height_mm": 34,
+      "male_projection_mm": 14,
+      "socket_depth_mm": 15,
+      "side_clearance_mm": 0.2,
+      "axial_end_clearance_mm": 1.0,
+      "insertion_direction": "-X"
+    }
+  ],
+  "assembly_paths": [
+    {
+      "interface": 1,
+      "insertion_direction": "-X",
+      "samples": [
+        {
+          "offset_x_mm": 60,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_x_mm": 30,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_x_mm": 15,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_x_mm": 5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_x_mm": 1,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_x_mm": 0,
+          "intersection_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "interface": 2,
+      "insertion_direction": "-X",
+      "samples": [
+        {
+          "offset_x_mm": 60,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_x_mm": 30,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_x_mm": 15,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_x_mm": 5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_x_mm": 1,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_x_mm": 0,
+          "intersection_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "interface": 3,
+      "insertion_direction": "-X",
+      "samples": [
+        {
+          "offset_x_mm": 60,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_x_mm": 30,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_x_mm": 15,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_x_mm": 5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_x_mm": 1,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_x_mm": 0,
+          "intersection_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "interface": 4,
+      "insertion_direction": "-X",
+      "samples": [
+        {
+          "offset_x_mm": 60,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_x_mm": 30,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_x_mm": 15,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_x_mm": 5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_x_mm": 1,
+          "intersection_mm3": 0.0
+        },
+        {
+          "offset_x_mm": 0,
+          "intersection_mm3": 0.0
+        }
+      ]
+    }
+  ],
+  "bottom_plane": "all modules Z=0; no bottom protrusions",
+  "garage_supports": [
+    {
+      "deck_z_mm": 66,
+      "collar_top_z_mm": 66,
+      "contact": "planar, no volume overlap"
+    },
+    {
+      "deck_z_mm": 129,
+      "collar_top_z_mm": 129,
+      "contact": "planar, no volume overlap"
+    },
+    {
+      "deck_z_mm": 192,
+      "collar_top_z_mm": 192,
+      "contact": "planar, no volume overlap"
+    }
+  ]
+}

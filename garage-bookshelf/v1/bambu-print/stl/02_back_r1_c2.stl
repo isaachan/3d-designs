@@ -1,0 +1,86 @@
+solid 02_back_r1_c2
+facet normal 0 0 -1
+outer loop
+vertex 0 0 0
+vertex 230 150 0
+vertex 230 0 0
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 0 0 0
+vertex 0 150 0
+vertex 230 150 0
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 0 0 5
+vertex 230 0 5
+vertex 230 150 5
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 0 0 5
+vertex 230 150 5
+vertex 0 150 5
+endloop
+endfacet
+facet normal 0 -1 0
+outer loop
+vertex 0 0 0
+vertex 230 0 0
+vertex 230 0 5
+endloop
+endfacet
+facet normal 0 -1 0
+outer loop
+vertex 0 0 0
+vertex 230 0 5
+vertex 0 0 5
+endloop
+endfacet
+facet normal 1 0 0
+outer loop
+vertex 230 0 0
+vertex 230 150 0
+vertex 230 150 5
+endloop
+endfacet
+facet normal 1 0 0
+outer loop
+vertex 230 0 0
+vertex 230 150 5
+vertex 230 0 5
+endloop
+endfacet
+facet normal 0 1 0
+outer loop
+vertex 230 150 0
+vertex 0 150 0
+vertex 0 150 5
+endloop
+endfacet
+facet normal 0 1 0
+outer loop
+vertex 230 150 0
+vertex 0 150 5
+vertex 230 150 5
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 0 150 0
+vertex 0 0 0
+vertex 0 0 5
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 0 150 0
+vertex 0 0 5
+vertex 0 150 5
+endloop
+endfacet
+endsolid 02_back_r1_c2

@@ -1,0 +1,86 @@
+solid 11_book_depot_sign
+facet normal 0 0 -1
+outer loop
+vertex 0 0 0
+vertex 36 180 0
+vertex 36 0 0
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 0 0 0
+vertex 0 180 0
+vertex 36 180 0
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 0 0 6
+vertex 36 0 6
+vertex 36 180 6
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 0 0 6
+vertex 36 180 6
+vertex 0 180 6
+endloop
+endfacet
+facet normal 0 -1 0
+outer loop
+vertex 0 0 0
+vertex 36 0 0
+vertex 36 0 6
+endloop
+endfacet
+facet normal 0 -1 0
+outer loop
+vertex 0 0 0
+vertex 36 0 6
+vertex 0 0 6
+endloop
+endfacet
+facet normal 1 0 0
+outer loop
+vertex 36 0 0
+vertex 36 180 0
+vertex 36 180 6
+endloop
+endfacet
+facet normal 1 0 0
+outer loop
+vertex 36 0 0
+vertex 36 180 6
+vertex 36 0 6
+endloop
+endfacet
+facet normal 0 1 0
+outer loop
+vertex 36 180 0
+vertex 0 180 0
+vertex 0 180 6
+endloop
+endfacet
+facet normal 0 1 0
+outer loop
+vertex 36 180 0
+vertex 0 180 6
+vertex 36 180 6
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 0 180 0
+vertex 0 0 0
+vertex 0 0 6
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 0 180 0
+vertex 0 0 6
+vertex 0 180 6
+endloop
+endfacet
+endsolid 11_book_depot_sign

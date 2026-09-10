@@ -1,0 +1,86 @@
+solid 14_garage_header_rear_right
+facet normal 0 0 -1
+outer loop
+vertex 0 0 0
+vertex 180 20 0
+vertex 180 0 0
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 0 0 0
+vertex 0 20 0
+vertex 180 20 0
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 0 0 6
+vertex 180 0 6
+vertex 180 20 6
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 0 0 6
+vertex 180 20 6
+vertex 0 20 6
+endloop
+endfacet
+facet normal 0 -1 0
+outer loop
+vertex 0 0 0
+vertex 180 0 0
+vertex 180 0 6
+endloop
+endfacet
+facet normal 0 -1 0
+outer loop
+vertex 0 0 0
+vertex 180 0 6
+vertex 0 0 6
+endloop
+endfacet
+facet normal 1 0 0
+outer loop
+vertex 180 0 0
+vertex 180 20 0
+vertex 180 20 6
+endloop
+endfacet
+facet normal 1 0 0
+outer loop
+vertex 180 0 0
+vertex 180 20 6
+vertex 180 0 6
+endloop
+endfacet
+facet normal 0 1 0
+outer loop
+vertex 180 20 0
+vertex 0 20 0
+vertex 0 20 6
+endloop
+endfacet
+facet normal 0 1 0
+outer loop
+vertex 180 20 0
+vertex 0 20 6
+vertex 180 20 6
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 0 20 0
+vertex 0 0 0
+vertex 0 0 6
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 0 20 0
+vertex 0 0 6
+vertex 0 20 6
+endloop
+endfacet
+endsolid 14_garage_header_rear_right

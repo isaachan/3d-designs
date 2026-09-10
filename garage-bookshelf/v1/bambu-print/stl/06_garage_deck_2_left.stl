@@ -1,0 +1,310 @@
+solid 06_garage_deck_2_left
+facet normal 0 0 -1
+outer loop
+vertex 0 215 0
+vertex 3 0 0
+vertex 0 0 0
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 0 215 5
+vertex 0 0 5
+vertex 3 0 5
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 0 215 0
+vertex 3 17 0
+vertex 3 0 0
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 0 215 5
+vertex 3 0 5
+vertex 3 17 5
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 0 215 0
+vertex 17 17 0
+vertex 3 17 0
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 0 215 5
+vertex 3 17 5
+vertex 17 17 5
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 17 17 0
+vertex 180 0 0
+vertex 17 0 0
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 17 17 5
+vertex 17 0 5
+vertex 180 0 5
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 17 17 0
+vertex 180 215 0
+vertex 180 0 0
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 17 17 5
+vertex 180 0 5
+vertex 180 215 5
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 180 215 0
+vertex 17 188 0
+vertex 17 215 0
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 180 215 5
+vertex 17 215 5
+vertex 17 188 5
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 17 17 0
+vertex 17 188 0
+vertex 180 215 0
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 17 17 5
+vertex 180 215 5
+vertex 17 188 5
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 17 17 0
+vertex 3 188 0
+vertex 17 188 0
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 17 17 5
+vertex 17 188 5
+vertex 3 188 5
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 0 215 0
+vertex 3 188 0
+vertex 17 17 0
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 0 215 5
+vertex 17 17 5
+vertex 3 188 5
+endloop
+endfacet
+facet normal 0 0 -1
+outer loop
+vertex 3 188 0
+vertex 0 215 0
+vertex 3 215 0
+endloop
+endfacet
+facet normal 0 0 1
+outer loop
+vertex 3 188 5
+vertex 3 215 5
+vertex 0 215 5
+endloop
+endfacet
+facet normal 0 -1 0
+outer loop
+vertex 0 0 0
+vertex 3 0 0
+vertex 3 0 5
+endloop
+endfacet
+facet normal 0 -1 0
+outer loop
+vertex 0 0 0
+vertex 3 0 5
+vertex 0 0 5
+endloop
+endfacet
+facet normal 1 0 0
+outer loop
+vertex 3 0 0
+vertex 3 17 0
+vertex 3 17 5
+endloop
+endfacet
+facet normal 1 0 0
+outer loop
+vertex 3 0 0
+vertex 3 17 5
+vertex 3 0 5
+endloop
+endfacet
+facet normal 0 -1 0
+outer loop
+vertex 3 17 0
+vertex 17 17 0
+vertex 17 17 5
+endloop
+endfacet
+facet normal 0 -1 0
+outer loop
+vertex 3 17 0
+vertex 17 17 5
+vertex 3 17 5
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 17 17 0
+vertex 17 0 0
+vertex 17 0 5
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 17 17 0
+vertex 17 0 5
+vertex 17 17 5
+endloop
+endfacet
+facet normal 0 -1 0
+outer loop
+vertex 17 0 0
+vertex 180 0 0
+vertex 180 0 5
+endloop
+endfacet
+facet normal 0 -1 0
+outer loop
+vertex 17 0 0
+vertex 180 0 5
+vertex 17 0 5
+endloop
+endfacet
+facet normal 1 0 0
+outer loop
+vertex 180 0 0
+vertex 180 215 0
+vertex 180 215 5
+endloop
+endfacet
+facet normal 1 0 0
+outer loop
+vertex 180 0 0
+vertex 180 215 5
+vertex 180 0 5
+endloop
+endfacet
+facet normal 0 1 0
+outer loop
+vertex 180 215 0
+vertex 17 215 0
+vertex 17 215 5
+endloop
+endfacet
+facet normal 0 1 0
+outer loop
+vertex 180 215 0
+vertex 17 215 5
+vertex 180 215 5
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 17 215 0
+vertex 17 188 0
+vertex 17 188 5
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 17 215 0
+vertex 17 188 5
+vertex 17 215 5
+endloop
+endfacet
+facet normal 0 1 0
+outer loop
+vertex 17 188 0
+vertex 3 188 0
+vertex 3 188 5
+endloop
+endfacet
+facet normal 0 1 0
+outer loop
+vertex 17 188 0
+vertex 3 188 5
+vertex 17 188 5
+endloop
+endfacet
+facet normal 1 0 0
+outer loop
+vertex 3 188 0
+vertex 3 215 0
+vertex 3 215 5
+endloop
+endfacet
+facet normal 1 0 0
+outer loop
+vertex 3 188 0
+vertex 3 215 5
+vertex 3 188 5
+endloop
+endfacet
+facet normal 0 1 0
+outer loop
+vertex 3 215 0
+vertex 0 215 0
+vertex 0 215 5
+endloop
+endfacet
+facet normal 0 1 0
+outer loop
+vertex 3 215 0
+vertex 0 215 5
+vertex 3 215 5
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 0 215 0
+vertex 0 0 0
+vertex 0 0 5
+endloop
+endfacet
+facet normal -1 0 0
+outer loop
+vertex 0 215 0
+vertex 0 0 5
+vertex 0 215 5
+endloop
+endfacet
+endsolid 06_garage_deck_2_left

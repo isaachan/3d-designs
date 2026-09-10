@@ -1,0 +1,86 @@
+{
+  "status": "passed",
+  "assembly_part_count": 16,
+  "parts": [
+    {
+      "name": "book_depot_sign",
+      "facets": 12,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "garage_column_1",
+      "facets": 10548,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "garage_column_2",
+      "facets": 10548,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "garage_column_3",
+      "facets": 10548,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "garage_column_4",
+      "facets": 10548,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "garage_deck_1_left",
+      "facets": 44,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "garage_deck_1_right",
+      "facets": 44,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "garage_deck_2_left",
+      "facets": 44,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "garage_deck_2_right",
+      "facets": 44,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "garage_deck_3_left",
+      "facets": 44,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "garage_deck_3_right",
+      "facets": 44,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "module_1",
+      "facets": 100,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "module_2",
+      "facets": 204,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "module_3",
+      "facets": 164,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "module_4",
+      "facets": 164,
+      "stl_match": "facet-count"
+    },
+    {
+      "name": "module_5",
+      "facets": 112,
+      "stl_match": "facet-count"
+    }
+  ]
+}
