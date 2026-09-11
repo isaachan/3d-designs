@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941">
+  <!-- Clean paper boundary; no photographed texture or shadows. -->
+  <path d="M 54 29 H 1618 Q 1646 29 1646 57 V 884 Q 1646 912 1618 912 H 54 Q 26 912 26 884 V 57 Q 26 29 54 29 Z" fill="none" stroke="#202020" stroke-width="3" stroke-linejoin="round"/>
+</svg>

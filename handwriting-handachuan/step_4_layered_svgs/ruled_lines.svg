@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941">
+  <!-- Rebuilt, evenly weighted guide rules aligned to the cleaned image. -->
+  <g fill="none" stroke="#666a6d" stroke-width="3" stroke-linecap="round">
+    <path d="M 0 97 H 1672"/>
+    <path d="M 0 224 H 1672"/>
+    <path d="M 0 352 H 1672"/>
+    <path d="M 0 480 H 1672"/>
+    <path d="M 0 604 H 1672"/>
+    <path d="M 0 730 H 1672"/>
+    <path d="M 0 848 H 1672"/>
+  </g>
+</svg>
