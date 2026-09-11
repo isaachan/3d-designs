@@ -207,6 +207,15 @@
     "xy_margin_mm": 4.0
   },
   {
+    "name": "module_2_narrow_visual.stl",
+    "dimensions_mm": [
+      113.79998780000003,
+      220.0,
+      238.0
+    ],
+    "xy_margin_mm": 4.0
+  },
+  {
     "name": "module_3.stl",
     "dimensions_mm": [
       193.79998780000005,
@@ -229,6 +238,15 @@
     "dimensions_mm": [
       150.0,
       220.0,
+      238.0
+    ],
+    "xy_margin_mm": 4.0
+  },
+  {
+    "name": "module_5_narrow_visual.stl",
+    "dimensions_mm": [
+      190.91883086999997,
+      190.91883086999997,
       238.0
     ],
     "xy_margin_mm": 4.0

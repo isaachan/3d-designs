@@ -14,6 +14,13 @@ import zipfile
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
+
+# Optional file stems make it safe to regenerate one experimental part without
+# touching every checked-in print project, e.g. ``python build_x2d_projects.py
+# module_5_narrow_visual``.  With no arguments the production batch behavior
+# remains unchanged.
+requested_stems = set(sys.argv[1:])
+
 ROOT = Path(__file__).resolve().parent
 STL, OUT = ROOT / "stl", ROOT / "print" / "projects"
 OUT.mkdir(parents=True, exist_ok=True)
@@ -83,11 +90,18 @@ def place_x2d(raw, destination):
 
 
 report = []
-for source in sorted(STL.glob("*.stl")):
+sources = sorted(STL.glob("*.stl"))
+if requested_stems:
+    unknown = requested_stems - {source.stem for source in sources}
+    if unknown:
+        raise SystemExit(f"Unknown STL stem(s): {', '.join(sorted(unknown))}")
+    sources = [source for source in sources if source.stem in requested_stems]
+for source in sources:
     with tempfile.TemporaryDirectory() as temp:
         raw = Path(temp) / "raw.3mf"
         subprocess.run([BAMBU, str(source.resolve()), "--arrange", "1", "--ensure-on-bed", "--export-3mf", str(raw)], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         output = OUT / f"{source.stem}-x2d-pla.3mf"
         report.extend(place_x2d(raw, output))
-(ROOT / "audit" / "print-layout.json").write_text(json.dumps(report, ensure_ascii=False, indent=2))
+if not requested_stems:
+    (ROOT / "audit" / "print-layout.json").write_text(json.dumps(report, ensure_ascii=False, indent=2))
 print(f"Generated and placed {len(report)} X2D projects in {OUT}")

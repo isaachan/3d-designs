@@ -35,6 +35,8 @@ python3 build_selected_modules_view.py
 python3 audit/validate_selected_modules_view.py
 python3 build_selected_modules_view.py narrow
 python3 audit/validate_selected_modules_view.py narrow
+python3 build_selected_modules_view.py narrow-fixed
+python3 audit/validate_selected_modules_view.py narrow-fixed
 ```
 
 - [garage-bookshelf-v2-assembly.FCStd](garage-bookshelf-v2-assembly.FCStd)：装配检查文件。
@@ -44,6 +46,7 @@ python3 audit/validate_selected_modules_view.py narrow
 - `print/projects/modules-2-3-5-view-x2d-pla.3mf`：只含主体模块 2、3、5 的 Bambu 三盘项目；每盘恰好一件，选择对应盘即可打印，三件不会被错误地塞进同一盘。
 - `print/projects/modules-2-5-narrow-visual-x2d-pla.3mf`：模块 2、5 的快速外观验证双盘项目。每件均保持 220 mm 深、238 mm 高与原始两端燕尾尺寸，但移除中段后重新融合；**不可**用于与正式模块装配或承重。
 - `garage-bookshelf-v2-narrow-visual.FCStd`：上述两个缩短验证件的 FreeCAD 查看文件。
+- `print/projects/modules-2-5-narrow-visual-fixed-x2d-pla.3mf`：明确给每盘设置 PLA 喷头 1 的双盘修正版；当旧双盘项目出现“切片完成但打印单盘不可用”时使用此文件。
 - [组装说明.md](组装说明.md)：从试件、施胶到五模块和车库部件的实际装配顺序。
 - [audit/验证报告.md](audit/验证报告.md)：已完成的几何／网格／3MF 检查及仍需实物试验的事项。
 

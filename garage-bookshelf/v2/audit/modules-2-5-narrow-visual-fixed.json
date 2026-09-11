@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "file": "modules-2-5-narrow-visual-fixed-x2d-pla.3mf",
+  "included_parts": [
+    "module_2_narrow_visual",
+    "module_5_narrow_visual"
+  ],
+  "purpose": "Bambu Studio 2-plate project; one selected module per printable plate",
+  "print_instruction": "Select the matching plate in Bambu Studio; each plate prints exactly one module."
+}

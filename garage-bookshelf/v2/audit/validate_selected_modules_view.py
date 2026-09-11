@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PROFILES = {
     "production": ("modules-2-3-5-view-x2d-pla.3mf", "modules-2-3-5-view-validation.json", {"module_2.stl", "module_3.stl", "module_5.stl"}),
     "narrow": ("modules-2-5-narrow-visual-x2d-pla.3mf", "modules-2-5-narrow-visual-validation.json", {"module_2_narrow_visual.stl", "module_5_narrow_visual.stl"}),
+    "narrow-fixed": ("modules-2-5-narrow-visual-fixed-x2d-pla.3mf", "modules-2-5-narrow-visual-fixed-validation.json", {"module_2_narrow_visual.stl", "module_5_narrow_visual.stl"}),
 }
 profile = sys.argv[1] if len(sys.argv) > 1 else "production"
 if profile not in PROFILES:
@@ -44,6 +45,9 @@ with zipfile.ZipFile(PATH) as package:
         object_id = next((m.get("value") for m in instance.findall("metadata") if m.get("key") == "object_id"), None)
         if not object_id or f"Metadata/plate_{index}.json" not in package.namelist():
             raise AssertionError(f"plate {index} missing object association or manifest")
+        manifest = json.loads(package.read(f"Metadata/plate_{index}.json"))
+        if manifest.get("first_extruder") != 1:
+            raise AssertionError(f"plate {index} has no PLA extruder assignment")
         plate_object_ids.append(object_id)
     if len(set(plate_object_ids)) != len(expected):
         raise AssertionError("plates do not map one-to-one to objects")
