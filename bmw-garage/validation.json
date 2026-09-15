@@ -1,0 +1,123 @@
+{
+  "source": "Garage_Honda.3mf",
+  "modified": [
+    {
+      "file": "3D/Objects/object_39.model",
+      "bounds_mm": [
+        [
+          -99.5,
+          -10.0,
+          -0.5
+        ],
+        [
+          99.5,
+          10.0,
+          0.5
+        ]
+      ],
+      "volume_difference_mm3": 0.0,
+      "parts": [
+        {
+          "id": 13,
+          "filament": 5,
+          "triangles": 3764,
+          "watertight": true
+        },
+        {
+          "id": 3901,
+          "filament": 1,
+          "triangles": 2328,
+          "watertight": true
+        },
+        {
+          "id": 3904,
+          "filament": 4,
+          "triangles": 3780,
+          "watertight": true
+        }
+      ]
+    },
+    {
+      "file": "3D/Objects/object_42.model",
+      "bounds_mm": [
+        [
+          -25.8470001,
+          -41.5025024,
+          -0.5
+        ],
+        [
+          25.8470001,
+          41.5025024,
+          0.5
+        ]
+      ],
+      "volume_difference_mm3": 0.0,
+      "parts": [
+        {
+          "id": 15,
+          "filament": 5,
+          "triangles": 3456,
+          "watertight": true
+        },
+        {
+          "id": 4201,
+          "filament": 1,
+          "triangles": 2328,
+          "watertight": true
+        },
+        {
+          "id": 4204,
+          "filament": 4,
+          "triangles": 3768,
+          "watertight": true
+        }
+      ]
+    },
+    {
+      "file": "3D/Objects/object_43.model",
+      "bounds_mm": [
+        [
+          -87.5,
+          -35.0040016,
+          -1.0
+        ],
+        [
+          87.5,
+          35.0040016,
+          1.0
+        ]
+      ],
+      "volume_difference_mm3": 3.637978807091713e-12,
+      "parts": [
+        {
+          "id": 17,
+          "filament": 4,
+          "triangles": 4278,
+          "watertight": true
+        },
+        {
+          "id": 4301,
+          "filament": 1,
+          "triangles": 4656,
+          "watertight": true
+        },
+        {
+          "id": 4305,
+          "filament": 5,
+          "triangles": 1040,
+          "watertight": true
+        }
+      ]
+    }
+  ],
+  "preserved_meshes": [
+    "3D/Objects/object_46.model",
+    "3D/Objects/object_47.model",
+    "3D/Objects/object_44.model",
+    "3D/Objects/object_45.model",
+    "3D/Objects/object_22.model",
+    "3D/Objects/object_20.model",
+    "3D/Objects/object_27.model",
+    "3D/Objects/object_21.model"
+  ]
+}
