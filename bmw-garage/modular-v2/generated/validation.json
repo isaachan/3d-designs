@@ -1,0 +1,300 @@
+{
+  "status": "ENGINEERING DRAFT - physical fit untested",
+  "per_side_clearance_mm": 0.3,
+  "parts": [
+    {
+      "name": "Universal road + receiver rails",
+      "plate": 1,
+      "bounds_mm": [
+        [
+          -110.0,
+          -110.0,
+          0.0
+        ],
+        [
+          111.9800033569336,
+          110.0,
+          8.0
+        ]
+      ],
+      "all_color_meshes_watertight": true,
+      "color_overlap_mm3": -0.0013937835756223649
+    },
+    {
+      "name": "Universal showroom shell",
+      "plate": 2,
+      "bounds_mm": [
+        [
+          -108.0,
+          20.0,
+          2.0
+        ],
+        [
+          108.0,
+          108.0,
+          92.0
+        ]
+      ],
+      "all_color_meshes_watertight": true,
+      "color_overlap_mm3": 0.0
+    },
+    {
+      "name": "BMW slide-out partition 1",
+      "plate": 3,
+      "bounds_mm": [
+        [
+          -31.0,
+          18.0,
+          4.349999904632568
+        ],
+        [
+          -29.0,
+          99.0,
+          83.6500015258789
+        ]
+      ],
+      "all_color_meshes_watertight": true,
+      "color_overlap_mm3": 0.00027858223438670393
+    },
+    {
+      "name": "BMW slide-out partition 2",
+      "plate": 3,
+      "bounds_mm": [
+        [
+          44.0,
+          18.0,
+          4.349999904632568
+        ],
+        [
+          46.0,
+          99.0,
+          83.6500015258789
+        ]
+      ],
+      "all_color_meshes_watertight": true,
+      "color_overlap_mm3": 0.00027858233625011053
+    },
+    {
+      "name": "BMW front fascia",
+      "plate": 4,
+      "bounds_mm": [
+        [
+          -100.0,
+          17.600000381469727,
+          84.0
+        ],
+        [
+          100.0,
+          25.0,
+          104.0
+        ]
+      ],
+      "all_color_meshes_watertight": true,
+      "color_overlap_mm3": 0.0019184796801710036
+    },
+    {
+      "name": "BMW interior sign",
+      "plate": 4,
+      "bounds_mm": [
+        [
+          -27.0,
+          97.0999984741211,
+          39.0
+        ],
+        [
+          27.0,
+          104.5,
+          67.0
+        ]
+      ],
+      "all_color_meshes_watertight": true,
+      "color_overlap_mm3": -0.0021672194061466143
+    },
+    {
+      "name": "Universal wheel stop 1",
+      "plate": 5,
+      "bounds_mm": [
+        [
+          -93.5999984741211,
+          -100.0,
+          4.0
+        ],
+        [
+          -69.5999984741211,
+          -96.0,
+          7.0
+        ]
+      ],
+      "all_color_meshes_watertight": true,
+      "color_overlap_mm3": 0.0
+    },
+    {
+      "name": "Universal wheel stop 2",
+      "plate": 5,
+      "bounds_mm": [
+        [
+          -52.79999923706055,
+          -100.0,
+          4.0
+        ],
+        [
+          -28.799999237060547,
+          -96.0,
+          7.0
+        ]
+      ],
+      "all_color_meshes_watertight": true,
+      "color_overlap_mm3": 0.0
+    },
+    {
+      "name": "Universal wheel stop 3",
+      "plate": 5,
+      "bounds_mm": [
+        [
+          -12.0,
+          -100.0,
+          4.0
+        ],
+        [
+          12.0,
+          -96.0,
+          7.0
+        ]
+      ],
+      "all_color_meshes_watertight": true,
+      "color_overlap_mm3": 0.0
+    },
+    {
+      "name": "Universal wheel stop 4",
+      "plate": 5,
+      "bounds_mm": [
+        [
+          28.799999237060547,
+          -100.0,
+          4.0
+        ],
+        [
+          52.79999923706055,
+          -96.0,
+          7.0
+        ]
+      ],
+      "all_color_meshes_watertight": true,
+      "color_overlap_mm3": 0.0
+    },
+    {
+      "name": "Universal wheel stop 5",
+      "plate": 5,
+      "bounds_mm": [
+        [
+          69.5999984741211,
+          -100.0,
+          4.0
+        ],
+        [
+          93.5999984741211,
+          -96.0,
+          7.0
+        ]
+      ],
+      "all_color_meshes_watertight": true,
+      "color_overlap_mm3": 0.0
+    },
+    {
+      "name": "BMW office slide-out cassette",
+      "plate": 6,
+      "bounds_mm": [
+        [
+          50.0,
+          21.0,
+          4.300000190734863
+        ],
+        [
+          98.0,
+          91.0,
+          25.0
+        ]
+      ],
+      "all_color_meshes_watertight": true,
+      "color_overlap_mm3": 5.4571268265135586e-05
+    }
+  ],
+  "assembly_collisions": [],
+  "extraction_collisions": [],
+  "brand_template": {
+    "shared_plates": [
+      1,
+      2,
+      5
+    ],
+    "brand_plates": [
+      3,
+      4,
+      6
+    ],
+    "universal_meshes_shared_in_memory": true,
+    "brand_mating_envelopes_identical": true
+  },
+  "coupons": [
+    {
+      "name": "rail_gap_0.20",
+      "each_side_clearance_mm": 0.2,
+      "watertight": true
+    },
+    {
+      "name": "panel_gap_0.20",
+      "each_side_clearance_mm": 0.2,
+      "watertight": true
+    },
+    {
+      "name": "socket_gap_0.20",
+      "each_side_clearance_mm": 0.2,
+      "watertight": true
+    },
+    {
+      "name": "peg_gap_0.20",
+      "each_side_clearance_mm": 0.2,
+      "watertight": true
+    },
+    {
+      "name": "rail_gap_0.30",
+      "each_side_clearance_mm": 0.3,
+      "watertight": true
+    },
+    {
+      "name": "panel_gap_0.30",
+      "each_side_clearance_mm": 0.3,
+      "watertight": true
+    },
+    {
+      "name": "socket_gap_0.30",
+      "each_side_clearance_mm": 0.3,
+      "watertight": true
+    },
+    {
+      "name": "peg_gap_0.30",
+      "each_side_clearance_mm": 0.3,
+      "watertight": true
+    },
+    {
+      "name": "rail_gap_0.40",
+      "each_side_clearance_mm": 0.4,
+      "watertight": true
+    },
+    {
+      "name": "panel_gap_0.40",
+      "each_side_clearance_mm": 0.4,
+      "watertight": true
+    },
+    {
+      "name": "socket_gap_0.40",
+      "each_side_clearance_mm": 0.4,
+      "watertight": true
+    },
+    {
+      "name": "peg_gap_0.40",
+      "each_side_clearance_mm": 0.4,
+      "watertight": true
+    }
+  ]
+}

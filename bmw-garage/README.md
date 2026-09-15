@@ -1,5 +1,9 @@
 # BMW Garage
 
+## 可插拔模块化新版
+
+见 [`modular-v2/README.md`](modular-v2/README.md)：盘1/2/5通用，盘3/4/6为可换品牌套件。包含六盘工程初稿、装配视图、空白品牌模板和接口试打件，尚未实物验证。下方说明对应原始 BMW 改色版。
+
 - `Garage_Honda.3mf`：未修改的原文件。
 - `Garage_BMW.3mf`：BMW 改版工程，使用 Bambu Studio 打开。
 - `BMW-panels-preview.png`：实际生成的装饰面二维预览（不是组装渲染）。

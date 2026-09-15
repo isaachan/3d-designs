@@ -1,0 +1,374 @@
+[2026-09-15 11:34:58.024124] [0x00000001ed24a180] [trace]   Initializing StaticPrintConfigs
+[2026-09-15 11:34:58.041942] [0x00000001ed24a180] [warning] cli mode, Current BambuStudio Version 02.08.02.61
+[2026-09-15 11:34:58.041973] [0x00000001ed24a180] [info]    Will start to read model file now, file count :1
+
+[2026-09-15 11:34:58.041995] [0x00000001ed24a180] [info]    allow_multicolor_oneplate 1, allow_rotations 1 skip_modified_gcodes 0 avoid_extrusion_cali_region 0 loaded_filament_ids size 0, clone_objects size 0, skip_useless_pick 0, allow_newer_file 0, allow_mix_temp 0
+[2026-09-15 11:34:58.042008] [0x00000001ed24a180] [info]    plate_to_slice=0, normative_check=1, use_first_fila_as_default=0
+[2026-09-15 11:34:58.042030] [0x00000001ed24a180] [info]    read model file:/Users/kai.han/code/3d-designs/bmw-garage/modular-v2/generated/Brand-Template-V2-DRAFT.3mf
+
+[2026-09-15 11:34:58.042074] [0x00000001ed24a180] [info]    model 0x16b1b3ce8, id 3, backup_path empty, set to 11_34_58#22023#3
+[2026-09-15 11:34:58.042100] [0x00000001ed24a180] [info]    create /3D/Objects in 11_34_58#22023#3
+[2026-09-15 11:34:58.043302] [0x00000001ed24a180] [info]    create /Metadata in 11_34_58#22023#3
+[2026-09-15 11:34:58.043597] [0x00000001ed24a180] [info]    create /lock.txt in 11_34_58#22023#3
+[2026-09-15 11:34:58.043952] [0x00000001ed24a180] [info]    _load_model_from_file:1799import 3mf IMPORT_STAGE_OPEN, m_load_restore=0
+
+[2026-09-15 11:34:58.044694] [0x00000001ed24a180] [info]    _load_model_from_file:1835import 3mf IMPORT_STAGE_READ_FILES
+
+[2026-09-15 11:34:58.062660] [0x00000001ed24a180] [info]    _load_model_from_file:1991extract 1th file 3dmodel.model, total=5
+[2026-09-15 11:34:58.062681] [0x00000001ed24a180] [info]    _load_model_from_file:2102, 3D/3dmodel.model skipped, already parsed or a directory or not supported
+
+[2026-09-15 11:34:58.062695] [0x00000001ed24a180] [info]    _load_model_from_file:1991extract 2th file model_settings.config, total=5
+[2026-09-15 11:34:58.062853] [0x00000001ed24a180] [info]    _load_model_from_file:1991extract 3th file project_settings.config, total=5
+[2026-09-15 11:34:58.063887] [0x00000001ed24a180] [info]    _extract_project_config_from_archive, extract  _temp_3.config from 3mf Metadata/project_settings.config, ret 1
+
+[2026-09-15 11:34:58.073904] [0x00000001ed24a180] [info]    _extract_project_config_from_archive, load project config file successfully from _temp_3.config
+
+[2026-09-15 11:34:58.073930] [0x00000001ed24a180] [info]    _load_model_from_file:1991extract 4th file .rels, total=5
+[2026-09-15 11:34:58.073944] [0x00000001ed24a180] [info]    _load_model_from_file:2102, _rels/.rels skipped, already parsed or a directory or not supported
+
+[2026-09-15 11:34:58.073959] [0x00000001ed24a180] [info]    _load_model_from_file:1991extract 5th file [Content_Types].xml, total=5
+[2026-09-15 11:34:58.073970] [0x00000001ed24a180] [info]    _load_model_from_file:2102, [Content_Types].xml skipped, already parsed or a directory or not supported
+
+[2026-09-15 11:34:58.074014] [0x00000001ed24a180] [info]    _load_model_from_file:2154, process group colors, size 0
+
+[2026-09-15 11:34:58.074027] [0x00000001ed24a180] [info]    _load_model_from_file:2176, begin to assemble objects, size 12
+
+[2026-09-15 11:34:58.082410] [0x00000001ed24a180] [info]    _load_model_from_file:2395import 3mf IMPORT_STAGE_LOADING_PLATES, m_plater_data size 6, m_backup_path 11_34_58#22023#3
+
+[2026-09-15 11:34:58.082435] [0x00000001ed24a180] [info]    _load_model_from_file:2448, plate 1, thumbnail_file=, no_light_thumbnail_file=
+[2026-09-15 11:34:58.082447] [0x00000001ed24a180] [info]    _load_model_from_file:2452, top_thumbnail_file=, pick_thumbnail_file=
+[2026-09-15 11:34:58.082457] [0x00000001ed24a180] [info]    _load_model_from_file:2448, plate 2, thumbnail_file=, no_light_thumbnail_file=
+[2026-09-15 11:34:58.082466] [0x00000001ed24a180] [info]    _load_model_from_file:2452, top_thumbnail_file=, pick_thumbnail_file=
+[2026-09-15 11:34:58.082475] [0x00000001ed24a180] [info]    _load_model_from_file:2448, plate 3, thumbnail_file=, no_light_thumbnail_file=
+[2026-09-15 11:34:58.082497] [0x00000001ed24a180] [info]    _load_model_from_file:2452, top_thumbnail_file=, pick_thumbnail_file=
+[2026-09-15 11:34:58.082506] [0x00000001ed24a180] [info]    _load_model_from_file:2448, plate 4, thumbnail_file=, no_light_thumbnail_file=
+[2026-09-15 11:34:58.082517] [0x00000001ed24a180] [info]    _load_model_from_file:2452, top_thumbnail_file=, pick_thumbnail_file=
+[2026-09-15 11:34:58.082527] [0x00000001ed24a180] [info]    _load_model_from_file:2448, plate 5, thumbnail_file=, no_light_thumbnail_file=
+[2026-09-15 11:34:58.082534] [0x00000001ed24a180] [info]    _load_model_from_file:2452, top_thumbnail_file=, pick_thumbnail_file=
+[2026-09-15 11:34:58.082543] [0x00000001ed24a180] [info]    _load_model_from_file:2448, plate 6, thumbnail_file=, no_light_thumbnail_file=
+[2026-09-15 11:34:58.082550] [0x00000001ed24a180] [info]    _load_model_from_file:2452, top_thumbnail_file=, pick_thumbnail_file=
+[2026-09-15 11:34:58.082559] [0x00000001ed24a180] [info]    _load_model_from_file:2510import 3mf IMPORT_STAGE_FINISH
+
+[2026-09-15 11:34:58.085524] [0x00000001ed24a180] [info]    the first file is a 3mf, version 2.8.2.61, got plate count 6
+[2026-09-15 11:34:58.085550] [0x00000001ed24a180] [info]    current_printer_name Bambu Lab X2D 0.4 nozzle, current_process_name 0.20mm Standard @BBL X2D
+[2026-09-15 11:34:58.085559] [0x00000001ed24a180] [info]    no inherits_group: use system name the same as current name
+[2026-09-15 11:34:58.087326] [0x00000001ed24a180] [info]    old printable size from 3mf: {256, 256, 261}
+[2026-09-15 11:34:58.087352] [0x00000001ed24a180] [info]    old extruder_clearance_height_to_rod 32.8, extruder_clearance_height_to_lid 133, extruder_clearance_max_radius 60 extruder_clearance_dist_to_rod 33}
+[2026-09-15 11:34:58.087371] [0x00000001ed24a180] [info]    run:before load settings, file count=0
+
+[2026-09-15 11:34:58.087392] [0x00000001ed24a180] [warning] run:2873, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine_full/Bambu Lab X2D 0.4 nozzle.json
+[2026-09-15 11:34:58.087410] [0x00000001ed24a180] [warning] run:2895, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/process_full/0.20mm Standard @BBL X2D.json
+[2026-09-15 11:34:58.087422] [0x00000001ed24a180] [info]    current printer Bambu Lab X2D 0.4 nozzle, new printer , current process 0.20mm Standard @BBL X2D, new process
+[2026-09-15 11:34:58.087436] [0x00000001ed24a180] [info]    current printer inherits Bambu Lab X2D 0.4 nozzle, new printer inherits , current process inherits 0.20mm Standard @BBL X2D, new process inherits
+[2026-09-15 11:34:58.087446] [0x00000001ed24a180] [info]    index 0, current print compatible printer Bambu Lab X2D 0.4 nozzle
+[2026-09-15 11:34:58.087461] [0x00000001ed24a180] [info]    index 0, upward_compatible_printers Bambu Lab A1 0.4 nozzle
+[2026-09-15 11:34:58.087470] [0x00000001ed24a180] [info]    index 1, upward_compatible_printers Bambu Lab P2S 0.4 nozzle
+[2026-09-15 11:34:58.087480] [0x00000001ed24a180] [info]    index 2, upward_compatible_printers Bambu Lab H2S 0.4 nozzle
+[2026-09-15 11:34:58.087490] [0x00000001ed24a180] [info]    index 3, upward_compatible_printers Bambu Lab H2D 0.4 nozzle
+[2026-09-15 11:34:58.087498] [0x00000001ed24a180] [info]    index 4, upward_compatible_printers Bambu Lab H2D Pro 0.4 nozzle
+[2026-09-15 11:34:58.087508] [0x00000001ed24a180] [info]    index 5, upward_compatible_printers Bambu Lab H2C 0.4 nozzle
+[2026-09-15 11:34:58.087519] [0x00000001ed24a180] [info]    index 6, upward_compatible_printers Bambu Lab A2L 0.4 nozzle
+[2026-09-15 11:34:58.087531] [0x00000001ed24a180] [info]    old printer Bambu Lab X2D 0.4 nozzle, inherited from Bambu Lab X2D 0.4 nozzle, old process 0.20mm Standard @BBL X2D, inherited from 0.20mm Standard @BBL X2D ,compatible 1
+[2026-09-15 11:34:58.087555] [0x00000001ed24a180] [warning] no filament colors found in projects
+[2026-09-15 11:34:58.087565] [0x00000001ed24a180] [info]    total 1 models, 0 objects
+
+[2026-09-15 11:34:58.088455] [0x00000001ed24a180] [info]    4160, remove_wrapping_detect 0, old value 0
+[2026-09-15 11:34:58.088529] [0x00000001ed24a180] [info]    Line 4274: shared_printable_size {236, 256, 256}, shared_center {138, 128}
+[2026-09-15 11:34:58.088545] [0x00000001ed24a180] [info]    old printable size {256, 256, 261}, new printable size {256, 256, 261}, extract the same, no need shrink
+[2026-09-15 11:34:58.088556] [0x00000001ed24a180] [info]    translate_old 0, shrink_to_new_bed 0, old bed size {256, 256, 261}
+[2026-09-15 11:34:58.088566] [0x00000001ed24a180] [info]    reset_size:before size: plate_width 0, plate_depth 0, plate_height 0
+[2026-09-15 11:34:58.088575] [0x00000001ed24a180] [info]    reset_size:after size: plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.088589] [0x00000001ed24a180] [info]    set_pos_and_size: plate_id 0, before, origin {0,0,0}, plate_width 0, plate_depth 0, plate_height 0
+[2026-09-15 11:34:58.088603] [0x00000001ed24a180] [info]    set_pos_and_size: with_instance_move 0, after, origin {0,0,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.088617] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-09-15 11:34:58.088634] [0x00000001ed24a180] [info]    set_pos_and_size: plate_id 1, before, origin {0,0,0}, plate_width 0, plate_depth 0, plate_height 0
+[2026-09-15 11:34:58.088645] [0x00000001ed24a180] [info]    set_pos_and_size: with_instance_move 0, after, origin {307.2,0,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.088655] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-09-15 11:34:58.088678] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-09-15 11:34:58.088692] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-09-15 11:34:58.088720] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
+[2026-09-15 11:34:58.088732] [0x00000001ed24a180] [info]    set_filament_count: filament_count=1
+[2026-09-15 11:34:58.088755] [0x00000001ed24a180] [info]    update_plate_cols:m_plate_count 1, m_plate_cols change to 1
+[2026-09-15 11:34:58.088773] [0x00000001ed24a180] [info]    set_pos_and_size: plate_id 0, before, origin {0,0,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.088785] [0x00000001ed24a180] [info]    set_pos_and_size: with_instance_move 0, after, origin {0,0,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.088796] [0x00000001ed24a180] [info]    set_pos_and_size: plate_id 1, before, origin {307.2,0,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.088807] [0x00000001ed24a180] [info]    set_pos_and_size: with_instance_move 0, after, origin {307.2,0,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.088816] [0x00000001ed24a180] [info]    PartPlate same shape, skip directly
+[2026-09-15 11:34:58.088828] [0x00000001ed24a180] [info]    load_from_3mf_structure: plate 0, gcode_file , is_sliced_valid 0, toolpath_outside 0, is_support_used 0 is_label_object_enabled 0
+[2026-09-15 11:34:58.088840] [0x00000001ed24a180] [warning] load_nozzle_infos_with_compatibility: building nozzle list from filament map and volume types
+[2026-09-15 11:34:58.088863] [0x00000001ed24a180] [info]    update_plate_cols:m_plate_count 2, m_plate_cols change to 2
+[2026-09-15 11:34:58.088875] [0x00000001ed24a180] [info]    set_pos_and_size: plate_id 0, before, origin {0,0,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.088884] [0x00000001ed24a180] [info]    set_pos_and_size: with_instance_move 0, after, origin {0,0,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.088894] [0x00000001ed24a180] [info]    set_pos_and_size: plate_id 1, before, origin {307.2,0,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.088903] [0x00000001ed24a180] [info]    set_pos_and_size: with_instance_move 0, after, origin {307.2,0,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.088917] [0x00000001ed24a180] [info]    set_pos_and_size: plate_id 1, before, origin {307.2,0,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.088927] [0x00000001ed24a180] [info]    set_pos_and_size: with_instance_move 0, after, origin {0,-307.2,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.088935] [0x00000001ed24a180] [info]    PartPlate same shape, skip directly
+[2026-09-15 11:34:58.088942] [0x00000001ed24a180] [info]    PartPlate same shape, skip directly
+[2026-09-15 11:34:58.088956] [0x00000001ed24a180] [info]    load_from_3mf_structure: plate 1, gcode_file , is_sliced_valid 0, toolpath_outside 0, is_support_used 0 is_label_object_enabled 0
+[2026-09-15 11:34:58.088964] [0x00000001ed24a180] [warning] load_nozzle_infos_with_compatibility: building nozzle list from filament map and volume types
+[2026-09-15 11:34:58.088987] [0x00000001ed24a180] [info]    update_plate_cols:m_plate_count 3, m_plate_cols change to 2
+[2026-09-15 11:34:58.089000] [0x00000001ed24a180] [info]    set_pos_and_size: plate_id 2, before, origin {0,-307.2,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.089012] [0x00000001ed24a180] [info]    set_pos_and_size: with_instance_move 0, after, origin {307.2,-307.2,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.089026] [0x00000001ed24a180] [info]    load_from_3mf_structure: plate 2, gcode_file , is_sliced_valid 0, toolpath_outside 0, is_support_used 0 is_label_object_enabled 0
+[2026-09-15 11:34:58.089034] [0x00000001ed24a180] [warning] load_nozzle_infos_with_compatibility: building nozzle list from filament map and volume types
+[2026-09-15 11:34:58.089054] [0x00000001ed24a180] [info]    update_plate_cols:m_plate_count 4, m_plate_cols change to 2
+[2026-09-15 11:34:58.089068] [0x00000001ed24a180] [info]    set_pos_and_size: plate_id 3, before, origin {307.2,-307.2,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.089078] [0x00000001ed24a180] [info]    set_pos_and_size: with_instance_move 0, after, origin {614.4,-307.2,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.089088] [0x00000001ed24a180] [info]    load_from_3mf_structure: plate 3, gcode_file , is_sliced_valid 0, toolpath_outside 0, is_support_used 0 is_label_object_enabled 0
+[2026-09-15 11:34:58.089096] [0x00000001ed24a180] [warning] load_nozzle_infos_with_compatibility: building nozzle list from filament map and volume types
+[2026-09-15 11:34:58.089121] [0x00000001ed24a180] [info]    update_plate_cols:m_plate_count 5, m_plate_cols change to 3
+[2026-09-15 11:34:58.089136] [0x00000001ed24a180] [info]    set_pos_and_size: plate_id 0, before, origin {0,0,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.089146] [0x00000001ed24a180] [info]    set_pos_and_size: with_instance_move 0, after, origin {0,0,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.089157] [0x00000001ed24a180] [info]    set_pos_and_size: plate_id 1, before, origin {307.2,0,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.089168] [0x00000001ed24a180] [info]    set_pos_and_size: with_instance_move 0, after, origin {307.2,0,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.089181] [0x00000001ed24a180] [info]    set_pos_and_size: plate_id 2, before, origin {0,-307.2,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.089191] [0x00000001ed24a180] [info]    set_pos_and_size: with_instance_move 0, after, origin {614.4,0,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.089199] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 2 , update slice result from 0 to 0
+[2026-09-15 11:34:58.089210] [0x00000001ed24a180] [info]    set_pos_and_size: plate_id 3, before, origin {307.2,-307.2,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.089229] [0x00000001ed24a180] [info]    set_pos_and_size: with_instance_move 0, after, origin {0,-307.2,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.089238] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 3 , update slice result from 0 to 0
+[2026-09-15 11:34:58.089247] [0x00000001ed24a180] [info]    set_pos_and_size: plate_id 4, before, origin {307.2,-307.2,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.089257] [0x00000001ed24a180] [info]    set_pos_and_size: with_instance_move 0, after, origin {307.2,-307.2,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.089266] [0x00000001ed24a180] [info]    set_pos_and_size: plate_id 4, before, origin {614.4,-307.2,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.089276] [0x00000001ed24a180] [info]    set_pos_and_size: with_instance_move 0, after, origin {614.4,-307.2,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.089283] [0x00000001ed24a180] [info]    PartPlate same shape, skip directly
+[2026-09-15 11:34:58.089290] [0x00000001ed24a180] [info]    PartPlate same shape, skip directly
+[2026-09-15 11:34:58.089301] [0x00000001ed24a180] [info]    PartPlate same shape, skip directly
+[2026-09-15 11:34:58.089312] [0x00000001ed24a180] [info]    load_from_3mf_structure: plate 4, gcode_file , is_sliced_valid 0, toolpath_outside 0, is_support_used 0 is_label_object_enabled 0
+[2026-09-15 11:34:58.089319] [0x00000001ed24a180] [warning] load_nozzle_infos_with_compatibility: building nozzle list from filament map and volume types
+[2026-09-15 11:34:58.089339] [0x00000001ed24a180] [info]    update_plate_cols:m_plate_count 6, m_plate_cols change to 3
+[2026-09-15 11:34:58.089353] [0x00000001ed24a180] [info]    set_pos_and_size: plate_id 5, before, origin {614.4,-307.2,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.089363] [0x00000001ed24a180] [info]    set_pos_and_size: with_instance_move 0, after, origin {0,-614.4,0}, plate_width 256, plate_depth 256, plate_height 261
+[2026-09-15 11:34:58.089372] [0x00000001ed24a180] [info]    load_from_3mf_structure: plate 5, gcode_file , is_sliced_valid 0, toolpath_outside 0, is_support_used 0 is_label_object_enabled 0
+[2026-09-15 11:34:58.089381] [0x00000001ed24a180] [warning] load_nozzle_infos_with_compatibility: building nozzle list from filament map and volume types
+[2026-09-15 11:34:58.089394] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-09-15 11:34:58.089406] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
+[2026-09-15 11:34:58.089416] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 2 , update slice result from 0 to 0
+[2026-09-15 11:34:58.089424] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 3 , update slice result from 0 to 0
+[2026-09-15 11:34:58.089432] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 4 , update slice result from 0 to 0
+[2026-09-15 11:34:58.089439] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 5 , update slice result from 0 to 0
+[2026-09-15 11:34:58.089462] [0x00000001ed24a180] [info]    add_instance: plate 0 , m_ready_for_slice changes to 1
+[2026-09-15 11:34:58.089473] [0x00000001ed24a180] [info]    add_instance: plate 1 , m_ready_for_slice changes to 1
+[2026-09-15 11:34:58.089483] [0x00000001ed24a180] [info]    add_instance: plate 2 , m_ready_for_slice changes to 1
+[2026-09-15 11:34:58.089492] [0x00000001ed24a180] [info]    add_instance: plate 2 , m_ready_for_slice changes to 1
+[2026-09-15 11:34:58.089502] [0x00000001ed24a180] [info]    add_instance: plate 3 , m_ready_for_slice changes to 1
+[2026-09-15 11:34:58.089511] [0x00000001ed24a180] [info]    add_instance: plate 3 , m_ready_for_slice changes to 1
+[2026-09-15 11:34:58.089522] [0x00000001ed24a180] [info]    add_instance: plate 4 , m_ready_for_slice changes to 1
+[2026-09-15 11:34:58.089539] [0x00000001ed24a180] [info]    add_instance: plate 4 , m_ready_for_slice changes to 1
+[2026-09-15 11:34:58.089550] [0x00000001ed24a180] [info]    add_instance: plate 4 , m_ready_for_slice changes to 1
+[2026-09-15 11:34:58.089560] [0x00000001ed24a180] [info]    add_instance: plate 4 , m_ready_for_slice changes to 1
+[2026-09-15 11:34:58.089570] [0x00000001ed24a180] [info]    add_instance: plate 4 , m_ready_for_slice changes to 1
+[2026-09-15 11:34:58.089580] [0x00000001ed24a180] [info]    add_instance: plate 5 , m_ready_for_slice changes to 1
+[2026-09-15 11:34:58.089606] [0x00000001ed24a180] [info]    plate 1, object bbox: min {17.01, 18, 0} - max {238.99, 238, 8}
+[2026-09-15 11:34:58.089904] [0x00000001ed24a180] [info]    plate 1, has wipe tower, wipe bbox: min {34.8599, 215.615, 0} - max {59.1227, 239.878, 0}
+[2026-09-15 11:34:58.089919] [0x00000001ed24a180] [info]    plate 1,  has_wipe_tower 1, wipe_x 35.4999, wipe_y 216.255, width 22.9828, depth 22.9828
+[2026-09-15 11:34:58.089931] [0x00000001ed24a180] [info]    plate 2, object bbox: min {327.2, 84, 0} - max {543.2, 172, 90}
+[2026-09-15 11:34:58.089985] [0x00000001ed24a180] [info]    filaments_cnt=1, set to no wipe tower
+[2026-09-15 11:34:58.089996] [0x00000001ed24a180] [info]    plate 2,  has_wipe_tower 0, wipe_x 0, wipe_y 0, width 0, depth 0
+[2026-09-15 11:34:58.090023] [0x00000001ed24a180] [info]    plate 3, object bbox: min {654.9, 88.35, 0} - max {829.9, 167.65, 2}
+[2026-09-15 11:34:58.090646] [0x00000001ed24a180] [info]    filaments_cnt=1, set to no wipe tower
+[2026-09-15 11:34:58.090660] [0x00000001ed24a180] [info]    plate 3,  has_wipe_tower 0, wipe_x 0, wipe_y 0, width 0, depth 0
+[2026-09-15 11:34:58.090689] [0x00000001ed24a180] [info]    plate 4, object bbox: min {28, -217.2, 0} - max {228, -140.2, 7.4}
+[2026-09-15 11:34:58.091390] [0x00000001ed24a180] [info]    filaments_cnt=1, set to no wipe tower
+[2026-09-15 11:34:58.091407] [0x00000001ed24a180] [info]    plate 4,  has_wipe_tower 0, wipe_x 0, wipe_y 0, width 0, depth 0
+[2026-09-15 11:34:58.091419] [0x00000001ed24a180] [info]    plate 5, object bbox: min {359.2, -181.2, 0} - max {511.2, -177.2, 3}
+[2026-09-15 11:34:58.091497] [0x00000001ed24a180] [info]    plate 5, has wipe tower, wipe bbox: min {471.96, -90.043, 0} - max {495.423, -66.5802, 0}
+[2026-09-15 11:34:58.091507] [0x00000001ed24a180] [info]    plate 5,  has_wipe_tower 1, wipe_x 165, wipe_y 217.397, width 22.9828, depth 22.9828
+[2026-09-15 11:34:58.091526] [0x00000001ed24a180] [info]    plate 6, object bbox: min {718.4, -214.2, 0} - max {766.4, -144.2, 20.7}
+[2026-09-15 11:34:58.091897] [0x00000001ed24a180] [info]    filaments_cnt=1, set to no wipe tower
+[2026-09-15 11:34:58.091908] [0x00000001ed24a180] [info]    plate 6,  has_wipe_tower 0, wipe_x 0, wipe_y 0, width 0, depth 0
+[2026-09-15 11:34:58.091932] [0x00000001ed24a180] [info]    will start transforms, commands count 0
+
+[2026-09-15 11:34:58.091941] [0x00000001ed24a180] [info]    finished model pre-process commands
+
+[2026-09-15 11:34:58.091953] [0x00000001ed24a180] [info]    before arrange, need_arrange=0, duplicate_count 0, filament_color_changed 0
+[Brand-Template-V2-DRAFT.3mf]
+size_x = 221.979988
+size_y = 220.000000
+size_z = 8.000000
+min_x = -110.989998
+min_y = -110.000000
+min_z = 0.000000
+max_x = 110.989990
+max_y = 110.000000
+max_z = 8.000000
+number_of_facets = 2578
+manifold = yes
+number_of_parts =  77
+volume = 197175.203125
+[Brand-Template-V2-DRAFT.3mf]
+size_x = 216.000000
+size_y = 88.000000
+size_z = 90.000000
+min_x = -108.000000
+min_y = -44.000000
+min_z = -45.000000
+max_x = 108.000000
+max_y = 44.000000
+max_z = 45.000000
+number_of_facets = 312
+manifold = yes
+number_of_parts =  1
+volume = 277094.343750
+[Brand-Template-V2-DRAFT.3mf]
+size_x = 81.000000
+size_y = 79.300003
+size_z = 2.000000
+min_x = -40.500000
+min_y = -39.650002
+min_z = -1.000000
+max_x = 40.500000
+max_y = 39.650002
+max_z = 1.000000
+number_of_facets = 3080
+manifold = yes
+number_of_parts =  8
+volume = 12308.199219
+[Brand-Template-V2-DRAFT.3mf]
+size_x = 81.000000
+size_y = 79.300003
+size_z = 2.000000
+min_x = -40.500000
+min_y = -39.650002
+min_z = -1.000000
+max_x = 40.500000
+max_y = 39.650002
+max_z = 1.000000
+number_of_facets = 3080
+manifold = yes
+number_of_parts =  8
+volume = 12308.199219
+[Brand-Template-V2-DRAFT.3mf]
+size_x = 200.000000
+size_y = 20.000000
+size_z = 7.400000
+min_x = -100.000000
+min_y = -10.000000
+min_z = -3.700000
+max_x = 100.000000
+max_y = 10.000000
+max_z = 3.700000
+number_of_facets = 4004
+manifold = yes
+number_of_parts =  17
+volume = 9914.407227
+[Brand-Template-V2-DRAFT.3mf]
+size_x = 54.000000
+size_y = 28.000000
+size_z = 7.400000
+min_x = -27.000000
+min_y = -14.000000
+min_z = -3.700000
+max_x = 27.000000
+max_y = 14.000000
+max_z = 3.700000
+number_of_facets = 3304
+manifold = yes
+number_of_parts =  9
+volume = 3943.198730
+[Brand-Template-V2-DRAFT.3mf]
+size_x = 24.000000
+size_y = 4.000000
+size_z = 3.000000
+min_x = -12.000000
+min_y = -2.000000
+min_z = 0.000000
+max_x = 12.000000
+max_y = 2.000000
+max_z = 3.000000
+number_of_facets = 96
+manifold = yes
+number_of_parts =  4
+volume = 288.000061
+[Brand-Template-V2-DRAFT.3mf]
+size_x = 24.000000
+size_y = 4.000000
+size_z = 3.000000
+min_x = -12.000000
+min_y = -2.000000
+min_z = 0.000000
+max_x = 12.000000
+max_y = 2.000000
+max_z = 3.000000
+number_of_facets = 96
+manifold = yes
+number_of_parts =  4
+volume = 288.000061
+[Brand-Template-V2-DRAFT.3mf]
+size_x = 24.000000
+size_y = 4.000000
+size_z = 3.000000
+min_x = -12.000000
+min_y = -2.000000
+min_z = 0.000000
+max_x = 12.000000
+max_y = 2.000000
+max_z = 3.000000
+number_of_facets = 96
+manifold = yes
+number_of_parts =  4
+volume = 288.000061
+[Brand-Template-V2-DRAFT.3mf]
+size_x = 24.000000
+size_y = 4.000000
+size_z = 3.000000
+min_x = -12.000000
+min_y = -2.000000
+min_z = 0.000000
+max_x = 12.000000
+max_y = 2.000000
+max_z = 3.000000
+number_of_facets = 96
+manifold = yes
+number_of_parts =  4
+volume = 288.000061
+[Brand-Template-V2-DRAFT.3mf]
+size_x = 24.000000
+size_y = 4.000000
+size_z = 3.000000
+min_x = -12.000000
+min_y = -2.000000
+min_z = 0.000000
+max_x = 12.000000
+max_y = 2.000000
+max_z = 3.000000
+number_of_facets = 96
+manifold = yes
+number_of_parts =  4
+volume = 288.000061
+[Brand-Template-V2-DRAFT.3mf]
+size_x = 48.000000
+size_y = 70.000000
+size_z = 20.700001
+min_x = -24.000000
+min_y = -35.000000
+min_z = -10.350000
+max_x = 24.000000
+max_y = 35.000000
+max_z = 10.350000
+number_of_facets = 3874
+manifold = yes
+number_of_parts =  9
+volume = 21273.722656
+[2026-09-15 11:34:58.093044] [0x00000001ed24a180] [info]    run, Finished
+
+[2026-09-15 11:34:58.096400] [0x00000001ed24a180] [info]    record_exit_reson:604, saved config to result.json
+
+[2026-09-15 11:34:58.096449] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-09-15 11:34:58.096462] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+[2026-09-15 11:34:58.096473] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
+[2026-09-15 11:34:58.096486] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
+[2026-09-15 11:34:58.096495] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 2 , update slice result from 0 to 0
+[2026-09-15 11:34:58.096503] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 2 , update slice result from 0 to 0
+[2026-09-15 11:34:58.096511] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 3 , update slice result from 0 to 0
+[2026-09-15 11:34:58.096518] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 3 , update slice result from 0 to 0
+[2026-09-15 11:34:58.096529] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 4 , update slice result from 0 to 0
+[2026-09-15 11:34:58.096540] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 4 , update slice result from 0 to 0
+[2026-09-15 11:34:58.096551] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 5 , update slice result from 0 to 0
+[2026-09-15 11:34:58.096559] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 5 , update slice result from 0 to 0
+[2026-09-15 11:34:58.096599] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 6 , update slice result from 0 to 0
+[2026-09-15 11:34:58.096610] [0x00000001ed24a180] [info]    update_slice_result_valid_state: plate 6 , update slice result from 0 to 0
+[2026-09-15 11:34:58.096647] [0x00000001ed24a180] [info]    _BBS_Backup_Manager inital and interval = 60
+[2026-09-15 11:34:58.096686] [0x00000001ed24a180] [info]    remove_backup 11_34_58#22023#3, true
+[2026-09-15 11:34:58.096709] [0x000000016b35f000] [info]    process_task{ type:RemoveBackup, id:3, path:11_34_58#22023#3, object:0, extra:1}

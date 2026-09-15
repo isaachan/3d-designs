@@ -1,0 +1,82 @@
+{
+  "six_plates_in_both_projects": true,
+  "twelve_built_objects_in_each": true,
+  "component_references_valid": true,
+  "universal_objects_identical": [
+    "Universal road + receiver rails",
+    "Universal showroom shell",
+    "Universal wheel stop 1",
+    "Universal wheel stop 2",
+    "Universal wheel stop 3",
+    "Universal wheel stop 4",
+    "Universal wheel stop 5"
+  ],
+  "mesh_sha256": {
+    "Universal road + receiver rails": [
+      [
+        "1",
+        "6514dd7de84b1dc3ee35debb51d703f8d37b714d5644e6864341d39299237b79"
+      ],
+      [
+        "4",
+        "dbda737297cc51f082d23800392a24cc1608ce45baf4438b4d767b5f7ebc5cf6"
+      ]
+    ],
+    "Universal showroom shell": [
+      [
+        "3",
+        "d1ebc2ba95fae601fcaf3a9f0a7c88c846c2deff03227bf0c7c5235a095e040d"
+      ]
+    ],
+    "Universal wheel stop 1": [
+      [
+        "2",
+        "bb2428de72df288b266bf07d037aa1a003b8fc1331aef0c606a3ac01fbeaf25f"
+      ],
+      [
+        "1",
+        "5e5f2f1f78f732202500cdc75353acb2eb4c7256f27354fc66bf3c0d522abfc6"
+      ]
+    ],
+    "Universal wheel stop 2": [
+      [
+        "2",
+        "bb2428de72df288b266bf07d037aa1a003b8fc1331aef0c606a3ac01fbeaf25f"
+      ],
+      [
+        "1",
+        "5e5f2f1f78f732202500cdc75353acb2eb4c7256f27354fc66bf3c0d522abfc6"
+      ]
+    ],
+    "Universal wheel stop 3": [
+      [
+        "2",
+        "bb2428de72df288b266bf07d037aa1a003b8fc1331aef0c606a3ac01fbeaf25f"
+      ],
+      [
+        "1",
+        "5e5f2f1f78f732202500cdc75353acb2eb4c7256f27354fc66bf3c0d522abfc6"
+      ]
+    ],
+    "Universal wheel stop 4": [
+      [
+        "2",
+        "bb2428de72df288b266bf07d037aa1a003b8fc1331aef0c606a3ac01fbeaf25f"
+      ],
+      [
+        "1",
+        "5e5f2f1f78f732202500cdc75353acb2eb4c7256f27354fc66bf3c0d522abfc6"
+      ]
+    ],
+    "Universal wheel stop 5": [
+      [
+        "2",
+        "bb2428de72df288b266bf07d037aa1a003b8fc1331aef0c606a3ac01fbeaf25f"
+      ],
+      [
+        "1",
+        "5e5f2f1f78f732202500cdc75353acb2eb4c7256f27354fc66bf3c0d522abfc6"
+      ]
+    ]
+  }
+}
