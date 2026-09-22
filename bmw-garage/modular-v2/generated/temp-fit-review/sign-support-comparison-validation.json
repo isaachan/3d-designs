@@ -1,0 +1,22 @@
+{
+  "file": "/Users/kai.han/code/3d-designs/bmw-garage/modular-v2/generated/temp-fit-review/Sign-Back-Support-Comparison-VIEW-ONLY.3mf",
+  "status": "VIEW ONLY - comparison of original vs rear support ledge",
+  "plates": 2,
+  "objects": 2,
+  "exported_meshes_validated": 9,
+  "colors": {
+    "gray": "existing receiver/shell",
+    "green": "new rear support ledge",
+    "blue": "exploded fascia",
+    "white": "installed fascia copy"
+  },
+  "nominal_fascia_back_face_y_mm": 20.0,
+  "support_ledge_y_mm": [
+    19.85,
+    21.35
+  ],
+  "support_ledge_z_mm": [
+    84.0,
+    104.0
+  ]
+}

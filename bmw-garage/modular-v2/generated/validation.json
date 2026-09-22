@@ -32,7 +32,7 @@
         [
           108.0,
           108.0,
-          92.0
+          104.0
         ]
       ],
       "all_color_meshes_watertight": true,
@@ -90,7 +90,7 @@
         ]
       ],
       "all_color_meshes_watertight": true,
-      "color_overlap_mm3": 0.0019184796801710036
+      "color_overlap_mm3": 0.0019105144183413358
     },
     {
       "name": "BMW interior sign",

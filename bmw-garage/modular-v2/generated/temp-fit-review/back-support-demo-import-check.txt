@@ -1,0 +1,43 @@
+[2026-09-15 21:38:44.622271] [0x00000001ed24a180] [trace]   Initializing StaticPrintConfigs
+[Back-Support-Ledge-Demo-TEMP.3mf]
+size_x = 70.000000
+size_y = 16.000000
+size_z = 7.400000
+min_x = -35.000000
+min_y = -8.000000
+min_z = -3.700000
+max_x = 35.000000
+max_y = 8.000000
+max_z = 3.700000
+number_of_facets = 76
+manifold = yes
+number_of_parts =  1
+volume = 2989.604980
+[Back-Support-Ledge-Demo-TEMP.3mf]
+size_x = 78.000000
+size_y = 22.000000
+size_z = 5.400000
+min_x = -39.000000
+min_y = -11.000000
+min_z = -2.700000
+max_x = 39.000000
+max_y = 11.000000
+max_z = 2.700000
+number_of_facets = 92
+manifold = yes
+number_of_parts =  1
+volume = 7960.864258
+[Back-Support-Ledge-Demo-TEMP.3mf]
+size_x = 42.000000
+size_y = 8.000000
+size_z = 7.800000
+min_x = -21.000000
+min_y = -4.000000
+min_z = -3.900000
+max_x = 21.000000
+max_y = 4.000000
+max_z = 3.900000
+number_of_facets = 32
+manifold = yes
+number_of_parts =  1
+volume = 2544.000244

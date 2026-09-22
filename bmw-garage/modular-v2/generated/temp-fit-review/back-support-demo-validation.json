@@ -1,0 +1,67 @@
+{
+  "status": "TEMP white demo; not a final production interface",
+  "file": "/Users/kai.han/code/3d-designs/bmw-garage/modular-v2/generated/temp-fit-review/Back-Support-Ledge-Demo-TEMP.3mf",
+  "objects": 3,
+  "exported_meshes_checked": 3,
+  "socket_clearance_each_side_mm": 0.2,
+  "note": "Receiver is printed front-face-up to make the support ledge visible. It demonstrates the ledge concept, not final full-length dimensions.",
+  "parts": [
+    {
+      "name": "short removable sign with two pegs - white",
+      "bounds_mm": [
+        [
+          -35.0,
+          -8.0,
+          0.0
+        ],
+        [
+          35.0,
+          8.0,
+          7.400000095367432
+        ]
+      ],
+      "bed_xy_offset": [
+        -45,
+        30
+      ]
+    },
+    {
+      "name": "short receiver with continuous back support ledge - white",
+      "bounds_mm": [
+        [
+          -39.0,
+          -11.0,
+          0.0
+        ],
+        [
+          39.0,
+          11.0,
+          5.400000095367432
+        ]
+      ],
+      "bed_xy_offset": [
+        -45,
+        -20
+      ]
+    },
+    {
+      "name": "one-piece side cutaway showing ledge contact - white",
+      "bounds_mm": [
+        [
+          -21.0,
+          -4.0,
+          0.0
+        ],
+        [
+          21.0,
+          4.0,
+          7.800000190734863
+        ]
+      ],
+      "bed_xy_offset": [
+        45,
+        0
+      ]
+    }
+  ]
+}

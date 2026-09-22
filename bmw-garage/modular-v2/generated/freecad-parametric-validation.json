@@ -1,0 +1,93 @@
+{
+  "file": "/Users/kai.han/code/3d-designs/bmw-garage/modular-v2/generated/BMW-Modular-V2-DRAFT.FCStd",
+  "bodies_checked_against_meshes": [
+    {
+      "label": "Plate1 Road floor + rails",
+      "volume_mm3": 197164.18,
+      "features": 12,
+      "mesh_volume_mm3": 197175.576,
+      "rel_error": 5.8e-05
+    },
+    {
+      "label": "Plate2 showroom shell",
+      "volume_mm3": 282112.432,
+      "features": 20,
+      "mesh_volume_mm3": 282115.713,
+      "rel_error": 1.2e-05
+    },
+    {
+      "label": "Plate3 partition 1",
+      "volume_mm3": 12356.2,
+      "features": 2,
+      "mesh_volume_mm3": 12308.2,
+      "rel_error": 0.0039
+    },
+    {
+      "label": "Plate3 partition 2",
+      "volume_mm3": 12356.2,
+      "features": 2,
+      "mesh_volume_mm3": 12308.2,
+      "rel_error": 0.0039
+    },
+    {
+      "label": "Plate4 front fascia (0.20 sockets + ribs)",
+      "volume_mm3": 9918.394,
+      "features": 5,
+      "mesh_volume_mm3": 9918.392,
+      "rel_error": 0.0
+    },
+    {
+      "label": "Plate4 interior sign",
+      "volume_mm3": 3943.2,
+      "features": 1,
+      "mesh_volume_mm3": 3943.202,
+      "rel_error": 1e-06
+    },
+    {
+      "label": "Plate5 wheel stop 1",
+      "volume_mm3": 288.0,
+      "features": 4,
+      "mesh_volume_mm3": 288.0,
+      "rel_error": 0.0
+    },
+    {
+      "label": "Plate5 wheel stop 2",
+      "volume_mm3": 288.0,
+      "features": 4,
+      "mesh_volume_mm3": 288.0,
+      "rel_error": 0.0
+    },
+    {
+      "label": "Plate5 wheel stop 3",
+      "volume_mm3": 288.0,
+      "features": 4,
+      "mesh_volume_mm3": 288.0,
+      "rel_error": 0.0
+    },
+    {
+      "label": "Plate5 wheel stop 4",
+      "volume_mm3": 288.0,
+      "features": 4,
+      "mesh_volume_mm3": 288.0,
+      "rel_error": 0.0
+    },
+    {
+      "label": "Plate5 wheel stop 5",
+      "volume_mm3": 288.0,
+      "features": 4,
+      "mesh_volume_mm3": 288.0,
+      "rel_error": 0.0
+    },
+    {
+      "label": "Plate6 office cassette",
+      "volume_mm3": 21276.911,
+      "mesh_volume_mm3": 21273.643,
+      "rel_error": 0.000154
+    }
+  ],
+  "notes": [
+    "print orientation, same normalization as the STLs",
+    "roundels are editable circle sketches; letters/text omitted",
+    "colors not set: file written from console Python without GUI"
+  ]
+}

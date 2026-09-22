@@ -17,6 +17,8 @@ import matplotlib.pyplot as plt
 HERE=Path(__file__).resolve().parent
 OUT=HERE/'generated'
 GAP=.30  # each side, NOT total diametral clearance
+FRONT_SIGN_GAP=.20  # test result: front fascia needed the tighter socket fit
+FRONT_SIGN_RIB=.12  # local peg friction ribs; do not shrink the whole peg
 COLORS={1:'#16191D',2:'#F4D52D',3:'#979CA3',4:'#FFFFFF',5:'#0066CC'}
 NAMES=['Road and parking - UNIVERSAL','Showroom - UNIVERSAL','Glass - BMW KIT','Signs - BMW KIT','Wheel stops - UNIVERSAL','Office - BMW KIT']
 items=[]
@@ -62,7 +64,7 @@ def peg(cx,cz,y0):
     p=Polygon([(cx-4,y0),(cx+4,y0),(cx+4,y0+4),(cx+3.3,y0+5),(cx-3.3,y0+5),(cx-4,y0+4)])
     return extrude(p,cz-2,4)
 
-def make_sign(name,w,h,center,zbottom,yfront,spacing,plate,main_text):
+def make_sign(name,w,h,center,zbottom,yfront,spacing,plate,main_text,friction_ribs=False):
     # Print face-down: colored layers are first .4 mm, pegs grow upwards.
     base=block(-w/2,w/2,0,h,0,2.4)
     r=min(h*.40,8)
@@ -75,6 +77,10 @@ def make_sign(name,w,h,center,zbottom,yfront,spacing,plate,main_text):
     pegs=[]
     for x in [-spacing/2,spacing/2]:
         a=peg(x,4,2.4)
+        if friction_ribs:
+            ribs=[block(x-4-FRONT_SIGN_RIB,x-4,3.0,6.2,2.7,5.3),
+                  block(x+4,x+4+FRONT_SIGN_RIB,3.0,6.2,2.7,5.3)]
+            a=union([a,*ribs])
         pegs.append(transform(a,np.linalg.inv(SIGN)))
     backing=union([backing,*pegs])
     mat=SIGN.copy(); mat[:3,3]=[center,yfront,zbottom]
@@ -111,11 +117,15 @@ def build():
     shell += [rail(x,81,True) for x in [-30,45]]
     # Low socket towers ABOVE opening ensure fascia cannot obstruct glass removal.
     for x in [-92,92]: shell.append(block(x-7,x+7,20,29,84,92))
+    # Test result: the full-width fascia was too loose and did not sit flat on the
+    # short receiver beam. Add a continuous upper back-stop so the fascia back has
+    # a real reference surface; pegs now mainly locate and resist pull-out.
+    shell.append(block(-104,104,20,22,92,104))
     for x in [-16,16]: shell.append(block(x-7,x+7,99.5,104,39,48))
     for x,y in locators: shell.append(block(x-1.2,x+1.2,y-4,y+4,2,4.1))
     shell=union(shell)
     sockets=[]
-    for x in [-92,92]: sockets.append(block(x-4-GAP,x+4+GAP,19.9,25.7,85.7,90.3))
+    for x in [-92,92]: sockets.append(block(x-4-FRONT_SIGN_GAP,x+4+FRONT_SIGN_GAP,19.9,25.7,85.8,90.2))
     for x in [-16,16]: sockets.append(block(x-4-GAP,x+4+GAP,99.4,105.2,40.7,45.3))
     # Open rear cable notch, no claim of compatibility with the v1 LED kit.
     sockets.append(block(88,96,103.9,108.1,78,84.1))
@@ -136,7 +146,7 @@ def build():
         parts={4:transform(backing,mat),**{c:transform(m,mat) for c,m in ins.items()}}
         add(f'BMW slide-out partition {index+1}',3,parts,np.linalg.inv(mat))
     # Plate 4: paired plug-in fascia and interior sign.
-    make_sign('BMW front fascia',200,20,0,84,17.6,184,4,'BMW GARAGE')
+    make_sign('BMW front fascia',200,20,0,84,17.6,184,4,'BMW GARAGE',friction_ribs=True)
     make_sign('BMW interior sign',54,28,0,39,97.1,32,4,'BMW')
     # Plate 5: five neutral yellow stops. Kept loose; glue if desired.
     for i,x in enumerate([-81.6,-40.8,0,40.8,81.6]):

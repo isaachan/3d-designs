@@ -1,0 +1,295 @@
+{
+  "status": "TEMP - not sliced or physically tested",
+  "plates": 3,
+  "objects": 19,
+  "validated_exported_meshes": 19,
+  "mesh_volume_and_watertight_checks": true,
+  "layout_bounds_and_2mm_separation_checks": true,
+  "parts": [
+    {
+      "name": "rail - gap 0.20 per side",
+      "plate": 1,
+      "xy_bounds": [
+        [
+          -75.0,
+          -89.0
+        ],
+        [
+          -55.0,
+          -61.0
+        ]
+      ],
+      "height_mm": 6.0
+    },
+    {
+      "name": "panel - gap 0.20 per side",
+      "plate": 1,
+      "xy_bounds": [
+        [
+          -75.0,
+          -38.0
+        ],
+        [
+          -55.0,
+          -26.0
+        ]
+      ],
+      "height_mm": 2.0
+    },
+    {
+      "name": "socket - gap 0.20 per side",
+      "plate": 1,
+      "xy_bounds": [
+        [
+          -75.0,
+          5.0
+        ],
+        [
+          -55.0,
+          17.0
+        ]
+      ],
+      "height_mm": 10.0
+    },
+    {
+      "name": "peg - gap 0.20 per side",
+      "plate": 1,
+      "xy_bounds": [
+        [
+          -73.0,
+          48.0
+        ],
+        [
+          -57.0,
+          60.0
+        ]
+      ],
+      "height_mm": 7.400000095367432
+    },
+    {
+      "name": "rail - gap 0.30 per side",
+      "plate": 1,
+      "xy_bounds": [
+        [
+          -10.0,
+          -89.0
+        ],
+        [
+          10.0,
+          -61.0
+        ]
+      ],
+      "height_mm": 6.0
+    },
+    {
+      "name": "panel - gap 0.30 per side",
+      "plate": 1,
+      "xy_bounds": [
+        [
+          -10.0,
+          -38.0
+        ],
+        [
+          10.0,
+          -26.0
+        ]
+      ],
+      "height_mm": 2.0
+    },
+    {
+      "name": "socket - gap 0.30 per side",
+      "plate": 1,
+      "xy_bounds": [
+        [
+          -10.0,
+          5.0
+        ],
+        [
+          10.0,
+          17.0
+        ]
+      ],
+      "height_mm": 10.0
+    },
+    {
+      "name": "peg - gap 0.30 per side",
+      "plate": 1,
+      "xy_bounds": [
+        [
+          -8.0,
+          48.0
+        ],
+        [
+          8.0,
+          60.0
+        ]
+      ],
+      "height_mm": 7.400000095367432
+    },
+    {
+      "name": "rail - gap 0.40 per side",
+      "plate": 1,
+      "xy_bounds": [
+        [
+          55.0,
+          -89.0
+        ],
+        [
+          75.0,
+          -61.0
+        ]
+      ],
+      "height_mm": 6.0
+    },
+    {
+      "name": "panel - gap 0.40 per side",
+      "plate": 1,
+      "xy_bounds": [
+        [
+          55.0,
+          -38.0
+        ],
+        [
+          75.0,
+          -26.0
+        ]
+      ],
+      "height_mm": 2.0
+    },
+    {
+      "name": "socket - gap 0.40 per side",
+      "plate": 1,
+      "xy_bounds": [
+        [
+          55.0,
+          5.0
+        ],
+        [
+          75.0,
+          17.0
+        ]
+      ],
+      "height_mm": 10.0
+    },
+    {
+      "name": "peg - gap 0.40 per side",
+      "plate": 1,
+      "xy_bounds": [
+        [
+          57.0,
+          48.0
+        ],
+        [
+          73.0,
+          60.0
+        ]
+      ],
+      "height_mm": 7.400000095367432
+    },
+    {
+      "name": "P3 fixture FLOOR - rear edge Y110",
+      "plate": 2,
+      "xy_bounds": [
+        [
+          -104.0,
+          -46.0
+        ],
+        [
+          -88.0,
+          46.0
+        ]
+      ],
+      "height_mm": 7.0
+    },
+    {
+      "name": "P3 fixture ROOF plus REAR WALL - rear edge Y108",
+      "plate": 2,
+      "xy_bounds": [
+        [
+          -74.0,
+          -44.0
+        ],
+        [
+          -58.0,
+          44.0
+        ]
+      ],
+      "height_mm": 88.0
+    },
+    {
+      "name": "P3 plain full-size partition - gap 0.30 fixture",
+      "plate": 2,
+      "xy_bounds": [
+        [
+          -28.5,
+          -39.650000810623176
+        ],
+        [
+          52.5,
+          39.65000081062317
+        ]
+      ],
+      "height_mm": 2.0
+    },
+    {
+      "name": "P4 actual 200mm fascia - 184mm peg spacing",
+      "plate": 3,
+      "xy_bounds": [
+        [
+          -100.0,
+          -88.0
+        ],
+        [
+          100.0,
+          -68.0
+        ]
+      ],
+      "height_mm": 7.399999618530273
+    },
+    {
+      "name": "P4 fascia receiver beam - gap 0.30",
+      "plate": 3,
+      "xy_bounds": [
+        [
+          -101.0,
+          -51.5
+        ],
+        [
+          101.0,
+          -42.5
+        ]
+      ],
+      "height_mm": 8.0
+    },
+    {
+      "name": "P4 actual interior sign - 32mm peg spacing",
+      "plate": 3,
+      "xy_bounds": [
+        [
+          -82.0,
+          -2.0
+        ],
+        [
+          -28.0,
+          26.0
+        ]
+      ],
+      "height_mm": 7.400001525878906
+    },
+    {
+      "name": "P4 interior receiver beam - gap 0.30",
+      "plate": 3,
+      "xy_bounds": [
+        [
+          12.0,
+          7.75
+        ],
+        [
+          58.0,
+          16.25
+        ]
+      ],
+      "height_mm": 9.0
+    }
+  ]
+}
