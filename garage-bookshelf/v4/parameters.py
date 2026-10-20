@@ -26,8 +26,6 @@ PARAMETERS = [
 ('DeckDepth','=BackFront-2*DeckEdgeGap','整层板深'),('DeckThickness','5 mm','层板面厚，沿用v3'),
 ('DeckFirstZ','66 mm','首层底高，沿用v3'),('DeckPitch','63 mm','层距，沿用v3'),
 ('DeckZ1','=DeckFirstZ','层1底高'),('DeckZ2','=DeckFirstZ+DeckPitch','层2底高'),('DeckZ3','=DeckFirstZ+2*DeckPitch','层3底高'),
-('DeckRibHeight','8 mm','整片层板下垂梁高'),('DeckRibWidth','8 mm','梁宽'),('DeckRibInset','26 mm','梁端距车库边'),
-('DeckRibFrontY','26 mm','前梁起点'),('DeckRibRearY','=BackFront-34 mm','后梁起点'),
 ('ColumnInset','14 mm','柱中心距车库左右边/前后边'),('ColumnX2','=GarageWidth-ColumnInset','右柱中心'),
 ('ColumnY2','=BackFront-ColumnInset','后柱中心'),('ColumnRadius','7 mm','分段柱轴半径'),('CollarRadius','10 mm','层板承托环半径'),
 ('CollarThickness','4 mm','托环厚'),('ConeHeight','=CollarRadius-ColumnRadius','45度锥肩高'),

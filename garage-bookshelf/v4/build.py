@@ -63,15 +63,6 @@ def deck(body):
     pad(body,'Pad_WholeDeck',rectangle(body,'Sketch_WholeDeck','DeckWidth','DeckDepth'),'DeckThickness')
     centres=[(f'{x}-DeckEdgeGap',f'{y}-DeckEdgeGap') for x,y in CENTRES]
     pocket(body,'Pocket_FourLocatingHoles',circles(body,'Sketch_FourLocatingHoles',centres,'HoleRadius','DeckThickness'),'DeckThickness')
-    polys=[]
-    for y in ('DeckRibFrontY','DeckRibRearY'):
-        x0='DeckRibInset-DeckEdgeGap';x1='GarageWidth-DeckRibInset-DeckEdgeGap'
-        y0=f'{y}-DeckEdgeGap';y1=f'{y}+DeckRibWidth-DeckEdgeGap'
-        polys.append([(x0,y0),(x1,y0),(x1,y1),(x0,y1)])
-    s=loops(body,'Sketch_IntegralRibs',polys)
-    f=body.newObject('PartDesign::Pad','Pad_IntegralRibs');f.Profile=s
-    f.setExpression('Length',expression('DeckRibHeight'));f.Reversed=True;f.Refine=True
-    finish(body,f)
 
 
 def column(body,top=False):

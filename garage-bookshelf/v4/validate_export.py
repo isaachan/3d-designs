@@ -41,10 +41,19 @@ def assembly(doc):
             assert v<.01,(i,offset,v)
             paths.append(dict(interface=i,positive_x_offset_mm=offset,overlap_mm3=v))
     # A deck is lowered onto its four supporting segments before the next four are installed.
-    deck_paths=[];contacts=[]
+    deck_paths=[];contacts=[];plain_decks=[]
     from build import CENTRES
     for lev in (1,2,3):
         plate=shapes[f'garage_deck_{lev}_Body'];z=evaluate(doc,f'DeckZ{lev}')
+        local=doc.getObject(f'garage_deck_{lev}_Body').Shape
+        box=local.optimalBoundingBox();thickness=evaluate(doc,'DeckThickness')
+        assert abs(box.ZMin)<1e-6 and abs(box.ZMax-thickness)<1e-6
+        expected=(evaluate(doc,'DeckWidth')*evaluate(doc,'DeckDepth')-4*3.141592653589793*evaluate(doc,'HoleRadius')**2)*thickness
+        assert abs(local.Volume-expected)<1e-5
+        assert not any('IntegralRibs' in feature.Name for feature in doc.getObject(f'garage_deck_{lev}_Body').Group)
+        clearance=z-(evaluate(doc,'BaseThickness') if lev==1 else evaluate(doc,f'DeckZ{lev-1}')+thickness)
+        assert abs(clearance-58)<1e-6
+        plain_decks.append(dict(level=lev,dimensions_mm=[box.XLength,box.YLength,box.ZLength],extra_rib_height_mm=0,solid_volume_mm3=local.Volume,minimum_clear_height_below_mm=clearance))
         fixed=[shapes[f'column_{n}_segment_{lev}_Body'] for n in range(1,5)]
         fixed.append(shapes['module_1_Body']);fixed.append(shapes['module_2_Body'])
         for dz in (12,8,3,0):
@@ -82,7 +91,7 @@ def assembly(doc):
         assert abs(area-evaluate(doc,'PostWidth')*evaluate(doc,'OverallHeight-PostBottom'))<.001
         mounting.append(dict(side=side,post_front_y_mm=pb.YMin,back_rear_y_mm=evaluate(doc,'BackRear'),post_rear_y_mm=pb.YMax,back_glue_contact_mm2=area))
     requested_orientation=dict(blue_sign_front_normal=[0,-1,0],blue_sign_front_y_mm=sb.YMin,blue_sign_x_range_mm=[sb.XMin,sb.XMax],blue_sign_excluded_from_540mm_main_body=True,book_opening_overlap_mm3=0,sign_to_right_outer_wall_contact_mm2=glue,posts_behind_back=mounting,deck_bracket_slots_removed=True)
-    return dict(bounds_mm=[bb.XMin,bb.YMin,bb.ZMin,bb.XMax,bb.YMax,bb.ZMax],dimensions_mm=dims,main_body_dimensions_mm=[mb.XLength,mb.YLength,mb.ZLength],interfering_pairs=bad,requested_orientation=requested_orientation,module_insertion_paths=paths,deck_lowering_paths=deck_paths,collar_contact_areas=contacts)
+    return dict(bounds_mm=[bb.XMin,bb.YMin,bb.ZMin,bb.XMax,bb.YMax,bb.ZMax],dimensions_mm=dims,main_body_dimensions_mm=[mb.XLength,mb.YLength,mb.ZLength],interfering_pairs=bad,requested_orientation=requested_orientation,module_insertion_paths=paths,deck_lowering_paths=deck_paths,collar_contact_areas=contacts,plain_parking_decks=plain_decks)
 
 
 def parameter_test(doc):
@@ -112,7 +121,7 @@ def export(doc):
         rotation=App.Rotation()
         orient='原方向，底面朝下'
         if name.startswith('garage_deck'):
-            rotation=App.Rotation(App.Vector(1,0,0),180);orient='平整顶面贴床，加强梁向上'
+            rotation=App.Rotation(App.Vector(1,0,0),180);orient='5 mm 无梁整板，平面贴床'
         elif name.startswith('billboard'):
             rotation=App.Rotation(App.Vector(1,0,0),90);orient='牌/文字/支架放平'
         elif name=='book_depot_sign':

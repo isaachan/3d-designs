@@ -1,0 +1,6 @@
+{"rib_height_mm": 0.0, "mesh_size_mm": 6, "nodes": 17619, "elements": 8688, "self_only_max_mm": 0.01796693, "central_load_compliance_mm_per_N": 0.0268935}
+{"rib_height_mm": 2.0, "mesh_size_mm": 6, "nodes": 18042, "elements": 8949, "self_only_max_mm": 0.01741236, "central_load_compliance_mm_per_N": 0.02543941}
+{"rib_height_mm": 3.0, "mesh_size_mm": 6, "nodes": 18544, "elements": 9151, "self_only_max_mm": 0.01681664, "central_load_compliance_mm_per_N": 0.02442117}
+{"rib_height_mm": 4.0, "mesh_size_mm": 6, "nodes": 18587, "elements": 9190, "self_only_max_mm": 0.01608307, "central_load_compliance_mm_per_N": 0.02330364}
+{"rib_height_mm": 6.0, "mesh_size_mm": 6, "nodes": 18736, "elements": 9343, "self_only_max_mm": 0.01440555, "central_load_compliance_mm_per_N": 0.02104194}
+{"rib_height_mm": 8.0, "mesh_size_mm": 6, "nodes": 18750, "elements": 9289, "self_only_max_mm": 0.01273194, "central_load_compliance_mm_per_N": 0.01898172}

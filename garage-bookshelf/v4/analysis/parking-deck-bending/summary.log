@@ -1,0 +1,66 @@
+{
+  "minimum_rib_height_mm": 0.0,
+  "max_mesh_difference_percent": 1.364683531070235,
+  "table": [
+    {
+      "rib_height_mm": 0.0,
+      "source_mesh_mm": 4.0,
+      "clearance_mm": 58.0,
+      "solid_mass_upper_bound_g": 195.4477318043922,
+      "three_60g_E1000_mm": 0.04603812041000001,
+      "three_100g_E1000_mm": 0.06487502735,
+      "centre_300g_E1000_mm": 0.09659771264,
+      "centre_600g_E500_mm": 0.35082533056000004
+    },
+    {
+      "rib_height_mm": 2.0,
+      "source_mesh_mm": 6,
+      "clearance_mm": 56.0,
+      "solid_mass_upper_bound_g": 201.3203718043922,
+      "three_60g_E1000_mm": 0.044411689212000005,
+      "three_100g_E1000_mm": 0.06241124202000001,
+      "centre_300g_E1000_mm": 0.09228054363,
+      "centre_600g_E500_mm": 0.33429745452000004
+    },
+    {
+      "rib_height_mm": 3.0,
+      "source_mesh_mm": 4.0,
+      "clearance_mm": 55.0,
+      "solid_mass_upper_bound_g": 204.25669180439218,
+      "three_60g_E1000_mm": 0.042144672146,
+      "three_100g_E1000_mm": 0.05919802691,
+      "centre_300g_E1000_mm": 0.08796873605,
+      "centre_600g_E500_mm": 0.31874566419999995
+    },
+    {
+      "rib_height_mm": 4.0,
+      "source_mesh_mm": 6,
+      "clearance_mm": 54.0,
+      "solid_mass_upper_bound_g": 207.19301180439223,
+      "three_60g_E1000_mm": 0.040757105482,
+      "three_100g_E1000_mm": 0.05720646247,
+      "centre_300g_E1000_mm": 0.08466568252000001,
+      "centre_600g_E500_mm": 0.30649659008
+    },
+    {
+      "rib_height_mm": 6.0,
+      "source_mesh_mm": 6,
+      "clearance_mm": 52.0,
+      "solid_mass_upper_bound_g": 213.06565180439222,
+      "three_60g_E1000_mm": 0.036514037003999994,
+      "three_100g_E1000_mm": 0.05125302833999999,
+      "centre_300g_E1000_mm": 0.07633197942,
+      "centre_600g_E500_mm": 0.27651681767999997
+    },
+    {
+      "rib_height_mm": 8.0,
+      "source_mesh_mm": 4.0,
+      "clearance_mm": 50.0,
+      "solid_mass_upper_bound_g": 218.9382918043922,
+      "three_60g_E1000_mm": 0.032059698582,
+      "three_100g_E1000_mm": 0.045059270969999995,
+      "centre_300g_E1000_mm": 0.06823239411,
+      "centre_600g_E500_mm": 0.24780889644
+    }
+  ]
+}

@@ -25,11 +25,11 @@
       "sliced_saved_3mf": false,
       "sliced_matching_source_stls_with_saved_settings": true,
       "input_sha256": {
-        "garage_deck_1.stl": "b5ea584bd515bdbdf422da2007b4ff30d413c5f12d8688222c9c341efb132d85"
+        "garage_deck_1.stl": "4f682c89d0b9c4427e1a9879c408a9183d0a91afc4178b74babbf65aca9ee1d7"
       },
       "print_runs": 3,
       "slicer_warnings": [],
-      "estimated_seconds": 7562
+      "estimated_seconds": 6463
     },
     {
       "project": "bambu-projects/02-garage-base.3mf",
@@ -53,7 +53,7 @@
       "sliced_saved_3mf": false,
       "sliced_matching_source_stls_with_saved_settings": true,
       "input_sha256": {
-        "module_1.stl": "4a803641720311e2465023ecff4a7044ae3f1f7e8421612b64736454fcd0c423"
+        "module_1.stl": "952ff0a0e889da5febfedc28bc2e60bfa721f1dd8efb65264658ec9b80163b38"
       },
       "print_runs": 1,
       "slicer_warnings": [],

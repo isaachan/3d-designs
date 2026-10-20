@@ -235,31 +235,6 @@
     "description": "层3底高"
   },
   {
-    "alias": "DeckRibHeight",
-    "value": "8 mm",
-    "description": "整片层板下垂梁高"
-  },
-  {
-    "alias": "DeckRibWidth",
-    "value": "8 mm",
-    "description": "梁宽"
-  },
-  {
-    "alias": "DeckRibInset",
-    "value": "26 mm",
-    "description": "梁端距车库边"
-  },
-  {
-    "alias": "DeckRibFrontY",
-    "value": "26 mm",
-    "description": "前梁起点"
-  },
-  {
-    "alias": "DeckRibRearY",
-    "value": "=BackFront-34 mm",
-    "description": "后梁起点"
-  },
-  {
     "alias": "ColumnInset",
     "value": "14 mm",
     "description": "柱中心距车库左右边/前后边"
