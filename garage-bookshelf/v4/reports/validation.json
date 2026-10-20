@@ -1,0 +1,660 @@
+{
+  "status": "passed",
+  "native": {
+    "bodies": 46,
+    "sketches": 162,
+    "fully_constrained": true,
+    "single_solid_each": true,
+    "invalid_objects": []
+  },
+  "assembly": {
+    "bounds_mm": [
+      -1e-07,
+      -1e-07,
+      -1.0000001587514286e-07,
+      540.0000001,
+      170.00000010000002,
+      364.0
+    ],
+    "dimensions_mm": [
+      540.0000001999999,
+      170.00000020000002,
+      364.0000001
+    ],
+    "interfering_pairs": [],
+    "module_insertion_paths": [
+      {
+        "interface": 1,
+        "positive_x_offset_mm": 30,
+        "overlap_mm3": 0.0
+      },
+      {
+        "interface": 1,
+        "positive_x_offset_mm": 15,
+        "overlap_mm3": 0.0
+      },
+      {
+        "interface": 1,
+        "positive_x_offset_mm": 5,
+        "overlap_mm3": 0.0
+      },
+      {
+        "interface": 1,
+        "positive_x_offset_mm": 1,
+        "overlap_mm3": 0.0
+      },
+      {
+        "interface": 1,
+        "positive_x_offset_mm": 0,
+        "overlap_mm3": 0.0
+      },
+      {
+        "interface": 2,
+        "positive_x_offset_mm": 30,
+        "overlap_mm3": 0.0
+      },
+      {
+        "interface": 2,
+        "positive_x_offset_mm": 15,
+        "overlap_mm3": 0.0
+      },
+      {
+        "interface": 2,
+        "positive_x_offset_mm": 5,
+        "overlap_mm3": 0.0
+      },
+      {
+        "interface": 2,
+        "positive_x_offset_mm": 1,
+        "overlap_mm3": 0.0
+      },
+      {
+        "interface": 2,
+        "positive_x_offset_mm": 0,
+        "overlap_mm3": 0.0
+      }
+    ],
+    "deck_lowering_paths": [
+      {
+        "level": 1,
+        "upward_offset_mm": 12,
+        "overlap_mm3": 0.0
+      },
+      {
+        "level": 1,
+        "upward_offset_mm": 8,
+        "overlap_mm3": 0.0
+      },
+      {
+        "level": 1,
+        "upward_offset_mm": 3,
+        "overlap_mm3": 0.0
+      },
+      {
+        "level": 1,
+        "upward_offset_mm": 0,
+        "overlap_mm3": 0.0
+      },
+      {
+        "level": 2,
+        "upward_offset_mm": 12,
+        "overlap_mm3": 0.0
+      },
+      {
+        "level": 2,
+        "upward_offset_mm": 8,
+        "overlap_mm3": 0.0
+      },
+      {
+        "level": 2,
+        "upward_offset_mm": 3,
+        "overlap_mm3": 0.0
+      },
+      {
+        "level": 2,
+        "upward_offset_mm": 0,
+        "overlap_mm3": 0.0
+      },
+      {
+        "level": 3,
+        "upward_offset_mm": 12,
+        "overlap_mm3": 0.0
+      },
+      {
+        "level": 3,
+        "upward_offset_mm": 8,
+        "overlap_mm3": 0.0
+      },
+      {
+        "level": 3,
+        "upward_offset_mm": 3,
+        "overlap_mm3": 0.0
+      },
+      {
+        "level": 3,
+        "upward_offset_mm": 0,
+        "overlap_mm3": 0.0
+      }
+    ],
+    "collar_contact_areas": [
+      {
+        "level": 1,
+        "column": 1,
+        "bearing_area_mm2": 280.976
+      },
+      {
+        "level": 1,
+        "column": 2,
+        "bearing_area_mm2": 280.976
+      },
+      {
+        "level": 1,
+        "column": 3,
+        "bearing_area_mm2": 280.976
+      },
+      {
+        "level": 1,
+        "column": 4,
+        "bearing_area_mm2": 280.976
+      },
+      {
+        "level": 2,
+        "column": 1,
+        "bearing_area_mm2": 280.976
+      },
+      {
+        "level": 2,
+        "column": 2,
+        "bearing_area_mm2": 280.976
+      },
+      {
+        "level": 2,
+        "column": 3,
+        "bearing_area_mm2": 280.976
+      },
+      {
+        "level": 2,
+        "column": 4,
+        "bearing_area_mm2": 280.976
+      },
+      {
+        "level": 3,
+        "column": 1,
+        "bearing_area_mm2": 280.976
+      },
+      {
+        "level": 3,
+        "column": 2,
+        "bearing_area_mm2": 280.976
+      },
+      {
+        "level": 3,
+        "column": 3,
+        "bearing_area_mm2": 280.976
+      },
+      {
+        "level": 3,
+        "column": 4,
+        "bearing_area_mm2": 280.976
+      }
+    ]
+  },
+  "parameter_edit": {
+    "depth_170_to_172_to_170": "passed",
+    "garage_200_to_202_to_200": "passed",
+    "body_deck_columns_and_modules_follow": true
+  },
+  "saved_file_reopen": "passed",
+  "print_parts": [
+    {
+      "name": "module_1",
+      "file": "print-stl/module_1.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        213.8000030517578,
+        170.0,
+        238.0
+      ],
+      "orientation": "原方向，底面朝下",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "c19a4bc8fe226f234aa824c3bb0eadd04420232ad5f55c6f19a52ff465034b60"
+    },
+    {
+      "name": "module_2",
+      "file": "print-stl/module_2.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        183.79998779296875,
+        170.0,
+        238.0
+      ],
+      "orientation": "原方向，底面朝下",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "792f1e35cfba153f6b8e28e81ce12ae59383709b3b45173dc7cbd671b0f7f647"
+    },
+    {
+      "name": "module_3",
+      "file": "print-stl/module_3.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        170.0,
+        170.0,
+        238.0
+      ],
+      "orientation": "原方向，底面朝下",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "d3fd76267ef21a7a85fca39c66b38a0ce7516ebc13850eb78195ab7124766bf1"
+    },
+    {
+      "name": "garage_deck_1",
+      "file": "print-stl/garage_deck_1.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        199.60000610351562,
+        164.60000610351562,
+        13.0
+      ],
+      "orientation": "平整顶面贴床，加强梁向上",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "9dd76cf0b978f3d3cf2e895bf18c58e07c68dbd78b4eaa9296266e650884bf61"
+    },
+    {
+      "name": "garage_deck_2",
+      "file": "print-stl/garage_deck_2.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        199.60000610351562,
+        164.60000610351562,
+        13.0
+      ],
+      "orientation": "平整顶面贴床，加强梁向上",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "9dd76cf0b978f3d3cf2e895bf18c58e07c68dbd78b4eaa9296266e650884bf61"
+    },
+    {
+      "name": "garage_deck_3",
+      "file": "print-stl/garage_deck_3.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        199.60000610351562,
+        164.60000610351562,
+        13.0
+      ],
+      "orientation": "平整顶面贴床，加强梁向上",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "9dd76cf0b978f3d3cf2e895bf18c58e07c68dbd78b4eaa9296266e650884bf61"
+    },
+    {
+      "name": "column_1_segment_1",
+      "file": "print-stl/column_1_segment_1.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        19.995525360107422,
+        19.997760772705078,
+        66.0
+      ],
+      "orientation": "原方向，底面朝下",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "cea67b1f1eaff4ae62dcd14f471b479af195bec656128debb6176dbc551fce76"
+    },
+    {
+      "name": "column_1_segment_2",
+      "file": "print-stl/column_1_segment_2.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        19.995525360107422,
+        19.997760772705078,
+        66.0
+      ],
+      "orientation": "原方向，底面朝下",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "f381f3e106d0c05c01c623f56f921abc6aaa1dea022a7cf63e6c617ed0e95873"
+    },
+    {
+      "name": "column_1_segment_3",
+      "file": "print-stl/column_1_segment_3.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        19.995525360107422,
+        19.997760772705078,
+        66.0
+      ],
+      "orientation": "原方向，底面朝下",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "e1e589ec45be010f2c0fd886a43887ee3f82a507cd5702122c0c5a4b77b0f607"
+    },
+    {
+      "name": "column_1_segment_4",
+      "file": "print-stl/column_1_segment_4.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        13.996867179870605,
+        13.998432159423828,
+        33.0
+      ],
+      "orientation": "原方向，底面朝下",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "785fd079da943ab35f2ad203aaecd8a759ba6d36a0a8f806e8d22e3f21d08331"
+    },
+    {
+      "name": "column_2_segment_1",
+      "file": "print-stl/column_2_segment_1.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        19.995529174804688,
+        19.997760772705078,
+        66.0
+      ],
+      "orientation": "原方向，底面朝下",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "0ebc30713d5ab93730ef044494bd5746f9214bb5e5f7597c470f848183908973"
+    },
+    {
+      "name": "column_2_segment_2",
+      "file": "print-stl/column_2_segment_2.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        19.995529174804688,
+        19.997760772705078,
+        66.0
+      ],
+      "orientation": "原方向，底面朝下",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "dcd17ff781d0826950197dacdee61388fbb14f5d540f51a2dc65aebb166b548e"
+    },
+    {
+      "name": "column_2_segment_3",
+      "file": "print-stl/column_2_segment_3.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        19.995529174804688,
+        19.997760772705078,
+        66.0
+      ],
+      "orientation": "原方向，底面朝下",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "46c5e2e4532c51a36be55ab5ecdb129ba52ae574d23a5fed1e670a7198d8faf9"
+    },
+    {
+      "name": "column_2_segment_4",
+      "file": "print-stl/column_2_segment_4.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        13.996871948242188,
+        13.998432159423828,
+        33.0
+      ],
+      "orientation": "原方向，底面朝下",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "ff9ec13068c8244f293e9811f454601d4da01ecd93203d3bf89d7de2dafccb10"
+    },
+    {
+      "name": "column_3_segment_1",
+      "file": "print-stl/column_3_segment_1.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        19.995525360107422,
+        19.997772216796875,
+        66.0
+      ],
+      "orientation": "原方向，底面朝下",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "5df25a463e45df8e3e12c1191ca4196e6ff916ddc1ae65ae779d7abb7113e21b"
+    },
+    {
+      "name": "column_3_segment_2",
+      "file": "print-stl/column_3_segment_2.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        19.995525360107422,
+        19.997772216796875,
+        66.0
+      ],
+      "orientation": "原方向，底面朝下",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "414fb30177208e60b1be425e3b0c0359b256d855927b812fa405a598ad1cfc09"
+    },
+    {
+      "name": "column_3_segment_3",
+      "file": "print-stl/column_3_segment_3.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        19.995525360107422,
+        19.997772216796875,
+        66.0
+      ],
+      "orientation": "原方向，底面朝下",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "4566f2a1cb82eaf4dca38250a5eb7a5ce1221e24b56a49c34cf3ea0b265cc02b"
+    },
+    {
+      "name": "column_3_segment_4",
+      "file": "print-stl/column_3_segment_4.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        13.996867179870605,
+        13.998443603515625,
+        33.0
+      ],
+      "orientation": "原方向，底面朝下",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "abada29abd8c5f3a94cdd0e98cdb60a0006ff61e77f68a91cd1b854410eb34ba"
+    },
+    {
+      "name": "column_4_segment_1",
+      "file": "print-stl/column_4_segment_1.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        19.995529174804688,
+        19.997772216796875,
+        66.0
+      ],
+      "orientation": "原方向，底面朝下",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "25d0d5c5ff7bd0b74a14c650132fb77736f769923052a2d5a0f65cf1dbc96d25"
+    },
+    {
+      "name": "column_4_segment_2",
+      "file": "print-stl/column_4_segment_2.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        19.995529174804688,
+        19.997772216796875,
+        66.0
+      ],
+      "orientation": "原方向，底面朝下",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "8f6bf22f88a6d68d3fbef083ad228fa6f919b8acbd5a93029f8fa07a74328be2"
+    },
+    {
+      "name": "column_4_segment_3",
+      "file": "print-stl/column_4_segment_3.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        19.995529174804688,
+        19.997772216796875,
+        66.0
+      ],
+      "orientation": "原方向，底面朝下",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "cfe0fd359fa44e931bbc7910856f6a256ba7b8be532f2d41decaa532df46a874"
+    },
+    {
+      "name": "column_4_segment_4",
+      "file": "print-stl/column_4_segment_4.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        13.996871948242188,
+        13.998443603515625,
+        33.0
+      ],
+      "orientation": "原方向，底面朝下",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "e8b10a72889e2478b3e75ce8a6682afe9ba049446095e9186aef8d7c10e3be29"
+    },
+    {
+      "name": "billboard",
+      "file": "print-stl/billboard.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        200.0,
+        64.0,
+        6.0
+      ],
+      "orientation": "牌/文字/支架放平",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "1665648678bb073e2a6e77d59fbef23e1e5477cd51b18d0b8485c9cc866cb2bb"
+    },
+    {
+      "name": "billboard_post_left",
+      "file": "print-stl/billboard_post_left.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        24.0,
+        150.0,
+        6.0
+      ],
+      "orientation": "牌/文字/支架放平",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "291f9f3e8fc24a375972ccfd8dc24645579efa042f42fa4d3ee13c8d06f6f22a"
+    },
+    {
+      "name": "billboard_post_right",
+      "file": "print-stl/billboard_post_right.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        24.0,
+        150.0,
+        6.0
+      ],
+      "orientation": "牌/文字/支架放平",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "d5f209e6ae478331d750ff43c99b5c38eec327f207a902f3dded47856a1eff9c"
+    },
+    {
+      "name": "billboard_text_lovely_cars",
+      "file": "print-stl/billboard_text_lovely_cars.stl",
+      "quantity": 1,
+      "solid_components": 10,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        145.10000610351562,
+        23.0999755859375,
+        1.0
+      ],
+      "orientation": "牌/文字/支架放平",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "aec0a6df3cbdbdf0a4091ae1d3cf396c0a9dba15426d66166961f26b4b66e3e4"
+    },
+    {
+      "name": "billboard_text_ive_driven",
+      "file": "print-stl/billboard_text_ive_driven.stl",
+      "quantity": 1,
+      "solid_components": 10,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        128.10000610351562,
+        21.0999755859375,
+        1.0
+      ],
+      "orientation": "牌/文字/支架放平",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "d2afa0e218206fc0868146b2c6c49fa9c1771c7e3aa5f480169aee4728a637c1"
+    },
+    {
+      "name": "book_depot_sign",
+      "file": "print-stl/book_depot_sign.stl",
+      "quantity": 1,
+      "solid_components": 1,
+      "closed": true,
+      "non_manifold": false,
+      "dimensions_mm": [
+        179.60000610351562,
+        35.599998474121094,
+        2.0
+      ],
+      "orientation": "蓝牌大面贴床",
+      "with_4mm_brim_within_235_5_256_256": true,
+      "sha256": "16873dcbb2dd59c7f981401dac03b6f779e821eb07de0ab17b7a44ecf5e5c4fb"
+    }
+  ],
+  "physical_fit_and_load": "not_tested",
+  "printer_reference": "user supplied screenshot; conservative 235.5 x 256 x 256 mm; 4 mm brim each side"
+}

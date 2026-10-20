@@ -1,0 +1,255 @@
+{
+  "status": "passed",
+  "bambu_studio": "02.08.02.61",
+  "printer": "Bambu Lab X2D, 0.4 mm nozzle",
+  "projects": [
+    {
+      "project": "bambu-projects/01-whole-garage-deck-print-three.3mf",
+      "input_files": [
+        "garage_deck_1.stl"
+      ],
+      "object_count": 1,
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "sliced_saved_3mf": false,
+      "sliced_matching_source_stls_with_saved_settings": true,
+      "input_sha256": {
+        "garage_deck_1.stl": "9dd76cf0b978f3d3cf2e895bf18c58e07c68dbd78b4eaa9296266e650884bf61"
+      },
+      "print_runs": 3,
+      "slicer_warnings": [],
+      "estimated_seconds": 7804
+    },
+    {
+      "project": "bambu-projects/02-garage-base.3mf",
+      "input_files": [
+        "module_1.stl"
+      ],
+      "object_count": 1,
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "sliced_saved_3mf": false,
+      "sliced_matching_source_stls_with_saved_settings": true,
+      "input_sha256": {
+        "module_1.stl": "c19a4bc8fe226f234aa824c3bb0eadd04420232ad5f55c6f19a52ff465034b60"
+      },
+      "print_runs": 1,
+      "slicer_warnings": [],
+      "estimated_seconds": 23780
+    },
+    {
+      "project": "bambu-projects/03-book-left.3mf",
+      "input_files": [
+        "module_2.stl"
+      ],
+      "object_count": 1,
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "sliced_saved_3mf": false,
+      "sliced_matching_source_stls_with_saved_settings": true,
+      "input_sha256": {
+        "module_2.stl": "792f1e35cfba153f6b8e28e81ce12ae59383709b3b45173dc7cbd671b0f7f647"
+      },
+      "print_runs": 1,
+      "slicer_warnings": [],
+      "estimated_seconds": 33138
+    },
+    {
+      "project": "bambu-projects/04-book-right.3mf",
+      "input_files": [
+        "module_3.stl"
+      ],
+      "object_count": 1,
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "sliced_saved_3mf": false,
+      "sliced_matching_source_stls_with_saved_settings": true,
+      "input_sha256": {
+        "module_3.stl": "d3fd76267ef21a7a85fca39c66b38a0ce7516ebc13850eb78195ab7124766bf1"
+      },
+      "print_runs": 1,
+      "slicer_warnings": [],
+      "estimated_seconds": 32746
+    },
+    {
+      "project": "bambu-projects/05-support-segments-twelve.3mf",
+      "input_files": [
+        "column_1_segment_1.stl",
+        "column_1_segment_1.stl",
+        "column_1_segment_1.stl",
+        "column_1_segment_1.stl",
+        "column_1_segment_1.stl",
+        "column_1_segment_1.stl",
+        "column_1_segment_1.stl",
+        "column_1_segment_1.stl",
+        "column_1_segment_1.stl",
+        "column_1_segment_1.stl",
+        "column_1_segment_1.stl",
+        "column_1_segment_1.stl"
+      ],
+      "object_count": 12,
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "sliced_saved_3mf": false,
+      "sliced_matching_source_stls_with_saved_settings": true,
+      "input_sha256": {
+        "column_1_segment_1.stl": "cea67b1f1eaff4ae62dcd14f471b479af195bec656128debb6176dbc551fce76"
+      },
+      "print_runs": 1,
+      "slicer_warnings": [],
+      "estimated_seconds": 11748
+    },
+    {
+      "project": "bambu-projects/06-top-segments-four.3mf",
+      "input_files": [
+        "column_1_segment_4.stl",
+        "column_1_segment_4.stl",
+        "column_1_segment_4.stl",
+        "column_1_segment_4.stl"
+      ],
+      "object_count": 4,
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "sliced_saved_3mf": false,
+      "sliced_matching_source_stls_with_saved_settings": true,
+      "input_sha256": {
+        "column_1_segment_4.stl": "785fd079da943ab35f2ad203aaecd8a759ba6d36a0a8f806e8d22e3f21d08331"
+      },
+      "print_runs": 1,
+      "slicer_warnings": [],
+      "estimated_seconds": 2000
+    },
+    {
+      "project": "bambu-projects/07-billboard-and-lettering.3mf",
+      "input_files": [
+        "billboard.stl",
+        "billboard_text_lovely_cars.stl",
+        "billboard_text_ive_driven.stl"
+      ],
+      "object_count": 3,
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "sliced_saved_3mf": false,
+      "sliced_matching_source_stls_with_saved_settings": true,
+      "input_sha256": {
+        "billboard.stl": "1665648678bb073e2a6e77d59fbef23e1e5477cd51b18d0b8485c9cc866cb2bb",
+        "billboard_text_lovely_cars.stl": "aec0a6df3cbdbdf0a4091ae1d3cf396c0a9dba15426d66166961f26b4b66e3e4",
+        "billboard_text_ive_driven.stl": "d2afa0e218206fc0868146b2c6c49fa9c1771c7e3aa5f480169aee4728a637c1"
+      },
+      "print_runs": 1,
+      "slicer_warnings": [],
+      "estimated_seconds": 3859
+    },
+    {
+      "project": "bambu-projects/08-posts-and-blue-sign.3mf",
+      "input_files": [
+        "billboard_post_left.stl",
+        "billboard_post_right.stl",
+        "book_depot_sign.stl"
+      ],
+      "object_count": 3,
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "sliced_saved_3mf": false,
+      "sliced_matching_source_stls_with_saved_settings": true,
+      "input_sha256": {
+        "billboard_post_left.stl": "291f9f3e8fc24a375972ccfd8dc24645579efa042f42fa4d3ee13c8d06f6f22a",
+        "billboard_post_right.stl": "d5f209e6ae478331d750ff43c99b5c38eec327f207a902f3dded47856a1eff9c",
+        "book_depot_sign.stl": "16873dcbb2dd59c7f981401dac03b6f779e821eb07de0ab17b7a44ecf5e5c4fb"
+      },
+      "print_runs": 1,
+      "slicer_warnings": [],
+      "estimated_seconds": 3207
+    }
+  ],
+  "gcode_delivered": false,
+  "physical_print_completed": false
+}

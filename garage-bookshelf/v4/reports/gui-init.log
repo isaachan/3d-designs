@@ -1,0 +1,4 @@
+Error: Failed to open library "/Library/Frameworks/3DconnexionNavlib.framework/3DconnexionNavlib"! Error: dlopen(/Library/Frameworks/3DconnexionNavlib.framework/3DconnexionNavlib, 0x0005): tried: '/Library/Frameworks/3DconnexionNavlib.framework/3DconnexionNavlib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/Library/Frameworks/3DconnexionNavlib.framework/3DconnexionNavlib' (no such file), '/Library/Frameworks/3DconnexionNavlib.framework/3DconnexionNavlib' (no such file)!
+GUI initialized
+QThreadStorage: entry 2 destroyed before end of thread 0x14b859250
+QThreadStorage: entry 1 destroyed before end of thread 0x14b859250

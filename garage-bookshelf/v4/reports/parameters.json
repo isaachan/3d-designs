@@ -1,0 +1,477 @@
+[
+  {
+    "alias": "Zero",
+    "value": "0 mm",
+    "description": "坐标基准"
+  },
+  {
+    "alias": "OverallWidth",
+    "value": "540 mm",
+    "description": "总长，含全部装饰件"
+  },
+  {
+    "alias": "GarageWidth",
+    "value": "200 mm",
+    "description": "车库段占地长"
+  },
+  {
+    "alias": "BookWidth",
+    "value": "=OverallWidth-GarageWidth",
+    "description": "书架段占地长，含两侧6mm板"
+  },
+  {
+    "alias": "BookModuleWidth",
+    "value": "=BookWidth/2",
+    "description": "两块书架主体等分"
+  },
+  {
+    "alias": "OverallDepth",
+    "value": "170 mm",
+    "description": "总深，含广告牌"
+  },
+  {
+    "alias": "OverallHeight",
+    "value": "238 mm",
+    "description": "主体高，沿用v3"
+  },
+  {
+    "alias": "BaseThickness",
+    "value": "8 mm",
+    "description": "底厚"
+  },
+  {
+    "alias": "BackThickness",
+    "value": "5 mm",
+    "description": "背厚"
+  },
+  {
+    "alias": "WallThickness",
+    "value": "6 mm",
+    "description": "隔板与右侧板厚"
+  },
+  {
+    "alias": "BackFront",
+    "value": "=OverallDepth-BackThickness",
+    "description": "背板前表面"
+  },
+  {
+    "alias": "Overlap",
+    "value": "0.2 mm",
+    "description": "同一Body融合余量"
+  },
+  {
+    "alias": "WallStart",
+    "value": "=BaseThickness-Overlap",
+    "description": "背板/侧板起高"
+  },
+  {
+    "alias": "WallPadLength",
+    "value": "=OverallHeight-WallStart",
+    "description": "竖板拉伸高"
+  },
+  {
+    "alias": "PanelDepth",
+    "value": "=BackFront",
+    "description": "隔板深"
+  },
+  {
+    "alias": "RibSize",
+    "value": "25 mm",
+    "description": "书架板根三角肋边长"
+  },
+  {
+    "alias": "RibThickness",
+    "value": "5 mm",
+    "description": "三角肋厚"
+  },
+  {
+    "alias": "RibFrontY",
+    "value": "12 mm",
+    "description": "前根肋"
+  },
+  {
+    "alias": "RibRearY",
+    "value": "=BackFront-22 mm",
+    "description": "后根肋"
+  },
+  {
+    "alias": "TongueLength",
+    "value": "14 mm",
+    "description": "主体公榫长"
+  },
+  {
+    "alias": "SocketDepth",
+    "value": "15 mm",
+    "description": "主体母槽长"
+  },
+  {
+    "alias": "FitClearance",
+    "value": "0.4 mm",
+    "description": "燕尾槽名义总侧隙"
+  },
+  {
+    "alias": "HalfClearance",
+    "value": "=FitClearance/2",
+    "description": "燕尾单侧间隙"
+  },
+  {
+    "alias": "SocketOvercut",
+    "value": "0.2 mm",
+    "description": "母槽上下越界"
+  },
+  {
+    "alias": "BaseJointY1",
+    "value": "42 mm",
+    "description": "底榫中心1"
+  },
+  {
+    "alias": "BaseJointY2",
+    "value": "=OverallDepth-42 mm",
+    "description": "底榫中心2"
+  },
+  {
+    "alias": "BackJointZ1",
+    "value": "66 mm",
+    "description": "背榫中心1"
+  },
+  {
+    "alias": "BackJointZ2",
+    "value": "180 mm",
+    "description": "背榫中心2"
+  },
+  {
+    "alias": "BaseRootBottom",
+    "value": "15 mm",
+    "description": "底榫根底半宽"
+  },
+  {
+    "alias": "BaseRootTop",
+    "value": "12 mm",
+    "description": "底榫根顶半宽"
+  },
+  {
+    "alias": "BaseTipBottom",
+    "value": "12 mm",
+    "description": "底榫尖底半宽"
+  },
+  {
+    "alias": "BaseTipTop",
+    "value": "9 mm",
+    "description": "底榫尖顶半宽"
+  },
+  {
+    "alias": "BackFrontOverlap",
+    "value": "0.2 mm",
+    "description": "背榫向前融合"
+  },
+  {
+    "alias": "BackRootFront",
+    "value": "13 mm",
+    "description": "背榫根前半高"
+  },
+  {
+    "alias": "BackRootRear",
+    "value": "17 mm",
+    "description": "背榫根后半高"
+  },
+  {
+    "alias": "BackTipFront",
+    "value": "10 mm",
+    "description": "背榫尖前半高"
+  },
+  {
+    "alias": "BackTipRear",
+    "value": "14 mm",
+    "description": "背榫尖后半高"
+  },
+  {
+    "alias": "DeckEdgeGap",
+    "value": "0.2 mm",
+    "description": "层板与侧/背的每边间隙"
+  },
+  {
+    "alias": "DeckWidth",
+    "value": "=GarageWidth-2*DeckEdgeGap",
+    "description": "整层板宽"
+  },
+  {
+    "alias": "DeckDepth",
+    "value": "=BackFront-2*DeckEdgeGap",
+    "description": "整层板深"
+  },
+  {
+    "alias": "DeckThickness",
+    "value": "5 mm",
+    "description": "层板面厚，沿用v3"
+  },
+  {
+    "alias": "DeckFirstZ",
+    "value": "66 mm",
+    "description": "首层底高，沿用v3"
+  },
+  {
+    "alias": "DeckPitch",
+    "value": "63 mm",
+    "description": "层距，沿用v3"
+  },
+  {
+    "alias": "DeckZ1",
+    "value": "=DeckFirstZ",
+    "description": "层1底高"
+  },
+  {
+    "alias": "DeckZ2",
+    "value": "=DeckFirstZ+DeckPitch",
+    "description": "层2底高"
+  },
+  {
+    "alias": "DeckZ3",
+    "value": "=DeckFirstZ+2*DeckPitch",
+    "description": "层3底高"
+  },
+  {
+    "alias": "DeckRibHeight",
+    "value": "8 mm",
+    "description": "整片层板下垂梁高"
+  },
+  {
+    "alias": "DeckRibWidth",
+    "value": "8 mm",
+    "description": "梁宽"
+  },
+  {
+    "alias": "DeckRibInset",
+    "value": "26 mm",
+    "description": "梁端距车库边"
+  },
+  {
+    "alias": "DeckRibFrontY",
+    "value": "26 mm",
+    "description": "前梁起点"
+  },
+  {
+    "alias": "DeckRibRearY",
+    "value": "=BackFront-34 mm",
+    "description": "后梁起点"
+  },
+  {
+    "alias": "ColumnInset",
+    "value": "14 mm",
+    "description": "柱中心距车库左右边/前后边"
+  },
+  {
+    "alias": "ColumnX2",
+    "value": "=GarageWidth-ColumnInset",
+    "description": "右柱中心"
+  },
+  {
+    "alias": "ColumnY2",
+    "value": "=BackFront-ColumnInset",
+    "description": "后柱中心"
+  },
+  {
+    "alias": "ColumnRadius",
+    "value": "7 mm",
+    "description": "分段柱轴半径"
+  },
+  {
+    "alias": "CollarRadius",
+    "value": "10 mm",
+    "description": "层板承托环半径"
+  },
+  {
+    "alias": "CollarThickness",
+    "value": "4 mm",
+    "description": "托环厚"
+  },
+  {
+    "alias": "ConeHeight",
+    "value": "=CollarRadius-ColumnRadius",
+    "description": "45度锥肩高"
+  },
+  {
+    "alias": "PinRadius",
+    "value": "3 mm",
+    "description": "定位销半径"
+  },
+  {
+    "alias": "PinClearance",
+    "value": "0.25 mm",
+    "description": "销孔单侧径向间隙"
+  },
+  {
+    "alias": "HoleRadius",
+    "value": "=PinRadius+PinClearance",
+    "description": "层板孔/柱底孔半径"
+  },
+  {
+    "alias": "PegEngagement",
+    "value": "3 mm",
+    "description": "销插入上段长度"
+  },
+  {
+    "alias": "PegDepthGap",
+    "value": "0.3 mm",
+    "description": "柱底孔轴向余量"
+  },
+  {
+    "alias": "PinLength",
+    "value": "=DeckThickness+PegEngagement",
+    "description": "柱顶销长度"
+  },
+  {
+    "alias": "SegmentHeight",
+    "value": "=DeckPitch-DeckThickness",
+    "description": "前三段柱高"
+  },
+  {
+    "alias": "ColumnTop",
+    "value": "230 mm",
+    "description": "柱顶沿用v3"
+  },
+  {
+    "alias": "TopSegmentHeight",
+    "value": "=ColumnTop-DeckZ3-DeckThickness",
+    "description": "封顶柱段高"
+  },
+  {
+    "alias": "BillboardWidth",
+    "value": "=GarageWidth",
+    "description": "整块广告牌宽"
+  },
+  {
+    "alias": "BillboardHeight",
+    "value": "64 mm",
+    "description": "沿用v3牌高"
+  },
+  {
+    "alias": "BillboardThickness",
+    "value": "6 mm",
+    "description": "广告牌厚"
+  },
+  {
+    "alias": "BillboardBottom",
+    "value": "300 mm",
+    "description": "沿用v3牌底高"
+  },
+  {
+    "alias": "TotalHeight",
+    "value": "=BillboardBottom+BillboardHeight",
+    "description": "含广告牌总高"
+  },
+  {
+    "alias": "BillboardY",
+    "value": "=BackFront-BillboardThickness",
+    "description": "广告牌前表面，全部收进170mm深度"
+  },
+  {
+    "alias": "PostWidth",
+    "value": "24 mm",
+    "description": "广告牌支架宽"
+  },
+  {
+    "alias": "PostThickness",
+    "value": "6 mm",
+    "description": "广告牌支架厚"
+  },
+  {
+    "alias": "PostBottom",
+    "value": "150 mm",
+    "description": "支架底高"
+  },
+  {
+    "alias": "PostHeight",
+    "value": "=BillboardBottom-PostBottom",
+    "description": "支架高"
+  },
+  {
+    "alias": "PostX1",
+    "value": "=GarageWidth/4-PostWidth/2",
+    "description": "左支架X"
+  },
+  {
+    "alias": "PostX2",
+    "value": "=GarageWidth*3/4-PostWidth/2",
+    "description": "右支架X"
+  },
+  {
+    "alias": "TextPixel",
+    "value": "1 mm",
+    "description": "沿用v3字形，不缩小"
+  },
+  {
+    "alias": "TextOverlap",
+    "value": "0.1 mm",
+    "description": "字形像素融合"
+  },
+  {
+    "alias": "TextThickness",
+    "value": "1 mm",
+    "description": "白字厚"
+  },
+  {
+    "alias": "TextOriginX",
+    "value": "=GarageWidth/2-90 mm",
+    "description": "字形居中"
+  },
+  {
+    "alias": "TextLovelyZ",
+    "value": "332 mm",
+    "description": "沿用v3上行文字高"
+  },
+  {
+    "alias": "TextDrivenZ",
+    "value": "304 mm",
+    "description": "沿用v3下行文字高"
+  },
+  {
+    "alias": "SignThickness",
+    "value": "2 mm",
+    "description": "右侧嵌入蓝牌厚"
+  },
+  {
+    "alias": "SignDepth",
+    "value": "36 mm",
+    "description": "右侧蓝牌前后长度"
+  },
+  {
+    "alias": "SignHeight",
+    "value": "180 mm",
+    "description": "右侧蓝牌高"
+  },
+  {
+    "alias": "SignY",
+    "value": "12 mm",
+    "description": "蓝牌Y"
+  },
+  {
+    "alias": "SignZ",
+    "value": "50 mm",
+    "description": "蓝牌Z"
+  },
+  {
+    "alias": "SignGlueGap",
+    "value": "0.2 mm",
+    "description": "蓝牌边缘胶缝"
+  },
+  {
+    "alias": "PrintBrim",
+    "value": "4 mm",
+    "description": "打印床四边预留brim"
+  },
+  {
+    "alias": "PrintBedWidth",
+    "value": "235.5 mm",
+    "description": "按附图较小X范围保守校核"
+  },
+  {
+    "alias": "PrintBedDepth",
+    "value": "256 mm",
+    "description": "附图Y范围"
+  },
+  {
+    "alias": "PrintHeight",
+    "value": "256 mm",
+    "description": "按附图较小Z范围保守校核"
+  }
+]
