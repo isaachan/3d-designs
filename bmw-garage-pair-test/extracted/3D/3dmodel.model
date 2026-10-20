@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model unit="millimeter" xml:lang="en-US" xmlns="http://schemas.microsoft.com/3dmanufacturing/core/2015/02" xmlns:BambuStudio="http://schemas.bambulab.com/package/2021" xmlns:p="http://schemas.microsoft.com/3dmanufacturing/production/2015/06" requiredextensions="p">
+ <metadata name="Application">BambuStudio-02.08.02.61</metadata>
+ <metadata name="BambuStudio:3mfVersion">1</metadata>
+ <metadata name="CopyRight">[]</metadata>
+ <metadata name="Copyright">[]</metadata>
+ <metadata name="CreationDate">2026-09-15</metadata>
+ <metadata name="Description">&amp;lt;h2&amp;gt;本田展厅展示 – 1/64 比例&amp;lt;/h2&amp;gt;&amp;lt;p&amp;gt;使用这款专为 &amp;lt;strong&amp;gt;1/64 比例汽车&amp;lt;/strong&amp;gt; 设计的优质 &amp;lt;strong&amp;gt;本田展厅&amp;lt;/strong&amp;gt;，提升您的合金模型收藏。 &amp;amp;nbsp;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;amp;nbsp;&amp;lt;/p&amp;gt;&amp;lt;ul style=&amp;amp;#34;list-style-type: disc&amp;amp;#34;&amp;gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;容量：&amp;lt;/strong&amp;gt; 展厅内部可停放 &amp;lt;strong&amp;gt;两辆车&amp;lt;/strong&amp;gt;，外部设有专用 &amp;lt;strong&amp;gt;五车位停车场&amp;lt;/strong&amp;gt;。&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;内部细节：&amp;lt;/strong&amp;gt; 包括一个内置办公室区域，增加真实感。&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;集成照明：&amp;lt;/strong&amp;gt; 天花板专为 &amp;lt;strong&amp;gt;Bambu Lab LED 灯套件 001&amp;lt;/strong&amp;gt; 设计了专用安装位。只需将LED套件粘贴到天花板上即可点亮您的展厅。它也完美兼容其他LED灯带或光源。&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;半透明元件：&amp;lt;/strong&amp;gt; 包括两堵内墙，设计用于使用 &amp;lt;strong&amp;gt;透明 PLA&amp;lt;/strong&amp;gt; 打印，以营造现代玻璃效果（也可以打印为标准实心墙）。&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;支持 AMS：&amp;lt;/strong&amp;gt; 优化了多色打印，使本田品牌脱颖而出。&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;h3&amp;gt;打印设置与说明：&amp;lt;/h3&amp;gt;&amp;lt;ul style=&amp;amp;#34;list-style-type: disc&amp;amp;#34;&amp;gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;无需支撑：&amp;lt;/strong&amp;gt; 整个模型都经过精心设计，无需任何支撑材料即可干净打印。&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;层高：&amp;lt;/strong&amp;gt; 在 &amp;lt;strong&amp;gt;0.12毫米至0.28毫米&amp;lt;/strong&amp;gt; 之间完美适用。&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;即打即用：&amp;lt;/strong&amp;gt; 所有文件均已预设方向，可直接打印。&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;定制：&amp;lt;/strong&amp;gt; 颜色完全由您决定！搭配经典的本田美学或创造独特风格。&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;&amp;lt;span style=&amp;amp;#34;color: rgb(225,71,71)&amp;amp;#34;&amp;gt;&amp;lt;strong&amp;gt;更多展厅即将推出！&amp;lt;/strong&amp;gt; 我很乐意听取您的反馈。请在评论中告诉我 &amp;lt;strong&amp;gt;您希望接下来看到哪个汽车品牌或展厅设计！&amp;lt;/strong&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;</metadata>
+ <metadata name="DesignModelId">CN433e1b4b4310c9</metadata>
+ <metadata name="DesignProfileId">140142988</metadata>
+ <metadata name="DesignRegion">CN</metadata>
+ <metadata name="Designer">Tomik s Cuprou</metadata>
+ <metadata name="DesignerCover">65902d37f484701d.jpg</metadata>
+ <metadata name="DesignerUserId">549773495</metadata>
+ <metadata name="License">Standard Digital File License</metadata>
+ <metadata name="ModificationDate">2026-09-15</metadata>
+ <metadata name="Origin">profile</metadata>
+ <metadata name="ProfileCover">65902d37f484701d.jpg</metadata>
+ <metadata name="ProfileDescription"></metadata>
+ <metadata name="ProfileTitle">Default profile</metadata>
+ <metadata name="ProfileUserId">549773495</metadata>
+ <metadata name="ProfileUserName">Tomik s Cuprou</metadata>
+ <metadata name="Thumbnail_Middle">/Metadata/plate_1.png</metadata>
+ <metadata name="Thumbnail_Small">/Metadata/plate_1_small.png</metadata>
+ <metadata name="Title">本田展厅车库展示 – 1:64 比例</metadata>
+ <resources>
+  <object id="2" p:UUID="00000014-61cb-4c03-9d28-80fed5dfa1dc" type="model">
+   <components>
+    <component p:path="/3D/Objects/object_20.model" objectid="1" p:UUID="00140000-b206-40ff-9872-83e8017abed1" transform="1 0 0 0 1 0 0 0 1 0 4.37499971e-15 0"/>
+   </components>
+  </object>
+  <object id="4" p:UUID="00000015-61cb-4c03-9d28-80fed5dfa1dc" type="model">
+   <components>
+    <component p:path="/3D/Objects/object_21.model" objectid="3" p:UUID="00150000-b206-40ff-9872-83e8017abed1" transform="1 0 0 0 1 0 0 0 1 0 0 0"/>
+   </components>
+  </object>
+  <object id="6" p:UUID="00000016-61cb-4c03-9d28-80fed5dfa1dc" type="model">
+   <components>
+    <component p:path="/3D/Objects/object_22.model" objectid="5" p:UUID="00160000-b206-40ff-9872-83e8017abed1" transform="1 0 0 0 1 0 0 0 1 0 0 0"/>
+   </components>
+  </object>
+  <object id="7" p:UUID="0000002c-71cb-4c03-9d28-80fed5dfa1dc" type="model">
+   <components>
+    <component p:path="/3D/Objects/object_22.model" objectid="5" p:UUID="002c0000-b206-40ff-9872-83e8017abed1" transform="1 0 0 0 1 0 0 0 1 0 0 0"/>
+   </components>
+  </object>
+  <object id="8" p:UUID="0000002d-71cb-4c03-9d28-80fed5dfa1dc" type="model">
+   <components>
+    <component p:path="/3D/Objects/object_22.model" objectid="5" p:UUID="002d0000-b206-40ff-9872-83e8017abed1" transform="1 0 0 0 1 0 0 0 1 0 0 0"/>
+   </components>
+  </object>
+  <object id="9" p:UUID="0000002e-71cb-4c03-9d28-80fed5dfa1dc" type="model">
+   <components>
+    <component p:path="/3D/Objects/object_22.model" objectid="5" p:UUID="002e0000-b206-40ff-9872-83e8017abed1" transform="1 0 0 0 1 0 0 0 1 0 0 0"/>
+   </components>
+  </object>
+  <object id="10" p:UUID="0000002f-71cb-4c03-9d28-80fed5dfa1dc" type="model">
+   <components>
+    <component p:path="/3D/Objects/object_22.model" objectid="5" p:UUID="002f0000-b206-40ff-9872-83e8017abed1" transform="1 0 0 0 1 0 0 0 1 0 0 0"/>
+   </components>
+  </object>
+  <object id="12" p:UUID="0000001b-61cb-4c03-9d28-80fed5dfa1dc" type="model">
+   <components>
+    <component p:path="/3D/Objects/object_27.model" objectid="11" p:UUID="001b0000-b206-40ff-9872-83e8017abed1" transform="1 0 0 0 1 0 0 0 1 0 -4.06250025e-16 0"/>
+   </components>
+  </object>
+  <object id="14" p:UUID="00000027-61cb-4c03-9d28-80fed5dfa1dc" type="model">
+   <components>
+    <component p:path="/3D/Objects/object_39.model" objectid="13" p:UUID="00270000-b206-40ff-9872-83e8017abed1" transform="1 0 0 0 1 0 0 0 1 0 0 0"/>
+   </components>
+  </object>
+  <object id="16" p:UUID="0000002a-61cb-4c03-9d28-80fed5dfa1dc" type="model">
+   <components>
+    <component p:path="/3D/Objects/object_42.model" objectid="15" p:UUID="002a0000-b206-40ff-9872-83e8017abed1" transform="1 0 0 0 1 0 0 0 1 0 2.81250006e-15 0"/>
+   </components>
+  </object>
+  <object id="18" p:UUID="0000002b-61cb-4c03-9d28-80fed5dfa1dc" type="model">
+   <components>
+    <component p:path="/3D/Objects/object_43.model" objectid="17" p:UUID="002b0000-b206-40ff-9872-83e8017abed1" transform="1 0 0 0 1 0 0 0 1 0 -4.37499971e-15 0"/>
+   </components>
+  </object>
+ </resources>
+ <build p:UUID="2c7c17d8-22b5-4d84-8835-1976022ea369">
+  <item objectid="2" p:UUID="00000002-b1ec-4553-aec9-835e5b724bb4" transform="-1 0 -1.2246468e-16 0 1 0 1.2246468e-16 0 -1 142.266069 129.558362 1.49600005" printable="1"/>
+  <item objectid="4" p:UUID="00000004-b1ec-4553-aec9-835e5b724bb4" transform="1 0 0 0 1 0 0 0 1 439.404688 108.926177 43.4949989" printable="1"/>
+  <item objectid="6" p:UUID="00000006-b1ec-4553-aec9-835e5b724bb4" transform="1 0 0 0 1 0 0 0 1 435.4 -185.643537 1.75" printable="1"/>
+  <item objectid="7" p:UUID="00000007-b1ec-4553-aec9-835e5b724bb4" transform="1 0 0 0 1 0 0 0 1 435.400085 -180.64564 1.75" printable="1"/>
+  <item objectid="8" p:UUID="00000008-b1ec-4553-aec9-835e5b724bb4" transform="1 0 0 0 1 0 0 0 1 435.400085 -190.641642 1.75" printable="1"/>
+  <item objectid="9" p:UUID="00000009-b1ec-4553-aec9-835e5b724bb4" transform="1 0 0 0 1 0 0 0 1 435.400085 -175.647639 1.75" printable="1"/>
+  <item objectid="10" p:UUID="0000000a-b1ec-4553-aec9-835e5b724bb4" transform="1 0 0 0 1 0 0 0 1 435.400085 -195.639643 1.75" printable="1"/>
+  <item objectid="12" p:UUID="0000000c-b1ec-4553-aec9-835e5b724bb4" transform="1 0 0 0 1 0 0 0 1 744.438963 -167.092953 9.25399971" printable="1"/>
+  <item objectid="14" p:UUID="0000000e-b1ec-4553-aec9-835e5b724bb4" transform="-1 0 -1.2246468e-16 0 1 0 1.2246468e-16 0 -1 132.960591 -218.202768 0.5" printable="1"/>
+  <item objectid="16" p:UUID="00000010-b1ec-4553-aec9-835e5b724bb4" transform="-1 0 -1.2246468e-16 0 1 0 1.2246468e-16 0 -1 142.86703 -146.007348 0.5" printable="1"/>
+  <item objectid="18" p:UUID="00000012-b1ec-4553-aec9-835e5b724bb4" transform="-1 0 -1.2246468e-16 0 1 0 1.2246468e-16 0 -1 741.494352 128.8978 1" printable="1"/>
+ </build>
+</model>
