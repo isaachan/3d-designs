@@ -1,0 +1,81 @@
+{
+  "status": "passed",
+  "bambu_studio": "02.08.02.61",
+  "printer": "Bambu Lab X2D, 0.4 mm nozzle",
+  "projects": [
+    {
+      "project": "bambu-projects/01-reinforced-deck-left.3mf",
+      "input_files": [
+        "reinforced_deck_left.stl"
+      ],
+      "object_count": 1,
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "slicer_warnings": [],
+      "estimated_seconds": 9509
+    },
+    {
+      "project": "bambu-projects/02-reinforced-deck-right.3mf",
+      "input_files": [
+        "reinforced_deck_right.stl"
+      ],
+      "object_count": 1,
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "slicer_warnings": [],
+      "estimated_seconds": 9281
+    },
+    {
+      "project": "bambu-projects/03-splices-and-fixtures.3mf",
+      "input_files": [
+        "original_centre_bridge.stl",
+        "front_splice.stl",
+        "rear_splice.stl",
+        "test_support_1.stl",
+        "test_support_1.stl",
+        "test_support_1.stl",
+        "test_support_1.stl"
+      ],
+      "object_count": 7,
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "slicer_warnings": [],
+      "estimated_seconds": 3828
+    }
+  ],
+  "gcode_delivered": false,
+  "physical_print_completed": false
+}
