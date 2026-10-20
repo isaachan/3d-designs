@@ -14,7 +14,7 @@ def dovetail(body,name,kind,x,center,subtract=False):
             height='BaseThickness' if kind=='base' else 'DeckThickness'
             points=[(f'{center}-({bot})',f'-{over}'),(f'{center}+({bot})',f'-{over}'),(f'{center}+({top})',f'{height}+{over}'),(f'{center}-({top})',f'{height}+{over}')]
         else:
-            front=f'BackFront-BackFrontOverlap-{c}';rear=f'OverallDepth+{c}'
+            front=f'BackFront-BackFrontOverlap-{c}';rear=f'BackRear+{c}'
             fh=f'Back{label}Front+{c}';rh=f'Back{label}Rear+{c}'
             points=[(front,f'{center}-({fh})'),(front,f'{center}+({fh})'),(rear,f'{center}+({rh})'),(rear,f'{center}-({rh})')]
         xx=x if label=='Root' else f'{x}+{length}'

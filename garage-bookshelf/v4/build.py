@@ -57,22 +57,12 @@ def module(body,index):
         for n in (1,2):
             dovetail(body,f'BaseSocket{n}','base','-Overlap',f'BaseJointY{n}',True)
             dovetail(body,f'BackSocket{n}','back','-Overlap',f'BackJointZ{n}',True)
-    if index==3:
-        s=rectangle(body,'Sketch_FlushSignPocket','SignThickness','SignDepth',origin=('BookModuleWidth-SignThickness','SignY'),offset=('Zero','Zero','SignZ+SignHeight'))
-        pocket(body,'Pocket_FlushSign',s,'SignHeight')
 
 
 def deck(body):
     pad(body,'Pad_WholeDeck',rectangle(body,'Sketch_WholeDeck','DeckWidth','DeckDepth'),'DeckThickness')
     centres=[(f'{x}-DeckEdgeGap',f'{y}-DeckEdgeGap') for x,y in CENTRES]
     pocket(body,'Pocket_FourLocatingHoles',circles(body,'Sketch_FourLocatingHoles',centres,'HoleRadius','DeckThickness'),'DeckThickness')
-    # Rear-edge openings let the continuous sign brackets pass the top deck.
-    notches=[]
-    for x in ('PostX1','PostX2'):
-        x0=f'{x}-2*DeckEdgeGap';x1=f'{x}+PostWidth'
-        y0='BillboardY-2*DeckEdgeGap'
-        notches.append([(x0,y0),(x1,y0),(x1,'DeckDepth'),(x0,'DeckDepth')])
-    pocket(body,'Pocket_BillboardBracketClearance',loops(body,'Sketch_BillboardBracketClearance',notches,offset=('Zero','Zero','DeckThickness')),'DeckThickness')
     polys=[]
     for y in ('DeckRibFrontY','DeckRibRearY'):
         x0='DeckRibInset-DeckEdgeGap';x1='GarageWidth-DeckRibInset-DeckEdgeGap'
@@ -114,8 +104,9 @@ def build():
         _,b=part(doc,board,'billboard_post_'+side,'广告牌支架 '+side,(x,'BillboardY','PostBottom'),color='billboard');cosmetics.box(b,'PostWidth','PostThickness','PostHeight')
     cosmetics.text(doc,board,'billboard_text_lovely_cars','Lovely Cars 白字',332)
     cosmetics.text(doc,board,'billboard_text_ive_driven',"I've Driven 白字",304)
-    signs=group(doc,'Signs','04 右侧嵌入蓝牌')
-    _,b=part(doc,signs,'book_depot_sign','右侧嵌入蓝色装饰牌',('OverallWidth-SignThickness','SignY+SignGlueGap','SignZ+SignGlueGap'),color='sign')
-    cosmetics.box(b,'SignThickness','SignDepth-2*SignGlueGap','SignHeight-2*SignGlueGap')
+    signs=group(doc,'Signs','04 右侧外挂蓝牌（不计入540mm主体）')
+    _,b=part(doc,signs,'book_depot_sign','朝向使用者的右侧外挂蓝牌',('SignX','SignFrontY','SignZ'),color='sign')
+    cosmetics.box(b,'SignWidth','SignThickness','SignHeight')
+    pad(b,'Pad_ExternalMountingReturn',rectangle(b,'Sketch_ExternalMountingReturn','SignThickness','SignMountDepth-SignThickness',origin=('Zero','SignThickness')),'SignHeight')
     doc.recompute()
     return doc

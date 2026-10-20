@@ -18,13 +18,15 @@ STANDARD = PRESETS / "process/0.20mm Standard @BBL X2D.json"
 FILAMENT = PRESETS / "filament/Bambu PLA Basic @BBL X2D 0.4 nozzle.json"
 
 
-def process_profile():
+def process_profile(supports=False):
     profile = json.loads(STANDARD.read_text())
     # Preserve the installed, named preset so Bambu Studio recognizes the project.
     # These four values are explicit overrides and remain in the saved 3MF.
     profile.update(wall_loops="4", sparse_infill_density="25%",
-                   brim_width="4", brim_type="auto_brim", enable_support="0")
-    path = ROOT / "X2D-PLA-process.json"
+                   brim_width="4", brim_type="auto_brim", enable_support="1" if supports else "0")
+    if supports:
+        profile.update(support_type="normal(auto)", support_on_build_plate_only="1")
+    path = ROOT / ("X2D-PLA-support-process.json" if supports else "X2D-PLA-process.json")
     path.write_text(json.dumps(profile, ensure_ascii=False, indent=2))
     return path
 
@@ -41,7 +43,7 @@ def run_cli(profile, args, datadir):
     return result
 
 
-def read_settings(project):
+def read_settings(project, supports=False):
     with zipfile.ZipFile(project) as package:
         data = json.loads(package.read("Metadata/project_settings.config"))
     keys = ("printer_model", "nozzle_diameter", "wall_loops",
@@ -51,14 +53,15 @@ def read_settings(project):
     assert result["wall_loops"] == "4"
     assert result["sparse_infill_density"] == "25%"
     assert result["brim_width"] == "4"
-    assert result["enable_support"] == "0"
+    assert result["enable_support"] == ("1" if supports else "0")
     return result
 
 
 def main():
     if not CLI.exists():
         raise RuntimeError("Bambu Studio CLI is not installed at the expected location")
-    profile = process_profile()
+    base_profile = process_profile()
+    supported_profile = process_profile(True)
     output = ROOT / "bambu-projects"
     output.mkdir(exist_ok=True)
     source = ROOT / "print-stl"
@@ -76,10 +79,12 @@ def main():
     with tempfile.TemporaryDirectory(prefix="v4-bambu-") as scratch:
         temporary = Path(scratch)
         for name, files in plates.items():
+            supports = name == "03-book-left"
+            profile = supported_profile if supports else base_profile
             models = [source / file for file in files]
             project = output / f"{name}.3mf"
             run_cli(profile, ["--export-3mf", project, *models], temporary / "settings")
-            settings = read_settings(project)
+            settings = read_settings(project, supports)
             with zipfile.ZipFile(project) as package:
                 (output / f"{name}.png").write_bytes(package.read("Metadata/plate_1.png"))
             sliced = temporary / name

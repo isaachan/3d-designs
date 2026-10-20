@@ -2,8 +2,16 @@
 import json
 from pathlib import Path
 import FreeCAD as App,FreeCADGui as Gui
-from PySide6 import QtGui
+from PySide6 import QtGui,QtCore
 ROOT=Path(__file__).resolve().parent
+
+
+def settle_view():
+    # Standard views animate in FreeCAD; finish the transition before exporting PNG.
+    loop=QtCore.QEventLoop()
+    QtCore.QTimer.singleShot(900,loop.quit)
+    loop.exec()
+    Gui.updateGui()
 
 
 def run():
@@ -23,9 +31,13 @@ def run():
         elif o.TypeId=='App::Origin':o.ViewObject.Visibility=False
     d.recompute();Gui.activateView('Gui::View3DInventor',True)
     view=Gui.activeDocument().activeView();view.viewAxonometric();view.fitAll()
-    Gui.updateGui();d.save()
+    settle_view();d.save()
     view.saveImage(str(ROOT/'reports/assembly-preview.png'),1800,1100,'White')
-    view.viewFront();view.fitAll();Gui.updateGui()
+    view.viewFront();view.fitAll();settle_view()
+    # Opening a saved document may restore its camera during the first event pass.
+    view.viewFront();view.fitAll();settle_view()
     view.saveImage(str(ROOT/'reports/front-preview.png'),1800,1100,'White')
-    view.viewAxonometric();view.fitAll();Gui.updateGui();d.save()
+    view.viewRear();view.fitAll();settle_view()
+    view.saveImage(str(ROOT/'reports/rear-preview.png'),1800,1100,'White')
+    view.viewAxonometric();view.fitAll();settle_view();d.save()
     (ROOT/'reports/gui-validation.json').write_text(json.dumps(dict(status='passed',saved_view_colors=True,rendered_from_actual_native_cad=True),indent=2))

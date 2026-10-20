@@ -1,1 +1,1 @@
-PASS {'bodies': 46, 'sketches': 162, 'fully_constrained': True, 'single_solid_each': True, 'invalid_objects': []} 28 print files
+PASS {'bodies': 46, 'sketches': 159, 'fully_constrained': True, 'single_solid_each': True, 'invalid_objects': []} 28 print files

@@ -35,7 +35,7 @@
     "print_file": "print-stl/garage_deck_1.stl",
     "dimensions_mm": [
       199.60000610351562,
-      164.60000610351562,
+      158.60000610351562,
       13.0
     ]
   },
@@ -45,7 +45,7 @@
     "print_file": "print-stl/garage_deck_2.stl",
     "dimensions_mm": [
       199.60000610351562,
-      164.60000610351562,
+      158.60000610351562,
       13.0
     ]
   },
@@ -55,7 +55,7 @@
     "print_file": "print-stl/garage_deck_3.stl",
     "dimensions_mm": [
       199.60000610351562,
-      164.60000610351562,
+      158.60000610351562,
       13.0
     ]
   },
@@ -274,9 +274,9 @@
     "quantity": 1,
     "print_file": "print-stl/book_depot_sign.stl",
     "dimensions_mm": [
-      179.60000610351562,
-      35.599998474121094,
-      2.0
+      36.0,
+      180.0,
+      14.0
     ]
   }
 ]

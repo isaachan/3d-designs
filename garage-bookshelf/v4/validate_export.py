@@ -30,7 +30,9 @@ def assembly(doc):
     assert not bad,bad
     bb=Part.makeCompound(list(shapes.values())).optimalBoundingBox()
     dims=[bb.XLength,bb.YLength,bb.ZLength]
-    assert all(abs(a-b)<1e-5 for a,b in zip(dims,[540,170,364])),dims
+    assert all(abs(a-b)<1e-5 for a,b in zip(dims,[576,170,364])),dims
+    mb=Part.makeCompound([shapes[f'module_{i}_Body'] for i in (1,2,3)]).optimalBoundingBox()
+    assert all(abs(a-b)<1e-5 for a,b in zip([mb.XLength,mb.YLength,mb.ZLength],[540,170,238]))
     paths=[]
     for i in (1,2):
         a=shapes[f'module_{i}_Body'];b=shapes[f'module_{i+1}_Body']
@@ -56,15 +58,39 @@ def assembly(doc):
             target=3.141592653589793*(evaluate(doc,'CollarRadius')**2-evaluate(doc,'HoleRadius')**2)
             assert abs(area-target)<.01,(area,target)
             contacts.append(dict(level=lev,column=n,bearing_area_mm2=round(area,3)))
-    return dict(bounds_mm=[bb.XMin,bb.YMin,bb.ZMin,bb.XMax,bb.YMax,bb.ZMax],dimensions_mm=dims,interfering_pairs=bad,module_insertion_paths=paths,deck_lowering_paths=deck_paths,collar_contact_areas=contacts)
+    # Explicitly check the two requested viewing/mounting directions.
+    sign=shapes['book_depot_sign_Body'];sb=sign.optimalBoundingBox()
+    assert abs(sb.YMin)<1e-5 and abs(sb.YLength-evaluate(doc,'SignMountDepth'))<1e-5
+    assert abs(sb.XMin-evaluate(doc,'OverallWidth'))<1e-5
+    assert abs(sb.XMax-evaluate(doc,'OverallEnvelopeWidth'))<1e-5
+    front=[f for f in sign.Faces if abs(f.CenterOfMass.y)<1e-5 and f.normalAt(0,0).y<-.99]
+    assert len(front)==1 and abs(front[0].Area-evaluate(doc,'SignWidth')*evaluate(doc,'SignHeight'))<.001
+    opening=Part.makeBox(evaluate(doc,'BookWidth-2*WallThickness'),evaluate(doc,'BackFront'),evaluate(doc,'OverallHeight-BaseThickness'),App.Vector(evaluate(doc,'GarageWidth+WallThickness'),0,evaluate(doc,'BaseThickness')))
+    assert sign.common(opening).Volume<.001
+    sign_mount_faces=[f for f in sign.Faces if abs(f.CenterOfMass.x-evaluate(doc,'OverallWidth'))<1e-5 and f.normalAt(0,0).x<-.99]
+    wall_mount_faces=[f for f in shapes['module_3_Body'].Faces if abs(f.CenterOfMass.x-evaluate(doc,'OverallWidth'))<1e-5 and f.normalAt(0,0).x>.99]
+    glue=sum(a.common(b).Area for a in sign_mount_faces for b in wall_mount_faces)
+    assert abs(glue-evaluate(doc,'SignMountDepth')*evaluate(doc,'SignHeight'))<.001,glue
+    mounting=[]
+    for side,x in [('left','PostX1'),('right','PostX2')]:
+        post=shapes['billboard_post_'+side+'_Body'];pb=post.optimalBoundingBox()
+        assert abs(pb.YMin-evaluate(doc,'BackRear'))<1e-5
+        assert abs(pb.YMax-evaluate(doc,'OverallDepth'))<1e-5
+        assert abs(pb.ZMax-evaluate(doc,'BillboardBottom'))<1e-5
+        strip=Part.makeBox(evaluate(doc,'PostWidth'),.05,evaluate(doc,'OverallHeight-PostBottom'),App.Vector(evaluate(doc,x),evaluate(doc,'BackRear'),evaluate(doc,'PostBottom')))
+        area=post.common(strip).Volume/.05
+        assert abs(area-evaluate(doc,'PostWidth')*evaluate(doc,'OverallHeight-PostBottom'))<.001
+        mounting.append(dict(side=side,post_front_y_mm=pb.YMin,back_rear_y_mm=evaluate(doc,'BackRear'),post_rear_y_mm=pb.YMax,back_glue_contact_mm2=area))
+    requested_orientation=dict(blue_sign_front_normal=[0,-1,0],blue_sign_front_y_mm=sb.YMin,blue_sign_x_range_mm=[sb.XMin,sb.XMax],blue_sign_excluded_from_540mm_main_body=True,book_opening_overlap_mm3=0,sign_to_right_outer_wall_contact_mm2=glue,posts_behind_back=mounting,deck_bracket_slots_removed=True)
+    return dict(bounds_mm=[bb.XMin,bb.YMin,bb.ZMin,bb.XMax,bb.YMax,bb.ZMax],dimensions_mm=dims,main_body_dimensions_mm=[mb.XLength,mb.YLength,mb.ZLength],interfering_pairs=bad,requested_orientation=requested_orientation,module_insertion_paths=paths,deck_lowering_paths=deck_paths,collar_contact_areas=contacts)
 
 
 def parameter_test(doc):
     set_value(doc,'OverallDepth','172 mm')
     assert abs(doc.module_1_Body.Shape.BoundBox.YLength-172)<1e-5
-    assert abs(doc.garage_deck_1_Body.Shape.BoundBox.YLength-166.6)<1e-5
+    assert abs(doc.garage_deck_1_Body.Shape.BoundBox.YLength-160.6)<1e-5
     y=doc.column_3_segment_1.getGlobalPlacement().Base.y
-    assert abs(y-153)<1e-5,y
+    assert abs(y-147)<1e-5,y
     set_value(doc,'OverallDepth','170 mm')
     set_value(doc,'GarageWidth','202 mm')
     assert abs(doc.garage_deck_1_Body.Shape.BoundBox.XLength-201.6)<1e-5
@@ -90,7 +116,7 @@ def export(doc):
         elif name.startswith('billboard'):
             rotation=App.Rotation(App.Vector(1,0,0),90);orient='牌/文字/支架放平'
         elif name=='book_depot_sign':
-            rotation=App.Rotation(App.Vector(0,1,0),90);orient='蓝牌大面贴床'
+            rotation=App.Rotation(App.Vector(1,0,0),90);orient='蓝牌正面大面贴床'
         m=Mesh.Mesh(mesh);m.transform(App.Placement(App.Vector(),rotation).toMatrix())
         bb=m.BoundBox;m.translate(-bb.XMin,-bb.YMin,-bb.ZMin)
         file=ROOT/'print-stl'/f'{name}.stl';m.write(str(file))
@@ -106,7 +132,7 @@ def export(doc):
     step.read(str(ROOT/'garage-bookshelf-v4-assembly.step'))
     bb=step.optimalBoundingBox()
     assert len(step.Solids)==46,len(step.Solids)
-    assert all(abs(a-b)<.001 for a,b in zip([bb.XLength,bb.YLength,bb.ZLength],[540,170,364])),str(bb)
+    assert all(abs(a-b)<.001 for a,b in zip([bb.XLength,bb.YLength,bb.ZLength],[576,170,364])),str(bb)
     return records
 
 

@@ -25,11 +25,11 @@
       "sliced_saved_3mf": false,
       "sliced_matching_source_stls_with_saved_settings": true,
       "input_sha256": {
-        "garage_deck_1.stl": "9dd76cf0b978f3d3cf2e895bf18c58e07c68dbd78b4eaa9296266e650884bf61"
+        "garage_deck_1.stl": "b5ea584bd515bdbdf422da2007b4ff30d413c5f12d8688222c9c341efb132d85"
       },
       "print_runs": 3,
       "slicer_warnings": [],
-      "estimated_seconds": 7804
+      "estimated_seconds": 7562
     },
     {
       "project": "bambu-projects/02-garage-base.3mf",
@@ -53,11 +53,11 @@
       "sliced_saved_3mf": false,
       "sliced_matching_source_stls_with_saved_settings": true,
       "input_sha256": {
-        "module_1.stl": "c19a4bc8fe226f234aa824c3bb0eadd04420232ad5f55c6f19a52ff465034b60"
+        "module_1.stl": "4a803641720311e2465023ecff4a7044ae3f1f7e8421612b64736454fcd0c423"
       },
       "print_runs": 1,
       "slicer_warnings": [],
-      "estimated_seconds": 23780
+      "estimated_seconds": 23867
     },
     {
       "project": "bambu-projects/03-book-left.3mf",
@@ -75,17 +75,17 @@
         "sparse_infill_density": "25%",
         "brim_width": "4",
         "brim_type": "auto_brim",
-        "enable_support": "0"
+        "enable_support": "1"
       },
       "slice_status": "passed",
       "sliced_saved_3mf": false,
       "sliced_matching_source_stls_with_saved_settings": true,
       "input_sha256": {
-        "module_2.stl": "792f1e35cfba153f6b8e28e81ce12ae59383709b3b45173dc7cbd671b0f7f647"
+        "module_2.stl": "fbe3caa5f0c3dd734492b101fc4c89f2de2345d806bb6b234e8e1209e37703fa"
       },
       "print_runs": 1,
       "slicer_warnings": [],
-      "estimated_seconds": 33138
+      "estimated_seconds": 32898
     },
     {
       "project": "bambu-projects/04-book-right.3mf",
@@ -109,11 +109,11 @@
       "sliced_saved_3mf": false,
       "sliced_matching_source_stls_with_saved_settings": true,
       "input_sha256": {
-        "module_3.stl": "d3fd76267ef21a7a85fca39c66b38a0ce7516ebc13850eb78195ab7124766bf1"
+        "module_3.stl": "13f1c80795de65e71c6c31ca8598f00ca7465f6a88a5b0fc32047fda20e4002f"
       },
       "print_runs": 1,
       "slicer_warnings": [],
-      "estimated_seconds": 32746
+      "estimated_seconds": 32042
     },
     {
       "project": "bambu-projects/05-support-segments-twelve.3mf",
@@ -243,11 +243,11 @@
       "input_sha256": {
         "billboard_post_left.stl": "291f9f3e8fc24a375972ccfd8dc24645579efa042f42fa4d3ee13c8d06f6f22a",
         "billboard_post_right.stl": "d5f209e6ae478331d750ff43c99b5c38eec327f207a902f3dded47856a1eff9c",
-        "book_depot_sign.stl": "16873dcbb2dd59c7f981401dac03b6f779e821eb07de0ab17b7a44ecf5e5c4fb"
+        "book_depot_sign.stl": "ad30355a205231c20af5c19e0af837c3f90cb5768d88bc5e69e3a6a01b688512"
       },
       "print_runs": 1,
       "slicer_warnings": [],
-      "estimated_seconds": 3207
+      "estimated_seconds": 3553
     }
   ],
   "gcode_delivered": false,

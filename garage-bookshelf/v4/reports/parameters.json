@@ -7,7 +7,7 @@
   {
     "alias": "OverallWidth",
     "value": "540 mm",
-    "description": "总长，含全部装饰件"
+    "description": "主体总长，不含外挂蓝牌"
   },
   {
     "alias": "GarageWidth",
@@ -50,8 +50,13 @@
     "description": "隔板与右侧板厚"
   },
   {
+    "alias": "BackRear",
+    "value": "=OverallDepth-PostThickness",
+    "description": "背板后表面，后方留支架厚度"
+  },
+  {
     "alias": "BackFront",
-    "value": "=OverallDepth-BackThickness",
+    "value": "=BackRear-BackThickness",
     "description": "背板前表面"
   },
   {
@@ -361,8 +366,8 @@
   },
   {
     "alias": "BillboardY",
-    "value": "=BackFront-BillboardThickness",
-    "description": "广告牌前表面，全部收进170mm深度"
+    "value": "=BackRear",
+    "description": "广告牌/支架前表面位于背板后方，收进170mm总深"
   },
   {
     "alias": "PostWidth",
@@ -427,12 +432,12 @@
   {
     "alias": "SignThickness",
     "value": "2 mm",
-    "description": "右侧嵌入蓝牌厚"
+    "description": "正面蓝牌前后厚"
   },
   {
-    "alias": "SignDepth",
+    "alias": "SignWidth",
     "value": "36 mm",
-    "description": "右侧蓝牌前后长度"
+    "description": "正面蓝牌左右宽"
   },
   {
     "alias": "SignHeight",
@@ -440,9 +445,19 @@
     "description": "右侧蓝牌高"
   },
   {
-    "alias": "SignY",
-    "value": "12 mm",
-    "description": "蓝牌Y"
+    "alias": "SignX",
+    "value": "=OverallWidth",
+    "description": "蓝牌位于右侧板外边的X起点"
+  },
+  {
+    "alias": "OverallEnvelopeWidth",
+    "value": "=OverallWidth+SignWidth",
+    "description": "含外挂蓝牌的最大总长"
+  },
+  {
+    "alias": "SignFrontY",
+    "value": "0 mm",
+    "description": "蓝牌朝向使用者的前表面Y"
   },
   {
     "alias": "SignZ",
@@ -450,9 +465,9 @@
     "description": "蓝牌Z"
   },
   {
-    "alias": "SignGlueGap",
-    "value": "0.2 mm",
-    "description": "蓝牌边缘胶缝"
+    "alias": "SignMountDepth",
+    "value": "14 mm",
+    "description": "蓝牌一体折边沿右侧板外表面的贴合深度"
   },
   {
     "alias": "PrintBrim",

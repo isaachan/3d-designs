@@ -1,1 +1,6 @@
-BUILT 999
+Build summary for current delivery
+FreeCAD document generated successfully.
+Final native/assembly/export validation: passed.
+46 Bodies, 159 fully constrained sketches, 28 printable STL files.
+Main body: 540 x 170 x 238 mm. With external signs: 576 x 170 x 364 mm.
+Detailed final validation output: reports/validation.log

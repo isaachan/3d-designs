@@ -2,7 +2,7 @@
   "status": "passed",
   "native": {
     "bodies": 46,
-    "sketches": 162,
+    "sketches": 159,
     "fully_constrained": true,
     "single_solid_each": true,
     "invalid_objects": []
@@ -12,16 +12,53 @@
       -1e-07,
       -1e-07,
       -1.0000001587514286e-07,
-      540.0000001,
-      170.00000010000002,
+      576.0,
+      170.0000001,
       364.0
     ],
     "dimensions_mm": [
-      540.0000001999999,
-      170.00000020000002,
+      576.0000001,
+      170.0000002,
       364.0000001
     ],
+    "main_body_dimensions_mm": [
+      540.0000001999999,
+      170.0000002,
+      238.00000020000002
+    ],
     "interfering_pairs": [],
+    "requested_orientation": {
+      "blue_sign_front_normal": [
+        0,
+        -1,
+        0
+      ],
+      "blue_sign_front_y_mm": 0.0,
+      "blue_sign_x_range_mm": [
+        540.0,
+        576.0
+      ],
+      "blue_sign_excluded_from_540mm_main_body": true,
+      "book_opening_overlap_mm3": 0,
+      "sign_to_right_outer_wall_contact_mm2": 2520.0,
+      "posts_behind_back": [
+        {
+          "side": "left",
+          "post_front_y_mm": 164.0,
+          "back_rear_y_mm": 164.0,
+          "post_rear_y_mm": 170.0,
+          "back_glue_contact_mm2": 2112.00000000048
+        },
+        {
+          "side": "right",
+          "post_front_y_mm": 164.0,
+          "back_rear_y_mm": 164.0,
+          "post_rear_y_mm": 170.0,
+          "back_glue_contact_mm2": 2112.00000000048
+        }
+      ],
+      "deck_bracket_slots_removed": true
+    },
     "module_insertion_paths": [
       {
         "interface": 1,
@@ -220,7 +257,7 @@
       ],
       "orientation": "原方向，底面朝下",
       "with_4mm_brim_within_235_5_256_256": true,
-      "sha256": "c19a4bc8fe226f234aa824c3bb0eadd04420232ad5f55c6f19a52ff465034b60"
+      "sha256": "4a803641720311e2465023ecff4a7044ae3f1f7e8421612b64736454fcd0c423"
     },
     {
       "name": "module_2",
@@ -236,7 +273,7 @@
       ],
       "orientation": "原方向，底面朝下",
       "with_4mm_brim_within_235_5_256_256": true,
-      "sha256": "792f1e35cfba153f6b8e28e81ce12ae59383709b3b45173dc7cbd671b0f7f647"
+      "sha256": "fbe3caa5f0c3dd734492b101fc4c89f2de2345d806bb6b234e8e1209e37703fa"
     },
     {
       "name": "module_3",
@@ -252,7 +289,7 @@
       ],
       "orientation": "原方向，底面朝下",
       "with_4mm_brim_within_235_5_256_256": true,
-      "sha256": "d3fd76267ef21a7a85fca39c66b38a0ce7516ebc13850eb78195ab7124766bf1"
+      "sha256": "13f1c80795de65e71c6c31ca8598f00ca7465f6a88a5b0fc32047fda20e4002f"
     },
     {
       "name": "garage_deck_1",
@@ -263,12 +300,12 @@
       "non_manifold": false,
       "dimensions_mm": [
         199.60000610351562,
-        164.60000610351562,
+        158.60000610351562,
         13.0
       ],
       "orientation": "平整顶面贴床，加强梁向上",
       "with_4mm_brim_within_235_5_256_256": true,
-      "sha256": "9dd76cf0b978f3d3cf2e895bf18c58e07c68dbd78b4eaa9296266e650884bf61"
+      "sha256": "b5ea584bd515bdbdf422da2007b4ff30d413c5f12d8688222c9c341efb132d85"
     },
     {
       "name": "garage_deck_2",
@@ -279,12 +316,12 @@
       "non_manifold": false,
       "dimensions_mm": [
         199.60000610351562,
-        164.60000610351562,
+        158.60000610351562,
         13.0
       ],
       "orientation": "平整顶面贴床，加强梁向上",
       "with_4mm_brim_within_235_5_256_256": true,
-      "sha256": "9dd76cf0b978f3d3cf2e895bf18c58e07c68dbd78b4eaa9296266e650884bf61"
+      "sha256": "b5ea584bd515bdbdf422da2007b4ff30d413c5f12d8688222c9c341efb132d85"
     },
     {
       "name": "garage_deck_3",
@@ -295,12 +332,12 @@
       "non_manifold": false,
       "dimensions_mm": [
         199.60000610351562,
-        164.60000610351562,
+        158.60000610351562,
         13.0
       ],
       "orientation": "平整顶面贴床，加强梁向上",
       "with_4mm_brim_within_235_5_256_256": true,
-      "sha256": "9dd76cf0b978f3d3cf2e895bf18c58e07c68dbd78b4eaa9296266e650884bf61"
+      "sha256": "b5ea584bd515bdbdf422da2007b4ff30d413c5f12d8688222c9c341efb132d85"
     },
     {
       "name": "column_1_segment_1",
@@ -646,13 +683,13 @@
       "closed": true,
       "non_manifold": false,
       "dimensions_mm": [
-        179.60000610351562,
-        35.599998474121094,
-        2.0
+        36.0,
+        180.0,
+        14.0
       ],
-      "orientation": "蓝牌大面贴床",
+      "orientation": "蓝牌正面大面贴床",
       "with_4mm_brim_within_235_5_256_256": true,
-      "sha256": "16873dcbb2dd59c7f981401dac03b6f779e821eb07de0ab17b7a44ecf5e5c4fb"
+      "sha256": "ad30355a205231c20af5c19e0af837c3f90cb5768d88bc5e69e3a6a01b688512"
     }
   ],
   "physical_fit_and_load": "not_tested",
