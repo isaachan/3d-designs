@@ -1,0 +1,2452 @@
+{
+  "freecad_version": [
+    "1",
+    "1",
+    "3",
+    "20260725 (Git shallow)",
+    "Unknown",
+    "2026/07/25 04:52:02",
+    "grafted,grafted",
+    "145529fe741292ff0b3977a01195bf0247425794"
+  ],
+  "assembly_objects": [
+    {
+      "name": "module_1",
+      "label": "主体模块 1",
+      "group": [
+        "01 五个一体主体模块（灰色）"
+      ],
+      "bounds_global": [
+        0.0,
+        0.0,
+        0.0,
+        193.8000030517578,
+        220.0,
+        238.0
+      ],
+      "bounds_source": [
+        0.0,
+        0.0,
+        0.0,
+        193.8000030517578,
+        220.0,
+        238.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 532960.8125,
+      "area_mm2": 174223.75,
+      "facets": 954,
+      "stl_facets": 954
+    },
+    {
+      "name": "module_2",
+      "label": "主体模块 2",
+      "group": [
+        "01 五个一体主体模块（灰色）"
+      ],
+      "bounds_global": [
+        180.0,
+        0.0,
+        -7.844246128371171e-16,
+        423.79998779296875,
+        220.0,
+        238.0
+      ],
+      "bounds_source": [
+        180.0,
+        0.0,
+        -7.844246128371171e-16,
+        423.79998779296875,
+        220.0,
+        238.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 968341.3125,
+      "area_mm2": 317645.875,
+      "facets": 806,
+      "stl_facets": 806
+    },
+    {
+      "name": "module_3",
+      "label": "主体模块 3",
+      "group": [
+        "01 五个一体主体模块（灰色）"
+      ],
+      "bounds_global": [
+        410.0,
+        0.0,
+        -7.844246128371171e-16,
+        603.7999877929688,
+        220.0,
+        238.0
+      ],
+      "bounds_source": [
+        410.0,
+        0.0,
+        -7.844246128371171e-16,
+        603.7999877929688,
+        220.0,
+        238.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 523125.5,
+      "area_mm2": 171879.875,
+      "facets": 1226,
+      "stl_facets": 1226
+    },
+    {
+      "name": "module_4",
+      "label": "主体模块 4",
+      "group": [
+        "01 五个一体主体模块（灰色）"
+      ],
+      "bounds_global": [
+        590.0,
+        0.0,
+        -7.844246128371171e-16,
+        783.7999877929688,
+        220.0,
+        238.0
+      ],
+      "bounds_source": [
+        590.0,
+        0.0,
+        -7.844246128371171e-16,
+        783.7999877929688,
+        220.0,
+        238.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 523119.34375,
+      "area_mm2": 171879.875,
+      "facets": 1226,
+      "stl_facets": 1226
+    },
+    {
+      "name": "module_5",
+      "label": "主体模块 5",
+      "group": [
+        "01 五个一体主体模块（灰色）"
+      ],
+      "bounds_global": [
+        770.0,
+        0.0,
+        -7.844246128371171e-16,
+        920.0,
+        220.0,
+        238.0
+      ],
+      "bounds_source": [
+        770.0,
+        0.0,
+        -7.844246128371171e-16,
+        920.0,
+        220.0,
+        238.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 726384.0,
+      "area_mm2": 240842.203125,
+      "facets": 112,
+      "stl_facets": 112
+    },
+    {
+      "name": "garage_deck_1_left",
+      "label": "停车层板 1 左",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        0.0,
+        0.0,
+        66.0,
+        189.8000030517578,
+        215.0,
+        71.0
+      ],
+      "bounds_source": [
+        0.0,
+        0.0,
+        66.0,
+        189.8000030517578,
+        215.0,
+        71.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 192032.078125,
+      "area_mm2": 81378.546875,
+      "facets": 806,
+      "stl_facets": 806
+    },
+    {
+      "name": "garage_deck_1_right",
+      "label": "停车层板 1 右",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        180.0,
+        0.0,
+        66.0,
+        360.0,
+        215.0,
+        71.0
+      ],
+      "bounds_source": [
+        180.0,
+        0.0,
+        66.0,
+        360.0,
+        215.0,
+        71.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 188734.859375,
+      "area_mm2": 80060.8671875,
+      "facets": 374,
+      "stl_facets": 374
+    },
+    {
+      "name": "garage_deck_1_seam_bridge",
+      "label": "停车层板 1 底面跨缝加强片",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        156.0,
+        55.0,
+        63.0,
+        204.0,
+        165.0,
+        66.0
+      ],
+      "bounds_source": [
+        156.0,
+        55.0,
+        63.0,
+        204.0,
+        165.0,
+        66.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 15840.0,
+      "area_mm2": 11508.0,
+      "facets": 12,
+      "stl_facets": 12
+    },
+    {
+      "name": "garage_deck_2_left",
+      "label": "停车层板 2 左",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        0.0,
+        0.0,
+        129.0,
+        189.8000030517578,
+        215.0,
+        134.0
+      ],
+      "bounds_source": [
+        0.0,
+        0.0,
+        129.0,
+        189.8000030517578,
+        215.0,
+        134.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 192032.0,
+      "area_mm2": 81378.546875,
+      "facets": 806,
+      "stl_facets": 806
+    },
+    {
+      "name": "garage_deck_2_right",
+      "label": "停车层板 2 右",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        180.0,
+        0.0,
+        129.0,
+        360.0,
+        215.0,
+        134.0
+      ],
+      "bounds_source": [
+        180.0,
+        0.0,
+        129.0,
+        360.0,
+        215.0,
+        134.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 188734.796875,
+      "area_mm2": 80060.8671875,
+      "facets": 364,
+      "stl_facets": 364
+    },
+    {
+      "name": "garage_deck_2_seam_bridge",
+      "label": "停车层板 2 底面跨缝加强片",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        156.0,
+        55.0,
+        126.0,
+        204.0,
+        165.0,
+        129.0
+      ],
+      "bounds_source": [
+        156.0,
+        55.0,
+        126.0,
+        204.0,
+        165.0,
+        129.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 15840.0,
+      "area_mm2": 11508.0,
+      "facets": 12,
+      "stl_facets": 12
+    },
+    {
+      "name": "garage_deck_3_left",
+      "label": "停车层板 3 左",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        0.0,
+        0.0,
+        192.0,
+        189.8000030517578,
+        215.0,
+        197.0
+      ],
+      "bounds_source": [
+        0.0,
+        0.0,
+        192.0,
+        189.8000030517578,
+        215.0,
+        197.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 192032.421875,
+      "area_mm2": 81378.546875,
+      "facets": 806,
+      "stl_facets": 806
+    },
+    {
+      "name": "garage_deck_3_right",
+      "label": "停车层板 3 右",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        180.0,
+        0.0,
+        192.0,
+        360.0,
+        215.0,
+        197.0
+      ],
+      "bounds_source": [
+        180.0,
+        0.0,
+        192.0,
+        360.0,
+        215.0,
+        197.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 188735.140625,
+      "area_mm2": 80060.8671875,
+      "facets": 364,
+      "stl_facets": 364
+    },
+    {
+      "name": "garage_deck_3_seam_bridge",
+      "label": "停车层板 3 底面跨缝加强片",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        156.0,
+        55.0,
+        189.0,
+        204.0,
+        165.0,
+        192.0
+      ],
+      "bounds_source": [
+        156.0,
+        55.0,
+        189.0,
+        204.0,
+        165.0,
+        192.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 15840.0,
+      "area_mm2": 11508.0,
+      "facets": 12,
+      "stl_facets": 12
+    },
+    {
+      "name": "garage_column_1",
+      "label": "黄色承托柱 1",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        -3.998682975769043,
+        -3.99967098236084,
+        8.0,
+        24.0,
+        23.999670028686523,
+        230.0
+      ],
+      "bounds_source": [
+        -3.998682975769043,
+        -3.99967098236084,
+        8.0,
+        24.0,
+        23.999670028686523,
+        230.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 36360.16015625,
+      "area_mm2": 11933.5126953125,
+      "facets": 10548,
+      "stl_facets": 10548
+    },
+    {
+      "name": "garage_column_2",
+      "label": "黄色承托柱 2",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        326.00131702423096,
+        -3.99967098236084,
+        8.0,
+        354.0,
+        23.999670028686523,
+        230.0
+      ],
+      "bounds_source": [
+        -3.998682975769043,
+        -3.99967098236084,
+        8.0,
+        24.0,
+        23.999670028686523,
+        230.0
+      ],
+      "placement": [
+        330.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 36360.16015625,
+      "area_mm2": 11933.5126953125,
+      "facets": 10548,
+      "stl_facets": 10548
+    },
+    {
+      "name": "garage_column_3",
+      "label": "黄色承托柱 3",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        -3.998682975769043,
+        181.00032901763916,
+        8.0,
+        24.0,
+        208.99967002868652,
+        230.0
+      ],
+      "bounds_source": [
+        -3.998682975769043,
+        -3.99967098236084,
+        8.0,
+        24.0,
+        23.999670028686523,
+        230.0
+      ],
+      "placement": [
+        0.0,
+        185.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 36360.16015625,
+      "area_mm2": 11933.5126953125,
+      "facets": 10548,
+      "stl_facets": 10548
+    },
+    {
+      "name": "garage_column_4",
+      "label": "黄色承托柱 4",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        326.00131702423096,
+        181.00032901763916,
+        8.0,
+        354.0,
+        208.99967002868652,
+        230.0
+      ],
+      "bounds_source": [
+        -3.998682975769043,
+        -3.99967098236084,
+        8.0,
+        24.0,
+        23.999670028686523,
+        230.0
+      ],
+      "placement": [
+        330.0,
+        185.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 36360.16015625,
+      "area_mm2": 11933.5126953125,
+      "facets": 10548,
+      "stl_facets": 10548
+    },
+    {
+      "name": "book_depot_sign",
+      "label": "BOOK DEPOT 蓝色底牌",
+      "group": [
+        "03 右侧竖牌"
+      ],
+      "bounds_global": [
+        920.0,
+        0.0,
+        50.0,
+        956.0,
+        6.00000000000004,
+        230.0
+      ],
+      "bounds_source": [
+        0.0,
+        0.0,
+        0.0,
+        36.0,
+        180.0,
+        6.0
+      ],
+      "placement": [
+        920.0,
+        6.0,
+        50.0,
+        0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 38880.0,
+      "area_mm2": 15552.0,
+      "facets": 12,
+      "stl_facets": 12
+    },
+    {
+      "name": "billboard_left",
+      "label": "广告牌左板",
+      "group": [
+        "04 Lovely Cars I've Driven 广告牌"
+      ],
+      "bounds_global": [
+        0.0,
+        220.0,
+        300.0,
+        180.0,
+        226.0,
+        364.0
+      ],
+      "bounds_source": [
+        0.0,
+        220.0,
+        300.0,
+        180.0,
+        226.0,
+        364.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 69120.0,
+      "area_mm2": 25968.0,
+      "facets": 12,
+      "stl_facets": 12
+    },
+    {
+      "name": "billboard_right",
+      "label": "广告牌右板",
+      "group": [
+        "04 Lovely Cars I've Driven 广告牌"
+      ],
+      "bounds_global": [
+        180.0,
+        220.0,
+        300.0,
+        360.0,
+        226.0,
+        364.0
+      ],
+      "bounds_source": [
+        180.0,
+        220.0,
+        300.0,
+        360.0,
+        226.0,
+        364.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 69120.0,
+      "area_mm2": 25968.0,
+      "facets": 12,
+      "stl_facets": 12
+    },
+    {
+      "name": "billboard_seam_bridge",
+      "label": "广告牌背面跨缝片",
+      "group": [
+        "04 Lovely Cars I've Driven 广告牌"
+      ],
+      "bounds_global": [
+        155.0,
+        226.0,
+        314.0,
+        205.0,
+        229.0,
+        350.0
+      ],
+      "bounds_source": [
+        155.0,
+        226.0,
+        314.0,
+        205.0,
+        229.0,
+        350.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 5400.0,
+      "area_mm2": 4116.0,
+      "facets": 12,
+      "stl_facets": 12
+    },
+    {
+      "name": "billboard_post_left",
+      "label": "广告牌左支架（中心 X=90）",
+      "group": [
+        "04 Lovely Cars I've Driven 广告牌"
+      ],
+      "bounds_global": [
+        78.0,
+        220.0,
+        150.0,
+        102.0,
+        226.0,
+        300.0
+      ],
+      "bounds_source": [
+        78.0,
+        220.0,
+        150.0,
+        102.0,
+        226.0,
+        300.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 21600.0,
+      "area_mm2": 9288.0,
+      "facets": 12,
+      "stl_facets": 12
+    },
+    {
+      "name": "billboard_post_right",
+      "label": "广告牌右支架（中心 X=270）",
+      "group": [
+        "04 Lovely Cars I've Driven 广告牌"
+      ],
+      "bounds_global": [
+        258.0,
+        220.0,
+        150.0,
+        282.0,
+        226.0,
+        300.0
+      ],
+      "bounds_source": [
+        258.0,
+        220.0,
+        150.0,
+        282.0,
+        226.0,
+        300.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 21600.0,
+      "area_mm2": 9288.0,
+      "facets": 12,
+      "stl_facets": 12
+    },
+    {
+      "name": "billboard_text_lovely_cars",
+      "label": "Lovely Cars 白色文字",
+      "group": [
+        "04 Lovely Cars I've Driven 广告牌"
+      ],
+      "bounds_global": [
+        107.94999694824219,
+        219.0,
+        332.95001220703125,
+        253.0500030517578,
+        220.0,
+        356.04998779296875
+      ],
+      "bounds_source": [
+        107.94999694824219,
+        219.0,
+        332.95001220703125,
+        253.0500030517578,
+        220.0,
+        356.04998779296875
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 10,
+      "closed": true,
+      "volume_mm3": 1404.6236572265625,
+      "area_mm2": 3616.4765625,
+      "facets": 1472,
+      "stl_facets": 1472
+    },
+    {
+      "name": "billboard_text_ive_driven",
+      "label": "I've Driven 白色文字",
+      "group": [
+        "04 Lovely Cars I've Driven 广告牌"
+      ],
+      "bounds_global": [
+        115.94999694824219,
+        219.0,
+        306.95001220703125,
+        244.0500030517578,
+        220.0,
+        328.04998779296875
+      ],
+      "bounds_source": [
+        115.94999694824219,
+        219.0,
+        306.95001220703125,
+        244.0500030517578,
+        220.0,
+        328.04998779296875
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 10,
+      "closed": true,
+      "volume_mm3": 1247.8863525390625,
+      "area_mm2": 3202.93994140625,
+      "facets": 1052,
+      "stl_facets": 1052
+    }
+  ],
+  "auxiliary_view_objects": [
+    {
+      "name": "module_2_narrow_visual",
+      "label": "模块 2 缩短外观验证件（不可装配）",
+      "bounds_global": [
+        180.0,
+        0.0,
+        -7.844246128371171e-16,
+        293.79998779296875,
+        220.0,
+        238.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "facets": 806,
+      "components": 1
+    },
+    {
+      "name": "module_5_narrow_visual",
+      "label": "模块 5 缩短外观验证件（不可装配）",
+      "bounds_global": [
+        905.0,
+        0.0,
+        -7.844246128371171e-16,
+        955.0,
+        220.0,
+        238.0
+      ],
+      "placement": [
+        135.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "facets": 120,
+      "components": 1
+    }
+  ],
+  "assembly_count": 26,
+  "physical_solids": 44,
+  "all_files": [
+    {
+      "path": "README.md",
+      "bytes": 5209,
+      "sha256": "d00a579cb0e67e3f6e8d18265cba4b9a67ed61037cf189ebb4242dc93f8200a5"
+    },
+    {
+      "path": "__pycache__/generate_narrow_visual_freecad.cpython-311.pyc",
+      "bytes": 1761,
+      "sha256": "7172e5bc810a6dc2473321c599d38e2cd699e8265efda5f28a12c26f1b8812e7"
+    },
+    {
+      "path": "__pycache__/generate_v2.cpython-311.pyc",
+      "bytes": 21213,
+      "sha256": "d286b418d3a390df866bef4bb485a4a4df44c3cc534be263bbd5692072eb0e2a"
+    },
+    {
+      "path": "__pycache__/generate_v2_freecad.cpython-311.pyc",
+      "bytes": 4586,
+      "sha256": "1263c823d654e05078f0729abed066fbb6d150ab47cdb5fe1461e785538053be"
+    },
+    {
+      "path": "audit/__pycache__/validate_freecad_assembly.cpython-311.pyc",
+      "bytes": 4821,
+      "sha256": "5875903f0e37873b41dc2b29ae8e0dc1bb715cee4babaed2af2693e02efda192"
+    },
+    {
+      "path": "audit/__pycache__/validate_v2.cpython-311.pyc",
+      "bytes": 9897,
+      "sha256": "52a192fa8f686b3fe68582bb63baee6b8a884cf3c61bf8d9879778ff698a559d"
+    },
+    {
+      "path": "audit/assembly-preview.svg",
+      "bytes": 4487,
+      "sha256": "f694a272eb86f80f0df0963c1f3d4192fe2c526832a65e09b60b8164a2427608"
+    },
+    {
+      "path": "audit/freecad-validation.json",
+      "bytes": 2724,
+      "sha256": "f0b9f36f2164423f83a3d19836a0088e1e30ba90ad48d8bc15b80164c6065f44"
+    },
+    {
+      "path": "audit/modules-2-3-5-view-validation.json",
+      "bytes": 193,
+      "sha256": "28d134694a1bc2195fd1d72bc22803ccc8068052dfc4524dd4da839975a0b33d"
+    },
+    {
+      "path": "audit/modules-2-3-5-view.json",
+      "bytes": 335,
+      "sha256": "faec7df032277f12cfba5442e09814f2ba136254e1d1fdba6578b5afc28de93f"
+    },
+    {
+      "path": "audit/modules-2-5-narrow-visual-fixed-validation.json",
+      "bytes": 201,
+      "sha256": "9fcb591a15a49d243f4da1d31d8c58663a40971c6c2e0047596e6c9c86037872"
+    },
+    {
+      "path": "audit/modules-2-5-narrow-visual-fixed.json",
+      "bytes": 360,
+      "sha256": "8cd9d67c59c5653efa8383e7283e038fb70135c1cacb1aab5d11315be260ebdd"
+    },
+    {
+      "path": "audit/modules-2-5-narrow-visual-validation.json",
+      "bytes": 201,
+      "sha256": "9fcb591a15a49d243f4da1d31d8c58663a40971c6c2e0047596e6c9c86037872"
+    },
+    {
+      "path": "audit/modules-2-5-narrow-visual.json",
+      "bytes": 354,
+      "sha256": "b1131e70fd5453953420cf23ad179f46f7681f155bab5425256b7ab668a98b77"
+    },
+    {
+      "path": "audit/parts-preview.svg",
+      "bytes": 1423,
+      "sha256": "96dbb672a5952815164cb5a20a2c0bce7c022ab5efaaa2f9b8407269e898424b"
+    },
+    {
+      "path": "audit/print-layout.json",
+      "bytes": 4968,
+      "sha256": "45aea3a7cb6658a812f0f3bd42fd5e035395344c84165e2839080235d90f3f1d"
+    },
+    {
+      "path": "audit/print-validation.json",
+      "bytes": 10799,
+      "sha256": "9525044c3c9d43a3086b7491d9bdf53d5621ac17162ebb716f2169f936a03406"
+    },
+    {
+      "path": "audit/render_previews.mjs",
+      "bytes": 3683,
+      "sha256": "181dc25d4bc828da75850ed23b79303a2b6a6ac62f9fb156289ae25cb0fa6dc2"
+    },
+    {
+      "path": "audit/validate_freecad_assembly.py",
+      "bytes": 2239,
+      "sha256": "3764f9c19831a7e63e7a711a419a7e702695d4894139e3f1c2e78b271bc8a70c"
+    },
+    {
+      "path": "audit/validate_print_projects.py",
+      "bytes": 2859,
+      "sha256": "ebe047288865d8300d4f19fd740b70dcca6022e9e2da99e1d4f751c18b73cbc9"
+    },
+    {
+      "path": "audit/validate_selected_modules_view.py",
+      "bytes": 3341,
+      "sha256": "efa432d68249c13a9c0918051364e41fe5b64920967c2850dc083571a3626936"
+    },
+    {
+      "path": "audit/validate_v2.py",
+      "bytes": 7297,
+      "sha256": "57933b417625e568716b33f532bbbdc0e26e16ca73acb962949a65811a83ac8c"
+    },
+    {
+      "path": "audit/validation.json",
+      "bytes": 21975,
+      "sha256": "488b403bc8a95831dfe3a434115df4dbdf6fe4c2dd17dac9c76a529e274aabed"
+    },
+    {
+      "path": "audit/验证报告.md",
+      "bytes": 4486,
+      "sha256": "a1263a393b4423a9767b18b86e941989442f4d4a0ed095535ace1b26c5304955"
+    },
+    {
+      "path": "build_selected_modules_view.py",
+      "bytes": 4942,
+      "sha256": "62c811461fb06bc874db717c9a5a80d5d15dd831e3527b6dd4c8be76095fac32"
+    },
+    {
+      "path": "build_x2d_projects.py",
+      "bytes": 5318,
+      "sha256": "61813a22cfd3eb241e0ecdd88f076b5accfb041665e6761beb5369017693f370"
+    },
+    {
+      "path": "garage-bookshelf-v2-assembly.FCStd",
+      "bytes": 613151,
+      "sha256": "ae96e1dc8342f4aa6bbb159e147bd2e08fe34acb4c914ec39ee5324810b6c3c2"
+    },
+    {
+      "path": "garage-bookshelf-v2-narrow-visual.FCStd",
+      "bytes": 12710,
+      "sha256": "9018fd9d36d2e9b13d3e11115c4dbaf7724a55ec4756d087aae024bc4c7ca406"
+    },
+    {
+      "path": "generate-label-mask.swift",
+      "bytes": 2148,
+      "sha256": "328d221aa72be57c7ca263cf537e7c364f6036eeea9aed89de4bf5dba61051e3"
+    },
+    {
+      "path": "generate_narrow_visual_freecad.py",
+      "bytes": 928,
+      "sha256": "aafabf45bc53597ec2159b06f4af3dbce63fc5c07968edfd2db8473c0e877990"
+    },
+    {
+      "path": "generate_v2.py",
+      "bytes": 12543,
+      "sha256": "70e357521ca9b489b9990591aa6b8a43fe1fa09eb396ad869ee12a70669b9b1d"
+    },
+    {
+      "path": "generate_v2_freecad.py",
+      "bytes": 2342,
+      "sha256": "643a3b108d92e91310f8e853ce8ef67598e15aff19c5612dd006ec4307781992"
+    },
+    {
+      "path": "print/.DS_Store",
+      "bytes": 6148,
+      "sha256": "2239cb70e1b573bc60b4445ae099f02b17f0e462eba6629389446c474f0a032d"
+    },
+    {
+      "path": "print/projects/billboard_left-x2d-pla.3mf",
+      "bytes": 15418,
+      "sha256": "956b6178048b5abdd8e8fedcae93470d81d10f917348a8845d5b2b559766a059"
+    },
+    {
+      "path": "print/projects/billboard_post_left-x2d-pla.3mf",
+      "bytes": 10042,
+      "sha256": "6d63c9c7586807e5919ff18edea70a5fecef8a858547be7ffce1426b55a3aae7"
+    },
+    {
+      "path": "print/projects/billboard_post_right-x2d-pla.3mf",
+      "bytes": 10045,
+      "sha256": "d371836ab7d118cd00394624c7baf159fadd5e73977c867937f2a30e2c1d18e8"
+    },
+    {
+      "path": "print/projects/billboard_right-x2d-pla.3mf",
+      "bytes": 15423,
+      "sha256": "c71248c1b64a1cc5b7a299528ecefa2ae8b94bead0cddbdddbccfdcd797017fb"
+    },
+    {
+      "path": "print/projects/billboard_seam_bridge-x2d-pla.3mf",
+      "bytes": 14768,
+      "sha256": "200f89369de2484b40b14297bbdef2b1d85a2e9f14e6c4650a942d6c1a835b4a"
+    },
+    {
+      "path": "print/projects/billboard_text_ive_driven-x2d-pla.3mf",
+      "bytes": 30140,
+      "sha256": "9c2ea080bcf09a0cf60c8a4c4b08a7038a8d140d3060bfa256cc3684720310ab"
+    },
+    {
+      "path": "print/projects/billboard_text_lovely_cars-x2d-pla.3mf",
+      "bytes": 34954,
+      "sha256": "2d8ecc3ff3e40fa0e7985b298090752d1d7f85d7446c8b4dc545f9835efb75be"
+    },
+    {
+      "path": "print/projects/book_depot_sign-x2d-pla.3mf",
+      "bytes": 15503,
+      "sha256": "abdde77a065cca500a5d0a23ef59d59705d795e97cc5ee2b1a4d3e2b2eb683ec"
+    },
+    {
+      "path": "print/projects/garage_column_1-x2d-pla.3mf",
+      "bytes": 131529,
+      "sha256": "903623a466fc929037491f697aa0aebf51c3cd57f10f79b8d55c6acd5d34a7ea"
+    },
+    {
+      "path": "print/projects/garage_column_2-x2d-pla.3mf",
+      "bytes": 131530,
+      "sha256": "ec129f95cdd99ba44f45eb685fa0f1eb17917fb1cc5122e06e7fc90649d5a60f"
+    },
+    {
+      "path": "print/projects/garage_column_3-x2d-pla.3mf",
+      "bytes": 131531,
+      "sha256": "cf63c3c557dac01f6fe68ed6e332f7ebd4b8b7ecc315beb29a823fd22cd38237"
+    },
+    {
+      "path": "print/projects/garage_column_4-x2d-pla.3mf",
+      "bytes": 131528,
+      "sha256": "2cade83357d2d0f2fc005d3a9ec9e81fa01e54b80b523672f9d1664d6a7b4769"
+    },
+    {
+      "path": "print/projects/garage_deck_1_left-x2d-pla.3mf",
+      "bytes": 19082,
+      "sha256": "9f2e25b436e9b16300fe6bda3405c318e10b5dd4d20c43b3897a07baea09b152"
+    },
+    {
+      "path": "print/projects/garage_deck_1_right-x2d-pla.3mf",
+      "bytes": 13962,
+      "sha256": "d528bbc418cb3769ed218df2fe0c5be1621b05863f64ac917c3f39f5c81c447c"
+    },
+    {
+      "path": "print/projects/garage_deck_1_seam_bridge-x2d-pla.3mf",
+      "bytes": 15753,
+      "sha256": "e0e64bb3d2ae8af12efff352cdf4dfb22601dd03e74744800db0b85a1f1c5e55"
+    },
+    {
+      "path": "print/projects/garage_deck_2_left-x2d-pla.3mf",
+      "bytes": 19105,
+      "sha256": "3c405a89da3a5f47b7cf68f62b6c436b17e67db65edfd29b55da3f3c2e046acd"
+    },
+    {
+      "path": "print/projects/garage_deck_2_right-x2d-pla.3mf",
+      "bytes": 13848,
+      "sha256": "d39b4e85ad4244b0163ad3270479bed7c76e731a175e5a87b3a1b8ab9b36217a"
+    },
+    {
+      "path": "print/projects/garage_deck_2_seam_bridge-x2d-pla.3mf",
+      "bytes": 15755,
+      "sha256": "dae8edcd6955f522d50240800de7b824973ab89d2eb84c39e1e353dcf2e45b97"
+    },
+    {
+      "path": "print/projects/garage_deck_3_left-x2d-pla.3mf",
+      "bytes": 19104,
+      "sha256": "f7fd89259469b0ab82a59fba7c848d9a65d8112bff060afccd80a784bcffed37"
+    },
+    {
+      "path": "print/projects/garage_deck_3_right-x2d-pla.3mf",
+      "bytes": 13845,
+      "sha256": "8f69b3c510122bd9f393d0ab363ab66f35b738f953b83a876bb573f7c0b27827"
+    },
+    {
+      "path": "print/projects/garage_deck_3_seam_bridge-x2d-pla.3mf",
+      "bytes": 15756,
+      "sha256": "1f24ec5cc306ab1d6cc14e7817d9f83e15a32fa097545b3ff7e29c7e37ae9643"
+    },
+    {
+      "path": "print/projects/module_1-x2d-pla.3mf",
+      "bytes": 20268,
+      "sha256": "2224f9e9d23ec0e5b68b20a2231bf695e5711e15e836a8e4a8b0fe4f1b8b1f0a"
+    },
+    {
+      "path": "print/projects/module_2-x2d-pla.3mf",
+      "bytes": 18589,
+      "sha256": "3f5164db31432cbe28ddb8df6eeab04d87985015862e12c1f3d7366de6905dd2"
+    },
+    {
+      "path": "print/projects/module_2_narrow_visual-x2d-pla.3mf",
+      "bytes": 43705,
+      "sha256": "1f2392e4891dfbaaa4bd8d8a54aa10d80407597e5895ba5bd337250a6cfcc3e2"
+    },
+    {
+      "path": "print/projects/module_3-x2d-pla.3mf",
+      "bytes": 23167,
+      "sha256": "7e305324d3345a6b0716000ee3da5af79771b9fc48f3f72cd124b849bb7bae3a"
+    },
+    {
+      "path": "print/projects/module_4-x2d-pla.3mf",
+      "bytes": 23142,
+      "sha256": "c2c757d0b00d6b3adebab704937beb8a02eac588674f6a4d81cf44b916be196f"
+    },
+    {
+      "path": "print/projects/module_5-x2d-pla.3mf",
+      "bytes": 10968,
+      "sha256": "208b04f706cb43f35d25e7c90103f791f3e064b675fcaa39a37e4c82478b5f97"
+    },
+    {
+      "path": "print/projects/module_5_narrow_visual-x2d-pla.3mf",
+      "bytes": 11093,
+      "sha256": "edaba2b201274c95003b246333d20152e0e175b74e8da049fdedb82c32dfc9dd"
+    },
+    {
+      "path": "print/projects/modules-2-3-5-view-x2d-pla.3mf",
+      "bytes": 34798,
+      "sha256": "63dbc29b9f1f2c2b64adf993f3611fadbe3edd29b6395c0449a8b5b082dccb11"
+    },
+    {
+      "path": "print/projects/modules-2-5-narrow-visual-fixed-x2d-pla.3mf",
+      "bytes": 52388,
+      "sha256": "d6e203b6980ecfd36fc38db8b37ed45b1ce2a02500a766e80b27b9c8a017b92f"
+    },
+    {
+      "path": "print/projects/modules-2-5-narrow-visual-x2d-pla.3mf",
+      "bytes": 62813,
+      "sha256": "1d7a5a370ec4b75f6fa1930b2127b46990276023e242906dbd187e609284df95"
+    },
+    {
+      "path": "print/projects/test_back_female-x2d-pla.3mf",
+      "bytes": 15381,
+      "sha256": "db72b408863d76dad5d4106869c4abf9e9f7d03932a01e7acefca5eb6a2e7c3b"
+    },
+    {
+      "path": "print/projects/test_back_male-x2d-pla.3mf",
+      "bytes": 17286,
+      "sha256": "fb0f485c3fbe7ec3d11d7d168659cc96b4993d88e12b340da38901f40f55ab36"
+    },
+    {
+      "path": "print/projects/test_base_female-x2d-pla.3mf",
+      "bytes": 18104,
+      "sha256": "67c083c467caa94c47fe2bb53853326176b7ae8e970eabd68e0c83f1726e89bc"
+    },
+    {
+      "path": "print/projects/test_base_male-x2d-pla.3mf",
+      "bytes": 23179,
+      "sha256": "c374117fa0cc10209ccf5bb428e4c2a3106f2eb4dae3f1f846504c97214797e5"
+    },
+    {
+      "path": "print/projects/test_corner_left_four_male-x2d-pla.3mf",
+      "bytes": 24992,
+      "sha256": "43263daa3050b719726c406adfc0077e0c73205f34d68a1bb966a0c91ca4e6c3"
+    },
+    {
+      "path": "print/projects/test_corner_right_four_female-x2d-pla.3mf",
+      "bytes": 10760,
+      "sha256": "63f5d563675b8726b32e0369124988819c7ecdc88d71cbc3d1b9045f55f37778"
+    },
+    {
+      "path": "result.json",
+      "bytes": 204,
+      "sha256": "390b33faef3f4c0737b44778aadf0a5b9208278f39bdd103ca6fbf807dc58a12"
+    },
+    {
+      "path": "stl/billboard_left.stl",
+      "bytes": 3052,
+      "sha256": "43a4e717a7ad9bccd691e78df47d48dfa09966232cf127587ecd9085267c5bea"
+    },
+    {
+      "path": "stl/billboard_post_left.stl",
+      "bytes": 3052,
+      "sha256": "e83c9bc5d48b28b06108549a7ac3fceb8785a46bf4b30378694ceb63e200e6a7"
+    },
+    {
+      "path": "stl/billboard_post_right.stl",
+      "bytes": 3052,
+      "sha256": "3657d54c54d752ea2bb8b52dac22d667dce05374c7052a5e06e0fe48ea1ec109"
+    },
+    {
+      "path": "stl/billboard_right.stl",
+      "bytes": 3052,
+      "sha256": "0c528f526837f8a8432a6431375a79d7539402699c89bd7f78d92a3209d53f08"
+    },
+    {
+      "path": "stl/billboard_seam_bridge.stl",
+      "bytes": 3052,
+      "sha256": "7829305b2c36eac92512d57d50e639f73b476862edfa1fa37e60f82b28db5dc1"
+    },
+    {
+      "path": "stl/billboard_text_ive_driven.stl",
+      "bytes": 266172,
+      "sha256": "8447741b924dc64e73822dd4a33c62afc1f4578ec1d22ac062e655f3f6ecba5a"
+    },
+    {
+      "path": "stl/billboard_text_lovely_cars.stl",
+      "bytes": 372432,
+      "sha256": "5dc2bff65db78e1e9f5ca7bbc321e89b95de1f5e7d6cfa4aa6746a15e9eca155"
+    },
+    {
+      "path": "stl/book_depot_sign.stl",
+      "bytes": 3052,
+      "sha256": "af86bca9be31670babb3e80153c97478a820f7138ff13a17620586c821f52621"
+    },
+    {
+      "path": "stl/garage_column_1.stl",
+      "bytes": 2668660,
+      "sha256": "4c33ec15512db6458336764d84d494cd726ffb8f99741cfe83919bbe791baf03"
+    },
+    {
+      "path": "stl/garage_column_2.stl",
+      "bytes": 2668660,
+      "sha256": "4c33ec15512db6458336764d84d494cd726ffb8f99741cfe83919bbe791baf03"
+    },
+    {
+      "path": "stl/garage_column_3.stl",
+      "bytes": 2668660,
+      "sha256": "4c33ec15512db6458336764d84d494cd726ffb8f99741cfe83919bbe791baf03"
+    },
+    {
+      "path": "stl/garage_column_4.stl",
+      "bytes": 2668660,
+      "sha256": "4c33ec15512db6458336764d84d494cd726ffb8f99741cfe83919bbe791baf03"
+    },
+    {
+      "path": "stl/garage_deck_1_left.stl",
+      "bytes": 203934,
+      "sha256": "17e4f55786f1560a1b72c1f4f4856f626da80555b56858f1fe063b19f5be357c"
+    },
+    {
+      "path": "stl/garage_deck_1_right.stl",
+      "bytes": 94638,
+      "sha256": "1983cb48f18f8d18980d8a5c2f76805e69386aee939acc3087bc49a9e9b73856"
+    },
+    {
+      "path": "stl/garage_deck_1_seam_bridge.stl",
+      "bytes": 3052,
+      "sha256": "a4b6732e656e730acad8c0e48c95ce13eb995745bbddb06e7c96063f5ffa5569"
+    },
+    {
+      "path": "stl/garage_deck_2_left.stl",
+      "bytes": 203934,
+      "sha256": "1ace4f9a0e3784fffc9f6faa4f99eaf51a06f2cf3da1bbe75e807c2b2291781c"
+    },
+    {
+      "path": "stl/garage_deck_2_right.stl",
+      "bytes": 92108,
+      "sha256": "9baf9205c9795d6f5cbbc6cfcdadca94ea6c90e97806d62097f23644d9c0e5e0"
+    },
+    {
+      "path": "stl/garage_deck_2_seam_bridge.stl",
+      "bytes": 3052,
+      "sha256": "e626d78423c69458132b84dde4583d90c070a4b3314a4b0617ca09bbad6d541d"
+    },
+    {
+      "path": "stl/garage_deck_3_left.stl",
+      "bytes": 203934,
+      "sha256": "d296a7d77dffe673070ea67ed494d1877846523b57904d375fcb9d37ae972479"
+    },
+    {
+      "path": "stl/garage_deck_3_right.stl",
+      "bytes": 92108,
+      "sha256": "76b702417e90fe5dc6e3aae03abcd46d64a0d0bc804355c8323a3796e6ef8f32"
+    },
+    {
+      "path": "stl/garage_deck_3_seam_bridge.stl",
+      "bytes": 3052,
+      "sha256": "ec02b24e1201a9598f2bd986ccaf6a4c358d3ccb9f8349390588b4ee33fabc7d"
+    },
+    {
+      "path": "stl/module_1.stl",
+      "bytes": 241378,
+      "sha256": "7745860d232f7da23a9655787dee689626fd55e7b96570ed85d1b49d49e71bc1"
+    },
+    {
+      "path": "stl/module_2.stl",
+      "bytes": 203934,
+      "sha256": "1302420bd3c55d0537b9f145d265ff11b93964cdadf0fda327cc27380d441baa"
+    },
+    {
+      "path": "stl/module_2_narrow_visual.stl",
+      "bytes": 203934,
+      "sha256": "1109346d3ce565ad18ff467dbb88a0936e4caae1149fc186b992f442ab9bf701"
+    },
+    {
+      "path": "stl/module_3.stl",
+      "bytes": 310194,
+      "sha256": "db3eecb329140070e3db11ed4f395d3c4103351ad0a69ba8f5831d4956c91658"
+    },
+    {
+      "path": "stl/module_4.stl",
+      "bytes": 310194,
+      "sha256": "dee1cc0fe1f0cb41731bc5fc31e0a62547b2774a64f6fafd95e8901698dda2f0"
+    },
+    {
+      "path": "stl/module_5.stl",
+      "bytes": 28352,
+      "sha256": "927e4f9dc8ffa9ae187d8b9f5733d08a766b2b910665dd8ef3a7d26936060206"
+    },
+    {
+      "path": "stl/module_5_narrow_visual.stl",
+      "bytes": 30376,
+      "sha256": "ac4d559eadf486f533530a5282d94e49d0438ea27ec5a8c9db064311d6dcfb39"
+    },
+    {
+      "path": "stl/test_back_female.stl",
+      "bytes": 7100,
+      "sha256": "2906b70120b4ad8dc2f266aee9bf441ca5ae34fc8b380b5d8084c631655a00e8"
+    },
+    {
+      "path": "stl/test_back_male.stl",
+      "bytes": 54158,
+      "sha256": "5326661c593cca8beb0130db5aee751cb7bd71870108924a78fdb957d9251fa1"
+    },
+    {
+      "path": "stl/test_base_female.stl",
+      "bytes": 7100,
+      "sha256": "faab91506dcef59cfec03b9660d1006cb23773bd1fedaf266326c11694e67cf1"
+    },
+    {
+      "path": "stl/test_base_male.stl",
+      "bytes": 129046,
+      "sha256": "ffed35eda1b751179aa7c06aaa284dddd369882f6fc3d23c0fa0bb0f0275cc04"
+    },
+    {
+      "path": "stl/test_corner_left_four_male.stl",
+      "bytes": 358770,
+      "sha256": "c4e8a5ad3d4323283a05daba1ff21035e7b79e052415346d81e3580eff8d0bad"
+    },
+    {
+      "path": "stl/test_corner_right_four_female.stl",
+      "bytes": 21268,
+      "sha256": "22965478756f51af13dc0298e7e4375d154e7dce856df1fdf4db397c1ae1fc7f"
+    },
+    {
+      "path": "组装说明.md",
+      "bytes": 3040,
+      "sha256": "e5bcb2a0541bdac1cd3811a254571795a8062b724dc508ad64f02f6f9f5712e6"
+    }
+  ],
+  "print_packages": [
+    {
+      "file": "billboard_left-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "billboard_post_left-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "billboard_post_right-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "billboard_right-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "billboard_seam_bridge-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "billboard_text_ive_driven-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "billboard_text_lovely_cars-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "book_depot_sign-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "garage_column_1-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "garage_column_2-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "garage_column_3-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "garage_column_4-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "garage_deck_1_left-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "garage_deck_1_right-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "garage_deck_1_seam_bridge-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "garage_deck_2_left-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "garage_deck_2_right-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "garage_deck_2_seam_bridge-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "garage_deck_3_left-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "garage_deck_3_right-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "garage_deck_3_seam_bridge-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "module_1-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "module_2-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "module_2_narrow_visual-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "261",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA",
+          "PLA",
+          "PLA",
+          "PLA",
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "module_3-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "module_4-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "module_5-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "module_5_narrow_visual-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "modules-2-3-5-view-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "modules-2-5-narrow-visual-fixed-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "261",
+        "wall_loops": "3",
+        "sparse_infill_density": "10%",
+        "brim_width": "4",
+        "layer_height": "0.28",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA",
+          "PLA",
+          "PLA",
+          "PLA",
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "modules-2-5-narrow-visual-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "261",
+        "wall_loops": "3",
+        "sparse_infill_density": "10%",
+        "brim_width": "4",
+        "layer_height": "0.28",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA",
+          "PLA",
+          "PLA",
+          "PLA",
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "test_back_female-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "test_back_male-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "test_base_female-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "test_base_male-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "test_corner_left_four_male-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    },
+    {
+      "file": "test_corner_right_four_female-x2d-pla.3mf",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "printable_area": [
+          "0x0",
+          "256x0",
+          "256x256",
+          "0x256"
+        ],
+        "printable_height": "260",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "layer_height": "0.2",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PLA"
+        ]
+      }
+    }
+  ]
+}

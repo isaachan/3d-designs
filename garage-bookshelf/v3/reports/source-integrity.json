@@ -1,0 +1,444 @@
+{
+  "status": "passed",
+  "source_file_count": 106,
+  "source_files_unchanged": true,
+  "checks": [
+    {
+      "path": "README.md",
+      "unchanged": true
+    },
+    {
+      "path": "__pycache__/generate_narrow_visual_freecad.cpython-311.pyc",
+      "unchanged": true
+    },
+    {
+      "path": "__pycache__/generate_v2.cpython-311.pyc",
+      "unchanged": true
+    },
+    {
+      "path": "__pycache__/generate_v2_freecad.cpython-311.pyc",
+      "unchanged": true
+    },
+    {
+      "path": "audit/__pycache__/validate_freecad_assembly.cpython-311.pyc",
+      "unchanged": true
+    },
+    {
+      "path": "audit/__pycache__/validate_v2.cpython-311.pyc",
+      "unchanged": true
+    },
+    {
+      "path": "audit/assembly-preview.svg",
+      "unchanged": true
+    },
+    {
+      "path": "audit/freecad-validation.json",
+      "unchanged": true
+    },
+    {
+      "path": "audit/modules-2-3-5-view-validation.json",
+      "unchanged": true
+    },
+    {
+      "path": "audit/modules-2-3-5-view.json",
+      "unchanged": true
+    },
+    {
+      "path": "audit/modules-2-5-narrow-visual-fixed-validation.json",
+      "unchanged": true
+    },
+    {
+      "path": "audit/modules-2-5-narrow-visual-fixed.json",
+      "unchanged": true
+    },
+    {
+      "path": "audit/modules-2-5-narrow-visual-validation.json",
+      "unchanged": true
+    },
+    {
+      "path": "audit/modules-2-5-narrow-visual.json",
+      "unchanged": true
+    },
+    {
+      "path": "audit/parts-preview.svg",
+      "unchanged": true
+    },
+    {
+      "path": "audit/print-layout.json",
+      "unchanged": true
+    },
+    {
+      "path": "audit/print-validation.json",
+      "unchanged": true
+    },
+    {
+      "path": "audit/render_previews.mjs",
+      "unchanged": true
+    },
+    {
+      "path": "audit/validate_freecad_assembly.py",
+      "unchanged": true
+    },
+    {
+      "path": "audit/validate_print_projects.py",
+      "unchanged": true
+    },
+    {
+      "path": "audit/validate_selected_modules_view.py",
+      "unchanged": true
+    },
+    {
+      "path": "audit/validate_v2.py",
+      "unchanged": true
+    },
+    {
+      "path": "audit/validation.json",
+      "unchanged": true
+    },
+    {
+      "path": "audit/\u9a8c\u8bc1\u62a5\u544a.md",
+      "unchanged": true
+    },
+    {
+      "path": "build_selected_modules_view.py",
+      "unchanged": true
+    },
+    {
+      "path": "build_x2d_projects.py",
+      "unchanged": true
+    },
+    {
+      "path": "garage-bookshelf-v2-assembly.FCStd",
+      "unchanged": true
+    },
+    {
+      "path": "garage-bookshelf-v2-narrow-visual.FCStd",
+      "unchanged": true
+    },
+    {
+      "path": "generate-label-mask.swift",
+      "unchanged": true
+    },
+    {
+      "path": "generate_narrow_visual_freecad.py",
+      "unchanged": true
+    },
+    {
+      "path": "generate_v2.py",
+      "unchanged": true
+    },
+    {
+      "path": "generate_v2_freecad.py",
+      "unchanged": true
+    },
+    {
+      "path": "print/.DS_Store",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/billboard_left-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/billboard_post_left-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/billboard_post_right-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/billboard_right-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/billboard_seam_bridge-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/billboard_text_ive_driven-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/billboard_text_lovely_cars-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/book_depot_sign-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/garage_column_1-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/garage_column_2-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/garage_column_3-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/garage_column_4-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/garage_deck_1_left-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/garage_deck_1_right-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/garage_deck_1_seam_bridge-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/garage_deck_2_left-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/garage_deck_2_right-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/garage_deck_2_seam_bridge-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/garage_deck_3_left-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/garage_deck_3_right-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/garage_deck_3_seam_bridge-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/module_1-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/module_2-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/module_2_narrow_visual-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/module_3-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/module_4-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/module_5-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/module_5_narrow_visual-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/modules-2-3-5-view-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/modules-2-5-narrow-visual-fixed-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/modules-2-5-narrow-visual-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/test_back_female-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/test_back_male-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/test_base_female-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/test_base_male-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/test_corner_left_four_male-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "print/projects/test_corner_right_four_female-x2d-pla.3mf",
+      "unchanged": true
+    },
+    {
+      "path": "result.json",
+      "unchanged": true
+    },
+    {
+      "path": "stl/billboard_left.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/billboard_post_left.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/billboard_post_right.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/billboard_right.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/billboard_seam_bridge.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/billboard_text_ive_driven.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/billboard_text_lovely_cars.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/book_depot_sign.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/garage_column_1.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/garage_column_2.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/garage_column_3.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/garage_column_4.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/garage_deck_1_left.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/garage_deck_1_right.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/garage_deck_1_seam_bridge.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/garage_deck_2_left.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/garage_deck_2_right.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/garage_deck_2_seam_bridge.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/garage_deck_3_left.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/garage_deck_3_right.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/garage_deck_3_seam_bridge.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/module_1.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/module_2.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/module_2_narrow_visual.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/module_3.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/module_4.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/module_5.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/module_5_narrow_visual.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/test_back_female.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/test_back_male.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/test_base_female.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/test_base_male.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/test_corner_left_four_male.stl",
+      "unchanged": true
+    },
+    {
+      "path": "stl/test_corner_right_four_female.stl",
+      "unchanged": true
+    },
+    {
+      "path": "\u7ec4\u88c5\u8bf4\u660e.md",
+      "unchanged": true
+    }
+  ],
+  "required_deliverables": [
+    "garage-bookshelf-v3-assembly.FCStd",
+    "garage-bookshelf-v3-auxiliary.FCStd",
+    "representative.FCStd",
+    "README.md",
+    "reports/validation-summary.md",
+    "reports/parameters.md",
+    "reports/bom.json",
+    "reports/geometry-comparison.json",
+    "reports/parametric-validation.json",
+    "reports/reopen-validation.json",
+    "reports/print-validation.json"
+  ]
+}

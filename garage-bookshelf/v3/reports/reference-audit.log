@@ -1,0 +1,349 @@
+{
+  "status": "passed",
+  "tolerances": {
+    "bounds_mm": 0.02,
+    "relative_volume_and_area": 0.0005
+  },
+  "parts": [
+    {
+      "name": "module_1",
+      "status": "passed",
+      "bounds_max_delta_mm": 2.951757807068134e-06,
+      "volume_relative_delta": 9.02872456176162e-09,
+      "area_relative_delta": 5.406431187192873e-07,
+      "exact_volume_mm3": 532960.7151648349,
+      "exact_area_mm2": 174223.65580717937,
+      "solids": 1
+    },
+    {
+      "name": "module_2",
+      "status": "passed",
+      "bounds_max_delta_mm": 1.2307031283853576e-05,
+      "volume_relative_delta": 1.129597079811989e-08,
+      "area_relative_delta": 2.4492086600287506e-07,
+      "exact_volume_mm3": 968347.6443076917,
+      "exact_area_mm2": 317645.95279812184,
+      "solids": 1
+    },
+    {
+      "name": "module_3",
+      "status": "passed",
+      "bounds_max_delta_mm": 1.2307031170166738e-05,
+      "volume_relative_delta": 2.2354641680366767e-09,
+      "area_relative_delta": 8.071819570693551e-07,
+      "exact_volume_mm3": 523121.8443076905,
+      "exact_area_mm2": 171879.7362617781,
+      "solids": 1
+    },
+    {
+      "name": "module_4",
+      "status": "passed",
+      "bounds_max_delta_mm": 1.2307031170166738e-05,
+      "volume_relative_delta": 2.055591313078361e-09,
+      "area_relative_delta": 8.071819570693551e-07,
+      "exact_volume_mm3": 523121.84430769086,
+      "exact_area_mm2": 171879.7362617781,
+      "solids": 1
+    },
+    {
+      "name": "module_5",
+      "status": "passed",
+      "bounds_max_delta_mm": 1e-07,
+      "volume_relative_delta": 1.44819867058128e-08,
+      "area_relative_delta": 3.8974027255446573e-07,
+      "exact_volume_mm3": 726386.9291428567,
+      "exact_area_mm2": 240842.29699094247,
+      "solids": 1
+    },
+    {
+      "name": "module_2_narrow_visual",
+      "status": "passed",
+      "bounds_max_delta_mm": 1.2307031283853576e-05,
+      "volume_relative_delta": 1.853820789413504e-08,
+      "area_relative_delta": 8.033541467501021e-08,
+      "exact_volume_mm3": 590047.6443076908,
+      "exact_area_mm2": 198565.95279812184,
+      "solids": 1
+    },
+    {
+      "name": "module_5_narrow_visual",
+      "status": "passed",
+      "bounds_max_delta_mm": 1e-07,
+      "volume_relative_delta": 3.1346001663700996e-08,
+      "area_relative_delta": 9.460264387088811e-08,
+      "exact_volume_mm3": 434825.1291428572,
+      "exact_area_mm2": 149079.67035333096,
+      "solids": 1
+    },
+    {
+      "name": "garage_deck_1_left",
+      "status": "passed",
+      "bounds_max_delta_mm": 2.951757807068134e-06,
+      "volume_relative_delta": 2.0029552275045255e-07,
+      "area_relative_delta": 5.088399210891905e-07,
+      "exact_volume_mm3": 192032.09999999986,
+      "exact_area_mm2": 81378.5054663677,
+      "solids": 1
+    },
+    {
+      "name": "garage_deck_1_right",
+      "status": "passed",
+      "bounds_max_delta_mm": 1.0000002248489182e-07,
+      "volume_relative_delta": 6.064160087381927e-08,
+      "area_relative_delta": 4.3242721330643134e-07,
+      "exact_volume_mm3": 188734.9019607843,
+      "exact_area_mm2": 80060.83256701728,
+      "solids": 1
+    },
+    {
+      "name": "garage_deck_1_seam_bridge",
+      "status": "passed",
+      "bounds_max_delta_mm": 0.0,
+      "volume_relative_delta": 0.0,
+      "area_relative_delta": 0.0,
+      "exact_volume_mm3": 15840.0,
+      "exact_area_mm2": 11508.0,
+      "solids": 1
+    },
+    {
+      "name": "garage_deck_2_left",
+      "status": "passed",
+      "bounds_max_delta_mm": 2.951757807068134e-06,
+      "volume_relative_delta": 1.9979461694772066e-07,
+      "area_relative_delta": 5.088399210891905e-07,
+      "exact_volume_mm3": 192032.0999999997,
+      "exact_area_mm2": 81378.5054663677,
+      "solids": 1
+    },
+    {
+      "name": "garage_deck_2_right",
+      "status": "passed",
+      "bounds_max_delta_mm": 1.0000002248489182e-07,
+      "volume_relative_delta": 3.6907952797282036e-07,
+      "area_relative_delta": 4.3242721330643134e-07,
+      "exact_volume_mm3": 188734.9019607843,
+      "exact_area_mm2": 80060.83256701728,
+      "solids": 1
+    },
+    {
+      "name": "garage_deck_2_seam_bridge",
+      "status": "passed",
+      "bounds_max_delta_mm": 0.0,
+      "volume_relative_delta": 0.0,
+      "area_relative_delta": 0.0,
+      "exact_volume_mm3": 15840.0,
+      "exact_area_mm2": 11508.0,
+      "solids": 1
+    },
+    {
+      "name": "garage_deck_3_left",
+      "status": "passed",
+      "bounds_max_delta_mm": 2.951757807068134e-06,
+      "volume_relative_delta": 1.9979461876640564e-07,
+      "area_relative_delta": 5.088399210891905e-07,
+      "exact_volume_mm3": 192032.10000000003,
+      "exact_area_mm2": 81378.5054663677,
+      "solids": 1
+    },
+    {
+      "name": "garage_deck_3_right",
+      "status": "passed",
+      "bounds_max_delta_mm": 1.0000002248489182e-07,
+      "volume_relative_delta": 3.6907952797282036e-07,
+      "area_relative_delta": 4.3242721330643134e-07,
+      "exact_volume_mm3": 188734.9019607843,
+      "exact_area_mm2": 80060.83256701728,
+      "solids": 1
+    },
+    {
+      "name": "garage_deck_3_seam_bridge",
+      "status": "passed",
+      "bounds_max_delta_mm": 0.0,
+      "volume_relative_delta": 0.0,
+      "area_relative_delta": 0.0,
+      "exact_volume_mm3": 15840.0,
+      "exact_area_mm2": 11508.0,
+      "solids": 1
+    },
+    {
+      "name": "garage_column_1",
+      "status": "passed",
+      "bounds_max_delta_mm": 0.0013170242309570312,
+      "volume_relative_delta": 0.00019053202330487486,
+      "area_relative_delta": 7.040132057841508e-05,
+      "exact_volume_mm3": 36367.07655795545,
+      "exact_area_mm2": 11934.35288951617,
+      "solids": 1
+    },
+    {
+      "name": "garage_column_2",
+      "status": "passed",
+      "bounds_max_delta_mm": 0.0013170242309570312,
+      "volume_relative_delta": 0.00019053202330487486,
+      "area_relative_delta": 7.040132057841508e-05,
+      "exact_volume_mm3": 36367.07655795545,
+      "exact_area_mm2": 11934.35288951617,
+      "solids": 1
+    },
+    {
+      "name": "garage_column_3",
+      "status": "passed",
+      "bounds_max_delta_mm": 0.0013170242309570312,
+      "volume_relative_delta": 0.00019053202330487486,
+      "area_relative_delta": 7.040132057841508e-05,
+      "exact_volume_mm3": 36367.07655795545,
+      "exact_area_mm2": 11934.35288951617,
+      "solids": 1
+    },
+    {
+      "name": "garage_column_4",
+      "status": "passed",
+      "bounds_max_delta_mm": 0.0013170242309570312,
+      "volume_relative_delta": 0.00019053202330487486,
+      "area_relative_delta": 7.040132057841508e-05,
+      "exact_volume_mm3": 36367.07655795545,
+      "exact_area_mm2": 11934.35288951617,
+      "solids": 1
+    },
+    {
+      "name": "book_depot_sign",
+      "status": "passed",
+      "bounds_max_delta_mm": 0.0,
+      "volume_relative_delta": 0.0,
+      "area_relative_delta": 0.0,
+      "exact_volume_mm3": 38880.0,
+      "exact_area_mm2": 15552.0,
+      "solids": 1
+    },
+    {
+      "name": "billboard_left",
+      "status": "passed",
+      "bounds_max_delta_mm": 0.0,
+      "volume_relative_delta": 0.0,
+      "area_relative_delta": 0.0,
+      "exact_volume_mm3": 69120.0,
+      "exact_area_mm2": 25968.0,
+      "solids": 1
+    },
+    {
+      "name": "billboard_right",
+      "status": "passed",
+      "bounds_max_delta_mm": 0.0,
+      "volume_relative_delta": 0.0,
+      "area_relative_delta": 0.0,
+      "exact_volume_mm3": 69120.0,
+      "exact_area_mm2": 25968.0,
+      "solids": 1
+    },
+    {
+      "name": "billboard_seam_bridge",
+      "status": "passed",
+      "bounds_max_delta_mm": 0.0,
+      "volume_relative_delta": 0.0,
+      "area_relative_delta": 0.0,
+      "exact_volume_mm3": 5400.0,
+      "exact_area_mm2": 4116.0,
+      "solids": 1
+    },
+    {
+      "name": "billboard_post_left",
+      "status": "passed",
+      "bounds_max_delta_mm": 0.0,
+      "volume_relative_delta": 0.0,
+      "area_relative_delta": 0.0,
+      "exact_volume_mm3": 21600.0,
+      "exact_area_mm2": 9288.0,
+      "solids": 1
+    },
+    {
+      "name": "billboard_post_right",
+      "status": "passed",
+      "bounds_max_delta_mm": 0.0,
+      "volume_relative_delta": 0.0,
+      "area_relative_delta": 0.0,
+      "exact_volume_mm3": 21600.0,
+      "exact_area_mm2": 9288.0,
+      "solids": 1
+    },
+    {
+      "name": "billboard_text_lovely_cars",
+      "status": "passed",
+      "bounds_max_delta_mm": 1.2207031261368684e-05,
+      "volume_relative_delta": 2.3145211985017968e-06,
+      "area_relative_delta": 9.505098894561579e-07,
+      "exact_volume_mm3": 1403.4400000000192,
+      "exact_area_mm2": 3616.480000000005,
+      "solids": 10
+    },
+    {
+      "name": "billboard_text_ive_driven",
+      "status": "passed",
+      "bounds_max_delta_mm": 1.2207031261368684e-05,
+      "volume_relative_delta": 1.8167936374076073e-06,
+      "area_relative_delta": 1.8293740228760575e-08,
+      "exact_volume_mm3": 1250.0700000000152,
+      "exact_area_mm2": 3202.9400000000023,
+      "solids": 10
+    },
+    {
+      "name": "test_base_male",
+      "status": "passed",
+      "bounds_max_delta_mm": 2.9517578212789886e-06,
+      "volume_relative_delta": 6.9299662180775705e-09,
+      "area_relative_delta": 1.7527506578115891e-07,
+      "exact_volume_mm3": 58644.868571428524,
+      "exact_area_mm2": 17574.41714285712,
+      "solids": 1
+    },
+    {
+      "name": "test_base_female",
+      "status": "passed",
+      "bounds_max_delta_mm": 1e-07,
+      "volume_relative_delta": 2.060329864268516e-09,
+      "area_relative_delta": 5.696756106225418e-08,
+      "exact_volume_mm3": 53115.77599999998,
+      "exact_area_mm2": 16207.454154825866,
+      "solids": 1
+    },
+    {
+      "name": "test_back_male",
+      "status": "passed",
+      "bounds_max_delta_mm": 3.1517577951944986e-06,
+      "volume_relative_delta": 2.465098151876596e-08,
+      "area_relative_delta": 1.1619000003822589e-07,
+      "exact_volume_mm3": 29935.48901098898,
+      "exact_area_mm2": 13607.410760732557,
+      "solids": 1
+    },
+    {
+      "name": "test_back_female",
+      "status": "passed",
+      "bounds_max_delta_mm": 1.0000000028043132e-07,
+      "volume_relative_delta": 1.6923355572603692e-08,
+      "area_relative_delta": 6.989601677363444e-08,
+      "exact_volume_mm3": 25964.788571428573,
+      "exact_area_mm2": 12040.586072473494,
+      "solids": 1
+    },
+    {
+      "name": "test_corner_left_four_male",
+      "status": "passed",
+      "bounds_max_delta_mm": 2.9517578212789886e-06,
+      "volume_relative_delta": 2.2606122408830534e-08,
+      "area_relative_delta": 4.193526583544768e-07,
+      "exact_volume_mm3": 212860.71516483463,
+      "exact_area_mm2": 73463.65580717936,
+      "solids": 1
+    },
+    {
+      "name": "test_corner_right_four_female",
+      "status": "passed",
+      "bounds_max_delta_mm": 1e-07,
+      "volume_relative_delta": 1.6939897395614244e-08,
+      "area_relative_delta": 1.500397458804503e-07,
+      "exact_volume_mm3": 193861.12914285704,
+      "exact_area_mm2": 67596.08045459873,
+      "solids": 1
+    }
+  ]
+}

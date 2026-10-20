@@ -1,0 +1,1812 @@
+{
+  "status": "passed",
+  "part_count": 34,
+  "individual_body_stl_count": 52,
+  "parts": [
+    {
+      "name": "module_1",
+      "status": "passed",
+      "bodies": [
+        "module_1_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/module_1_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        0.0,
+        0.0,
+        -2.0062968078332286e-14,
+        193.8000030517578,
+        220.0,
+        238.0
+      ],
+      "dimensions_mm": [
+        193.8000030517578,
+        220.0,
+        238.00000000000003
+      ],
+      "volume_mm3": 532960.7147228203,
+      "print_dimensions_mm": [
+        193.8000030517578,
+        220.0,
+        238.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -0.0,
+        -0.0,
+        2.0062968078332286e-14
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "module_2",
+      "status": "passed",
+      "bodies": [
+        "module_2_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/module_2_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        180.0,
+        0.0,
+        -2.012476760216396e-14,
+        423.79998779296875,
+        220.0,
+        238.0
+      ],
+      "dimensions_mm": [
+        243.79998779296875,
+        220.0,
+        238.00000000000003
+      ],
+      "volume_mm3": 968347.632569013,
+      "print_dimensions_mm": [
+        243.79998779296875,
+        220.0,
+        238.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -180.0,
+        -0.0,
+        2.012476760216396e-14
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "module_3",
+      "status": "passed",
+      "bodies": [
+        "module_3_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/module_3_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        410.0,
+        0.0,
+        -2.012872832822532e-14,
+        603.7999877929688,
+        220.0,
+        238.0
+      ],
+      "dimensions_mm": [
+        193.79998779296875,
+        220.0,
+        238.00000000000003
+      ],
+      "volume_mm3": 523121.8422200229,
+      "print_dimensions_mm": [
+        193.79998779296875,
+        220.0,
+        238.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -410.0,
+        -0.0,
+        2.012872832822532e-14
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "module_4",
+      "status": "passed",
+      "bodies": [
+        "module_4_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/module_4_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        590.0,
+        0.0,
+        -2.0126775070248952e-14,
+        783.7999877929688,
+        220.0,
+        238.0
+      ],
+      "dimensions_mm": [
+        193.79998779296875,
+        220.0,
+        238.00000000000003
+      ],
+      "volume_mm3": 523121.8422200229,
+      "print_dimensions_mm": [
+        193.79998779296875,
+        220.0,
+        238.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -590.0,
+        -0.0,
+        2.0126775070248952e-14
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "module_5",
+      "status": "passed",
+      "bodies": [
+        "module_5_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/module_5_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        770.0,
+        0.0,
+        0.0,
+        920.0,
+        220.0,
+        238.0
+      ],
+      "dimensions_mm": [
+        150.0,
+        220.0,
+        238.0
+      ],
+      "volume_mm3": 726386.9342801035,
+      "print_dimensions_mm": [
+        150.0,
+        220.0,
+        238.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -770.0,
+        -0.0,
+        -0.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "garage_deck_1_left",
+      "status": "passed",
+      "bodies": [
+        "garage_deck_1_left_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/garage_deck_1_left_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        0.0,
+        0.0,
+        66.0,
+        189.8000030517578,
+        215.0,
+        71.0
+      ],
+      "dimensions_mm": [
+        189.8000030517578,
+        215.0,
+        5.0
+      ],
+      "volume_mm3": 192031.91999209952,
+      "print_dimensions_mm": [
+        189.8000030517578,
+        215.0,
+        5.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -0.0,
+        -0.0,
+        -66.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "garage_deck_1_right",
+      "status": "passed",
+      "bodies": [
+        "garage_deck_1_right_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/garage_deck_1_right_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        180.0,
+        0.0,
+        66.0,
+        360.0,
+        215.0,
+        71.0
+      ],
+      "dimensions_mm": [
+        180.0,
+        215.0,
+        5.0
+      ],
+      "volume_mm3": 188734.7856951877,
+      "print_dimensions_mm": [
+        180.0,
+        215.0,
+        5.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -180.0,
+        -0.0,
+        -66.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "garage_deck_1_seam_bridge",
+      "status": "passed",
+      "bodies": [
+        "garage_deck_1_seam_bridge_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/garage_deck_1_seam_bridge_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        156.0,
+        55.0,
+        63.0,
+        204.0,
+        165.0,
+        66.0
+      ],
+      "dimensions_mm": [
+        48.0,
+        110.0,
+        3.0
+      ],
+      "volume_mm3": 15840.0,
+      "print_dimensions_mm": [
+        48.0,
+        110.0,
+        3.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -156.0,
+        -55.0,
+        -63.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "garage_deck_2_left",
+      "status": "passed",
+      "bodies": [
+        "garage_deck_2_left_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/garage_deck_2_left_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        0.0,
+        0.0,
+        129.0,
+        189.8000030517578,
+        215.0,
+        134.0
+      ],
+      "dimensions_mm": [
+        189.8000030517578,
+        215.0,
+        5.0
+      ],
+      "volume_mm3": 192031.94062734954,
+      "print_dimensions_mm": [
+        189.8000030517578,
+        215.0,
+        5.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -0.0,
+        -0.0,
+        -129.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "garage_deck_2_right",
+      "status": "passed",
+      "bodies": [
+        "garage_deck_2_right_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/garage_deck_2_right_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        180.0,
+        0.0,
+        129.0,
+        360.0,
+        215.0,
+        134.0
+      ],
+      "dimensions_mm": [
+        180.0,
+        215.0,
+        5.0
+      ],
+      "volume_mm3": 188734.78567192517,
+      "print_dimensions_mm": [
+        180.0,
+        215.0,
+        5.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -180.0,
+        -0.0,
+        -129.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "garage_deck_2_seam_bridge",
+      "status": "passed",
+      "bodies": [
+        "garage_deck_2_seam_bridge_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/garage_deck_2_seam_bridge_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        156.0,
+        55.0,
+        126.0,
+        204.0,
+        165.0,
+        129.0
+      ],
+      "dimensions_mm": [
+        48.0,
+        110.0,
+        3.0
+      ],
+      "volume_mm3": 15840.0,
+      "print_dimensions_mm": [
+        48.0,
+        110.0,
+        3.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -156.0,
+        -55.0,
+        -126.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "garage_deck_3_left",
+      "status": "passed",
+      "bodies": [
+        "garage_deck_3_left_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/garage_deck_3_left_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        0.0,
+        0.0,
+        192.0,
+        189.8000030517578,
+        215.0,
+        197.0
+      ],
+      "dimensions_mm": [
+        189.8000030517578,
+        215.0,
+        5.0
+      ],
+      "volume_mm3": 192031.94062734954,
+      "print_dimensions_mm": [
+        189.8000030517578,
+        215.0,
+        5.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -0.0,
+        -0.0,
+        -192.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "garage_deck_3_right",
+      "status": "passed",
+      "bodies": [
+        "garage_deck_3_right_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/garage_deck_3_right_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        180.0,
+        0.0,
+        192.0,
+        360.0,
+        215.0,
+        197.0
+      ],
+      "dimensions_mm": [
+        180.0,
+        215.0,
+        5.0
+      ],
+      "volume_mm3": 188734.78567192517,
+      "print_dimensions_mm": [
+        180.0,
+        215.0,
+        5.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -180.0,
+        -0.0,
+        -192.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "garage_deck_3_seam_bridge",
+      "status": "passed",
+      "bodies": [
+        "garage_deck_3_seam_bridge_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/garage_deck_3_seam_bridge_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        156.0,
+        55.0,
+        189.0,
+        204.0,
+        165.0,
+        192.0
+      ],
+      "dimensions_mm": [
+        48.0,
+        110.0,
+        3.0
+      ],
+      "volume_mm3": 15840.0,
+      "print_dimensions_mm": [
+        48.0,
+        110.0,
+        3.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -156.0,
+        -55.0,
+        -189.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "garage_column_1",
+      "status": "passed",
+      "bodies": [
+        "garage_column_1_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/garage_column_1_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        -4.0,
+        -4.0,
+        8.0,
+        24.0,
+        24.0,
+        230.0
+      ],
+      "dimensions_mm": [
+        28.0,
+        28.0,
+        222.0
+      ],
+      "volume_mm3": 36327.99450712218,
+      "print_dimensions_mm": [
+        28.0,
+        28.0,
+        222.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        4.0,
+        4.0,
+        -8.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "garage_column_2",
+      "status": "passed",
+      "bodies": [
+        "garage_column_2_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/garage_column_2_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        -4.0,
+        -4.0,
+        8.0,
+        24.0,
+        24.0,
+        230.0
+      ],
+      "dimensions_mm": [
+        28.0,
+        28.0,
+        222.0
+      ],
+      "volume_mm3": 36327.99450712218,
+      "print_dimensions_mm": [
+        28.0,
+        28.0,
+        222.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        4.0,
+        4.0,
+        -8.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "garage_column_3",
+      "status": "passed",
+      "bodies": [
+        "garage_column_3_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/garage_column_3_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        -4.0,
+        -4.0,
+        8.0,
+        24.0,
+        24.0,
+        230.0
+      ],
+      "dimensions_mm": [
+        28.0,
+        28.0,
+        222.0
+      ],
+      "volume_mm3": 36327.99450712218,
+      "print_dimensions_mm": [
+        28.0,
+        28.0,
+        222.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        4.0,
+        4.0,
+        -8.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "garage_column_4",
+      "status": "passed",
+      "bodies": [
+        "garage_column_4_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/garage_column_4_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        -4.0,
+        -4.0,
+        8.0,
+        24.0,
+        24.0,
+        230.0
+      ],
+      "dimensions_mm": [
+        28.0,
+        28.0,
+        222.0
+      ],
+      "volume_mm3": 36327.99450712218,
+      "print_dimensions_mm": [
+        28.0,
+        28.0,
+        222.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        4.0,
+        4.0,
+        -8.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "book_depot_sign",
+      "status": "passed",
+      "bodies": [
+        "book_depot_sign_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/book_depot_sign_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        0.0,
+        0.0,
+        -3.652752928552444e-15,
+        36.0,
+        180.0,
+        6.0
+      ],
+      "dimensions_mm": [
+        36.0,
+        180.0,
+        6.0000000000000036
+      ],
+      "volume_mm3": 38880.000000000015,
+      "print_dimensions_mm": [
+        36.0,
+        180.0,
+        6.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -0.0,
+        -0.0,
+        3.652752928552444e-15
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "billboard_left",
+      "status": "passed",
+      "bodies": [
+        "billboard_left_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/billboard_left_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        0.0,
+        220.0,
+        300.0,
+        180.0,
+        226.0,
+        364.0
+      ],
+      "dimensions_mm": [
+        180.0,
+        6.0,
+        64.0
+      ],
+      "volume_mm3": 69120.0,
+      "print_dimensions_mm": [
+        180.0,
+        64.0,
+        6.0
+      ],
+      "print_rotation_quaternion": [
+        0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ],
+      "print_translation_mm": [
+        -0.0,
+        364.0,
+        -220.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "billboard_right",
+      "status": "passed",
+      "bodies": [
+        "billboard_right_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/billboard_right_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        180.0,
+        220.0,
+        300.0,
+        360.0,
+        226.0,
+        364.0
+      ],
+      "dimensions_mm": [
+        180.0,
+        6.0,
+        64.0
+      ],
+      "volume_mm3": 69120.0,
+      "print_dimensions_mm": [
+        180.0,
+        64.0,
+        6.0
+      ],
+      "print_rotation_quaternion": [
+        0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ],
+      "print_translation_mm": [
+        -180.0,
+        364.0,
+        -220.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "billboard_seam_bridge",
+      "status": "passed",
+      "bodies": [
+        "billboard_seam_bridge_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/billboard_seam_bridge_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        155.0,
+        226.0,
+        314.0,
+        205.0,
+        229.0,
+        350.0
+      ],
+      "dimensions_mm": [
+        50.0,
+        3.0,
+        36.0
+      ],
+      "volume_mm3": 5400.0,
+      "print_dimensions_mm": [
+        50.0,
+        36.0,
+        3.0
+      ],
+      "print_rotation_quaternion": [
+        0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ],
+      "print_translation_mm": [
+        -155.0,
+        350.0,
+        -226.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "billboard_post_left",
+      "status": "passed",
+      "bodies": [
+        "billboard_post_left_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/billboard_post_left_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        78.0,
+        220.0,
+        150.0,
+        102.0,
+        226.0,
+        300.0
+      ],
+      "dimensions_mm": [
+        24.0,
+        6.0,
+        150.0
+      ],
+      "volume_mm3": 21600.0,
+      "print_dimensions_mm": [
+        24.0,
+        150.0,
+        6.0
+      ],
+      "print_rotation_quaternion": [
+        0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ],
+      "print_translation_mm": [
+        -78.0,
+        300.0,
+        -220.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "billboard_post_right",
+      "status": "passed",
+      "bodies": [
+        "billboard_post_right_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/billboard_post_right_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        258.0,
+        220.0,
+        150.0,
+        282.0,
+        226.0,
+        300.0
+      ],
+      "dimensions_mm": [
+        24.0,
+        6.0,
+        150.0
+      ],
+      "volume_mm3": 21600.0,
+      "print_dimensions_mm": [
+        24.0,
+        150.0,
+        6.0
+      ],
+      "print_rotation_quaternion": [
+        0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ],
+      "print_translation_mm": [
+        -258.0,
+        300.0,
+        -220.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "billboard_text_lovely_cars",
+      "status": "passed",
+      "bodies": [
+        "billboard_text_lovely_cars_island_01",
+        "billboard_text_lovely_cars_island_02",
+        "billboard_text_lovely_cars_island_03",
+        "billboard_text_lovely_cars_island_04",
+        "billboard_text_lovely_cars_island_05",
+        "billboard_text_lovely_cars_island_06",
+        "billboard_text_lovely_cars_island_07",
+        "billboard_text_lovely_cars_island_08",
+        "billboard_text_lovely_cars_island_09",
+        "billboard_text_lovely_cars_island_10"
+      ],
+      "components": 10,
+      "individual_body_stls": [
+        "body-stl/billboard_text_lovely_cars_island_01.stl",
+        "body-stl/billboard_text_lovely_cars_island_02.stl",
+        "body-stl/billboard_text_lovely_cars_island_03.stl",
+        "body-stl/billboard_text_lovely_cars_island_04.stl",
+        "body-stl/billboard_text_lovely_cars_island_05.stl",
+        "body-stl/billboard_text_lovely_cars_island_06.stl",
+        "body-stl/billboard_text_lovely_cars_island_07.stl",
+        "body-stl/billboard_text_lovely_cars_island_08.stl",
+        "body-stl/billboard_text_lovely_cars_island_09.stl",
+        "body-stl/billboard_text_lovely_cars_island_10.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        107.94999694824219,
+        219.0,
+        332.95001220703125,
+        253.0500030517578,
+        220.0,
+        356.04998779296875
+      ],
+      "dimensions_mm": [
+        145.10000610351562,
+        1.0,
+        23.0999755859375
+      ],
+      "volume_mm3": 1403.4367517083883,
+      "print_dimensions_mm": [
+        145.10000610351562,
+        23.0999755859375,
+        1.0
+      ],
+      "print_rotation_quaternion": [
+        0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ],
+      "print_translation_mm": [
+        -107.94999694824219,
+        356.04998779296875,
+        -219.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "billboard_text_ive_driven",
+      "status": "passed",
+      "bodies": [
+        "billboard_text_ive_driven_island_01",
+        "billboard_text_ive_driven_island_02",
+        "billboard_text_ive_driven_island_03",
+        "billboard_text_ive_driven_island_04",
+        "billboard_text_ive_driven_island_05",
+        "billboard_text_ive_driven_island_06",
+        "billboard_text_ive_driven_island_07",
+        "billboard_text_ive_driven_island_08",
+        "billboard_text_ive_driven_island_09",
+        "billboard_text_ive_driven_island_10"
+      ],
+      "components": 10,
+      "individual_body_stls": [
+        "body-stl/billboard_text_ive_driven_island_01.stl",
+        "body-stl/billboard_text_ive_driven_island_02.stl",
+        "body-stl/billboard_text_ive_driven_island_03.stl",
+        "body-stl/billboard_text_ive_driven_island_04.stl",
+        "body-stl/billboard_text_ive_driven_island_05.stl",
+        "body-stl/billboard_text_ive_driven_island_06.stl",
+        "body-stl/billboard_text_ive_driven_island_07.stl",
+        "body-stl/billboard_text_ive_driven_island_08.stl",
+        "body-stl/billboard_text_ive_driven_island_09.stl",
+        "body-stl/billboard_text_ive_driven_island_10.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        115.94999694824219,
+        219.0,
+        306.95001220703125,
+        244.0500030517578,
+        220.0,
+        328.04998779296875
+      ],
+      "dimensions_mm": [
+        128.10000610351562,
+        1.0,
+        21.0999755859375
+      ],
+      "volume_mm3": 1250.0677288807929,
+      "print_dimensions_mm": [
+        128.10000610351562,
+        21.0999755859375,
+        1.0
+      ],
+      "print_rotation_quaternion": [
+        0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ],
+      "print_translation_mm": [
+        -115.94999694824219,
+        328.04998779296875,
+        -219.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "test_base_male",
+      "status": "passed",
+      "bodies": [
+        "test_base_male_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/test_base_male_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        0.0,
+        0.0,
+        -7.0501643870232895e-15,
+        83.80000305175781,
+        100.0,
+        8.0
+      ],
+      "dimensions_mm": [
+        83.80000305175781,
+        100.0,
+        8.000000000000007
+      ],
+      "volume_mm3": 58644.869188406825,
+      "print_dimensions_mm": [
+        83.80000305175781,
+        100.0,
+        8.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -0.0,
+        -0.0,
+        7.0501643870232895e-15
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "test_base_female",
+      "status": "passed",
+      "bodies": [
+        "test_base_female_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/test_base_female_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        0.0,
+        0.0,
+        0.0,
+        70.0,
+        100.0,
+        8.0
+      ],
+      "dimensions_mm": [
+        70.0,
+        100.0,
+        8.0
+      ],
+      "volume_mm3": 53115.77619167074,
+      "print_dimensions_mm": [
+        70.0,
+        100.0,
+        8.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "test_back_male",
+      "status": "passed",
+      "bodies": [
+        "test_back_male_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/test_back_male_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        0.0,
+        214.8000030517578,
+        8.0,
+        83.80000305175781,
+        220.0,
+        88.0
+      ],
+      "dimensions_mm": [
+        83.80000305175781,
+        5.1999969482421875,
+        80.0
+      ],
+      "volume_mm3": 29935.488404606014,
+      "print_dimensions_mm": [
+        83.80000305175781,
+        5.1999969482421875,
+        80.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -0.0,
+        -214.8000030517578,
+        -8.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "test_back_female",
+      "status": "passed",
+      "bodies": [
+        "test_back_female_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/test_back_female_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        0.0,
+        215.0,
+        8.0,
+        70.0,
+        220.0,
+        88.0
+      ],
+      "dimensions_mm": [
+        70.0,
+        5.0,
+        80.0
+      ],
+      "volume_mm3": 25964.788540360587,
+      "print_dimensions_mm": [
+        70.0,
+        5.0,
+        80.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -0.0,
+        -215.0,
+        -8.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "test_corner_left_four_male",
+      "status": "passed",
+      "bodies": [
+        "test_corner_left_four_male_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/test_corner_left_four_male_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        0.0,
+        0.0,
+        -1.99999996490334e-14,
+        83.80000305175781,
+        220.0,
+        238.0
+      ],
+      "dimensions_mm": [
+        83.80000305175781,
+        220.0,
+        238.00000000000003
+      ],
+      "volume_mm3": 212860.71472281966,
+      "print_dimensions_mm": [
+        83.80000305175781,
+        220.0,
+        238.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -0.0,
+        -0.0,
+        1.99999996490334e-14
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "test_corner_right_four_female",
+      "status": "passed",
+      "bodies": [
+        "test_corner_right_four_female_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/test_corner_right_four_female_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        70.0,
+        0.0,
+        0.0,
+        140.0,
+        220.0,
+        238.0
+      ],
+      "dimensions_mm": [
+        70.0,
+        220.0,
+        238.0
+      ],
+      "volume_mm3": 193861.12725157096,
+      "print_dimensions_mm": [
+        70.0,
+        220.0,
+        238.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -70.0,
+        -0.0,
+        -0.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "module_2_narrow_visual",
+      "status": "passed",
+      "bodies": [
+        "module_2_narrow_visual_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/module_2_narrow_visual_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        180.0,
+        0.0,
+        -1.99999996490334e-14,
+        293.79998779296875,
+        220.0,
+        238.0
+      ],
+      "dimensions_mm": [
+        113.79998779296875,
+        220.0,
+        238.00000000000003
+      ],
+      "volume_mm3": 590047.6325639264,
+      "print_dimensions_mm": [
+        113.79998779296875,
+        220.0,
+        238.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -180.0,
+        -0.0,
+        1.99999996490334e-14
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    },
+    {
+      "name": "module_5_narrow_visual",
+      "status": "passed",
+      "bodies": [
+        "module_5_narrow_visual_Body"
+      ],
+      "components": 1,
+      "individual_body_stls": [
+        "body-stl/module_5_narrow_visual_Body.stl"
+      ],
+      "individual_body_stls_closed": true,
+      "closed": true,
+      "non_manifold": false,
+      "units": "mm",
+      "bounds_source": [
+        770.0,
+        0.0,
+        0.0,
+        820.0,
+        220.0,
+        238.0
+      ],
+      "dimensions_mm": [
+        50.0,
+        220.0,
+        238.0
+      ],
+      "volume_mm3": 434825.1373906074,
+      "print_dimensions_mm": [
+        50.0,
+        220.0,
+        238.0
+      ],
+      "print_rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "print_translation_mm": [
+        -770.0,
+        -0.0,
+        -0.0
+      ],
+      "x2d_with_4mm_brim": true,
+      "settings": {
+        "wall_loops": 4,
+        "infill_percent": 25.0,
+        "material": "PLA",
+        "brim_mm": 4.0
+      }
+    }
+  ],
+  "physical_PLA_fit_and_load": "not_verified"
+}

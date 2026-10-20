@@ -1,0 +1,265 @@
+{
+  "reconstruction_status": "passed",
+  "insertion_paths": [
+    {
+      "interface": 1,
+      "offset_mm": 60,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 1,
+      "offset_mm": 30,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 1,
+      "offset_mm": 15,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 1,
+      "offset_mm": 5,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 1,
+      "offset_mm": 1,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 1,
+      "offset_mm": 0,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 2,
+      "offset_mm": 60,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 2,
+      "offset_mm": 30,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 2,
+      "offset_mm": 15,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 2,
+      "offset_mm": 5,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 2,
+      "offset_mm": 1,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 2,
+      "offset_mm": 0,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 3,
+      "offset_mm": 60,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 3,
+      "offset_mm": 30,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 3,
+      "offset_mm": 15,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 3,
+      "offset_mm": 5,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 3,
+      "offset_mm": 1,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 3,
+      "offset_mm": 0,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 4,
+      "offset_mm": 60,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 4,
+      "offset_mm": 30,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 4,
+      "offset_mm": 15,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 4,
+      "offset_mm": 5,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 4,
+      "offset_mm": 1,
+      "intersection_mm3": 0.0
+    },
+    {
+      "interface": 4,
+      "offset_mm": 0,
+      "intersection_mm3": 0.0
+    },
+    {
+      "deck_level": 1,
+      "offset_mm": 30,
+      "intersection_mm3": 0.0
+    },
+    {
+      "deck_level": 1,
+      "offset_mm": 15,
+      "intersection_mm3": 0.0
+    },
+    {
+      "deck_level": 1,
+      "offset_mm": 5,
+      "intersection_mm3": 0.0
+    },
+    {
+      "deck_level": 1,
+      "offset_mm": 1,
+      "intersection_mm3": 0.0
+    },
+    {
+      "deck_level": 1,
+      "offset_mm": 0,
+      "intersection_mm3": 0.0
+    },
+    {
+      "deck_level": 2,
+      "offset_mm": 30,
+      "intersection_mm3": 0.0
+    },
+    {
+      "deck_level": 2,
+      "offset_mm": 15,
+      "intersection_mm3": 0.0
+    },
+    {
+      "deck_level": 2,
+      "offset_mm": 5,
+      "intersection_mm3": 0.0
+    },
+    {
+      "deck_level": 2,
+      "offset_mm": 1,
+      "intersection_mm3": 0.0
+    },
+    {
+      "deck_level": 2,
+      "offset_mm": 0,
+      "intersection_mm3": 0.0
+    },
+    {
+      "deck_level": 3,
+      "offset_mm": 30,
+      "intersection_mm3": 0.0
+    },
+    {
+      "deck_level": 3,
+      "offset_mm": 15,
+      "intersection_mm3": 0.0
+    },
+    {
+      "deck_level": 3,
+      "offset_mm": 5,
+      "intersection_mm3": 0.0
+    },
+    {
+      "deck_level": 3,
+      "offset_mm": 1,
+      "intersection_mm3": 0.0
+    },
+    {
+      "deck_level": 3,
+      "offset_mm": 0,
+      "intersection_mm3": 0.0
+    }
+  ],
+  "existing_design_interferences": [
+    {
+      "part_a": "module_1",
+      "part_b": "garage_deck_1_left",
+      "intersection_mm3": 0.20000000005486082,
+      "status": "legacy_design_issue_preserved"
+    },
+    {
+      "part_a": "module_1",
+      "part_b": "garage_deck_1_right",
+      "intersection_mm3": 13.799999999348406,
+      "status": "legacy_design_issue_preserved"
+    },
+    {
+      "part_a": "module_1",
+      "part_b": "garage_deck_3_left",
+      "intersection_mm3": 0.04221978015872201,
+      "status": "legacy_design_issue_preserved"
+    },
+    {
+      "part_a": "module_1",
+      "part_b": "garage_deck_3_right",
+      "intersection_mm3": 0.49992371858309986,
+      "status": "legacy_design_issue_preserved"
+    },
+    {
+      "part_a": "garage_deck_1_left",
+      "part_b": "garage_column_1",
+      "intersection_mm3": 565.4866776461628,
+      "status": "legacy_design_issue_preserved"
+    },
+    {
+      "part_a": "garage_deck_1_left",
+      "part_b": "garage_column_3",
+      "intersection_mm3": 565.4866776461629,
+      "status": "legacy_design_issue_preserved"
+    },
+    {
+      "part_a": "garage_deck_2_left",
+      "part_b": "garage_column_1",
+      "intersection_mm3": 565.4866776461649,
+      "status": "legacy_design_issue_preserved"
+    },
+    {
+      "part_a": "garage_deck_2_left",
+      "part_b": "garage_column_3",
+      "intersection_mm3": 565.486677646165,
+      "status": "legacy_design_issue_preserved"
+    },
+    {
+      "part_a": "garage_deck_3_left",
+      "part_b": "garage_column_1",
+      "intersection_mm3": 565.4866776461628,
+      "status": "legacy_design_issue_preserved"
+    },
+    {
+      "part_a": "garage_deck_3_left",
+      "part_b": "garage_column_3",
+      "intersection_mm3": 565.4866776461629,
+      "status": "legacy_design_issue_preserved"
+    }
+  ],
+  "assembly_function_status": "failed_legacy_interferences",
+  "physical_load_and_PLA_fit": "not_verified",
+  "policy": "Preserve geometry and report source design issues; no unauthorized holes, repositioning, or added structures."
+}

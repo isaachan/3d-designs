@@ -1,0 +1,11 @@
+"""Local GUI smoke check and v2 appearance. QAccessible workaround is process-only."""
+import sys
+from pathlib import Path
+from PySide6 import QtCore
+root=Path('/Users/kai.han/code/3d-designs/garage-bookshelf/v3')
+sys.path.insert(0,str(root))
+import importlib,parameters,gui_review,gui_smoke
+importlib.reload(parameters)
+importlib.reload(gui_review);importlib.reload(gui_smoke)
+# Delay until the macro dialog is closed and the automation's immediate AX read completes.
+QtCore.QTimer.singleShot(2000,gui_smoke.run)

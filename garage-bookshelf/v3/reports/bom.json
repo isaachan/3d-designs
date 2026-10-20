@@ -1,0 +1,1772 @@
+[
+  {
+    "name": "module_1",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "module_1_Body"
+    ],
+    "bounds_global": [
+      [
+        -1e-07,
+        -1e-07,
+        -1.0000002031232324e-07,
+        193.8000001,
+        220.00000010000002,
+        238.0000001
+      ]
+    ],
+    "original_assembly": {
+      "name": "module_1",
+      "label": "主体模块 1",
+      "group": [
+        "01 五个一体主体模块（灰色）"
+      ],
+      "bounds_global": [
+        0.0,
+        0.0,
+        0.0,
+        193.8000030517578,
+        220.0,
+        238.0
+      ],
+      "bounds_source": [
+        0.0,
+        0.0,
+        0.0,
+        193.8000030517578,
+        220.0,
+        238.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 532960.8125,
+      "area_mm2": 174223.75,
+      "facets": 954,
+      "stl_facets": 954
+    }
+  },
+  {
+    "name": "module_2",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "module_2_Body"
+    ],
+    "bounds_global": [
+      [
+        179.9999999,
+        -1e-07,
+        -1.0000002031232324e-07,
+        423.80000010000003,
+        220.00000010000002,
+        238.0000001
+      ]
+    ],
+    "original_assembly": {
+      "name": "module_2",
+      "label": "主体模块 2",
+      "group": [
+        "01 五个一体主体模块（灰色）"
+      ],
+      "bounds_global": [
+        180.0,
+        0.0,
+        -7.844246128371171e-16,
+        423.79998779296875,
+        220.0,
+        238.0
+      ],
+      "bounds_source": [
+        180.0,
+        0.0,
+        -7.844246128371171e-16,
+        423.79998779296875,
+        220.0,
+        238.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 968341.3125,
+      "area_mm2": 317645.875,
+      "facets": 806,
+      "stl_facets": 806
+    }
+  },
+  {
+    "name": "module_3",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "module_3_Body"
+    ],
+    "bounds_global": [
+      [
+        409.9999999,
+        -1e-07,
+        -1.0000002031232324e-07,
+        603.8000000999999,
+        220.00000010000002,
+        238.0000001
+      ]
+    ],
+    "original_assembly": {
+      "name": "module_3",
+      "label": "主体模块 3",
+      "group": [
+        "01 五个一体主体模块（灰色）"
+      ],
+      "bounds_global": [
+        410.0,
+        0.0,
+        -7.844246128371171e-16,
+        603.7999877929688,
+        220.0,
+        238.0
+      ],
+      "bounds_source": [
+        410.0,
+        0.0,
+        -7.844246128371171e-16,
+        603.7999877929688,
+        220.0,
+        238.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 523125.5,
+      "area_mm2": 171879.875,
+      "facets": 1226,
+      "stl_facets": 1226
+    }
+  },
+  {
+    "name": "module_4",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "module_4_Body"
+    ],
+    "bounds_global": [
+      [
+        589.9999999,
+        -1e-07,
+        -1.0000002031232324e-07,
+        783.8000000999999,
+        220.00000010000002,
+        238.0000001
+      ]
+    ],
+    "original_assembly": {
+      "name": "module_4",
+      "label": "主体模块 4",
+      "group": [
+        "01 五个一体主体模块（灰色）"
+      ],
+      "bounds_global": [
+        590.0,
+        0.0,
+        -7.844246128371171e-16,
+        783.7999877929688,
+        220.0,
+        238.0
+      ],
+      "bounds_source": [
+        590.0,
+        0.0,
+        -7.844246128371171e-16,
+        783.7999877929688,
+        220.0,
+        238.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 523119.34375,
+      "area_mm2": 171879.875,
+      "facets": 1226,
+      "stl_facets": 1226
+    }
+  },
+  {
+    "name": "module_5",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "module_5_Body"
+    ],
+    "bounds_global": [
+      [
+        769.9999999,
+        -1e-07,
+        -1.0000000140284197e-07,
+        920.0000001,
+        220.0000001,
+        238.0000001
+      ]
+    ],
+    "original_assembly": {
+      "name": "module_5",
+      "label": "主体模块 5",
+      "group": [
+        "01 五个一体主体模块（灰色）"
+      ],
+      "bounds_global": [
+        770.0,
+        0.0,
+        -7.844246128371171e-16,
+        920.0,
+        220.0,
+        238.0
+      ],
+      "bounds_source": [
+        770.0,
+        0.0,
+        -7.844246128371171e-16,
+        920.0,
+        220.0,
+        238.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 726384.0,
+      "area_mm2": 240842.203125,
+      "facets": 112,
+      "stl_facets": 112
+    }
+  },
+  {
+    "name": "garage_deck_1_left",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "garage_deck_1_left_Body"
+    ],
+    "bounds_global": [
+      [
+        0.0,
+        -1e-07,
+        65.99999989999999,
+        189.8000001,
+        215.0000001,
+        71.0000001
+      ]
+    ],
+    "original_assembly": {
+      "name": "garage_deck_1_left",
+      "label": "停车层板 1 左",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        0.0,
+        0.0,
+        66.0,
+        189.8000030517578,
+        215.0,
+        71.0
+      ],
+      "bounds_source": [
+        0.0,
+        0.0,
+        66.0,
+        189.8000030517578,
+        215.0,
+        71.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 192032.078125,
+      "area_mm2": 81378.546875,
+      "facets": 806,
+      "stl_facets": 806
+    }
+  },
+  {
+    "name": "garage_deck_1_right",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "garage_deck_1_right_Body"
+    ],
+    "bounds_global": [
+      [
+        179.9999999,
+        -1e-07,
+        65.9999999,
+        360.0000001,
+        215.0000001,
+        71.0000001
+      ]
+    ],
+    "original_assembly": {
+      "name": "garage_deck_1_right",
+      "label": "停车层板 1 右",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        180.0,
+        0.0,
+        66.0,
+        360.0,
+        215.0,
+        71.0
+      ],
+      "bounds_source": [
+        180.0,
+        0.0,
+        66.0,
+        360.0,
+        215.0,
+        71.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 188734.859375,
+      "area_mm2": 80060.8671875,
+      "facets": 374,
+      "stl_facets": 374
+    }
+  },
+  {
+    "name": "garage_deck_1_seam_bridge",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "garage_deck_1_seam_bridge_Body"
+    ],
+    "bounds_global": [
+      [
+        156.0,
+        55.0,
+        63.0,
+        204.0,
+        165.0,
+        66.0
+      ]
+    ],
+    "original_assembly": {
+      "name": "garage_deck_1_seam_bridge",
+      "label": "停车层板 1 底面跨缝加强片",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        156.0,
+        55.0,
+        63.0,
+        204.0,
+        165.0,
+        66.0
+      ],
+      "bounds_source": [
+        156.0,
+        55.0,
+        63.0,
+        204.0,
+        165.0,
+        66.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 15840.0,
+      "area_mm2": 11508.0,
+      "facets": 12,
+      "stl_facets": 12
+    }
+  },
+  {
+    "name": "garage_deck_2_left",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "garage_deck_2_left_Body"
+    ],
+    "bounds_global": [
+      [
+        0.0,
+        -1e-07,
+        128.99999989999998,
+        189.8000001,
+        215.0000001,
+        134.0000001
+      ]
+    ],
+    "original_assembly": {
+      "name": "garage_deck_2_left",
+      "label": "停车层板 2 左",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        0.0,
+        0.0,
+        129.0,
+        189.8000030517578,
+        215.0,
+        134.0
+      ],
+      "bounds_source": [
+        0.0,
+        0.0,
+        129.0,
+        189.8000030517578,
+        215.0,
+        134.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 192032.0,
+      "area_mm2": 81378.546875,
+      "facets": 806,
+      "stl_facets": 806
+    }
+  },
+  {
+    "name": "garage_deck_2_right",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "garage_deck_2_right_Body"
+    ],
+    "bounds_global": [
+      [
+        179.9999999,
+        -1e-07,
+        128.9999999,
+        360.0000001,
+        215.0000001,
+        134.0000001
+      ]
+    ],
+    "original_assembly": {
+      "name": "garage_deck_2_right",
+      "label": "停车层板 2 右",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        180.0,
+        0.0,
+        129.0,
+        360.0,
+        215.0,
+        134.0
+      ],
+      "bounds_source": [
+        180.0,
+        0.0,
+        129.0,
+        360.0,
+        215.0,
+        134.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 188734.796875,
+      "area_mm2": 80060.8671875,
+      "facets": 364,
+      "stl_facets": 364
+    }
+  },
+  {
+    "name": "garage_deck_2_seam_bridge",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "garage_deck_2_seam_bridge_Body"
+    ],
+    "bounds_global": [
+      [
+        156.0,
+        55.0,
+        126.0,
+        204.0,
+        165.0,
+        129.0
+      ]
+    ],
+    "original_assembly": {
+      "name": "garage_deck_2_seam_bridge",
+      "label": "停车层板 2 底面跨缝加强片",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        156.0,
+        55.0,
+        126.0,
+        204.0,
+        165.0,
+        129.0
+      ],
+      "bounds_source": [
+        156.0,
+        55.0,
+        126.0,
+        204.0,
+        165.0,
+        129.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 15840.0,
+      "area_mm2": 11508.0,
+      "facets": 12,
+      "stl_facets": 12
+    }
+  },
+  {
+    "name": "garage_deck_3_left",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "garage_deck_3_left_Body"
+    ],
+    "bounds_global": [
+      [
+        0.0,
+        -1e-07,
+        191.99999989999998,
+        189.8000001,
+        215.0000001,
+        197.0000001
+      ]
+    ],
+    "original_assembly": {
+      "name": "garage_deck_3_left",
+      "label": "停车层板 3 左",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        0.0,
+        0.0,
+        192.0,
+        189.8000030517578,
+        215.0,
+        197.0
+      ],
+      "bounds_source": [
+        0.0,
+        0.0,
+        192.0,
+        189.8000030517578,
+        215.0,
+        197.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 192032.421875,
+      "area_mm2": 81378.546875,
+      "facets": 806,
+      "stl_facets": 806
+    }
+  },
+  {
+    "name": "garage_deck_3_right",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "garage_deck_3_right_Body"
+    ],
+    "bounds_global": [
+      [
+        179.9999999,
+        -1e-07,
+        191.9999999,
+        360.0000001,
+        215.0000001,
+        197.0000001
+      ]
+    ],
+    "original_assembly": {
+      "name": "garage_deck_3_right",
+      "label": "停车层板 3 右",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        180.0,
+        0.0,
+        192.0,
+        360.0,
+        215.0,
+        197.0
+      ],
+      "bounds_source": [
+        180.0,
+        0.0,
+        192.0,
+        360.0,
+        215.0,
+        197.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 188735.140625,
+      "area_mm2": 80060.8671875,
+      "facets": 364,
+      "stl_facets": 364
+    }
+  },
+  {
+    "name": "garage_deck_3_seam_bridge",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "garage_deck_3_seam_bridge_Body"
+    ],
+    "bounds_global": [
+      [
+        156.0,
+        55.0,
+        189.0,
+        204.0,
+        165.0,
+        192.0
+      ]
+    ],
+    "original_assembly": {
+      "name": "garage_deck_3_seam_bridge",
+      "label": "停车层板 3 底面跨缝加强片",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        156.0,
+        55.0,
+        189.0,
+        204.0,
+        165.0,
+        192.0
+      ],
+      "bounds_source": [
+        156.0,
+        55.0,
+        189.0,
+        204.0,
+        165.0,
+        192.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 15840.0,
+      "area_mm2": 11508.0,
+      "facets": 12,
+      "stl_facets": 12
+    }
+  },
+  {
+    "name": "garage_column_1",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "garage_column_1_Body"
+    ],
+    "bounds_global": [
+      [
+        -4.0000001,
+        -4.0000001,
+        8.0,
+        24.0000001,
+        24.0000001,
+        230.0
+      ]
+    ],
+    "original_assembly": {
+      "name": "garage_column_1",
+      "label": "黄色承托柱 1",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        -3.998682975769043,
+        -3.99967098236084,
+        8.0,
+        24.0,
+        23.999670028686523,
+        230.0
+      ],
+      "bounds_source": [
+        -3.998682975769043,
+        -3.99967098236084,
+        8.0,
+        24.0,
+        23.999670028686523,
+        230.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 36360.16015625,
+      "area_mm2": 11933.5126953125,
+      "facets": 10548,
+      "stl_facets": 10548
+    }
+  },
+  {
+    "name": "garage_column_2",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "garage_column_2_Body"
+    ],
+    "bounds_global": [
+      [
+        325.9999999,
+        -4.0000001,
+        8.0,
+        354.0000001,
+        24.0000001,
+        230.0
+      ]
+    ],
+    "original_assembly": {
+      "name": "garage_column_2",
+      "label": "黄色承托柱 2",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        326.00131702423096,
+        -3.99967098236084,
+        8.0,
+        354.0,
+        23.999670028686523,
+        230.0
+      ],
+      "bounds_source": [
+        -3.998682975769043,
+        -3.99967098236084,
+        8.0,
+        24.0,
+        23.999670028686523,
+        230.0
+      ],
+      "placement": [
+        330.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 36360.16015625,
+      "area_mm2": 11933.5126953125,
+      "facets": 10548,
+      "stl_facets": 10548
+    }
+  },
+  {
+    "name": "garage_column_3",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "garage_column_3_Body"
+    ],
+    "bounds_global": [
+      [
+        -4.0000001,
+        180.9999999,
+        8.0,
+        24.0000001,
+        209.0000001,
+        230.0
+      ]
+    ],
+    "original_assembly": {
+      "name": "garage_column_3",
+      "label": "黄色承托柱 3",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        -3.998682975769043,
+        181.00032901763916,
+        8.0,
+        24.0,
+        208.99967002868652,
+        230.0
+      ],
+      "bounds_source": [
+        -3.998682975769043,
+        -3.99967098236084,
+        8.0,
+        24.0,
+        23.999670028686523,
+        230.0
+      ],
+      "placement": [
+        0.0,
+        185.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 36360.16015625,
+      "area_mm2": 11933.5126953125,
+      "facets": 10548,
+      "stl_facets": 10548
+    }
+  },
+  {
+    "name": "garage_column_4",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "garage_column_4_Body"
+    ],
+    "bounds_global": [
+      [
+        325.9999999,
+        180.9999999,
+        8.0,
+        354.0000001,
+        209.0000001,
+        230.0
+      ]
+    ],
+    "original_assembly": {
+      "name": "garage_column_4",
+      "label": "黄色承托柱 4",
+      "group": [
+        "02 车库层板与立柱"
+      ],
+      "bounds_global": [
+        326.00131702423096,
+        181.00032901763916,
+        8.0,
+        354.0,
+        208.99967002868652,
+        230.0
+      ],
+      "bounds_source": [
+        -3.998682975769043,
+        -3.99967098236084,
+        8.0,
+        24.0,
+        23.999670028686523,
+        230.0
+      ],
+      "placement": [
+        330.0,
+        185.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 36360.16015625,
+      "area_mm2": 11933.5126953125,
+      "facets": 10548,
+      "stl_facets": 10548
+    }
+  },
+  {
+    "name": "book_depot_sign",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "book_depot_sign_Body"
+    ],
+    "bounds_global": [
+      [
+        920.0,
+        0.0,
+        50.0,
+        956.0,
+        6.00000000000004,
+        230.0
+      ]
+    ],
+    "original_assembly": {
+      "name": "book_depot_sign",
+      "label": "BOOK DEPOT 蓝色底牌",
+      "group": [
+        "03 右侧竖牌"
+      ],
+      "bounds_global": [
+        920.0,
+        0.0,
+        50.0,
+        956.0,
+        6.00000000000004,
+        230.0
+      ],
+      "bounds_source": [
+        0.0,
+        0.0,
+        0.0,
+        36.0,
+        180.0,
+        6.0
+      ],
+      "placement": [
+        920.0,
+        6.0,
+        50.0,
+        0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 38880.0,
+      "area_mm2": 15552.0,
+      "facets": 12,
+      "stl_facets": 12
+    }
+  },
+  {
+    "name": "billboard_left",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "billboard_left_Body"
+    ],
+    "bounds_global": [
+      [
+        0.0,
+        220.0,
+        300.0,
+        180.0,
+        226.0,
+        364.0
+      ]
+    ],
+    "original_assembly": {
+      "name": "billboard_left",
+      "label": "广告牌左板",
+      "group": [
+        "04 Lovely Cars I've Driven 广告牌"
+      ],
+      "bounds_global": [
+        0.0,
+        220.0,
+        300.0,
+        180.0,
+        226.0,
+        364.0
+      ],
+      "bounds_source": [
+        0.0,
+        220.0,
+        300.0,
+        180.0,
+        226.0,
+        364.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 69120.0,
+      "area_mm2": 25968.0,
+      "facets": 12,
+      "stl_facets": 12
+    }
+  },
+  {
+    "name": "billboard_right",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "billboard_right_Body"
+    ],
+    "bounds_global": [
+      [
+        180.0,
+        220.0,
+        300.0,
+        360.0,
+        226.0,
+        364.0
+      ]
+    ],
+    "original_assembly": {
+      "name": "billboard_right",
+      "label": "广告牌右板",
+      "group": [
+        "04 Lovely Cars I've Driven 广告牌"
+      ],
+      "bounds_global": [
+        180.0,
+        220.0,
+        300.0,
+        360.0,
+        226.0,
+        364.0
+      ],
+      "bounds_source": [
+        180.0,
+        220.0,
+        300.0,
+        360.0,
+        226.0,
+        364.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 69120.0,
+      "area_mm2": 25968.0,
+      "facets": 12,
+      "stl_facets": 12
+    }
+  },
+  {
+    "name": "billboard_seam_bridge",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "billboard_seam_bridge_Body"
+    ],
+    "bounds_global": [
+      [
+        155.0,
+        226.0,
+        314.0,
+        205.0,
+        229.0,
+        350.0
+      ]
+    ],
+    "original_assembly": {
+      "name": "billboard_seam_bridge",
+      "label": "广告牌背面跨缝片",
+      "group": [
+        "04 Lovely Cars I've Driven 广告牌"
+      ],
+      "bounds_global": [
+        155.0,
+        226.0,
+        314.0,
+        205.0,
+        229.0,
+        350.0
+      ],
+      "bounds_source": [
+        155.0,
+        226.0,
+        314.0,
+        205.0,
+        229.0,
+        350.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 5400.0,
+      "area_mm2": 4116.0,
+      "facets": 12,
+      "stl_facets": 12
+    }
+  },
+  {
+    "name": "billboard_post_left",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "billboard_post_left_Body"
+    ],
+    "bounds_global": [
+      [
+        78.0,
+        220.0,
+        150.0,
+        102.0,
+        226.0,
+        300.0
+      ]
+    ],
+    "original_assembly": {
+      "name": "billboard_post_left",
+      "label": "广告牌左支架（中心 X=90）",
+      "group": [
+        "04 Lovely Cars I've Driven 广告牌"
+      ],
+      "bounds_global": [
+        78.0,
+        220.0,
+        150.0,
+        102.0,
+        226.0,
+        300.0
+      ],
+      "bounds_source": [
+        78.0,
+        220.0,
+        150.0,
+        102.0,
+        226.0,
+        300.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 21600.0,
+      "area_mm2": 9288.0,
+      "facets": 12,
+      "stl_facets": 12
+    }
+  },
+  {
+    "name": "billboard_post_right",
+    "document": "GarageBookshelfParametric",
+    "body_count": 1,
+    "bodies": [
+      "billboard_post_right_Body"
+    ],
+    "bounds_global": [
+      [
+        258.0,
+        220.0,
+        150.0,
+        282.0,
+        226.0,
+        300.0
+      ]
+    ],
+    "original_assembly": {
+      "name": "billboard_post_right",
+      "label": "广告牌右支架（中心 X=270）",
+      "group": [
+        "04 Lovely Cars I've Driven 广告牌"
+      ],
+      "bounds_global": [
+        258.0,
+        220.0,
+        150.0,
+        282.0,
+        226.0,
+        300.0
+      ],
+      "bounds_source": [
+        258.0,
+        220.0,
+        150.0,
+        282.0,
+        226.0,
+        300.0
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 1,
+      "closed": true,
+      "volume_mm3": 21600.0,
+      "area_mm2": 9288.0,
+      "facets": 12,
+      "stl_facets": 12
+    }
+  },
+  {
+    "name": "billboard_text_lovely_cars",
+    "document": "GarageBookshelfParametric",
+    "body_count": 10,
+    "bodies": [
+      "billboard_text_lovely_cars_island_01",
+      "billboard_text_lovely_cars_island_02",
+      "billboard_text_lovely_cars_island_03",
+      "billboard_text_lovely_cars_island_04",
+      "billboard_text_lovely_cars_island_05",
+      "billboard_text_lovely_cars_island_06",
+      "billboard_text_lovely_cars_island_07",
+      "billboard_text_lovely_cars_island_08",
+      "billboard_text_lovely_cars_island_09",
+      "billboard_text_lovely_cars_island_10"
+    ],
+    "bounds_global": [
+      [
+        107.94999999999999,
+        219.0,
+        335.95,
+        122.05,
+        220.0,
+        355.05
+      ],
+      [
+        121.95,
+        219.0,
+        334.95,
+        137.05,
+        220.0,
+        351.05
+      ],
+      [
+        137.95,
+        219.0,
+        335.95,
+        152.05,
+        220.0,
+        351.05
+      ],
+      [
+        152.95,
+        219.0,
+        334.95,
+        167.05,
+        220.0,
+        351.05
+      ],
+      [
+        167.95,
+        219.0,
+        335.95,
+        172.05,
+        220.0,
+        355.05
+      ],
+      [
+        173.95,
+        219.0,
+        332.95,
+        188.05,
+        220.0,
+        351.05
+      ],
+      [
+        195.95,
+        219.0,
+        334.95,
+        214.05,
+        220.0,
+        356.05
+      ],
+      [
+        214.95,
+        219.0,
+        334.95,
+        229.05,
+        220.0,
+        351.05
+      ],
+      [
+        229.95,
+        219.0,
+        335.95,
+        239.05,
+        220.0,
+        351.05
+      ],
+      [
+        239.95,
+        219.0,
+        334.95,
+        253.05,
+        220.0,
+        351.05
+      ]
+    ],
+    "original_assembly": {
+      "name": "billboard_text_lovely_cars",
+      "label": "Lovely Cars 白色文字",
+      "group": [
+        "04 Lovely Cars I've Driven 广告牌"
+      ],
+      "bounds_global": [
+        107.94999694824219,
+        219.0,
+        332.95001220703125,
+        253.0500030517578,
+        220.0,
+        356.04998779296875
+      ],
+      "bounds_source": [
+        107.94999694824219,
+        219.0,
+        332.95001220703125,
+        253.0500030517578,
+        220.0,
+        356.04998779296875
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 10,
+      "closed": true,
+      "volume_mm3": 1404.6236572265625,
+      "area_mm2": 3616.4765625,
+      "facets": 1472,
+      "stl_facets": 1472
+    }
+  },
+  {
+    "name": "billboard_text_ive_driven",
+    "document": "GarageBookshelfParametric",
+    "body_count": 10,
+    "bodies": [
+      "billboard_text_ive_driven_island_01",
+      "billboard_text_ive_driven_island_02",
+      "billboard_text_ive_driven_island_03",
+      "billboard_text_ive_driven_island_04",
+      "billboard_text_ive_driven_island_05",
+      "billboard_text_ive_driven_island_06",
+      "billboard_text_ive_driven_island_07",
+      "billboard_text_ive_driven_island_08",
+      "billboard_text_ive_driven_island_09",
+      "billboard_text_ive_driven_island_10"
+    ],
+    "bounds_global": [
+      [
+        115.94999999999999,
+        219.0,
+        307.95,
+        120.05000000000001,
+        220.0,
+        327.05
+      ],
+      [
+        121.95,
+        219.0,
+        318.95,
+        127.05,
+        220.0,
+        327.05
+      ],
+      [
+        127.94999999999999,
+        219.0,
+        307.95,
+        142.05,
+        220.0,
+        323.05
+      ],
+      [
+        142.95,
+        219.0,
+        306.95,
+        157.05,
+        220.0,
+        323.05
+      ],
+      [
+        165.95,
+        219.0,
+        307.95,
+        182.05,
+        220.0,
+        327.05
+      ],
+      [
+        183.95,
+        219.0,
+        307.95,
+        193.05,
+        220.0,
+        323.05
+      ],
+      [
+        193.95,
+        219.0,
+        307.95,
+        199.05,
+        220.0,
+        328.05
+      ],
+      [
+        199.95,
+        219.0,
+        307.95,
+        214.05,
+        220.0,
+        323.05
+      ],
+      [
+        214.95,
+        219.0,
+        306.95,
+        229.05,
+        220.0,
+        323.05
+      ],
+      [
+        229.95,
+        219.0,
+        307.95,
+        244.05,
+        220.0,
+        323.05
+      ]
+    ],
+    "original_assembly": {
+      "name": "billboard_text_ive_driven",
+      "label": "I've Driven 白色文字",
+      "group": [
+        "04 Lovely Cars I've Driven 广告牌"
+      ],
+      "bounds_global": [
+        115.94999694824219,
+        219.0,
+        306.95001220703125,
+        244.0500030517578,
+        220.0,
+        328.04998779296875
+      ],
+      "bounds_source": [
+        115.94999694824219,
+        219.0,
+        306.95001220703125,
+        244.0500030517578,
+        220.0,
+        328.04998779296875
+      ],
+      "placement": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "components": 10,
+      "closed": true,
+      "volume_mm3": 1247.8863525390625,
+      "area_mm2": 3202.93994140625,
+      "facets": 1052,
+      "stl_facets": 1052
+    }
+  },
+  {
+    "name": "test_base_male",
+    "document": "GarageBookshelfAuxiliary",
+    "body_count": 1,
+    "bodies": [
+      "test_base_male_Body"
+    ],
+    "bounds_global": [
+      [
+        0.0,
+        -1e-07,
+        -1.0000000721169155e-07,
+        83.80000009999999,
+        100.0000001,
+        8.0000001
+      ]
+    ],
+    "original_assembly": null
+  },
+  {
+    "name": "test_base_female",
+    "document": "GarageBookshelfAuxiliary",
+    "body_count": 1,
+    "bodies": [
+      "test_base_female_Body"
+    ],
+    "bounds_global": [
+      [
+        -1e-07,
+        -1e-07,
+        -1.0000000109488605e-07,
+        70.0000001,
+        100.0000001,
+        8.0000001
+      ]
+    ],
+    "original_assembly": null
+  },
+  {
+    "name": "test_back_male",
+    "document": "GarageBookshelfAuxiliary",
+    "body_count": 1,
+    "bodies": [
+      "test_back_male_Body"
+    ],
+    "bounds_global": [
+      [
+        -1e-07,
+        214.79999990000002,
+        7.9999999,
+        83.80000009999999,
+        220.0000001,
+        88.0000001
+      ]
+    ],
+    "original_assembly": null
+  },
+  {
+    "name": "test_back_female",
+    "document": "GarageBookshelfAuxiliary",
+    "body_count": 1,
+    "bodies": [
+      "test_back_female_Body"
+    ],
+    "bounds_global": [
+      [
+        -1e-07,
+        214.9999999,
+        7.9999999,
+        70.0000001,
+        220.0000001,
+        88.0000001
+      ]
+    ],
+    "original_assembly": null
+  },
+  {
+    "name": "test_corner_left_four_male",
+    "document": "GarageBookshelfAuxiliary",
+    "body_count": 1,
+    "bodies": [
+      "test_corner_left_four_male_Body"
+    ],
+    "bounds_global": [
+      [
+        -1e-07,
+        -1e-07,
+        -1.0000002031232324e-07,
+        83.80000009999999,
+        220.00000010000002,
+        238.0000001
+      ]
+    ],
+    "original_assembly": null
+  },
+  {
+    "name": "test_corner_right_four_female",
+    "document": "GarageBookshelfAuxiliary",
+    "body_count": 1,
+    "bodies": [
+      "test_corner_right_four_female_Body"
+    ],
+    "bounds_global": [
+      [
+        69.9999999,
+        -1e-07,
+        -1.0000000140284197e-07,
+        140.0000001,
+        220.0000001,
+        238.0000001
+      ]
+    ],
+    "original_assembly": null
+  },
+  {
+    "name": "module_2_narrow_visual",
+    "document": "GarageBookshelfAuxiliary",
+    "body_count": 1,
+    "bodies": [
+      "module_2_narrow_visual_Body"
+    ],
+    "bounds_global": [
+      [
+        179.9999999,
+        -1e-07,
+        -1.0000002031232324e-07,
+        293.80000010000003,
+        220.00000010000002,
+        238.0000001
+      ]
+    ],
+    "original_assembly": null
+  },
+  {
+    "name": "module_5_narrow_visual",
+    "document": "GarageBookshelfAuxiliary",
+    "body_count": 1,
+    "bodies": [
+      "module_5_narrow_visual_Body"
+    ],
+    "bounds_global": [
+      [
+        904.9999999,
+        -1e-07,
+        -1.0000000140284197e-07,
+        955.0000001,
+        220.0000001,
+        238.0000001
+      ]
+    ],
+    "original_assembly": null
+  }
+]

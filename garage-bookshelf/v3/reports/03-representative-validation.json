@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "part": "garage_deck_1_right",
+  "sketches": 6,
+  "all_fully_constrained": true,
+  "features": [
+    "PartDesign::Pad",
+    "PartDesign::Pocket",
+    "PartDesign::SubtractiveLoft"
+  ],
+  "thickness_before_mm": 5.000000200000003,
+  "thickness_modified_mm": 6.000000200000003,
+  "restored_volume_mm3": 188734.90196078437,
+  "save_close_reopen": "passed",
+  "stl_closed": true,
+  "freecad_version": [
+    "1",
+    "1",
+    "3",
+    "20260725 (Git shallow)",
+    "Unknown",
+    "2026/07/25 04:52:02",
+    "grafted,grafted",
+    "145529fe741292ff0b3977a01195bf0247425794"
+  ]
+}

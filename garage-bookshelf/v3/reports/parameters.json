@@ -1,0 +1,758 @@
+[
+  {
+    "alias": "Zero",
+    "value": "0 mm",
+    "description": "局部坐标基准",
+    "kind": "input"
+  },
+  {
+    "alias": "ModuleWidth1",
+    "value": "180 mm",
+    "description": "模块1宽",
+    "kind": "input"
+  },
+  {
+    "alias": "ModuleWidth2",
+    "value": "230 mm",
+    "description": "模块2宽",
+    "kind": "input"
+  },
+  {
+    "alias": "ModuleWidth3",
+    "value": "180 mm",
+    "description": "模块3宽",
+    "kind": "input"
+  },
+  {
+    "alias": "ModuleWidth4",
+    "value": "180 mm",
+    "description": "模块4宽",
+    "kind": "input"
+  },
+  {
+    "alias": "ModuleWidth5",
+    "value": "150 mm",
+    "description": "模块5宽",
+    "kind": "input"
+  },
+  {
+    "alias": "ModuleStart1",
+    "value": "=Zero",
+    "description": "模块1位置",
+    "kind": "derived"
+  },
+  {
+    "alias": "ModuleStart2",
+    "value": "=ModuleWidth1",
+    "description": "模块2位置",
+    "kind": "derived"
+  },
+  {
+    "alias": "ModuleStart3",
+    "value": "=ModuleStart2+ModuleWidth2",
+    "description": "模块3位置",
+    "kind": "derived"
+  },
+  {
+    "alias": "ModuleStart4",
+    "value": "=ModuleStart3+ModuleWidth3",
+    "description": "模块4位置",
+    "kind": "derived"
+  },
+  {
+    "alias": "ModuleStart5",
+    "value": "=ModuleStart4+ModuleWidth4",
+    "description": "模块5位置",
+    "kind": "derived"
+  },
+  {
+    "alias": "OverallWidth",
+    "value": "=ModuleStart5+ModuleWidth5",
+    "description": "主体宽（派生）",
+    "kind": "derived"
+  },
+  {
+    "alias": "OverallDepth",
+    "value": "220 mm",
+    "description": "主体深",
+    "kind": "input"
+  },
+  {
+    "alias": "OverallHeight",
+    "value": "238 mm",
+    "description": "主体高",
+    "kind": "input"
+  },
+  {
+    "alias": "BaseThickness",
+    "value": "8 mm",
+    "description": "底板厚",
+    "kind": "input"
+  },
+  {
+    "alias": "BackThickness",
+    "value": "5 mm",
+    "description": "背板厚",
+    "kind": "input"
+  },
+  {
+    "alias": "WallThickness",
+    "value": "6 mm",
+    "description": "竖板厚",
+    "kind": "input"
+  },
+  {
+    "alias": "Overlap",
+    "value": "0.2 mm",
+    "description": "源设计融合重叠/榫根偏移",
+    "kind": "input"
+  },
+  {
+    "alias": "WallStart",
+    "value": "=BaseThickness-Overlap",
+    "description": "背/竖板起点",
+    "kind": "derived"
+  },
+  {
+    "alias": "WallPadLength",
+    "value": "=OverallHeight-WallStart",
+    "description": "背/竖板高",
+    "kind": "derived"
+  },
+  {
+    "alias": "BackFront",
+    "value": "=OverallDepth-BackThickness",
+    "description": "背板前沿",
+    "kind": "derived"
+  },
+  {
+    "alias": "DividerX",
+    "value": "360 mm",
+    "description": "中隔板全局X",
+    "kind": "input"
+  },
+  {
+    "alias": "RightWallX",
+    "value": "=OverallWidth-WallThickness",
+    "description": "右侧板X",
+    "kind": "derived"
+  },
+  {
+    "alias": "PanelDepth",
+    "value": "=BackFront",
+    "description": "竖板深",
+    "kind": "derived"
+  },
+  {
+    "alias": "RibSize",
+    "value": "25 mm",
+    "description": "根肋直角边",
+    "kind": "input"
+  },
+  {
+    "alias": "RibThickness",
+    "value": "5 mm",
+    "description": "肋厚",
+    "kind": "input"
+  },
+  {
+    "alias": "RibFrontY",
+    "value": "12 mm",
+    "description": "前肋Y",
+    "kind": "input"
+  },
+  {
+    "alias": "RibRearY",
+    "value": "183 mm",
+    "description": "后肋Y",
+    "kind": "input"
+  },
+  {
+    "alias": "TongueLength",
+    "value": "14 mm",
+    "description": "主体公榫Loft长",
+    "kind": "input"
+  },
+  {
+    "alias": "SocketDepth",
+    "value": "15 mm",
+    "description": "主体母槽Loft长",
+    "kind": "input"
+  },
+  {
+    "alias": "FitClearance",
+    "value": "0.40 mm",
+    "description": "名义总侧隙",
+    "kind": "input"
+  },
+  {
+    "alias": "HalfClearance",
+    "value": "=FitClearance/2",
+    "description": "单侧扩张",
+    "kind": "derived"
+  },
+  {
+    "alias": "SocketOvercut",
+    "value": "0.2 mm",
+    "description": "母槽上下越界",
+    "kind": "input"
+  },
+  {
+    "alias": "BaseJointY1",
+    "value": "52 mm",
+    "description": "底榫1中心",
+    "kind": "input"
+  },
+  {
+    "alias": "BaseJointY2",
+    "value": "168 mm",
+    "description": "底榫2中心",
+    "kind": "input"
+  },
+  {
+    "alias": "BackJointZ1",
+    "value": "66 mm",
+    "description": "背榫1中心",
+    "kind": "input"
+  },
+  {
+    "alias": "BackJointZ2",
+    "value": "180 mm",
+    "description": "背榫2中心",
+    "kind": "input"
+  },
+  {
+    "alias": "BaseRootBottom",
+    "value": "15 mm",
+    "description": "底榫根底半宽",
+    "kind": "input"
+  },
+  {
+    "alias": "BaseRootTop",
+    "value": "12 mm",
+    "description": "底榫根顶半宽",
+    "kind": "input"
+  },
+  {
+    "alias": "BaseTipBottom",
+    "value": "12 mm",
+    "description": "底榫末底半宽",
+    "kind": "input"
+  },
+  {
+    "alias": "BaseTipTop",
+    "value": "9 mm",
+    "description": "底榫末顶半宽",
+    "kind": "input"
+  },
+  {
+    "alias": "BackFrontOverlap",
+    "value": "0.2 mm",
+    "description": "背榫前沿融合",
+    "kind": "input"
+  },
+  {
+    "alias": "BackRootFront",
+    "value": "13 mm",
+    "description": "背榫根前半高",
+    "kind": "input"
+  },
+  {
+    "alias": "BackRootRear",
+    "value": "17 mm",
+    "description": "背榫根后半高",
+    "kind": "input"
+  },
+  {
+    "alias": "BackTipFront",
+    "value": "10 mm",
+    "description": "背榫末前半高",
+    "kind": "input"
+  },
+  {
+    "alias": "BackTipRear",
+    "value": "14 mm",
+    "description": "背榫末后半高",
+    "kind": "input"
+  },
+  {
+    "alias": "DeckHalfWidth",
+    "value": "180 mm",
+    "description": "层板半片宽",
+    "kind": "input"
+  },
+  {
+    "alias": "DeckWidth",
+    "value": "=2*DeckHalfWidth",
+    "description": "整层宽",
+    "kind": "derived"
+  },
+  {
+    "alias": "DeckDepth",
+    "value": "215 mm",
+    "description": "层板深",
+    "kind": "input"
+  },
+  {
+    "alias": "DeckThickness",
+    "value": "5 mm",
+    "description": "层板厚",
+    "kind": "input"
+  },
+  {
+    "alias": "DeckFirstZ",
+    "value": "66 mm",
+    "description": "首层底高",
+    "kind": "input"
+  },
+  {
+    "alias": "DeckPitch",
+    "value": "63 mm",
+    "description": "层距",
+    "kind": "input"
+  },
+  {
+    "alias": "DeckZ1",
+    "value": "=DeckFirstZ",
+    "description": "层1位置",
+    "kind": "derived"
+  },
+  {
+    "alias": "DeckZ2",
+    "value": "=DeckFirstZ+DeckPitch",
+    "description": "层2位置",
+    "kind": "derived"
+  },
+  {
+    "alias": "DeckZ3",
+    "value": "=DeckFirstZ+2*DeckPitch",
+    "description": "层3位置",
+    "kind": "derived"
+  },
+  {
+    "alias": "DeckNotchX",
+    "value": "153 mm",
+    "description": "每半片缺口起X",
+    "kind": "input"
+  },
+  {
+    "alias": "DeckNotchWidth",
+    "value": "14 mm",
+    "description": "缺口宽",
+    "kind": "input"
+  },
+  {
+    "alias": "DeckFrontNotchDepth",
+    "value": "17 mm",
+    "description": "前缺口深",
+    "kind": "input"
+  },
+  {
+    "alias": "DeckRearNotchStart",
+    "value": "188 mm",
+    "description": "后缺口起Y",
+    "kind": "input"
+  },
+  {
+    "alias": "DeckTongueLength",
+    "value": "10 mm",
+    "description": "层板公榫长",
+    "kind": "input"
+  },
+  {
+    "alias": "DeckSocketDepth",
+    "value": "10.2 mm",
+    "description": "层板母槽长",
+    "kind": "input"
+  },
+  {
+    "alias": "DeckJointY1",
+    "value": "55 mm",
+    "description": "层板榫1",
+    "kind": "input"
+  },
+  {
+    "alias": "DeckJointY2",
+    "value": "160 mm",
+    "description": "层板榫2",
+    "kind": "input"
+  },
+  {
+    "alias": "DeckRootBottom",
+    "value": "11 mm",
+    "description": "层板根底半宽",
+    "kind": "input"
+  },
+  {
+    "alias": "DeckRootTop",
+    "value": "8 mm",
+    "description": "层板根顶半宽",
+    "kind": "input"
+  },
+  {
+    "alias": "DeckTipBottom",
+    "value": "8 mm",
+    "description": "层板末底半宽",
+    "kind": "input"
+  },
+  {
+    "alias": "DeckTipTop",
+    "value": "6 mm",
+    "description": "层板末顶半宽",
+    "kind": "input"
+  },
+  {
+    "alias": "DeckBridgeWidth",
+    "value": "48 mm",
+    "description": "层板跨缝片宽",
+    "kind": "input"
+  },
+  {
+    "alias": "DeckBridgeDepth",
+    "value": "110 mm",
+    "description": "层板跨缝片深",
+    "kind": "input"
+  },
+  {
+    "alias": "DeckBridgeThickness",
+    "value": "3 mm",
+    "description": "层板跨缝片厚",
+    "kind": "input"
+  },
+  {
+    "alias": "DeckBridgeX",
+    "value": "=DeckHalfWidth-DeckBridgeWidth/2",
+    "description": "跨缝片位置",
+    "kind": "derived"
+  },
+  {
+    "alias": "DeckBridgeY",
+    "value": "55 mm",
+    "description": "跨缝片Y",
+    "kind": "input"
+  },
+  {
+    "alias": "ColumnRadius",
+    "value": "6 mm",
+    "description": "柱轴半径",
+    "kind": "input"
+  },
+  {
+    "alias": "CollarRadius",
+    "value": "14 mm",
+    "description": "托环半径",
+    "kind": "input"
+  },
+  {
+    "alias": "ColumnCentreOffset",
+    "value": "10 mm",
+    "description": "原柱局部轴心",
+    "kind": "input"
+  },
+  {
+    "alias": "ColumnPitchX",
+    "value": "330 mm",
+    "description": "柱X定位距",
+    "kind": "input"
+  },
+  {
+    "alias": "ColumnPitchY",
+    "value": "185 mm",
+    "description": "柱Y定位距",
+    "kind": "input"
+  },
+  {
+    "alias": "ColumnTop",
+    "value": "230 mm",
+    "description": "柱顶Z",
+    "kind": "input"
+  },
+  {
+    "alias": "ColumnHeight",
+    "value": "=ColumnTop-BaseThickness",
+    "description": "柱轴高",
+    "kind": "derived"
+  },
+  {
+    "alias": "ConeHeight",
+    "value": "8 mm",
+    "description": "锥肩高",
+    "kind": "input"
+  },
+  {
+    "alias": "CollarThickness",
+    "value": "4 mm",
+    "description": "托环厚",
+    "kind": "input"
+  },
+  {
+    "alias": "SignWidth",
+    "value": "36 mm",
+    "description": "侧牌局部宽",
+    "kind": "input"
+  },
+  {
+    "alias": "SignHeight",
+    "value": "180 mm",
+    "description": "侧牌局部长",
+    "kind": "input"
+  },
+  {
+    "alias": "SignThickness",
+    "value": "6 mm",
+    "description": "侧牌厚",
+    "kind": "input"
+  },
+  {
+    "alias": "SignBaseZ",
+    "value": "50 mm",
+    "description": "侧牌装配Z",
+    "kind": "input"
+  },
+  {
+    "alias": "BillboardHalfWidth",
+    "value": "180 mm",
+    "description": "广告牌半宽",
+    "kind": "input"
+  },
+  {
+    "alias": "BillboardHeight",
+    "value": "64 mm",
+    "description": "广告牌高",
+    "kind": "input"
+  },
+  {
+    "alias": "BillboardThickness",
+    "value": "6 mm",
+    "description": "广告牌厚",
+    "kind": "input"
+  },
+  {
+    "alias": "BillboardBottom",
+    "value": "300 mm",
+    "description": "广告牌底Z",
+    "kind": "input"
+  },
+  {
+    "alias": "BillboardBridgeWidth",
+    "value": "50 mm",
+    "description": "广告牌跨缝片宽",
+    "kind": "input"
+  },
+  {
+    "alias": "BillboardBridgeThickness",
+    "value": "3 mm",
+    "description": "广告牌跨缝片厚",
+    "kind": "input"
+  },
+  {
+    "alias": "BillboardBridgeHeight",
+    "value": "36 mm",
+    "description": "广告牌跨缝片高",
+    "kind": "input"
+  },
+  {
+    "alias": "BillboardBridgeLift",
+    "value": "14 mm",
+    "description": "跨缝片距底高",
+    "kind": "input"
+  },
+  {
+    "alias": "PostWidth",
+    "value": "24 mm",
+    "description": "广告牌支架宽",
+    "kind": "input"
+  },
+  {
+    "alias": "PostThickness",
+    "value": "6 mm",
+    "description": "支架厚",
+    "kind": "input"
+  },
+  {
+    "alias": "PostHeight",
+    "value": "150 mm",
+    "description": "支架高",
+    "kind": "input"
+  },
+  {
+    "alias": "PostCentreLeft",
+    "value": "=BillboardHalfWidth/2",
+    "description": "左支架中心",
+    "kind": "derived"
+  },
+  {
+    "alias": "PostCentreRight",
+    "value": "=BillboardHalfWidth*1.5",
+    "description": "右支架中心",
+    "kind": "derived"
+  },
+  {
+    "alias": "TextPixel",
+    "value": "1 mm",
+    "description": "原掩码像素尺寸",
+    "kind": "input"
+  },
+  {
+    "alias": "TextOverlap",
+    "value": "0.1 mm",
+    "description": "像素行融合扩张",
+    "kind": "input"
+  },
+  {
+    "alias": "TextThickness",
+    "value": "1 mm",
+    "description": "文字厚",
+    "kind": "input"
+  },
+  {
+    "alias": "TextOriginX",
+    "value": "90 mm",
+    "description": "文字掩码原点X",
+    "kind": "input"
+  },
+  {
+    "alias": "TextLovelyZ",
+    "value": "332 mm",
+    "description": "Lovely行原点Z",
+    "kind": "input"
+  },
+  {
+    "alias": "TextDrivenZ",
+    "value": "304 mm",
+    "description": "Driven行原点Z",
+    "kind": "input"
+  },
+  {
+    "alias": "CouponWidth",
+    "value": "70 mm",
+    "description": "试件宽",
+    "kind": "input"
+  },
+  {
+    "alias": "CouponDepth",
+    "value": "100 mm",
+    "description": "底榫试件深",
+    "kind": "input"
+  },
+  {
+    "alias": "CouponBaseY",
+    "value": "50 mm",
+    "description": "底试榫中心",
+    "kind": "input"
+  },
+  {
+    "alias": "CouponBackHeight",
+    "value": "80 mm",
+    "description": "背试件高",
+    "kind": "input"
+  },
+  {
+    "alias": "CouponBackZ",
+    "value": "48 mm",
+    "description": "背试榫中心",
+    "kind": "input"
+  },
+  {
+    "alias": "NarrowCutFrom2",
+    "value": "35 mm",
+    "description": "模块2局部删除起点",
+    "kind": "input"
+  },
+  {
+    "alias": "NarrowCutTo2",
+    "value": "165 mm",
+    "description": "模块2局部删除终点",
+    "kind": "input"
+  },
+  {
+    "alias": "NarrowRemoved2",
+    "value": "=NarrowCutTo2-NarrowCutFrom2",
+    "description": "模块2缩短移除量",
+    "kind": "derived"
+  },
+  {
+    "alias": "NarrowCutFrom5",
+    "value": "30 mm",
+    "description": "模块5局部删除起点",
+    "kind": "input"
+  },
+  {
+    "alias": "NarrowCutTo5",
+    "value": "130 mm",
+    "description": "模块5局部删除终点",
+    "kind": "input"
+  },
+  {
+    "alias": "NarrowRemoved5",
+    "value": "=NarrowCutTo5-NarrowCutFrom5",
+    "description": "模块5缩短移除量",
+    "kind": "derived"
+  },
+  {
+    "alias": "NarrowViewOffset5",
+    "value": "135 mm",
+    "description": "原缩短查看工程模块5平移",
+    "kind": "input"
+  },
+  {
+    "alias": "PrintBrim",
+    "value": "4 mm",
+    "description": "原PLA brim",
+    "kind": "input"
+  },
+  {
+    "alias": "PrintBedWidth",
+    "value": "256 mm",
+    "description": "原打印床X",
+    "kind": "input"
+  },
+  {
+    "alias": "PrintBedDepth",
+    "value": "256 mm",
+    "description": "原打印床Y",
+    "kind": "input"
+  },
+  {
+    "alias": "PrintHeight",
+    "value": "260 mm",
+    "description": "原打印高度",
+    "kind": "input"
+  },
+  {
+    "alias": "ExportLinearDeflection",
+    "value": "0.02 mm",
+    "description": "新STL最大线性弦高（导出设置）",
+    "kind": "input"
+  },
+  {
+    "alias": "ModuleCount",
+    "value": "=5",
+    "description": "主体模块数量（无量纲；固定拓扑，改数量需重建）",
+    "kind": "derived"
+  },
+  {
+    "alias": "DeckLevelCount",
+    "value": "=3",
+    "description": "车库层数（无量纲；固定拓扑）",
+    "kind": "derived"
+  },
+  {
+    "alias": "ColumnCount",
+    "value": "=4",
+    "description": "承托柱数量（无量纲；固定拓扑）",
+    "kind": "derived"
+  },
+  {
+    "alias": "PrintWallLoops",
+    "value": "4",
+    "description": "原PLA墙圈数（无量纲）",
+    "kind": "input"
+  },
+  {
+    "alias": "PrintInfillPercent",
+    "value": "25",
+    "description": "原PLA填充百分数（无量纲，25表示25%）",
+    "kind": "input"
+  }
+]

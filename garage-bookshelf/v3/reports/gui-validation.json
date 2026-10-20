@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "checks": [
+    "GUI opens all 44 native Bodies",
+    "GUI setEdit Sketch_Base succeeded",
+    "GUI setEdit Pad_Base succeeded",
+    "GUI setEdit DesignParameters succeeded",
+    "GUI save/close/reopen retains fully constrained Sketches and valid single-Solid Bodies",
+    "Auxiliary appearance saved; main 3D preview rendered"
+  ],
+  "environment_note": "Automated macOS accessibility inspection triggered Qt QAccessibleCache/QMacAccessibilityElement crashes. Accessibility updates disabled only in this GUI process during checks; no preference or document geometry changed."
+}
