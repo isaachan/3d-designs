@@ -325,36 +325,36 @@
       "object_bounds": [
         {
           "min_mm": [
-            146.24999,
+            132.24999,
             37.99999,
             0.0
           ],
           "max_mm": [
-            182.24999,
+            196.24999,
             217.99999,
             14.0
           ]
         },
         {
           "min_mm": [
-            120.24999,
+            106.25,
             68.00001,
             0.0
           ],
           "max_mm": [
-            144.24999,
+            130.25,
             218.00001,
             6.0
           ]
         },
         {
           "min_mm": [
-            94.25001,
+            80.25002,
             53.00001,
             0.0
           ],
           "max_mm": [
-            118.25001,
+            104.25002,
             203.00001,
             6.0
           ]
@@ -366,30 +366,30 @@
   "artifacts_sha256": {
     "analysis/parking-deck-bending/bending-comparison.png": "7f1715b8754c5d3da976b26ee8bf3ee5936bc3a7ad85a7010fbc0bf7d6d99ce1",
     "analysis/parking-deck-bending/reference/garage-bookshelf-v4-ribbed-analysis-source.FCStd": "d6570e0a2cb1fd1bf0e168de81b88a00dcb64f4530098762af0e6b2c06b63e4c",
-    "bambu-projects/01-whole-garage-deck-print-three.3mf": "8013b4efc5aa921cc71524f7985176412bf350dac47cbb1c32a2df261c0699b4",
+    "bambu-projects/01-whole-garage-deck-print-three.3mf": "5a88ddb8c3024f80d93fb97466f98694cee3bf0016c95e35a030d7239751fc7a",
     "bambu-projects/01-whole-garage-deck-print-three.png": "a60f26c5beca9f225feb9bf6abc21a3fcbb811675c22ea4b0c72686fb43b130e",
-    "bambu-projects/02-garage-base.3mf": "b2e0e791745057fc5f1dab59d93c464629382101537d2176836faf1c7eb7b1e8",
+    "bambu-projects/02-garage-base.3mf": "b58993759c8db694a704b1588e2faca02896157e74bf809b3cd4c6b1a774f41a",
     "bambu-projects/02-garage-base.png": "ab30d1399d273f1bf77b72c1a9c9af5e7d4f5ee6ed01b724f1e6e2dcbd372547",
-    "bambu-projects/03-book-left.3mf": "e54d952497e087316992662e0a449918aab695b451b61ea683f1669c814a5a05",
+    "bambu-projects/03-book-left.3mf": "632a24f97086f52bf10a85d239af4cebd78ad314ef222221472178a8e7c5f37b",
     "bambu-projects/03-book-left.png": "305140df8252d53b0d00fd5ee5655c58240c51375c1058e736d7c6d9f88d1c52",
-    "bambu-projects/04-book-right.3mf": "80cd58f525cde5dc85ef11f8af1af87a2bdd58c68a803336244353799e9efce3",
+    "bambu-projects/04-book-right.3mf": "84aac1262782264d43a9c4c4533739ec743bd10e3c53390bb4d7671b46494e81",
     "bambu-projects/04-book-right.png": "96c79471f24ed9bc95742fc925ce5fb06a1eee603c8cfc373b5ece66ef328142",
-    "bambu-projects/05-support-segments-twelve.3mf": "c635814deeaa302c18aac023233d9d087c394dfb0e0445e14fe3349121ba81c3",
+    "bambu-projects/05-support-segments-twelve.3mf": "b473f9a0b1748f4a372d8511f9abf866b306947b95f5b571b4561fda3e6ff766",
     "bambu-projects/05-support-segments-twelve.png": "e95163b024f9b4a419c200c7401b3299501252327d48e12a63f6ebe8e65dc492",
-    "bambu-projects/06-top-segments-four.3mf": "22f7f1a007f74b33c9cfcaa537a1357690a76ecefcea88c7b3873b885412c389",
+    "bambu-projects/06-top-segments-four.3mf": "e0dd39c92766e61414ff2c7cb5bd4e28a55bc27cf55ef4befac893078f0c7ff7",
     "bambu-projects/06-top-segments-four.png": "0549dcc09d6f640333f7baa5d6c15b7f064fdc4deef8ed04f9ad428938d53b6e",
-    "bambu-projects/07-billboard-and-lettering.3mf": "13e32f1a8b696054e99ea1cab2a1a8682dfff54c3d40c91e343e0d476f4e608f",
+    "bambu-projects/07-billboard-and-lettering.3mf": "56dd1e60d2b5a1da95185aee85d9313893d90da17d6d0ee1032d483d52d6fc59",
     "bambu-projects/07-billboard-and-lettering.png": "64bb29f6f3bddaf7eed004da2378162ef99dcc2acaffeaa0711bd42b7a4d2d9c",
-    "bambu-projects/08-posts-and-blue-sign.3mf": "bf54753ca447d2d1fae24c40fe6f19e645b72b75434e9be9f4515bca06185374",
-    "bambu-projects/08-posts-and-blue-sign.png": "a578149f83b65556f1866ac01003c96c2fa9d235251aa75f8dcd840f7fa01cae",
-    "garage-bookshelf-v4-assembly.FCStd": "03de1d3b5534fd76973e107013ab1e409a35cef1d33b64f211603c6053f97843",
-    "garage-bookshelf-v4-assembly.step": "718bdfcc440e8a42dc39776f4b59350c90103e93c0c6bf9ceed0b7cb24c37083",
+    "bambu-projects/08-posts-and-blue-sign.3mf": "e4299f0e995407e9ad2f93c652836b2e4c62ec5049948419b07521c5613c2cbb",
+    "bambu-projects/08-posts-and-blue-sign.png": "5f31b9617b2a6030ceace9d8e4336137915b27b13bdc6126bf12dbdb74b4218f",
+    "garage-bookshelf-v4-assembly.FCStd": "7911102ca7f5639ee25fbea2c2400d95be34f04e3e194144074c511296358e04",
+    "garage-bookshelf-v4-assembly.step": "ea6b1f8bf1b953331ccf068ab3d076696f7edb27390f111309adee5609986e28",
     "print-stl/billboard.stl": "1665648678bb073e2a6e77d59fbef23e1e5477cd51b18d0b8485c9cc866cb2bb",
     "print-stl/billboard_post_left.stl": "291f9f3e8fc24a375972ccfd8dc24645579efa042f42fa4d3ee13c8d06f6f22a",
     "print-stl/billboard_post_right.stl": "d5f209e6ae478331d750ff43c99b5c38eec327f207a902f3dded47856a1eff9c",
     "print-stl/billboard_text_ive_driven.stl": "d2afa0e218206fc0868146b2c6c49fa9c1771c7e3aa5f480169aee4728a637c1",
     "print-stl/billboard_text_lovely_cars.stl": "aec0a6df3cbdbdf0a4091ae1d3cf396c0a9dba15426d66166961f26b4b66e3e4",
-    "print-stl/book_depot_sign.stl": "ad30355a205231c20af5c19e0af837c3f90cb5768d88bc5e69e3a6a01b688512",
+    "print-stl/book_depot_sign.stl": "3dcc788138d28d3235e0be0f41e77caad50e864b24237cbff50e5d408c29923e",
     "print-stl/column_1_segment_1.stl": "cea67b1f1eaff4ae62dcd14f471b479af195bec656128debb6176dbc551fce76",
     "print-stl/column_1_segment_2.stl": "f381f3e106d0c05c01c623f56f921abc6aaa1dea022a7cf63e6c617ed0e95873",
     "print-stl/column_1_segment_3.stl": "e1e589ec45be010f2c0fd886a43887ee3f82a507cd5702122c0c5a4b77b0f607",
@@ -409,18 +409,19 @@
     "print-stl/garage_deck_1.stl": "4f682c89d0b9c4427e1a9879c408a9183d0a91afc4178b74babbf65aca9ee1d7",
     "print-stl/garage_deck_2.stl": "4f682c89d0b9c4427e1a9879c408a9183d0a91afc4178b74babbf65aca9ee1d7",
     "print-stl/garage_deck_3.stl": "4f682c89d0b9c4427e1a9879c408a9183d0a91afc4178b74babbf65aca9ee1d7",
-    "print-stl/module_1.stl": "952ff0a0e889da5febfedc28bc2e60bfa721f1dd8efb65264658ec9b80163b38",
+    "print-stl/module_1.stl": "48d840a978813aa924ff779c62d0f5a56d300039b65804decfa7e00dab37f54d",
     "print-stl/module_2.stl": "fbe3caa5f0c3dd734492b101fc4c89f2de2345d806bb6b234e8e1209e37703fa",
     "print-stl/module_3.stl": "13f1c80795de65e71c6c31ca8598f00ca7465f6a88a5b0fc32047fda20e4002f",
-    "reports/assembly-preview.png": "e91d8634691f31ff802e76447be1eb534f91329cb29980c75955a98df29ac8fc",
-    "reports/front-preview.png": "d1277edbe0b027564655eea1a9800f494aad810fcf24a0a15b43271596fbffd0",
-    "reports/rear-preview.png": "33c0f62fcaa662afba553aa2d8469808d8aa98d04251a26775deeb0ad7e0c675",
+    "reports/assembly-preview.png": "4bedc5e55a4ccf9ef869e10c80c14f04687e2fcf301f1b8690cd4352251f53ad",
+    "reports/blue-sign-preview.png": "35e99056b4e44836c2742160d7207fab5a14d8e5090e4cd482e2dbc59feddeed",
+    "reports/front-preview.png": "4e3e1d3e149c465d8c5f94f34c14e671eca8095546d9e04542102d9699d675e9",
+    "reports/rear-preview.png": "19328d568a29c62da8e55732dece1e9449fa0e874137fc20334a62d83635766e",
     "stl/billboard.stl": "f40c4b01eb06690b866d056a3cb71e5c5a653ba3c36d71d317e37db425ede64a",
     "stl/billboard_post_left.stl": "8f6adb80d2718d4d057b8b7525c7182c58c3a1312b13bf631f8ac9968e2a09cf",
     "stl/billboard_post_right.stl": "f7fd487e5041eef24d9e5d9e41a4b33e6f4567de012e601f32f9feea6d01a45f",
     "stl/billboard_text_ive_driven.stl": "57aef1e01ecf8ddc07c79a3177710b0e51cf47341867caf31347c51a82e1edcf",
     "stl/billboard_text_lovely_cars.stl": "bb27c7354fc80bf21e78938488ab0a21644929fc5614eb3e53c25d922e1954c6",
-    "stl/book_depot_sign.stl": "50adab492c821a1927befbe667b0b2eab1e7070a0c917e9ca6b9c47e6a4445c5",
+    "stl/book_depot_sign.stl": "f153e734eabab58bb5aef14844a83ac83e23456a8a744f1633f105a3265b8c8a",
     "stl/column_1_segment_1.stl": "0b4d2d4a6a78e00c489157a6361b9f74c159582df0dcf97ff1082bf970860364",
     "stl/column_1_segment_2.stl": "0c99c854578a58a5ac84b34a1f9db4c9558fb739c7dca8f166af1ffd1c832aaf",
     "stl/column_1_segment_3.stl": "36d39e8df3faced2893da4488a1d21094f5865684704b5917f6a4f4b3362a978",
@@ -440,7 +441,7 @@
     "stl/garage_deck_1.stl": "dd651a4eb8b587e091c59d89a5ee6a1f546a4816d1ce1895acadc06ae134aa37",
     "stl/garage_deck_2.stl": "8a756cfdc7f75e2e2fdf4d268be892ecb5eaec41e290c89183a6b9058793885d",
     "stl/garage_deck_3.stl": "82fcd5aac1b798403dbecd49886f1caedf67b7779ce66767ed1f7526341a306f",
-    "stl/module_1.stl": "e846d5fa09911c6b6b2f5b93e26eee431fb19affd6f886b93147d23795316c57",
+    "stl/module_1.stl": "6d32f41402e7536ec04f9cb7d73b52f9414fed8440ec53dd9dac44d89f24b8a6",
     "stl/module_2.stl": "c191a58395eedda574bf65710acff6ffe2fbdc024dab8a6d5c80eff08282e222",
     "stl/module_3.stl": "11de7bd442de5a8d695e8e0a8feec8c654fc5d24165b9d510baceb160617322b"
   }

@@ -4,7 +4,8 @@ from pathlib import Path
 import FreeCAD as App,Part
 from assembly import part
 from geometry.sketches import loops,rectangle
-from geometry.features import pad
+from geometry.features import pad,pocket,finish
+from parameters import expression,evaluate
 ROOT=Path(__file__).resolve().parent
 
 def box(body,width,depth,height):
@@ -43,3 +44,42 @@ def text(doc,parent,name,label,z):
         if b.ViewObject is not None:b.ViewObject.ShapeColor=(.95,.95,.95)
         pad(b,'Pad_Text',loops(b,'Sketch_TextOutline',polygons,orientation='XZ'),'TextThickness')
     return container
+
+
+def sign_lettering(body):
+    """Small per-glyph sketches drive one native Pocket with the exact slogan."""
+    data=json.loads((ROOT/'reference/sign-lettering.json').read_text())
+    body.addProperty('App::PropertyString','EngravedSlogan','Lettering')
+    body.EngravedSlogan=data['slogan']
+    sketches=[]
+    for index,row in enumerate(data['lines'],1):
+        print(f'Building native sign lettering {index}/4: {row["text"]}',flush=True)
+        height='SignTextHeadingHeight' if index in (1,3) else 'SignTextWordHeight'
+        origin=f'(SignWidth-{row["width_per_cap_height"]:.12g}*{height})/2'
+        for glyph,indices in enumerate(row['glyphs'],1):
+            polygons=[[(f'{origin}+({x:.12g})*{height}',f'SignLine{index}Z+({y:.12g})*{height}') for x,y in row['polygons'][i]] for i in indices]
+            sketch=loops(body,f'Sketch_SignLine{index}_Glyph{glyph:02}',polygons,orientation='XZ')
+            sketch.Label=f'凹刻轮廓 {index}.{glyph}: {row["text"]}'
+            sketch.addProperty('App::PropertyInteger','SignLine','Lettering');sketch.SignLine=index
+            sketches.append(sketch)
+    return engrave_sign_sketches(body,sketches)
+
+
+def engrave_sign_sketches(body,sketches):
+    """Keep small sketches, then combine their planar wires for one native Pocket."""
+    doc=body.Document;blank_volume=body.Shape.Volume
+    area=sum(Part.makeFace(sketch.Shape.Wires,'Part::FaceMakerBullseye').Area for sketch in sketches)
+    binder=body.newObject('PartDesign::SubShapeBinder','Binder_SignLettering')
+    binder.Label='口号轮廓集合（28个字形草图）'
+    binder.Support=[(sketch,[]) for sketch in sketches]
+    doc.recompute()
+    feature=body.newObject('PartDesign::Pocket','Pocket_EngravedSlogan')
+    feature.Label='完整口号凹刻 0.6 mm'
+    feature.Profile=binder;feature.setExpression('Length',expression('SignEngraveDepth'));feature.Refine=True
+    doc.recompute()
+    expected=blank_volume-area*evaluate(doc,'SignEngraveDepth')
+    # A binder's wire orientation determines its normal, rather than Sketch.Placement.
+    if feature.Shape.isNull() or abs(feature.Shape.Volume-expected)>1e-4:
+        feature.Reversed=True;doc.recompute()
+    assert abs(feature.Shape.Volume-expected)<1e-4
+    return finish(body,feature)

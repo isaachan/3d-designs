@@ -41,8 +41,12 @@ PARAMETERS = [
 ('PostX2','=GarageWidth*3/4-PostWidth/2','右支架X'),
 ('TextPixel','1 mm','沿用v3字形，不缩小'),('TextOverlap','0.1 mm','字形像素融合'),('TextThickness','1 mm','白字厚'),
 ('TextOriginX','=GarageWidth/2-90 mm','字形居中'),('TextLovelyZ','332 mm','沿用v3上行文字高'),('TextDrivenZ','304 mm','沿用v3下行文字高'),
-('SignThickness','2 mm','正面蓝牌前后厚'),('SignWidth','36 mm','正面蓝牌左右宽'),('SignHeight','180 mm','右侧蓝牌高'),
+('SignThickness','2 mm','正面蓝牌前后厚'),('SignWidth','64 mm','正面蓝牌左右宽'),('SignHeight','180 mm','右侧蓝牌高'),
 ('SignX','=OverallWidth','蓝牌位于右侧板外边的X起点'),('OverallEnvelopeWidth','=OverallWidth+SignWidth','含外挂蓝牌的最大总长'),('SignFrontY','0 mm','蓝牌朝向使用者的前表面Y'),('SignZ','50 mm','蓝牌Z'),('SignMountDepth','14 mm','蓝牌一体折边沿右侧板外表面的贴合深度'),
+('SignEngraveDepth','0.6 mm','蓝牌正面文字凹刻深度，填色不增加外包络'),
+('SignTextHeadingHeight','16 mm','NO及ONLY字高'),('SignTextWordHeight','9 mm','HORSEPOWER及BRAINPOWER字高'),
+('SignLine1Z','128 mm','NO距牌底高度'),('SignLine2Z','107 mm','HORSEPOWER距牌底高度'),
+('SignLine3Z','64 mm','ONLY距牌底高度'),('SignLine4Z','43 mm','BRAINPOWER距牌底高度'),
 ('PrintBrim','4 mm','打印床四边预留brim'),('PrintBedWidth','235.5 mm','按附图较小X范围保守校核'),
 ('PrintBedDepth','256 mm','附图Y范围'),('PrintHeight','256 mm','按附图较小Z范围保守校核'),
 ]

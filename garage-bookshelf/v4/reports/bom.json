@@ -274,7 +274,7 @@
     "quantity": 1,
     "print_file": "print-stl/book_depot_sign.stl",
     "dimensions_mm": [
-      36.0,
+      64.0,
       180.0,
       14.0
     ]

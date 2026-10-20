@@ -99,5 +99,6 @@ def build():
     _,b=part(doc,signs,'book_depot_sign','朝向使用者的右侧外挂蓝牌',('SignX','SignFrontY','SignZ'),color='sign')
     cosmetics.box(b,'SignWidth','SignThickness','SignHeight')
     pad(b,'Pad_ExternalMountingReturn',rectangle(b,'Sketch_ExternalMountingReturn','SignThickness','SignMountDepth-SignThickness',origin=('Zero','SignThickness')),'SignHeight')
+    cosmetics.sign_lettering(b)
     doc.recompute()
     return doc

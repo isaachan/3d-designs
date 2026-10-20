@@ -30,7 +30,7 @@ def assembly(doc):
     assert not bad,bad
     bb=Part.makeCompound(list(shapes.values())).optimalBoundingBox()
     dims=[bb.XLength,bb.YLength,bb.ZLength]
-    assert all(abs(a-b)<1e-5 for a,b in zip(dims,[576,170,364])),dims
+    assert all(abs(a-b)<1e-5 for a,b in zip(dims,[evaluate(doc,'OverallEnvelopeWidth'),170,364])),dims
     mb=Part.makeCompound([shapes[f'module_{i}_Body'] for i in (1,2,3)]).optimalBoundingBox()
     assert all(abs(a-b)<1e-5 for a,b in zip([mb.XLength,mb.YLength,mb.ZLength],[540,170,238]))
     paths=[]
@@ -73,7 +73,32 @@ def assembly(doc):
     assert abs(sb.XMin-evaluate(doc,'OverallWidth'))<1e-5
     assert abs(sb.XMax-evaluate(doc,'OverallEnvelopeWidth'))<1e-5
     front=[f for f in sign.Faces if abs(f.CenterOfMass.y)<1e-5 and f.normalAt(0,0).y<-.99]
-    assert len(front)==1 and abs(front[0].Area-evaluate(doc,'SignWidth')*evaluate(doc,'SignHeight'))<.001
+    # Pocket openings can split the remaining front face (e.g. inside O and R).
+    lettering=json.loads((ROOT/'reference/sign-lettering.json').read_text())
+    assert doc.book_depot_sign_Body.EngravedSlogan==lettering['slogan']=='NO HORSEPOWER. ONLY BRAINPOWER.'
+    engraved_area=0.;line_checks=[]
+    for index,row in enumerate(lettering['lines'],1):
+        profiles=[o for o in doc.book_depot_sign_Body.Group if o.TypeId=='Sketcher::SketchObject' and 'SignLine' in o.PropertiesList and o.SignLine==index]
+        assert len(profiles)==len(row['glyphs'])
+        face=Part.makeCompound([Part.makeFace(p.Shape.Wires,'Part::FaceMakerBullseye') for p in profiles])
+        box=face.optimalBoundingBox();depth=evaluate(doc,'SignEngraveDepth')
+        assert abs(box.YMin)<1e-6 and abs(box.YMax)<1e-6
+        assert box.XMin>=4 and box.XMax<=evaluate(doc,'SignWidth')-4
+        assert box.ZMin>4 and box.ZMax<evaluate(doc,'SignHeight')-4
+        height=evaluate(doc,'SignTextHeadingHeight' if index in (1,3) else 'SignTextWordHeight')
+        assert abs(box.ZLength-height)<1e-6
+        cut=face.extrude(App.Vector(0,depth,0))
+        assert doc.book_depot_sign_Body.Shape.common(cut).Volume<1e-5
+        engraved_area+=face.Area
+        line_checks.append(dict(text=row['text'],width_mm=box.XLength,height_mm=box.ZLength,side_margin_mm=box.XMin))
+    area=evaluate(doc,'SignWidth')*evaluate(doc,'SignHeight')
+    assert abs(sum(f.Area for f in front)-(area-engraved_area))<1e-4
+    expected_volume=area*evaluate(doc,'SignThickness')+evaluate(doc,'SignThickness')*(evaluate(doc,'SignMountDepth')-evaluate(doc,'SignThickness'))*evaluate(doc,'SignHeight')-engraved_area*depth
+    assert abs(sign.Volume-expected_volume)<1e-4
+    slogan_check=dict(text=lettering['slogan'],lines=line_checks,engraved_depth_mm=depth,
+                      remaining_back_thickness_mm=evaluate(doc,'SignThickness')-depth,
+                      engraved_face_area_mm2=engraved_area,white_preview_means_optional_paint_fill=True,
+                      one_piece_print=True)
     opening=Part.makeBox(evaluate(doc,'BookWidth-2*WallThickness'),evaluate(doc,'BackFront'),evaluate(doc,'OverallHeight-BaseThickness'),App.Vector(evaluate(doc,'GarageWidth+WallThickness'),0,evaluate(doc,'BaseThickness')))
     assert sign.common(opening).Volume<.001
     sign_mount_faces=[f for f in sign.Faces if abs(f.CenterOfMass.x-evaluate(doc,'OverallWidth'))<1e-5 and f.normalAt(0,0).x<-.99]
@@ -90,7 +115,7 @@ def assembly(doc):
         area=post.common(strip).Volume/.05
         assert abs(area-evaluate(doc,'PostWidth')*evaluate(doc,'OverallHeight-PostBottom'))<.001
         mounting.append(dict(side=side,post_front_y_mm=pb.YMin,back_rear_y_mm=evaluate(doc,'BackRear'),post_rear_y_mm=pb.YMax,back_glue_contact_mm2=area))
-    requested_orientation=dict(blue_sign_front_normal=[0,-1,0],blue_sign_front_y_mm=sb.YMin,blue_sign_x_range_mm=[sb.XMin,sb.XMax],blue_sign_excluded_from_540mm_main_body=True,book_opening_overlap_mm3=0,sign_to_right_outer_wall_contact_mm2=glue,posts_behind_back=mounting,deck_bracket_slots_removed=True)
+    requested_orientation=dict(blue_sign_front_normal=[0,-1,0],blue_sign_front_y_mm=sb.YMin,blue_sign_x_range_mm=[sb.XMin,sb.XMax],blue_sign_excluded_from_540mm_main_body=True,book_opening_overlap_mm3=0,sign_to_right_outer_wall_contact_mm2=glue,posts_behind_back=mounting,deck_bracket_slots_removed=True,blue_sign_lettering=slogan_check)
     return dict(bounds_mm=[bb.XMin,bb.YMin,bb.ZMin,bb.XMax,bb.YMax,bb.ZMax],dimensions_mm=dims,main_body_dimensions_mm=[mb.XLength,mb.YLength,mb.ZLength],interfering_pairs=bad,requested_orientation=requested_orientation,module_insertion_paths=paths,deck_lowering_paths=deck_paths,collar_contact_areas=contacts,plain_parking_decks=plain_decks)
 
 
@@ -106,8 +131,13 @@ def parameter_test(doc):
     assert abs(doc.module_2.getGlobalPlacement().Base.x-202)<1e-5
     assert abs(evaluate(doc,'BookModuleWidth')-169)<1e-5
     set_value(doc,'GarageWidth','200 mm')
+    set_value(doc,'SignWidth','68 mm')
+    assert abs(doc.book_depot_sign_Body.Shape.BoundBox.XLength-68)<1e-5
+    profiles=[o for o in doc.book_depot_sign_Body.Group if o.TypeId=='Sketcher::SketchObject' and 'SignLine' in o.PropertiesList and o.SignLine==2]
+    assert abs(Part.makeCompound([p.Shape for p in profiles]).BoundBox.Center.x-34)<1e-6
+    set_value(doc,'SignWidth','64 mm')
     native(doc)
-    return dict(depth_170_to_172_to_170='passed',garage_200_to_202_to_200='passed',body_deck_columns_and_modules_follow=True)
+    return dict(sign_64_to_68_to_64='passed',lettering_stays_centred=True,depth_170_to_172_to_170='passed',garage_200_to_202_to_200='passed',body_deck_columns_and_modules_follow=True)
 
 
 def export(doc):
@@ -141,14 +171,16 @@ def export(doc):
     step.read(str(ROOT/'garage-bookshelf-v4-assembly.step'))
     bb=step.optimalBoundingBox()
     assert len(step.Solids)==46,len(step.Solids)
-    assert all(abs(a-b)<.001 for a,b in zip([bb.XLength,bb.YLength,bb.ZLength],[576,170,364])),str(bb)
+    assert all(abs(a-b)<.001 for a,b in zip([bb.XLength,bb.YLength,bb.ZLength],[evaluate(doc,'OverallEnvelopeWidth'),170,364])),str(bb)
     return records
 
 
 def main():
     file=ROOT/'garage-bookshelf-v4-assembly.FCStd'
     doc=App.openDocument(str(file));doc.recompute()
-    nr=native(doc);a=assembly(doc);p=parameter_test(doc)
+    nr=native(doc);print('PASS native solids and sketches',nr,flush=True)
+    a=assembly(doc);print('PASS assembly and engraved slogan',flush=True)
+    p=parameter_test(doc);print('PASS parameter round-trips',flush=True)
     out=export(doc);describe(ROOT)
     # Parameter round-trip is not saved into the original CAD; recheck saved delivery on reopen.
     App.closeDocument(doc.Name)

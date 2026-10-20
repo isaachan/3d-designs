@@ -411,7 +411,7 @@
   },
   {
     "alias": "SignWidth",
-    "value": "36 mm",
+    "value": "64 mm",
     "description": "正面蓝牌左右宽"
   },
   {
@@ -443,6 +443,41 @@
     "alias": "SignMountDepth",
     "value": "14 mm",
     "description": "蓝牌一体折边沿右侧板外表面的贴合深度"
+  },
+  {
+    "alias": "SignEngraveDepth",
+    "value": "0.6 mm",
+    "description": "蓝牌正面文字凹刻深度，填色不增加外包络"
+  },
+  {
+    "alias": "SignTextHeadingHeight",
+    "value": "16 mm",
+    "description": "NO及ONLY字高"
+  },
+  {
+    "alias": "SignTextWordHeight",
+    "value": "9 mm",
+    "description": "HORSEPOWER及BRAINPOWER字高"
+  },
+  {
+    "alias": "SignLine1Z",
+    "value": "128 mm",
+    "description": "NO距牌底高度"
+  },
+  {
+    "alias": "SignLine2Z",
+    "value": "107 mm",
+    "description": "HORSEPOWER距牌底高度"
+  },
+  {
+    "alias": "SignLine3Z",
+    "value": "64 mm",
+    "description": "ONLY距牌底高度"
+  },
+  {
+    "alias": "SignLine4Z",
+    "value": "43 mm",
+    "description": "BRAINPOWER距牌底高度"
   },
   {
     "alias": "PrintBrim",

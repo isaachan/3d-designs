@@ -1,1 +1,4 @@
-PASS {'bodies': 46, 'sketches': 156, 'fully_constrained': True, 'single_solid_each': True, 'invalid_objects': []} 28 print files
+PASS native solids and sketches {'bodies': 46, 'sketches': 184, 'fully_constrained': True, 'single_solid_each': True, 'invalid_objects': []}
+PASS assembly and engraved slogan
+PASS parameter round-trips
+PASS {'bodies': 46, 'sketches': 184, 'fully_constrained': True, 'single_solid_each': True, 'invalid_objects': []} 28 print files
