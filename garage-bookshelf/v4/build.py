@@ -6,7 +6,7 @@ sys.path.insert(0,'/Applications/FreeCAD.app/Contents/Resources/lib')
 import FreeCAD as App
 from parameters import create,expression
 from assembly import group,part
-from geometry.sketches import rectangle,loops,circle,plane
+from geometry.sketches import rectangle,circle,plane
 from geometry.features import pad,pocket,loft,finish
 from connectors import dovetail
 import Part,Sketcher
@@ -42,11 +42,6 @@ def module(body,index):
     if index in (2,3):
         x='Zero' if index==2 else 'BookModuleWidth-WallThickness'
         pad(body,'Pad_Upright',rectangle(body,'Sketch_Upright','WallThickness','PanelDepth',origin=(x,'Zero'),offset=('Zero','Zero','WallStart')),'WallPadLength')
-        for n,y in enumerate(('RibFrontY','RibRearY'),1):
-            root=f'{x}+WallThickness-Overlap' if index==2 else f'{x}+Overlap'
-            tip=f'{root}+RibSize' if index==2 else f'{root}-RibSize'
-            s=loops(body,f'Sketch_RootRib{n}',[[(root,'WallStart'),(tip,'WallStart'),(root,'WallStart+RibSize')]],orientation='XZ',offset=('Zero',f'{y}+RibThickness','Zero'))
-            pad(body,f'Pad_RootRib{n}',s,'RibThickness')
     if index==1:
         pad(body,'Pad_ColumnBasePins',circles(body,'Sketch_ColumnBasePins',CENTRES,'PinRadius','BaseThickness'),'PegEngagement')
     if index<3:

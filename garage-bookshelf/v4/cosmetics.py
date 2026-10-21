@@ -52,12 +52,13 @@ def sign_lettering(body):
     body.addProperty('App::PropertyString','EngravedSlogan','Lettering')
     body.EngravedSlogan=data['slogan']
     sketches=[]
+    longest=max(row['width_per_cap_height'] for row in data['lines'])
+    top=f'(SignHeight+{longest:.12g}*SignTextHeight)/2'
     for index,row in enumerate(data['lines'],1):
-        print(f'Building native sign lettering {index}/4: {row["text"]}',flush=True)
-        height='SignTextHeadingHeight' if index in (1,3) else 'SignTextWordHeight'
-        origin=f'(SignWidth-{row["width_per_cap_height"]:.12g}*{height})/2'
+        print(f'Building vertical sign phrase {index}/2: {row["text"]}',flush=True)
+        origin=f'(SignWidth-2*SignTextHeight-SignColumnGap)/2+{index-1}*(SignTextHeight+SignColumnGap)'
         for glyph,indices in enumerate(row['glyphs'],1):
-            polygons=[[(f'{origin}+({x:.12g})*{height}',f'SignLine{index}Z+({y:.12g})*{height}') for x,y in row['polygons'][i]] for i in indices]
+            polygons=[[(f'{origin}+({y:.12g})*SignTextHeight',f'{top}-({x:.12g})*SignTextHeight') for x,y in row['polygons'][i]] for i in indices]
             sketch=loops(body,f'Sketch_SignLine{index}_Glyph{glyph:02}',polygons,orientation='XZ')
             sketch.Label=f'凹刻轮廓 {index}.{glyph}: {row["text"]}'
             sketch.addProperty('App::PropertyInteger','SignLine','Lettering');sketch.SignLine=index

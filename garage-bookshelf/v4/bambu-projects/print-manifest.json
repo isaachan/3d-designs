@@ -1,0 +1,82 @@
+{
+  "cad_sha256": "50f637a56e03511c88b9971cb289e255686554c072b8f1984953b60763e634ce",
+  "projects": [
+    {
+      "project": "01-whole-garage-deck-print-three.3mf",
+      "color": "灰色",
+      "contents": "完整停车层板 ×1",
+      "print_runs": 3,
+      "sha256": "2ffef39dc7c5cd087eb32cb890271c7b9d446d275fadfd224c697cf78b055134",
+      "reopened_and_sliced": true
+    },
+    {
+      "project": "02-garage-base.3mf",
+      "color": "灰色",
+      "contents": "车库底背一体模块",
+      "print_runs": 1,
+      "sha256": "5c5eeb66c9cad269a0a475f66562f18207aba30e4f9f85766580ca30bd3142c6",
+      "reopened_and_sliced": true
+    },
+    {
+      "project": "03-book-left.3mf",
+      "color": "灰色",
+      "contents": "书架左模块（含隔板）",
+      "print_runs": 1,
+      "sha256": "a3e83a9bd454d80e294f75471133eefc2eb8aa4c7f882d5af5206ac93d2137d2",
+      "reopened_and_sliced": true
+    },
+    {
+      "project": "04-book-right.3mf",
+      "color": "灰色",
+      "contents": "书架右模块（含右侧板）",
+      "print_runs": 1,
+      "sha256": "ba677236abe68f5532a1f11c237f3e5880342828bce5b8caeb39c592f84b3f60",
+      "reopened_and_sliced": true
+    },
+    {
+      "project": "05-support-segments-twelve.3mf",
+      "color": "黄色",
+      "contents": "承托柱段 ×12",
+      "print_runs": 1,
+      "sha256": "a067c4556547080b0193b7891e99069c7241960fcc6a47fc924aa78968abc07c",
+      "reopened_and_sliced": true
+    },
+    {
+      "project": "06-top-segments-four.3mf",
+      "color": "黄色",
+      "contents": "封顶柱段 ×4",
+      "print_runs": 1,
+      "sha256": "26888374428e3c517954122f106d1ccb85478d679c7e15696b0b0068261fa3c1",
+      "reopened_and_sliced": true
+    },
+    {
+      "project": "07-billboard-and-posts-black.3mf",
+      "color": "黑色",
+      "contents": "广告牌 ×1＋背面支架 ×2",
+      "print_runs": 1,
+      "sha256": "fe92ac81e7d7ab412ba35414a75221a47e7938f13e21dd2c4b38a7ed8c81f55b",
+      "reopened_and_sliced": true
+    },
+    {
+      "project": "08-billboard-lettering-white.3mf",
+      "color": "白色",
+      "contents": "两行白字，共20个独立字形",
+      "print_runs": 1,
+      "sha256": "da1c6da1ef6070363f59b4fffd234fd8cfa428332a824cae4d8300c2c8dcd709",
+      "reopened_and_sliced": true
+    },
+    {
+      "project": "09-blue-slogan-sign.3mf",
+      "color": "蓝色",
+      "contents": "两句竖向凹刻口号蓝牌 ×1",
+      "print_runs": 1,
+      "sha256": "913f6a5ebbbf69bf0f636e038a6e29a5b521bb8aea782d2999735a1cfdeb7e23",
+      "reopened_and_sliced": true
+    }
+  ],
+  "print_runs": 11,
+  "physical_solids": 46,
+  "estimated_total_hours": 33.507222222222225,
+  "estimated_total_filament_g": 1855.188224554062,
+  "gcode_included": false
+}

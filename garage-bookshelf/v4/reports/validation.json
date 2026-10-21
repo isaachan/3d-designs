@@ -2,7 +2,7 @@
   "status": "passed",
   "native": {
     "bodies": 46,
-    "sketches": 184,
+    "sketches": 180,
     "fully_constrained": true,
     "single_solid_each": true,
     "invalid_objects": []
@@ -12,12 +12,12 @@
       -1e-07,
       -1e-07,
       -1.0000001587514286e-07,
-      604.0,
+      588.0,
       170.0000001,
       364.0
     ],
     "dimensions_mm": [
-      604.0000001,
+      588.0000001,
       170.0000002,
       364.0000001
     ],
@@ -27,6 +27,11 @@
       238.00000020000002
     ],
     "interfering_pairs": [],
+    "book_root_rib_removal": {
+      "removed_gussets": 4,
+      "remaining_root_rib_features": 0,
+      "checked_opening_overlap_mm3": 0.0
+    },
     "requested_orientation": {
       "blue_sign_front_normal": [
         0,
@@ -36,7 +41,7 @@
       "blue_sign_front_y_mm": 0.0,
       "blue_sign_x_range_mm": [
         540.0,
-        604.0
+        588.0
       ],
       "blue_sign_excluded_from_540mm_main_body": true,
       "book_opening_overlap_mm3": 0,
@@ -62,33 +67,25 @@
         "text": "NO HORSEPOWER. ONLY BRAINPOWER.",
         "lines": [
           {
-            "text": "NO",
-            "width_mm": 17.3282093136,
-            "height_mm": 16.0,
-            "side_margin_mm": 23.3358953432
+            "text": "NO HORSEPOWER.",
+            "column_width_mm": 16.0,
+            "vertical_length_mm": 119.7834387816,
+            "left_x_mm": 5.0,
+            "top_z_mm": 155.64418977984002
           },
           {
-            "text": "HORSEPOWER.",
-            "width_mm": 54.20085085088999,
-            "height_mm": 9.0,
-            "side_margin_mm": 4.899574574555
-          },
-          {
-            "text": "ONLY",
-            "width_mm": 32.94279489536001,
-            "height_mm": 16.0,
-            "side_margin_mm": 15.528602552319999
-          },
-          {
-            "text": "BRAINPOWER.",
-            "width_mm": 52.37326840905,
-            "height_mm": 9.0,
-            "side_margin_mm": 5.813365795475001
+            "text": "ONLY BRAINPOWER.",
+            "column_width_mm": 16.0,
+            "vertical_length_mm": 131.28837955968,
+            "left_x_mm": 27.0,
+            "top_z_mm": 155.64418977984002
           }
         ],
+        "rotation_degrees": -90,
+        "reading_direction": "top_to_bottom",
         "engraved_depth_mm": 0.6,
         "remaining_back_thickness_mm": 1.4,
-        "engraved_face_area_mm2": 908.0177483747289,
+        "engraved_face_area_mm2": 1940.0652314600231,
         "white_preview_means_optional_paint_fill": true,
         "one_piece_print": true
       }
@@ -306,7 +303,7 @@
     ]
   },
   "parameter_edit": {
-    "sign_64_to_68_to_64": "passed",
+    "sign_48_to_52_to_48": "passed",
     "lettering_stays_centred": true,
     "depth_170_to_172_to_170": "passed",
     "garage_200_to_202_to_200": "passed",
@@ -344,7 +341,7 @@
       ],
       "orientation": "原方向，底面朝下",
       "with_4mm_brim_within_235_5_256_256": true,
-      "sha256": "fbe3caa5f0c3dd734492b101fc4c89f2de2345d806bb6b234e8e1209e37703fa"
+      "sha256": "1b51f02180056c4b785873fc177f9cd755ca4612d5278714eb089000d0ef8195"
     },
     {
       "name": "module_3",
@@ -360,7 +357,7 @@
       ],
       "orientation": "原方向，底面朝下",
       "with_4mm_brim_within_235_5_256_256": true,
-      "sha256": "13f1c80795de65e71c6c31ca8598f00ca7465f6a88a5b0fc32047fda20e4002f"
+      "sha256": "9dbdd80295c7137693fa63dcc53984cd49f7434f9c188fc8e996472a933fbb64"
     },
     {
       "name": "garage_deck_1",
@@ -754,13 +751,13 @@
       "closed": true,
       "non_manifold": false,
       "dimensions_mm": [
-        64.0,
+        48.0,
         180.0,
         14.0
       ],
       "orientation": "蓝牌正面大面贴床",
       "with_4mm_brim_within_235_5_256_256": true,
-      "sha256": "3dcc788138d28d3235e0be0f41e77caad50e864b24237cbff50e5d408c29923e"
+      "sha256": "1d722bcebad3cd9be5996590c1a90c76e1a35219522053258ba8655860b1ac61"
     }
   ],
   "physical_fit_and_load": "not_tested",

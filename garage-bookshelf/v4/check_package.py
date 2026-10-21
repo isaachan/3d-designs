@@ -29,6 +29,7 @@ def project_bounds(file):
                 result.extend(transform(points(target,c.get('objectid')),c.get('transform')))
             return result
         result=[]
+        assert model('3D/3dmodel.model').get('unit')=='millimeter'
         for item in model('3D/3dmodel.model').findall('c:build/c:item',NS):
             pp=transform(points('3D/3dmodel.model',item.get('objectid')),item.get('transform'))
             lo=[min(p[i] for p in pp) for i in range(3)];hi=[max(p[i] for p in pp) for i in range(3)]
@@ -42,19 +43,26 @@ def project_bounds(file):
 def main():
     checks=[]
     slicer=json.loads((ROOT/'slicer-validation.json').read_text())
-    assert len(slicer['projects'])==8
+    assert len(slicer['projects'])==9
+    assert hashlib.sha256((ROOT/'garage-bookshelf-v4-assembly.FCStd').read_bytes()).hexdigest()==slicer['cad_sha256']
     for p in slicer['projects']:
-        assert p['slice_status']=='passed' and p['sliced_matching_source_stls_with_saved_settings']
+        assert p['slice_status']=='passed' and p['sliced_saved_3mf'] and not p['reload_profile_overrides']
         assert all(hashlib.sha256((ROOT/'print-stl'/f).read_bytes()).hexdigest()==h for f,h in p['input_sha256'].items())
-        file=ROOT/p['project'];bounds=project_bounds(file)
+        file=ROOT/p['project']
+        assert hashlib.sha256(file.read_bytes()).hexdigest()==p['project_sha256']
+        bounds=project_bounds(file)
         assert len(bounds)==p['object_count']
         checks.append(dict(project=p['project'],object_bounds=bounds,within_x_20_5_to_256_y_0_to_256_with_4mm_brim=True))
-    assert [p['object_count'] for p in slicer['projects']]==[1,1,1,1,12,4,3,3]
-    assert sum(p['print_runs'] for p in slicer['projects'])==10
+    assert [p['object_count'] for p in slicer['projects']]==[1,1,1,1,12,4,3,2,1]
+    assert sum(p['print_runs'] for p in slicer['projects'])==11
+    exports=json.loads((ROOT/'reports/validation.json').read_text())['print_parts']
+    components={Path(r['file']).name:r['solid_components'] for r in exports}
+    physical_solids=sum(sum(components[f] for f in p['input_files'])*p['print_runs'] for p in slicer['projects'])
+    assert physical_solids==46
     # All output artifacts are reviewable locally; no machine job is submitted.
-    artifacts=[p for p in ROOT.rglob('*') if p.is_file() and p.suffix.lower() in ['.fcstd','.step','.stl','.3mf','.png']]
+    artifacts=[p for p in ROOT.rglob('*') if p.is_file() and p.suffix.lower() in ['.fcstd','.step','.stl','.3mf','.png','.zip']]
     hashes={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(artifacts)}
-    (ROOT/'reports/package-validation.json').write_text(json.dumps(dict(status='passed',print_runs=10,projects=checks,artifacts_sha256=hashes),ensure_ascii=False,indent=2))
-    print('PASS final 3MF placement, counts, 10 print runs,',len(hashes),'artifacts')
+    (ROOT/'reports/package-validation.json').write_text(json.dumps(dict(status='passed',print_runs=11,physical_solids=physical_solids,projects=checks,artifacts_sha256=hashes),ensure_ascii=False,indent=2))
+    print('PASS final 3MF placement, counts, 11 print runs,',len(hashes),'artifacts')
 
 if __name__=='__main__':main()

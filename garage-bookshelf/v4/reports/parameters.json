@@ -80,26 +80,6 @@
     "description": "隔板深"
   },
   {
-    "alias": "RibSize",
-    "value": "25 mm",
-    "description": "书架板根三角肋边长"
-  },
-  {
-    "alias": "RibThickness",
-    "value": "5 mm",
-    "description": "三角肋厚"
-  },
-  {
-    "alias": "RibFrontY",
-    "value": "12 mm",
-    "description": "前根肋"
-  },
-  {
-    "alias": "RibRearY",
-    "value": "=BackFront-22 mm",
-    "description": "后根肋"
-  },
-  {
     "alias": "TongueLength",
     "value": "14 mm",
     "description": "主体公榫长"
@@ -411,7 +391,7 @@
   },
   {
     "alias": "SignWidth",
-    "value": "64 mm",
+    "value": "48 mm",
     "description": "正面蓝牌左右宽"
   },
   {
@@ -450,34 +430,14 @@
     "description": "蓝牌正面文字凹刻深度，填色不增加外包络"
   },
   {
-    "alias": "SignTextHeadingHeight",
+    "alias": "SignTextHeight",
     "value": "16 mm",
-    "description": "NO及ONLY字高"
+    "description": "两句竖向口号的统一字高，旋转后对应每列宽度"
   },
   {
-    "alias": "SignTextWordHeight",
-    "value": "9 mm",
-    "description": "HORSEPOWER及BRAINPOWER字高"
-  },
-  {
-    "alias": "SignLine1Z",
-    "value": "128 mm",
-    "description": "NO距牌底高度"
-  },
-  {
-    "alias": "SignLine2Z",
-    "value": "107 mm",
-    "description": "HORSEPOWER距牌底高度"
-  },
-  {
-    "alias": "SignLine3Z",
-    "value": "64 mm",
-    "description": "ONLY距牌底高度"
-  },
-  {
-    "alias": "SignLine4Z",
-    "value": "43 mm",
-    "description": "BRAINPOWER距牌底高度"
+    "alias": "SignColumnGap",
+    "value": "6 mm",
+    "description": "两列文字之间的水平净距"
   },
   {
     "alias": "PrintBrim",

@@ -3,7 +3,7 @@
   "analysis_source": "reference/garage-bookshelf-v4-ribbed-analysis-source.FCStd",
   "analysis_source_sha256": "d6570e0a2cb1fd1bf0e168de81b88a00dcb64f4530098762af0e6b2c06b63e4c",
   "production_CAD": "garage-bookshelf-v4-assembly.FCStd",
-  "production_CAD_sha256": "7911102ca7f5639ee25fbea2c2400d95be34f04e3e194144074c511296358e04",
+  "production_CAD_sha256": "50f637a56e03511c88b9971cb289e255686554c072b8f1984953b60763e634ce",
   "production_decks_match_FEA_h0": true,
   "deck_rib_features_and_parameters_removed": true,
   "deck_checks": [

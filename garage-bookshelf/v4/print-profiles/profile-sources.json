@@ -1,0 +1,25 @@
+{
+  "source": "installed Bambu Studio official presets; resolved inherits and include",
+  "source_files_sha256": {
+    "/Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine/Bambu Lab X2D 0.4 nozzle.json": "dbcdaf090abba746b4f6f8d1323fdc299cec1ecd717c340214314e575d5884a6",
+    "/Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine/fdm_bbl_3dp_002_common.json": "f7ce729c4f2d7ba7dd9b2328b8172ada496a8a4e7e41f5f0139e2692b0a106af",
+    "/Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine/fdm_machine_common.json": "26ef8ee697849323e67d8e1a9026c175cebe3397e38c5091dddb5cd3fc52e94c",
+    "/Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine/Bambu Lab X2D 0.4 nozzle template machine_start_gcode.json": "0f2a63c066aefde6dc4ee0c20bb1ebed29f0b85f07fd5203d56db2bcfb25052a",
+    "/Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine/Bambu Lab X2D 0.4 nozzle template machine_end_gcode.json": "f53b22535ccbc639ffdd94c60306061513c98181d2098f9388a9b99644f294d5",
+    "/Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine/Bambu Lab X2D 0.4 nozzle template layer_change_gcode.json": "f13bd5e29cdef156c4da6d26e9f1aab323cb053d9ab34875917c37d31fa74960",
+    "/Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine/Bambu Lab X2D 0.4 nozzle template time_lapse_gcode.json": "65b30d1bfb5f2d5043e7da71cade5c1e561fa596029d9fcd0a171835a5e6a542",
+    "/Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine/Bambu Lab X2D 0.4 nozzle template change_filament_gcode.json": "0c10a06ad5f6fb9062082b10edaab5ce465962db1dc2d6ffdccea0f0409748d1",
+    "/Applications/BambuStudio.app/Contents/Resources/profiles/BBL/process/0.20mm Standard @BBL X2D.json": "9ad86d36979d9d335fe123d0b20dee4ab1f6fedac34ef529a624323fb07d16db",
+    "/Applications/BambuStudio.app/Contents/Resources/profiles/BBL/process/fdm_process_dual_0.20_nozzle_0.4.json": "8015670b40629f69ec2a2bff47d549d778e95ee545350e5fa9f60f8d8cbf2adc",
+    "/Applications/BambuStudio.app/Contents/Resources/profiles/BBL/process/fdm_process_dual_common.json": "743303a5c3c1962f8c8d178d21e23fc409027ea48574017db51230eac72bd063",
+    "/Applications/BambuStudio.app/Contents/Resources/profiles/BBL/process/fdm_process_common.json": "d7981c4b92854f251b8697e1bb621c63fe393f263fb8024ab63c401525d543d7",
+    "/Applications/BambuStudio.app/Contents/Resources/profiles/BBL/filament/Bambu PLA Basic @BBL X2D 0.4 nozzle.json": "17562eaf108b8dba2532b186455e386e058aaa5e2c2a2ea44504d19656b343c1",
+    "/Applications/BambuStudio.app/Contents/Resources/profiles/BBL/filament/Bambu PLA Basic @base.json": "7783968745a19570354ca0601258cd5b82a6c96f835b682741635095b49e9cc7",
+    "/Applications/BambuStudio.app/Contents/Resources/profiles/BBL/filament/fdm_filament_pla.json": "670d21ea6bdf1cd4b0a2bfddc743612ffd896cd6e5dbe767c25d2c4165c49a30",
+    "/Applications/BambuStudio.app/Contents/Resources/profiles/BBL/filament/fdm_filament_common.json": "8c7105b7d59a28f600c43a946f067b8b4d707b9711c0bf6b88e9166e48878548",
+    "/Applications/BambuStudio.app/Contents/Resources/profiles/BBL/filament/fdm_filament_template_direct_bowden_e3d.json": "cc518ebe128bf40be47e99030406b406f198764d6012a4689fbf2880784735df"
+  },
+  "assumed_nozzles": "two standard 0.4 mm; primary head used",
+  "default_bed": "Textured PEI Plate",
+  "nozzle_stat_format_source": "https://github.com/bambulab/BambuStudio/blob/master/src/libslic3r/PrintConfig.cpp"
+}

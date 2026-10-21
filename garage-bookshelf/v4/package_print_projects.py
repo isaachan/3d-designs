@@ -1,0 +1,53 @@
+"""Write the print guide, manifest and compact delivery ZIP from validated 3MFs."""
+import json,zipfile
+from pathlib import Path
+ROOT=Path(__file__).resolve().parent
+
+
+def package_delivery(report):
+    output=ROOT/'bambu-projects'
+    colors={'gray':'灰色','yellow':'黄色','black':'黑色','white':'白色','blue':'蓝色'}
+    contents=['完整停车层板 ×1','车库底背一体模块','书架左模块（含隔板）','书架右模块（含右侧板）',
+              '承托柱段 ×12','封顶柱段 ×4','广告牌 ×1＋背面支架 ×2','两行白字，共20个独立字形','两句竖向凹刻口号蓝牌 ×1']
+    assert report['status']=='passed' and len(report['projects'])==9
+    lines=['# garage-bookshelf v4 · X2D 打印 3MF', '',
+           '这套文件对应已确认的 v4 CAD：540 mm 主体、48 mm 外挂蓝牌，两句口号竖向排列；书架底部四处 RootRib 三角肋已移除。', '',
+           '共 **9 个 3MF 项目、11 次打印、46 个实体**。每个项目只使用一种颜色，无需 AMS。', '',
+           '## 打印方法', '',
+           '1. 在 Bambu Studio 中以「打开项目」方式打开对应 3MF，保留项目内的打印配置和排盘。',
+           '2. 配置按 **X2D、标准 0.4 mm 喷嘴、PLA、纹理 PEI 板**准备；按实际装料选择该盘颜色，确认与机器喷嘴和热床一致，再切片打印。',
+           '3. 01 盘只有一块完整停车板，需打印 **3 次**；其余每个项目打印 **1 次**。05、06 盘已摆好全部所需柱段。', '',
+           '0.20 mm 层高、4 圈墙、25% 填充、4 mm auto brim。PLA 温度采用官方预设：喷嘴 220°C、纹理 PEI 板 55°C。03 盘启用普通自动支撑、仅从热床生成，其余关闭支撑。', '',
+           '| 项目 | 颜色 | 每盘内容 | 打印次数 | 单盘预计时间 | 单盘预计耗材 |',
+           '| --- | --- | --- | ---: | ---: | ---: |']
+    manifest=[]
+    for row,content in zip(report['projects'],contents):
+        name=Path(row['project']).name;minutes=round(row['estimated_seconds']/60);hours,minutes=divmod(minutes,60)
+        lines.append(f"| [{name}]({name}) | {colors[row['color']]} | {content} | {row['print_runs']} | {hours}小时{minutes}分 | {row['estimated_filament_g']:.1f} g |")
+        manifest.append(dict(project=name,color=colors[row['color']],contents=content,print_runs=row['print_runs'],
+                             sha256=row['project_sha256'],reopened_and_sliced=True))
+    seconds=sum(r['estimated_seconds']*r['print_runs'] for r in report['projects'])
+    mass=sum(r['estimated_filament_g']*r['print_runs'] for r in report['projects'])
+    lines += ['',f'全套累计切片估算：约 **{seconds/3600:.1f} 小时、{mass/1000:.2f} kg PLA**（计入01盘三次）。实际耗时和耗材随机器、耗材及校准设置变化。', '',
+              '## 装配与颜色', '',
+              '白字在08盘单独打印，按字间位置粘在07盘的黑色广告牌上；09盘为蓝色一体件，凹刻口号可在打印后填白漆。',
+              '09盘凹刻正面朝热床、折边朝上；文字位于首0.6 mm，可查看前3层切片确认。03盘燕尾下方的支撑需清理后再干装。',
+              '车库四根立柱均为分段结构：先装最下段四柱，再放层板，继续交替安装上一段柱和下一块板，最后装封顶段。', '',
+              '## 验证', '',
+              '每个保存后的3MF均被重新加载并实际离线切片；验证时没有另行加载STL，也没有覆盖项目内预设。检查了单盘对象数、无模型切片警告、单一耗材、毫米单位，以及带4mm brim的排盘范围。',
+              '完整的X2D启动/结束模板、PLA参数、喷嘴状态及颜色均保存在3MF内。压缩包不含打印G-code，打开项目后可按实际机器重新切片。', '',
+              '喷嘴状态采用每个热端各一个标准0.4mm喷嘴的离线配置，各盘使用主喷嘴。尚未进行实物打印。', '']
+    (output/'README.md').write_text('\n'.join(lines))
+    (output/'print-manifest.json').write_text(json.dumps(dict(cad_sha256=report['cad_sha256'],projects=manifest,
+        print_runs=11,physical_solids=46,estimated_total_hours=seconds/3600,
+        estimated_total_filament_g=mass,gcode_included=False),ensure_ascii=False,indent=2))
+    archive=ROOT/'garage-bookshelf-v4-X2D-print-3mf.zip'
+    with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:
+        for file in sorted(output.iterdir()):
+            if file.suffix in ('.3mf','.png','.md','.json'):
+                z.write(file,'garage-bookshelf-v4-X2D-print-3mf/'+file.name)
+        for name in ('assembly-preview.png','blue-sign-preview.png'):
+            z.write(ROOT/'reports'/name,'garage-bookshelf-v4-X2D-print-3mf/previews/'+name)
+    print(f'Packaged {archive.name}: {archive.stat().st_size} bytes',flush=True)
+
+if __name__=='__main__':package_delivery(json.loads((ROOT/'slicer-validation.json').read_text()))

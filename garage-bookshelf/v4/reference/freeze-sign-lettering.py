@@ -11,7 +11,7 @@ from matplotlib.font_manager import FontProperties
 from matplotlib.path import Path as MPath
 ROOT=Path(__file__).resolve().parent
 FONT=Path('/System/Library/Fonts/Supplemental/DIN Condensed Bold.ttf')
-LINES=[('NO',16,128),('HORSEPOWER.',9,107),('ONLY',16,64),('BRAINPOWER.',9,43)]
+LINES=[('NO HORSEPOWER.',16),('ONLY BRAINPOWER.',16)]
 
 
 def flatten(points,tolerance):
@@ -26,7 +26,7 @@ def flatten(points,tolerance):
 
 def main():
     font=FontProperties(fname=str(FONT));rows=[]
-    for text,height,bottom in LINES:
+    for text,height in LINES:
         path=TextPath((0,0),text,size=10,prop=font);bb=path.get_extents()
         polygons=[];current=[];last=None
         for values,code in path.iter_segments(curves=True,simplify=False):
@@ -48,9 +48,9 @@ def main():
             parents.append(min(enclosing,key=lambda j:areas[j]) if enclosing else None)
         glyphs=[[i]+[j for j,parent in enumerate(parents) if parent==i] for i,parent in enumerate(parents) if parent is None]
         assert sum(map(len,glyphs))==len(polygons)
-        rows.append(dict(glyphs=glyphs,text=text,cap_height_mm=height,bottom_above_sign_mm=bottom,
+        rows.append(dict(glyphs=glyphs,text=text,cap_height_mm=height,
                          width_per_cap_height=bb.width/bb.height,polygons=polygons))
-    output=dict(slogan='NO HORSEPOWER. ONLY BRAINPOWER.',font='DIN Condensed Bold',
+    output=dict(slogan='NO HORSEPOWER. ONLY BRAINPOWER.',rotation_degrees=-90,reading_direction='top_to_bottom',font='DIN Condensed Bold',
                 source_font_sha256=hashlib.sha256(FONT.read_bytes()).hexdigest(),
                 maximum_outline_deviation_mm=.015,lines=rows)
     (ROOT/'sign-lettering.json').write_text(json.dumps(output,ensure_ascii=False,indent=2))

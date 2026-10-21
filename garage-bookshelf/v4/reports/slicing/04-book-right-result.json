@@ -1,0 +1,73 @@
+{
+  "error_string": "Success.",
+  "export_time": 0,
+  "layer_height": 0.20000000298023224,
+  "plate_index": 0,
+  "prepare_time": 34,
+  "return_code": 0,
+  "sliced_plates": [
+    {
+      "feature_type_times": {
+        "Bottom surface": 671.7075805664062,
+        "Bridge": 1230.207763671875,
+        "Custom": 281.10894775390625,
+        "Flush": 29.0,
+        "Gap infill": 13.417424201965332,
+        "Inner wall": 9614.2041015625,
+        "Internal solid infill": 1591.33935546875,
+        "Outer wall": 4289.77001953125,
+        "Sparse infill": 9955.0615234375,
+        "Top surface": 433.661376953125,
+        "Travel": 1147.8734130859375,
+        "Undefined": 1146.304443359375
+      },
+      "filament_change_times": 0,
+      "filaments": [
+        {
+          "filament_id": "GFA00",
+          "id": 1,
+          "main_used_g": 478.7605285644531,
+          "total_used_g": 478.7605285644531
+        }
+      ],
+      "generate_support_material_time": 21,
+      "id": 1,
+      "infill_time": 180,
+      "layer_filament_change": 0,
+      "main_predication": 28913.814453125,
+      "make_perimeters_time": 68,
+      "obj_cached_cnt": 0,
+      "objects": [
+        {
+          "bbox": {
+            "depth": 170.0,
+            "height": 238.0,
+            "width": 170.0,
+            "x": 53.2499885559082,
+            "y": 43.0,
+            "z": 0.0
+          },
+          "id": 5,
+          "name": "module_3.stl",
+          "triangle_count": 96
+        }
+      ],
+      "sliced_time": 1562,
+      "sliced_time_with_cache": 1241,
+      "total_predication": 29251.353515625,
+      "triangle_count": 96,
+      "warning_message": ""
+    }
+  ],
+  "sparse_infill_density": 25.0,
+  "upward_compatible_machine": [
+    "Bambu Lab A1 0.4 nozzle",
+    "Bambu Lab P2S 0.4 nozzle",
+    "Bambu Lab H2S 0.4 nozzle",
+    "Bambu Lab H2D 0.4 nozzle",
+    "Bambu Lab H2D Pro 0.4 nozzle",
+    "Bambu Lab H2C 0.4 nozzle",
+    "Bambu Lab A2L 0.4 nozzle"
+  ],
+  "wall_loops": 4
+}
