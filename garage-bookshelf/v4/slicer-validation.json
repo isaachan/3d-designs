@@ -2,18 +2,18 @@
   "status": "passed",
   "bambu_studio": "02.08.02.61",
   "printer": "Bambu Lab X2D, standard 0.4 mm nozzles",
-  "cad_sha256": "50f637a56e03511c88b9971cb289e255686554c072b8f1984953b60763e634ce",
+  "cad_sha256": "064b3abc04cc455de9ffd35469ccec364f6fe00ae6ec2fd74484f9f8391d4be3",
   "projects": [
     {
-      "project": "bambu-projects/01-whole-garage-deck-print-three.3mf",
-      "project_sha256": "2ffef39dc7c5cd087eb32cb890271c7b9d446d275fadfd224c697cf78b055134",
+      "project": "bambu-projects/01a-garage-deck-1-two-bays.3mf",
+      "project_sha256": "7684ccf4d92aeb2fd2d0961ef8671069950a5ea66b6cbb3cfd5c66686b009370",
       "color": "gray",
       "input_files": [
         "garage_deck_1.stl"
       ],
       "object_count": 1,
       "input_sha256": {
-        "garage_deck_1.stl": "4f682c89d0b9c4427e1a9879c408a9183d0a91afc4178b74babbf65aca9ee1d7"
+        "garage_deck_1.stl": "7c1a64e70be065de3099920c8715f24890a42cd3b98f9135911f2e9ea1647413"
       },
       "settings": {
         "printer_model": "Bambu Lab X2D",
@@ -59,14 +59,134 @@
       "slice_status": "passed",
       "sliced_saved_3mf": true,
       "reload_profile_overrides": false,
-      "print_runs": 3,
+      "print_runs": 1,
       "slicer_warnings": [],
-      "estimated_seconds": 6494,
-      "estimated_filament_g": 102.89422607421875
+      "estimated_seconds": 7549,
+      "estimated_filament_g": 105.49566650390625
+    },
+    {
+      "project": "bambu-projects/01b-garage-deck-2-three-bays.3mf",
+      "project_sha256": "382afe4ff61757e9e6a69b696fab9652747897b7f2faf1a54f4c401b140f6a24",
+      "color": "gray",
+      "input_files": [
+        "garage_deck_2.stl"
+      ],
+      "object_count": 1,
+      "input_sha256": {
+        "garage_deck_2.stl": "adce454d31748059367bfffca0f55251aaf8f44a41e2fe3d23cf121ee8379db8"
+      },
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "extruder_nozzle_stats": [
+          "Standard#1",
+          "Standard#1"
+        ],
+        "curr_bed_type": "Textured PEI Plate",
+        "filament_type": [
+          "PLA"
+        ],
+        "filament_colour": [
+          "#8C949E"
+        ],
+        "filament_density": [
+          "1.26"
+        ],
+        "textured_plate_temp": [
+          "55"
+        ],
+        "textured_plate_temp_initial_layer": [
+          "55"
+        ],
+        "nozzle_temperature": [
+          "220",
+          "220",
+          "220",
+          "220",
+          "220",
+          "220"
+        ],
+        "layer_height": "0.2",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "sliced_saved_3mf": true,
+      "reload_profile_overrides": false,
+      "print_runs": 1,
+      "slicer_warnings": [],
+      "estimated_seconds": 7639,
+      "estimated_filament_g": 106.20106506347656
+    },
+    {
+      "project": "bambu-projects/01c-garage-deck-3-plain.3mf",
+      "project_sha256": "16a9e9b97a32f7cb31e3bc38749a276a593744af08b4c05ec245b049a3f28932",
+      "color": "gray",
+      "input_files": [
+        "garage_deck_3.stl"
+      ],
+      "object_count": 1,
+      "input_sha256": {
+        "garage_deck_3.stl": "598d7c6dc91545766a8e9bc78b7637e98b30634fd57efc1d667e0a81b06fcca8"
+      },
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "extruder_nozzle_stats": [
+          "Standard#1",
+          "Standard#1"
+        ],
+        "curr_bed_type": "Textured PEI Plate",
+        "filament_type": [
+          "PLA"
+        ],
+        "filament_colour": [
+          "#8C949E"
+        ],
+        "filament_density": [
+          "1.26"
+        ],
+        "textured_plate_temp": [
+          "55"
+        ],
+        "textured_plate_temp_initial_layer": [
+          "55"
+        ],
+        "nozzle_temperature": [
+          "220",
+          "220",
+          "220",
+          "220",
+          "220",
+          "220"
+        ],
+        "layer_height": "0.2",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "sliced_saved_3mf": true,
+      "reload_profile_overrides": false,
+      "print_runs": 1,
+      "slicer_warnings": [],
+      "estimated_seconds": 6495,
+      "estimated_filament_g": 102.89419555664062
     },
     {
       "project": "bambu-projects/02-garage-base.3mf",
-      "project_sha256": "5c5eeb66c9cad269a0a475f66562f18207aba30e4f9f85766580ca30bd3142c6",
+      "project_sha256": "23b0f307f3dc7e1cad4dcdca9bdc2b8cbeac87140d861813b1e86b72bf60858d",
       "color": "gray",
       "input_files": [
         "module_1.stl"
@@ -126,7 +246,7 @@
     },
     {
       "project": "bambu-projects/03-book-left.3mf",
-      "project_sha256": "a3e83a9bd454d80e294f75471133eefc2eb8aa4c7f882d5af5206ac93d2137d2",
+      "project_sha256": "f1c431e77799208cef13214ce64cac2fb4fb9de707a9e57f3dcf615e5e8e435c",
       "color": "gray",
       "input_files": [
         "module_2.stl"
@@ -186,7 +306,7 @@
     },
     {
       "project": "bambu-projects/04-book-right.3mf",
-      "project_sha256": "ba677236abe68f5532a1f11c237f3e5880342828bce5b8caeb39c592f84b3f60",
+      "project_sha256": "008fdb90f6fce20086296b2ae4f7770c804146015d9aec01687f8be210ac4068",
       "color": "gray",
       "input_files": [
         "module_3.stl"
@@ -246,7 +366,7 @@
     },
     {
       "project": "bambu-projects/05-support-segments-twelve.3mf",
-      "project_sha256": "a067c4556547080b0193b7891e99069c7241960fcc6a47fc924aa78968abc07c",
+      "project_sha256": "b2dd2e588e9f4c671674193b32d9ec4374f01ff1dd9cc3ea5df91693c25c48fd",
       "color": "yellow",
       "input_files": [
         "column_1_segment_1.stl",
@@ -317,7 +437,7 @@
     },
     {
       "project": "bambu-projects/06-top-segments-four.3mf",
-      "project_sha256": "26888374428e3c517954122f106d1ccb85478d679c7e15696b0b0068261fa3c1",
+      "project_sha256": "6cf627accd7c5b249ffdfd5fcf67a86d57c1611bffa81b0e025a824a2a4dcc68",
       "color": "yellow",
       "input_files": [
         "column_1_segment_4.stl",
@@ -380,7 +500,7 @@
     },
     {
       "project": "bambu-projects/07-billboard-and-posts-black.3mf",
-      "project_sha256": "fe92ac81e7d7ab412ba35414a75221a47e7938f13e21dd2c4b38a7ed8c81f55b",
+      "project_sha256": "32036c70392651dd74fc172f5b1f846d0f5ac40bf49b0d8bea59e7c77de9091a",
       "color": "black",
       "input_files": [
         "billboard.stl",
@@ -444,7 +564,7 @@
     },
     {
       "project": "bambu-projects/08-billboard-lettering-white.3mf",
-      "project_sha256": "da1c6da1ef6070363f59b4fffd234fd8cfa428332a824cae4d8300c2c8dcd709",
+      "project_sha256": "0960c80253153a8d3b053a7050645c4b6e527162c8ee8ddfcace5583f39ed523",
       "color": "white",
       "input_files": [
         "billboard_text_lovely_cars.stl",
@@ -506,7 +626,7 @@
     },
     {
       "project": "bambu-projects/09-blue-slogan-sign.3mf",
-      "project_sha256": "913f6a5ebbbf69bf0f636e038a6e29a5b521bb8aea782d2999735a1cfdeb7e23",
+      "project_sha256": "26ea935a93183f42fd96e6b44e6cdb0aacd84e0465b9cb4a6511b732dbc5736d",
       "color": "blue",
       "input_files": [
         "book_depot_sign.stl"

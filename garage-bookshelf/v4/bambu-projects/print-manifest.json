@@ -1,12 +1,28 @@
 {
-  "cad_sha256": "50f637a56e03511c88b9971cb289e255686554c072b8f1984953b60763e634ce",
+  "cad_sha256": "064b3abc04cc455de9ffd35469ccec364f6fe00ae6ec2fd74484f9f8391d4be3",
   "projects": [
     {
-      "project": "01-whole-garage-deck-print-three.3mf",
+      "project": "01a-garage-deck-1-two-bays.3mf",
       "color": "灰色",
-      "contents": "完整停车层板 ×1",
-      "print_runs": 3,
-      "sha256": "2ffef39dc7c5cd087eb32cb890271c7b9d446d275fadfd224c697cf78b055134",
+      "contents": "层板1：双车位，B01轮椅标识",
+      "print_runs": 1,
+      "sha256": "7684ccf4d92aeb2fd2d0961ef8671069950a5ea66b6cbb3cfd5c66686b009370",
+      "reopened_and_sliced": true
+    },
+    {
+      "project": "01b-garage-deck-2-three-bays.3mf",
+      "color": "灰色",
+      "contents": "层板2：三车位",
+      "print_runs": 1,
+      "sha256": "382afe4ff61757e9e6a69b696fab9652747897b7f2faf1a54f4c401b140f6a24",
+      "reopened_and_sliced": true
+    },
+    {
+      "project": "01c-garage-deck-3-plain.3mf",
+      "color": "灰色",
+      "contents": "层板3：空白整板",
+      "print_runs": 1,
+      "sha256": "16a9e9b97a32f7cb31e3bc38749a276a593744af08b4c05ec245b049a3f28932",
       "reopened_and_sliced": true
     },
     {
@@ -14,7 +30,7 @@
       "color": "灰色",
       "contents": "车库底背一体模块",
       "print_runs": 1,
-      "sha256": "5c5eeb66c9cad269a0a475f66562f18207aba30e4f9f85766580ca30bd3142c6",
+      "sha256": "23b0f307f3dc7e1cad4dcdca9bdc2b8cbeac87140d861813b1e86b72bf60858d",
       "reopened_and_sliced": true
     },
     {
@@ -22,7 +38,7 @@
       "color": "灰色",
       "contents": "书架左模块（含隔板）",
       "print_runs": 1,
-      "sha256": "a3e83a9bd454d80e294f75471133eefc2eb8aa4c7f882d5af5206ac93d2137d2",
+      "sha256": "f1c431e77799208cef13214ce64cac2fb4fb9de707a9e57f3dcf615e5e8e435c",
       "reopened_and_sliced": true
     },
     {
@@ -30,7 +46,7 @@
       "color": "灰色",
       "contents": "书架右模块（含右侧板）",
       "print_runs": 1,
-      "sha256": "ba677236abe68f5532a1f11c237f3e5880342828bce5b8caeb39c592f84b3f60",
+      "sha256": "008fdb90f6fce20086296b2ae4f7770c804146015d9aec01687f8be210ac4068",
       "reopened_and_sliced": true
     },
     {
@@ -38,7 +54,7 @@
       "color": "黄色",
       "contents": "承托柱段 ×12",
       "print_runs": 1,
-      "sha256": "a067c4556547080b0193b7891e99069c7241960fcc6a47fc924aa78968abc07c",
+      "sha256": "b2dd2e588e9f4c671674193b32d9ec4374f01ff1dd9cc3ea5df91693c25c48fd",
       "reopened_and_sliced": true
     },
     {
@@ -46,7 +62,7 @@
       "color": "黄色",
       "contents": "封顶柱段 ×4",
       "print_runs": 1,
-      "sha256": "26888374428e3c517954122f106d1ccb85478d679c7e15696b0b0068261fa3c1",
+      "sha256": "6cf627accd7c5b249ffdfd5fcf67a86d57c1611bffa81b0e025a824a2a4dcc68",
       "reopened_and_sliced": true
     },
     {
@@ -54,7 +70,7 @@
       "color": "黑色",
       "contents": "广告牌 ×1＋背面支架 ×2",
       "print_runs": 1,
-      "sha256": "fe92ac81e7d7ab412ba35414a75221a47e7938f13e21dd2c4b38a7ed8c81f55b",
+      "sha256": "32036c70392651dd74fc172f5b1f846d0f5ac40bf49b0d8bea59e7c77de9091a",
       "reopened_and_sliced": true
     },
     {
@@ -62,7 +78,7 @@
       "color": "白色",
       "contents": "两行白字，共20个独立字形",
       "print_runs": 1,
-      "sha256": "da1c6da1ef6070363f59b4fffd234fd8cfa428332a824cae4d8300c2c8dcd709",
+      "sha256": "0960c80253153a8d3b053a7050645c4b6e527162c8ee8ddfcace5583f39ed523",
       "reopened_and_sliced": true
     },
     {
@@ -70,13 +86,13 @@
       "color": "蓝色",
       "contents": "两句竖向凹刻口号蓝牌 ×1",
       "print_runs": 1,
-      "sha256": "913f6a5ebbbf69bf0f636e038a6e29a5b521bb8aea782d2999735a1cfdeb7e23",
+      "sha256": "26ea935a93183f42fd96e6b44e6cdb0aacd84e0465b9cb4a6511b732dbc5736d",
       "reopened_and_sliced": true
     }
   ],
   "print_runs": 11,
   "physical_solids": 46,
-  "estimated_total_hours": 33.507222222222225,
-  "estimated_total_filament_g": 1855.188224554062,
+  "estimated_total_hours": 34.118611111111115,
+  "estimated_total_filament_g": 1861.096473455429,
   "gcode_included": false
 }

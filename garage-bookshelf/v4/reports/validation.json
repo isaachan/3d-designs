@@ -2,7 +2,8 @@
   "status": "passed",
   "native": {
     "bodies": 46,
-    "sketches": 180,
+    "sketches": 243,
+    "parking_marking_sketches": 63,
     "fully_constrained": true,
     "single_solid_each": true,
     "invalid_objects": []
@@ -275,8 +276,26 @@
           5.0
         ],
         "extra_rib_height_mm": 0,
-        "solid_volume_mm3": 157619.13855192918,
-        "minimum_clear_height_below_mm": 58.0
+        "solid_volume_mm3": 155466.44859255775,
+        "minimum_clear_height_below_mm": 58.0,
+        "parking_layout": {
+          "bays": 2,
+          "bay_nominal_mm": [
+            72.0,
+            90
+          ],
+          "accessible_bay": "B01",
+          "removed_volume_mm3": 2152.6899593714334,
+          "minimum_remaining_thickness_mm": 4.6,
+          "engraving_depth_mm": {
+            "Blue": 0.2,
+            "Yellow": 0.4,
+            "White": 0.4
+          },
+          "independent_cut_volume_check": "passed",
+          "column_keepout_radius_mm": 11,
+          "paint_fill_preview_only": true
+        }
       },
       {
         "level": 2,
@@ -286,8 +305,25 @@
           5.0
         ],
         "extra_rib_height_mm": 0,
-        "solid_volume_mm3": 157619.13855192918,
-        "minimum_clear_height_below_mm": 58.0
+        "solid_volume_mm3": 156689.36207192927,
+        "minimum_clear_height_below_mm": 58.0,
+        "parking_layout": {
+          "bays": 3,
+          "bay_nominal_mm": [
+            48.0,
+            90
+          ],
+          "accessible_bay": null,
+          "removed_volume_mm3": 929.7764799999131,
+          "minimum_remaining_thickness_mm": 4.6,
+          "engraving_depth_mm": {
+            "Yellow": 0.4,
+            "White": 0.4
+          },
+          "independent_cut_volume_check": "passed",
+          "column_keepout_radius_mm": 11,
+          "paint_fill_preview_only": true
+        }
       },
       {
         "level": 3,
@@ -298,7 +334,12 @@
         ],
         "extra_rib_height_mm": 0,
         "solid_volume_mm3": 157619.13855192918,
-        "minimum_clear_height_below_mm": 58.0
+        "minimum_clear_height_below_mm": 58.0,
+        "parking_layout": {
+          "bays": 0,
+          "decoration": "blank",
+          "removed_volume_mm3": 0
+        }
       }
     ]
   },
@@ -371,9 +412,9 @@
         158.60000610351562,
         5.0
       ],
-      "orientation": "5 mm 无梁整板，平面贴床",
+      "orientation": "5 mm 无梁整板，底面贴床，停车图案朝上（层板3空白）",
       "with_4mm_brim_within_235_5_256_256": true,
-      "sha256": "4f682c89d0b9c4427e1a9879c408a9183d0a91afc4178b74babbf65aca9ee1d7"
+      "sha256": "7c1a64e70be065de3099920c8715f24890a42cd3b98f9135911f2e9ea1647413"
     },
     {
       "name": "garage_deck_2",
@@ -387,9 +428,9 @@
         158.60000610351562,
         5.0
       ],
-      "orientation": "5 mm 无梁整板，平面贴床",
+      "orientation": "5 mm 无梁整板，底面贴床，停车图案朝上（层板3空白）",
       "with_4mm_brim_within_235_5_256_256": true,
-      "sha256": "4f682c89d0b9c4427e1a9879c408a9183d0a91afc4178b74babbf65aca9ee1d7"
+      "sha256": "adce454d31748059367bfffca0f55251aaf8f44a41e2fe3d23cf121ee8379db8"
     },
     {
       "name": "garage_deck_3",
@@ -403,9 +444,9 @@
         158.60000610351562,
         5.0
       ],
-      "orientation": "5 mm 无梁整板，平面贴床",
+      "orientation": "5 mm 无梁整板，底面贴床，停车图案朝上（层板3空白）",
       "with_4mm_brim_within_235_5_256_256": true,
-      "sha256": "4f682c89d0b9c4427e1a9879c408a9183d0a91afc4178b74babbf65aca9ee1d7"
+      "sha256": "598d7c6dc91545766a8e9bc78b7637e98b30634fd57efc1d667e0a81b06fcca8"
     },
     {
       "name": "column_1_segment_1",

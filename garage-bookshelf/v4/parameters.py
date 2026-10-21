@@ -23,6 +23,7 @@ PARAMETERS = [
 ('BackTipFront','10 mm','背榫尖前半高'),('BackTipRear','14 mm','背榫尖后半高'),
 ('DeckEdgeGap','0.2 mm','层板与侧/背的每边间隙'),('DeckWidth','=GarageWidth-2*DeckEdgeGap','整层板宽'),
 ('DeckDepth','=BackFront-2*DeckEdgeGap','整层板深'),('DeckThickness','5 mm','层板面厚，沿用v3'),
+('DeckMarkingDepth','0.4 mm','层板停车线、编号和轮椅图案凹刻深'),('DeckBlueDepth','0.2 mm','双车位蓝色底区凹刻深'),
 ('DeckFirstZ','66 mm','首层底高，沿用v3'),('DeckPitch','63 mm','层距，沿用v3'),
 ('DeckZ1','=DeckFirstZ','层1底高'),('DeckZ2','=DeckFirstZ+DeckPitch','层2底高'),('DeckZ3','=DeckFirstZ+2*DeckPitch','层3底高'),
 ('ColumnInset','14 mm','柱中心距车库左右边/前后边'),('ColumnX2','=GarageWidth-ColumnInset','右柱中心'),

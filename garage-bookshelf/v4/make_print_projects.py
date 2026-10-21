@@ -9,7 +9,9 @@ PRESETS=CLI.parent.parent/'Resources/profiles/BBL'
 PROFILE_DIR=ROOT/'print-profiles'
 COLORS={'gray':'#8C949E','yellow':'#FABB1A','black':'#141414','white':'#F2F2F2','blue':'#1A5CE0'}
 PLATES=[
- ('01-whole-garage-deck-print-three','gray',['garage_deck_1.stl'],3,False),
+ ('01a-garage-deck-1-two-bays','gray',['garage_deck_1.stl'],1,False),
+ ('01b-garage-deck-2-three-bays','gray',['garage_deck_2.stl'],1,False),
+ ('01c-garage-deck-3-plain','gray',['garage_deck_3.stl'],1,False),
  ('02-garage-base','gray',['module_1.stl'],1,False),
  ('03-book-left','gray',['module_2.stl'],1,True),
  ('04-book-right','gray',['module_3.stl'],1,False),
@@ -73,7 +75,7 @@ def prepare_profiles():
 def run_cli(args,datadir,log):
     datadir.mkdir(parents=True,exist_ok=True)
     r=subprocess.run([str(CLI),'--debug','2','--datadir',str(datadir),*map(str,args)],capture_output=True,text=True,cwd=datadir)
-    log.write_text(r.stdout+'\n'+r.stderr)
+    log.write_text('\n'.join(line.rstrip() for line in (r.stdout+'\n'+r.stderr).splitlines())+'\n')
     if r.returncode:raise RuntimeError(f'Bambu Studio failed ({r.returncode}); {log}:\n{log.read_text()[-4000:]}')
     return r
 
@@ -123,7 +125,7 @@ def main():
                 print_runs=runs,slicer_warnings=[],estimated_seconds=round(plate['total_predication']),
                 estimated_filament_g=plate['filaments'][0]['total_used_g']))
             (logs/(name+'-result.json')).write_text(json.dumps(result,ensure_ascii=False,indent=2))
-        # Publish only when all nine saved projects passed.
+        # Publish only when all saved projects passed.
         for file in staged.iterdir():shutil.copy2(file,output/file.name)
     keep={name+ext for name,*_ in PLATES for ext in ('.3mf','.png')}
     for file in output.iterdir():

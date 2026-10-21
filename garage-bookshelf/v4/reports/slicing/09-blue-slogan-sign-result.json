@@ -3,7 +3,7 @@
   "export_time": 0,
   "layer_height": 0.20000000298023224,
   "plate_index": 0,
-  "prepare_time": 30,
+  "prepare_time": 22,
   "return_code": 0,
   "sliced_plates": [
     {
@@ -30,12 +30,12 @@
           "total_used_g": 24.16094970703125
         }
       ],
-      "generate_support_material_time": 22,
+      "generate_support_material_time": 23,
       "id": 1,
-      "infill_time": 132,
+      "infill_time": 135,
       "layer_filament_change": 0,
       "main_predication": 2141.39013671875,
-      "make_perimeters_time": 100,
+      "make_perimeters_time": 101,
       "obj_cached_cnt": 0,
       "objects": [
         {
@@ -52,8 +52,8 @@
           "triangle_count": 5844
         }
       ],
-      "sliced_time": 566,
-      "sliced_time_with_cache": 277,
+      "sliced_time": 562,
+      "sliced_time_with_cache": 272,
       "total_predication": 2478.955078125,
       "triangle_count": 5844,
       "warning_message": ""

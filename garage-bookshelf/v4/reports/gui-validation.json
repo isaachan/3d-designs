@@ -4,5 +4,21 @@
   "rendered_from_actual_native_cad": true,
   "blue_sign_detail": "blue-sign-preview.png",
   "blue_sign_white_floor_faces": 28,
-  "white_floor_colour_represents_optional_paint_fill": true
+  "white_floor_colour_represents_optional_paint_fill": true,
+  "parking_paint_floor_faces": {
+    "garage_deck_1": {
+      "Blue": 1,
+      "Yellow": 13,
+      "White": 17
+    },
+    "garage_deck_2": {
+      "Blue": 0,
+      "Yellow": 14,
+      "White": 18
+    }
+  },
+  "parking_details": [
+    "parking-deck-1-preview.png",
+    "parking-deck-2-preview.png"
+  ]
 }

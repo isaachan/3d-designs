@@ -43,7 +43,7 @@ def project_bounds(file):
 def main():
     checks=[]
     slicer=json.loads((ROOT/'slicer-validation.json').read_text())
-    assert len(slicer['projects'])==9
+    assert len(slicer['projects'])==11
     assert hashlib.sha256((ROOT/'garage-bookshelf-v4-assembly.FCStd').read_bytes()).hexdigest()==slicer['cad_sha256']
     for p in slicer['projects']:
         assert p['slice_status']=='passed' and p['sliced_saved_3mf'] and not p['reload_profile_overrides']
@@ -53,7 +53,9 @@ def main():
         bounds=project_bounds(file)
         assert len(bounds)==p['object_count']
         checks.append(dict(project=p['project'],object_bounds=bounds,within_x_20_5_to_256_y_0_to_256_with_4mm_brim=True))
-    assert [p['object_count'] for p in slicer['projects']]==[1,1,1,1,12,4,3,2,1]
+    assert [p['object_count'] for p in slicer['projects']]==[1,1,1,1,1,1,12,4,3,2,1]
+    assert [p['input_files'] for p in slicer['projects'][:3]]==[[f'garage_deck_{lev}.stl'] for lev in (1,2,3)]
+    assert all(p['print_runs']==1 for p in slicer['projects'])
     assert sum(p['print_runs'] for p in slicer['projects'])==11
     exports=json.loads((ROOT/'reports/validation.json').read_text())['print_parts']
     components={Path(r['file']).name:r['solid_components'] for r in exports}

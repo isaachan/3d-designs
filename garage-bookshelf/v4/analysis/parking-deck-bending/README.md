@@ -1,6 +1,8 @@
 # 停车层板加强梁高度计算 · 每层三辆多美卡
 
-结论：**在当前 5 mm 厚层板、四个托环正确安装并胶接、常温静载的计算假设下，最低额外梁高为 0 mm。** 推荐无梁、保留 5 mm 面板作为首件试打印方案。现有 8 mm 梁能减小下挠，但对于三辆普通多美卡小车的计算载荷，没有必要保留到这个高度。
+结论：**在未凹刻的5 mm厚层板、四个托环正确安装并胶接、常温静载的历史计算假设下，最低额外梁高为0 mm。** 该计算支持当时无梁整板方案；现有8 mm梁能减小下挠。
+
+**2026-10-21 模型更新：** 正式层板1加入双车位、层板2加入三车位图案，白/黄图案凹刻0.4 mm、蓝底凹刻0.2 mm。历史有限元网格未包含这些凹刻；下列挠度数字不代表带图案层板的新计算结果。层板3仍与原h=0几何一致。
 
 本目录保存完整计算报告、分析过程、对比图、数值与复现脚本。根据计算结论，正式 v4 FreeCAD、STEP、STL、3MF 已更新为 5 mm 厚无梁版。计算使用的原 8 mm 梁 CAD 冻结在 `reference/`，其计算前后 SHA256 一致，记录在 `summary.json`；正式模型与 h=0 计算几何的对应验证见 `design-application.json`。这不是实物承重认证。
 
@@ -77,7 +79,7 @@
 
 - `PROCESS.md`：分析步骤、选择依据和计算关系。
 - `reference/garage-bookshelf-v4-ribbed-analysis-source.FCStd`：冻结的原 8 mm 梁输入，仅用于复算，不作为打印文件。
-- `verify_application.py`、`design-application.json`：正式无梁 CAD 与 h=0 有限元几何一致性验证。
+- `verify_application.py`、`design-application.json`：无梁基础几何与h=0参考的一致性验证，以及正式层板1/2凹刻后的体积差异记录。
 - `calculate.py`：读冻结参考 CAD、仅在内存改变梁高、生成临时网格并求解；不保存原 CAD，临时求解文件自动清理。
 - `results-mesh6.json`、`results-mesh4.json`：各梁高、载荷场景、网格数量、反力/体积检查及原 CAD 哈希。
 - `summary.json`、`comparison.csv`：精选细网格结果、敏感度及网格差。

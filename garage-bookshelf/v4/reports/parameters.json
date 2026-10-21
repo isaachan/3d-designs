@@ -190,6 +190,16 @@
     "description": "层板面厚，沿用v3"
   },
   {
+    "alias": "DeckMarkingDepth",
+    "value": "0.4 mm",
+    "description": "层板停车线、编号和轮椅图案凹刻深"
+  },
+  {
+    "alias": "DeckBlueDepth",
+    "value": "0.2 mm",
+    "description": "双车位蓝色底区凹刻深"
+  },
+  {
     "alias": "DeckFirstZ",
     "value": "66 mm",
     "description": "首层底高，沿用v3"

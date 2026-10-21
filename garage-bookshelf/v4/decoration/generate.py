@@ -7,11 +7,6 @@ from pathlib import Path
 import json
 import math
 
-from PIL import Image, ImageDraw, ImageFont
-from reportlab.pdfgen import canvas
-from reportlab.lib.units import mm
-from reportlab.lib.pagesizes import A4, landscape
-from reportlab.lib.colors import HexColor
 
 ROOT = Path(__file__).resolve().parent
 W, D = 199.6, 158.6
@@ -82,7 +77,9 @@ def lettering(out, text, cx, y, height, color):
         for row, bits in enumerate(FONT[letter]):
             for col, bit in enumerate(bits):
                 if bit == '1':
-                    rect(out, x + (4*k + col)*p, y + row*p, p, p, color)
+                    # A 0.02 mm shared overlap prevents corner-only contacts in
+                    # B/0/P glyphs when the same vectors become native CAD cuts.
+                    rect(out, x + (4*k + col)*p-.01, y + row*p-.01, p+.02, p+.02, color)
 
 
 def design(count):
@@ -148,6 +145,8 @@ def svg(count, graphics_only=False):
 
 
 def draw_pdf_plate(c, count, low_ink):
+    from reportlab.lib.units import mm
+    from reportlab.lib.colors import HexColor
     c.saveState()
     c.translate(18*mm, (24+D)*mm)
     c.scale(mm, -mm)
@@ -180,6 +179,10 @@ def draw_pdf_plate(c, count, low_ink):
 
 
 def make_pdf():
+    from reportlab.pdfgen import canvas
+    from reportlab.lib.units import mm
+    from reportlab.lib.pagesizes import A4, landscape
+    from reportlab.lib.colors import HexColor
     dest=ROOT/'output/pdf/parking-layouts-actual-size.pdf'
     dest.parent.mkdir(parents=True,exist_ok=True)
     c=canvas.Canvas(str(dest), pagesize=landscape(A4))
@@ -211,12 +214,13 @@ def make_pdf():
             c.line(229*mm,38*mm,279*mm,38*mm)
             for x in [229,279]: c.line(x*mm,36*mm,x*mm,40*mm)
             c.setFont('Helvetica',7)
-            c.drawString(18*mm,15*mm,'Design proof only. No changes to the 5 mm structural deck. Painted wheel-stop motifs are flat.')
+            c.drawString(18*mm,15*mm,'Vector layout for 0.2/0.4 mm pocket engraving. Wheel-stop motifs are flat paint-fill markings.')
             c.showPage()
     c.save()
 
 
 def preview_plate(count, occupied):
+    from PIL import Image, ImageDraw
     s=5
     im=Image.new('RGB',(round(W*s),round(D*s)),DECK)
     d=ImageDraw.Draw(im)
@@ -246,6 +250,7 @@ def preview_plate(count, occupied):
 
 
 def make_preview():
+    from PIL import Image, ImageDraw, ImageFont
     canvas_im=Image.new('RGB',(2200,2060),'#eeede7')
     d=ImageDraw.Draw(canvas_im)
     face='/System/Library/Fonts/Helvetica.ttc'

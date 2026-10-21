@@ -12,13 +12,15 @@ def native(doc):
     bs=[o for o in doc.Objects if o.TypeId=='PartDesign::Body']
     ss=[o for o in doc.Objects if o.TypeId=='Sketcher::SketchObject']
     assert len(bs)==46,len(bs)
-    assert len(ss)==180 and all(s.FullyConstrained for s in ss)
+    marking_sketches=[s for s in ss if 'ParkingMarkingColor' in s.PropertiesList]
+    assert len(ss)==180+len(marking_sketches) and all(s.FullyConstrained for s in ss)
+    assert all(any('ParkingMarkingColor' in s.PropertiesList for s in doc.getObject(f'garage_deck_{lev}_Body').Group) for lev in (1,2))
     assert not any("RootRib" in o.Name for o in doc.Objects)
     assert all(b.Shape.isValid() and len(b.Shape.Solids)==1 for b in bs)
     invalid=[(o.Name,list(o.State)) for o in doc.Objects if any(k in o.State for k in ['Invalid','Error'])]
     assert not invalid,invalid
     assert not any(o.TypeId in ['Part::Feature','Mesh::Feature','PartDesign::Feature'] for o in doc.Objects)
-    return dict(bodies=len(bs),sketches=len(ss),fully_constrained=True,single_solid_each=True,invalid_objects=invalid)
+    return dict(bodies=len(bs),sketches=len(ss),parking_marking_sketches=len(marking_sketches),fully_constrained=True,single_solid_each=True,invalid_objects=invalid)
 
 
 def assembly(doc):
@@ -58,11 +60,13 @@ def assembly(doc):
         box=local.optimalBoundingBox();thickness=evaluate(doc,'DeckThickness')
         assert abs(box.ZMin)<1e-6 and abs(box.ZMax-thickness)<1e-6
         expected=(evaluate(doc,'DeckWidth')*evaluate(doc,'DeckDepth')-4*3.141592653589793*evaluate(doc,'HoleRadius')**2)*thickness
-        assert abs(local.Volume-expected)<1e-5
+        from parking_markings import check as check_parking
+        parking=check_parking(doc.getObject(f'garage_deck_{lev}_Body'))
+        assert abs(local.Volume-(expected-parking['removed_volume_mm3']))<1e-5
         assert not any('IntegralRibs' in feature.Name for feature in doc.getObject(f'garage_deck_{lev}_Body').Group)
         clearance=z-(evaluate(doc,'BaseThickness') if lev==1 else evaluate(doc,f'DeckZ{lev-1}')+thickness)
         assert abs(clearance-58)<1e-6
-        plain_decks.append(dict(level=lev,dimensions_mm=[box.XLength,box.YLength,box.ZLength],extra_rib_height_mm=0,solid_volume_mm3=local.Volume,minimum_clear_height_below_mm=clearance))
+        plain_decks.append(dict(level=lev,dimensions_mm=[box.XLength,box.YLength,box.ZLength],extra_rib_height_mm=0,solid_volume_mm3=local.Volume,minimum_clear_height_below_mm=clearance,parking_layout=parking))
         fixed=[shapes[f'column_{n}_segment_{lev}_Body'] for n in range(1,5)]
         fixed.append(shapes['module_1_Body']);fixed.append(shapes['module_2_Body'])
         for dz in (12,8,3,0):
@@ -167,7 +171,7 @@ def export(doc):
         rotation=App.Rotation()
         orient='原方向，底面朝下'
         if name.startswith('garage_deck'):
-            rotation=App.Rotation(App.Vector(1,0,0),180);orient='5 mm 无梁整板，平面贴床'
+            orient='5 mm 无梁整板，底面贴床，停车图案朝上（层板3空白）'
         elif name.startswith('billboard'):
             rotation=App.Rotation(App.Vector(1,0,0),90);orient='牌/文字/支架放平'
         elif name=='book_depot_sign':
@@ -182,7 +186,9 @@ def export(doc):
         assert dims[0]+8<=235.501 and dims[1]+8<=256.001 and dims[2]<=256.001,(name,dims)
         records.append(dict(name=name,file=str(file.relative_to(ROOT)),quantity=1,solid_components=count,closed=True,non_manifold=False,dimensions_mm=dims,orientation=orient,with_4mm_brim_within_235_5_256_256=True,sha256=hashlib.sha256(file.read_bytes()).hexdigest()))
     all_shapes=[global_shape(b) for p in parts(doc).values() for b in bodies(p)]
-    Part.makeCompound(all_shapes).exportStep(str(ROOT/'garage-bookshelf-v4-assembly.step'))
+    step_file=ROOT/'garage-bookshelf-v4-assembly.step'
+    Part.makeCompound(all_shapes).exportStep(str(step_file))
+    step_file.write_text('\n'.join(line.rstrip() for line in step_file.read_text().splitlines())+'\n')
     step=Part.Shape()
     step.read(str(ROOT/'garage-bookshelf-v4-assembly.step'))
     bb=step.optimalBoundingBox()
