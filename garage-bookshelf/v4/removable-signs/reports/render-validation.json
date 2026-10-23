@@ -1,0 +1,5 @@
+{
+  "status": "passed",
+  "source": "actual native CAD faces tessellated with OpenCascade; software rendered",
+  "cad_sha256": "d3b0bae1def40d961daa732acf3a52789bfc7f5320c7237704fa76b984523763"
+}

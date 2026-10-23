@@ -1,8 +1,10 @@
 # v4 书架背板接头试配小样
 
+**打印文件已清理（2026-10-23）：** 当前 v4 的 3MF 和打印 ZIP 已删除，待 CAD 定稿后重新生成。正式工程为 `garage-bookshelf-v4-assembly.FCStd`；下文打印清单、切片数据与验证结果保留为历史记录，当前状态见 [PRINT_STATUS.md](../../PRINT_STATUS.md)。
+
 一盘6组、12件，比较原版接头、修正锥度、侧隙与槽底余量。正式v4榫槽未修改。
 
-- [打开3MF](artifacts/back-joint-six-fit-tests.3mf)
+- `artifacts/back-joint-six-fit-tests.3mf`（已删除）
 - [参数、打印方法及试配记录表](artifacts/试配说明.md)
 - [CAD](artifacts/back-joint-fit-samples.FCStd)
 - [验证记录](artifacts/validation.json)

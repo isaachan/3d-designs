@@ -1,0 +1,98 @@
+{
+  "status": "passed",
+  "projects": [
+    {
+      "name": "01-top-receiver",
+      "color": "black",
+      "files": [
+        "billboard.stl"
+      ],
+      "project_sha256": "625aab0903aaae061778037d1f24e25cffcf0b49aea7626bcc3f4b3f8e9ce831",
+      "source_sha256": {
+        "billboard.stl": "c6c16e063da18f4e5303aa84f57dd333c31dbe62a153d05e6c352bb6d62a2762"
+      },
+      "reopened_and_sliced": true,
+      "estimated_seconds": 4296.8466796875,
+      "estimated_filament_g": 51.385921478271484,
+      "warnings": ""
+    },
+    {
+      "name": "02-top-carrier",
+      "color": "black",
+      "files": [
+        "top_carrier.stl"
+      ],
+      "project_sha256": "8719f046ea4d5609393e1c755d6c603eff1ba38ee4148440c6c33cec560f2bfe",
+      "source_sha256": {
+        "top_carrier.stl": "0bbc6dac01d72ce02490212a75fd5dd00d93bc1c5e474943a2783a1fd9993f1c"
+      },
+      "reopened_and_sliced": true,
+      "estimated_seconds": 2652.553955078125,
+      "estimated_filament_g": 29.833749771118164,
+      "warnings": ""
+    },
+    {
+      "name": "03-side-receiver",
+      "color": "blue",
+      "files": [
+        "side_receiver.stl"
+      ],
+      "project_sha256": "479c9bc3d3d754c2bcdb37749f9543cc4a056255fd09e57aae22c86b62f6a301",
+      "source_sha256": {
+        "side_receiver.stl": "3971b76ee735883a37493343cc9f74fcadf26a18dd69ff202c92f0caeae91da6"
+      },
+      "reopened_and_sliced": true,
+      "estimated_seconds": 2753.66845703125,
+      "estimated_filament_g": 32.17201232910156,
+      "warnings": ""
+    },
+    {
+      "name": "04-side-cartridge",
+      "color": "blue",
+      "files": [
+        "side_cartridge.stl"
+      ],
+      "project_sha256": "e953280b1398b182d9cc890edf408149b710c8ada8b6c9bd3e8b9050cc083d93",
+      "source_sha256": {
+        "side_cartridge.stl": "75b500676ae2d17bc3d82adf5ede9f251a062123406d860713fc00fb8ba7f9c7"
+      },
+      "reopened_and_sliced": true,
+      "estimated_seconds": 2177.862060546875,
+      "estimated_filament_g": 17.943723678588867,
+      "warnings": ""
+    },
+    {
+      "name": "05-lock-pins",
+      "color": "yellow",
+      "files": [
+        "lock_pin_1.stl",
+        "lock_pin_1.stl"
+      ],
+      "project_sha256": "78585088f49c0890aaa4bec938d3d2e808d9c17bffed98eb073e5fe8a35d81bb",
+      "source_sha256": {
+        "lock_pin_1.stl": "b092afe62843e909e3d7f27ff800a6fd513429d29dd9eae72afe893d0fe7b939"
+      },
+      "reopened_and_sliced": true,
+      "estimated_seconds": 405.8037414550781,
+      "estimated_filament_g": 0.16139815747737885,
+      "warnings": ""
+    },
+    {
+      "name": "00-fit-test",
+      "color": "gray",
+      "files": [
+        "fit_receiver.stl",
+        "fit_carrier.stl"
+      ],
+      "project_sha256": "490a2b274f2462dd7a4821176f08e99093831d204f74fb6666dd036b66c059d6",
+      "source_sha256": {
+        "fit_receiver.stl": "fcc20d0d66a9228c7168c2760821d0e4714ae25932ee2acd414c0e384c6ce4af",
+        "fit_carrier.stl": "2da9e1a15ff4a2ad2222e57aa501bf6a3e892debc89c211391697b1c6f6ff1a8"
+      },
+      "reopened_and_sliced": true,
+      "estimated_seconds": 806.0944213867188,
+      "estimated_filament_g": 5.348390579223633,
+      "warnings": ""
+    }
+  ]
+}

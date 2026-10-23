@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "same_cross_section_as_both_signs": true,
+  "physical_fit": "not_tested",
+  "female_size_mm": [
+    40,
+    28,
+    4
+  ],
+  "male_plate_size_mm": [
+    30,
+    20,
+    1.8
+  ]
+}

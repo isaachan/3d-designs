@@ -12,3 +12,7 @@
 v1 是完整的冻结归档，包含当时的脚本、FreeCAD、STL、3MF、说明和审计资料。v2 保留原设计脚本与产物；v3 在独立目录中提供参数化装配工程、验证报告和 STL 导出文件，不覆盖前两个版本。v3 的具体文件入口、编辑与重建方式见其 [README](v3/README.md)。
 
 v4 为独立重新设计，包含可编辑 FreeCAD 工程、STEP、打印 STL、X2D 3MF 与验证报告；详细尺寸和装配顺序见 [v4/README.md](v4/README.md)。
+
+最新字牌改造：[v4/removable-signs/README.md](v4/removable-signs/README.md)，两处文字采用燕尾滑入字牌及可拔定位销，支持反复换字；包含完整49 cm装配工程、替换件打印包和试配小样。
+
+当前 v4 的3MF和打印ZIP已清理，待正式CAD定稿后再生成，详见 [打印交付状态](v4/PRINT_STATUS.md)。

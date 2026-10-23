@@ -1,5 +1,7 @@
 # garage-bookshelf v4 · X2D 打印 3MF
 
+**打印文件已清理（2026-10-23）：** 当前 v4 的 3MF 和打印 ZIP 已删除，待 CAD 定稿后重新生成。正式工程为 `garage-bookshelf-v4-assembly.FCStd`；下文打印清单、切片数据与验证结果保留为历史记录，当前状态见 [PRINT_STATUS.md](../PRINT_STATUS.md)。
+
 这套文件对应 v4 CAD：490 mm 主体（200 mm 车库＋290 mm 书架）、48 mm 外挂蓝牌；书架较原版缩短50 mm，两句口号竖向排列；书架底部四处 RootRib 三角肋已移除。
 
 共 **11 个 3MF 项目、11 次打印、46 个实体**。每个项目只使用一种颜色，无需 AMS。
@@ -16,17 +18,17 @@
 
 | 项目 | 颜色 | 每盘内容 | 打印次数 | 单盘预计时间 | 单盘预计耗材 |
 | --- | --- | --- | ---: | ---: | ---: |
-| [01a-garage-deck-1-two-bays.3mf](01a-garage-deck-1-two-bays.3mf) | 灰色 | 层板1：双车位，B01轮椅标识 | 1 | 2小时4分 | 103.4 g |
-| [01b-garage-deck-2-three-bays.3mf](01b-garage-deck-2-three-bays.3mf) | 灰色 | 层板2：三车位 | 1 | 2小时5分 | 104.1 g |
-| [01c-garage-deck-3-plain.3mf](01c-garage-deck-3-plain.3mf) | 灰色 | 层板3：空白整板 | 1 | 1小时46分 | 100.8 g |
-| [02-garage-base.3mf](02-garage-base.3mf) | 灰色 | 车库底背一体模块 | 1 | 6小时17分 | 369.4 g |
-| [03-book-left.3mf](03-book-left.3mf) | 灰色 | 书架左模块（含隔板） | 1 | 7小时54分 | 450.5 g |
-| [04-book-right.3mf](04-book-right.3mf) | 灰色 | 书架右模块（含右侧板） | 1 | 7小时36分 | 441.8 g |
-| [05-support-segments-twelve.3mf](05-support-segments-twelve.3mf) | 黄色 | 承托柱段 ×12 | 1 | 2小时27分 | 91.2 g |
-| [06-top-segments-four.3mf](06-top-segments-four.3mf) | 黄色 | 封顶柱段 ×4 | 1 | 0小时27分 | 15.6 g |
-| [07-billboard-and-posts-black.3mf](07-billboard-and-posts-black.3mf) | 黑色 | 广告牌 ×1＋背面支架 ×2 | 1 | 1小时26分 | 77.0 g |
-| [08-billboard-lettering-white.3mf](08-billboard-lettering-white.3mf) | 白色 | 两行白字，共20个独立字形 | 1 | 0小时18分 | 3.2 g |
-| [09-blue-slogan-sign.3mf](09-blue-slogan-sign.3mf) | 蓝色 | 两句竖向凹刻口号蓝牌 ×1 | 1 | 0小时41分 | 24.2 g |
+| `01a-garage-deck-1-two-bays.3mf`（已删除） | 灰色 | 层板1：双车位，B01轮椅标识 | 1 | 2小时4分 | 103.4 g |
+| `01b-garage-deck-2-three-bays.3mf`（已删除） | 灰色 | 层板2：三车位 | 1 | 2小时5分 | 104.1 g |
+| `01c-garage-deck-3-plain.3mf`（已删除） | 灰色 | 层板3：空白整板 | 1 | 1小时46分 | 100.8 g |
+| `02-garage-base.3mf`（已删除） | 灰色 | 车库底背一体模块 | 1 | 6小时17分 | 369.4 g |
+| `03-book-left.3mf`（已删除） | 灰色 | 书架左模块（含隔板） | 1 | 7小时54分 | 450.5 g |
+| `04-book-right.3mf`（已删除） | 灰色 | 书架右模块（含右侧板） | 1 | 7小时36分 | 441.8 g |
+| `05-support-segments-twelve.3mf`（已删除） | 黄色 | 承托柱段 ×12 | 1 | 2小时27分 | 91.2 g |
+| `06-top-segments-four.3mf`（已删除） | 黄色 | 封顶柱段 ×4 | 1 | 0小时27分 | 15.6 g |
+| `07-billboard-and-posts-black.3mf`（已删除） | 黑色 | 广告牌 ×1＋背面支架 ×2 | 1 | 1小时26分 | 77.0 g |
+| `08-billboard-lettering-white.3mf`（已删除） | 白色 | 两行白字，共20个独立字形 | 1 | 0小时18分 | 3.2 g |
+| `09-blue-slogan-sign.3mf`（已删除） | 蓝色 | 两句竖向凹刻口号蓝牌 ×1 | 1 | 0小时41分 | 24.2 g |
 
 全套累计切片估算：约 **33.0 小时、1.78 kg PLA**（每个项目打印一次）。实际耗时和耗材随机器、耗材及校准设置变化。
 
