@@ -4,6 +4,8 @@
 
 共 **11 个 3MF 项目、11 次打印、46 个实体**。每个项目只使用一种颜色，无需 AMS。
 
+本次三块停车层板右边缘额外收短4 mm，现为195.6 × 158.6 × 5 mm；左边缘和四孔位置不变。请使用更新后的01a、01b、01c项目。
+
 ## 打印方法
 
 1. 在 Bambu Studio 中以「打开项目」方式打开对应 3MF，保留项目内的打印配置和排盘。
@@ -14,9 +16,9 @@
 
 | 项目 | 颜色 | 每盘内容 | 打印次数 | 单盘预计时间 | 单盘预计耗材 |
 | --- | --- | --- | ---: | ---: | ---: |
-| [01a-garage-deck-1-two-bays.3mf](01a-garage-deck-1-two-bays.3mf) | 灰色 | 层板1：双车位，B01轮椅标识 | 1 | 2小时6分 | 105.5 g |
-| [01b-garage-deck-2-three-bays.3mf](01b-garage-deck-2-three-bays.3mf) | 灰色 | 层板2：三车位 | 1 | 2小时7分 | 106.2 g |
-| [01c-garage-deck-3-plain.3mf](01c-garage-deck-3-plain.3mf) | 灰色 | 层板3：空白整板 | 1 | 1小时48分 | 102.9 g |
+| [01a-garage-deck-1-two-bays.3mf](01a-garage-deck-1-two-bays.3mf) | 灰色 | 层板1：双车位，B01轮椅标识 | 1 | 2小时4分 | 103.4 g |
+| [01b-garage-deck-2-three-bays.3mf](01b-garage-deck-2-three-bays.3mf) | 灰色 | 层板2：三车位 | 1 | 2小时5分 | 104.1 g |
+| [01c-garage-deck-3-plain.3mf](01c-garage-deck-3-plain.3mf) | 灰色 | 层板3：空白整板 | 1 | 1小时46分 | 100.8 g |
 | [02-garage-base.3mf](02-garage-base.3mf) | 灰色 | 车库底背一体模块 | 1 | 6小时17分 | 369.4 g |
 | [03-book-left.3mf](03-book-left.3mf) | 灰色 | 书架左模块（含隔板） | 1 | 7小时54分 | 450.5 g |
 | [04-book-right.3mf](04-book-right.3mf) | 灰色 | 书架右模块（含右侧板） | 1 | 7小时36分 | 441.8 g |
@@ -26,7 +28,7 @@
 | [08-billboard-lettering-white.3mf](08-billboard-lettering-white.3mf) | 白色 | 两行白字，共20个独立字形 | 1 | 0小时18分 | 3.2 g |
 | [09-blue-slogan-sign.3mf](09-blue-slogan-sign.3mf) | 蓝色 | 两句竖向凹刻口号蓝牌 ×1 | 1 | 0小时41分 | 24.2 g |
 
-全套累计切片估算：约 **33.1 小时、1.79 kg PLA**（每个项目打印一次）。实际耗时和耗材随机器、耗材及校准设置变化。
+全套累计切片估算：约 **33.0 小时、1.78 kg PLA**（每个项目打印一次）。实际耗时和耗材随机器、耗材及校准设置变化。
 
 ## 装配与颜色
 

@@ -1,10 +1,10 @@
-[2026-10-21 16:02:18.220071] [0x00000001f981a180] [trace]   Initializing StaticPrintConfigs
-[2026-10-21 16:02:18.236430] [0x00000001f981a180] [warning] cli mode, Current BambuStudio Version 02.08.02.61
-[2026-10-21 16:02:18.256397] [0x00000001f981a180] [warning] run:2873, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine_full/Bambu Lab X2D 0.4 nozzle.json
-[2026-10-21 16:02:18.256411] [0x00000001f981a180] [warning] run:2895, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/process_full/0.20mm Standard @BBL X2D.json
-[2026-10-21 16:02:18.256429] [0x00000001f981a180] [warning] no filament colors found in projects
-[2026-10-21 16:02:18.257323] [0x00000001f981a180] [warning] load_nozzle_infos_with_compatibility: building nozzle list from filament map and volume types
-[2026-10-21 16:02:19.180336] [0x00000001f981a180] [warning] tree support default to organic support
-[2026-10-21 16:02:19.463986] [0x00000001f981a180] [error]   Invalid T command (T65279).
-[2026-10-21 16:02:19.463996] [0x00000001f981a180] [error]   Invalid T command (T65535).
+[2026-10-23 11:51:23.036933] [0x00000001f981a180] [trace]   Initializing StaticPrintConfigs
+[2026-10-23 11:51:23.059859] [0x00000001f981a180] [warning] cli mode, Current BambuStudio Version 02.08.02.61
+[2026-10-23 11:51:23.086804] [0x00000001f981a180] [warning] run:2873, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine_full/Bambu Lab X2D 0.4 nozzle.json
+[2026-10-23 11:51:23.086816] [0x00000001f981a180] [warning] run:2895, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/process_full/0.20mm Standard @BBL X2D.json
+[2026-10-23 11:51:23.086833] [0x00000001f981a180] [warning] no filament colors found in projects
+[2026-10-23 11:51:23.087820] [0x00000001f981a180] [warning] load_nozzle_infos_with_compatibility: building nozzle list from filament map and volume types
+[2026-10-23 11:51:23.881888] [0x00000001f981a180] [warning] tree support default to organic support
+[2026-10-23 11:51:24.199252] [0x00000001f981a180] [error]   Invalid T command (T65279).
+[2026-10-23 11:51:24.199262] [0x00000001f981a180] [error]   Invalid T command (T65535).
 

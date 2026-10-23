@@ -34,7 +34,7 @@
     "quantity": 1,
     "print_file": "print-stl/garage_deck_1.stl",
     "dimensions_mm": [
-      199.60000610351562,
+      195.60000610351562,
       158.60000610351562,
       5.0
     ]
@@ -44,7 +44,7 @@
     "quantity": 1,
     "print_file": "print-stl/garage_deck_2.stl",
     "dimensions_mm": [
-      199.60000610351562,
+      195.60000610351562,
       158.60000610351562,
       5.0
     ]
@@ -54,7 +54,7 @@
     "quantity": 1,
     "print_file": "print-stl/garage_deck_3.stl",
     "dimensions_mm": [
-      199.60000610351562,
+      195.60000610351562,
       158.60000610351562,
       5.0
     ]

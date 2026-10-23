@@ -2,18 +2,18 @@
   "status": "passed",
   "bambu_studio": "02.08.02.61",
   "printer": "Bambu Lab X2D, standard 0.4 mm nozzles",
-  "cad_sha256": "b6f194eff750dc54e4b3c6827a1fd9e67662e455d416bb622093e6f7d218e97e",
+  "cad_sha256": "ed005751140ea1b6b79c90b032a2dbc99393b070ec8338a4ff4cc5ed64de6bf7",
   "projects": [
     {
       "project": "bambu-projects/01a-garage-deck-1-two-bays.3mf",
-      "project_sha256": "7684ccf4d92aeb2fd2d0961ef8671069950a5ea66b6cbb3cfd5c66686b009370",
+      "project_sha256": "5e2e696b4940f9891e0ad3a5b40e75fd58a17fdbcb577bf59347873f8458ffdf",
       "color": "gray",
       "input_files": [
         "garage_deck_1.stl"
       ],
       "object_count": 1,
       "input_sha256": {
-        "garage_deck_1.stl": "7c1a64e70be065de3099920c8715f24890a42cd3b98f9135911f2e9ea1647413"
+        "garage_deck_1.stl": "5ebcac7f51f9a6050ae14889cb0c6ad3eecd1e97c98116efc07009f075bdfecc"
       },
       "settings": {
         "printer_model": "Bambu Lab X2D",
@@ -61,20 +61,19 @@
       "reload_profile_overrides": false,
       "print_runs": 1,
       "slicer_warnings": [],
-      "estimated_seconds": 7549,
-      "estimated_filament_g": 105.49566650390625,
-      "validation_reused_with_matching_source_and_project_hashes": true
+      "estimated_seconds": 7419,
+      "estimated_filament_g": 103.38631439208984
     },
     {
       "project": "bambu-projects/01b-garage-deck-2-three-bays.3mf",
-      "project_sha256": "382afe4ff61757e9e6a69b696fab9652747897b7f2faf1a54f4c401b140f6a24",
+      "project_sha256": "861665e62c9eaa480726fd2978566fdd0c241218b9c630df1dbd384b4ecf650d",
       "color": "gray",
       "input_files": [
         "garage_deck_2.stl"
       ],
       "object_count": 1,
       "input_sha256": {
-        "garage_deck_2.stl": "adce454d31748059367bfffca0f55251aaf8f44a41e2fe3d23cf121ee8379db8"
+        "garage_deck_2.stl": "481504958276c5b4ffa1ec26ee355293a144c72ce13162c1b64ac6293f7f6598"
       },
       "settings": {
         "printer_model": "Bambu Lab X2D",
@@ -122,20 +121,19 @@
       "reload_profile_overrides": false,
       "print_runs": 1,
       "slicer_warnings": [],
-      "estimated_seconds": 7639,
-      "estimated_filament_g": 106.20106506347656,
-      "validation_reused_with_matching_source_and_project_hashes": true
+      "estimated_seconds": 7514,
+      "estimated_filament_g": 104.09681701660156
     },
     {
       "project": "bambu-projects/01c-garage-deck-3-plain.3mf",
-      "project_sha256": "16a9e9b97a32f7cb31e3bc38749a276a593744af08b4c05ec245b049a3f28932",
+      "project_sha256": "9c5dd96f37b2d987f228548757908521c20cdf77c88bceebf40a8440ea21483b",
       "color": "gray",
       "input_files": [
         "garage_deck_3.stl"
       ],
       "object_count": 1,
       "input_sha256": {
-        "garage_deck_3.stl": "598d7c6dc91545766a8e9bc78b7637e98b30634fd57efc1d667e0a81b06fcca8"
+        "garage_deck_3.stl": "654cc30d7f118fe79b542530c13a6b0b2ee3c0aa99574c41808b4adb59f804c4"
       },
       "settings": {
         "printer_model": "Bambu Lab X2D",
@@ -183,9 +181,8 @@
       "reload_profile_overrides": false,
       "print_runs": 1,
       "slicer_warnings": [],
-      "estimated_seconds": 6495,
-      "estimated_filament_g": 102.89419555664062,
-      "validation_reused_with_matching_source_and_project_hashes": true
+      "estimated_seconds": 6372,
+      "estimated_filament_g": 100.82181549072266
     },
     {
       "project": "bambu-projects/02-garage-base.3mf",
@@ -306,7 +303,8 @@
       "print_runs": 1,
       "slicer_warnings": [],
       "estimated_seconds": 28455,
-      "estimated_filament_g": 450.4999694824219
+      "estimated_filament_g": 450.4999694824219,
+      "validation_reused_with_matching_source_and_project_hashes": true
     },
     {
       "project": "bambu-projects/04-book-right.3mf",
@@ -366,7 +364,8 @@
       "print_runs": 1,
       "slicer_warnings": [],
       "estimated_seconds": 27377,
-      "estimated_filament_g": 441.80377197265625
+      "estimated_filament_g": 441.80377197265625,
+      "validation_reused_with_matching_source_and_project_hashes": true
     },
     {
       "project": "garage-bookshelf-v4-X2D-print-3mf/05-support-segments-twelve.3mf",
@@ -690,7 +689,8 @@
       "print_runs": 1,
       "slicer_warnings": [],
       "estimated_seconds": 2479,
-      "estimated_filament_g": 24.160736083984375
+      "estimated_filament_g": 24.160736083984375,
+      "validation_reused_with_matching_source_and_project_hashes": true
     }
   ],
   "gcode_delivered": false,

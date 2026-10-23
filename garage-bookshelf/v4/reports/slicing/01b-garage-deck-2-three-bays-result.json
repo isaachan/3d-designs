@@ -3,47 +3,47 @@
   "export_time": 0,
   "layer_height": 0.20000000298023224,
   "plate_index": 0,
-  "prepare_time": 21,
+  "prepare_time": 28,
   "return_code": 0,
   "sliced_plates": [
     {
       "feature_type_times": {
-        "Bottom surface": 756.3781127929688,
-        "Bridge": 1542.490966796875,
-        "Custom": 287.38580322265625,
+        "Bottom surface": 740.9890747070312,
+        "Bridge": 1514.250244140625,
+        "Custom": 287.35589599609375,
         "Flush": 29.0,
-        "Gap infill": 19.76845359802246,
-        "Inner wall": 371.86553955078125,
-        "Internal solid infill": 1984.591552734375,
-        "Outer wall": 179.3035430908203,
-        "Sparse infill": 1338.3663330078125,
-        "Top surface": 670.2692260742188,
-        "Travel": 468.9766845703125,
-        "Undefined": 461.26068115234375
+        "Gap infill": 26.007413864135742,
+        "Inner wall": 367.0863952636719,
+        "Internal solid infill": 1946.5352783203125,
+        "Outer wall": 177.735595703125,
+        "Sparse infill": 1311.1549072265625,
+        "Top surface": 657.8753662109375,
+        "Travel": 464.87884521484375,
+        "Undefined": 457.162841796875
       },
       "filament_change_times": 0,
       "filaments": [
         {
           "filament_id": "GFA00",
           "id": 1,
-          "main_used_g": 106.20106506347656,
-          "total_used_g": 106.20106506347656
+          "main_used_g": 104.09681701660156,
+          "total_used_g": 104.09681701660156
         }
       ],
-      "generate_support_material_time": 15,
+      "generate_support_material_time": 14,
       "id": 1,
-      "infill_time": 823,
+      "infill_time": 735,
       "layer_filament_change": 0,
-      "main_predication": 7301.4736328125,
-      "make_perimeters_time": 98,
+      "main_predication": 7176.5478515625,
+      "make_perimeters_time": 56,
       "obj_cached_cnt": 0,
       "objects": [
         {
           "bbox": {
             "depth": 158.60000610351562,
             "height": 5.0,
-            "width": 199.60000610351562,
-            "x": 38.449989318847656,
+            "width": 195.60000610351562,
+            "x": 40.449989318847656,
             "y": 48.70000076293945,
             "z": 0.0
           },
@@ -52,9 +52,9 @@
           "triangle_count": 2896
         }
       ],
-      "sliced_time": 1250,
-      "sliced_time_with_cache": 277,
-      "total_predication": 7639.1435546875,
+      "sliced_time": 1153,
+      "sliced_time_with_cache": 315,
+      "total_predication": 7514.1875,
       "triangle_count": 2896,
       "warning_message": ""
     }

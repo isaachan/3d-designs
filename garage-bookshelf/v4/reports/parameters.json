@@ -172,12 +172,12 @@
   {
     "alias": "DeckEdgeGap",
     "value": "0.2 mm",
-    "description": "层板与侧/背的每边间隙"
+    "description": "层板左/前/后名义间隙；右侧另加DeckRightTrim"
   },
   {
     "alias": "DeckWidth",
-    "value": "=GarageWidth-2*DeckEdgeGap",
-    "description": "整层板宽"
+    "value": "=GarageWidth-2*DeckEdgeGap-DeckRightTrim",
+    "description": "整层板宽，仅右边收短，孔位不变"
   },
   {
     "alias": "DeckDepth",
@@ -468,5 +468,10 @@
     "alias": "PrintHeight",
     "value": "256 mm",
     "description": "按附图较小Z范围保守校核"
+  },
+  {
+    "alias": "DeckRightTrim",
+    "value": "4 mm",
+    "description": "三块层板右边缘额外收短量，不移动左边缘与四孔"
   }
 ]

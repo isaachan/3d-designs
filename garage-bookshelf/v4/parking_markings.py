@@ -97,9 +97,9 @@ def check(body):
     removed=base.Shape.Volume-body.Shape.Volume
     assert abs(removed-union.Volume)<1e-4,(removed,union.Volume)
     # Check true material under the engraved floor, support pads, and all four holes.
-    width,depth=evaluate(d,'DeckWidth'),evaluate(d,'DeckDepth')
-    for x,y in [(13.8,13.8),(185.8,13.8),(13.8,144.8),(185.8,144.8)]:
-        x=x/W*width;y=(D-y)/D*depth
+    from build import CENTRES
+    for cx,cy in CENTRES:
+        x=evaluate(d,cx)-evaluate(d,'DeckEdgeGap');y=evaluate(d,cy)-evaluate(d,'DeckEdgeGap')
         keep=Part.makeCylinder(11,.5,App.Vector(x,y,t-.5))
         assert union.common(keep).Volume<1e-5
     minimum=t-max(depths.values())

@@ -1,12 +1,12 @@
 {
-  "cad_sha256": "b6f194eff750dc54e4b3c6827a1fd9e67662e455d416bb622093e6f7d218e97e",
+  "cad_sha256": "ed005751140ea1b6b79c90b032a2dbc99393b070ec8338a4ff4cc5ed64de6bf7",
   "projects": [
     {
       "project": "01a-garage-deck-1-two-bays.3mf",
       "color": "灰色",
       "contents": "层板1：双车位，B01轮椅标识",
       "print_runs": 1,
-      "sha256": "7684ccf4d92aeb2fd2d0961ef8671069950a5ea66b6cbb3cfd5c66686b009370",
+      "sha256": "5e2e696b4940f9891e0ad3a5b40e75fd58a17fdbcb577bf59347873f8458ffdf",
       "reopened_and_sliced": true
     },
     {
@@ -14,7 +14,7 @@
       "color": "灰色",
       "contents": "层板2：三车位",
       "print_runs": 1,
-      "sha256": "382afe4ff61757e9e6a69b696fab9652747897b7f2faf1a54f4c401b140f6a24",
+      "sha256": "861665e62c9eaa480726fd2978566fdd0c241218b9c630df1dbd384b4ecf650d",
       "reopened_and_sliced": true
     },
     {
@@ -22,7 +22,7 @@
       "color": "灰色",
       "contents": "层板3：空白整板",
       "print_runs": 1,
-      "sha256": "16a9e9b97a32f7cb31e3bc38749a276a593744af08b4c05ec245b049a3f28932",
+      "sha256": "9c5dd96f37b2d987f228548757908521c20cdf77c88bceebf40a8440ea21483b",
       "reopened_and_sliced": true
     },
     {
@@ -92,7 +92,7 @@
   ],
   "print_runs": 11,
   "physical_solids": 46,
-  "estimated_total_hours": 33.14944444444444,
-  "estimated_total_filament_g": 1787.401374578476,
+  "estimated_total_hours": 33.044444444444444,
+  "estimated_total_filament_g": 1781.1153943538666,
   "gcode_included": false
 }

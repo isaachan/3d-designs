@@ -21,7 +21,7 @@ PARAMETERS = [
 ('BaseTipBottom','12 mm','底榫尖底半宽'),('BaseTipTop','9 mm','底榫尖顶半宽'),
 ('BackFrontOverlap','0.2 mm','背榫向前融合'),('BackRootFront','13 mm','背榫根前半高'),('BackRootRear','17 mm','背榫根后半高'),
 ('BackTipFront','10 mm','背榫尖前半高'),('BackTipRear','14 mm','背榫尖后半高'),
-('DeckEdgeGap','0.2 mm','层板与侧/背的每边间隙'),('DeckWidth','=GarageWidth-2*DeckEdgeGap','整层板宽'),
+('DeckEdgeGap','0.2 mm','层板左/前/后名义间隙；右侧另加DeckRightTrim'),('DeckWidth','=GarageWidth-2*DeckEdgeGap-DeckRightTrim','整层板宽，仅右边收短，孔位不变'),
 ('DeckDepth','=BackFront-2*DeckEdgeGap','整层板深'),('DeckThickness','5 mm','层板面厚，沿用v3'),
 ('DeckMarkingDepth','0.4 mm','层板停车线、编号和轮椅图案凹刻深'),('DeckBlueDepth','0.2 mm','双车位蓝色底区凹刻深'),
 ('DeckFirstZ','66 mm','首层底高，沿用v3'),('DeckPitch','63 mm','层距，沿用v3'),
@@ -47,6 +47,7 @@ PARAMETERS = [
 ('SignTextHeight','16 mm','两句竖向口号的统一字高，旋转后对应每列宽度'),('SignColumnGap','6 mm','两列文字之间的水平净距'),
 ('PrintBrim','4 mm','打印床四边预留brim'),('PrintBedWidth','235.5 mm','按附图较小X范围保守校核'),
 ('PrintBedDepth','256 mm','附图Y范围'),('PrintHeight','256 mm','按附图较小Z范围保守校核'),
+('DeckRightTrim','4 mm','三块层板右边缘额外收短量，不移动左边缘与四孔'),
 ]
 
 

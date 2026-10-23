@@ -58,6 +58,12 @@ def assembly(doc):
         plate=shapes[f'garage_deck_{lev}_Body'];z=evaluate(doc,f'DeckZ{lev}')
         local=doc.getObject(f'garage_deck_{lev}_Body').Shape
         box=local.optimalBoundingBox();thickness=evaluate(doc,'DeckThickness')
+        assert abs(plate.BoundBox.XMin-evaluate(doc,'DeckEdgeGap'))<1e-6
+        assert abs(evaluate(doc,'GarageWidth')-plate.BoundBox.XMax-evaluate(doc,'DeckEdgeGap+DeckRightTrim'))<1e-6
+        holes=next(o for o in doc.getObject(f'garage_deck_{lev}_Body').Group if o.TypeId=='Sketcher::SketchObject' and o.Name.startswith('Sketch_FourLocatingHoles'))
+        for circle,(x,y) in zip(holes.Geometry,CENTRES):
+            assert abs(circle.Center.x+evaluate(doc,'DeckEdgeGap')-evaluate(doc,x))<1e-6
+            assert abs(circle.Center.y+evaluate(doc,'DeckEdgeGap')-evaluate(doc,y))<1e-6
         assert abs(box.ZMin)<1e-6 and abs(box.ZMax-thickness)<1e-6
         expected=(evaluate(doc,'DeckWidth')*evaluate(doc,'DeckDepth')-4*3.141592653589793*evaluate(doc,'HoleRadius')**2)*thickness
         from parking_markings import check as check_parking
@@ -77,9 +83,13 @@ def assembly(doc):
         for n,(x,y) in enumerate(CENTRES,1):
             slab=Part.makeCylinder(evaluate(doc,'CollarRadius'),.05,App.Vector(evaluate(doc,x),evaluate(doc,y),z))
             area=plate.common(slab).Volume/.05
-            target=3.141592653589793*(evaluate(doc,'CollarRadius')**2-evaluate(doc,'HoleRadius')**2)
+            full_area=3.141592653589793*(evaluate(doc,'CollarRadius')**2-evaluate(doc,'HoleRadius')**2)
+            # Right trim clips a small cap of the right collars; retain >=99% bearing.
+            outline=Part.makeBox(evaluate(doc,'DeckWidth'),evaluate(doc,'DeckDepth'),.05,App.Vector(evaluate(doc,'DeckEdgeGap'),evaluate(doc,'DeckEdgeGap'),z))
+            target=slab.common(outline).Volume/.05-3.141592653589793*evaluate(doc,'HoleRadius')**2
+            assert target/full_area>=.99,(lev,n,target,full_area)
             assert abs(area-target)<.01,(area,target)
-            contacts.append(dict(level=lev,column=n,bearing_area_mm2=round(area,3)))
+            contacts.append(dict(level=lev,column=n,bearing_area_mm2=round(area,3),full_collar_bearing_fraction=area/full_area))
     # Explicitly check the two requested viewing/mounting directions.
     sign=shapes['book_depot_sign_Body'];sb=sign.optimalBoundingBox()
     assert abs(sb.YMin)<1e-5 and abs(sb.YLength-evaluate(doc,'SignMountDepth'))<1e-5
@@ -147,7 +157,7 @@ def parameter_test(doc):
     assert abs(y-147)<1e-5,y
     set_value(doc,'OverallDepth','170 mm')
     set_value(doc,'GarageWidth','202 mm')
-    assert abs(doc.garage_deck_1_Body.Shape.BoundBox.XLength-201.6)<1e-5
+    assert abs(doc.garage_deck_1_Body.Shape.BoundBox.XLength-evaluate(doc,'DeckWidth'))<1e-5
     assert abs(doc.module_2.getGlobalPlacement().Base.x-202)<1e-5
     assert abs(evaluate(doc,'BookModuleWidth')-144)<1e-5
     set_value(doc,'GarageWidth','200 mm')
