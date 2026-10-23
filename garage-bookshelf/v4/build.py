@@ -74,7 +74,7 @@ def column(body,top=False):
 
 def build():
     doc=App.newDocument('GarageBookshelfV4');create(doc)
-    main=group(doc,'Modules','01 主体：200 + 170 + 170 mm')
+    main=group(doc,'Modules','01 主体：200 + 145 + 145 mm')
     for i,x in [(1,'Zero'),(2,'GarageWidth'),(3,'GarageWidth+BookModuleWidth')]:
         _,b=part(doc,main,f'module_{i}',f'主体模块 {i}',(x,'Zero','Zero'));module(b,i)
     garage=group(doc,'Garage','02 三块整片层板与分段立柱')
@@ -92,7 +92,7 @@ def build():
         _,b=part(doc,board,'billboard_post_'+side,'广告牌支架 '+side,(x,'BillboardY','PostBottom'),color='billboard');cosmetics.box(b,'PostWidth','PostThickness','PostHeight')
     cosmetics.text(doc,board,'billboard_text_lovely_cars','Lovely Cars 白字',332)
     cosmetics.text(doc,board,'billboard_text_ive_driven',"I've Driven 白字",304)
-    signs=group(doc,'Signs','04 右侧外挂蓝牌（不计入540mm主体）')
+    signs=group(doc,'Signs','04 右侧外挂蓝牌（不计入490mm主体）')
     _,b=part(doc,signs,'book_depot_sign','朝向使用者的右侧外挂蓝牌',('SignX','SignFrontY','SignZ'),color='sign')
     cosmetics.box(b,'SignWidth','SignThickness','SignHeight')
     pad(b,'Pad_ExternalMountingReturn',rectangle(b,'Sketch_ExternalMountingReturn','SignThickness','SignMountDepth-SignThickness',origin=('Zero','SignThickness')),'SignHeight')

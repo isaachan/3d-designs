@@ -35,7 +35,7 @@ def assembly(doc):
     dims=[bb.XLength,bb.YLength,bb.ZLength]
     assert all(abs(a-b)<1e-5 for a,b in zip(dims,[evaluate(doc,'OverallEnvelopeWidth'),170,364])),dims
     mb=Part.makeCompound([shapes[f'module_{i}_Body'] for i in (1,2,3)]).optimalBoundingBox()
-    assert all(abs(a-b)<1e-5 for a,b in zip([mb.XLength,mb.YLength,mb.ZLength],[540,170,238]))
+    assert all(abs(a-b)<1e-5 for a,b in zip([mb.XLength,mb.YLength,mb.ZLength],[490,170,238]))
     # The former four triangular root gussets must leave the book opening clear.
     clear_region=Part.makeBox(evaluate(doc,'BookWidth-2*WallThickness')-.2,
         evaluate(doc,'BackFront')-1, evaluate(doc,'OverallHeight-BaseThickness')-.2,
@@ -135,7 +135,7 @@ def assembly(doc):
         area=post.common(strip).Volume/.05
         assert abs(area-evaluate(doc,'PostWidth')*evaluate(doc,'OverallHeight-PostBottom'))<.001
         mounting.append(dict(side=side,post_front_y_mm=pb.YMin,back_rear_y_mm=evaluate(doc,'BackRear'),post_rear_y_mm=pb.YMax,back_glue_contact_mm2=area))
-    requested_orientation=dict(blue_sign_front_normal=[0,-1,0],blue_sign_front_y_mm=sb.YMin,blue_sign_x_range_mm=[sb.XMin,sb.XMax],blue_sign_excluded_from_540mm_main_body=True,book_opening_overlap_mm3=0,sign_to_right_outer_wall_contact_mm2=glue,posts_behind_back=mounting,deck_bracket_slots_removed=True,blue_sign_lettering=slogan_check)
+    requested_orientation=dict(blue_sign_front_normal=[0,-1,0],blue_sign_front_y_mm=sb.YMin,blue_sign_x_range_mm=[sb.XMin,sb.XMax],blue_sign_excluded_from_main_body=True,main_body_width_mm=evaluate(doc,'OverallWidth'),book_opening_overlap_mm3=0,sign_to_right_outer_wall_contact_mm2=glue,posts_behind_back=mounting,deck_bracket_slots_removed=True,blue_sign_lettering=slogan_check)
     return dict(bounds_mm=[bb.XMin,bb.YMin,bb.ZMin,bb.XMax,bb.YMax,bb.ZMax],dimensions_mm=dims,main_body_dimensions_mm=[mb.XLength,mb.YLength,mb.ZLength],interfering_pairs=bad,book_root_rib_removal=root_rib_removal,requested_orientation=requested_orientation,module_insertion_paths=paths,deck_lowering_paths=deck_paths,collar_contact_areas=contacts,plain_parking_decks=plain_decks)
 
 
@@ -149,15 +149,20 @@ def parameter_test(doc):
     set_value(doc,'GarageWidth','202 mm')
     assert abs(doc.garage_deck_1_Body.Shape.BoundBox.XLength-201.6)<1e-5
     assert abs(doc.module_2.getGlobalPlacement().Base.x-202)<1e-5
-    assert abs(evaluate(doc,'BookModuleWidth')-169)<1e-5
+    assert abs(evaluate(doc,'BookModuleWidth')-144)<1e-5
     set_value(doc,'GarageWidth','200 mm')
+    set_value(doc,'OverallWidth','500 mm')
+    assert abs(evaluate(doc,'BookModuleWidth')-150)<1e-5
+    assert abs(doc.book_depot_sign.getGlobalPlacement().Base.x-500)<1e-5
+    assert abs(doc.module_3.getGlobalPlacement().Base.x-350)<1e-5
+    set_value(doc,'OverallWidth','490 mm')
     set_value(doc,'SignWidth','52 mm')
     assert abs(doc.book_depot_sign_Body.Shape.BoundBox.XLength-52)<1e-5
     profiles=[o for o in doc.book_depot_sign_Body.Group if o.TypeId=='Sketcher::SketchObject' and 'SignLine' in o.PropertiesList and o.SignLine in (1,2)]
     assert abs(Part.makeCompound([p.Shape for p in profiles]).BoundBox.Center.x-26)<1e-6
     set_value(doc,'SignWidth','48 mm')
     native(doc)
-    return dict(sign_48_to_52_to_48='passed',lettering_stays_centred=True,depth_170_to_172_to_170='passed',garage_200_to_202_to_200='passed',body_deck_columns_and_modules_follow=True)
+    return dict(overall_width_490_to_500_to_490='passed',sign_48_to_52_to_48='passed',lettering_stays_centred=True,depth_170_to_172_to_170='passed',garage_200_to_202_to_200='passed',body_deck_columns_and_modules_follow=True)
 
 
 def export(doc):

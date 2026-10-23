@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "book_section_before_mm": 340,
+  "book_section_after_mm": 290,
+  "book_section_reduction_mm": 50,
+  "clear_book_opening_before_mm": 328,
+  "clear_book_opening_after_mm": 278,
+  "main_body_dimensions_mm": [
+    490.00000020000004,
+    170.0000002,
+    238.00000020000002
+  ],
+  "overall_dimensions_mm": [
+    538.0000001,
+    170.0000002,
+    364.0000001
+  ],
+  "book_module_reduction_each_mm": 25,
+  "unmodified_print_parts": [
+    "module_1",
+    "garage_deck_1",
+    "garage_deck_2",
+    "garage_deck_3",
+    "column_1_segment_1",
+    "column_1_segment_2",
+    "column_1_segment_3",
+    "column_1_segment_4",
+    "column_2_segment_1",
+    "column_2_segment_2",
+    "column_2_segment_3",
+    "column_2_segment_4",
+    "column_3_segment_1",
+    "column_3_segment_2",
+    "column_3_segment_3",
+    "column_3_segment_4",
+    "column_4_segment_1",
+    "column_4_segment_2",
+    "column_4_segment_3",
+    "column_4_segment_4",
+    "billboard",
+    "billboard_post_left",
+    "billboard_post_right",
+    "billboard_text_lovely_cars",
+    "billboard_text_ive_driven"
+  ],
+  "preserved_local_support_project_sha256": "74270749b0636513fee7a662e65d7139e24d571ee27111b2ac4f5a7eaf204561",
+  "changed_3mf_reopened_and_sliced": [
+    "03-book-left",
+    "04-book-right",
+    "09-blue-slogan-sign"
+  ]
+}

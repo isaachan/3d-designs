@@ -1,5 +1,5 @@
 {
-  "cad_sha256": "064b3abc04cc455de9ffd35469ccec364f6fe00ae6ec2fd74484f9f8391d4be3",
+  "cad_sha256": "b6f194eff750dc54e4b3c6827a1fd9e67662e455d416bb622093e6f7d218e97e",
   "projects": [
     {
       "project": "01a-garage-deck-1-two-bays.3mf",
@@ -38,7 +38,7 @@
       "color": "灰色",
       "contents": "书架左模块（含隔板）",
       "print_runs": 1,
-      "sha256": "f1c431e77799208cef13214ce64cac2fb4fb9de707a9e57f3dcf615e5e8e435c",
+      "sha256": "87c97f55513ad6982c45268783deadda915a8d1836ee2517b4a82aece8d7d1ed",
       "reopened_and_sliced": true
     },
     {
@@ -46,7 +46,7 @@
       "color": "灰色",
       "contents": "书架右模块（含右侧板）",
       "print_runs": 1,
-      "sha256": "008fdb90f6fce20086296b2ae4f7770c804146015d9aec01687f8be210ac4068",
+      "sha256": "ade840766665eecf4d2fc056bf45827d264aa0fa54df2e89d55007f131f444b0",
       "reopened_and_sliced": true
     },
     {
@@ -86,13 +86,13 @@
       "color": "蓝色",
       "contents": "两句竖向凹刻口号蓝牌 ×1",
       "print_runs": 1,
-      "sha256": "26ea935a93183f42fd96e6b44e6cdb0aacd84e0465b9cb4a6511b732dbc5736d",
+      "sha256": "c92135250377869beee16ab2bb8c3adc777965e28b69dfd53a1e83f2d0504cd9",
       "reopened_and_sliced": true
     }
   ],
   "print_runs": 11,
   "physical_solids": 46,
-  "estimated_total_hours": 34.118611111111115,
-  "estimated_total_filament_g": 1861.096473455429,
+  "estimated_total_hours": 33.14944444444444,
+  "estimated_total_filament_g": 1787.401374578476,
   "gcode_included": false
 }

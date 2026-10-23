@@ -11,7 +11,7 @@ def package_delivery(report):
               '承托柱段 ×12','封顶柱段 ×4','广告牌 ×1＋背面支架 ×2','两行白字，共20个独立字形','两句竖向凹刻口号蓝牌 ×1']
     assert report['status']=='passed' and len(report['projects'])==11
     lines=['# garage-bookshelf v4 · X2D 打印 3MF', '',
-           '这套文件对应已确认的 v4 CAD：540 mm 主体、48 mm 外挂蓝牌，两句口号竖向排列；书架底部四处 RootRib 三角肋已移除。', '',
+           '这套文件对应 v4 CAD：490 mm 主体（200 mm 车库＋290 mm 书架）、48 mm 外挂蓝牌；书架较原版缩短50 mm，两句口号竖向排列；书架底部四处 RootRib 三角肋已移除。', '',
            '共 **11 个 3MF 项目、11 次打印、46 个实体**。每个项目只使用一种颜色，无需 AMS。', '',
            '## 打印方法', '',
            '1. 在 Bambu Studio 中以「打开项目」方式打开对应 3MF，保留项目内的打印配置和排盘。',
@@ -38,15 +38,18 @@ def package_delivery(report):
               '每个保存后的3MF均被重新加载并实际离线切片；验证时没有另行加载STL，也没有覆盖项目内预设。检查了单盘对象数、无模型切片警告、单一耗材、毫米单位，以及带4mm brim的排盘范围。',
               '完整的X2D启动/结束模板、PLA参数、喷嘴状态及颜色均保存在3MF内。压缩包不含打印G-code，打开项目后可按实际机器重新切片。', '',
               '喷嘴状态采用每个热端各一个标准0.4mm喷嘴的离线配置，各盘使用主喷嘴。尚未进行实物打印。', '']
+    if any(Path(row['project']).parent.name!='bambu-projects' for row in report['projects']):
+        lines += ['本地 `bambu-projects/` 中另有用户修改过的项目，已原样保留。完整 ZIP 和同名解压目录使用 SHA256 匹配既有验证记录的标准项目；打印完整套件时以完整交付包为准。', '']
     (output/'README.md').write_text('\n'.join(lines))
     (output/'print-manifest.json').write_text(json.dumps(dict(cad_sha256=report['cad_sha256'],projects=manifest,
         print_runs=11,physical_solids=46,estimated_total_hours=seconds/3600,
         estimated_total_filament_g=mass,gcode_included=False),ensure_ascii=False,indent=2))
     archive=ROOT/'garage-bookshelf-v4-X2D-print-3mf.zip'
+    validated_sources={Path(row['project']).name:ROOT/row['project'] for row in report['projects']}
     with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:
         for file in sorted(output.iterdir()):
             if file.suffix in ('.3mf','.png','.md','.json'):
-                z.write(file,'garage-bookshelf-v4-X2D-print-3mf/'+file.name)
+                z.write(validated_sources.get(file.name,file),'garage-bookshelf-v4-X2D-print-3mf/'+file.name)
         for name in ('assembly-preview.png','blue-sign-preview.png','parking-deck-1-preview.png','parking-deck-2-preview.png'):
             z.write(ROOT/'reports'/name,'garage-bookshelf-v4-X2D-print-3mf/previews/'+name)
     delivery=ROOT/'garage-bookshelf-v4-X2D-print-3mf'
@@ -54,7 +57,9 @@ def package_delivery(report):
     keep={p.name for p in output.iterdir() if p.suffix in ('.3mf','.png','.md','.json')}
     for p in delivery.iterdir():
         if p.is_file() and p.suffix in ('.3mf','.png','.md','.json') and p.name not in keep:p.unlink()
-    for name in keep:shutil.copy2(output/name,delivery/name)
+    for name in keep:
+        source=validated_sources.get(name,output/name)
+        if source.resolve()!=(delivery/name).resolve():shutil.copy2(source,delivery/name)
     previews=delivery/'previews';previews.mkdir(exist_ok=True)
     for name in ('assembly-preview.png','blue-sign-preview.png','parking-deck-1-preview.png','parking-deck-2-preview.png'):
         shutil.copy2(ROOT/'reports'/name,previews/name)

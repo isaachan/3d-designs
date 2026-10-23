@@ -1,6 +1,6 @@
 # garage-bookshelf v4 · X2D 打印 3MF
 
-这套文件对应已确认的 v4 CAD：540 mm 主体、48 mm 外挂蓝牌，两句口号竖向排列；书架底部四处 RootRib 三角肋已移除。
+这套文件对应 v4 CAD：490 mm 主体（200 mm 车库＋290 mm 书架）、48 mm 外挂蓝牌；书架较原版缩短50 mm，两句口号竖向排列；书架底部四处 RootRib 三角肋已移除。
 
 共 **11 个 3MF 项目、11 次打印、46 个实体**。每个项目只使用一种颜色，无需 AMS。
 
@@ -18,15 +18,15 @@
 | [01b-garage-deck-2-three-bays.3mf](01b-garage-deck-2-three-bays.3mf) | 灰色 | 层板2：三车位 | 1 | 2小时7分 | 106.2 g |
 | [01c-garage-deck-3-plain.3mf](01c-garage-deck-3-plain.3mf) | 灰色 | 层板3：空白整板 | 1 | 1小时48分 | 102.9 g |
 | [02-garage-base.3mf](02-garage-base.3mf) | 灰色 | 车库底背一体模块 | 1 | 6小时17分 | 369.4 g |
-| [03-book-left.3mf](03-book-left.3mf) | 灰色 | 书架左模块（含隔板） | 1 | 8小时21分 | 487.2 g |
-| [04-book-right.3mf](04-book-right.3mf) | 灰色 | 书架右模块（含右侧板） | 1 | 8小时8分 | 478.8 g |
+| [03-book-left.3mf](03-book-left.3mf) | 灰色 | 书架左模块（含隔板） | 1 | 7小时54分 | 450.5 g |
+| [04-book-right.3mf](04-book-right.3mf) | 灰色 | 书架右模块（含右侧板） | 1 | 7小时36分 | 441.8 g |
 | [05-support-segments-twelve.3mf](05-support-segments-twelve.3mf) | 黄色 | 承托柱段 ×12 | 1 | 2小时27分 | 91.2 g |
 | [06-top-segments-four.3mf](06-top-segments-four.3mf) | 黄色 | 封顶柱段 ×4 | 1 | 0小时27分 | 15.6 g |
 | [07-billboard-and-posts-black.3mf](07-billboard-and-posts-black.3mf) | 黑色 | 广告牌 ×1＋背面支架 ×2 | 1 | 1小时26分 | 77.0 g |
 | [08-billboard-lettering-white.3mf](08-billboard-lettering-white.3mf) | 白色 | 两行白字，共20个独立字形 | 1 | 0小时18分 | 3.2 g |
 | [09-blue-slogan-sign.3mf](09-blue-slogan-sign.3mf) | 蓝色 | 两句竖向凹刻口号蓝牌 ×1 | 1 | 0小时41分 | 24.2 g |
 
-全套累计切片估算：约 **34.1 小时、1.86 kg PLA**（每个项目打印一次）。实际耗时和耗材随机器、耗材及校准设置变化。
+全套累计切片估算：约 **33.1 小时、1.79 kg PLA**（每个项目打印一次）。实际耗时和耗材随机器、耗材及校准设置变化。
 
 ## 装配与颜色
 
@@ -41,3 +41,5 @@
 完整的X2D启动/结束模板、PLA参数、喷嘴状态及颜色均保存在3MF内。压缩包不含打印G-code，打开项目后可按实际机器重新切片。
 
 喷嘴状态采用每个热端各一个标准0.4mm喷嘴的离线配置，各盘使用主喷嘴。尚未进行实物打印。
+
+本地 `bambu-projects/` 中另有用户修改过的项目，已原样保留。完整 ZIP 和同名解压目录使用 SHA256 匹配既有验证记录的标准项目；打印完整套件时以完整交付包为准。

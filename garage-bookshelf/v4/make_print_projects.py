@@ -1,7 +1,7 @@
 """Complete single-colour X2D projects; validation reopens the saved 3MF itself.
 No printer connection is used. Temporary validation G-code is not delivered.
 """
-import hashlib,json,re,shutil,subprocess,tempfile,zipfile
+import argparse,hashlib,json,re,shutil,subprocess,tempfile,zipfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
 CLI=Path('/Applications/BambuStudio.app/Contents/MacOS/BambuStudio')
@@ -93,14 +93,30 @@ def read_settings(project,color,supports):
     return {key:s.get(key) for key in keys}
 
 
-def main():
+def main(only=None):
     machine,processes,filaments=prepare_profiles()
     output=ROOT/'bambu-projects';output.mkdir(exist_ok=True)
     logs=ROOT/'reports/slicing';logs.mkdir(exist_ok=True)
     source=ROOT/'print-stl';reports=[]
+    previous={}
+    if only:
+        assert set(only)<={p[0] for p in PLATES}
+        previous={Path(p['project']).stem:p for p in json.loads((ROOT/'slicer-validation.json').read_text())['projects']}
     with tempfile.TemporaryDirectory(prefix='garage-v4-print-') as scratch:
         temp=Path(scratch);staged=temp/'projects';staged.mkdir()
         for name,color,files,runs,supports in PLATES:
+            if only and name not in only:
+                row=dict(previous[name],validation_reused_with_matching_source_and_project_hashes=True)
+                assert row['slice_status']=='passed'
+                assert all(sha(source/f)==h for f,h in row['input_sha256'].items()),f'{name}: source changed; regenerate this plate'
+                project=ROOT/row['project']
+                if sha(project)!=row['project_sha256']:
+                    # Retain a locally customized project; use its last validated delivery copy.
+                    project=ROOT/'garage-bookshelf-v4-X2D-print-3mf'/project.name
+                    assert sha(project)==row['project_sha256'],f'{name}: no unchanged validated copy'
+                    row=dict(row,project=str(project.relative_to(ROOT)))
+                reports.append(row)
+                continue
             print(f'Preparing and reopening {name} ({color})',flush=True)
             project=staged/(name+'.3mf')
             run_cli(['--load-settings',f'{machine};{processes[supports]}','--load-filaments',filaments[color],
@@ -140,4 +156,7 @@ def main():
     package_delivery(report)
     print(f'PASS {len(reports)} saved 3MF projects; {sum(p["print_runs"] for p in reports)} print runs',flush=True)
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--only',nargs='+',choices=[p[0] for p in PLATES],help='Regenerate selected plates, checking hashes of reused plates and source meshes')
+    main(parser.parse_args().only)

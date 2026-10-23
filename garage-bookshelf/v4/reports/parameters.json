@@ -6,8 +6,8 @@
   },
   {
     "alias": "OverallWidth",
-    "value": "540 mm",
-    "description": "主体总长，不含外挂蓝牌"
+    "value": "490 mm",
+    "description": "主体总长，不含外挂蓝牌；书架段由340缩至290mm"
   },
   {
     "alias": "GarageWidth",

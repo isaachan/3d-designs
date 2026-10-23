@@ -5,7 +5,7 @@ from pathlib import Path
 
 PARAMETERS = [
 ('Zero','0 mm','坐标基准'),
-('OverallWidth','540 mm','主体总长，不含外挂蓝牌'),('GarageWidth','200 mm','车库段占地长'),
+('OverallWidth','490 mm','主体总长，不含外挂蓝牌；书架段由340缩至290mm'),('GarageWidth','200 mm','车库段占地长'),
 ('BookWidth','=OverallWidth-GarageWidth','书架段占地长，含两侧6mm板'),
 ('BookModuleWidth','=BookWidth/2','两块书架主体等分'),
 ('OverallDepth','170 mm','总深，含广告牌'),('OverallHeight','238 mm','主体高，沿用v3'),

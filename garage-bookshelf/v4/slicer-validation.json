@@ -2,7 +2,7 @@
   "status": "passed",
   "bambu_studio": "02.08.02.61",
   "printer": "Bambu Lab X2D, standard 0.4 mm nozzles",
-  "cad_sha256": "064b3abc04cc455de9ffd35469ccec364f6fe00ae6ec2fd74484f9f8391d4be3",
+  "cad_sha256": "b6f194eff750dc54e4b3c6827a1fd9e67662e455d416bb622093e6f7d218e97e",
   "projects": [
     {
       "project": "bambu-projects/01a-garage-deck-1-two-bays.3mf",
@@ -62,7 +62,8 @@
       "print_runs": 1,
       "slicer_warnings": [],
       "estimated_seconds": 7549,
-      "estimated_filament_g": 105.49566650390625
+      "estimated_filament_g": 105.49566650390625,
+      "validation_reused_with_matching_source_and_project_hashes": true
     },
     {
       "project": "bambu-projects/01b-garage-deck-2-three-bays.3mf",
@@ -122,7 +123,8 @@
       "print_runs": 1,
       "slicer_warnings": [],
       "estimated_seconds": 7639,
-      "estimated_filament_g": 106.20106506347656
+      "estimated_filament_g": 106.20106506347656,
+      "validation_reused_with_matching_source_and_project_hashes": true
     },
     {
       "project": "bambu-projects/01c-garage-deck-3-plain.3mf",
@@ -182,7 +184,8 @@
       "print_runs": 1,
       "slicer_warnings": [],
       "estimated_seconds": 6495,
-      "estimated_filament_g": 102.89419555664062
+      "estimated_filament_g": 102.89419555664062,
+      "validation_reused_with_matching_source_and_project_hashes": true
     },
     {
       "project": "bambu-projects/02-garage-base.3mf",
@@ -242,18 +245,19 @@
       "print_runs": 1,
       "slicer_warnings": [],
       "estimated_seconds": 22636,
-      "estimated_filament_g": 369.3890686035156
+      "estimated_filament_g": 369.3890686035156,
+      "validation_reused_with_matching_source_and_project_hashes": true
     },
     {
       "project": "bambu-projects/03-book-left.3mf",
-      "project_sha256": "f1c431e77799208cef13214ce64cac2fb4fb9de707a9e57f3dcf615e5e8e435c",
+      "project_sha256": "87c97f55513ad6982c45268783deadda915a8d1836ee2517b4a82aece8d7d1ed",
       "color": "gray",
       "input_files": [
         "module_2.stl"
       ],
       "object_count": 1,
       "input_sha256": {
-        "module_2.stl": "1b51f02180056c4b785873fc177f9cd755ca4612d5278714eb089000d0ef8195"
+        "module_2.stl": "f6816712dfed7550352cefb188fbf53340dca4521b2c59bf9a05c3c547627809"
       },
       "settings": {
         "printer_model": "Bambu Lab X2D",
@@ -301,19 +305,19 @@
       "reload_profile_overrides": false,
       "print_runs": 1,
       "slicer_warnings": [],
-      "estimated_seconds": 30070,
-      "estimated_filament_g": 487.23809814453125
+      "estimated_seconds": 28455,
+      "estimated_filament_g": 450.4999694824219
     },
     {
       "project": "bambu-projects/04-book-right.3mf",
-      "project_sha256": "008fdb90f6fce20086296b2ae4f7770c804146015d9aec01687f8be210ac4068",
+      "project_sha256": "ade840766665eecf4d2fc056bf45827d264aa0fa54df2e89d55007f131f444b0",
       "color": "gray",
       "input_files": [
         "module_3.stl"
       ],
       "object_count": 1,
       "input_sha256": {
-        "module_3.stl": "9dbdd80295c7137693fa63dcc53984cd49f7434f9c188fc8e996472a933fbb64"
+        "module_3.stl": "f877f1ce50cc77b5690e7ec6f53163128d903ed23ec76a83a2615f3ddb681f92"
       },
       "settings": {
         "printer_model": "Bambu Lab X2D",
@@ -361,11 +365,11 @@
       "reload_profile_overrides": false,
       "print_runs": 1,
       "slicer_warnings": [],
-      "estimated_seconds": 29251,
-      "estimated_filament_g": 478.7605285644531
+      "estimated_seconds": 27377,
+      "estimated_filament_g": 441.80377197265625
     },
     {
-      "project": "bambu-projects/05-support-segments-twelve.3mf",
+      "project": "garage-bookshelf-v4-X2D-print-3mf/05-support-segments-twelve.3mf",
       "project_sha256": "b2dd2e588e9f4c671674193b32d9ec4374f01ff1dd9cc3ea5df91693c25c48fd",
       "color": "yellow",
       "input_files": [
@@ -433,7 +437,8 @@
       "print_runs": 1,
       "slicer_warnings": [],
       "estimated_seconds": 8848,
-      "estimated_filament_g": 91.22473907470703
+      "estimated_filament_g": 91.22473907470703,
+      "validation_reused_with_matching_source_and_project_hashes": true
     },
     {
       "project": "bambu-projects/06-top-segments-four.3mf",
@@ -496,7 +501,8 @@
       "print_runs": 1,
       "slicer_warnings": [],
       "estimated_seconds": 1604,
-      "estimated_filament_g": 15.585352897644043
+      "estimated_filament_g": 15.585352897644043,
+      "validation_reused_with_matching_source_and_project_hashes": true
     },
     {
       "project": "bambu-projects/07-billboard-and-posts-black.3mf",
@@ -560,7 +566,8 @@
       "print_runs": 1,
       "slicer_warnings": [],
       "estimated_seconds": 5171,
-      "estimated_filament_g": 76.95841217041016
+      "estimated_filament_g": 76.95841217041016,
+      "validation_reused_with_matching_source_and_project_hashes": true
     },
     {
       "project": "bambu-projects/08-billboard-lettering-white.3mf",
@@ -622,18 +629,19 @@
       "print_runs": 1,
       "slicer_warnings": [],
       "estimated_seconds": 1085,
-      "estimated_filament_g": 3.188397169113159
+      "estimated_filament_g": 3.188397169113159,
+      "validation_reused_with_matching_source_and_project_hashes": true
     },
     {
       "project": "bambu-projects/09-blue-slogan-sign.3mf",
-      "project_sha256": "26ea935a93183f42fd96e6b44e6cdb0aacd84e0465b9cb4a6511b732dbc5736d",
+      "project_sha256": "c92135250377869beee16ab2bb8c3adc777965e28b69dfd53a1e83f2d0504cd9",
       "color": "blue",
       "input_files": [
         "book_depot_sign.stl"
       ],
       "object_count": 1,
       "input_sha256": {
-        "book_depot_sign.stl": "1d722bcebad3cd9be5996590c1a90c76e1a35219522053258ba8655860b1ac61"
+        "book_depot_sign.stl": "408a9cd0aa5be56157be620f2c27535319b85efa4265520cbd9b050887ec7797"
       },
       "settings": {
         "printer_model": "Bambu Lab X2D",
@@ -682,7 +690,7 @@
       "print_runs": 1,
       "slicer_warnings": [],
       "estimated_seconds": 2479,
-      "estimated_filament_g": 24.16094970703125
+      "estimated_filament_g": 24.160736083984375
     }
   ],
   "gcode_delivered": false,

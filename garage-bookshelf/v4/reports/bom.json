@@ -14,7 +14,7 @@
     "quantity": 1,
     "print_file": "print-stl/module_2.stl",
     "dimensions_mm": [
-      183.79998779296875,
+      158.79998779296875,
       170.0,
       238.0
     ]
@@ -24,7 +24,7 @@
     "quantity": 1,
     "print_file": "print-stl/module_3.stl",
     "dimensions_mm": [
-      170.0,
+      145.0,
       170.0,
       238.0
     ]
