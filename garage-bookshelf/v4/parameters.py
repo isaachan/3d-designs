@@ -13,7 +13,7 @@ PARAMETERS = [
 ('BackRear','=OverallDepth-PostThickness','背板后表面，后方留支架厚度'),('BackFront','=BackRear-BackThickness','背板前表面'),('Overlap','0.2 mm','同一Body融合余量'),
 ('WallStart','=BaseThickness-Overlap','背板/侧板起高'),('WallPadLength','=OverallHeight-WallStart','竖板拉伸高'),
 ('PanelDepth','=BackFront','隔板深'),
-('TongueLength','14 mm','主体公榫长'),('SocketDepth','15 mm','主体母槽长'),('FitClearance','0.4 mm','燕尾槽名义总侧隙'),
+('TongueLength','14 mm','主体公榫长'),('SocketDepth','=TongueLength+SocketEndGap','主体母槽总深，配合段等长，槽尾另留余量'),('FitClearance','0.3 mm','F组燕尾槽名义总侧隙'),
 ('HalfClearance','=FitClearance/2','燕尾单侧间隙'),('SocketOvercut','0.2 mm','母槽上下越界'),
 ('BaseJointY1','42 mm','底榫中心1'),('BaseJointY2','=OverallDepth-42 mm','底榫中心2'),
 ('BackJointZ1','66 mm','背榫中心1'),('BackJointZ2','180 mm','背榫中心2'),
@@ -48,6 +48,7 @@ PARAMETERS = [
 ('PrintBrim','4 mm','打印床四边预留brim'),('PrintBedWidth','235.5 mm','按附图较小X范围保守校核'),
 ('PrintBedDepth','256 mm','附图Y范围'),('PrintHeight','256 mm','按附图较小Z范围保守校核'),
 ('DeckRightTrim','4 mm','三块层板右边缘额外收短量，不移动左边缘与四孔'),
+('SocketEndGap','0.2 mm','F组槽底余量；等截面延伸，不改变配合段锥度'),
 ]
 
 
@@ -73,8 +74,8 @@ def create(doc):
 
 
 def set_value(doc,alias,value):
-    row=next(i for i,p in enumerate(PARAMETERS,2) if p[0]==alias)
-    doc.DesignParameters.set(f'B{row}',value);doc.recompute()
+    cell=doc.DesignParameters.getCellFromAlias(alias)
+    doc.DesignParameters.set(cell,value);doc.recompute()
 
 
 def describe(root):
