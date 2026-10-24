@@ -71,7 +71,7 @@ def engrave_sign_sketches(body,sketches):
     doc=body.Document;blank_volume=body.Shape.Volume
     area=sum(Part.makeFace(sketch.Shape.Wires,'Part::FaceMakerBullseye').Area for sketch in sketches)
     binder=body.newObject('PartDesign::SubShapeBinder','Binder_SignLettering')
-    binder.Label='口号轮廓集合（28个字形草图）'
+    binder.Label=f'口号轮廓集合（{len(sketches)}个字形草图）'
     binder.Support=[(sketch,[]) for sketch in sketches]
     doc.recompute()
     feature=body.newObject('PartDesign::Pocket','Pocket_EngravedSlogan')

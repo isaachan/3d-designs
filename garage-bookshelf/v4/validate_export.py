@@ -98,9 +98,9 @@ def assembly(doc):
     front=[f for f in sign.Faces if abs(f.CenterOfMass.y)<1e-5 and f.normalAt(0,0).y<-.99]
     # Pocket openings can split the remaining front face (e.g. inside O and R).
     lettering=json.loads((ROOT/'reference/sign-lettering.json').read_text())
-    assert doc.book_depot_sign_Body.EngravedSlogan==lettering['slogan']=='NO HORSEPOWER. ONLY BRAINPOWER.'
+    assert doc.book_depot_sign_Body.EngravedSlogan==lettering['slogan']=='HORSEPOWER LEFT, BRAINPOWER RIGHT'
     assert lettering['rotation_degrees']==-90 and lettering['reading_direction']=='top_to_bottom'
-    assert [row['text'] for row in lettering['lines']]==['NO HORSEPOWER.','ONLY BRAINPOWER.']
+    assert [row['text'] for row in lettering['lines']]==['BRAINPOWER RIGHT','HORSEPOWER LEFT,']
     engraved_area=0.;line_checks=[];previous_box=None
     for index,row in enumerate(lettering['lines'],1):
         profiles=[o for o in doc.book_depot_sign_Body.Group if o.TypeId=='Sketcher::SketchObject' and 'SignLine' in o.PropertiesList and o.SignLine==index]

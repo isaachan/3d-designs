@@ -1,5 +1,7 @@
 # garage-bookshelf v4 · 49 cm 紧凑版
 
+**右侧字牌文字（2026-10-24）：** 正式 CAD 已改为全大写 **HORSEPOWER LEFT, BRAINPOWER RIGHT**。保留两列竖排、顺时针90°、自上而下阅读：左列 **BRAINPOWER RIGHT**，右列 **HORSEPOWER LEFT,**（转正阅读时，HORSEPOWER在上、BRAINPOWER在下）。保留可拆字牌、螺孔、0.4 mm凹刻深度与R3圆角；本次未重导打印文件。修改入口为 `update_side_slogan.py`，检查见 `reports/side-slogan-validation.json`。
+
 **外露轮廓圆角（2026-10-24，已确认保留）：** 仅修改三段主体、三块停车层板、广告牌及一体支架、上方可换字牌、右侧牌座和字牌。选定外露轮廓角采用 R3 mm，支架底端采用 R2 mm；未对所有棱边统一倒圆，立柱、文字、停车图案和外购金属件保持原状。拼接边保持齐平，F组榫卯配合面和层板承托面积保持不变。正式CAD已添加原生可编辑 Fillet 特征；本次修改脚本为 `round_exposed_corners.py`，检查见 `reports/exposed-corners-validation.json`。旧完整重建脚本尚不包含这版外观调整，不可直接覆盖当前正式CAD。STEP、STL及旧3MF预览不代表本轮试改结果。
 
 **正式CAD接头采用F组配合（2026-10-23）：** 主体两处拼接界面的底板、背板母槽统一采用名义总侧隙0.3 mm；公榫长14 mm，母槽总深14.2 mm。母槽的前14 mm保持与公榫一致的插入方向锥度，槽尾另作0.2 mm等截面延伸。仅更新现有正式FCStd及建模源代码，保留可拆字牌、螺丝和其他零件；未重新导出STEP、STL、3MF或预览。当前CAD检查见 `reports/F-fit-cad-validation.json`；下文旧的导出/切片验证均为历史结果。F组实物选择来自背板接头小样，底板接头仅完成几何检查。
@@ -71,7 +73,7 @@ v4 按本次尺寸要求重新设计，所有产物在本目录。保留 v3 的�
 
 ## 右侧蓝牌口号
 
-**NO HORSEPOWER. ONLY BRAINPOWER.**，正面朝使用者。两句话各保持完整一行，再顺时针旋转 90°，成为并排两列，均从上往下读：左列 **NO HORSEPOWER.**，右列 **ONLY BRAINPOWER.**。
+**HORSEPOWER LEFT, BRAINPOWER RIGHT**，正面朝使用者。两句话各保持完整一行，再顺时针旋转 90°，成为并排两列，均从上往下读：左列 **BRAINPOWER RIGHT**，右列 **HORSEPOWER LEFT,**（转正阅读时，HORSEPOWER在上、BRAINPOWER在下）。以下固定蓝牌尺寸、凹刻与打印参数为历史记录；当前正式可拆字牌以本页顶部更新及验证报告为准。
 
 蓝牌收窄为 **48 × 180 mm**。两句统一字高 **16 mm**，旋转后每列宽 16 mm，中间净距 **6 mm**，左右边距各 **5 mm**。句长约 **119.8 / 131.3 mm**；两列顶部对齐，最长一列上下余量各约 **24.4 mm**。28 个字形分别建立原生 Sketch，再经 SubShapeBinder 汇总为一个 Pocket，凹刻深 **0.6 mm**，2 mm 面板保留 **1.4 mm** 背厚，不增加零件数量。
 

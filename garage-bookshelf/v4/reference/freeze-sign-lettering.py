@@ -11,12 +11,13 @@ from matplotlib.font_manager import FontProperties
 from matplotlib.path import Path as MPath
 ROOT=Path(__file__).resolve().parent
 FONT=Path('/System/Library/Fonts/Supplemental/DIN Condensed Bold.ttf')
-LINES=[('NO HORSEPOWER.',16),('ONLY BRAINPOWER.',16)]
+# Clockwise vertical columns: the right column becomes the upper reading line.
+LINES=[('BRAINPOWER RIGHT',16),('HORSEPOWER LEFT,',16)]
 
 
 def flatten(points,tolerance):
     a=points[0];b=points[-1];chord=b-a;length=np.linalg.norm(chord)
-    distance=max((abs(np.cross(chord,p-a))/length if length else np.linalg.norm(p-a)) for p in points[1:-1])
+    distance=max((abs(chord[0]*(p-a)[1]-chord[1]*(p-a)[0])/length if length else np.linalg.norm(p-a)) for p in points[1:-1])
     if distance<=tolerance:return [b]
     levels=[points]
     while len(levels[-1])>1:levels.append((levels[-1][:-1]+levels[-1][1:])/2)
@@ -50,7 +51,7 @@ def main():
         assert sum(map(len,glyphs))==len(polygons)
         rows.append(dict(glyphs=glyphs,text=text,cap_height_mm=height,
                          width_per_cap_height=bb.width/bb.height,polygons=polygons))
-    output=dict(slogan='NO HORSEPOWER. ONLY BRAINPOWER.',rotation_degrees=-90,reading_direction='top_to_bottom',font='DIN Condensed Bold',
+    output=dict(slogan='HORSEPOWER LEFT, BRAINPOWER RIGHT',rotation_degrees=-90,reading_direction='top_to_bottom',font='DIN Condensed Bold',
                 source_font_sha256=hashlib.sha256(FONT.read_bytes()).hexdigest(),
                 maximum_outline_deviation_mm=.015,lines=rows)
     (ROOT/'sign-lettering.json').write_text(json.dumps(output,ensure_ascii=False,indent=2))
