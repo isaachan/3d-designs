@@ -1,0 +1,271 @@
+{
+  "status": "passed",
+  "trial": false,
+  "cad": "/Users/kai.han/code/3d-designs/garage-bookshelf/v4/garage-bookshelf-v4-assembly.FCStd",
+  "original_sha256": "aa6a0f6874f994a0afb18e3b1609fb7981400647562a899e2373f42112b0b0e0",
+  "rounded_sha256": "4f4320a0a335e6fc3873ab3eb5347274c18b9854506d879bc3278ba1406d49b4",
+  "body_count": 34,
+  "changed_bodies": [
+    "billboard_Body",
+    "garage_deck_1_Body",
+    "garage_deck_2_Body",
+    "garage_deck_3_Body",
+    "module_1_Body",
+    "module_2_Body",
+    "module_3_Body",
+    "side_cartridge_Body",
+    "side_receiver_Body",
+    "top_carrier_Body"
+  ],
+  "unchanged_bodies": [
+    "column_1_segment_1_Body",
+    "column_1_segment_2_Body",
+    "column_1_segment_3_Body",
+    "column_1_segment_4_Body",
+    "column_2_segment_1_Body",
+    "column_2_segment_2_Body",
+    "column_2_segment_3_Body",
+    "column_2_segment_4_Body",
+    "column_3_segment_1_Body",
+    "column_3_segment_2_Body",
+    "column_3_segment_3_Body",
+    "column_3_segment_4_Body",
+    "column_4_segment_1_Body",
+    "column_4_segment_2_Body",
+    "column_4_segment_3_Body",
+    "column_4_segment_4_Body",
+    "hardware_screw_1_Body",
+    "hardware_nut_1_Body",
+    "hardware_screw_2_Body",
+    "hardware_nut_2_Body",
+    "hardware_screw_3_Body",
+    "hardware_nut_3_Body",
+    "hardware_screw_4_Body",
+    "hardware_nut_4_Body"
+  ],
+  "fillets": [
+    {
+      "body": "module_1",
+      "feature": "Fillet_ExposedCorners",
+      "radius_mm": 3,
+      "edges": [
+        "Edge1",
+        "Edge11",
+        "Edge8"
+      ]
+    },
+    {
+      "body": "module_2",
+      "feature": "Fillet_ExposedCorners001",
+      "radius_mm": 3,
+      "edges": [
+        "Edge8"
+      ]
+    },
+    {
+      "body": "module_3",
+      "feature": "Fillet_ExposedCorners002",
+      "radius_mm": 3,
+      "edges": [
+        "Edge46",
+        "Edge14",
+        "Edge52",
+        "Edge51"
+      ]
+    },
+    {
+      "body": "garage_deck_1",
+      "feature": "Fillet_ExposedCorners003",
+      "radius_mm": 3,
+      "edges": [
+        "Edge1",
+        "Edge2",
+        "Edge5",
+        "Edge8"
+      ]
+    },
+    {
+      "body": "garage_deck_2",
+      "feature": "Fillet_ExposedCorners004",
+      "radius_mm": 3,
+      "edges": [
+        "Edge1",
+        "Edge2",
+        "Edge5",
+        "Edge8"
+      ]
+    },
+    {
+      "body": "garage_deck_3",
+      "feature": "Fillet_ExposedCorners005",
+      "radius_mm": 3,
+      "edges": [
+        "Edge1",
+        "Edge2",
+        "Edge5",
+        "Edge8"
+      ]
+    },
+    {
+      "body": "billboard",
+      "feature": "Fillet_ExposedCorners006",
+      "radius_mm": 3,
+      "edges": [
+        "Edge3",
+        "Edge4",
+        "Edge28",
+        "Edge29"
+      ]
+    },
+    {
+      "body": "billboard",
+      "feature": "Fillet_ExposedCorners007",
+      "radius_mm": 2,
+      "edges": [
+        "Edge43",
+        "Edge45",
+        "Edge56",
+        "Edge53"
+      ]
+    },
+    {
+      "body": "top_carrier",
+      "feature": "Fillet_ExposedCorners008",
+      "radius_mm": 3,
+      "edges": [
+        "Edge1",
+        "Edge2",
+        "Edge5",
+        "Edge8"
+      ]
+    },
+    {
+      "body": "side_receiver",
+      "feature": "Fillet_ExposedCorners009",
+      "radius_mm": 3,
+      "edges": [
+        "Edge7",
+        "Edge9",
+        "Edge13",
+        "Edge14"
+      ]
+    },
+    {
+      "body": "side_cartridge",
+      "feature": "Fillet_ExposedCorners010",
+      "radius_mm": 3,
+      "edges": [
+        "Edge1",
+        "Edge2",
+        "Edge5",
+        "Edge8"
+      ]
+    }
+  ],
+  "interface_checks": [
+    {
+      "body": "module_1_Body",
+      "side": "right",
+      "geometry_unchanged": true
+    },
+    {
+      "body": "module_2_Body",
+      "side": "left",
+      "geometry_unchanged": true
+    },
+    {
+      "body": "module_2_Body",
+      "side": "right",
+      "geometry_unchanged": true
+    },
+    {
+      "body": "module_3_Body",
+      "side": "left",
+      "geometry_unchanged": true
+    }
+  ],
+  "collar_contacts": [
+    {
+      "layer": 1,
+      "column": 1,
+      "before_mm2": 280.9761929554415,
+      "after_mm2": 280.9761929554415
+    },
+    {
+      "layer": 1,
+      "column": 2,
+      "before_mm2": 280.4444624904191,
+      "after_mm2": 280.4444624904191
+    },
+    {
+      "layer": 1,
+      "column": 3,
+      "before_mm2": 280.9761929554415,
+      "after_mm2": 280.9761929554415
+    },
+    {
+      "layer": 1,
+      "column": 4,
+      "before_mm2": 280.4444624904191,
+      "after_mm2": 280.44446249041914
+    },
+    {
+      "layer": 2,
+      "column": 1,
+      "before_mm2": 280.976192955501,
+      "after_mm2": 280.976192955501
+    },
+    {
+      "layer": 2,
+      "column": 2,
+      "before_mm2": 280.4444624904785,
+      "after_mm2": 280.4444624904785
+    },
+    {
+      "layer": 2,
+      "column": 3,
+      "before_mm2": 280.976192955501,
+      "after_mm2": 280.976192955501
+    },
+    {
+      "layer": 2,
+      "column": 4,
+      "before_mm2": 280.44446249047854,
+      "after_mm2": 280.44446249047854
+    },
+    {
+      "layer": 3,
+      "column": 1,
+      "before_mm2": 280.976192955501,
+      "after_mm2": 280.976192955501
+    },
+    {
+      "layer": 3,
+      "column": 2,
+      "before_mm2": 280.4444624904785,
+      "after_mm2": 280.4444624904785
+    },
+    {
+      "layer": 3,
+      "column": 3,
+      "before_mm2": 280.976192955501,
+      "after_mm2": 280.976192955501
+    },
+    {
+      "layer": 3,
+      "column": 4,
+      "before_mm2": 280.44446249047854,
+      "after_mm2": 280.44446249047854
+    }
+  ],
+  "fully_constrained_sketches": 273,
+  "saved_reopened": true,
+  "scope": "Selected exterior corners only; columns, letters, markings, hardware and functional interfaces preserved.",
+  "print_files_regenerated": false,
+  "geometry_checked_sha256": "a662e5c1b2f681cbdee6fd31e87d2374b94e689360609de0b1f3286f0d4d8bbc",
+  "preview_saved_native_cad": true,
+  "final_reopened_valid": true,
+  "contact_measurement": "0.05 mm collar-top slab translated into deck bottom; overlap volume divided by slab thickness",
+  "user_accepted": true,
+  "accepted_date": "2026-10-24"
+}
