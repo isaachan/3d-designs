@@ -24,7 +24,7 @@
     }
   ],
   "original_sha256": "d61e91c0c5d34db45ba11720e24f29cecd69a30f43fa548217c882e0d0eddf89",
-  "cad_sha256": "7b646f3fe4cb24d4da0177dc46de7d7063980f6be84ef967d0e125a47b04a64b",
+  "cad_sha256": "2a3f10a9a4c7d0544a9b2cfe2b4e5dfd48f4dd970dbd66d1bd2bd66c1b9191ce",
   "body_count": 34,
   "unchanged_bodies": [
     "module_1_Body",
@@ -91,5 +91,9 @@
   "horsepower_above_brainpower": true,
   "user_accepted": true,
   "accepted_date": "2026-10-24",
-  "accepted_formal_cad_verified": true
+  "accepted_formal_cad_verified": true,
+  "assembly_visibility_restored": true,
+  "all_34_bodies_and_parent_parts_visible": true,
+  "assembly_camera_restored": true,
+  "geometry_payloads_unchanged_by_display_fix": true
 }
