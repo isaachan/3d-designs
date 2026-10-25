@@ -1,0 +1,1197 @@
+{
+  "native": {
+    "bodies": 35,
+    "fully_constrained_sketches": 349,
+    "all_bodies_single_valid_solids": true,
+    "invalid_objects": []
+  },
+  "floors": [
+    {
+      "floor": 1,
+      "part": "module_1",
+      "bays": 2,
+      "ids": [
+        "101",
+        "102"
+      ],
+      "bay_widths_mm": [
+        94.07615230460922,
+        47.038076152304626
+      ],
+      "accessible_bay": "left",
+      "local_recess_centers_mm": [
+        [
+          74.48096192384766,
+          86.7
+        ],
+        [
+          145.03807615230465,
+          86.7
+        ]
+      ],
+      "recess_footprint_mm": [
+        40.6,
+        80.6
+      ],
+      "recess_depth_mm": 1.6,
+      "minimum_recess_floor_thickness_mm": 6.4,
+      "paint_mask_areas_mm2": {
+        "Blue": 4277.595751503004,
+        "Yellow": 980.7438877755839,
+        "White": 1163.4008730852993
+      },
+      "decoration_outside_recess_floors": true
+    },
+    {
+      "floor": 2,
+      "part": "garage_deck_1",
+      "bays": 2,
+      "ids": [
+        "201",
+        "202"
+      ],
+      "bay_widths_mm": [
+        94.07615230460922,
+        47.038076152304626
+      ],
+      "accessible_bay": "left",
+      "local_recess_centers_mm": [
+        [
+          74.28096192384766,
+          86.5
+        ],
+        [
+          144.83807615230467,
+          86.5
+        ]
+      ],
+      "recess_footprint_mm": [
+        40.6,
+        80.6
+      ],
+      "recess_depth_mm": 1.6,
+      "minimum_recess_floor_thickness_mm": 5.0,
+      "paint_mask_areas_mm2": {
+        "Blue": 4277.595751503003,
+        "Yellow": 980.7438877755851,
+        "White": 1167.257995329797
+      },
+      "decoration_outside_recess_floors": true
+    },
+    {
+      "floor": 3,
+      "part": "garage_deck_2",
+      "bays": 3,
+      "ids": [
+        "301",
+        "302",
+        "303"
+      ],
+      "bay_widths_mm": [
+        47.03807615230461,
+        47.03807615230461,
+        47.038076152304626
+      ],
+      "accessible_bay": null,
+      "local_recess_centers_mm": [
+        [
+          50.76192384769533,
+          86.5
+        ],
+        [
+          97.8,
+          86.5
+        ],
+        [
+          144.83807615230467,
+          86.5
+        ]
+      ],
+      "recess_footprint_mm": [
+        40.6,
+        80.6
+      ],
+      "recess_depth_mm": 1.6,
+      "minimum_recess_floor_thickness_mm": 5.0,
+      "paint_mask_areas_mm2": {
+        "Yellow": 1019.942284569158,
+        "White": 1259.79962645295
+      },
+      "decoration_outside_recess_floors": true
+    },
+    {
+      "floor": 4,
+      "part": "garage_deck_3",
+      "bays": 3,
+      "ids": [
+        "401",
+        "402",
+        "403"
+      ],
+      "bay_widths_mm": [
+        47.03807615230461,
+        47.03807615230461,
+        47.038076152304626
+      ],
+      "accessible_bay": null,
+      "local_recess_centers_mm": [
+        [
+          50.76192384769533,
+          86.5
+        ],
+        [
+          97.8,
+          86.5
+        ],
+        [
+          144.83807615230467,
+          86.5
+        ]
+      ],
+      "recess_footprint_mm": [
+        40.6,
+        80.6
+      ],
+      "recess_depth_mm": 1.6,
+      "minimum_recess_floor_thickness_mm": 5.0,
+      "paint_mask_areas_mm2": {
+        "Yellow": 1019.942284569158,
+        "White": 1255.9425042084572
+      },
+      "decoration_outside_recess_floors": true
+    }
+  ],
+  "total_bays": 10,
+  "unchanged_bodies": [
+    "module_2_Body",
+    "module_3_Body",
+    "column_1_segment_1_Body",
+    "column_1_segment_2_Body",
+    "column_1_segment_3_Body",
+    "column_1_segment_4_Body",
+    "column_2_segment_1_Body",
+    "column_2_segment_2_Body",
+    "column_2_segment_3_Body",
+    "column_2_segment_4_Body",
+    "column_3_segment_1_Body",
+    "column_3_segment_2_Body",
+    "column_3_segment_3_Body",
+    "column_3_segment_4_Body",
+    "column_4_segment_1_Body",
+    "column_4_segment_2_Body",
+    "column_4_segment_3_Body",
+    "column_4_segment_4_Body",
+    "billboard_Body",
+    "top_carrier_Body",
+    "side_receiver_Body",
+    "side_cartridge_Body",
+    "hardware_screw_1_Body",
+    "hardware_nut_1_Body",
+    "hardware_screw_2_Body",
+    "hardware_nut_2_Body",
+    "hardware_screw_3_Body",
+    "hardware_nut_3_Body",
+    "hardware_screw_4_Body",
+    "hardware_nut_4_Body",
+    "parking_tray_interface_Body"
+  ],
+  "assembly_overlap_checks": [
+    {
+      "a": "module_1_Body",
+      "b": "module_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "garage_deck_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "garage_deck_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "garage_deck_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_1_segment_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_1_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_1_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_1_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_2_segment_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_2_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_2_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_2_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_3_segment_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_3_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_3_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_3_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_4_segment_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_4_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_4_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_4_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "billboard_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_2_Body",
+      "b": "module_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_2_Body",
+      "b": "billboard_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_3_Body",
+      "b": "side_receiver_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_1_Body",
+      "b": "column_1_segment_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_1_Body",
+      "b": "column_1_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_1_Body",
+      "b": "column_2_segment_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_1_Body",
+      "b": "column_2_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_1_Body",
+      "b": "column_3_segment_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_1_Body",
+      "b": "column_3_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_1_Body",
+      "b": "column_4_segment_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_1_Body",
+      "b": "column_4_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_2_Body",
+      "b": "column_1_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_2_Body",
+      "b": "column_1_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_2_Body",
+      "b": "column_2_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_2_Body",
+      "b": "column_2_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_2_Body",
+      "b": "column_3_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_2_Body",
+      "b": "column_3_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_2_Body",
+      "b": "column_4_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_2_Body",
+      "b": "column_4_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_3_Body",
+      "b": "column_1_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_3_Body",
+      "b": "column_1_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_3_Body",
+      "b": "column_2_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_3_Body",
+      "b": "column_2_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_3_Body",
+      "b": "column_3_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_3_Body",
+      "b": "column_3_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_3_Body",
+      "b": "column_4_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_3_Body",
+      "b": "column_4_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_1_segment_1_Body",
+      "b": "column_1_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_1_segment_2_Body",
+      "b": "column_1_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_1_segment_3_Body",
+      "b": "column_1_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_2_segment_1_Body",
+      "b": "column_2_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_2_segment_2_Body",
+      "b": "column_2_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_2_segment_3_Body",
+      "b": "column_2_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_3_segment_1_Body",
+      "b": "column_3_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_3_segment_2_Body",
+      "b": "column_3_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_3_segment_3_Body",
+      "b": "column_3_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_4_segment_1_Body",
+      "b": "column_4_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_4_segment_2_Body",
+      "b": "column_4_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_4_segment_3_Body",
+      "b": "column_4_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "billboard_Body",
+      "b": "top_carrier_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "billboard_Body",
+      "b": "hardware_screw_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "billboard_Body",
+      "b": "hardware_nut_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "billboard_Body",
+      "b": "hardware_screw_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "billboard_Body",
+      "b": "hardware_nut_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "top_carrier_Body",
+      "b": "hardware_screw_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "top_carrier_Body",
+      "b": "hardware_screw_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "side_receiver_Body",
+      "b": "side_cartridge_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "side_receiver_Body",
+      "b": "hardware_screw_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "side_receiver_Body",
+      "b": "hardware_nut_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "side_receiver_Body",
+      "b": "hardware_screw_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "side_receiver_Body",
+      "b": "hardware_nut_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "side_cartridge_Body",
+      "b": "hardware_screw_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "side_cartridge_Body",
+      "b": "hardware_screw_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "hardware_screw_1_Body",
+      "b": "hardware_nut_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "hardware_screw_2_Body",
+      "b": "hardware_nut_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "hardware_screw_3_Body",
+      "b": "hardware_nut_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "hardware_screw_4_Body",
+      "b": "hardware_nut_4_Body",
+      "overlap_mm3": 0.0
+    }
+  ],
+  "collar_contacts": [
+    {
+      "floor": 2,
+      "column": 1,
+      "bearing_area_mm2": 280.9761929554372,
+      "unchanged": true
+    },
+    {
+      "floor": 2,
+      "column": 2,
+      "bearing_area_mm2": 280.4444624904149,
+      "unchanged": true
+    },
+    {
+      "floor": 2,
+      "column": 3,
+      "bearing_area_mm2": 280.9761929554372,
+      "unchanged": true
+    },
+    {
+      "floor": 2,
+      "column": 4,
+      "bearing_area_mm2": 280.4444624904149,
+      "unchanged": true
+    },
+    {
+      "floor": 3,
+      "column": 1,
+      "bearing_area_mm2": 280.9761929554372,
+      "unchanged": true
+    },
+    {
+      "floor": 3,
+      "column": 2,
+      "bearing_area_mm2": 280.4444624904149,
+      "unchanged": true
+    },
+    {
+      "floor": 3,
+      "column": 3,
+      "bearing_area_mm2": 280.9761929554372,
+      "unchanged": true
+    },
+    {
+      "floor": 3,
+      "column": 4,
+      "bearing_area_mm2": 280.4444624904149,
+      "unchanged": true
+    },
+    {
+      "floor": 4,
+      "column": 1,
+      "bearing_area_mm2": 280.9761929554372,
+      "unchanged": true
+    },
+    {
+      "floor": 4,
+      "column": 2,
+      "bearing_area_mm2": 280.4444624904149,
+      "unchanged": true
+    },
+    {
+      "floor": 4,
+      "column": 3,
+      "bearing_area_mm2": 280.9761929554372,
+      "unchanged": true
+    },
+    {
+      "floor": 4,
+      "column": 4,
+      "bearing_area_mm2": 280.4444624904149,
+      "unchanged": true
+    }
+  ],
+  "deck_lowering_paths": [
+    {
+      "floor": 2,
+      "lift_mm": 12,
+      "overlap_mm3": 0.0
+    },
+    {
+      "floor": 2,
+      "lift_mm": 8,
+      "overlap_mm3": 0.0
+    },
+    {
+      "floor": 2,
+      "lift_mm": 3,
+      "overlap_mm3": 0.0
+    },
+    {
+      "floor": 2,
+      "lift_mm": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "floor": 3,
+      "lift_mm": 12,
+      "overlap_mm3": 0.0
+    },
+    {
+      "floor": 3,
+      "lift_mm": 8,
+      "overlap_mm3": 0.0
+    },
+    {
+      "floor": 3,
+      "lift_mm": 3,
+      "overlap_mm3": 0.0
+    },
+    {
+      "floor": 3,
+      "lift_mm": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "floor": 4,
+      "lift_mm": 12,
+      "overlap_mm3": 0.0
+    },
+    {
+      "floor": 4,
+      "lift_mm": 8,
+      "overlap_mm3": 0.0
+    },
+    {
+      "floor": 4,
+      "lift_mm": 3,
+      "overlap_mm3": 0.0
+    },
+    {
+      "floor": 4,
+      "lift_mm": 0,
+      "overlap_mm3": 0.0
+    }
+  ],
+  "tray_removal_paths": [
+    {
+      "floor": 1,
+      "bay": 1,
+      "lift_mm": 0,
+      "front_translation_mm": 0,
+      "interference": false
+    },
+    {
+      "floor": 1,
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": 0,
+      "interference": false
+    },
+    {
+      "floor": 1,
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -10,
+      "interference": false
+    },
+    {
+      "floor": 1,
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -45,
+      "interference": false
+    },
+    {
+      "floor": 1,
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -90,
+      "interference": false
+    },
+    {
+      "floor": 1,
+      "bay": 2,
+      "lift_mm": 0,
+      "front_translation_mm": 0,
+      "interference": false
+    },
+    {
+      "floor": 1,
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": 0,
+      "interference": false
+    },
+    {
+      "floor": 1,
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -10,
+      "interference": false
+    },
+    {
+      "floor": 1,
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -45,
+      "interference": false
+    },
+    {
+      "floor": 1,
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -90,
+      "interference": false
+    },
+    {
+      "floor": 2,
+      "bay": 1,
+      "lift_mm": 0,
+      "front_translation_mm": 0,
+      "interference": false
+    },
+    {
+      "floor": 2,
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": 0,
+      "interference": false
+    },
+    {
+      "floor": 2,
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -10,
+      "interference": false
+    },
+    {
+      "floor": 2,
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -45,
+      "interference": false
+    },
+    {
+      "floor": 2,
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -90,
+      "interference": false
+    },
+    {
+      "floor": 2,
+      "bay": 2,
+      "lift_mm": 0,
+      "front_translation_mm": 0,
+      "interference": false
+    },
+    {
+      "floor": 2,
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": 0,
+      "interference": false
+    },
+    {
+      "floor": 2,
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -10,
+      "interference": false
+    },
+    {
+      "floor": 2,
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -45,
+      "interference": false
+    },
+    {
+      "floor": 2,
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -90,
+      "interference": false
+    },
+    {
+      "floor": 3,
+      "bay": 1,
+      "lift_mm": 0,
+      "front_translation_mm": 0,
+      "interference": false
+    },
+    {
+      "floor": 3,
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": 0,
+      "interference": false
+    },
+    {
+      "floor": 3,
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -10,
+      "interference": false
+    },
+    {
+      "floor": 3,
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -45,
+      "interference": false
+    },
+    {
+      "floor": 3,
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -90,
+      "interference": false
+    },
+    {
+      "floor": 3,
+      "bay": 2,
+      "lift_mm": 0,
+      "front_translation_mm": 0,
+      "interference": false
+    },
+    {
+      "floor": 3,
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": 0,
+      "interference": false
+    },
+    {
+      "floor": 3,
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -10,
+      "interference": false
+    },
+    {
+      "floor": 3,
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -45,
+      "interference": false
+    },
+    {
+      "floor": 3,
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -90,
+      "interference": false
+    },
+    {
+      "floor": 3,
+      "bay": 3,
+      "lift_mm": 0,
+      "front_translation_mm": 0,
+      "interference": false
+    },
+    {
+      "floor": 3,
+      "bay": 3,
+      "lift_mm": 1.8,
+      "front_translation_mm": 0,
+      "interference": false
+    },
+    {
+      "floor": 3,
+      "bay": 3,
+      "lift_mm": 1.8,
+      "front_translation_mm": -10,
+      "interference": false
+    },
+    {
+      "floor": 3,
+      "bay": 3,
+      "lift_mm": 1.8,
+      "front_translation_mm": -45,
+      "interference": false
+    },
+    {
+      "floor": 3,
+      "bay": 3,
+      "lift_mm": 1.8,
+      "front_translation_mm": -90,
+      "interference": false
+    },
+    {
+      "floor": 4,
+      "bay": 1,
+      "lift_mm": 0,
+      "front_translation_mm": 0,
+      "interference": false
+    },
+    {
+      "floor": 4,
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": 0,
+      "interference": false
+    },
+    {
+      "floor": 4,
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -10,
+      "interference": false
+    },
+    {
+      "floor": 4,
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -45,
+      "interference": false
+    },
+    {
+      "floor": 4,
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -90,
+      "interference": false
+    },
+    {
+      "floor": 4,
+      "bay": 2,
+      "lift_mm": 0,
+      "front_translation_mm": 0,
+      "interference": false
+    },
+    {
+      "floor": 4,
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": 0,
+      "interference": false
+    },
+    {
+      "floor": 4,
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -10,
+      "interference": false
+    },
+    {
+      "floor": 4,
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -45,
+      "interference": false
+    },
+    {
+      "floor": 4,
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -90,
+      "interference": false
+    },
+    {
+      "floor": 4,
+      "bay": 3,
+      "lift_mm": 0,
+      "front_translation_mm": 0,
+      "interference": false
+    },
+    {
+      "floor": 4,
+      "bay": 3,
+      "lift_mm": 1.8,
+      "front_translation_mm": 0,
+      "interference": false
+    },
+    {
+      "floor": 4,
+      "bay": 3,
+      "lift_mm": 1.8,
+      "front_translation_mm": -10,
+      "interference": false
+    },
+    {
+      "floor": 4,
+      "bay": 3,
+      "lift_mm": 1.8,
+      "front_translation_mm": -45,
+      "interference": false
+    },
+    {
+      "floor": 4,
+      "bay": 3,
+      "lift_mm": 1.8,
+      "front_translation_mm": -90,
+      "interference": false
+    }
+  ],
+  "source_outer_envelope_preserved": true,
+  "F_interfaces_and_signs_preserved": true,
+  "physical_fit_and_vehicle_wheel_restraints": "not_verified",
+  "appearance": {
+    "preserved_original_view_providers": true,
+    "new_view_provider_count": 159,
+    "retired_view_provider_count": 82,
+    "native_view_provider_count": 1253,
+    "updated_face_material_counts": {
+      "module_1_Body": 673,
+      "garage_deck_1_Body": 640,
+      "garage_deck_2_Body": 428,
+      "garage_deck_3_Body": 422
+    },
+    "sample_group_default_visible": false,
+    "zip_crc_check": "passed"
+  },
+  "status": "passed",
+  "source_sha256": "ab3e0f584073b005c27cfd52e6d21da304093adec2c02e44d36ce911cee54da2",
+  "cad_sha256": "953a522b4d01374917c4059389e7691d33765f07aa986b8fe3a7561fea6dbcbe",
+  "backup": "/Users/kai.han/code/3d-designs/garage-bookshelf/v4/backups/2026-10-25-before-four-floor-decoration.FCStd",
+  "saved_reopened": true,
+  "retired_native_objects": {
+    "module_1": [
+      "Chamfer_ParkingTrayEntries",
+      "Pocket_ParkingTrayRecesses",
+      "Sketch_ParkingTrayRecesses"
+    ],
+    "garage_deck_1": [
+      "Chamfer_ParkingTrayEntries001",
+      "Pocket_ParkingTrayRecesses001",
+      "Sketch_ParkingTrayRecesses001",
+      "Pocket_ParkingWhite",
+      "Binder_ParkingWhite",
+      "Sketch_ParkingWhite_017",
+      "Sketch_ParkingWhite_016",
+      "Sketch_ParkingWhite_015",
+      "Sketch_ParkingWhite_014",
+      "Sketch_ParkingWhite_013",
+      "Sketch_ParkingWhite_012",
+      "Sketch_ParkingWhite_011",
+      "Sketch_ParkingWhite_010",
+      "Sketch_ParkingWhite_009",
+      "Sketch_ParkingWhite_008",
+      "Sketch_ParkingWhite_007",
+      "Sketch_ParkingWhite_006",
+      "Sketch_ParkingWhite_005",
+      "Sketch_ParkingWhite_004",
+      "Sketch_ParkingWhite_003",
+      "Sketch_ParkingWhite_002",
+      "Sketch_ParkingWhite_001",
+      "Pocket_ParkingYellow",
+      "Binder_ParkingYellow",
+      "Sketch_ParkingYellow_013",
+      "Sketch_ParkingYellow_012",
+      "Sketch_ParkingYellow_011",
+      "Sketch_ParkingYellow_010",
+      "Sketch_ParkingYellow_009",
+      "Sketch_ParkingYellow_008",
+      "Sketch_ParkingYellow_007",
+      "Sketch_ParkingYellow_006",
+      "Sketch_ParkingYellow_005",
+      "Sketch_ParkingYellow_004",
+      "Sketch_ParkingYellow_003",
+      "Sketch_ParkingYellow_002",
+      "Sketch_ParkingYellow_001",
+      "Pocket_ParkingBlue",
+      "Binder_ParkingBlue",
+      "Sketch_ParkingBlue_001"
+    ],
+    "garage_deck_2": [
+      "Chamfer_ParkingTrayEntries002",
+      "Pocket_ParkingTrayRecesses002",
+      "Sketch_ParkingTrayRecesses002",
+      "Pocket_ParkingWhite001",
+      "Binder_ParkingWhite001",
+      "Sketch_ParkingWhite_035",
+      "Sketch_ParkingWhite_034",
+      "Sketch_ParkingWhite_033",
+      "Sketch_ParkingWhite_032",
+      "Sketch_ParkingWhite_031",
+      "Sketch_ParkingWhite_030",
+      "Sketch_ParkingWhite_029",
+      "Sketch_ParkingWhite_028",
+      "Sketch_ParkingWhite_027",
+      "Sketch_ParkingWhite_026",
+      "Sketch_ParkingWhite_025",
+      "Sketch_ParkingWhite_024",
+      "Sketch_ParkingWhite_023",
+      "Sketch_ParkingWhite_022",
+      "Sketch_ParkingWhite_021",
+      "Sketch_ParkingWhite_020",
+      "Sketch_ParkingWhite_019",
+      "Sketch_ParkingWhite_018",
+      "Pocket_ParkingYellow001",
+      "Binder_ParkingYellow001",
+      "Sketch_ParkingYellow_027",
+      "Sketch_ParkingYellow_026",
+      "Sketch_ParkingYellow_025",
+      "Sketch_ParkingYellow_024",
+      "Sketch_ParkingYellow_023",
+      "Sketch_ParkingYellow_022",
+      "Sketch_ParkingYellow_021",
+      "Sketch_ParkingYellow_020",
+      "Sketch_ParkingYellow_019",
+      "Sketch_ParkingYellow_018",
+      "Sketch_ParkingYellow_017",
+      "Sketch_ParkingYellow_016",
+      "Sketch_ParkingYellow_015",
+      "Sketch_ParkingYellow_014"
+    ],
+    "garage_deck_3": [
+      "Chamfer_ParkingTrayEntries003",
+      "Pocket_ParkingTrayRecesses003",
+      "Sketch_ParkingTrayRecesses003"
+    ]
+  },
+  "existing_print_files_unchanged": true,
+  "STEP_STL_3MF_ZIP_regenerated": false
+}

@@ -79,14 +79,14 @@ def build():
         _,b=part(doc,main,f'module_{i}',f'主体模块 {i}',(x,'Zero','Zero'));module(b,i)
         if i==1:
             from parking_recesses import add_recesses
-            add_recesses(b,3,base=True)
+            from parking_markings import add_recessed
+            add_recesses(b,2,base=True);add_recessed(b,2,1)
     garage=group(doc,'Garage','02 三块整片层板与分段立柱')
     for lev in (1,2,3):
         _,b=part(doc,garage,f'garage_deck_{lev}',f'整块停车层板 {lev}',('DeckEdgeGap','DeckEdgeGap',f'DeckZ{lev}'));deck(b)
-        from parking_markings import add,LAYOUTS
-        if LAYOUTS[lev]:add(b,LAYOUTS[lev])
+        from parking_markings import add_recessed,LAYOUTS
         from parking_recesses import add_recesses
-        add_recesses(b,2 if lev==1 else 3)
+        add_recesses(b,LAYOUTS[lev]);add_recessed(b,LAYOUTS[lev],lev+1)
     for n,(x,y) in enumerate(CENTRES,1):
         for segment,z in enumerate(('BaseThickness','DeckZ1+DeckThickness','DeckZ2+DeckThickness','DeckZ3+DeckThickness'),1):
             _,b=part(doc,garage,f'column_{n}_segment_{segment}',f'立柱 {n} 第{segment}段',(x,y,z),color='columns');column(b,segment==4)

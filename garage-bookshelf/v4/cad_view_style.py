@@ -128,6 +128,12 @@ def preserve_views(source, output, doc, changed_bodies):
             sample_names.add(obj.Name)
     for name in sample_names:
         _visibility(providers[name], name != 'ParkingTraySamples')
+    # Incremental decoration updates may replace old sketches and binders.
+    # Remove only view providers whose native document objects were retired.
+    retired=[]
+    for name,provider in list(providers.items()):
+        if doc.getObject(name) is None:
+            data.remove(provider);del providers[name];retired.append(name)
     data.set('Count', str(len(providers)))
     # All original appearance assets referenced by the preserved XML must remain.
     referenced = {e.attrib['file'] for e in root.iter() if 'file' in e.attrib}
@@ -150,5 +156,6 @@ def preserve_views(source, output, doc, changed_bodies):
         for name, count in counts.items():
             assert len(material_records(archive.read(f'ParkingAppearance_{name}.bin'))) == count
     return dict(preserved_original_view_providers=True, new_view_provider_count=len(new),
+        retired_view_provider_count=len(retired),
         native_view_provider_count=len(providers), updated_face_material_counts=counts,
         sample_group_default_visible=False, zip_crc_check='passed')

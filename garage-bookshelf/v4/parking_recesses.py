@@ -13,13 +13,14 @@ from assembly import group, part
 from geometry.features import finish, pad, pocket
 from geometry.sketches import plane, rectangle
 from parameters import evaluate, expression
+from decoration.recessed_layout import center_ratio
 
-LAYOUTS = {'module_1': 3, 'garage_deck_1': 2,
+LAYOUTS = {'module_1': 2, 'garage_deck_1': 2,
            'garage_deck_2': 3, 'garage_deck_3': 3}
 
 
 def center_x(count, index):
-    ratio = (27.8+(index+.5)*144/count)/199.6
+    ratio = center_ratio(count,index)
     return f'({ratio:.15g})*DeckWidth'
 
 
