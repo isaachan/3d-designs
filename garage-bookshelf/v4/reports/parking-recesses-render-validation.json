@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "cad_sha256": "ab3e0f584073b005c27cfd52e6d21da304093adec2c02e44d36ce911cee54da2",
+  "native_geometry_only": true,
+  "saved_face_materials_used": true,
+  "cad_modified": false,
+  "previews": [
+    {
+      "path": "parking-recesses-assembly.png",
+      "dimensions_px": [
+        1800,
+        1200
+      ],
+      "triangles": 110496,
+      "renderer": "OpenCascade face tessellation and software Z buffer"
+    },
+    {
+      "path": "parking-recesses-garage.png",
+      "dimensions_px": [
+        1400,
+        1300
+      ],
+      "triangles": 53956,
+      "renderer": "OpenCascade face tessellation and software Z buffer"
+    },
+    {
+      "path": "parking-recesses-deck-2.png",
+      "dimensions_px": [
+        1500,
+        1100
+      ],
+      "triangles": 6552,
+      "renderer": "OpenCascade face tessellation and software Z buffer"
+    },
+    {
+      "path": "parking-tray-interface.png",
+      "dimensions_px": [
+        1500,
+        1100
+      ],
+      "triangles": 5912,
+      "renderer": "OpenCascade face tessellation and software Z buffer"
+    }
+  ]
+}

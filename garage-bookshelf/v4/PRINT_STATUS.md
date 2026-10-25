@@ -1,5 +1,7 @@
 # 打印交付状态：待 CAD 定稿
 
+2026-10-25：正式CAD加入11个停车托座浅槽：底层/双车位层/三车位层/顶层分别3/2/3/3槽。悬空层板6.6mm、槽深1.6mm、槽底5mm；柱段56.4mm、定位销9.6mm。统一落座接口及取放耳底脚样件为原生可编辑CAD，车型轮胎夹尚未设计。本轮未修改或重新生成任何3MF、STEP、STL或打印ZIP；旧打印尺寸和用量不代表当前CAD。检查见 `reports/parking-recesses-validation.json`。
+
 2026-10-24：正式CAD右侧字牌口号更新为全大写“HORSEPOWER LEFT, BRAINPOWER RIGHT”，保留两列竖排，列序已调整为转正阅读时HORSEPOWER在上、BRAINPOWER在下；保留螺孔与R3外露圆角。仅修改CAD及文字源数据、脚本和验证记录；未重新导出STEP、STL、3MF或打印ZIP。
 
 2026-10-24：正式CAD加入限定部件的外露轮廓圆角（R3 mm，广告牌支架底端R2 mm），用户已确认保留。仅更新CAD、试改脚本和几何检查；未重新生成STEP、STL、3MF或打印ZIP。现有 `previews/` 中的3MF仍为圆角前的历史预览。
