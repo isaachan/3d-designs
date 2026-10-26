@@ -1,0 +1,86 @@
+{
+  "error_string": "Success.",
+  "export_time": 0,
+  "layer_height": 0.20000000298023224,
+  "plate_index": 0,
+  "prepare_time": 32,
+  "return_code": 0,
+  "sliced_plates": [
+    {
+      "feature_type_times": {
+        "Bottom surface": 834.1964721679688,
+        "Bridge": 1609.259033203125,
+        "Custom": 287.291259765625,
+        "Flush": 29.0,
+        "Gap infill": 28.06659507751465,
+        "Inner wall": 552.474609375,
+        "Internal solid infill": 2240.335205078125,
+        "Outer wall": 265.797607421875,
+        "Sparse infill": 1766.2945556640625,
+        "Top surface": 750.1806030273438,
+        "Travel": 616.1115112304688,
+        "Undefined": 608.4755249023438
+      },
+      "filament_change_times": 0,
+      "filaments": [
+        {
+          "filament_id": "GFA00",
+          "id": 1,
+          "main_used_g": 125.9638900756836,
+          "total_used_g": 125.9638900756836
+        }
+      ],
+      "generate_support_material_time": 26,
+      "id": 1,
+      "infill_time": 794,
+      "layer_filament_change": 0,
+      "main_predication": 8630.7333984375,
+      "make_perimeters_time": 133,
+      "obj_cached_cnt": 0,
+      "objects": [
+        {
+          "bbox": {
+            "depth": 158.60000610351562,
+            "height": 6.599999904632568,
+            "width": 195.60000610351562,
+            "x": 40.449989318847656,
+            "y": 73.69998931884766,
+            "z": -2.3162840534496354e-09
+          },
+          "id": 5,
+          "name": "3bay-parking-deck-301-303.stl",
+          "triangle_count": 5368
+        },
+        {
+          "bbox": {
+            "depth": 40.0,
+            "height": 3.200000047683716,
+            "width": 83.0,
+            "x": 96.74999237060547,
+            "y": 23.699989318847656,
+            "z": -3.8418579428878274e-09
+          },
+          "id": 9,
+          "name": "parking-tray-foot-with-pull-tab.stl",
+          "triangle_count": 468
+        }
+      ],
+      "sliced_time": 1483,
+      "sliced_time_with_cache": 405,
+      "total_predication": 8968.388671875,
+      "triangle_count": 5836,
+      "warning_message": ""
+    }
+  ],
+  "sparse_infill_density": 25.0,
+  "upward_compatible_machine": [
+    "Bambu Lab A1 0.4 nozzle",
+    "Bambu Lab P2S 0.4 nozzle",
+    "Bambu Lab H2S 0.4 nozzle",
+    "Bambu Lab H2D 0.4 nozzle",
+    "Bambu Lab H2D Pro 0.4 nozzle",
+    "Bambu Lab H2C 0.4 nozzle",
+    "Bambu Lab A2L 0.4 nozzle"
+  ],
+  "wall_loops": 4
+}
