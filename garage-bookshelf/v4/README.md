@@ -1,5 +1,11 @@
 # garage-bookshelf v4 · 49 cm 紧凑版
 
+**M Power 黑色配色（2026-10-26）：** 已将确认方案保存到正式 `garage-bookshelf-v4-assembly.FCStd`。主体、立柱和停车面为黑色；三块悬空层板的外缘自下而上为浅蓝、深蓝、红色；横牌为黑底白字、不带三色标，左/右支架正面为浅蓝/红色；右侧口号牌为深蓝底白字。书架三色带在背板、底板及顶边/前沿连续衔接，三条共用 **36 mm 实际宽度**，比例严格为1∶1∶1。可在 `MColorParameters` 表的 `StripeWidth` 修改，宽度沿板面垂直色带方向测量。三色带以全约束草图、原表面引用和原生面布尔交集保存为零厚度外观面；0.01mm仅用于显示避闪，不是板材或色带厚度。**35个原有Body的实体、定位、接头、圆角、槽位和字形均保留**。备份为 `backups/2026-10-26-before-mpower-colors.FCStd`；验证见 `reports/mpower-color-validation.json`，配色明细及维护方法见 [COLOR_SCHEME.md](COLOR_SCHEME.md)。本轮未重导STEP/STL/3MF/ZIP，外观面不作为打印实体导出。旧图中的灰/黄配色是历史状态。
+
+![M Power 配色实际CAD预览](reports/mpower-assembly-preview.png)
+
+[FreeCAD直接导出的预览](reports/mpower-freecad-preview.png) · [正面](reports/mpower-front-preview.png) · [等宽三色带局部](reports/mpower-stripe-detail.png)
+
 **四层停车装饰（2026-10-25）：** 已将确认的浅槽装饰应用到正式CAD：第1层来自 `module_1` 主体底板，第2/3/4层分别来自 `garage_deck_1/2/3`。四层依次为 **2/2/3/3 bay，共10个托座槽**；前两层左侧为约 **94.076 mm** 宽的无障碍车位，右侧为约 **47.038 mm** 宽的普通车位，上两层均为47.038mm普通车位。各槽仍采用统一40.6×80.6mm主体轮廓、1.6mm深度及前端取放口，双车位槽按新车位中心调整。编号依次为 **101–102、201–202、301–303、401–403**；编号前移2mm，轮椅标识放在前方18×18mm蓝色区域，无障碍车位两侧保留蓝色带。白/黄凹刻0.4mm、蓝底0.2mm，装饰不进入槽底；底层槽底6.4mm、三块层板槽底5mm。原F接头、可拆字牌、外露圆角、柱段与外包络保留。增量入口 `update_parking_decoration.py`，检查见 `reports/four-floor-decoration-validation.json`。本轮仅更新正式CAD与预览，不重导STEP/STL/3MF/ZIP；下列11槽及旧打印记录为历史状态。
 
 ![四层停车装饰实际CAD预览](reports/four-floor-decoration-garage.png)

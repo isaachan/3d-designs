@@ -1,5 +1,7 @@
 # 打印交付状态：待 CAD 定稿
 
+2026-10-26：M Power 黑色配色已保存到正式FCStd，含实际等宽36mm三色带、三色层板边、浅蓝/红色横牌支架及深蓝口号牌。外观图案为独立的原生零厚度色面，保存在 `MPowerAppearance` 组；不增加打印实体、不切削原模型，0.01mm偏移仅用于显示避闪。35个原有Body几何检查、保存及重新打开的颜色检查通过。未修改任何历史STEP/STL/3MF/ZIP或打印配置。CAD颜色不会自动生成多耗材分配；重新制作打印文件时应只导出实际Body，并单独处理多色表面映射。详见 `COLOR_SCHEME.md` 与 `reports/mpower-color-validation.json`。
+
 2026-10-25：四层装饰已应用到正式CAD，主体底层/层板1/层板2/层板3依次为2/2/3/3 bay，共10槽。前两层左宽右窄，左侧无障碍车位94.076mm、右侧普通车位47.038mm；统一托座槽仍为40.6×80.6×1.6mm，按新中心定位。编号101–102/201–202/301–303/401–403，白/黄图案凹刻0.4mm、蓝色0.2mm，槽底不叠加装饰凹刻。原始CAD备份及当前几何/取放检查见 `update_parking_decoration.py` 和 `reports/four-floor-decoration-validation.json`。仅更新CAD及实际CAD预览，所有历史STEP/STL/3MF/ZIP保持不变，仍不可视为当前打印交付。
 
 2026-10-25：正式CAD加入11个停车托座浅槽：底层/双车位层/三车位层/顶层分别3/2/3/3槽。悬空层板6.6mm、槽深1.6mm、槽底5mm；柱段56.4mm、定位销9.6mm。统一落座接口及取放耳底脚样件为原生可编辑CAD，车型轮胎夹尚未设计。本轮未修改或重新生成任何3MF、STEP、STL或打印ZIP；旧打印尺寸和用量不代表当前CAD。检查见 `reports/parking-recesses-validation.json`。

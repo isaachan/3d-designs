@@ -19,6 +19,9 @@ def run(document_path=None):
     QtGui.QAccessible.setActive(False)
     from assembly import COLORS
     d=App.openDocument(str(document_path or ROOT/'garage-bookshelf-v4-assembly.FCStd'))
+    if d.getObject('MPowerAppearance') is not None:
+        from apply_mpower_colors import review
+        return review(d)
     parking_colors={}
     for o in d.Objects:
         if o.TypeId=='App::Part':o.ViewObject.Visibility=True
