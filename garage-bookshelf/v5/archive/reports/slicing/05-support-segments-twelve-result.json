@@ -1,0 +1,216 @@
+{
+  "error_string": "Success.",
+  "export_time": 0,
+  "layer_height": 0.20000000298023224,
+  "plate_index": 0,
+  "prepare_time": 79,
+  "return_code": 0,
+  "sliced_plates": [
+    {
+      "feature_type_times": {
+        "Bridge": 181.44154357910156,
+        "Brim": 148.79188537597656,
+        "Custom": 284.26422119140625,
+        "Flush": 29.0,
+        "Gap infill": 60.49151611328125,
+        "Inner wall": 2169.712646484375,
+        "Internal solid infill": 413.2636413574219,
+        "Outer wall": 1779.468994140625,
+        "Sparse infill": 1950.6416015625,
+        "Top surface": 80.36217498779297,
+        "Travel": 1754.5416259765625,
+        "Undefined": 1749.8756103515625
+      },
+      "filament_change_times": 0,
+      "filaments": [
+        {
+          "filament_id": "GFA00",
+          "id": 1,
+          "main_used_g": 91.22473907470703,
+          "total_used_g": 91.22473907470703
+        }
+      ],
+      "generate_support_material_time": 242,
+      "id": 1,
+      "infill_time": 780,
+      "layer_filament_change": 0,
+      "main_predication": 8509.9716796875,
+      "make_perimeters_time": 1787,
+      "obj_cached_cnt": 0,
+      "objects": [
+        {
+          "bbox": {
+            "depth": 28.259687423706055,
+            "height": 66.0,
+            "width": 28.259809494018555,
+            "x": 146.11721801757812,
+            "y": 146.85951232910156,
+            "z": 0.0
+          },
+          "id": 5,
+          "name": "column_1_segment_1.stl",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 28.259685516357422,
+            "height": 66.0,
+            "width": 28.259809494018555,
+            "x": 146.11721801757812,
+            "y": 124.864013671875,
+            "z": 0.0
+          },
+          "id": 9,
+          "name": "column_1_segment_1.stl",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 28.25980567932129,
+            "height": 66.0,
+            "width": 28.259689331054688,
+            "x": 124.12290954589844,
+            "y": 146.86363220214844,
+            "z": 0.0
+          },
+          "id": 13,
+          "name": "column_1_segment_1.stl",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 19.99776268005371,
+            "height": 66.0,
+            "width": 19.99553108215332,
+            "x": 128.25111389160156,
+            "y": 128.9995880126953,
+            "z": 0.0
+          },
+          "id": 17,
+          "name": "column_1_segment_1.stl",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 28.259687423706055,
+            "height": 66.0,
+            "width": 28.259809494018555,
+            "x": 146.11721801757812,
+            "y": 102.86852264404297,
+            "z": 0.0
+          },
+          "id": 21,
+          "name": "column_1_segment_1.stl",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 20.731430053710938,
+            "height": 66.0,
+            "width": 20.729284286499023,
+            "x": 105.89279174804688,
+            "y": 150.62539672851562,
+            "z": 0.0
+          },
+          "id": 25,
+          "name": "column_1_segment_1.stl",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 28.259807586669922,
+            "height": 66.0,
+            "width": 28.25969123840332,
+            "x": 124.12291717529297,
+            "y": 102.87654876708984,
+            "z": 0.0
+          },
+          "id": 29,
+          "name": "column_1_segment_1.stl",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 19.997764587402344,
+            "height": 66.0,
+            "width": 19.995521545410156,
+            "x": 106.25562286376953,
+            "y": 128.99859619140625,
+            "z": 0.0
+          },
+          "id": 33,
+          "name": "column_1_segment_1.stl",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 28.259809494018555,
+            "height": 66.0,
+            "width": 28.25969123840332,
+            "x": 102.1274185180664,
+            "y": 102.87555694580078,
+            "z": 0.0
+          },
+          "id": 37,
+          "name": "column_1_segment_1.stl",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 28.259687423706055,
+            "height": 66.0,
+            "width": 28.259809494018555,
+            "x": 146.11721801757812,
+            "y": 80.87303161621094,
+            "z": 0.0
+          },
+          "id": 41,
+          "name": "column_1_segment_1.stl",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 19.997764587402344,
+            "height": 66.0,
+            "width": 19.995525360107422,
+            "x": 128.25112915039062,
+            "y": 85.01249694824219,
+            "z": 0.0
+          },
+          "id": 45,
+          "name": "column_1_segment_1.stl",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 19.997760772705078,
+            "height": 66.0,
+            "width": 19.995525360107422,
+            "x": 106.25563049316406,
+            "y": 85.01152038574219,
+            "z": 0.0
+          },
+          "id": 49,
+          "name": "column_1_segment_1.stl",
+          "triangle_count": 1888
+        }
+      ],
+      "sliced_time": 7799,
+      "sliced_time_with_cache": 3770,
+      "total_predication": 8847.5703125,
+      "triangle_count": 22656,
+      "warning_message": ""
+    }
+  ],
+  "sparse_infill_density": 25.0,
+  "upward_compatible_machine": [
+    "Bambu Lab A1 0.4 nozzle",
+    "Bambu Lab P2S 0.4 nozzle",
+    "Bambu Lab H2S 0.4 nozzle",
+    "Bambu Lab H2D 0.4 nozzle",
+    "Bambu Lab H2D Pro 0.4 nozzle",
+    "Bambu Lab H2C 0.4 nozzle",
+    "Bambu Lab A2L 0.4 nozzle"
+  ],
+  "wall_loops": 4
+}

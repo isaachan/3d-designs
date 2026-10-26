@@ -1,0 +1,129 @@
+{
+  "status": "passed",
+  "bodies": 50,
+  "fully_constrained_sketches": 265,
+  "interfering_pairs": [],
+  "insertion_paths": [
+    {
+      "part": "top_carrier",
+      "offset_mm": 201,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "top_carrier",
+      "offset_mm": 150,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "top_carrier",
+      "offset_mm": 75,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "top_carrier",
+      "offset_mm": 10,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "top_carrier",
+      "offset_mm": 1,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "top_carrier",
+      "offset_mm": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "side_cartridge",
+      "offset_mm": 181,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "side_cartridge",
+      "offset_mm": 120,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "side_cartridge",
+      "offset_mm": 60,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "side_cartridge",
+      "offset_mm": 10,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "side_cartridge",
+      "offset_mm": 1,
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "side_cartridge",
+      "offset_mm": 0,
+      "overlap_mm3": 0.0
+    }
+  ],
+  "forward_pull_blocked": true,
+  "sliding_blocked_by_lock_pins": true,
+  "slot_depth_mm": 1.9,
+  "side_receiver_remaining_back_mm": 2.1,
+  "minimum_rail_side_clearance_mm": 0.33,
+  "rail_depth_clearance_mm": 0.3,
+  "front_gap_mm": 0.2,
+  "print_parts": [
+    {
+      "name": "billboard",
+      "quantity": 1,
+      "dimensions_mm": [
+        200.0,
+        64.0,
+        6.0
+      ],
+      "sha256": "c6c16e063da18f4e5303aa84f57dd333c31dbe62a153d05e6c352bb6d62a2762"
+    },
+    {
+      "name": "top_carrier",
+      "quantity": 1,
+      "dimensions_mm": [
+        190.0,
+        58.0,
+        3.5999999046325684
+      ],
+      "sha256": "0bbc6dac01d72ce02490212a75fd5dd00d93bc1c5e474943a2783a1fd9993f1c"
+    },
+    {
+      "name": "side_receiver",
+      "quantity": 1,
+      "dimensions_mm": [
+        48.0,
+        180.0,
+        14.0
+      ],
+      "sha256": "3971b76ee735883a37493343cc9f74fcadf26a18dd69ff202c92f0caeae91da6"
+    },
+    {
+      "name": "side_cartridge",
+      "quantity": 1,
+      "dimensions_mm": [
+        44.0,
+        172.0,
+        3.5999999046325684
+      ],
+      "sha256": "75b500676ae2d17bc3d82adf5ede9f251a062123406d860713fc00fb8ba7f9c7"
+    },
+    {
+      "name": "lock_pin_1",
+      "quantity": 2,
+      "dimensions_mm": [
+        5.9986572265625,
+        5.99932861328125,
+        6.199999809265137
+      ],
+      "sha256": "b092afe62843e909e3d7f27ff800a6fd513429d29dd9eae72afe893d0fe7b939"
+    }
+  ],
+  "physical_fit": "not_tested",
+  "baseline_cad_sha256": "ed005751140ea1b6b79c90b032a2dbc99393b070ec8338a4ff4cc5ed64de6bf7"
+}

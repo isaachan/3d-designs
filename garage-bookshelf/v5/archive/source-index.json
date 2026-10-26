@@ -1,0 +1,2824 @@
+{
+  "source_version": "v4",
+  "source_git_commit": "c407d75",
+  "cad_sha256": "822d05f79b60b10a8a9958e427d9591d476a89f391914b90d9eaa1d83fde6958",
+  "files": [
+    {
+      "source": ".DS_Store",
+      "source_sha256": "649ecc76b54a236882ca819d3b43f1ab3f5e94ecd148c01c940a6e24e2386333",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "COLOR_SCHEME.md",
+      "source_sha256": "392cc6458c66a2197d9639bfe73c94d5facee23f6d86d4d74e431b0394c8f407",
+      "destination": "archive/docs/v4/COLOR_SCHEME.md",
+      "action": "copied",
+      "destination_sha256": "392cc6458c66a2197d9639bfe73c94d5facee23f6d86d4d74e431b0394c8f407"
+    },
+    {
+      "source": "PRINT_STATUS.md",
+      "source_sha256": "8eea426671577ffa8209ec2e082d09b0fd547e19924ed0a14c48becc8d83c6d3",
+      "destination": "archive/docs/v4/PRINT_STATUS.md",
+      "action": "copied",
+      "destination_sha256": "8eea426671577ffa8209ec2e082d09b0fd547e19924ed0a14c48becc8d83c6d3"
+    },
+    {
+      "source": "Preview.FCMacro",
+      "source_sha256": "e865c5609db116c5b8429c2f442525d28031d39b197232961e42665bdc55b1c0",
+      "destination": "archive/legacy-tools/Preview.FCMacro.txt",
+      "action": "copied",
+      "destination_sha256": "e865c5609db116c5b8429c2f442525d28031d39b197232961e42665bdc55b1c0"
+    },
+    {
+      "source": "README.md",
+      "source_sha256": "03ca0d2e3df646e9ed08070ca9336c2e3f49d9b8b299033439e206567d80c07a",
+      "destination": "archive/docs/v4/README.md",
+      "action": "adapted",
+      "destination_sha256": "993d894e79248818be1477b86b3a30cafec797635779d9570f7b317ecc13428b"
+    },
+    {
+      "source": "__pycache__/apply_mpower_colors.cpython-311.pyc",
+      "source_sha256": "1a263bcd9f9da7d7e59c13821dd62550ec67e230100595b4a3b249a24e239478",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/assembly.cpython-311.pyc",
+      "source_sha256": "82ac4f6e7f951d00b9f0e1197e7c44a3fb16c27edc930f4ef3d0999b385b72c6",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/assembly.cpython-314.pyc",
+      "source_sha256": "9b85231df94affb8404b1eb5b2f569e2f05da747f3e3806596230cf0147af7ff",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/build.cpython-311.pyc",
+      "source_sha256": "6307509c481e18d61adbba7d169f9051f57b9af5b651702c006b5c718d372d0f",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/build.cpython-314.pyc",
+      "source_sha256": "9d2a0fce44bfacf49e044efbe84b0c61931fd2af589c2892f9c4c2699b157c2b",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/cad_view_style.cpython-311.pyc",
+      "source_sha256": "388d44d35d2bfe7d1393e25c1a5aedb2c443fa6ddbf867194539e14f9e0bf8d6",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/cad_view_style.cpython-314.pyc",
+      "source_sha256": "b8becca9e329026ebb9896194bd841b224d526ae4f4b8cc7469748c8d5716d43",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/check_package.cpython-311.pyc",
+      "source_sha256": "cc19cbd5263036c6f85eef02f1a4ada37c3aadf979ae2814896b52d0d1d473c9",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/check_package.cpython-314.pyc",
+      "source_sha256": "35334c892a6eddf3c51c69d25fb9e9179c7c8d9a658aac9a138a98f97f34309e",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/connectors.cpython-311.pyc",
+      "source_sha256": "27126402e2d8d6123278efb147981f5b438efdbd05891f5a51d8e85fb9003d45",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/connectors.cpython-314.pyc",
+      "source_sha256": "f9fa6af4e96b791a5ee6d194d105ad0979b3c566d468641b34b97eb2b39dea4c",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/cosmetics.cpython-311.pyc",
+      "source_sha256": "78292c5c303ffa568e89f706c8b47341f70693312bf19b6187f7386a476e64ba",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/cosmetics.cpython-314.pyc",
+      "source_sha256": "29061097e57651cbc1b5f9120aaa3567b35efb708da9a376bb8ec30b43091e5c",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/gui_review.cpython-311.pyc",
+      "source_sha256": "e2da2e34ae8326517f8a401214f51301a67f0063c1b9e3a1024e728f33774ef8",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/gui_review.cpython-314.pyc",
+      "source_sha256": "75f11b110680747c54b336cf52980a89a1b9874e99a741807059c0367ea01054",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/main.cpython-314.pyc",
+      "source_sha256": "ef7b436c8a705546ab71d63d9427441cf672616ca61b0843b0720e2a4911a7bf",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/make_print_projects.cpython-311.pyc",
+      "source_sha256": "13d583fac35457303947fb867b899a1cbcc5eab322cb75e4610b37ad6aa29e4e",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/make_print_projects.cpython-314.pyc",
+      "source_sha256": "789bc9d0407bdfbc681e222bb08b54fcf7db2a2d7d0138f17dc1adf3b72eb852",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/package_print_projects.cpython-311.pyc",
+      "source_sha256": "4a183595f59ad29ce0c6304029acfb6aa8a7bf15a86f6c32c8cb91dd44a80b33",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/package_print_projects.cpython-314.pyc",
+      "source_sha256": "80215eab93065f8a0c8e5e06541cc6a1879afa70946b6731cfe2a620d11374a8",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/parameters.cpython-311.pyc",
+      "source_sha256": "3a73d32614a038763a363d090f3e3cfe1291b63a664180c82cb808965405d3b7",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/parameters.cpython-314.pyc",
+      "source_sha256": "f67b394b4d9441123b691a1d0c1309c924e0fde23144ca0420ae067e622f4185",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/parking_markings.cpython-311.pyc",
+      "source_sha256": "f42bf511f7f58e266ee381881d2c4d5ff540dc1d256720ef1bbb3e913c216220",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/parking_recesses.cpython-311.pyc",
+      "source_sha256": "bdc1d61626186686f8f12c3441d1d156f33cba5dea2bb86b3e5ea077907db83b",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/parking_recesses.cpython-314.pyc",
+      "source_sha256": "b2b0c27172a0e840305f07fe5e6bde455983a393a3ce084812e45fe6b164ff7a",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/render_mpower_colors.cpython-311.pyc",
+      "source_sha256": "0e82b94a3e23e24cb8185ada71489c0cd7beb1bad978ef5846d48379a0aa4108",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/render_parking_recesses.cpython-311.pyc",
+      "source_sha256": "a920cdd45af8a6ccbde28b8bd35c4b7f1f4a9f949079a897d31fba3a930583c6",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/render_parking_recesses.cpython-314.pyc",
+      "source_sha256": "b06ac2aba91880cb314e8619633870429226d3c507e86d7cc274b8343c5e3454",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/round_exposed_corners.cpython-311.pyc",
+      "source_sha256": "c3fb1456016be106a37a2ddc63808e1db2891f82fe11304a93cee3f3ff44bebe",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/shorten_billboard_posts.cpython-311.pyc",
+      "source_sha256": "e661f70b6913ab58de02218c69b89c34a075c928de581b8f5b6e72eba5406306",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/update_parking_recesses.cpython-311.pyc",
+      "source_sha256": "981958033a7056ba2b9fb5c3e374e024f794583aefc4dd5085eb70f88eb662a0",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/update_parking_recesses.cpython-314.pyc",
+      "source_sha256": "7a7b4ee50e031dcf2ca362d9cd9a619e6b9a4b7039157f0ff05cb4fb297c6f89",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/update_plain_side_sign.cpython-311.pyc",
+      "source_sha256": "712f495250ab8787df24600f8982970c6dc0644ef14ae99a6e9b1e6ab0ac3a0d",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/validate_export.cpython-311.pyc",
+      "source_sha256": "71bf3e82494ef48451341a4c439325ad48a5a1909028f175c8904a774cad855a",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "__pycache__/validate_export.cpython-314.pyc",
+      "source_sha256": "7de1826620b651024c555818cd7368618a1eb08e514b37f48683871e1ac01bcf",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "analysis/parking-deck-bending/PROCESS.md",
+      "source_sha256": "dc91647a6ba9de7ef7b65f9e4b940401efb2080c39a38e4a3289a15df95e0212",
+      "destination": "studies/parking-deck-bending/PROCESS.md",
+      "action": "copied",
+      "destination_sha256": "dc91647a6ba9de7ef7b65f9e4b940401efb2080c39a38e4a3289a15df95e0212"
+    },
+    {
+      "source": "analysis/parking-deck-bending/README.md",
+      "source_sha256": "e08429befed13a13617a866133e11086de73c248313f9a25168965e07c2c5dce",
+      "destination": "studies/parking-deck-bending/README.md",
+      "action": "adapted",
+      "destination_sha256": "f17817e7b7cf12649bb26cdbe2a62d3fae0f8c1853ecceaaa4f8c3bebb96cebe"
+    },
+    {
+      "source": "analysis/parking-deck-bending/__pycache__/calculate.cpython-311.pyc",
+      "source_sha256": "65bc19b25f1f62f486d32206aa3f50c700e799c8416334b98ac44f9e483656e1",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "analysis/parking-deck-bending/__pycache__/calculate.cpython-314.pyc",
+      "source_sha256": "6a17707b7560321cf38f09c93a09adf9795f48061168274fb2af1c5646e04b19",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "analysis/parking-deck-bending/__pycache__/summarize.cpython-314.pyc",
+      "source_sha256": "ed224e160fe7871cd2ece649672ffe4910c3c489f7cc803e9a9f54190ad9ae3a",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "analysis/parking-deck-bending/__pycache__/verify_application.cpython-314.pyc",
+      "source_sha256": "eba07d416773f55c63e704cf2c902d7840b503e939969cb2872f32a60ac37ee4",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "analysis/parking-deck-bending/bending-comparison.png",
+      "source_sha256": "7f1715b8754c5d3da976b26ee8bf3ee5936bc3a7ad85a7010fbc0bf7d6d99ce1",
+      "destination": "studies/parking-deck-bending/bending-comparison.png",
+      "action": "copied",
+      "destination_sha256": "7f1715b8754c5d3da976b26ee8bf3ee5936bc3a7ad85a7010fbc0bf7d6d99ce1"
+    },
+    {
+      "source": "analysis/parking-deck-bending/calculate.py",
+      "source_sha256": "4bde9f7e95aa6e2b3313299fba8fb73ad86af521ebb6df1a7ec150316a6a94bd",
+      "destination": "studies/parking-deck-bending/calculate.py",
+      "action": "adapted",
+      "destination_sha256": "22caaf654ff6ad52bf2a0dedaa6d3dec1ec526ab2f86f2e4893ee63cc5da39c6"
+    },
+    {
+      "source": "analysis/parking-deck-bending/comparison.csv",
+      "source_sha256": "6285d7e2afb60eb129303c131833a82c35761041fffa0d081df4ecc55d6b25ae",
+      "destination": "studies/parking-deck-bending/comparison.csv",
+      "action": "copied",
+      "destination_sha256": "6285d7e2afb60eb129303c131833a82c35761041fffa0d081df4ecc55d6b25ae"
+    },
+    {
+      "source": "analysis/parking-deck-bending/design-application.json",
+      "source_sha256": "503682cf2e38870bf69a6c52be8a7a893432688d9c0a141cee1feac53717a708",
+      "destination": "studies/parking-deck-bending/design-application.json",
+      "action": "copied",
+      "destination_sha256": "503682cf2e38870bf69a6c52be8a7a893432688d9c0a141cee1feac53717a708"
+    },
+    {
+      "source": "analysis/parking-deck-bending/field-h0-mesh4.json.gz",
+      "source_sha256": "d3f712f9531c4e399910cc86dcd67625016444ff202b41af931ea4f4b2d44815",
+      "destination": "studies/parking-deck-bending/field-h0-mesh4.json.gz",
+      "action": "copied",
+      "destination_sha256": "d3f712f9531c4e399910cc86dcd67625016444ff202b41af931ea4f4b2d44815"
+    },
+    {
+      "source": "analysis/parking-deck-bending/field-h0-mesh6.json.gz",
+      "source_sha256": "714c28552fad1dc4d4169ce21d619eccd44af02b39f07e500ce83fb8a1739d18",
+      "destination": "studies/parking-deck-bending/field-h0-mesh6.json.gz",
+      "action": "copied",
+      "destination_sha256": "714c28552fad1dc4d4169ce21d619eccd44af02b39f07e500ce83fb8a1739d18"
+    },
+    {
+      "source": "analysis/parking-deck-bending/field-h2-mesh6.json.gz",
+      "source_sha256": "7c594d2b607e63aa8ebec16c602628a128a3c10e200525494e072f35f79a04a0",
+      "destination": "studies/parking-deck-bending/field-h2-mesh6.json.gz",
+      "action": "copied",
+      "destination_sha256": "7c594d2b607e63aa8ebec16c602628a128a3c10e200525494e072f35f79a04a0"
+    },
+    {
+      "source": "analysis/parking-deck-bending/field-h3-mesh4.json.gz",
+      "source_sha256": "fbdda642b224a629991f21f68144786df19fa045a6a4bde701c4436bd2e2fe43",
+      "destination": "studies/parking-deck-bending/field-h3-mesh4.json.gz",
+      "action": "copied",
+      "destination_sha256": "fbdda642b224a629991f21f68144786df19fa045a6a4bde701c4436bd2e2fe43"
+    },
+    {
+      "source": "analysis/parking-deck-bending/field-h3-mesh6.json.gz",
+      "source_sha256": "a7a58d4fe6e84a360049185066d8ca90da65673577b8a8a0dc2c1508343782d8",
+      "destination": "studies/parking-deck-bending/field-h3-mesh6.json.gz",
+      "action": "copied",
+      "destination_sha256": "a7a58d4fe6e84a360049185066d8ca90da65673577b8a8a0dc2c1508343782d8"
+    },
+    {
+      "source": "analysis/parking-deck-bending/field-h4-mesh6.json.gz",
+      "source_sha256": "b0a91cfa23de5744503678c22846e8363b4eee5a8cee51138f411e386fae521c",
+      "destination": "studies/parking-deck-bending/field-h4-mesh6.json.gz",
+      "action": "copied",
+      "destination_sha256": "b0a91cfa23de5744503678c22846e8363b4eee5a8cee51138f411e386fae521c"
+    },
+    {
+      "source": "analysis/parking-deck-bending/field-h6-mesh6.json.gz",
+      "source_sha256": "0c8d100ba41fe0ea29fb37a0a4b23ae72b6eda8687e99b3d1d12fb5340a96609",
+      "destination": "studies/parking-deck-bending/field-h6-mesh6.json.gz",
+      "action": "copied",
+      "destination_sha256": "0c8d100ba41fe0ea29fb37a0a4b23ae72b6eda8687e99b3d1d12fb5340a96609"
+    },
+    {
+      "source": "analysis/parking-deck-bending/field-h8-mesh4.json.gz",
+      "source_sha256": "1b5efc557c35bf3649f27b4d64550cfcf96fd099398fae433f7c955fc7b30b5a",
+      "destination": "studies/parking-deck-bending/field-h8-mesh4.json.gz",
+      "action": "copied",
+      "destination_sha256": "1b5efc557c35bf3649f27b4d64550cfcf96fd099398fae433f7c955fc7b30b5a"
+    },
+    {
+      "source": "analysis/parking-deck-bending/field-h8-mesh6.json.gz",
+      "source_sha256": "769828f46a6e1426105a58d657bcbfa227e86a68d6f53accddb9aa54642bede9",
+      "destination": "studies/parking-deck-bending/field-h8-mesh6.json.gz",
+      "action": "copied",
+      "destination_sha256": "769828f46a6e1426105a58d657bcbfa227e86a68d6f53accddb9aa54642bede9"
+    },
+    {
+      "source": "analysis/parking-deck-bending/reference/garage-bookshelf-v4-ribbed-analysis-source.FCStd",
+      "source_sha256": "d6570e0a2cb1fd1bf0e168de81b88a00dcb64f4530098762af0e6b2c06b63e4c",
+      "destination": "studies/parking-deck-bending/reference/garage-bookshelf-v4-ribbed-analysis-source.FCStd",
+      "action": "copied",
+      "destination_sha256": "d6570e0a2cb1fd1bf0e168de81b88a00dcb64f4530098762af0e6b2c06b63e4c"
+    },
+    {
+      "source": "analysis/parking-deck-bending/results-mesh4.json",
+      "source_sha256": "2fcdeec4f5e0f9877ba4bdeb76c3911fbf44d770472726c4750b2eac59c30845",
+      "destination": "studies/parking-deck-bending/results-mesh4.json",
+      "action": "copied",
+      "destination_sha256": "2fcdeec4f5e0f9877ba4bdeb76c3911fbf44d770472726c4750b2eac59c30845"
+    },
+    {
+      "source": "analysis/parking-deck-bending/results-mesh6.json",
+      "source_sha256": "3785589f77cb210c2c65fe80b6e85874afbf2bf0470cf51e4786bca9d44cd230",
+      "destination": "studies/parking-deck-bending/results-mesh6.json",
+      "action": "copied",
+      "destination_sha256": "3785589f77cb210c2c65fe80b6e85874afbf2bf0470cf51e4786bca9d44cd230"
+    },
+    {
+      "source": "analysis/parking-deck-bending/run-mesh4.log",
+      "source_sha256": "456f32f267d4e827a46227096ca7fdc66a407cbae49e5cf777b4c2a2bff2d120",
+      "destination": "studies/parking-deck-bending/run-mesh4.log",
+      "action": "copied",
+      "destination_sha256": "456f32f267d4e827a46227096ca7fdc66a407cbae49e5cf777b4c2a2bff2d120"
+    },
+    {
+      "source": "analysis/parking-deck-bending/run-mesh6.log",
+      "source_sha256": "e662a157848850e2a5a8aad2fbf851b2f5213d73deb5540ad5d3192baec98b5b",
+      "destination": "studies/parking-deck-bending/run-mesh6.log",
+      "action": "copied",
+      "destination_sha256": "e662a157848850e2a5a8aad2fbf851b2f5213d73deb5540ad5d3192baec98b5b"
+    },
+    {
+      "source": "analysis/parking-deck-bending/summarize.py",
+      "source_sha256": "b973a50bb8603c839f02713ac59384e07061f4c8ac38fbb8f25a05e851c5ad07",
+      "destination": "studies/parking-deck-bending/summarize.py",
+      "action": "adapted",
+      "destination_sha256": "93b68977381ffc2992d9a314ac288c5ced926c7d0979d3e645b08091b1961341"
+    },
+    {
+      "source": "analysis/parking-deck-bending/summary.json",
+      "source_sha256": "08eccbe5b56dc2f0be2211756150c9b583e2fa51d221999c03581e117b440cfc",
+      "destination": "studies/parking-deck-bending/summary.json",
+      "action": "copied",
+      "destination_sha256": "08eccbe5b56dc2f0be2211756150c9b583e2fa51d221999c03581e117b440cfc"
+    },
+    {
+      "source": "analysis/parking-deck-bending/summary.log",
+      "source_sha256": "888f7944fcfb551863cf2bbadeaa9397e6aaae954c47c953580658b1c61d6540",
+      "destination": "studies/parking-deck-bending/summary.log",
+      "action": "copied",
+      "destination_sha256": "888f7944fcfb551863cf2bbadeaa9397e6aaae954c47c953580658b1c61d6540"
+    },
+    {
+      "source": "analysis/parking-deck-bending/verify_application.py",
+      "source_sha256": "cd6a1b87ac2b8e5d2e847a912c571d35eaad0abbab7b015a3bf23a6e23824898",
+      "destination": "archive/legacy-tools/verify_historical_bending_application.py",
+      "action": "adapted",
+      "destination_sha256": "e754f835984655f63a38077e3bdece922cd76fa66b39d23b33b53d7809606157"
+    },
+    {
+      "source": "analysis/recessed-parking-tray/README.md",
+      "source_sha256": "0435588af120491ce625451c9a43d3a0ca205498028a9e60847cfc6222ebff1c",
+      "destination": "studies/recessed-parking-tray/README.md",
+      "action": "adapted",
+      "destination_sha256": "462a15f7ada02ee6347e30f0095484e2baaa175c7f3c970d4f744a03d0f13f97"
+    },
+    {
+      "source": "analysis/recessed-parking-tray/__pycache__/assess.cpython-314.pyc",
+      "source_sha256": "a3eaa056b11ce75b723fb60795b672729d631be7aa6c55992568621ac4b0922f",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "analysis/recessed-parking-tray/__pycache__/summarize.cpython-314.pyc",
+      "source_sha256": "87650ef1c92b83d17ee6d1ea450a34cd166f329f2c628268afc0b8ef616b07db",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "analysis/recessed-parking-tray/assess.py",
+      "source_sha256": "650472fe8a3cf21398453c66c9c8890d325eda12dc1b850710b404555ade84b0",
+      "destination": "studies/recessed-parking-tray/assess.py",
+      "action": "adapted",
+      "destination_sha256": "fcb9fc4d1dcde740a671ac2facbd62c0697a27aee150e11587ac648d4a55d6f1"
+    },
+    {
+      "source": "analysis/recessed-parking-tray/results-mesh4.json",
+      "source_sha256": "6f90e50367e149cf946950c7f8b9ce169f9eb40b6f658fc2086a3783c72bdb99",
+      "destination": "studies/recessed-parking-tray/results-mesh4.json",
+      "action": "copied",
+      "destination_sha256": "6f90e50367e149cf946950c7f8b9ce169f9eb40b6f658fc2086a3783c72bdb99"
+    },
+    {
+      "source": "analysis/recessed-parking-tray/results-mesh6.json",
+      "source_sha256": "8ece07a9d3947cee854de9aecf88241b73cae775db85976c00f1ed1f991ad3e5",
+      "destination": "studies/recessed-parking-tray/results-mesh6.json",
+      "action": "copied",
+      "destination_sha256": "8ece07a9d3947cee854de9aecf88241b73cae775db85976c00f1ed1f991ad3e5"
+    },
+    {
+      "source": "analysis/recessed-parking-tray/summarize.py",
+      "source_sha256": "3b9161080341247a377ece64ff8580b264e845d751b36b12cbcf2118424d8226",
+      "destination": "studies/recessed-parking-tray/summarize.py",
+      "action": "adapted",
+      "destination_sha256": "011960ba2f5a3ca9b89c85cda2ee46d6d968e581c3f975f8ce8b4414d6262493"
+    },
+    {
+      "source": "analysis/recessed-parking-tray/summary.json",
+      "source_sha256": "6434c2935304c2495fe6b3258a13a6dd281bff597f5828179978feedcfae06a3",
+      "destination": "studies/recessed-parking-tray/summary.json",
+      "action": "copied",
+      "destination_sha256": "6434c2935304c2495fe6b3258a13a6dd281bff597f5828179978feedcfae06a3"
+    },
+    {
+      "source": "apply_mpower_colors.py",
+      "source_sha256": "9c993d52a9aa4aac7bb73fd84cf506dcd1d0c7f7040c84417925c9049b426d28",
+      "destination": "archive/migrations/apply_mpower_colors.py",
+      "action": "adapted",
+      "destination_sha256": "1e2c05a5ec163813812e4dbd79a975001acc503482799403d9e898b3eec1066f"
+    },
+    {
+      "source": "assembly.py",
+      "source_sha256": "f3052c40380745a4eb8b1d1ab42247304f1f0f9be817a4f7347ef3195b073d23",
+      "destination": "src/garage_bookshelf/assembly.py",
+      "action": "adapted",
+      "destination_sha256": "9f8305aea7dd00662df44ef3b3e112a4388b5a150ab5ca8e0118ea98133b0f77"
+    },
+    {
+      "source": "backups/2026-10-25-before-four-floor-decoration.FCStd",
+      "source_sha256": "ab3e0f584073b005c27cfd52e6d21da304093adec2c02e44d36ce911cee54da2",
+      "destination": "archive/snapshots/2026-10-25-before-four-floor-decoration.FCStd",
+      "action": "copied",
+      "destination_sha256": "ab3e0f584073b005c27cfd52e6d21da304093adec2c02e44d36ce911cee54da2"
+    },
+    {
+      "source": "backups/2026-10-25-before-parking-recesses.FCStd",
+      "source_sha256": "2a3f10a9a4c7d0544a9b2cfe2b4e5dfd48f4dd970dbd66d1bd2bd66c1b9191ce",
+      "destination": "studies/recessed-parking-tray/reference/2026-10-25-before-parking-recesses.FCStd",
+      "action": "copied",
+      "destination_sha256": "2a3f10a9a4c7d0544a9b2cfe2b4e5dfd48f4dd970dbd66d1bd2bd66c1b9191ce"
+    },
+    {
+      "source": "backups/2026-10-26-before-exposed-post-correction.FCStd",
+      "source_sha256": "067b3207006e6ee04671af62bc758dd60e9c34fe1f2f5d62ca470a2a3daa43ec",
+      "destination": "archive/snapshots/2026-10-26-before-exposed-post-correction.FCStd",
+      "action": "copied",
+      "destination_sha256": "067b3207006e6ee04671af62bc758dd60e9c34fe1f2f5d62ca470a2a3daa43ec"
+    },
+    {
+      "source": "backups/2026-10-26-before-mpower-colors.FCStd",
+      "source_sha256": "953a522b4d01374917c4059389e7691d33765f07aa986b8fe3a7561fea6dbcbe",
+      "destination": "archive/snapshots/2026-10-26-before-mpower-colors.FCStd",
+      "action": "copied",
+      "destination_sha256": "953a522b4d01374917c4059389e7691d33765f07aa986b8fe3a7561fea6dbcbe"
+    },
+    {
+      "source": "backups/2026-10-26-before-plain-side-sign.FCStd",
+      "source_sha256": "f0a3745b2729123a568104d439ee20aa02524caa622e71fb83d1110f2c02e749",
+      "destination": "archive/snapshots/2026-10-26-before-plain-side-sign.FCStd",
+      "action": "copied",
+      "destination_sha256": "f0a3745b2729123a568104d439ee20aa02524caa622e71fb83d1110f2c02e749"
+    },
+    {
+      "source": "backups/2026-10-26-before-shorter-billboard-posts.FCStd",
+      "source_sha256": "e78eb727ed9cc6e0f7bf9311be972a36c9af7db5826ff3b7d2ce27c62a6c1ade",
+      "destination": "archive/snapshots/2026-10-26-before-shorter-billboard-posts.FCStd",
+      "action": "copied",
+      "destination_sha256": "e78eb727ed9cc6e0f7bf9311be972a36c9af7db5826ff3b7d2ce27c62a6c1ade"
+    },
+    {
+      "source": "bambu-projects/01a-garage-deck-1-two-bays.png",
+      "source_sha256": "8b30fc52155bcdf4b7ac6a83c1e0c97a0b803ffb30d5904ee99ccf57bdb7a5c9",
+      "destination": "archive/print-baseline/bambu-projects/01a-garage-deck-1-two-bays.png",
+      "action": "copied",
+      "destination_sha256": "8b30fc52155bcdf4b7ac6a83c1e0c97a0b803ffb30d5904ee99ccf57bdb7a5c9"
+    },
+    {
+      "source": "bambu-projects/01b-garage-deck-2-three-bays.png",
+      "source_sha256": "db5e9c791f230a3ecd530f303e27576d503a6a3a8e0daa5a26113c8bc3dae525",
+      "destination": "archive/print-baseline/bambu-projects/01b-garage-deck-2-three-bays.png",
+      "action": "copied",
+      "destination_sha256": "db5e9c791f230a3ecd530f303e27576d503a6a3a8e0daa5a26113c8bc3dae525"
+    },
+    {
+      "source": "bambu-projects/01c-garage-deck-3-plain.png",
+      "source_sha256": "d05ae0653173b08c55bdcf4404a661417cc0ed892087566b4dd6c984e9eddcf8",
+      "destination": "archive/print-baseline/bambu-projects/01c-garage-deck-3-plain.png",
+      "action": "copied",
+      "destination_sha256": "d05ae0653173b08c55bdcf4404a661417cc0ed892087566b4dd6c984e9eddcf8"
+    },
+    {
+      "source": "bambu-projects/02-garage-base.png",
+      "source_sha256": "dae0d6a6ea46c0fda965e2ee6e4ede33c9972cb0a858f0ce5a871b65e8a027ad",
+      "destination": "archive/print-baseline/bambu-projects/02-garage-base.png",
+      "action": "copied",
+      "destination_sha256": "dae0d6a6ea46c0fda965e2ee6e4ede33c9972cb0a858f0ce5a871b65e8a027ad"
+    },
+    {
+      "source": "bambu-projects/03-book-left.png",
+      "source_sha256": "8546a6d1049489329695485c61b0fdc6792063908df535c4183f4273e9e47db9",
+      "destination": "archive/print-baseline/bambu-projects/03-book-left.png",
+      "action": "copied",
+      "destination_sha256": "8546a6d1049489329695485c61b0fdc6792063908df535c4183f4273e9e47db9"
+    },
+    {
+      "source": "bambu-projects/04-book-right.png",
+      "source_sha256": "4208f525355f766d722d9b28fd5400c9f2e4935b4e882c57c640066b322fad06",
+      "destination": "archive/print-baseline/bambu-projects/04-book-right.png",
+      "action": "copied",
+      "destination_sha256": "4208f525355f766d722d9b28fd5400c9f2e4935b4e882c57c640066b322fad06"
+    },
+    {
+      "source": "bambu-projects/05-support-segments-twelve.png",
+      "source_sha256": "81f0da16c2fc0f1ecb9ffaab7f83bf0574ebba7cca5227d353069c419616ffd0",
+      "destination": "archive/print-baseline/bambu-projects/05-support-segments-twelve.png",
+      "action": "copied",
+      "destination_sha256": "81f0da16c2fc0f1ecb9ffaab7f83bf0574ebba7cca5227d353069c419616ffd0"
+    },
+    {
+      "source": "bambu-projects/06-top-segments-four.png",
+      "source_sha256": "56efdf6f9f867bf15f81b9f0bb7a6bbfe480a295d529e0179e0f7954f93bd1a9",
+      "destination": "archive/print-baseline/bambu-projects/06-top-segments-four.png",
+      "action": "copied",
+      "destination_sha256": "56efdf6f9f867bf15f81b9f0bb7a6bbfe480a295d529e0179e0f7954f93bd1a9"
+    },
+    {
+      "source": "bambu-projects/07-billboard-and-posts-black.png",
+      "source_sha256": "e9c4c2a1516365d63b551438d0fbf3c7ea3215cfd9b82aa32f87b7c3e950ae94",
+      "destination": "archive/print-baseline/bambu-projects/07-billboard-and-posts-black.png",
+      "action": "copied",
+      "destination_sha256": "e9c4c2a1516365d63b551438d0fbf3c7ea3215cfd9b82aa32f87b7c3e950ae94"
+    },
+    {
+      "source": "bambu-projects/08-billboard-lettering-white.png",
+      "source_sha256": "a37b40eff048ebbca9ed5dad4865fcb7b672bd8917b505c0e81079d375b5892f",
+      "destination": "archive/print-baseline/bambu-projects/08-billboard-lettering-white.png",
+      "action": "copied",
+      "destination_sha256": "a37b40eff048ebbca9ed5dad4865fcb7b672bd8917b505c0e81079d375b5892f"
+    },
+    {
+      "source": "bambu-projects/09-blue-slogan-sign.png",
+      "source_sha256": "3d43aba603d6417613b13fd6d291b5ecc4087825cdd3c663ae72a63fea611f39",
+      "destination": "archive/print-baseline/bambu-projects/09-blue-slogan-sign.png",
+      "action": "copied",
+      "destination_sha256": "3d43aba603d6417613b13fd6d291b5ecc4087825cdd3c663ae72a63fea611f39"
+    },
+    {
+      "source": "bambu-projects/README.md",
+      "source_sha256": "70ab6feae5c1e2a8051d759d25ca0fe762a1493f73e8e464a075a9eeddac5b3e",
+      "destination": "archive/print-baseline/bambu-projects/README.md",
+      "action": "adapted",
+      "destination_sha256": "c10f12b7fb340bb8a977dc054fe1ab137dca1494b1b2d6de8d397e5ee5032f7a"
+    },
+    {
+      "source": "bambu-projects/print-manifest.json",
+      "source_sha256": "0bf28f430203fd8297892824afe559abd402023a0a6a223c8cf5f0711dcc3461",
+      "destination": "archive/print-baseline/bambu-projects/print-manifest.json",
+      "action": "copied",
+      "destination_sha256": "0bf28f430203fd8297892824afe559abd402023a0a6a223c8cf5f0711dcc3461"
+    },
+    {
+      "source": "build.py",
+      "source_sha256": "c4866c0d6b418dced1fe3ea0e63a59d3ba60a862ad592c3530128c51e40a8984",
+      "destination": "archive/legacy-tools/build.py",
+      "action": "adapted",
+      "destination_sha256": "aec4d484c517f6e37748ec086888b614704729a91b3de2a7f8bf5e1f0b115659"
+    },
+    {
+      "source": "cad_view_style.py",
+      "source_sha256": "8c3a826da9baae81aab52743b36fb52476e8234524fa08912b68ab0495ea4cd1",
+      "destination": "src/garage_bookshelf/appearance/storage.py",
+      "action": "adapted",
+      "destination_sha256": "f630ba450db337fffda9e60d6a01b6016a3f3720dc2e342cb13ea3e5eba88d08"
+    },
+    {
+      "source": "check_package.py",
+      "source_sha256": "7f3be13e86cef7ed8ba9113bb0c2e5a57142e0fdaa244d037677dca0d6851ab0",
+      "destination": "archive/legacy-tools/check_package.py",
+      "action": "adapted",
+      "destination_sha256": "eca44de91fcc8ab814d8f5b11069355cffc74ee6241d4ed0dca12413e4635a67"
+    },
+    {
+      "source": "connectors.py",
+      "source_sha256": "d53ba5de91a5d1fbf6e08c569c9fc15dc7792002f8eba505caa974388be06dd6",
+      "destination": "src/garage_bookshelf/connectors.py",
+      "action": "adapted",
+      "destination_sha256": "240b7e813be2130f0709b862ae3f4c1b018189b1d734286f0d16eedf4459e5e1"
+    },
+    {
+      "source": "cosmetics.py",
+      "source_sha256": "3886fba9894a6407ce84e119a3b0433cb7909ffcc241c7857ceb1f387d9031e5",
+      "destination": "src/garage_bookshelf/lettering.py",
+      "action": "adapted",
+      "destination_sha256": "57fccce30b317a6f0c51de2270996fe423b81e12b6f5a0d63499ddbfc511ac6b"
+    },
+    {
+      "source": "decoration/.gitattributes",
+      "source_sha256": "547f59603028195ff9f8a87d04c4651551e8bd0d68f075257dfd549cd846b25b",
+      "destination": "archive/proposals/parking-paper/.gitattributes",
+      "action": "copied",
+      "destination_sha256": "547f59603028195ff9f8a87d04c4651551e8bd0d68f075257dfd549cd846b25b"
+    },
+    {
+      "source": "decoration/README.md",
+      "source_sha256": "dbfe60836ef6eb7b2a2830e189f57385c9f9688f23813621373ea30ad2f28da4",
+      "destination": "archive/proposals/parking-paper/README.md",
+      "action": "copied",
+      "destination_sha256": "dbfe60836ef6eb7b2a2830e189f57385c9f9688f23813621373ea30ad2f28da4"
+    },
+    {
+      "source": "decoration/__pycache__/generate.cpython-311.pyc",
+      "source_sha256": "17cd481fa847198389a005d3d2b19c2cf0d6ac260c71905724dc501926691e11",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "decoration/__pycache__/generate.cpython-314.pyc",
+      "source_sha256": "e4f2c880d84cba7aa02b964da6685f501e8d2e0198ca9024e0cb0054866b5589",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "decoration/__pycache__/recessed_layout.cpython-311.pyc",
+      "source_sha256": "7de04da700dd2b0036efdfc5a292650a10f4dbe29d2b48513c60cd4b33cb326e",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "decoration/generate.py",
+      "source_sha256": "0cb480bae9faefcea073a21cab00a8e1b5eafadd8129b2e8f319a37c3a25eafd",
+      "destination": "archive/proposals/parking-paper/generate.py",
+      "action": "adapted",
+      "destination_sha256": "4265e58715cc805fbac036525281ab376be1edc4d8e470b96742f490076f9bc0"
+    },
+    {
+      "source": "decoration/layout-specification.json",
+      "source_sha256": "79b997ae0b1f52dd637c1766e07539c182695615059efed8a14014a02ddcd707",
+      "destination": "archive/proposals/parking-paper/layout-specification.json",
+      "action": "copied",
+      "destination_sha256": "79b997ae0b1f52dd637c1766e07539c182695615059efed8a14014a02ddcd707"
+    },
+    {
+      "source": "decoration/output/pdf/parking-layouts-actual-size.pdf",
+      "source_sha256": "b47def9c333a917306436e0ac0cd6436d784eb8a0ddfb8ac7fc05badf860ca6e",
+      "destination": "archive/proposals/parking-paper/output/pdf/parking-layouts-actual-size.pdf",
+      "action": "copied",
+      "destination_sha256": "b47def9c333a917306436e0ac0cd6436d784eb8a0ddfb8ac7fc05badf860ca6e"
+    },
+    {
+      "source": "decoration/parking-2-bays-markings.svg",
+      "source_sha256": "c2bec1c85c35039db3f546a9b6623d6b1f53f1d72a198dd1ec49f62f8be134ad",
+      "destination": "archive/proposals/parking-paper/parking-2-bays-markings.svg",
+      "action": "copied",
+      "destination_sha256": "c2bec1c85c35039db3f546a9b6623d6b1f53f1d72a198dd1ec49f62f8be134ad"
+    },
+    {
+      "source": "decoration/parking-2-bays-proof.svg",
+      "source_sha256": "5cdf0d94c65f524f4b995075644616929165d339dd1dd0efb544afa128763c5e",
+      "destination": "archive/proposals/parking-paper/parking-2-bays-proof.svg",
+      "action": "copied",
+      "destination_sha256": "5cdf0d94c65f524f4b995075644616929165d339dd1dd0efb544afa128763c5e"
+    },
+    {
+      "source": "decoration/parking-3-bays-markings.svg",
+      "source_sha256": "31ef618d964e85fb33d9827359bc0bf3b903739e65f68276f6abbfa443f8d848",
+      "destination": "archive/proposals/parking-paper/parking-3-bays-markings.svg",
+      "action": "copied",
+      "destination_sha256": "31ef618d964e85fb33d9827359bc0bf3b903739e65f68276f6abbfa443f8d848"
+    },
+    {
+      "source": "decoration/parking-3-bays-proof.svg",
+      "source_sha256": "6bcfbb3b6a53e114b405d70d7378f788512c0e9b2dc079d12ce4ea95df1fc0dc",
+      "destination": "archive/proposals/parking-paper/parking-3-bays-proof.svg",
+      "action": "copied",
+      "destination_sha256": "6bcfbb3b6a53e114b405d70d7378f788512c0e9b2dc079d12ce4ea95df1fc0dc"
+    },
+    {
+      "source": "decoration/parking-layout-comparison.png",
+      "source_sha256": "9778dafd9118709acb82190b753d0835d5925914ee6200ddb34d0fea7c7a11b4",
+      "destination": "archive/proposals/parking-paper/parking-layout-comparison.png",
+      "action": "copied",
+      "destination_sha256": "9778dafd9118709acb82190b753d0835d5925914ee6200ddb34d0fea7c7a11b4"
+    },
+    {
+      "source": "decoration/recessed_layout.py",
+      "source_sha256": "9d4ac2688f966eec28495604f2247f4d219be31fc811db2b9afb5532660ca400",
+      "destination": "src/garage_bookshelf/parking/layout.py",
+      "action": "adapted",
+      "destination_sha256": "b39a9a19c8f3e52451bf26d3168ce27b1c73504f6e1f3177b09fbc051c164016"
+    },
+    {
+      "source": "fit-tests/back-joint/.gitignore",
+      "source_sha256": "bb904009205e040aad5ccb6ce4a5c7ef07bc9a342d96e6d74388415ba00abcbd",
+      "destination": "studies/back-joint-fit/.gitignore",
+      "action": "copied",
+      "destination_sha256": "bb904009205e040aad5ccb6ce4a5c7ef07bc9a342d96e6d74388415ba00abcbd"
+    },
+    {
+      "source": "fit-tests/back-joint/README.md",
+      "source_sha256": "767161b35c56a78548f659fa397c8a909afed98ec0f40f0ad02c153140621d69",
+      "destination": "studies/back-joint-fit/README.md",
+      "action": "adapted",
+      "destination_sha256": "3563ddf6c2485fd284fd49901d810d0f114feb0a3df652be351de57181db6842"
+    },
+    {
+      "source": "fit-tests/back-joint/artifacts/A-M.stl",
+      "source_sha256": "9412c6f297603c327464e1dd4726ac0178fe9c491203cc15284ce5ae2c7f16c7",
+      "destination": "studies/back-joint-fit/artifacts/A-M.stl",
+      "action": "copied",
+      "destination_sha256": "9412c6f297603c327464e1dd4726ac0178fe9c491203cc15284ce5ae2c7f16c7"
+    },
+    {
+      "source": "fit-tests/back-joint/artifacts/A-S.stl",
+      "source_sha256": "4a2af8feb6572e9d410391025f88316237fd3e2bdc476e275817c05b0d5afcd9",
+      "destination": "studies/back-joint-fit/artifacts/A-S.stl",
+      "action": "copied",
+      "destination_sha256": "4a2af8feb6572e9d410391025f88316237fd3e2bdc476e275817c05b0d5afcd9"
+    },
+    {
+      "source": "fit-tests/back-joint/artifacts/B-M.stl",
+      "source_sha256": "160cad10e94e3184c719cfc97600c1c43d95c3dedcfe146eb5f0506ccbf4e393",
+      "destination": "studies/back-joint-fit/artifacts/B-M.stl",
+      "action": "copied",
+      "destination_sha256": "160cad10e94e3184c719cfc97600c1c43d95c3dedcfe146eb5f0506ccbf4e393"
+    },
+    {
+      "source": "fit-tests/back-joint/artifacts/B-S.stl",
+      "source_sha256": "1718001149228566eff7cc07060f451e349e00d3f4a0c34a053214b2d81438e0",
+      "destination": "studies/back-joint-fit/artifacts/B-S.stl",
+      "action": "copied",
+      "destination_sha256": "1718001149228566eff7cc07060f451e349e00d3f4a0c34a053214b2d81438e0"
+    },
+    {
+      "source": "fit-tests/back-joint/artifacts/C-M.stl",
+      "source_sha256": "f05f27ca428d325a6cb30e7d20d1c3f19fabdc1202291df2d2cf657e2b051f21",
+      "destination": "studies/back-joint-fit/artifacts/C-M.stl",
+      "action": "copied",
+      "destination_sha256": "f05f27ca428d325a6cb30e7d20d1c3f19fabdc1202291df2d2cf657e2b051f21"
+    },
+    {
+      "source": "fit-tests/back-joint/artifacts/C-S.stl",
+      "source_sha256": "40716f27e78da8e2bd6eba366edcedb51149350a5a251c712f0711fff36be43d",
+      "destination": "studies/back-joint-fit/artifacts/C-S.stl",
+      "action": "copied",
+      "destination_sha256": "40716f27e78da8e2bd6eba366edcedb51149350a5a251c712f0711fff36be43d"
+    },
+    {
+      "source": "fit-tests/back-joint/artifacts/D-M.stl",
+      "source_sha256": "0a274c431e306bd90a3d817bbd07318b3b3daa5b3163ac3ff89f2353ee026309",
+      "destination": "studies/back-joint-fit/artifacts/D-M.stl",
+      "action": "copied",
+      "destination_sha256": "0a274c431e306bd90a3d817bbd07318b3b3daa5b3163ac3ff89f2353ee026309"
+    },
+    {
+      "source": "fit-tests/back-joint/artifacts/D-S.stl",
+      "source_sha256": "47baadaef9b832419cfa672783bee9901fc6c46c65b83f271749ff77bb1a12b9",
+      "destination": "studies/back-joint-fit/artifacts/D-S.stl",
+      "action": "copied",
+      "destination_sha256": "47baadaef9b832419cfa672783bee9901fc6c46c65b83f271749ff77bb1a12b9"
+    },
+    {
+      "source": "fit-tests/back-joint/artifacts/E-M.stl",
+      "source_sha256": "e1de4476472812177809265921aa1e08602c53b9dd6d337faa77986fa16d79ad",
+      "destination": "studies/back-joint-fit/artifacts/E-M.stl",
+      "action": "copied",
+      "destination_sha256": "e1de4476472812177809265921aa1e08602c53b9dd6d337faa77986fa16d79ad"
+    },
+    {
+      "source": "fit-tests/back-joint/artifacts/E-S.stl",
+      "source_sha256": "a4d974912531293a776affd347eb452c0f81b17df01fc24e8cbb5f7c71aa3f92",
+      "destination": "studies/back-joint-fit/artifacts/E-S.stl",
+      "action": "copied",
+      "destination_sha256": "a4d974912531293a776affd347eb452c0f81b17df01fc24e8cbb5f7c71aa3f92"
+    },
+    {
+      "source": "fit-tests/back-joint/artifacts/F-M.stl",
+      "source_sha256": "128e91a359a19703a56829e50b14f5295a63ba02db27fe63bd715b5c4e5d2d9c",
+      "destination": "studies/back-joint-fit/artifacts/F-M.stl",
+      "action": "copied",
+      "destination_sha256": "128e91a359a19703a56829e50b14f5295a63ba02db27fe63bd715b5c4e5d2d9c"
+    },
+    {
+      "source": "fit-tests/back-joint/artifacts/F-S.stl",
+      "source_sha256": "545520db8af14394e10a09d37104372c36066d9539020d7f08a30bb040538712",
+      "destination": "studies/back-joint-fit/artifacts/F-S.stl",
+      "action": "copied",
+      "destination_sha256": "545520db8af14394e10a09d37104372c36066d9539020d7f08a30bb040538712"
+    },
+    {
+      "source": "fit-tests/back-joint/artifacts/back-joint-fit-samples.FCStd",
+      "source_sha256": "e6f1a6ef8298208b616930091f35a36b6440a1910615338f1f6ae1589b8abfe4",
+      "destination": "studies/back-joint-fit/artifacts/back-joint-fit-samples.FCStd",
+      "action": "copied",
+      "destination_sha256": "e6f1a6ef8298208b616930091f35a36b6440a1910615338f1f6ae1589b8abfe4"
+    },
+    {
+      "source": "fit-tests/back-joint/artifacts/parameters.json",
+      "source_sha256": "50715656911811988eb38a481cbe3e48855eba589687b0a5e0654c9b437aba3f",
+      "destination": "studies/back-joint-fit/artifacts/parameters.json",
+      "action": "copied",
+      "destination_sha256": "50715656911811988eb38a481cbe3e48855eba589687b0a5e0654c9b437aba3f"
+    },
+    {
+      "source": "fit-tests/back-joint/artifacts/plate-preview.png",
+      "source_sha256": "23124f0da1a1207e7218de32aa7595177e57899ef3673f6216d0ea91bf4f263e",
+      "destination": "studies/back-joint-fit/artifacts/plate-preview.png",
+      "action": "copied",
+      "destination_sha256": "23124f0da1a1207e7218de32aa7595177e57899ef3673f6216d0ea91bf4f263e"
+    },
+    {
+      "source": "fit-tests/back-joint/artifacts/validation.json",
+      "source_sha256": "bbbdd2546c108445a4639a7e1faf43c274b2d9c324ba03039398e014372dff9f",
+      "destination": "studies/back-joint-fit/artifacts/validation.json",
+      "action": "copied",
+      "destination_sha256": "bbbdd2546c108445a4639a7e1faf43c274b2d9c324ba03039398e014372dff9f"
+    },
+    {
+      "source": "fit-tests/back-joint/artifacts/试配说明.md",
+      "source_sha256": "b78f36add0bd7fc4946087ae70205bf6ea6c6db822153fbe44ff3993b932df5c",
+      "destination": "studies/back-joint-fit/artifacts/试配说明.md",
+      "action": "copied",
+      "destination_sha256": "b78f36add0bd7fc4946087ae70205bf6ea6c6db822153fbe44ff3993b932df5c"
+    },
+    {
+      "source": "fit-tests/back-joint/generate.py",
+      "source_sha256": "a719dca9c764809702a470b449836cbf62d75060eb4f015a3fa5b092b4f4afed",
+      "destination": "studies/back-joint-fit/generate.py",
+      "action": "adapted",
+      "destination_sha256": "7abc8b0429b1a9a8a957470133faa0c46d6c7612853b861da402e51f82b98ff1"
+    },
+    {
+      "source": "fit-tests/back-joint/package.py",
+      "source_sha256": "d2ba8e86fa1e0f7159314f79239c93e9ad33010654a4f13f06e19372d4c32a77",
+      "destination": "studies/back-joint-fit/package.py",
+      "action": "adapted",
+      "destination_sha256": "81f0bb58fd82543b99dbfe2c5c7f16de8845c208f977141e98311099f8451eaf"
+    },
+    {
+      "source": "garage-bookshelf-v4-X2D-print-3mf/.DS_Store",
+      "source_sha256": "c7de327a2f845a6f54cf7603f8baf0d9d6bc76039046409537a4ec6dcf72d129",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "garage-bookshelf-v4-X2D-print-3mf/01a-garage-deck-1-two-bays.png",
+      "source_sha256": "8b30fc52155bcdf4b7ac6a83c1e0c97a0b803ffb30d5904ee99ccf57bdb7a5c9",
+      "destination": "archive/print-baseline/bambu-projects/01a-garage-deck-1-two-bays.png",
+      "action": "copied",
+      "destination_sha256": "8b30fc52155bcdf4b7ac6a83c1e0c97a0b803ffb30d5904ee99ccf57bdb7a5c9"
+    },
+    {
+      "source": "garage-bookshelf-v4-X2D-print-3mf/01b-garage-deck-2-three-bays.png",
+      "source_sha256": "db5e9c791f230a3ecd530f303e27576d503a6a3a8e0daa5a26113c8bc3dae525",
+      "destination": "archive/print-baseline/bambu-projects/01b-garage-deck-2-three-bays.png",
+      "action": "copied",
+      "destination_sha256": "db5e9c791f230a3ecd530f303e27576d503a6a3a8e0daa5a26113c8bc3dae525"
+    },
+    {
+      "source": "garage-bookshelf-v4-X2D-print-3mf/01c-garage-deck-3-plain.png",
+      "source_sha256": "d05ae0653173b08c55bdcf4404a661417cc0ed892087566b4dd6c984e9eddcf8",
+      "destination": "archive/print-baseline/bambu-projects/01c-garage-deck-3-plain.png",
+      "action": "copied",
+      "destination_sha256": "d05ae0653173b08c55bdcf4404a661417cc0ed892087566b4dd6c984e9eddcf8"
+    },
+    {
+      "source": "garage-bookshelf-v4-X2D-print-3mf/02-garage-base.png",
+      "source_sha256": "dae0d6a6ea46c0fda965e2ee6e4ede33c9972cb0a858f0ce5a871b65e8a027ad",
+      "destination": "archive/print-baseline/bambu-projects/02-garage-base.png",
+      "action": "copied",
+      "destination_sha256": "dae0d6a6ea46c0fda965e2ee6e4ede33c9972cb0a858f0ce5a871b65e8a027ad"
+    },
+    {
+      "source": "garage-bookshelf-v4-X2D-print-3mf/03-book-left.png",
+      "source_sha256": "8546a6d1049489329695485c61b0fdc6792063908df535c4183f4273e9e47db9",
+      "destination": "archive/print-baseline/bambu-projects/03-book-left.png",
+      "action": "copied",
+      "destination_sha256": "8546a6d1049489329695485c61b0fdc6792063908df535c4183f4273e9e47db9"
+    },
+    {
+      "source": "garage-bookshelf-v4-X2D-print-3mf/04-book-right.png",
+      "source_sha256": "4208f525355f766d722d9b28fd5400c9f2e4935b4e882c57c640066b322fad06",
+      "destination": "archive/print-baseline/bambu-projects/04-book-right.png",
+      "action": "copied",
+      "destination_sha256": "4208f525355f766d722d9b28fd5400c9f2e4935b4e882c57c640066b322fad06"
+    },
+    {
+      "source": "garage-bookshelf-v4-X2D-print-3mf/05-support-segments-twelve.png",
+      "source_sha256": "81f0da16c2fc0f1ecb9ffaab7f83bf0574ebba7cca5227d353069c419616ffd0",
+      "destination": "archive/print-baseline/bambu-projects/05-support-segments-twelve.png",
+      "action": "copied",
+      "destination_sha256": "81f0da16c2fc0f1ecb9ffaab7f83bf0574ebba7cca5227d353069c419616ffd0"
+    },
+    {
+      "source": "garage-bookshelf-v4-X2D-print-3mf/06-top-segments-four.png",
+      "source_sha256": "56efdf6f9f867bf15f81b9f0bb7a6bbfe480a295d529e0179e0f7954f93bd1a9",
+      "destination": "archive/print-baseline/bambu-projects/06-top-segments-four.png",
+      "action": "copied",
+      "destination_sha256": "56efdf6f9f867bf15f81b9f0bb7a6bbfe480a295d529e0179e0f7954f93bd1a9"
+    },
+    {
+      "source": "garage-bookshelf-v4-X2D-print-3mf/07-billboard-and-posts-black.png",
+      "source_sha256": "e9c4c2a1516365d63b551438d0fbf3c7ea3215cfd9b82aa32f87b7c3e950ae94",
+      "destination": "archive/print-baseline/bambu-projects/07-billboard-and-posts-black.png",
+      "action": "copied",
+      "destination_sha256": "e9c4c2a1516365d63b551438d0fbf3c7ea3215cfd9b82aa32f87b7c3e950ae94"
+    },
+    {
+      "source": "garage-bookshelf-v4-X2D-print-3mf/08-billboard-lettering-white.png",
+      "source_sha256": "a37b40eff048ebbca9ed5dad4865fcb7b672bd8917b505c0e81079d375b5892f",
+      "destination": "archive/print-baseline/bambu-projects/08-billboard-lettering-white.png",
+      "action": "copied",
+      "destination_sha256": "a37b40eff048ebbca9ed5dad4865fcb7b672bd8917b505c0e81079d375b5892f"
+    },
+    {
+      "source": "garage-bookshelf-v4-X2D-print-3mf/09-blue-slogan-sign.png",
+      "source_sha256": "3d43aba603d6417613b13fd6d291b5ecc4087825cdd3c663ae72a63fea611f39",
+      "destination": "archive/print-baseline/bambu-projects/09-blue-slogan-sign.png",
+      "action": "copied",
+      "destination_sha256": "3d43aba603d6417613b13fd6d291b5ecc4087825cdd3c663ae72a63fea611f39"
+    },
+    {
+      "source": "garage-bookshelf-v4-X2D-print-3mf/README.md",
+      "source_sha256": "70ab6feae5c1e2a8051d759d25ca0fe762a1493f73e8e464a075a9eeddac5b3e",
+      "destination": "archive/print-baseline/bambu-projects/README.md",
+      "action": "adapted",
+      "destination_sha256": "c10f12b7fb340bb8a977dc054fe1ab137dca1494b1b2d6de8d397e5ee5032f7a"
+    },
+    {
+      "source": "garage-bookshelf-v4-X2D-print-3mf/previews/assembly-preview.png",
+      "source_sha256": "77e1239cd50e21f35b3638fed5e503f99a9aa4641e0922724936315bf2832673",
+      "destination": "archive/print-baseline/previews/assembly-preview.png",
+      "action": "copied",
+      "destination_sha256": "77e1239cd50e21f35b3638fed5e503f99a9aa4641e0922724936315bf2832673"
+    },
+    {
+      "source": "garage-bookshelf-v4-X2D-print-3mf/previews/blue-sign-preview.png",
+      "source_sha256": "dcf85a569e0b2bee2a5c971ce9b8c5f4cc3b233d4e4cddadc4bf262e26f454b7",
+      "destination": "archive/print-baseline/previews/blue-sign-preview.png",
+      "action": "copied",
+      "destination_sha256": "dcf85a569e0b2bee2a5c971ce9b8c5f4cc3b233d4e4cddadc4bf262e26f454b7"
+    },
+    {
+      "source": "garage-bookshelf-v4-X2D-print-3mf/previews/parking-deck-1-preview.png",
+      "source_sha256": "8719381c2b543b39f4ca668f438f2a8192b1bf3fa142fa895290cedae6a1e322",
+      "destination": "archive/print-baseline/previews/parking-deck-1-preview.png",
+      "action": "copied",
+      "destination_sha256": "8719381c2b543b39f4ca668f438f2a8192b1bf3fa142fa895290cedae6a1e322"
+    },
+    {
+      "source": "garage-bookshelf-v4-X2D-print-3mf/previews/parking-deck-2-preview.png",
+      "source_sha256": "dcbdd8c72c59f4858402c1b16a51bd50c07f897c1dd1092923263131d35cdcdf",
+      "destination": "archive/print-baseline/previews/parking-deck-2-preview.png",
+      "action": "copied",
+      "destination_sha256": "dcbdd8c72c59f4858402c1b16a51bd50c07f897c1dd1092923263131d35cdcdf"
+    },
+    {
+      "source": "garage-bookshelf-v4-X2D-print-3mf/print-manifest.json",
+      "source_sha256": "0bf28f430203fd8297892824afe559abd402023a0a6a223c8cf5f0711dcc3461",
+      "destination": "archive/print-baseline/bambu-projects/print-manifest.json",
+      "action": "copied",
+      "destination_sha256": "0bf28f430203fd8297892824afe559abd402023a0a6a223c8cf5f0711dcc3461"
+    },
+    {
+      "source": "garage-bookshelf-v4-assembly.20261026-112813.FCBak",
+      "source_sha256": "f0a3745b2729123a568104d439ee20aa02524caa622e71fb83d1110f2c02e749",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "garage-bookshelf-v4-assembly.FCStd",
+      "source_sha256": "822d05f79b60b10a8a9958e427d9591d476a89f391914b90d9eaa1d83fde6958",
+      "destination": "cad/garage-bookshelf-v5-assembly.FCStd",
+      "action": "copied",
+      "destination_sha256": "822d05f79b60b10a8a9958e427d9591d476a89f391914b90d9eaa1d83fde6958"
+    },
+    {
+      "source": "garage-bookshelf-v4-assembly.step",
+      "source_sha256": "cd868ec643caf6d10d74a98e4cd96e1855d18460d04ba6d160b2b8a8e111541d",
+      "destination": "archive/print-baseline/garage-bookshelf-v4-assembly.step",
+      "action": "copied",
+      "destination_sha256": "cd868ec643caf6d10d74a98e4cd96e1855d18460d04ba6d160b2b8a8e111541d"
+    },
+    {
+      "source": "geometry/__pycache__/features.cpython-311.pyc",
+      "source_sha256": "0c393eac20850fd12b5576f70c0b45484f3d7806a8d7074dea874b6b7b500b2e",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "geometry/__pycache__/features.cpython-314.pyc",
+      "source_sha256": "26a07db9fdd3862fd6f4ff6c222033da7a2c621e62535dccd143a112c45da920",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "geometry/__pycache__/sketches.cpython-311.pyc",
+      "source_sha256": "c58050def6d684a5f1dfa4acff30fe832a1984ad8e1e030671f85893f00fb69b",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "geometry/__pycache__/sketches.cpython-314.pyc",
+      "source_sha256": "c1dcbff1d6082d1b1cf229e24e5536f3c607b0f469b313320fa4672e1d428bfc",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "geometry/features.py",
+      "source_sha256": "96f14c22f6939957f6c0e691407a38a2aac8195fc83b64a36fc96a014acc8430",
+      "destination": "src/garage_bookshelf/geometry/features.py",
+      "action": "adapted",
+      "destination_sha256": "ab8ab168c88df2a718a2771591d99134cd1a0249f684d50575cafb85ad9ba4d5"
+    },
+    {
+      "source": "geometry/sketches.py",
+      "source_sha256": "7d30201ac058b2fdd84d97d027244e448fed50234392035f24e4cebbad9fadf9",
+      "destination": "src/garage_bookshelf/geometry/sketches.py",
+      "action": "adapted",
+      "destination_sha256": "ffa919e90c330e387b04c747c74cb08efcd595c4956b35f6568c765d9a63b8df"
+    },
+    {
+      "source": "gui_review.py",
+      "source_sha256": "339186e273f26f68aa4f9b0d462b4cfd1c8e7c871e3cfe651ca01d7b5c9459af",
+      "destination": "archive/legacy-tools/gui_review.py",
+      "action": "adapted",
+      "destination_sha256": "4df66e01a908281c28e05a8e15544191b90bc71338ecaf0cb383aa9600aaaf49"
+    },
+    {
+      "source": "main.py",
+      "source_sha256": "4a0b388933f345006623f8c297b6ebf4b57484621d37895f1fd8d3281fd136b2",
+      "destination": "archive/legacy-tools/main.py",
+      "action": "adapted",
+      "destination_sha256": "6fb93db2f5c9d5b8c347f305fe9e7381c4374e86a6052915b2fb5b1008e61ca5"
+    },
+    {
+      "source": "make_print_projects.py",
+      "source_sha256": "4a063fc4830c38b4812fb3c0c1c1add2b407f0b17d2591ad4930ebefaa20d8cf",
+      "destination": "archive/legacy-tools/make_print_projects.py",
+      "action": "adapted",
+      "destination_sha256": "235b2282312502c39720408779b12b87649103e6ff84cc33f17a62a5844587e5"
+    },
+    {
+      "source": "package_print_projects.py",
+      "source_sha256": "c05db0609c860a7eef882c9647ee1216f97be4f51beed8a46ece196056fc5af8",
+      "destination": "archive/legacy-tools/package_print_projects.py",
+      "action": "adapted",
+      "destination_sha256": "31645b5f1e9948913307f2c8f423adb8d56968912121af88c47c7ddf8c56c68d"
+    },
+    {
+      "source": "parameters.py",
+      "source_sha256": "83b89c105c96133387855fbd2afcc59ad722e16fb63d383054f0d70beb81202f",
+      "destination": "src/garage_bookshelf/parameters.py",
+      "action": "copied",
+      "destination_sha256": "83b89c105c96133387855fbd2afcc59ad722e16fb63d383054f0d70beb81202f"
+    },
+    {
+      "source": "parking_markings.py",
+      "source_sha256": "918279cbf3115eef1370ba31bb1b0d41b882c5427a695f082ebc17de202e80fa",
+      "destination": "src/garage_bookshelf/parking/markings.py",
+      "action": "adapted",
+      "destination_sha256": "d88b9112abdcf68321f7b93c1569a8264f136eaff1aad2fce206ebedbf50c0ff"
+    },
+    {
+      "source": "parking_recesses.py",
+      "source_sha256": "59c7ef1ac0c957ebf7b5c6d880b005fb2d83eb0a61a5351f616432180ea5dd0a",
+      "destination": "src/garage_bookshelf/parking/recesses.py",
+      "action": "adapted",
+      "destination_sha256": "e07df9aa61e9f728f84779ea1c4647657ba2737a337c1f50b8bcf6bd4a26ddc5"
+    },
+    {
+      "source": "previews/garage-billboard-and-replaceable-sign-preview.3mf",
+      "source_sha256": "1807a6632f3ff90efefd59755b776addea757c7ba0fe4db5a8b5f2fd83846461",
+      "destination": "archive/proposals/garage-billboard-and-replaceable-sign-preview.3mf",
+      "action": "copied",
+      "destination_sha256": "1807a6632f3ff90efefd59755b776addea757c7ba0fe4db5a8b5f2fd83846461"
+    },
+    {
+      "source": "previews/mpower-colors/mpower-candidate.FCStd",
+      "source_sha256": "e9fcab64c81a37f724e1b02e7aa96dee0d644a6954bbbcac8ec47537529c7d60",
+      "destination": "archive/proposals/mpower-colors/mpower-candidate.FCStd",
+      "action": "copied",
+      "destination_sha256": "e9fcab64c81a37f724e1b02e7aa96dee0d644a6954bbbcac8ec47537529c7d60"
+    },
+    {
+      "source": "previews/parking-decoration-refresh/preview-validation.json",
+      "source_sha256": "a8ce5e09f4599fd3d7859c21c22360b5a930bd157772d72193e219552b50f437",
+      "destination": "archive/proposals/parking-decoration-refresh/preview-validation.json",
+      "action": "copied",
+      "destination_sha256": "a8ce5e09f4599fd3d7859c21c22360b5a930bd157772d72193e219552b50f437"
+    },
+    {
+      "source": "previews/parking-decoration-refresh/proposed-2-bay.png",
+      "source_sha256": "09ec971b7f8e01ba651fac7cc0d1e657c92fb688ac9e918badea88a500d89128",
+      "destination": "archive/proposals/parking-decoration-refresh/proposed-2-bay.png",
+      "action": "copied",
+      "destination_sha256": "09ec971b7f8e01ba651fac7cc0d1e657c92fb688ac9e918badea88a500d89128"
+    },
+    {
+      "source": "previews/parking-decoration-refresh/proposed-3-bay.png",
+      "source_sha256": "9029cca488ffaaa70d7c18591fbf7f2bab7722125d777c30e9ce3bdc27330e43",
+      "destination": "archive/proposals/parking-decoration-refresh/proposed-3-bay.png",
+      "action": "copied",
+      "destination_sha256": "9029cca488ffaaa70d7c18591fbf7f2bab7722125d777c30e9ce3bdc27330e43"
+    },
+    {
+      "source": "previews/parking-decoration-refresh/render.py",
+      "source_sha256": "7463234e44d692e5d0c0218d2ebb4572f2a5973b599b60382638e118f33f1171",
+      "destination": "archive/proposals/parking-decoration-refresh/render.py",
+      "action": "adapted",
+      "destination_sha256": "9efc7c5e2fd830876d6368e844678dde5112da687091aab3537723922e214b4d"
+    },
+    {
+      "source": "print-profiles/PLA-0.20-process.json",
+      "source_sha256": "7c43fd772ec71e238d5e8146f4dbcdedee5756779e7fb3db8ce34a462212d4bd",
+      "destination": "assets/print-profiles/PLA-0.20-process.json",
+      "action": "copied",
+      "destination_sha256": "7c43fd772ec71e238d5e8146f4dbcdedee5756779e7fb3db8ce34a462212d4bd"
+    },
+    {
+      "source": "print-profiles/PLA-0.20-support-process.json",
+      "source_sha256": "be5fac3582f892ffab3c3d95f68f643ea88cb0080f20cb3308a7be5eadf995eb",
+      "destination": "assets/print-profiles/PLA-0.20-support-process.json",
+      "action": "copied",
+      "destination_sha256": "be5fac3582f892ffab3c3d95f68f643ea88cb0080f20cb3308a7be5eadf995eb"
+    },
+    {
+      "source": "print-profiles/PLA-black.json",
+      "source_sha256": "7e10f990210dae812fc9e49bd7c3ca7b8023da75f8e9abe0345b7048912f8214",
+      "destination": "assets/print-profiles/PLA-black.json",
+      "action": "copied",
+      "destination_sha256": "7e10f990210dae812fc9e49bd7c3ca7b8023da75f8e9abe0345b7048912f8214"
+    },
+    {
+      "source": "print-profiles/PLA-blue.json",
+      "source_sha256": "de9eea9b50ee86169a69d3ba2fb4eca18d5d33c886bba33d30c3b9e20364f846",
+      "destination": "assets/print-profiles/PLA-blue.json",
+      "action": "copied",
+      "destination_sha256": "de9eea9b50ee86169a69d3ba2fb4eca18d5d33c886bba33d30c3b9e20364f846"
+    },
+    {
+      "source": "print-profiles/PLA-gray.json",
+      "source_sha256": "07566fe0bbdd6efc7e0809825a48eb3e43b9fd85f900669e099e7178df373eb9",
+      "destination": "assets/print-profiles/PLA-gray.json",
+      "action": "copied",
+      "destination_sha256": "07566fe0bbdd6efc7e0809825a48eb3e43b9fd85f900669e099e7178df373eb9"
+    },
+    {
+      "source": "print-profiles/PLA-white.json",
+      "source_sha256": "c8d4d802cd7b7bbfff21b99ed29c737d1cab621c9757ba2525a3f60bf272427d",
+      "destination": "assets/print-profiles/PLA-white.json",
+      "action": "copied",
+      "destination_sha256": "c8d4d802cd7b7bbfff21b99ed29c737d1cab621c9757ba2525a3f60bf272427d"
+    },
+    {
+      "source": "print-profiles/PLA-yellow.json",
+      "source_sha256": "6d80dc817e9991cf9ea806f27606d4ad6b85b5760052a40d71270938fe8948ec",
+      "destination": "assets/print-profiles/PLA-yellow.json",
+      "action": "copied",
+      "destination_sha256": "6d80dc817e9991cf9ea806f27606d4ad6b85b5760052a40d71270938fe8948ec"
+    },
+    {
+      "source": "print-profiles/X2D-0.4-standard-machine.json",
+      "source_sha256": "4c17d3a278fe85969749820539d0dce982f048cfa8249ff6d110e442fd8b2ee2",
+      "destination": "assets/print-profiles/X2D-0.4-standard-machine.json",
+      "action": "copied",
+      "destination_sha256": "4c17d3a278fe85969749820539d0dce982f048cfa8249ff6d110e442fd8b2ee2"
+    },
+    {
+      "source": "print-profiles/profile-sources.json",
+      "source_sha256": "e64f15f4436b4edb0071f2d4f429a4f060804ddd9efd04681c2fa35393a362a5",
+      "destination": "assets/print-profiles/profile-sources.json",
+      "action": "copied",
+      "destination_sha256": "e64f15f4436b4edb0071f2d4f429a4f060804ddd9efd04681c2fa35393a362a5"
+    },
+    {
+      "source": "print-stl/billboard.stl",
+      "source_sha256": "1665648678bb073e2a6e77d59fbef23e1e5477cd51b18d0b8485c9cc866cb2bb",
+      "destination": "archive/print-baseline/stl/print/billboard.stl",
+      "action": "copied",
+      "destination_sha256": "1665648678bb073e2a6e77d59fbef23e1e5477cd51b18d0b8485c9cc866cb2bb"
+    },
+    {
+      "source": "print-stl/billboard_post_left.stl",
+      "source_sha256": "291f9f3e8fc24a375972ccfd8dc24645579efa042f42fa4d3ee13c8d06f6f22a",
+      "destination": "archive/print-baseline/stl/print/billboard_post_left.stl",
+      "action": "copied",
+      "destination_sha256": "291f9f3e8fc24a375972ccfd8dc24645579efa042f42fa4d3ee13c8d06f6f22a"
+    },
+    {
+      "source": "print-stl/billboard_post_right.stl",
+      "source_sha256": "d5f209e6ae478331d750ff43c99b5c38eec327f207a902f3dded47856a1eff9c",
+      "destination": "archive/print-baseline/stl/print/billboard_post_right.stl",
+      "action": "copied",
+      "destination_sha256": "d5f209e6ae478331d750ff43c99b5c38eec327f207a902f3dded47856a1eff9c"
+    },
+    {
+      "source": "print-stl/billboard_text_ive_driven.stl",
+      "source_sha256": "d2afa0e218206fc0868146b2c6c49fa9c1771c7e3aa5f480169aee4728a637c1",
+      "destination": "archive/print-baseline/stl/print/billboard_text_ive_driven.stl",
+      "action": "copied",
+      "destination_sha256": "d2afa0e218206fc0868146b2c6c49fa9c1771c7e3aa5f480169aee4728a637c1"
+    },
+    {
+      "source": "print-stl/billboard_text_lovely_cars.stl",
+      "source_sha256": "aec0a6df3cbdbdf0a4091ae1d3cf396c0a9dba15426d66166961f26b4b66e3e4",
+      "destination": "archive/print-baseline/stl/print/billboard_text_lovely_cars.stl",
+      "action": "copied",
+      "destination_sha256": "aec0a6df3cbdbdf0a4091ae1d3cf396c0a9dba15426d66166961f26b4b66e3e4"
+    },
+    {
+      "source": "print-stl/book_depot_sign.stl",
+      "source_sha256": "408a9cd0aa5be56157be620f2c27535319b85efa4265520cbd9b050887ec7797",
+      "destination": "archive/print-baseline/stl/print/book_depot_sign.stl",
+      "action": "copied",
+      "destination_sha256": "408a9cd0aa5be56157be620f2c27535319b85efa4265520cbd9b050887ec7797"
+    },
+    {
+      "source": "print-stl/column_1_segment_1.stl",
+      "source_sha256": "cea67b1f1eaff4ae62dcd14f471b479af195bec656128debb6176dbc551fce76",
+      "destination": "archive/print-baseline/stl/print/column_1_segment_1.stl",
+      "action": "copied",
+      "destination_sha256": "cea67b1f1eaff4ae62dcd14f471b479af195bec656128debb6176dbc551fce76"
+    },
+    {
+      "source": "print-stl/column_1_segment_2.stl",
+      "source_sha256": "f381f3e106d0c05c01c623f56f921abc6aaa1dea022a7cf63e6c617ed0e95873",
+      "destination": "archive/print-baseline/stl/print/column_1_segment_2.stl",
+      "action": "copied",
+      "destination_sha256": "f381f3e106d0c05c01c623f56f921abc6aaa1dea022a7cf63e6c617ed0e95873"
+    },
+    {
+      "source": "print-stl/column_1_segment_3.stl",
+      "source_sha256": "e1e589ec45be010f2c0fd886a43887ee3f82a507cd5702122c0c5a4b77b0f607",
+      "destination": "archive/print-baseline/stl/print/column_1_segment_3.stl",
+      "action": "copied",
+      "destination_sha256": "e1e589ec45be010f2c0fd886a43887ee3f82a507cd5702122c0c5a4b77b0f607"
+    },
+    {
+      "source": "print-stl/column_1_segment_4.stl",
+      "source_sha256": "785fd079da943ab35f2ad203aaecd8a759ba6d36a0a8f806e8d22e3f21d08331",
+      "destination": "archive/print-baseline/stl/print/column_1_segment_4.stl",
+      "action": "copied",
+      "destination_sha256": "785fd079da943ab35f2ad203aaecd8a759ba6d36a0a8f806e8d22e3f21d08331"
+    },
+    {
+      "source": "print-stl/column_2_segment_1.stl",
+      "source_sha256": "0ebc30713d5ab93730ef044494bd5746f9214bb5e5f7597c470f848183908973",
+      "destination": "archive/print-baseline/stl/print/column_2_segment_1.stl",
+      "action": "copied",
+      "destination_sha256": "0ebc30713d5ab93730ef044494bd5746f9214bb5e5f7597c470f848183908973"
+    },
+    {
+      "source": "print-stl/column_2_segment_2.stl",
+      "source_sha256": "dcd17ff781d0826950197dacdee61388fbb14f5d540f51a2dc65aebb166b548e",
+      "destination": "archive/print-baseline/stl/print/column_2_segment_2.stl",
+      "action": "copied",
+      "destination_sha256": "dcd17ff781d0826950197dacdee61388fbb14f5d540f51a2dc65aebb166b548e"
+    },
+    {
+      "source": "print-stl/column_2_segment_3.stl",
+      "source_sha256": "46c5e2e4532c51a36be55ab5ecdb129ba52ae574d23a5fed1e670a7198d8faf9",
+      "destination": "archive/print-baseline/stl/print/column_2_segment_3.stl",
+      "action": "copied",
+      "destination_sha256": "46c5e2e4532c51a36be55ab5ecdb129ba52ae574d23a5fed1e670a7198d8faf9"
+    },
+    {
+      "source": "print-stl/column_2_segment_4.stl",
+      "source_sha256": "ff9ec13068c8244f293e9811f454601d4da01ecd93203d3bf89d7de2dafccb10",
+      "destination": "archive/print-baseline/stl/print/column_2_segment_4.stl",
+      "action": "copied",
+      "destination_sha256": "ff9ec13068c8244f293e9811f454601d4da01ecd93203d3bf89d7de2dafccb10"
+    },
+    {
+      "source": "print-stl/column_3_segment_1.stl",
+      "source_sha256": "5df25a463e45df8e3e12c1191ca4196e6ff916ddc1ae65ae779d7abb7113e21b",
+      "destination": "archive/print-baseline/stl/print/column_3_segment_1.stl",
+      "action": "copied",
+      "destination_sha256": "5df25a463e45df8e3e12c1191ca4196e6ff916ddc1ae65ae779d7abb7113e21b"
+    },
+    {
+      "source": "print-stl/column_3_segment_2.stl",
+      "source_sha256": "414fb30177208e60b1be425e3b0c0359b256d855927b812fa405a598ad1cfc09",
+      "destination": "archive/print-baseline/stl/print/column_3_segment_2.stl",
+      "action": "copied",
+      "destination_sha256": "414fb30177208e60b1be425e3b0c0359b256d855927b812fa405a598ad1cfc09"
+    },
+    {
+      "source": "print-stl/column_3_segment_3.stl",
+      "source_sha256": "4566f2a1cb82eaf4dca38250a5eb7a5ce1221e24b56a49c34cf3ea0b265cc02b",
+      "destination": "archive/print-baseline/stl/print/column_3_segment_3.stl",
+      "action": "copied",
+      "destination_sha256": "4566f2a1cb82eaf4dca38250a5eb7a5ce1221e24b56a49c34cf3ea0b265cc02b"
+    },
+    {
+      "source": "print-stl/column_3_segment_4.stl",
+      "source_sha256": "abada29abd8c5f3a94cdd0e98cdb60a0006ff61e77f68a91cd1b854410eb34ba",
+      "destination": "archive/print-baseline/stl/print/column_3_segment_4.stl",
+      "action": "copied",
+      "destination_sha256": "abada29abd8c5f3a94cdd0e98cdb60a0006ff61e77f68a91cd1b854410eb34ba"
+    },
+    {
+      "source": "print-stl/column_4_segment_1.stl",
+      "source_sha256": "25d0d5c5ff7bd0b74a14c650132fb77736f769923052a2d5a0f65cf1dbc96d25",
+      "destination": "archive/print-baseline/stl/print/column_4_segment_1.stl",
+      "action": "copied",
+      "destination_sha256": "25d0d5c5ff7bd0b74a14c650132fb77736f769923052a2d5a0f65cf1dbc96d25"
+    },
+    {
+      "source": "print-stl/column_4_segment_2.stl",
+      "source_sha256": "8f6bf22f88a6d68d3fbef083ad228fa6f919b8acbd5a93029f8fa07a74328be2",
+      "destination": "archive/print-baseline/stl/print/column_4_segment_2.stl",
+      "action": "copied",
+      "destination_sha256": "8f6bf22f88a6d68d3fbef083ad228fa6f919b8acbd5a93029f8fa07a74328be2"
+    },
+    {
+      "source": "print-stl/column_4_segment_3.stl",
+      "source_sha256": "cfe0fd359fa44e931bbc7910856f6a256ba7b8be532f2d41decaa532df46a874",
+      "destination": "archive/print-baseline/stl/print/column_4_segment_3.stl",
+      "action": "copied",
+      "destination_sha256": "cfe0fd359fa44e931bbc7910856f6a256ba7b8be532f2d41decaa532df46a874"
+    },
+    {
+      "source": "print-stl/column_4_segment_4.stl",
+      "source_sha256": "e8b10a72889e2478b3e75ce8a6682afe9ba049446095e9186aef8d7c10e3be29",
+      "destination": "archive/print-baseline/stl/print/column_4_segment_4.stl",
+      "action": "copied",
+      "destination_sha256": "e8b10a72889e2478b3e75ce8a6682afe9ba049446095e9186aef8d7c10e3be29"
+    },
+    {
+      "source": "print-stl/garage_deck_1.stl",
+      "source_sha256": "5ebcac7f51f9a6050ae14889cb0c6ad3eecd1e97c98116efc07009f075bdfecc",
+      "destination": "archive/print-baseline/stl/print/garage_deck_1.stl",
+      "action": "copied",
+      "destination_sha256": "5ebcac7f51f9a6050ae14889cb0c6ad3eecd1e97c98116efc07009f075bdfecc"
+    },
+    {
+      "source": "print-stl/garage_deck_2.stl",
+      "source_sha256": "481504958276c5b4ffa1ec26ee355293a144c72ce13162c1b64ac6293f7f6598",
+      "destination": "archive/print-baseline/stl/print/garage_deck_2.stl",
+      "action": "copied",
+      "destination_sha256": "481504958276c5b4ffa1ec26ee355293a144c72ce13162c1b64ac6293f7f6598"
+    },
+    {
+      "source": "print-stl/garage_deck_3.stl",
+      "source_sha256": "654cc30d7f118fe79b542530c13a6b0b2ee3c0aa99574c41808b4adb59f804c4",
+      "destination": "archive/print-baseline/stl/print/garage_deck_3.stl",
+      "action": "copied",
+      "destination_sha256": "654cc30d7f118fe79b542530c13a6b0b2ee3c0aa99574c41808b4adb59f804c4"
+    },
+    {
+      "source": "print-stl/module_1.stl",
+      "source_sha256": "48d840a978813aa924ff779c62d0f5a56d300039b65804decfa7e00dab37f54d",
+      "destination": "archive/print-baseline/stl/print/module_1.stl",
+      "action": "copied",
+      "destination_sha256": "48d840a978813aa924ff779c62d0f5a56d300039b65804decfa7e00dab37f54d"
+    },
+    {
+      "source": "print-stl/module_2.stl",
+      "source_sha256": "f6816712dfed7550352cefb188fbf53340dca4521b2c59bf9a05c3c547627809",
+      "destination": "archive/print-baseline/stl/print/module_2.stl",
+      "action": "copied",
+      "destination_sha256": "f6816712dfed7550352cefb188fbf53340dca4521b2c59bf9a05c3c547627809"
+    },
+    {
+      "source": "print-stl/module_3.stl",
+      "source_sha256": "f877f1ce50cc77b5690e7ec6f53163128d903ed23ec76a83a2615f3ddb681f92",
+      "destination": "archive/print-baseline/stl/print/module_3.stl",
+      "action": "copied",
+      "destination_sha256": "f877f1ce50cc77b5690e7ec6f53163128d903ed23ec76a83a2615f3ddb681f92"
+    },
+    {
+      "source": "reference/__pycache__/freeze-sign-lettering.cpython-314.pyc",
+      "source_sha256": "731905c928e89943b7e72f2c91c926d28543e32265d609c49559290cba4621c9",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "reference/freeze-sign-lettering.py",
+      "source_sha256": "0e691fa2ac4562e1473c3495ba7aec648046b5e1379f3b1732861a59acfd0be2",
+      "destination": "assets/lettering/freeze-sign-lettering.py",
+      "action": "copied",
+      "destination_sha256": "0e691fa2ac4562e1473c3495ba7aec648046b5e1379f3b1732861a59acfd0be2"
+    },
+    {
+      "source": "reference/sign-lettering.json",
+      "source_sha256": "eed2ccb3d2321ba56cfbbf8012c590a5a7acbbad66ccfd94719633cc072e4765",
+      "destination": "assets/lettering/sign-lettering.json",
+      "action": "copied",
+      "destination_sha256": "eed2ccb3d2321ba56cfbbf8012c590a5a7acbbad66ccfd94719633cc072e4765"
+    },
+    {
+      "source": "reference/text-masks.json",
+      "source_sha256": "5b7e1192be82c2b454a08fb888ed10969cae8c536d18159bd063ad0ecc038b9f",
+      "destination": "assets/lettering/text-masks.json",
+      "action": "copied",
+      "destination_sha256": "5b7e1192be82c2b454a08fb888ed10969cae8c536d18159bd063ad0ecc038b9f"
+    },
+    {
+      "source": "removable-signs/.DS_Store",
+      "source_sha256": "8dcde2bdd5d8a404561dd0f25296fb6e1b1cfacf95802fa91d753dc1451e12be",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "removable-signs/README.md",
+      "source_sha256": "2d885d79be76f2be7349775ad96e0f56b67df8d00e13fc69be5b5c50b3f8f6c5",
+      "destination": "archive/variants/removable-signs/README.md",
+      "action": "adapted",
+      "destination_sha256": "635da461671d5130fe28032dae8cdc510597e8b28f8caa8fd1bc354168c8bc0b"
+    },
+    {
+      "source": "removable-signs/__pycache__/build.cpython-311.pyc",
+      "source_sha256": "26a5893621d7f5ec5eb26eacf2f0f8addc70cde4fadd7863090b8cf8c58c02f9",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "removable-signs/__pycache__/build.cpython-314.pyc",
+      "source_sha256": "dac4852a4ac120abbe23cb1b607c8e83c334a9a8e5750a40a53496863e7afcce",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "removable-signs/__pycache__/coupons.cpython-314.pyc",
+      "source_sha256": "d8bfbf1c312fb622800a862896064761020a6d640389d9eaa42c6ad991ce0f2a",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "removable-signs/__pycache__/draw_interface.cpython-314.pyc",
+      "source_sha256": "181cf581fe7e3dfcd2428cec31c40a12aab2f2ce2821dc889569456af7045fd2",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "removable-signs/__pycache__/make_print_projects.cpython-314.pyc",
+      "source_sha256": "e7cde0107b274db9b7700b890ce12dfc9af87c147cbf89a8bd779a40539c68a9",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "removable-signs/__pycache__/render.cpython-314.pyc",
+      "source_sha256": "8cfa48c3db8ab5c5bde8e2f53add9017d58a297310e3debc57bb0e4ae9cb3b56",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "removable-signs/__pycache__/verify.cpython-314.pyc",
+      "source_sha256": "ce3e3d778892d9c342754fb336f7541d27fa63fdca36a4cf8ea41064bdb710ea",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "removable-signs/bambu-projects/00-fit-test.png",
+      "source_sha256": "a1e6fe4ef27f79b51776caadd327d7a00700395446d1db8d3101d8acecff961b",
+      "destination": "archive/variants/removable-signs/bambu-projects/00-fit-test.png",
+      "action": "copied",
+      "destination_sha256": "a1e6fe4ef27f79b51776caadd327d7a00700395446d1db8d3101d8acecff961b"
+    },
+    {
+      "source": "removable-signs/bambu-projects/01-top-receiver.png",
+      "source_sha256": "685636a96c62c30ce38231e5c894c12deac185f30520116c4c93a0bbc4c51286",
+      "destination": "archive/variants/removable-signs/bambu-projects/01-top-receiver.png",
+      "action": "copied",
+      "destination_sha256": "685636a96c62c30ce38231e5c894c12deac185f30520116c4c93a0bbc4c51286"
+    },
+    {
+      "source": "removable-signs/bambu-projects/02-top-carrier.png",
+      "source_sha256": "f7df97401d922d804b3755987ef19464bc8d6edfa641315eeefdeca5c4ba4eaf",
+      "destination": "archive/variants/removable-signs/bambu-projects/02-top-carrier.png",
+      "action": "copied",
+      "destination_sha256": "f7df97401d922d804b3755987ef19464bc8d6edfa641315eeefdeca5c4ba4eaf"
+    },
+    {
+      "source": "removable-signs/bambu-projects/03-side-receiver.png",
+      "source_sha256": "2d8f37f35e0226c3bfd05da2b35cccf274ac087a01736d1fd7337f6a056ddb59",
+      "destination": "archive/variants/removable-signs/bambu-projects/03-side-receiver.png",
+      "action": "copied",
+      "destination_sha256": "2d8f37f35e0226c3bfd05da2b35cccf274ac087a01736d1fd7337f6a056ddb59"
+    },
+    {
+      "source": "removable-signs/bambu-projects/04-side-cartridge.png",
+      "source_sha256": "8aa621970d893b853830eb6c241538e5ab305007eabe631a7b5a02b59e416c5b",
+      "destination": "archive/variants/removable-signs/bambu-projects/04-side-cartridge.png",
+      "action": "copied",
+      "destination_sha256": "8aa621970d893b853830eb6c241538e5ab305007eabe631a7b5a02b59e416c5b"
+    },
+    {
+      "source": "removable-signs/bambu-projects/05-lock-pins.png",
+      "source_sha256": "5c3dd3067430f9577ca756f5300f992909b8f98606caf088ea1d65a8f827ed59",
+      "destination": "archive/variants/removable-signs/bambu-projects/05-lock-pins.png",
+      "action": "copied",
+      "destination_sha256": "5c3dd3067430f9577ca756f5300f992909b8f98606caf088ea1d65a8f827ed59"
+    },
+    {
+      "source": "removable-signs/bambu-projects/08-billboard-lettering-white.png",
+      "source_sha256": "a37b40eff048ebbca9ed5dad4865fcb7b672bd8917b505c0e81079d375b5892f",
+      "destination": "archive/variants/removable-signs/bambu-projects/08-billboard-lettering-white.png",
+      "action": "copied",
+      "destination_sha256": "a37b40eff048ebbca9ed5dad4865fcb7b672bd8917b505c0e81079d375b5892f"
+    },
+    {
+      "source": "removable-signs/build.py",
+      "source_sha256": "ecc6dd017657ba4f1827d54686d60221ee5c44f26356159c1445fe5d7e6f7557",
+      "destination": "archive/variants/removable-signs/build.py",
+      "action": "adapted",
+      "destination_sha256": "5685f9f658c355e40ab209cd9e5b7407608c213952cfff2ecf0532cb7f42cabe"
+    },
+    {
+      "source": "removable-signs/coupons.py",
+      "source_sha256": "826b1b40fb5932fd88cdd8b8ff99253ed0147d24354af814bd485d63946a53b4",
+      "destination": "archive/variants/removable-signs/coupons.py",
+      "action": "adapted",
+      "destination_sha256": "a9c0f4461da3baf4cefe5c7b321d3312599aba38dedcf0a2b4709437cc11e0fc"
+    },
+    {
+      "source": "removable-signs/draw_interface.py",
+      "source_sha256": "82c1e490eaee31f4b8478b6d39a1eff197a28a0ecaaed2c07e6e03cebb91549a",
+      "destination": "archive/variants/removable-signs/draw_interface.py",
+      "action": "adapted",
+      "destination_sha256": "b938c4f615f9f5b4faa902297bc864bf8e5123bc9820f6ae7c6bd46e72119838"
+    },
+    {
+      "source": "removable-signs/fit-test.FCStd",
+      "source_sha256": "c7a10869ad51f5935bdf741e10f3d0c671013a78ed22beddc8bce8cae53103c0",
+      "destination": "archive/variants/removable-signs/fit-test.FCStd",
+      "action": "copied",
+      "destination_sha256": "c7a10869ad51f5935bdf741e10f3d0c671013a78ed22beddc8bce8cae53103c0"
+    },
+    {
+      "source": "removable-signs/make_print_projects.py",
+      "source_sha256": "43362667e6f5e2f81ca034d64787679f2a87812fed44a9d10b3f355960e78bbb",
+      "destination": "archive/variants/removable-signs/make_print_projects.py",
+      "action": "adapted",
+      "destination_sha256": "d0f60e6194c04648037203ec01f81c483a77e8c96d9a77ffcb6b636ed3b9869d"
+    },
+    {
+      "source": "removable-signs/print-stl/billboard.stl",
+      "source_sha256": "c6c16e063da18f4e5303aa84f57dd333c31dbe62a153d05e6c352bb6d62a2762",
+      "destination": "archive/variants/removable-signs/print-stl/billboard.stl",
+      "action": "copied",
+      "destination_sha256": "c6c16e063da18f4e5303aa84f57dd333c31dbe62a153d05e6c352bb6d62a2762"
+    },
+    {
+      "source": "removable-signs/print-stl/billboard_text_ive_driven.stl",
+      "source_sha256": "d2afa0e218206fc0868146b2c6c49fa9c1771c7e3aa5f480169aee4728a637c1",
+      "destination": "archive/variants/removable-signs/print-stl/billboard_text_ive_driven.stl",
+      "action": "copied",
+      "destination_sha256": "d2afa0e218206fc0868146b2c6c49fa9c1771c7e3aa5f480169aee4728a637c1"
+    },
+    {
+      "source": "removable-signs/print-stl/billboard_text_lovely_cars.stl",
+      "source_sha256": "aec0a6df3cbdbdf0a4091ae1d3cf396c0a9dba15426d66166961f26b4b66e3e4",
+      "destination": "archive/variants/removable-signs/print-stl/billboard_text_lovely_cars.stl",
+      "action": "copied",
+      "destination_sha256": "aec0a6df3cbdbdf0a4091ae1d3cf396c0a9dba15426d66166961f26b4b66e3e4"
+    },
+    {
+      "source": "removable-signs/print-stl/fit_carrier.stl",
+      "source_sha256": "2da9e1a15ff4a2ad2222e57aa501bf6a3e892debc89c211391697b1c6f6ff1a8",
+      "destination": "archive/variants/removable-signs/print-stl/fit_carrier.stl",
+      "action": "copied",
+      "destination_sha256": "2da9e1a15ff4a2ad2222e57aa501bf6a3e892debc89c211391697b1c6f6ff1a8"
+    },
+    {
+      "source": "removable-signs/print-stl/fit_receiver.stl",
+      "source_sha256": "fcc20d0d66a9228c7168c2760821d0e4714ae25932ee2acd414c0e384c6ce4af",
+      "destination": "archive/variants/removable-signs/print-stl/fit_receiver.stl",
+      "action": "copied",
+      "destination_sha256": "fcc20d0d66a9228c7168c2760821d0e4714ae25932ee2acd414c0e384c6ce4af"
+    },
+    {
+      "source": "removable-signs/print-stl/lock_pin_1.stl",
+      "source_sha256": "b092afe62843e909e3d7f27ff800a6fd513429d29dd9eae72afe893d0fe7b939",
+      "destination": "archive/variants/removable-signs/print-stl/lock_pin_1.stl",
+      "action": "copied",
+      "destination_sha256": "b092afe62843e909e3d7f27ff800a6fd513429d29dd9eae72afe893d0fe7b939"
+    },
+    {
+      "source": "removable-signs/print-stl/side_cartridge.stl",
+      "source_sha256": "75b500676ae2d17bc3d82adf5ede9f251a062123406d860713fc00fb8ba7f9c7",
+      "destination": "archive/variants/removable-signs/print-stl/side_cartridge.stl",
+      "action": "copied",
+      "destination_sha256": "75b500676ae2d17bc3d82adf5ede9f251a062123406d860713fc00fb8ba7f9c7"
+    },
+    {
+      "source": "removable-signs/print-stl/side_cartridge_blank.stl",
+      "source_sha256": "29105ab7c0fb9c618932c0e3d8360fa59dc07bedf1e76e0ff8ccec317332eb58",
+      "destination": "archive/variants/removable-signs/print-stl/side_cartridge_blank.stl",
+      "action": "copied",
+      "destination_sha256": "29105ab7c0fb9c618932c0e3d8360fa59dc07bedf1e76e0ff8ccec317332eb58"
+    },
+    {
+      "source": "removable-signs/print-stl/side_receiver.stl",
+      "source_sha256": "3971b76ee735883a37493343cc9f74fcadf26a18dd69ff202c92f0caeae91da6",
+      "destination": "archive/variants/removable-signs/print-stl/side_receiver.stl",
+      "action": "copied",
+      "destination_sha256": "3971b76ee735883a37493343cc9f74fcadf26a18dd69ff202c92f0caeae91da6"
+    },
+    {
+      "source": "removable-signs/print-stl/top_carrier.stl",
+      "source_sha256": "0bbc6dac01d72ce02490212a75fd5dd00d93bc1c5e474943a2783a1fd9993f1c",
+      "destination": "archive/variants/removable-signs/print-stl/top_carrier.stl",
+      "action": "copied",
+      "destination_sha256": "0bbc6dac01d72ce02490212a75fd5dd00d93bc1c5e474943a2783a1fd9993f1c"
+    },
+    {
+      "source": "removable-signs/removable-signs-assembly.FCStd",
+      "source_sha256": "d3b0bae1def40d961daa732acf3a52789bfc7f5320c7237704fa76b984523763",
+      "destination": "archive/variants/removable-signs/removable-signs-assembly.FCStd",
+      "action": "copied",
+      "destination_sha256": "d3b0bae1def40d961daa732acf3a52789bfc7f5320c7237704fa76b984523763"
+    },
+    {
+      "source": "removable-signs/removable-signs-assembly.step",
+      "source_sha256": "197ff62134f76d435653eb5e815af6d0285b691a75edc5608ef3965a9156d14d",
+      "destination": "archive/variants/removable-signs/removable-signs-assembly.step",
+      "action": "copied",
+      "destination_sha256": "197ff62134f76d435653eb5e815af6d0285b691a75edc5608ef3965a9156d14d"
+    },
+    {
+      "source": "removable-signs/render.py",
+      "source_sha256": "686c9944be7101148c8d559e6be6e5f88c7509c2b44523b7983031d73d13296e",
+      "destination": "archive/variants/removable-signs/render.py",
+      "action": "adapted",
+      "destination_sha256": "1d3f17356159525b22f9b53e26b553854b084e89d8f57af7ba78854a082b0f75"
+    },
+    {
+      "source": "removable-signs/reports/00-fit-test-export.log",
+      "source_sha256": "af59a5ed3f20a61c77690ff8e1d2a767a17290b9e648dd9311a1e030109a7f2f",
+      "destination": "archive/variants/removable-signs/reports/00-fit-test-export.log",
+      "action": "copied",
+      "destination_sha256": "af59a5ed3f20a61c77690ff8e1d2a767a17290b9e648dd9311a1e030109a7f2f"
+    },
+    {
+      "source": "removable-signs/reports/00-fit-test-slice.log",
+      "source_sha256": "bf3d1f930cdd5daccbe48f41af4d4bfe3b8a5ebb123b2a7ab8742e175de5b58e",
+      "destination": "archive/variants/removable-signs/reports/00-fit-test-slice.log",
+      "action": "copied",
+      "destination_sha256": "bf3d1f930cdd5daccbe48f41af4d4bfe3b8a5ebb123b2a7ab8742e175de5b58e"
+    },
+    {
+      "source": "removable-signs/reports/01-top-receiver-export.log",
+      "source_sha256": "0775714b73bcf8724d73a773f5b915c1f814d335f895dfa5db7dc6be42d0875f",
+      "destination": "archive/variants/removable-signs/reports/01-top-receiver-export.log",
+      "action": "copied",
+      "destination_sha256": "0775714b73bcf8724d73a773f5b915c1f814d335f895dfa5db7dc6be42d0875f"
+    },
+    {
+      "source": "removable-signs/reports/01-top-receiver-slice.log",
+      "source_sha256": "0768c075fd77ec1d1dc944112e645c85acbc4b53480aa1ef73f030c2839b609f",
+      "destination": "archive/variants/removable-signs/reports/01-top-receiver-slice.log",
+      "action": "copied",
+      "destination_sha256": "0768c075fd77ec1d1dc944112e645c85acbc4b53480aa1ef73f030c2839b609f"
+    },
+    {
+      "source": "removable-signs/reports/02-top-carrier-export.log",
+      "source_sha256": "bd499c3ce5330c7265201b64a667e4611b8e6f6d6e980cc5b8e2f911b35c8ed5",
+      "destination": "archive/variants/removable-signs/reports/02-top-carrier-export.log",
+      "action": "copied",
+      "destination_sha256": "bd499c3ce5330c7265201b64a667e4611b8e6f6d6e980cc5b8e2f911b35c8ed5"
+    },
+    {
+      "source": "removable-signs/reports/02-top-carrier-slice.log",
+      "source_sha256": "f77b87713e55c172daf529a7ff02b9eb355490311ed48443ca431235ee965ef1",
+      "destination": "archive/variants/removable-signs/reports/02-top-carrier-slice.log",
+      "action": "copied",
+      "destination_sha256": "f77b87713e55c172daf529a7ff02b9eb355490311ed48443ca431235ee965ef1"
+    },
+    {
+      "source": "removable-signs/reports/03-side-receiver-export.log",
+      "source_sha256": "75aa53cd47f2ee47daccd57b6f289de740be1939791899e8da6b1b655f8bfa5b",
+      "destination": "archive/variants/removable-signs/reports/03-side-receiver-export.log",
+      "action": "copied",
+      "destination_sha256": "75aa53cd47f2ee47daccd57b6f289de740be1939791899e8da6b1b655f8bfa5b"
+    },
+    {
+      "source": "removable-signs/reports/03-side-receiver-slice.log",
+      "source_sha256": "0e2bc0bcf1244a7dbf8a69e7ae6f57a85d81ca168c0e550a1fb0ba4fb9aae393",
+      "destination": "archive/variants/removable-signs/reports/03-side-receiver-slice.log",
+      "action": "copied",
+      "destination_sha256": "0e2bc0bcf1244a7dbf8a69e7ae6f57a85d81ca168c0e550a1fb0ba4fb9aae393"
+    },
+    {
+      "source": "removable-signs/reports/04-side-cartridge-export.log",
+      "source_sha256": "16ad434b732831070c12192bcbea033056c87c6c3f91bc1377732ccb8661075e",
+      "destination": "archive/variants/removable-signs/reports/04-side-cartridge-export.log",
+      "action": "copied",
+      "destination_sha256": "16ad434b732831070c12192bcbea033056c87c6c3f91bc1377732ccb8661075e"
+    },
+    {
+      "source": "removable-signs/reports/04-side-cartridge-slice.log",
+      "source_sha256": "698b3e1f065800794c36f774568c6b9c210666b542d47169788e911d392f3e30",
+      "destination": "archive/variants/removable-signs/reports/04-side-cartridge-slice.log",
+      "action": "copied",
+      "destination_sha256": "698b3e1f065800794c36f774568c6b9c210666b542d47169788e911d392f3e30"
+    },
+    {
+      "source": "removable-signs/reports/05-lock-pins-export.log",
+      "source_sha256": "a8a4d04dab268285e11cef279b07509fca2222f15b4e95354873c7dfb0d75bdf",
+      "destination": "archive/variants/removable-signs/reports/05-lock-pins-export.log",
+      "action": "copied",
+      "destination_sha256": "a8a4d04dab268285e11cef279b07509fca2222f15b4e95354873c7dfb0d75bdf"
+    },
+    {
+      "source": "removable-signs/reports/05-lock-pins-slice.log",
+      "source_sha256": "01b084873685b0f00fe412c9cf96b170ab53abe2c19f79262276316085cb6e6d",
+      "destination": "archive/variants/removable-signs/reports/05-lock-pins-slice.log",
+      "action": "copied",
+      "destination_sha256": "01b084873685b0f00fe412c9cf96b170ab53abe2c19f79262276316085cb6e6d"
+    },
+    {
+      "source": "removable-signs/reports/assembly-preview.png",
+      "source_sha256": "16ea288954a007458b59e7e838ae37bebe3fca0882e9c564b50d38d5f0087c4d",
+      "destination": "archive/variants/removable-signs/reports/assembly-preview.png",
+      "action": "copied",
+      "destination_sha256": "16ea288954a007458b59e7e838ae37bebe3fca0882e9c564b50d38d5f0087c4d"
+    },
+    {
+      "source": "removable-signs/reports/delivery-validation.json",
+      "source_sha256": "38b0f074857f0c4056758392cce0fda5b466faa707f1efffef9de0356dc092f0",
+      "destination": "archive/variants/removable-signs/reports/delivery-validation.json",
+      "action": "copied",
+      "destination_sha256": "38b0f074857f0c4056758392cce0fda5b466faa707f1efffef9de0356dc092f0"
+    },
+    {
+      "source": "removable-signs/reports/fit-test.json",
+      "source_sha256": "5f7ab6e76bbe308f18ab7e014543cb14a7f3502a932c4acd7385baa647f05775",
+      "destination": "archive/variants/removable-signs/reports/fit-test.json",
+      "action": "copied",
+      "destination_sha256": "5f7ab6e76bbe308f18ab7e014543cb14a7f3502a932c4acd7385baa647f05775"
+    },
+    {
+      "source": "removable-signs/reports/interface-section.png",
+      "source_sha256": "4e5ba2db8bdf1f518ba8f313d9b00a66ee520344c816b87b2cb9480050e30faa",
+      "destination": "archive/variants/removable-signs/reports/interface-section.png",
+      "action": "copied",
+      "destination_sha256": "4e5ba2db8bdf1f518ba8f313d9b00a66ee520344c816b87b2cb9480050e30faa"
+    },
+    {
+      "source": "removable-signs/reports/render-validation.json",
+      "source_sha256": "bb3ffdf9d21353d13ebefbb248cca87ef0679d08e3860dbd7f71260ac79561f2",
+      "destination": "archive/variants/removable-signs/reports/render-validation.json",
+      "action": "copied",
+      "destination_sha256": "bb3ffdf9d21353d13ebefbb248cca87ef0679d08e3860dbd7f71260ac79561f2"
+    },
+    {
+      "source": "removable-signs/reports/reused-lettering.json",
+      "source_sha256": "ea5aaaef694bce9c60d0ea781ce81eb8606bc4915e3b0ebe81b2e6d6f6b9d163",
+      "destination": "archive/variants/removable-signs/reports/reused-lettering.json",
+      "action": "copied",
+      "destination_sha256": "ea5aaaef694bce9c60d0ea781ce81eb8606bc4915e3b0ebe81b2e6d6f6b9d163"
+    },
+    {
+      "source": "removable-signs/reports/signs-exploded.png",
+      "source_sha256": "d4712c143730c779c3dc9e173e033c6abf8e4ee39f69917857cdf7142f6b9d13",
+      "destination": "archive/variants/removable-signs/reports/signs-exploded.png",
+      "action": "copied",
+      "destination_sha256": "d4712c143730c779c3dc9e173e033c6abf8e4ee39f69917857cdf7142f6b9d13"
+    },
+    {
+      "source": "removable-signs/reports/slicing.json",
+      "source_sha256": "11d597d55836ed95699e67ad2789bc93c0dbc8504549f3857864bc68d2f94d4f",
+      "destination": "archive/variants/removable-signs/reports/slicing.json",
+      "action": "copied",
+      "destination_sha256": "11d597d55836ed95699e67ad2789bc93c0dbc8504549f3857864bc68d2f94d4f"
+    },
+    {
+      "source": "removable-signs/reports/validation.json",
+      "source_sha256": "c8c373d5d79c495de78bc240b29c18e70976d061591d155d5a3b38b184350de3",
+      "destination": "archive/variants/removable-signs/reports/validation.json",
+      "action": "copied",
+      "destination_sha256": "c8c373d5d79c495de78bc240b29c18e70976d061591d155d5a3b38b184350de3"
+    },
+    {
+      "source": "removable-signs/verify.py",
+      "source_sha256": "c41bd42fc9eaad54b5c1bebb4218c245b96510566e46e4a2a6497f69c670c100",
+      "destination": "archive/variants/removable-signs/verify.py",
+      "action": "adapted",
+      "destination_sha256": "a6f6582edaf7e5e6391c48510c38885b5ed85dcbd7f0f547dd6feec63736078f"
+    },
+    {
+      "source": "render_four_floor_decoration.py",
+      "source_sha256": "223dc7639677f4ef23d260f60d6e0349efd3ea486e30e3e0b96d8240887444f4",
+      "destination": "archive/legacy-tools/render_four_floor_decoration.py",
+      "action": "adapted",
+      "destination_sha256": "e39b770c09a9031619b5ad5d3b73a27a82d167c635027c77c5a4649f97f966ac"
+    },
+    {
+      "source": "render_mpower_colors.py",
+      "source_sha256": "60036435bf2aff77601abff8078b8715fb89e5994dcbdbfe3f2307fbde6095ee",
+      "destination": "archive/legacy-tools/render_mpower_colors.py",
+      "action": "adapted",
+      "destination_sha256": "52fdd643a818601a64f0a9b3237fa9f954e5fb088df9d2005ee42faf524dd084"
+    },
+    {
+      "source": "render_parking_recesses.py",
+      "source_sha256": "3b47032017f30e570e6c53a466b5d7431d65a52ab920cce350104e3726f9fb09",
+      "destination": "archive/legacy-tools/render_parking_recesses.py",
+      "action": "adapted",
+      "destination_sha256": "5b04f85b876fa3f8a62e580b323d9f76843d9b3f93a7b3247651db40eb34370c"
+    },
+    {
+      "source": "reports/F-fit-cad-validation.json",
+      "source_sha256": "2447d94de7a2b8f74fc4d2571de364891fe95e4e3b7f08b896431c8be58b7fbd",
+      "destination": "archive/reports/F-fit-cad-validation.json",
+      "action": "copied",
+      "destination_sha256": "2447d94de7a2b8f74fc4d2571de364891fe95e4e3b7f08b896431c8be58b7fbd"
+    },
+    {
+      "source": "reports/assembly-preview.png",
+      "source_sha256": "77e1239cd50e21f35b3638fed5e503f99a9aa4641e0922724936315bf2832673",
+      "destination": "archive/reports/assembly-preview.png",
+      "action": "copied",
+      "destination_sha256": "77e1239cd50e21f35b3638fed5e503f99a9aa4641e0922724936315bf2832673"
+    },
+    {
+      "source": "reports/blue-sign-preview.png",
+      "source_sha256": "dcf85a569e0b2bee2a5c971ce9b8c5f4cc3b233d4e4cddadc4bf262e26f454b7",
+      "destination": "archive/reports/blue-sign-preview.png",
+      "action": "copied",
+      "destination_sha256": "dcf85a569e0b2bee2a5c971ce9b8c5f4cc3b233d4e4cddadc4bf262e26f454b7"
+    },
+    {
+      "source": "reports/bom.json",
+      "source_sha256": "99236b911cb4bd8ea539c37d65a4c6567838a025ec52c34ab00873af1dc1fe1f",
+      "destination": "archive/reports/bom.json",
+      "action": "copied",
+      "destination_sha256": "99236b911cb4bd8ea539c37d65a4c6567838a025ec52c34ab00873af1dc1fe1f"
+    },
+    {
+      "source": "reports/build.log",
+      "source_sha256": "c256a4d93a0b40368e3800d031fb14a63b9fd56ec7b6b6ea6ae0804be1cff7bf",
+      "destination": "archive/reports/build.log",
+      "action": "copied",
+      "destination_sha256": "c256a4d93a0b40368e3800d031fb14a63b9fd56ec7b6b6ea6ae0804be1cff7bf"
+    },
+    {
+      "source": "reports/deck-trim-validation.json",
+      "source_sha256": "880fe324a354272afabee8edb2b96e869d1b4db912dcd9d7a1cac12b78532525",
+      "destination": "archive/reports/deck-trim-validation.json",
+      "action": "copied",
+      "destination_sha256": "880fe324a354272afabee8edb2b96e869d1b4db912dcd9d7a1cac12b78532525"
+    },
+    {
+      "source": "reports/exposed-corners-validation.json",
+      "source_sha256": "406ff19d4e188943b1983d751c06034f0d8de5285adbc46a644c1871d3ffbf3c",
+      "destination": "archive/reports/exposed-corners-validation.json",
+      "action": "copied",
+      "destination_sha256": "406ff19d4e188943b1983d751c06034f0d8de5285adbc46a644c1871d3ffbf3c"
+    },
+    {
+      "source": "reports/four-floor-decoration-build.log",
+      "source_sha256": "136a16460a7d707f31fab6be5a07a752d2f18c1cb65f329cd8f6208a9d82983a",
+      "destination": "archive/reports/four-floor-decoration-build.log",
+      "action": "copied",
+      "destination_sha256": "136a16460a7d707f31fab6be5a07a752d2f18c1cb65f329cd8f6208a9d82983a"
+    },
+    {
+      "source": "reports/four-floor-decoration-floor-1.png",
+      "source_sha256": "9d9aa4dad3764d75d5db6abbcf379f9946cb3693adb787e74803d5d3ba9ccbbd",
+      "destination": "archive/reports/four-floor-decoration-floor-1.png",
+      "action": "copied",
+      "destination_sha256": "9d9aa4dad3764d75d5db6abbcf379f9946cb3693adb787e74803d5d3ba9ccbbd"
+    },
+    {
+      "source": "reports/four-floor-decoration-floor-2.png",
+      "source_sha256": "2e9fc27fb05c5cb4175e570e309eb9db1e796aa6e2af8d72fee411b552609e2e",
+      "destination": "archive/reports/four-floor-decoration-floor-2.png",
+      "action": "copied",
+      "destination_sha256": "2e9fc27fb05c5cb4175e570e309eb9db1e796aa6e2af8d72fee411b552609e2e"
+    },
+    {
+      "source": "reports/four-floor-decoration-floor-3.png",
+      "source_sha256": "97378e03f377f8f19b364feb82a1e5d4cbec57f083e2a0c7efc44ab36e768e98",
+      "destination": "archive/reports/four-floor-decoration-floor-3.png",
+      "action": "copied",
+      "destination_sha256": "97378e03f377f8f19b364feb82a1e5d4cbec57f083e2a0c7efc44ab36e768e98"
+    },
+    {
+      "source": "reports/four-floor-decoration-floor-4.png",
+      "source_sha256": "d0dcad64462ea8a1fe167872f689d1bbb80b91e9e4bc5a323fbb5e642b0cf5f0",
+      "destination": "archive/reports/four-floor-decoration-floor-4.png",
+      "action": "copied",
+      "destination_sha256": "d0dcad64462ea8a1fe167872f689d1bbb80b91e9e4bc5a323fbb5e642b0cf5f0"
+    },
+    {
+      "source": "reports/four-floor-decoration-garage.png",
+      "source_sha256": "f66d4a4ad9942be8c05cd9e438303c32cb7f5db430680747dfe4b8ad205fb23f",
+      "destination": "archive/reports/four-floor-decoration-garage.png",
+      "action": "copied",
+      "destination_sha256": "f66d4a4ad9942be8c05cd9e438303c32cb7f5db430680747dfe4b8ad205fb23f"
+    },
+    {
+      "source": "reports/four-floor-decoration-render-validation.json",
+      "source_sha256": "713671c4bdd248029489e6b770387f4b875a3a79d303829c83b470754f6c0ff3",
+      "destination": "archive/reports/four-floor-decoration-render-validation.json",
+      "action": "copied",
+      "destination_sha256": "713671c4bdd248029489e6b770387f4b875a3a79d303829c83b470754f6c0ff3"
+    },
+    {
+      "source": "reports/four-floor-decoration-validation.json",
+      "source_sha256": "70b5debd8698bb409f5169cb96ff350875695ad5c624e5cbf87a7288a88db73e",
+      "destination": "archive/reports/four-floor-decoration-validation.json",
+      "action": "copied",
+      "destination_sha256": "70b5debd8698bb409f5169cb96ff350875695ad5c624e5cbf87a7288a88db73e"
+    },
+    {
+      "source": "reports/front-preview.png",
+      "source_sha256": "29b41c913db03d5e24578084b190b26a4f693464aee647e252b163fc0ea73b57",
+      "destination": "archive/reports/front-preview.png",
+      "action": "copied",
+      "destination_sha256": "29b41c913db03d5e24578084b190b26a4f693464aee647e252b163fc0ea73b57"
+    },
+    {
+      "source": "reports/gui-init.log",
+      "source_sha256": "480fd21253c89f64b99f84238f5a46a930d9d46d0fd5d0ea1f9b3e29fdaa4178",
+      "destination": "archive/reports/gui-init.log",
+      "action": "copied",
+      "destination_sha256": "480fd21253c89f64b99f84238f5a46a930d9d46d0fd5d0ea1f9b3e29fdaa4178"
+    },
+    {
+      "source": "reports/gui-render.log",
+      "source_sha256": "031ca9578d6dd69f7f5d63aa0eb80872908d1942cc8ed0c4bcf1a2e85d52f9ae",
+      "destination": "archive/reports/gui-render.log",
+      "action": "copied",
+      "destination_sha256": "031ca9578d6dd69f7f5d63aa0eb80872908d1942cc8ed0c4bcf1a2e85d52f9ae"
+    },
+    {
+      "source": "reports/gui-validation.json",
+      "source_sha256": "a857bc01ac3d1fc778088bf7bfd2e38a15926001cd7347e30b38877db56c6052",
+      "destination": "archive/reports/gui-validation.json",
+      "action": "copied",
+      "destination_sha256": "a857bc01ac3d1fc778088bf7bfd2e38a15926001cd7347e30b38877db56c6052"
+    },
+    {
+      "source": "reports/length-change-validation.json",
+      "source_sha256": "322be9d0112fd38525f804c2347d7c01c8854bfd004b89be115a0fef7b763708",
+      "destination": "archive/reports/length-change-validation.json",
+      "action": "copied",
+      "destination_sha256": "322be9d0112fd38525f804c2347d7c01c8854bfd004b89be115a0fef7b763708"
+    },
+    {
+      "source": "reports/mpower-assembly-preview.png",
+      "source_sha256": "b041c86ef318cca97a5c5c0b1896273e7e35095d70d3d8d86a2f3ea975186bc5",
+      "destination": "archive/reports/mpower-assembly-preview.png",
+      "action": "copied",
+      "destination_sha256": "b041c86ef318cca97a5c5c0b1896273e7e35095d70d3d8d86a2f3ea975186bc5"
+    },
+    {
+      "source": "reports/mpower-color-validation.json",
+      "source_sha256": "542343545fa6911d43d33d05133689450abbf86f9583f8f2273436f52c2a2113",
+      "destination": "archive/reports/mpower-color-validation.json",
+      "action": "copied",
+      "destination_sha256": "542343545fa6911d43d33d05133689450abbf86f9583f8f2273436f52c2a2113"
+    },
+    {
+      "source": "reports/mpower-final-reopen-validation.json",
+      "source_sha256": "19080b4c6a02adbd3af656b1a514929483942503e3d37e874ba0e2e15bfcb9d6",
+      "destination": "archive/reports/mpower-final-reopen-validation.json",
+      "action": "copied",
+      "destination_sha256": "19080b4c6a02adbd3af656b1a514929483942503e3d37e874ba0e2e15bfcb9d6"
+    },
+    {
+      "source": "reports/mpower-freecad-preview.png",
+      "source_sha256": "23d027e476369b586dfd2a699e460cc0cc823aa006d01b6daf8f10b42ecafa27",
+      "destination": "archive/reports/mpower-freecad-preview.png",
+      "action": "copied",
+      "destination_sha256": "23d027e476369b586dfd2a699e460cc0cc823aa006d01b6daf8f10b42ecafa27"
+    },
+    {
+      "source": "reports/mpower-front-preview.png",
+      "source_sha256": "e68765de398ee3c14e1f2de71f698335c31fdda4ea23f5d15277084b84349121",
+      "destination": "archive/reports/mpower-front-preview.png",
+      "action": "copied",
+      "destination_sha256": "e68765de398ee3c14e1f2de71f698335c31fdda4ea23f5d15277084b84349121"
+    },
+    {
+      "source": "reports/mpower-render-validation.json",
+      "source_sha256": "c6b60372b71c6fe78c05ab6064f418928f0c6a31ea6fab878ab74186d4ee28e6",
+      "destination": "archive/reports/mpower-render-validation.json",
+      "action": "copied",
+      "destination_sha256": "c6b60372b71c6fe78c05ab6064f418928f0c6a31ea6fab878ab74186d4ee28e6"
+    },
+    {
+      "source": "reports/mpower-stripe-detail.png",
+      "source_sha256": "8c7bbc9f617c34865ba6c83a3432b56d1a52bac533da57bf45b89e19ea8296a9",
+      "destination": "archive/reports/mpower-stripe-detail.png",
+      "action": "copied",
+      "destination_sha256": "8c7bbc9f617c34865ba6c83a3432b56d1a52bac533da57bf45b89e19ea8296a9"
+    },
+    {
+      "source": "reports/package-validation.json",
+      "source_sha256": "bcaff1dd84f0776e7d1edb321eee52ce50cf9915a1a08ea43e36f5d375d09165",
+      "destination": "archive/reports/package-validation.json",
+      "action": "copied",
+      "destination_sha256": "bcaff1dd84f0776e7d1edb321eee52ce50cf9915a1a08ea43e36f5d375d09165"
+    },
+    {
+      "source": "reports/parameters.json",
+      "source_sha256": "f037ef3f8ec568249258674825ed3f3516a598a5e41f7774151ce7a518109aea",
+      "destination": "archive/reports/parameters.json",
+      "action": "copied",
+      "destination_sha256": "f037ef3f8ec568249258674825ed3f3516a598a5e41f7774151ce7a518109aea"
+    },
+    {
+      "source": "reports/parking-deck-1-preview.png",
+      "source_sha256": "8719381c2b543b39f4ca668f438f2a8192b1bf3fa142fa895290cedae6a1e322",
+      "destination": "archive/reports/parking-deck-1-preview.png",
+      "action": "copied",
+      "destination_sha256": "8719381c2b543b39f4ca668f438f2a8192b1bf3fa142fa895290cedae6a1e322"
+    },
+    {
+      "source": "reports/parking-deck-2-preview.png",
+      "source_sha256": "dcbdd8c72c59f4858402c1b16a51bd50c07f897c1dd1092923263131d35cdcdf",
+      "destination": "archive/reports/parking-deck-2-preview.png",
+      "action": "copied",
+      "destination_sha256": "dcbdd8c72c59f4858402c1b16a51bd50c07f897c1dd1092923263131d35cdcdf"
+    },
+    {
+      "source": "reports/parking-recesses-assembly.png",
+      "source_sha256": "0883d1fad70063e5a2aa990e90601debabef7202075cb042b25d3611bbc60996",
+      "destination": "archive/reports/parking-recesses-assembly.png",
+      "action": "copied",
+      "destination_sha256": "0883d1fad70063e5a2aa990e90601debabef7202075cb042b25d3611bbc60996"
+    },
+    {
+      "source": "reports/parking-recesses-deck-2.png",
+      "source_sha256": "41672513a826d2690188260c2bda3dedafafe6232a25768916afed7ab0c0609e",
+      "destination": "archive/reports/parking-recesses-deck-2.png",
+      "action": "copied",
+      "destination_sha256": "41672513a826d2690188260c2bda3dedafafe6232a25768916afed7ab0c0609e"
+    },
+    {
+      "source": "reports/parking-recesses-garage.png",
+      "source_sha256": "ad0abda3ce9f2ebbc04e59609f447cbda4d4459b090cba3dbe6a539f9beef3a3",
+      "destination": "archive/reports/parking-recesses-garage.png",
+      "action": "copied",
+      "destination_sha256": "ad0abda3ce9f2ebbc04e59609f447cbda4d4459b090cba3dbe6a539f9beef3a3"
+    },
+    {
+      "source": "reports/parking-recesses-print-files-before.json",
+      "source_sha256": "86f9364be5878552d2086cfc0e308597b81f7d58de87b3b42e3fff41644e9707",
+      "destination": "archive/reports/parking-recesses-print-files-before.json",
+      "action": "copied",
+      "destination_sha256": "86f9364be5878552d2086cfc0e308597b81f7d58de87b3b42e3fff41644e9707"
+    },
+    {
+      "source": "reports/parking-recesses-print-files-unchanged.json",
+      "source_sha256": "55a0273805cabf306d291f0a3da3eaee9aaa44c96f88a2a9981df0cfc11c0f6d",
+      "destination": "archive/reports/parking-recesses-print-files-unchanged.json",
+      "action": "copied",
+      "destination_sha256": "55a0273805cabf306d291f0a3da3eaee9aaa44c96f88a2a9981df0cfc11c0f6d"
+    },
+    {
+      "source": "reports/parking-recesses-render-validation.json",
+      "source_sha256": "5778ad3c967bcffddba64f71748077dfa63caf9b3fa28fb1813a9b13e0949d14",
+      "destination": "archive/reports/parking-recesses-render-validation.json",
+      "action": "copied",
+      "destination_sha256": "5778ad3c967bcffddba64f71748077dfa63caf9b3fa28fb1813a9b13e0949d14"
+    },
+    {
+      "source": "reports/parking-recesses-validation.json",
+      "source_sha256": "21bed7b1753c4bf5585d6a7f5dda2ad12e8018a3308930d6773d41677f78504c",
+      "destination": "archive/reports/parking-recesses-validation.json",
+      "action": "copied",
+      "destination_sha256": "21bed7b1753c4bf5585d6a7f5dda2ad12e8018a3308930d6773d41677f78504c"
+    },
+    {
+      "source": "reports/parking-tray-interface.png",
+      "source_sha256": "c3f4c1791c568bb36d3e92daac1e5dcae4c912e7519a7c0bde29ded20530fdd3",
+      "destination": "archive/reports/parking-tray-interface.png",
+      "action": "copied",
+      "destination_sha256": "c3f4c1791c568bb36d3e92daac1e5dcae4c912e7519a7c0bde29ded20530fdd3"
+    },
+    {
+      "source": "reports/plain-side-sign-validation.json",
+      "source_sha256": "c5db2a316f8f0837b940b5e5a041df3b28d71b318b77365629324e5ad6703d20",
+      "destination": "archive/reports/plain-side-sign-validation.json",
+      "action": "copied",
+      "destination_sha256": "c5db2a316f8f0837b940b5e5a041df3b28d71b318b77365629324e5ad6703d20"
+    },
+    {
+      "source": "reports/print-build.log",
+      "source_sha256": "1feab2589f4b2865e0a71030854e63c639023ab830cec6fb68ab1c8ae57e2f52",
+      "destination": "archive/reports/print-build.log",
+      "action": "copied",
+      "destination_sha256": "1feab2589f4b2865e0a71030854e63c639023ab830cec6fb68ab1c8ae57e2f52"
+    },
+    {
+      "source": "reports/rear-preview.png",
+      "source_sha256": "7a19b3de8c40143dfb20a913bfea3d40beafdcc9c1519bab07009029de785390",
+      "destination": "archive/reports/rear-preview.png",
+      "action": "copied",
+      "destination_sha256": "7a19b3de8c40143dfb20a913bfea3d40beafdcc9c1519bab07009029de785390"
+    },
+    {
+      "source": "reports/shorter-billboard-posts-preview.png",
+      "source_sha256": "8342673945e8f46e5ffe9392628e283f9bf361932b9c8e13b9911ca8421ed301",
+      "destination": "archive/reports/shorter-billboard-posts-preview.png",
+      "action": "copied",
+      "destination_sha256": "8342673945e8f46e5ffe9392628e283f9bf361932b9c8e13b9911ca8421ed301"
+    },
+    {
+      "source": "reports/shorter-billboard-posts-validation.json",
+      "source_sha256": "0565f20847cf8c176f70a8f5e3d7a7c32b2a8056cf6d21d81a24e34c33a61418",
+      "destination": "archive/reports/shorter-billboard-posts-validation.json",
+      "action": "copied",
+      "destination_sha256": "0565f20847cf8c176f70a8f5e3d7a7c32b2a8056cf6d21d81a24e34c33a61418"
+    },
+    {
+      "source": "reports/side-slogan-validation.json",
+      "source_sha256": "ae1474df1ef37add8d3e8e28b37771fc403aa027ac0d24b853de3ffb1e76492d",
+      "destination": "archive/reports/side-slogan-validation.json",
+      "action": "copied",
+      "destination_sha256": "ae1474df1ef37add8d3e8e28b37771fc403aa027ac0d24b853de3ffb1e76492d"
+    },
+    {
+      "source": "reports/slicer.log",
+      "source_sha256": "9d58e7aea50d2f3a80b9592b2c249d0b4572b90561a45862029e618657bcbae4",
+      "destination": "archive/reports/slicer.log",
+      "action": "copied",
+      "destination_sha256": "9d58e7aea50d2f3a80b9592b2c249d0b4572b90561a45862029e618657bcbae4"
+    },
+    {
+      "source": "reports/slicing/01-whole-garage-deck-print-three-export.log",
+      "source_sha256": "8eaf7902d25d623ef9fdcd47b42206742a17331f9688dba0619d60a0abc1c68c",
+      "destination": "archive/reports/slicing/01-whole-garage-deck-print-three-export.log",
+      "action": "copied",
+      "destination_sha256": "8eaf7902d25d623ef9fdcd47b42206742a17331f9688dba0619d60a0abc1c68c"
+    },
+    {
+      "source": "reports/slicing/01-whole-garage-deck-print-three-reload-slice.log",
+      "source_sha256": "f0fcf843145f73741534bdd7fa4f18edae5f9590f3ac0b14a3a1a132f5d168f3",
+      "destination": "archive/reports/slicing/01-whole-garage-deck-print-three-reload-slice.log",
+      "action": "copied",
+      "destination_sha256": "f0fcf843145f73741534bdd7fa4f18edae5f9590f3ac0b14a3a1a132f5d168f3"
+    },
+    {
+      "source": "reports/slicing/01-whole-garage-deck-print-three-result.json",
+      "source_sha256": "1a8e3d4c316a79f039f17f5168928c634f4fdaad09a7d840f464d4488a5a4030",
+      "destination": "archive/reports/slicing/01-whole-garage-deck-print-three-result.json",
+      "action": "copied",
+      "destination_sha256": "1a8e3d4c316a79f039f17f5168928c634f4fdaad09a7d840f464d4488a5a4030"
+    },
+    {
+      "source": "reports/slicing/01a-garage-deck-1-two-bays-export.log",
+      "source_sha256": "4320fe41ccc34b7953a3af9fab71fbd228292b5dc18c66dfc9cd7ac88d2705d5",
+      "destination": "archive/reports/slicing/01a-garage-deck-1-two-bays-export.log",
+      "action": "copied",
+      "destination_sha256": "4320fe41ccc34b7953a3af9fab71fbd228292b5dc18c66dfc9cd7ac88d2705d5"
+    },
+    {
+      "source": "reports/slicing/01a-garage-deck-1-two-bays-reload-slice.log",
+      "source_sha256": "ad30f4d4ea7523e417845024c901a75310595680cd8ef3db6403e54fdf81ab3d",
+      "destination": "archive/reports/slicing/01a-garage-deck-1-two-bays-reload-slice.log",
+      "action": "copied",
+      "destination_sha256": "ad30f4d4ea7523e417845024c901a75310595680cd8ef3db6403e54fdf81ab3d"
+    },
+    {
+      "source": "reports/slicing/01a-garage-deck-1-two-bays-result.json",
+      "source_sha256": "3a0d171e2fe50fbf08515f773aeca876251c1ab8c237a72c045e4fc93be86e66",
+      "destination": "archive/reports/slicing/01a-garage-deck-1-two-bays-result.json",
+      "action": "copied",
+      "destination_sha256": "3a0d171e2fe50fbf08515f773aeca876251c1ab8c237a72c045e4fc93be86e66"
+    },
+    {
+      "source": "reports/slicing/01b-garage-deck-2-three-bays-export.log",
+      "source_sha256": "48237b9ca759278d5e5ce9d440f89f2441e0ae994bf943125e43735476f4e928",
+      "destination": "archive/reports/slicing/01b-garage-deck-2-three-bays-export.log",
+      "action": "copied",
+      "destination_sha256": "48237b9ca759278d5e5ce9d440f89f2441e0ae994bf943125e43735476f4e928"
+    },
+    {
+      "source": "reports/slicing/01b-garage-deck-2-three-bays-reload-slice.log",
+      "source_sha256": "f25f99e2fc1f222123c91e073337b203e86edc667ab2e09edfe3b710bda6d451",
+      "destination": "archive/reports/slicing/01b-garage-deck-2-three-bays-reload-slice.log",
+      "action": "copied",
+      "destination_sha256": "f25f99e2fc1f222123c91e073337b203e86edc667ab2e09edfe3b710bda6d451"
+    },
+    {
+      "source": "reports/slicing/01b-garage-deck-2-three-bays-result.json",
+      "source_sha256": "91d68ab8d2662a2828f4d38b9878b106e8b5f8a2ae951db09a321798dca478ae",
+      "destination": "archive/reports/slicing/01b-garage-deck-2-three-bays-result.json",
+      "action": "copied",
+      "destination_sha256": "91d68ab8d2662a2828f4d38b9878b106e8b5f8a2ae951db09a321798dca478ae"
+    },
+    {
+      "source": "reports/slicing/01c-garage-deck-3-plain-export.log",
+      "source_sha256": "ae6b90b8c572f3fae685f65978f93bbd26639adb333e7985666189cf6651ab08",
+      "destination": "archive/reports/slicing/01c-garage-deck-3-plain-export.log",
+      "action": "copied",
+      "destination_sha256": "ae6b90b8c572f3fae685f65978f93bbd26639adb333e7985666189cf6651ab08"
+    },
+    {
+      "source": "reports/slicing/01c-garage-deck-3-plain-reload-slice.log",
+      "source_sha256": "f79e65cabf93c0590bafa7a32cb154a275415eb07368bf0142813b51d0f8421e",
+      "destination": "archive/reports/slicing/01c-garage-deck-3-plain-reload-slice.log",
+      "action": "copied",
+      "destination_sha256": "f79e65cabf93c0590bafa7a32cb154a275415eb07368bf0142813b51d0f8421e"
+    },
+    {
+      "source": "reports/slicing/01c-garage-deck-3-plain-result.json",
+      "source_sha256": "3d0554dc5ca863d30de961bbe8bd6c5da5ff8eba01889df1285427f5479a27be",
+      "destination": "archive/reports/slicing/01c-garage-deck-3-plain-result.json",
+      "action": "copied",
+      "destination_sha256": "3d0554dc5ca863d30de961bbe8bd6c5da5ff8eba01889df1285427f5479a27be"
+    },
+    {
+      "source": "reports/slicing/02-garage-base-export.log",
+      "source_sha256": "eee9f80615e735b60e8a5967225ea9dae83a35bdd7cf89d0cb8711d9c27f08f7",
+      "destination": "archive/reports/slicing/02-garage-base-export.log",
+      "action": "copied",
+      "destination_sha256": "eee9f80615e735b60e8a5967225ea9dae83a35bdd7cf89d0cb8711d9c27f08f7"
+    },
+    {
+      "source": "reports/slicing/02-garage-base-reload-slice.log",
+      "source_sha256": "f0933227eff4a5ab7aad2066536bb701da394d3c931a712195ed9355801bcb3e",
+      "destination": "archive/reports/slicing/02-garage-base-reload-slice.log",
+      "action": "copied",
+      "destination_sha256": "f0933227eff4a5ab7aad2066536bb701da394d3c931a712195ed9355801bcb3e"
+    },
+    {
+      "source": "reports/slicing/02-garage-base-result.json",
+      "source_sha256": "2ea8aa3aba00bfb335c1e73d2642266a8bfe23c65b2663fbf85f5cbeb4a9c6f4",
+      "destination": "archive/reports/slicing/02-garage-base-result.json",
+      "action": "copied",
+      "destination_sha256": "2ea8aa3aba00bfb335c1e73d2642266a8bfe23c65b2663fbf85f5cbeb4a9c6f4"
+    },
+    {
+      "source": "reports/slicing/03-book-left-export.log",
+      "source_sha256": "3f3695133b625e04bdf147d506e34d907ca517b043167bd5c0d3934b0f39037d",
+      "destination": "archive/reports/slicing/03-book-left-export.log",
+      "action": "copied",
+      "destination_sha256": "3f3695133b625e04bdf147d506e34d907ca517b043167bd5c0d3934b0f39037d"
+    },
+    {
+      "source": "reports/slicing/03-book-left-reload-slice.log",
+      "source_sha256": "40e2c00a0afdd9a1dbacff5637c3c079baf430ee63e674de48f50fdc096a41cb",
+      "destination": "archive/reports/slicing/03-book-left-reload-slice.log",
+      "action": "copied",
+      "destination_sha256": "40e2c00a0afdd9a1dbacff5637c3c079baf430ee63e674de48f50fdc096a41cb"
+    },
+    {
+      "source": "reports/slicing/03-book-left-result.json",
+      "source_sha256": "84de980d8f836b2597f4ccb456c8703b6a1fa60a2e0351542672e58375e5df72",
+      "destination": "archive/reports/slicing/03-book-left-result.json",
+      "action": "copied",
+      "destination_sha256": "84de980d8f836b2597f4ccb456c8703b6a1fa60a2e0351542672e58375e5df72"
+    },
+    {
+      "source": "reports/slicing/04-book-right-export.log",
+      "source_sha256": "78155280b3c31bbf7b1dd389e8af6b541fde01a5d2a6e87449c640f402c4bcd1",
+      "destination": "archive/reports/slicing/04-book-right-export.log",
+      "action": "copied",
+      "destination_sha256": "78155280b3c31bbf7b1dd389e8af6b541fde01a5d2a6e87449c640f402c4bcd1"
+    },
+    {
+      "source": "reports/slicing/04-book-right-reload-slice.log",
+      "source_sha256": "82bc954ed9b04496d0f668c3a264d26a3d3ea00fd59b1da4af7bc773180ba827",
+      "destination": "archive/reports/slicing/04-book-right-reload-slice.log",
+      "action": "copied",
+      "destination_sha256": "82bc954ed9b04496d0f668c3a264d26a3d3ea00fd59b1da4af7bc773180ba827"
+    },
+    {
+      "source": "reports/slicing/04-book-right-result.json",
+      "source_sha256": "f39a3471adf530306a57eb5ab3d421929f1e135e60de04724bf12a1ebc47b2ee",
+      "destination": "archive/reports/slicing/04-book-right-result.json",
+      "action": "copied",
+      "destination_sha256": "f39a3471adf530306a57eb5ab3d421929f1e135e60de04724bf12a1ebc47b2ee"
+    },
+    {
+      "source": "reports/slicing/05-support-segments-twelve-export.log",
+      "source_sha256": "aef0ef2eddf5dbc922cf71acd5f55d63d8ffcf412e7e7f1ee00a3a7c912747fc",
+      "destination": "archive/reports/slicing/05-support-segments-twelve-export.log",
+      "action": "copied",
+      "destination_sha256": "aef0ef2eddf5dbc922cf71acd5f55d63d8ffcf412e7e7f1ee00a3a7c912747fc"
+    },
+    {
+      "source": "reports/slicing/05-support-segments-twelve-reload-slice.log",
+      "source_sha256": "c49ce5370ad14139cafcac31767828e56c3f1b79c1eb58e9e1069dca7b8a0a2b",
+      "destination": "archive/reports/slicing/05-support-segments-twelve-reload-slice.log",
+      "action": "copied",
+      "destination_sha256": "c49ce5370ad14139cafcac31767828e56c3f1b79c1eb58e9e1069dca7b8a0a2b"
+    },
+    {
+      "source": "reports/slicing/05-support-segments-twelve-result.json",
+      "source_sha256": "c417b9e77361c8da86279f1710e297567c3ac8757d1cace4c2b27e1ae32d2796",
+      "destination": "archive/reports/slicing/05-support-segments-twelve-result.json",
+      "action": "copied",
+      "destination_sha256": "c417b9e77361c8da86279f1710e297567c3ac8757d1cace4c2b27e1ae32d2796"
+    },
+    {
+      "source": "reports/slicing/06-top-segments-four-export.log",
+      "source_sha256": "400820c429cb9d62451a086d06659c10968dfeaba181f29b48b807143a87b4c9",
+      "destination": "archive/reports/slicing/06-top-segments-four-export.log",
+      "action": "copied",
+      "destination_sha256": "400820c429cb9d62451a086d06659c10968dfeaba181f29b48b807143a87b4c9"
+    },
+    {
+      "source": "reports/slicing/06-top-segments-four-reload-slice.log",
+      "source_sha256": "3efb7397b544b1b8008b7ff787a7a08790baa19a90f7cb279a69b6919dd89fb6",
+      "destination": "archive/reports/slicing/06-top-segments-four-reload-slice.log",
+      "action": "copied",
+      "destination_sha256": "3efb7397b544b1b8008b7ff787a7a08790baa19a90f7cb279a69b6919dd89fb6"
+    },
+    {
+      "source": "reports/slicing/06-top-segments-four-result.json",
+      "source_sha256": "0d777b210b46d3fc3d3c2df602659c1cbeab89b7f256a3e55dd034654652bb70",
+      "destination": "archive/reports/slicing/06-top-segments-four-result.json",
+      "action": "copied",
+      "destination_sha256": "0d777b210b46d3fc3d3c2df602659c1cbeab89b7f256a3e55dd034654652bb70"
+    },
+    {
+      "source": "reports/slicing/07-billboard-and-posts-black-export.log",
+      "source_sha256": "4f65d616360b64b1014c78768a75b6b94951bcd22af3e94aa3d8bd5bbb9aeed4",
+      "destination": "archive/reports/slicing/07-billboard-and-posts-black-export.log",
+      "action": "copied",
+      "destination_sha256": "4f65d616360b64b1014c78768a75b6b94951bcd22af3e94aa3d8bd5bbb9aeed4"
+    },
+    {
+      "source": "reports/slicing/07-billboard-and-posts-black-reload-slice.log",
+      "source_sha256": "19f434db322bb77107d15b6db936b48e58bcc9fb8e4f147b550fd873b4d72637",
+      "destination": "archive/reports/slicing/07-billboard-and-posts-black-reload-slice.log",
+      "action": "copied",
+      "destination_sha256": "19f434db322bb77107d15b6db936b48e58bcc9fb8e4f147b550fd873b4d72637"
+    },
+    {
+      "source": "reports/slicing/07-billboard-and-posts-black-result.json",
+      "source_sha256": "307a22028080ec8de66349ff14a20db97143e9114095fc7dde09449a5671b806",
+      "destination": "archive/reports/slicing/07-billboard-and-posts-black-result.json",
+      "action": "copied",
+      "destination_sha256": "307a22028080ec8de66349ff14a20db97143e9114095fc7dde09449a5671b806"
+    },
+    {
+      "source": "reports/slicing/08-billboard-lettering-white-export.log",
+      "source_sha256": "09c5e55369f387db39054ce4b7121f7cf52401a76044fd0f10f9006f8015f11a",
+      "destination": "archive/reports/slicing/08-billboard-lettering-white-export.log",
+      "action": "copied",
+      "destination_sha256": "09c5e55369f387db39054ce4b7121f7cf52401a76044fd0f10f9006f8015f11a"
+    },
+    {
+      "source": "reports/slicing/08-billboard-lettering-white-reload-slice.log",
+      "source_sha256": "e15fb32f48042af6d3684b2c7895ae899ee1dda2e1875e4109318c0cf040843c",
+      "destination": "archive/reports/slicing/08-billboard-lettering-white-reload-slice.log",
+      "action": "copied",
+      "destination_sha256": "e15fb32f48042af6d3684b2c7895ae899ee1dda2e1875e4109318c0cf040843c"
+    },
+    {
+      "source": "reports/slicing/08-billboard-lettering-white-result.json",
+      "source_sha256": "56877017ae541117278faa7e396e918a08ff53522ccd7d06df23a8bae37c89dc",
+      "destination": "archive/reports/slicing/08-billboard-lettering-white-result.json",
+      "action": "copied",
+      "destination_sha256": "56877017ae541117278faa7e396e918a08ff53522ccd7d06df23a8bae37c89dc"
+    },
+    {
+      "source": "reports/slicing/09-blue-slogan-sign-export.log",
+      "source_sha256": "78a5528e986eaa2e4ff5ad202364204244c415067860479586a233f23b722021",
+      "destination": "archive/reports/slicing/09-blue-slogan-sign-export.log",
+      "action": "copied",
+      "destination_sha256": "78a5528e986eaa2e4ff5ad202364204244c415067860479586a233f23b722021"
+    },
+    {
+      "source": "reports/slicing/09-blue-slogan-sign-reload-slice.log",
+      "source_sha256": "7a9d3a95ded74310b2c308c5e670f682b4bd6c384173bf3c46b518020d09bd43",
+      "destination": "archive/reports/slicing/09-blue-slogan-sign-reload-slice.log",
+      "action": "copied",
+      "destination_sha256": "7a9d3a95ded74310b2c308c5e670f682b4bd6c384173bf3c46b518020d09bd43"
+    },
+    {
+      "source": "reports/slicing/09-blue-slogan-sign-result.json",
+      "source_sha256": "92b16ed77dbb5db244edfe4aefe32db0986dbeafea1531333975c9eae2bda41a",
+      "destination": "archive/reports/slicing/09-blue-slogan-sign-result.json",
+      "action": "copied",
+      "destination_sha256": "92b16ed77dbb5db244edfe4aefe32db0986dbeafea1531333975c9eae2bda41a"
+    },
+    {
+      "source": "reports/validation.json",
+      "source_sha256": "17c8a5c8a31313cf9df33d054dd6a6709f68d828aff6fe1ca42f9cbd2e327e4e",
+      "destination": "archive/reports/validation.json",
+      "action": "copied",
+      "destination_sha256": "17c8a5c8a31313cf9df33d054dd6a6709f68d828aff6fe1ca42f9cbd2e327e4e"
+    },
+    {
+      "source": "reports/validation.log",
+      "source_sha256": "0a5e8e8272f7139d37598669f88c100546698efeff933e3c8989961523f72172",
+      "destination": "archive/reports/validation.log",
+      "action": "copied",
+      "destination_sha256": "0a5e8e8272f7139d37598669f88c100546698efeff933e3c8989961523f72172"
+    },
+    {
+      "source": "result.json",
+      "source_sha256": "390b33faef3f4c0737b44778aadf0a5b9208278f39bdd103ca6fbf807dc58a12",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "round_exposed_corners.py",
+      "source_sha256": "76202cae1e404bf6019210c141e60148985eaca5e95698864cbb47aee86c6c21",
+      "destination": "archive/migrations/round_exposed_corners.py",
+      "action": "adapted",
+      "destination_sha256": "ab8a2da8985b5cf96f3696277b9fc7911e1a5820cbf9cf8f856f54bca48e779c"
+    },
+    {
+      "source": "shorten_billboard_posts.py",
+      "source_sha256": "686b267a53d604466a29ae45a87e3fb8c745a5b2d6597717ec99030876447fd4",
+      "destination": "archive/migrations/shorten_billboard_posts.py",
+      "action": "adapted",
+      "destination_sha256": "f32035d339ceff13f06abb11591cb24df57496750f69540a703e981ee59a5d85"
+    },
+    {
+      "source": "slicer-validation.json",
+      "source_sha256": "87e6b83600bcbf0a13127b27908a08c52c625b2746e1ea6d6ae1abf2e14f1c22",
+      "destination": "archive/print-baseline/validation/slicer-validation.json",
+      "action": "copied",
+      "destination_sha256": "87e6b83600bcbf0a13127b27908a08c52c625b2746e1ea6d6ae1abf2e14f1c22"
+    },
+    {
+      "source": "stl/billboard.stl",
+      "source_sha256": "f40c4b01eb06690b866d056a3cb71e5c5a653ba3c36d71d317e37db425ede64a",
+      "destination": "archive/print-baseline/stl/assembly/billboard.stl",
+      "action": "copied",
+      "destination_sha256": "f40c4b01eb06690b866d056a3cb71e5c5a653ba3c36d71d317e37db425ede64a"
+    },
+    {
+      "source": "stl/billboard_post_left.stl",
+      "source_sha256": "8f6adb80d2718d4d057b8b7525c7182c58c3a1312b13bf631f8ac9968e2a09cf",
+      "destination": "archive/print-baseline/stl/assembly/billboard_post_left.stl",
+      "action": "copied",
+      "destination_sha256": "8f6adb80d2718d4d057b8b7525c7182c58c3a1312b13bf631f8ac9968e2a09cf"
+    },
+    {
+      "source": "stl/billboard_post_right.stl",
+      "source_sha256": "f7fd487e5041eef24d9e5d9e41a4b33e6f4567de012e601f32f9feea6d01a45f",
+      "destination": "archive/print-baseline/stl/assembly/billboard_post_right.stl",
+      "action": "copied",
+      "destination_sha256": "f7fd487e5041eef24d9e5d9e41a4b33e6f4567de012e601f32f9feea6d01a45f"
+    },
+    {
+      "source": "stl/billboard_text_ive_driven.stl",
+      "source_sha256": "57aef1e01ecf8ddc07c79a3177710b0e51cf47341867caf31347c51a82e1edcf",
+      "destination": "archive/print-baseline/stl/assembly/billboard_text_ive_driven.stl",
+      "action": "copied",
+      "destination_sha256": "57aef1e01ecf8ddc07c79a3177710b0e51cf47341867caf31347c51a82e1edcf"
+    },
+    {
+      "source": "stl/billboard_text_lovely_cars.stl",
+      "source_sha256": "bb27c7354fc80bf21e78938488ab0a21644929fc5614eb3e53c25d922e1954c6",
+      "destination": "archive/print-baseline/stl/assembly/billboard_text_lovely_cars.stl",
+      "action": "copied",
+      "destination_sha256": "bb27c7354fc80bf21e78938488ab0a21644929fc5614eb3e53c25d922e1954c6"
+    },
+    {
+      "source": "stl/book_depot_sign.stl",
+      "source_sha256": "8f253729afd77a7527361b348c7061522af18f3e92622ead6de4fa5e08569e7c",
+      "destination": "archive/print-baseline/stl/assembly/book_depot_sign.stl",
+      "action": "copied",
+      "destination_sha256": "8f253729afd77a7527361b348c7061522af18f3e92622ead6de4fa5e08569e7c"
+    },
+    {
+      "source": "stl/column_1_segment_1.stl",
+      "source_sha256": "0b4d2d4a6a78e00c489157a6361b9f74c159582df0dcf97ff1082bf970860364",
+      "destination": "archive/print-baseline/stl/assembly/column_1_segment_1.stl",
+      "action": "copied",
+      "destination_sha256": "0b4d2d4a6a78e00c489157a6361b9f74c159582df0dcf97ff1082bf970860364"
+    },
+    {
+      "source": "stl/column_1_segment_2.stl",
+      "source_sha256": "0c99c854578a58a5ac84b34a1f9db4c9558fb739c7dca8f166af1ffd1c832aaf",
+      "destination": "archive/print-baseline/stl/assembly/column_1_segment_2.stl",
+      "action": "copied",
+      "destination_sha256": "0c99c854578a58a5ac84b34a1f9db4c9558fb739c7dca8f166af1ffd1c832aaf"
+    },
+    {
+      "source": "stl/column_1_segment_3.stl",
+      "source_sha256": "36d39e8df3faced2893da4488a1d21094f5865684704b5917f6a4f4b3362a978",
+      "destination": "archive/print-baseline/stl/assembly/column_1_segment_3.stl",
+      "action": "copied",
+      "destination_sha256": "36d39e8df3faced2893da4488a1d21094f5865684704b5917f6a4f4b3362a978"
+    },
+    {
+      "source": "stl/column_1_segment_4.stl",
+      "source_sha256": "45d2dba1aadccfb11a99b5ae61996e5ef7dd66a0a12e40b3481806ce0171ec1d",
+      "destination": "archive/print-baseline/stl/assembly/column_1_segment_4.stl",
+      "action": "copied",
+      "destination_sha256": "45d2dba1aadccfb11a99b5ae61996e5ef7dd66a0a12e40b3481806ce0171ec1d"
+    },
+    {
+      "source": "stl/column_2_segment_1.stl",
+      "source_sha256": "48f5daa588dd5dc7b2956a434b4f77601006e647ece52fd59729bdc9367cd98d",
+      "destination": "archive/print-baseline/stl/assembly/column_2_segment_1.stl",
+      "action": "copied",
+      "destination_sha256": "48f5daa588dd5dc7b2956a434b4f77601006e647ece52fd59729bdc9367cd98d"
+    },
+    {
+      "source": "stl/column_2_segment_2.stl",
+      "source_sha256": "275076c8414c586fee44ed64e9b7d1e5893332cfafe6d5c0d728c8fdf0b02c6e",
+      "destination": "archive/print-baseline/stl/assembly/column_2_segment_2.stl",
+      "action": "copied",
+      "destination_sha256": "275076c8414c586fee44ed64e9b7d1e5893332cfafe6d5c0d728c8fdf0b02c6e"
+    },
+    {
+      "source": "stl/column_2_segment_3.stl",
+      "source_sha256": "d2994cd19c0a87e45011a389e409729377d8335fe4055c2d198a521a5fc0a0cb",
+      "destination": "archive/print-baseline/stl/assembly/column_2_segment_3.stl",
+      "action": "copied",
+      "destination_sha256": "d2994cd19c0a87e45011a389e409729377d8335fe4055c2d198a521a5fc0a0cb"
+    },
+    {
+      "source": "stl/column_2_segment_4.stl",
+      "source_sha256": "4cfcc0bd13f37fd0e4dfc78d2d6b0b9b6d296e620ab3a3821d4096991a4eb7be",
+      "destination": "archive/print-baseline/stl/assembly/column_2_segment_4.stl",
+      "action": "copied",
+      "destination_sha256": "4cfcc0bd13f37fd0e4dfc78d2d6b0b9b6d296e620ab3a3821d4096991a4eb7be"
+    },
+    {
+      "source": "stl/column_3_segment_1.stl",
+      "source_sha256": "a2c01e058b6a49416944f687797aa8c1e7481073c99c53ba6f45a3e3c3634abe",
+      "destination": "archive/print-baseline/stl/assembly/column_3_segment_1.stl",
+      "action": "copied",
+      "destination_sha256": "a2c01e058b6a49416944f687797aa8c1e7481073c99c53ba6f45a3e3c3634abe"
+    },
+    {
+      "source": "stl/column_3_segment_2.stl",
+      "source_sha256": "8e203287afc38d63a54b7ccc4eb3cf8efc4b6583f1e36568dea77c8915382bf2",
+      "destination": "archive/print-baseline/stl/assembly/column_3_segment_2.stl",
+      "action": "copied",
+      "destination_sha256": "8e203287afc38d63a54b7ccc4eb3cf8efc4b6583f1e36568dea77c8915382bf2"
+    },
+    {
+      "source": "stl/column_3_segment_3.stl",
+      "source_sha256": "c354e27d9212c6c2952d283c20ba8ced942bf23e6712337f9f691cd28fe6f80c",
+      "destination": "archive/print-baseline/stl/assembly/column_3_segment_3.stl",
+      "action": "copied",
+      "destination_sha256": "c354e27d9212c6c2952d283c20ba8ced942bf23e6712337f9f691cd28fe6f80c"
+    },
+    {
+      "source": "stl/column_3_segment_4.stl",
+      "source_sha256": "cc63c159b495bfa9c4474a938905e17a682d16e1504425a4b91396385eb3032f",
+      "destination": "archive/print-baseline/stl/assembly/column_3_segment_4.stl",
+      "action": "copied",
+      "destination_sha256": "cc63c159b495bfa9c4474a938905e17a682d16e1504425a4b91396385eb3032f"
+    },
+    {
+      "source": "stl/column_4_segment_1.stl",
+      "source_sha256": "f6aa74b7508b78d074bd68d5cf39003f151cf3537a475f20dc038d013e01cd91",
+      "destination": "archive/print-baseline/stl/assembly/column_4_segment_1.stl",
+      "action": "copied",
+      "destination_sha256": "f6aa74b7508b78d074bd68d5cf39003f151cf3537a475f20dc038d013e01cd91"
+    },
+    {
+      "source": "stl/column_4_segment_2.stl",
+      "source_sha256": "ee987fe017118e5c214d7ad8dd1f750e72465608f4668bbae10b27d0112e230e",
+      "destination": "archive/print-baseline/stl/assembly/column_4_segment_2.stl",
+      "action": "copied",
+      "destination_sha256": "ee987fe017118e5c214d7ad8dd1f750e72465608f4668bbae10b27d0112e230e"
+    },
+    {
+      "source": "stl/column_4_segment_3.stl",
+      "source_sha256": "d46efb4ed23834091caedfe3a7da3d1b233ca41a1ef036b4f1c12176554b4854",
+      "destination": "archive/print-baseline/stl/assembly/column_4_segment_3.stl",
+      "action": "copied",
+      "destination_sha256": "d46efb4ed23834091caedfe3a7da3d1b233ca41a1ef036b4f1c12176554b4854"
+    },
+    {
+      "source": "stl/column_4_segment_4.stl",
+      "source_sha256": "a80651029c42aedd633550ae332de633b8f623385c2145250fb9cbe9d2687dc2",
+      "destination": "archive/print-baseline/stl/assembly/column_4_segment_4.stl",
+      "action": "copied",
+      "destination_sha256": "a80651029c42aedd633550ae332de633b8f623385c2145250fb9cbe9d2687dc2"
+    },
+    {
+      "source": "stl/garage_deck_1.stl",
+      "source_sha256": "990d5e51fb7ae5383fc54fcd7352f25d8a4779b514af8776048876995bf26213",
+      "destination": "archive/print-baseline/stl/assembly/garage_deck_1.stl",
+      "action": "copied",
+      "destination_sha256": "990d5e51fb7ae5383fc54fcd7352f25d8a4779b514af8776048876995bf26213"
+    },
+    {
+      "source": "stl/garage_deck_2.stl",
+      "source_sha256": "75d9bac690283b9f6286804238fd2be753ddba99af057e26e3ccbf7f3c5d106c",
+      "destination": "archive/print-baseline/stl/assembly/garage_deck_2.stl",
+      "action": "copied",
+      "destination_sha256": "75d9bac690283b9f6286804238fd2be753ddba99af057e26e3ccbf7f3c5d106c"
+    },
+    {
+      "source": "stl/garage_deck_3.stl",
+      "source_sha256": "e559414886b551bfac3f2e4e07bd322990fa94ac103d3b1d5192c32b43086e7e",
+      "destination": "archive/print-baseline/stl/assembly/garage_deck_3.stl",
+      "action": "copied",
+      "destination_sha256": "e559414886b551bfac3f2e4e07bd322990fa94ac103d3b1d5192c32b43086e7e"
+    },
+    {
+      "source": "stl/module_1.stl",
+      "source_sha256": "6d32f41402e7536ec04f9cb7d73b52f9414fed8440ec53dd9dac44d89f24b8a6",
+      "destination": "archive/print-baseline/stl/assembly/module_1.stl",
+      "action": "copied",
+      "destination_sha256": "6d32f41402e7536ec04f9cb7d73b52f9414fed8440ec53dd9dac44d89f24b8a6"
+    },
+    {
+      "source": "stl/module_2.stl",
+      "source_sha256": "a19a6892c5da71993f74bd5654df55e2031e56577b08fdae90416ea2f6c523ba",
+      "destination": "archive/print-baseline/stl/assembly/module_2.stl",
+      "action": "copied",
+      "destination_sha256": "a19a6892c5da71993f74bd5654df55e2031e56577b08fdae90416ea2f6c523ba"
+    },
+    {
+      "source": "stl/module_3.stl",
+      "source_sha256": "9ec231e548f62ead3e70551237c75a465cf948b500283f5eb5d4d27530ad8ef0",
+      "destination": "archive/print-baseline/stl/assembly/module_3.stl",
+      "action": "copied",
+      "destination_sha256": "9ec231e548f62ead3e70551237c75a465cf948b500283f5eb5d4d27530ad8ef0"
+    },
+    {
+      "source": "temp/.DS_Store",
+      "source_sha256": "19ae9f8469054644946504c9921dce0a4192b15d0d16ec99eeed7682bd5591a0",
+      "destination": null,
+      "action": "omit_cache_or_automatic_backup"
+    },
+    {
+      "source": "temp/parking-tray-review-2026-10-26/3bay-parking-deck-301-303.stl",
+      "source_sha256": "c829f07e5f8d98bd817c6a795467178d82551cc08e0a70e6ae3af98dd56cfb69",
+      "destination": "studies/parking-tray-fit-2026-10-26/3bay-parking-deck-301-303.stl",
+      "action": "copied",
+      "destination_sha256": "c829f07e5f8d98bd817c6a795467178d82551cc08e0a70e6ae3af98dd56cfb69"
+    },
+    {
+      "source": "temp/parking-tray-review-2026-10-26/README.md",
+      "source_sha256": "72091a2ca8ce38be07842b237a4de75242e5419f6a29209bb3a01c4bc9beeed6",
+      "destination": "studies/parking-tray-fit-2026-10-26/README.md",
+      "action": "adapted",
+      "destination_sha256": "10919ed503c04fa75c0b3755ca7ff1cf4320ef90976843d8f3f631f256424c59"
+    },
+    {
+      "source": "temp/parking-tray-review-2026-10-26/TEMP-3bay-deck-and-one-parking-tray.3mf",
+      "source_sha256": "10090b86ad4baa96e7721b811ba503b10ffb7e7ad36b39824230f427e34fb457",
+      "destination": "studies/parking-tray-fit-2026-10-26/TEMP-3bay-deck-and-one-parking-tray.3mf",
+      "action": "copied",
+      "destination_sha256": "10090b86ad4baa96e7721b811ba503b10ffb7e7ad36b39824230f427e34fb457"
+    },
+    {
+      "source": "temp/parking-tray-review-2026-10-26/build_review.py",
+      "source_sha256": "63f54e1574d4656b61f6d573b7c10d12a18aae9b0fc70c1374e0d0df15410b97",
+      "destination": "studies/parking-tray-fit-2026-10-26/build_review.py",
+      "action": "adapted",
+      "destination_sha256": "01f6ac670d4cc29be305df10d4c29765bb8f7991a5764ce2526d683d1a6634e4"
+    },
+    {
+      "source": "temp/parking-tray-review-2026-10-26/export.log",
+      "source_sha256": "e61af13c7cec51ccdc549e1e24f67f8ea3e67051140512f90d1ab9d6c081f506",
+      "destination": "studies/parking-tray-fit-2026-10-26/export.log",
+      "action": "copied",
+      "destination_sha256": "e61af13c7cec51ccdc549e1e24f67f8ea3e67051140512f90d1ab9d6c081f506"
+    },
+    {
+      "source": "temp/parking-tray-review-2026-10-26/layout-export.log",
+      "source_sha256": "aba8b19f73f315dbeddc0d96053d250bdd75a5e3399da1dd6f1fd5ff088477f1",
+      "destination": "studies/parking-tray-fit-2026-10-26/layout-export.log",
+      "action": "copied",
+      "destination_sha256": "aba8b19f73f315dbeddc0d96053d250bdd75a5e3399da1dd6f1fd5ff088477f1"
+    },
+    {
+      "source": "temp/parking-tray-review-2026-10-26/parking-tray-foot-with-pull-tab.stl",
+      "source_sha256": "e89a178652d45d07ba53e33675de344bea7651f090b4e0bb1016e51ce22f34c8",
+      "destination": "studies/parking-tray-fit-2026-10-26/parking-tray-foot-with-pull-tab.stl",
+      "action": "copied",
+      "destination_sha256": "e89a178652d45d07ba53e33675de344bea7651f090b4e0bb1016e51ce22f34c8"
+    },
+    {
+      "source": "temp/parking-tray-review-2026-10-26/plate-preview.png",
+      "source_sha256": "e427598c6d4207af25fab0e168700fad7a73c9fd00b00ae114170f012941aaf8",
+      "destination": "studies/parking-tray-fit-2026-10-26/plate-preview.png",
+      "action": "copied",
+      "destination_sha256": "e427598c6d4207af25fab0e168700fad7a73c9fd00b00ae114170f012941aaf8"
+    },
+    {
+      "source": "temp/parking-tray-review-2026-10-26/seated-preview.png",
+      "source_sha256": "026cc9e9bf1d83527c6290fc53142e4999a85c109bc0304b20ec78900b04a874",
+      "destination": "studies/parking-tray-fit-2026-10-26/seated-preview.png",
+      "action": "copied",
+      "destination_sha256": "026cc9e9bf1d83527c6290fc53142e4999a85c109bc0304b20ec78900b04a874"
+    },
+    {
+      "source": "temp/parking-tray-review-2026-10-26/slice-result.json",
+      "source_sha256": "4621e004a368e8f5793f13c54445d561200b8935a4c30ccbca386346fec30e49",
+      "destination": "studies/parking-tray-fit-2026-10-26/slice-result.json",
+      "action": "copied",
+      "destination_sha256": "4621e004a368e8f5793f13c54445d561200b8935a4c30ccbca386346fec30e49"
+    },
+    {
+      "source": "temp/parking-tray-review-2026-10-26/slice.log",
+      "source_sha256": "05da538974cf43f3ca7d8a569b791fbc7201fceefae4c6f035a7baf99521ceb1",
+      "destination": "studies/parking-tray-fit-2026-10-26/slice.log",
+      "action": "copied",
+      "destination_sha256": "05da538974cf43f3ca7d8a569b791fbc7201fceefae4c6f035a7baf99521ceb1"
+    },
+    {
+      "source": "temp/parking-tray-review-2026-10-26/validation.json",
+      "source_sha256": "eac35d79bac0cdd9149bb7440767ce09ec7d175c3af0ee55e0f167656feb96b4",
+      "destination": "studies/parking-tray-fit-2026-10-26/validation.json",
+      "action": "copied",
+      "destination_sha256": "eac35d79bac0cdd9149bb7440767ce09ec7d175c3af0ee55e0f167656feb96b4"
+    },
+    {
+      "source": "update_parking_decoration.py",
+      "source_sha256": "3b7d5f26858a2eb8f55d9e371bf3c718bd211cc51661fe98ae94f4c5854da514",
+      "destination": "archive/migrations/update_parking_decoration.py",
+      "action": "adapted",
+      "destination_sha256": "50a0f18405c28d0ac228bc2df2381f0991694117daaeb95f0bca6c6162ffb58a"
+    },
+    {
+      "source": "update_parking_recesses.py",
+      "source_sha256": "d52a806f69a6487353249c44c33257597f636f977e060befaf4fe67c3a91b4b3",
+      "destination": "archive/migrations/update_parking_recesses.py",
+      "action": "adapted",
+      "destination_sha256": "3c9f2e9351868882be6cf2391bfe37ebb845e3bd24b274eb920a706959fd8226"
+    },
+    {
+      "source": "update_plain_side_sign.py",
+      "source_sha256": "72425096ee4677f7b9af32fa6d0a6999e09e731c9535c3f24fe88fad9a078206",
+      "destination": "archive/migrations/update_plain_side_sign.py",
+      "action": "adapted",
+      "destination_sha256": "12181e4b06af91dfcc56e0b13ade5c9191f6361922027264a9af123023bf8dbe"
+    },
+    {
+      "source": "update_side_slogan.py",
+      "source_sha256": "923350d57d3b3f98a5ed31e2536e9abfb53b8a4267e33c8a1c6ea17e617410e2",
+      "destination": "archive/migrations/update_side_slogan.py",
+      "action": "adapted",
+      "destination_sha256": "a0ed43a0011e81665e1151052a1058b0981e74cce64091bda6804c7c6bf38f09"
+    },
+    {
+      "source": "validate_export.py",
+      "source_sha256": "56caec7e6832e14ab6006b5212b5515690e012eedbd5ee5f2f5952d3b404a404",
+      "destination": "archive/legacy-tools/validate_export.py",
+      "action": "adapted",
+      "destination_sha256": "1ac1d3c68bb52512380ea52414a3e8a8491a3d9513e8823bd8f66700dd703fab"
+    }
+  ],
+  "source_root": "garage-bookshelf/v4",
+  "v5_created_on_git_commit": "93c61fe"
+}

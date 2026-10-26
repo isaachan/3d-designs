@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "project": "08-billboard-lettering-white.3mf",
+  "sha256": "0960c80253153a8d3b053a7050645c4b6e527162c8ee8ddfcace5583f39ed523",
+  "source_sha256": {
+    "billboard_text_lovely_cars.stl": "aec0a6df3cbdbdf0a4091ae1d3cf396c0a9dba15426d66166961f26b4b66e3e4",
+    "billboard_text_ive_driven.stl": "d2afa0e218206fc0868146b2c6c49fa9c1771c7e3aa5f480169aee4728a637c1"
+  },
+  "previous_saved_project_slice_reused": true
+}

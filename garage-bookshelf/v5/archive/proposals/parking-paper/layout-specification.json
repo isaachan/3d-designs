@@ -1,0 +1,81 @@
+{
+  "board_mm": [
+    199.6,
+    158.6,
+    5
+  ],
+  "coordinate_system": "rear-left origin, +x right, +y toward front",
+  "hole_centers_mm": [
+    [
+      13.8,
+      13.8
+    ],
+    [
+      185.8,
+      13.8
+    ],
+    [
+      13.8,
+      144.8
+    ],
+    [
+      185.8,
+      144.8
+    ]
+  ],
+  "hole_diameter_mm": 6.5,
+  "column_shaft_radius_mm": 7,
+  "paint_keepout_radius_mm": 11,
+  "bay_x_range_mm": [
+    27.8,
+    171.8
+  ],
+  "bay_y_range_mm": [
+    25.8,
+    115.8
+  ],
+  "front_aisle_nominal_depth_mm": 42.8,
+  "line_width_mm": 1.2,
+  "car_sizes_are_illustrative_not_photo_measurements": true,
+  "layouts": [
+    {
+      "bays": 3,
+      "bay_width_mm": 48.0,
+      "bay_depth_mm": 90,
+      "bay_x_boundaries_mm": [
+        27.8,
+        75.8,
+        123.8,
+        171.8
+      ],
+      "accessible_bay": null,
+      "side_access_zone_x_range_mm": null,
+      "minimum_paint_distance_from_hole_center_mm": 16.0,
+      "clear_of_11mm_keepouts": true,
+      "vehicle_example_mm": [
+        85,
+        38
+      ],
+      "bay_side_clearance_for_example_vehicle_mm": 5.0
+    },
+    {
+      "bays": 2,
+      "bay_width_mm": 72.0,
+      "bay_depth_mm": 90,
+      "bay_x_boundaries_mm": [
+        27.8,
+        99.8,
+        171.8
+      ],
+      "accessible_bay": "B01",
+      "side_access_zone_x_range_mm": null,
+      "minimum_paint_distance_from_hole_center_mm": 16.0,
+      "clear_of_11mm_keepouts": true,
+      "vehicle_example_mm": [
+        85,
+        38
+      ],
+      "bay_side_clearance_for_example_vehicle_mm": 17.0
+    }
+  ]
+}

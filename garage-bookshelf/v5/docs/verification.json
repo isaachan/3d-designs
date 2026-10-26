@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "date": "2026-10-26",
+  "scope": "v5 directory migration and maintenance tools",
+  "cad_sha256": "822d05f79b60b10a8a9958e427d9591d476a89f391914b90d9eaa1d83fde6958",
+  "v4_files_unchanged": 411,
+  "source_files_mapped": 349,
+  "duplicate_delivery_files_deduplicated": 13,
+  "native_cad": {
+    "status": "passed",
+    "counts": {
+      "bodies": 35,
+      "sketches": 366,
+      "print": 26,
+      "hardware": 8,
+      "sample": 1
+    },
+    "cad_unchanged": true,
+    "all_sketches_fully_constrained": true,
+    "intersection_pairs_checked": 78,
+    "assembly_dimensions_mm": [
+      538.0,
+      173.65,
+      343.5333333333333
+    ]
+  },
+  "geometry_export": {
+    "status": "passed",
+    "print_stls": 26,
+    "assembly_stls": 26,
+    "step_solids": 34,
+    "step_round_trip": {
+      "relative_volume_error": 2.1144900754819888e-07,
+      "max_bounds_error_mm": 3.296918293926865e-12
+    },
+    "cad_unchanged": true
+  },
+  "saved_3mf_integration": {
+    "status": "passed",
+    "tested_plate": "12-side-cartridge",
+    "saved_project_reopened_and_sliced": true,
+    "complete_plan": false
+  },
+  "migrated_trial": {
+    "status": "passed",
+    "source_cad": "/Users/kai.han/code/3d-designs/garage-bookshelf/v5/cad/garage-bookshelf-v5-assembly.FCStd",
+    "saved_3mf_reopened_and_sliced": true,
+    "formal_cad_unchanged": true
+  },
+  "back_joint_generation": "12 watertight coupons; 6 non-interfering closing paths",
+  "historical_summaries": "both studies summarized saved data with frozen local inputs; no new FEA solve",
+  "regression_tests": {
+    "passed": 7,
+    "command": "python3 -m unittest discover -s tests -v"
+  },
+  "release_guard": "incomplete print run rejected before creating any release",
+  "software_render": "saved geometry and M Power appearance rendered without CAD writes",
+  "not_verified": [
+    "FreeCAD GUI macro execution",
+    "full 12-plate print plan",
+    "physical print/fit/load",
+    "complete CAD rebuild"
+  ],
+  "generated_files": "build/verification/ (ignored; may be regenerated)",
+  "releases_created": 0
+}

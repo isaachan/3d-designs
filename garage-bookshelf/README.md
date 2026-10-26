@@ -1,18 +1,15 @@
 # 车库书架
 
-本目录保留四个彼此独立、可复现的版本。
+当前维护入口是[v5](v5/README.md)，正式CAD和打印准备状态见[v5/PROJECT_STATUS.md](v5/PROJECT_STATUS.md)。
 
-| 版本 | 方案 | 入口 |
-| --- | --- | --- |
-| v1 | 原板件拼装方案：四段底板、八块背板、独立竖板与连接片 | [v1/ARCHIVE.md](v1/ARCHIVE.md) |
-| v2 | 五个一体主体模块：总高 238 mm，模块间采用四联滑入式燕尾榫 | [v2/README.md](v2/README.md) |
-| v3 | 基于 v2 最终设计重建的 FreeCAD 原生参数化工程，包含可编辑草图、Part Design 特征和集中参数表 | [v3/README.md](v3/README.md) |
-| v4 | 主体 490 × 170 mm 紧凑方案：200 mm 车库、290 mm 书架；5 mm 无梁整块层板（层板1双车位、层板2三车位浅凹刻）、后置牌架、右侧外挂口号蓝牌另计 48 mm，沿用 v3 高度 | [v4/README.md](v4/README.md) |
+| 版本 | 内容 | 入口 |
+|---|---|---|
+| v1 | 原板件拼装方案的冻结归档 | [v1/ARCHIVE.md](v1/ARCHIVE.md) |
+| v2 | 五个一体主体模块和滑入式燕尾接头 | [v2/README.md](v2/README.md) |
+| v3 | 原生参数化FreeCAD重建、验证和导出 | [v3/README.md](v3/README.md) |
+| v4 | 49cm紧凑方案及多轮增量修改的原始工作目录，保持原样 | [v4/README.md](v4/README.md) |
+| v5 | 继承v4最新正式CAD；分离源码、工具、人工3MF、试验和历史记录 | [v5/README.md](v5/README.md) |
 
-v1 是完整的冻结归档，包含当时的脚本、FreeCAD、STL、3MF、说明和审计资料。v2 保留原设计脚本与产物；v3 在独立目录中提供参数化装配工程、验证报告和 STL 导出文件，不覆盖前两个版本。v3 的具体文件入口、编辑与重建方式见其 [README](v3/README.md)。
-
-v4 为独立重新设计，包含可编辑 FreeCAD 工程、STEP、打印 STL、X2D 3MF 与验证报告；详细尺寸和装配顺序见 [v4/README.md](v4/README.md)。
-
-最新字牌改造：[v4/removable-signs/README.md](v4/removable-signs/README.md)，两处文字采用燕尾滑入字牌及可拔定位销，支持反复换字；包含完整49 cm装配工程、替换件打印包和试配小样。
-
-当前 v4 的3MF和打印ZIP已清理，待正式CAD定稿后再生成，详见 [打印交付状态](v4/PRINT_STATUS.md)。
+v5保留10槽、6.6mm层板、M3螺钉可换字牌、缩短竖杆和M Power配色；本次整理没有改变模型几何。
+旧燕尾锁销字牌、5mm层板、旧11盘打印与旧验证记录保留为历史资料，不代表当前整机打印发行已经完成。
+v1–v4目录内容不由v5工具改写。

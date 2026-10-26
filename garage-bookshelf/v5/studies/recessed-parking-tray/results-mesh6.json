@@ -1,0 +1,2311 @@
+{
+  "status": "numerical_checks_passed",
+  "source_cad": "/Users/kai.han/code/3d-designs/garage-bookshelf/v4/garage-bookshelf-v4-assembly.FCStd",
+  "source_sha256": "2a3f10a9a4c7d0544a9b2cfe2b4e5dfd48f4dd970dbd66d1bd2bd66c1b9191ce",
+  "source_cad_modified": false,
+  "dimensions_mm": {
+    "DeckWidth": 195.6,
+    "DeckDepth": 158.6,
+    "DeckThickness": 5.0,
+    "DeckPitch": 63.0
+  },
+  "material_assumptions": {
+    "E_effective_MPa": 1000.0,
+    "poisson_ratio": 0.35,
+    "density_g_per_cm3": 1.24,
+    "homogenized": true,
+    "actual_infill_not_modeled": true
+  },
+  "supports": "four existing collar footprints, vertical translation fixed; minimal in-plane constraints",
+  "analytical": {
+    "tray_example_mm": [
+      40.0,
+      80.0,
+      2.0
+    ],
+    "tray_solid_plate_mass_upper_bound_g": 7.936,
+    "car_plus_tray_mass_assumed_g": 110,
+    "depth_comparison": [
+      {
+        "depth_mm": 1,
+        "floor_mm": 4,
+        "local_strip_bending_rigidity_ratio": 0.5120000000000001,
+        "additional_engraving_0p4_floor_mm": 3.6,
+        "ideal_vertical_relative_escape_velocity_m_per_s": 0.14007141035914503,
+        "nominal_2g_wall_contact_pressure_MPa": 0.30831428571428576,
+        "tray_surface_above_deck_mm": 1.0,
+        "vertical_travel_to_clear_square_wall_mm": 1
+      },
+      {
+        "depth_mm": 1.2,
+        "floor_mm": 3.8,
+        "local_strip_bending_rigidity_ratio": 0.43897600000000003,
+        "additional_engraving_0p4_floor_mm": 3.4,
+        "ideal_vertical_relative_escape_velocity_m_per_s": 0.15344054223053305,
+        "nominal_2g_wall_contact_pressure_MPa": 0.23980000000000004,
+        "tray_surface_above_deck_mm": 0.8,
+        "vertical_travel_to_clear_square_wall_mm": 1.2
+      },
+      {
+        "depth_mm": 1.6,
+        "floor_mm": 3.4,
+        "local_strip_bending_rigidity_ratio": 0.31443199999999993,
+        "additional_engraving_0p4_floor_mm": 3.0,
+        "ideal_vertical_relative_escape_velocity_m_per_s": 0.1771778767228008,
+        "nominal_2g_wall_contact_pressure_MPa": 0.16601538461538465,
+        "tray_surface_above_deck_mm": 0.3999999999999999,
+        "vertical_travel_to_clear_square_wall_mm": 1.6
+      },
+      {
+        "depth_mm": 2,
+        "floor_mm": 3,
+        "local_strip_bending_rigidity_ratio": 0.21599999999999997,
+        "additional_engraving_0p4_floor_mm": 2.6,
+        "ideal_vertical_relative_escape_velocity_m_per_s": 0.19809088823063015,
+        "nominal_2g_wall_contact_pressure_MPa": 0.1269529411764706,
+        "tray_surface_above_deck_mm": 0.0,
+        "vertical_travel_to_clear_square_wall_mm": 2
+      }
+    ],
+    "friction_independent_vertical_wall_contact_nominal_width_mm": 10,
+    "nominal_wall_engagement_loss_allowance_mm": 0.3,
+    "rocking_sensitivity_only": [
+      {
+        "support_width_mm": 30,
+        "COM_height_above_floor_mm": 15,
+        "ideal_lateral_rocking_threshold_g": 1.1194029850746268
+      },
+      {
+        "support_width_mm": 30,
+        "COM_height_above_floor_mm": 20,
+        "ideal_lateral_rocking_threshold_g": 0.8152173913043479
+      },
+      {
+        "support_width_mm": 30,
+        "COM_height_above_floor_mm": 25,
+        "ideal_lateral_rocking_threshold_g": 0.6410256410256411
+      },
+      {
+        "support_width_mm": 40,
+        "COM_height_above_floor_mm": 15,
+        "ideal_lateral_rocking_threshold_g": 1.4925373134328357
+      },
+      {
+        "support_width_mm": 40,
+        "COM_height_above_floor_mm": 20,
+        "ideal_lateral_rocking_threshold_g": 1.0869565217391306
+      },
+      {
+        "support_width_mm": 40,
+        "COM_height_above_floor_mm": 25,
+        "ideal_lateral_rocking_threshold_g": 0.8547008547008548
+      }
+    ],
+    "vertical_detachment_condition": "deck downward acceleration exceeds g; hopping height then depends on pulse duration and relative velocity",
+    "impact_ejection_is_not_predicted_by_static_FEA": true
+  },
+  "cases": [
+    {
+      "geometry": {
+        "name": "baseline",
+        "source_body": "garage_deck_2_Body",
+        "bay_count": 3,
+        "depth_mm": 0.0,
+        "pocket_style": "standard",
+        "pocket_size_mm": [
+          40.6,
+          80.6
+        ],
+        "corner_radius_mm": 2.3,
+        "finger_relief_mm": [
+          12,
+          4
+        ],
+        "bay_centers_xy_mm": [
+          [
+            50.761923847695385,
+            86.5
+          ],
+          [
+            97.8,
+            86.5
+          ],
+          [
+            144.8380761523046,
+            86.5
+          ]
+        ],
+        "source_volume_mm3": 153497.36653653072,
+        "removed_volume_mm3": 0.0,
+        "solid_volume_mm3": 153497.36653653072,
+        "source_faces": 368,
+        "trial_faces": 368,
+        "floor_heights_mm": [
+          5.0,
+          5.0,
+          5.0
+        ],
+        "minimum_thickness_mm": 4.6,
+        "four_support_keepout_radius_mm": 11,
+        "support_keepout_volume_differences_mm3": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pocket_pitch_x_mm": 47.03807615230461,
+        "minimum_web_between_pockets_mm": null
+      },
+      "mesh_size_mm": 6.0,
+      "nodes": 28380,
+      "quadratic_tetrahedra": 14160,
+      "solid_self_mass_upper_bound_g": 190.3367345052981,
+      "self_only_max_downward_mm": 0.01824405,
+      "reactions_N": [
+        1.867208494756172,
+        1.0000000145700008,
+        1.0000001422039995
+      ],
+      "volume_relative_error": 2.805052346836311e-06,
+      "self_weight_equilibrium_relative_error": 2.747027609515491e-06,
+      "setup": {
+        "support_node_counts": [
+          124,
+          121,
+          124,
+          114
+        ],
+        "distributed_contact_patches": [
+          {
+            "center_mm": [
+              40.761923847695385,
+              66.5,
+              5.0
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              40.761923847695385,
+              106.5,
+              5.0
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              60.761923847695385,
+              66.5,
+              5.0
+            ],
+            "nodes": 10
+          },
+          {
+            "center_mm": [
+              60.761923847695385,
+              106.5,
+              5.0
+            ],
+            "nodes": 10
+          },
+          {
+            "center_mm": [
+              87.8,
+              66.5,
+              5.0
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              87.8,
+              106.5,
+              5.0
+            ],
+            "nodes": 10
+          },
+          {
+            "center_mm": [
+              107.8,
+              66.5,
+              5.0
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              107.8,
+              106.5,
+              5.0
+            ],
+            "nodes": 11
+          },
+          {
+            "center_mm": [
+              134.8380761523046,
+              66.5,
+              5.0
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              134.8380761523046,
+              106.5,
+              5.0
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              154.8380761523046,
+              66.5,
+              5.0
+            ],
+            "nodes": 11
+          },
+          {
+            "center_mm": [
+              154.8380761523046,
+              106.5,
+              5.0
+            ],
+            "nodes": 8
+          }
+        ],
+        "central_patch": [
+          {
+            "center_mm": [
+              97.8,
+              86.5,
+              5.0
+            ],
+            "nodes": 8
+          }
+        ],
+        "no_stiffness_credit_for_unbonded_trays": true
+      },
+      "scenarios": [
+        {
+          "payload_or_per_car_including_tray_g": 60,
+          "total_payload_g": 180,
+          "arrangement": "distributed",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.048182403094,
+          "max_upward_mm": 0.00078879259642,
+          "max_downward_xyz_mm": [
+            99.088656353371,
+            82.43264257634,
+            2.5
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 110,
+          "total_payload_g": 330,
+          "arrangement": "distributed",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.073141147339,
+          "max_upward_mm": 0.0012773982705100002,
+          "max_downward_xyz_mm": [
+            99.088656353371,
+            82.43264257634,
+            2.5
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 110,
+          "total_payload_g": 330,
+          "arrangement": "distributed",
+          "E_effective_MPa": 500,
+          "max_downward_mm": 0.146282294678,
+          "max_upward_mm": 0.0025547965410200003,
+          "max_downward_xyz_mm": [
+            99.088656353371,
+            82.43264257634,
+            2.5
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 330,
+          "total_payload_g": 330,
+          "arrangement": "central_total",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.10658665833700001,
+          "max_upward_mm": 0.00244556183263,
+          "max_downward_xyz_mm": [
+            98.753010829729,
+            85.063010679077,
+            2.5
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 660,
+          "total_payload_g": 660,
+          "arrangement": "central_total",
+          "E_effective_MPa": 500,
+          "max_downward_mm": 0.38994731334800004,
+          "max_upward_mm": 0.0098512159074,
+          "max_downward_xyz_mm": [
+            98.753010829729,
+            85.063010679077,
+            2.5
+          ]
+        }
+      ]
+    },
+    {
+      "geometry": {
+        "name": "depth1",
+        "source_body": "garage_deck_2_Body",
+        "bay_count": 3,
+        "depth_mm": 1.0,
+        "pocket_style": "standard",
+        "pocket_size_mm": [
+          40.6,
+          80.6
+        ],
+        "corner_radius_mm": 2.3,
+        "finger_relief_mm": [
+          12,
+          4
+        ],
+        "bay_centers_xy_mm": [
+          [
+            50.761923847695385,
+            86.5
+          ],
+          [
+            97.8,
+            86.5
+          ],
+          [
+            144.8380761523046,
+            86.5
+          ]
+        ],
+        "source_volume_mm3": 153497.36653653072,
+        "removed_volume_mm3": 9947.457075411861,
+        "solid_volume_mm3": 143549.90946111886,
+        "source_faces": 368,
+        "trial_faces": 407,
+        "floor_heights_mm": [
+          4.0,
+          4.0,
+          4.0
+        ],
+        "minimum_thickness_mm": 4.0,
+        "four_support_keepout_radius_mm": 11,
+        "support_keepout_volume_differences_mm3": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pocket_pitch_x_mm": 47.03807615230461,
+        "minimum_web_between_pockets_mm": 6.43807615230461
+      },
+      "mesh_size_mm": 6.0,
+      "nodes": 28820,
+      "quadratic_tetrahedra": 14392,
+      "solid_self_mass_upper_bound_g": 178.00188773178738,
+      "self_only_max_downward_mm": 0.01985106,
+      "reactions_N": [
+        1.746203988979789,
+        1.0000000385266001,
+        1.0000004160270008
+      ],
+      "volume_relative_error": 3.084186310173395e-06,
+      "self_weight_equilibrium_relative_error": 3.132708507216461e-06,
+      "setup": {
+        "support_node_counts": [
+          124,
+          121,
+          125,
+          114
+        ],
+        "distributed_contact_patches": [
+          {
+            "center_mm": [
+              40.761923847695385,
+              66.5,
+              4.0
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              40.761923847695385,
+              106.5,
+              4.0
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              60.761923847695385,
+              66.5,
+              4.0
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              60.761923847695385,
+              106.5,
+              4.0
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              87.8,
+              66.5,
+              4.0
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              87.8,
+              106.5,
+              4.0
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              107.8,
+              66.5,
+              4.0
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              107.8,
+              106.5,
+              4.0
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              134.8380761523046,
+              66.5,
+              4.0
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              134.8380761523046,
+              106.5,
+              4.0
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              154.8380761523046,
+              66.5,
+              4.0
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              154.8380761523046,
+              106.5,
+              4.0
+            ],
+            "nodes": 9
+          }
+        ],
+        "central_patch": [
+          {
+            "center_mm": [
+              97.8,
+              86.5,
+              4.0
+            ],
+            "nodes": 7
+          }
+        ],
+        "no_stiffness_credit_for_unbonded_trays": true
+      },
+      "scenarios": [
+        {
+          "payload_or_per_car_including_tray_g": 60,
+          "total_payload_g": 180,
+          "arrangement": "distributed",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.058283108126,
+          "max_upward_mm": 0.0009627295238000001,
+          "max_downward_xyz_mm": [
+            100.48490380926,
+            84.23616316291,
+            2.0
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 110,
+          "total_payload_g": 330,
+          "arrangement": "distributed",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.090331598231,
+          "max_upward_mm": 0.0015925683507,
+          "max_downward_xyz_mm": [
+            100.48490380926,
+            84.23616316291,
+            2.0
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 110,
+          "total_payload_g": 330,
+          "arrangement": "distributed",
+          "E_effective_MPa": 500,
+          "max_downward_mm": 0.180663196462,
+          "max_upward_mm": 0.0031851367014,
+          "max_downward_xyz_mm": [
+            100.48490380926,
+            84.23616316291,
+            2.0
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 330,
+          "total_payload_g": 330,
+          "arrangement": "central_total",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.141503855422,
+          "max_upward_mm": 0.0030726101849800004,
+          "max_downward_xyz_mm": [
+            97.08918324994,
+            87.075326062432,
+            4.0
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 660,
+          "total_payload_g": 660,
+          "arrangement": "central_total",
+          "E_effective_MPa": 500,
+          "max_downward_mm": 0.526544221688,
+          "max_upward_mm": 0.012479010201960001,
+          "max_downward_xyz_mm": [
+            97.08918324994,
+            87.075326062432,
+            4.0
+          ]
+        }
+      ]
+    },
+    {
+      "geometry": {
+        "name": "depth1p2",
+        "source_body": "garage_deck_2_Body",
+        "bay_count": 3,
+        "depth_mm": 1.2,
+        "pocket_style": "standard",
+        "pocket_size_mm": [
+          40.6,
+          80.6
+        ],
+        "corner_radius_mm": 2.3,
+        "finger_relief_mm": [
+          12,
+          4
+        ],
+        "bay_centers_xy_mm": [
+          [
+            50.761923847695385,
+            86.5
+          ],
+          [
+            97.8,
+            86.5
+          ],
+          [
+            144.8380761523046,
+            86.5
+          ]
+        ],
+        "source_volume_mm3": 153497.36653653072,
+        "removed_volume_mm3": 11936.948490494542,
+        "solid_volume_mm3": 141560.41804603618,
+        "source_faces": 368,
+        "trial_faces": 407,
+        "floor_heights_mm": [
+          3.799999999999999,
+          3.799999999999999,
+          3.799999999999999
+        ],
+        "minimum_thickness_mm": 3.8,
+        "four_support_keepout_radius_mm": 11,
+        "support_keepout_volume_differences_mm3": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pocket_pitch_x_mm": 47.03807615230461,
+        "minimum_web_between_pockets_mm": 6.43807615230461
+      },
+      "mesh_size_mm": 6.0,
+      "nodes": 28845,
+      "quadratic_tetrahedra": 14413,
+      "solid_self_mass_upper_bound_g": 175.53491837708486,
+      "self_only_max_downward_mm": 0.02013545,
+      "reactions_N": [
+        1.7220028470427902,
+        0.9999998698899989,
+        1.0000001587589984
+      ],
+      "volume_relative_error": 3.1447196607011988e-06,
+      "self_weight_equilibrium_relative_error": 3.0765221411568e-06,
+      "setup": {
+        "support_node_counts": [
+          124,
+          121,
+          125,
+          114
+        ],
+        "distributed_contact_patches": [
+          {
+            "center_mm": [
+              40.761923847695385,
+              66.5,
+              3.799999999999999
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              40.761923847695385,
+              106.5,
+              3.799999999999999
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              60.761923847695385,
+              66.5,
+              3.799999999999999
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              60.761923847695385,
+              106.5,
+              3.799999999999999
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              87.8,
+              66.5,
+              3.799999999999999
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              87.8,
+              106.5,
+              3.799999999999999
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              107.8,
+              66.5,
+              3.799999999999999
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              107.8,
+              106.5,
+              3.799999999999999
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              134.8380761523046,
+              66.5,
+              3.799999999999999
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              134.8380761523046,
+              106.5,
+              3.799999999999999
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              154.8380761523046,
+              66.5,
+              3.799999999999999
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              154.8380761523046,
+              106.5,
+              3.799999999999999
+            ],
+            "nodes": 9
+          }
+        ],
+        "central_patch": [
+          {
+            "center_mm": [
+              97.8,
+              86.5,
+              3.799999999999999
+            ],
+            "nodes": 7
+          }
+        ],
+        "no_stiffness_credit_for_unbonded_trays": true
+      },
+      "scenarios": [
+        {
+          "payload_or_per_car_including_tray_g": 60,
+          "total_payload_g": 180,
+          "arrangement": "distributed",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.060560459002,
+          "max_upward_mm": 0.00099546885252,
+          "max_downward_xyz_mm": [
+            100.48490380926,
+            84.23616316291,
+            1.9
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 110,
+          "total_payload_g": 330,
+          "arrangement": "distributed",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.094269124837,
+          "max_upward_mm": 0.00166205475661,
+          "max_downward_xyz_mm": [
+            100.48490380926,
+            84.23616316291,
+            1.9
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 110,
+          "total_payload_g": 330,
+          "arrangement": "distributed",
+          "E_effective_MPa": 500,
+          "max_downward_mm": 0.188538249674,
+          "max_upward_mm": 0.00332410951322,
+          "max_downward_xyz_mm": [
+            100.48490380926,
+            84.23616316291,
+            1.9
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 330,
+          "total_payload_g": 330,
+          "arrangement": "central_total",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.15044491105000002,
+          "max_upward_mm": 0.0031973420637,
+          "max_downward_xyz_mm": [
+            97.08918324994,
+            87.075326062432,
+            3.8
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 660,
+          "total_payload_g": 660,
+          "arrangement": "central_total",
+          "E_effective_MPa": 500,
+          "max_downward_mm": 0.5617417442,
+          "max_upward_mm": 0.013009059215200002,
+          "max_downward_xyz_mm": [
+            97.08918324994,
+            87.075326062432,
+            3.8
+          ]
+        }
+      ]
+    },
+    {
+      "geometry": {
+        "name": "depth1p6",
+        "source_body": "garage_deck_2_Body",
+        "bay_count": 3,
+        "depth_mm": 1.6,
+        "pocket_style": "standard",
+        "pocket_size_mm": [
+          40.6,
+          80.6
+        ],
+        "corner_radius_mm": 2.3,
+        "finger_relief_mm": [
+          12,
+          4
+        ],
+        "bay_centers_xy_mm": [
+          [
+            50.761923847695385,
+            86.5
+          ],
+          [
+            97.8,
+            86.5
+          ],
+          [
+            144.8380761523046,
+            86.5
+          ]
+        ],
+        "source_volume_mm3": 153497.36653653072,
+        "removed_volume_mm3": 15915.93132065935,
+        "solid_volume_mm3": 137581.43521587137,
+        "source_faces": 368,
+        "trial_faces": 407,
+        "floor_heights_mm": [
+          3.3999999999999986,
+          3.3999999999999986,
+          3.3999999999999986
+        ],
+        "minimum_thickness_mm": 3.4,
+        "four_support_keepout_radius_mm": 11,
+        "support_keepout_volume_differences_mm3": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pocket_pitch_x_mm": 47.03807615230461,
+        "minimum_web_between_pockets_mm": 6.43807615230461
+      },
+      "mesh_size_mm": 6.0,
+      "nodes": 28827,
+      "quadratic_tetrahedra": 14401,
+      "solid_self_mass_upper_bound_g": 170.6009796676805,
+      "self_only_max_downward_mm": 0.02060502,
+      "reactions_N": [
+        1.6736010886238222,
+        0.9999998440499999,
+        0.9999999399570018
+      ],
+      "volume_relative_error": 3.271040091071545e-06,
+      "self_weight_equilibrium_relative_error": 3.2732422587752084e-06,
+      "setup": {
+        "support_node_counts": [
+          124,
+          121,
+          125,
+          114
+        ],
+        "distributed_contact_patches": [
+          {
+            "center_mm": [
+              40.761923847695385,
+              66.5,
+              3.3999999999999986
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              40.761923847695385,
+              106.5,
+              3.3999999999999986
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              60.761923847695385,
+              66.5,
+              3.3999999999999986
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              60.761923847695385,
+              106.5,
+              3.3999999999999986
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              87.8,
+              66.5,
+              3.3999999999999986
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              87.8,
+              106.5,
+              3.3999999999999986
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              107.8,
+              66.5,
+              3.3999999999999986
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              107.8,
+              106.5,
+              3.3999999999999986
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              134.8380761523046,
+              66.5,
+              3.3999999999999986
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              134.8380761523046,
+              106.5,
+              3.3999999999999986
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              154.8380761523046,
+              66.5,
+              3.3999999999999986
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              154.8380761523046,
+              106.5,
+              3.3999999999999986
+            ],
+            "nodes": 9
+          }
+        ],
+        "central_patch": [
+          {
+            "center_mm": [
+              97.8,
+              86.5,
+              3.3999999999999986
+            ],
+            "nodes": 7
+          }
+        ],
+        "no_stiffness_credit_for_unbonded_trays": true
+      },
+      "scenarios": [
+        {
+          "payload_or_per_car_including_tray_g": 60,
+          "total_payload_g": 180,
+          "arrangement": "distributed",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.065204935592,
+          "max_upward_mm": 0.00104822587326,
+          "max_downward_xyz_mm": [
+            100.48490380926,
+            84.23616316291,
+            1.7
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 110,
+          "total_payload_g": 330,
+          "arrangement": "distributed",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.10239156525200001,
+          "max_upward_mm": 0.0017805572682700003,
+          "max_downward_xyz_mm": [
+            100.48490380926,
+            84.23616316291,
+            1.7
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 110,
+          "total_payload_g": 330,
+          "arrangement": "distributed",
+          "E_effective_MPa": 500,
+          "max_downward_mm": 0.20478313050400002,
+          "max_upward_mm": 0.0035611145365400006,
+          "max_downward_xyz_mm": [
+            100.48490380926,
+            84.23616316291,
+            1.7
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 330,
+          "total_payload_g": 330,
+          "arrangement": "central_total",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.170681607738,
+          "max_upward_mm": 0.0034040165602000007,
+          "max_downward_xyz_mm": [
+            97.08918324994,
+            87.075326062432,
+            3.4
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 660,
+          "total_payload_g": 660,
+          "arrangement": "central_total",
+          "E_effective_MPa": 500,
+          "max_downward_mm": 0.6417526709520001,
+          "max_upward_mm": 0.013923931506800004,
+          "max_downward_xyz_mm": [
+            97.08918324994,
+            87.075326062432,
+            3.4
+          ]
+        }
+      ]
+    },
+    {
+      "geometry": {
+        "name": "depth2",
+        "source_body": "garage_deck_2_Body",
+        "bay_count": 3,
+        "depth_mm": 2.0,
+        "pocket_style": "standard",
+        "pocket_size_mm": [
+          40.6,
+          80.6
+        ],
+        "corner_radius_mm": 2.3,
+        "finger_relief_mm": [
+          12,
+          4
+        ],
+        "bay_centers_xy_mm": [
+          [
+            50.761923847695385,
+            86.5
+          ],
+          [
+            97.8,
+            86.5
+          ],
+          [
+            144.8380761523046,
+            86.5
+          ]
+        ],
+        "source_volume_mm3": 153497.36653653072,
+        "removed_volume_mm3": 19894.914150824538,
+        "solid_volume_mm3": 133602.4523857062,
+        "source_faces": 368,
+        "trial_faces": 407,
+        "floor_heights_mm": [
+          2.9999999999999996,
+          2.9999999999999996,
+          3.0
+        ],
+        "minimum_thickness_mm": 3.0,
+        "four_support_keepout_radius_mm": 11,
+        "support_keepout_volume_differences_mm3": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pocket_pitch_x_mm": 47.03807615230461,
+        "minimum_web_between_pockets_mm": 6.43807615230461
+      },
+      "mesh_size_mm": 6.0,
+      "nodes": 28870,
+      "quadratic_tetrahedra": 14430,
+      "solid_self_mass_upper_bound_g": 165.66704095827566,
+      "self_only_max_downward_mm": 0.02089942,
+      "reactions_N": [
+        1.6251990334462743,
+        1.0000003338100008,
+        0.9999998656600021
+      ],
+      "volume_relative_error": 3.4427913760039937e-06,
+      "self_weight_equilibrium_relative_error": 3.2990810158577853e-06,
+      "setup": {
+        "support_node_counts": [
+          124,
+          121,
+          125,
+          114
+        ],
+        "distributed_contact_patches": [
+          {
+            "center_mm": [
+              40.761923847695385,
+              66.5,
+              2.9999999999999996
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              40.761923847695385,
+              106.5,
+              2.9999999999999996
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              60.761923847695385,
+              66.5,
+              2.9999999999999996
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              60.761923847695385,
+              106.5,
+              2.9999999999999996
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              87.8,
+              66.5,
+              2.9999999999999996
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              87.8,
+              106.5,
+              2.9999999999999996
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              107.8,
+              66.5,
+              2.9999999999999996
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              107.8,
+              106.5,
+              2.9999999999999996
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              134.8380761523046,
+              66.5,
+              3.0
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              134.8380761523046,
+              106.5,
+              3.0
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              154.8380761523046,
+              66.5,
+              3.0
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              154.8380761523046,
+              106.5,
+              3.0
+            ],
+            "nodes": 9
+          }
+        ],
+        "central_patch": [
+          {
+            "center_mm": [
+              97.8,
+              86.5,
+              2.9999999999999996
+            ],
+            "nodes": 7
+          }
+        ],
+        "no_stiffness_credit_for_unbonded_trays": true
+      },
+      "scenarios": [
+        {
+          "payload_or_per_car_including_tray_g": 60,
+          "total_payload_g": 180,
+          "arrangement": "distributed",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.06984561073000001,
+          "max_upward_mm": 0.00108538731048,
+          "max_downward_xyz_mm": [
+            100.48490380926,
+            84.23616316291,
+            1.5
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 110,
+          "total_payload_g": 330,
+          "arrangement": "distributed",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.11065302800500001,
+          "max_upward_mm": 0.0018646872358800003,
+          "max_downward_xyz_mm": [
+            100.48490380926,
+            84.23616316291,
+            1.5
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 110,
+          "total_payload_g": 330,
+          "arrangement": "distributed",
+          "E_effective_MPa": 500,
+          "max_downward_mm": 0.22130605601000003,
+          "max_upward_mm": 0.0037293744717600006,
+          "max_downward_xyz_mm": [
+            100.48490380926,
+            84.23616316291,
+            1.5
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 330,
+          "total_payload_g": 330,
+          "arrangement": "central_total",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.194773525125,
+          "max_upward_mm": 0.003547683395000001,
+          "max_downward_xyz_mm": [
+            97.08918324994,
+            87.075326062432,
+            3.0
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 660,
+          "total_payload_g": 660,
+          "arrangement": "central_total",
+          "E_effective_MPa": 500,
+          "max_downward_mm": 0.7375325205000001,
+          "max_upward_mm": 0.014585910268800002,
+          "max_downward_xyz_mm": [
+            97.08918324994,
+            87.075326062432,
+            3.0
+          ]
+        }
+      ]
+    },
+    {
+      "geometry": {
+        "name": "fullbay2",
+        "source_body": "garage_deck_2_Body",
+        "bay_count": 3,
+        "depth_mm": 2.0,
+        "pocket_style": "full_bay_interior",
+        "pocket_size_mm": [
+          44.63807615230461,
+          86.0
+        ],
+        "corner_radius_mm": 2.3,
+        "finger_relief_mm": [
+          12,
+          4
+        ],
+        "bay_centers_xy_mm": [
+          [
+            50.761923847695385,
+            86.5
+          ],
+          [
+            97.8,
+            86.5
+          ],
+          [
+            144.8380761523046,
+            86.5
+          ]
+        ],
+        "source_volume_mm3": 153497.36653653072,
+        "removed_volume_mm3": 23248.569484371517,
+        "solid_volume_mm3": 130248.7970521592,
+        "source_faces": 368,
+        "trial_faces": 371,
+        "floor_heights_mm": [
+          2.9999999999999987,
+          2.9999999999999987,
+          2.9999999999999987
+        ],
+        "minimum_thickness_mm": 3.0,
+        "four_support_keepout_radius_mm": 11,
+        "support_keepout_volume_differences_mm3": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pocket_pitch_x_mm": 47.03807615230461,
+        "minimum_web_between_pockets_mm": 2.3999999999999986
+      },
+      "mesh_size_mm": 6.0,
+      "nodes": 28689,
+      "quadratic_tetrahedra": 14298,
+      "solid_self_mass_upper_bound_g": 161.5085083446774,
+      "self_only_max_downward_mm": 0.02118741,
+      "reactions_N": [
+        1.5844039851879794,
+        1.0000001444917983,
+        1.0000001993500014
+      ],
+      "volume_relative_error": 3.531461382340678e-06,
+      "self_weight_equilibrium_relative_error": 3.482915951536279e-06,
+      "setup": {
+        "support_node_counts": [
+          124,
+          121,
+          124,
+          114
+        ],
+        "distributed_contact_patches": [
+          {
+            "center_mm": [
+              40.761923847695385,
+              66.5,
+              2.9999999999999987
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              40.761923847695385,
+              106.5,
+              2.9999999999999987
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              60.761923847695385,
+              66.5,
+              2.9999999999999987
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              60.761923847695385,
+              106.5,
+              2.9999999999999987
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              87.8,
+              66.5,
+              2.9999999999999987
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              87.8,
+              106.5,
+              2.9999999999999987
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              107.8,
+              66.5,
+              2.9999999999999987
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              107.8,
+              106.5,
+              2.9999999999999987
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              134.8380761523046,
+              66.5,
+              2.9999999999999987
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              134.8380761523046,
+              106.5,
+              2.9999999999999987
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              154.8380761523046,
+              66.5,
+              2.9999999999999987
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              154.8380761523046,
+              106.5,
+              2.9999999999999987
+            ],
+            "nodes": 7
+          }
+        ],
+        "central_patch": [
+          {
+            "center_mm": [
+              97.8,
+              86.5,
+              2.9999999999999987
+            ],
+            "nodes": 8
+          }
+        ],
+        "no_stiffness_credit_for_unbonded_trays": true
+      },
+      "scenarios": [
+        {
+          "payload_or_per_car_including_tray_g": 60,
+          "total_payload_g": 180,
+          "arrangement": "distributed",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.07463318869,
+          "max_upward_mm": 0.00108887746154,
+          "max_downward_xyz_mm": [
+            99.159318693006,
+            84.551048125877,
+            1.5
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 110,
+          "total_payload_g": 330,
+          "arrangement": "distributed",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.11920205426500001,
+          "max_upward_mm": 0.00186602908902,
+          "max_downward_xyz_mm": [
+            99.159318693006,
+            84.551048125877,
+            1.5
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 110,
+          "total_payload_g": 330,
+          "arrangement": "distributed",
+          "E_effective_MPa": 500,
+          "max_downward_mm": 0.23840410853000002,
+          "max_upward_mm": 0.00373205817804,
+          "max_downward_xyz_mm": [
+            99.159318693006,
+            84.551048125877,
+            1.5
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 330,
+          "total_payload_g": 330,
+          "arrangement": "central_total",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.211558363495,
+          "max_upward_mm": 0.0035310102371,
+          "max_downward_xyz_mm": [
+            98.299482773867,
+            85.196364582893,
+            1.5
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 660,
+          "total_payload_g": 660,
+          "arrangement": "central_total",
+          "E_effective_MPa": 500,
+          "max_downward_mm": 0.80397309398,
+          "max_upward_mm": 0.014608543076800002,
+          "max_downward_xyz_mm": [
+            98.299482773867,
+            85.196364582893,
+            1.5
+          ]
+        }
+      ]
+    },
+    {
+      "geometry": {
+        "name": "twobay1p6",
+        "source_body": "garage_deck_1_Body",
+        "bay_count": 2,
+        "depth_mm": 1.6,
+        "pocket_style": "standard",
+        "pocket_size_mm": [
+          40.6,
+          80.6
+        ],
+        "corner_radius_mm": 2.3,
+        "finger_relief_mm": [
+          12,
+          4
+        ],
+        "bay_centers_xy_mm": [
+          [
+            62.52144288577154,
+            86.5
+          ],
+          [
+            133.07855711422846,
+            86.5
+          ]
+        ],
+        "source_volume_mm3": 152298.96034131554,
+        "removed_volume_mm3": 9916.962573343772,
+        "solid_volume_mm3": 142381.99776797177,
+        "source_faces": 597,
+        "trial_faces": 355,
+        "floor_heights_mm": [
+          3.3999999999999986,
+          3.3999999999999986
+        ],
+        "minimum_thickness_mm": 3.4,
+        "four_support_keepout_radius_mm": 11,
+        "support_keepout_volume_differences_mm3": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pocket_pitch_x_mm": 70.55711422845691,
+        "minimum_web_between_pockets_mm": 29.95711422845691
+      },
+      "mesh_size_mm": 6.0,
+      "nodes": 27155,
+      "quadratic_tetrahedra": 13565,
+      "solid_self_mass_upper_bound_g": 176.553677232285,
+      "self_only_max_downward_mm": 0.01914774,
+      "reactions_N": [
+        1.7319970708944123,
+        0.9999999565999991,
+        0.9999999868999996
+      ],
+      "volume_relative_error": 3.109483799167703e-06,
+      "self_weight_equilibrium_relative_error": 3.1739448274842342e-06,
+      "setup": {
+        "support_node_counts": [
+          124,
+          121,
+          124,
+          114
+        ],
+        "distributed_contact_patches": [
+          {
+            "center_mm": [
+              52.52144288577154,
+              66.5,
+              3.3999999999999986
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              52.52144288577154,
+              106.5,
+              3.3999999999999986
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              72.52144288577153,
+              66.5,
+              3.3999999999999986
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              72.52144288577153,
+              106.5,
+              3.3999999999999986
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              123.07855711422846,
+              66.5,
+              3.3999999999999986
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              123.07855711422846,
+              106.5,
+              3.3999999999999986
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              143.07855711422846,
+              66.5,
+              3.3999999999999986
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              143.07855711422846,
+              106.5,
+              3.3999999999999986
+            ],
+            "nodes": 9
+          }
+        ],
+        "central_patch": [
+          {
+            "center_mm": [
+              97.8,
+              86.5,
+              4.600000000000014
+            ],
+            "nodes": 7
+          }
+        ],
+        "no_stiffness_credit_for_unbonded_trays": true
+      },
+      "scenarios": [
+        {
+          "payload_or_per_car_including_tray_g": 60,
+          "total_payload_g": 120,
+          "arrangement": "distributed",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.04518740126,
+          "max_upward_mm": 0.00086956181916,
+          "max_downward_xyz_mm": [
+            102.00053730186,
+            84.054455954706,
+            2.5
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 110,
+          "total_payload_g": 220,
+          "arrangement": "distributed",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.06690875231000001,
+          "max_upward_mm": 0.0014353046142000002,
+          "max_downward_xyz_mm": [
+            102.00053730186,
+            84.054455954706,
+            2.5
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 110,
+          "total_payload_g": 220,
+          "arrangement": "distributed",
+          "E_effective_MPa": 500,
+          "max_downward_mm": 0.13381750462000003,
+          "max_upward_mm": 0.0028706092284000004,
+          "max_downward_xyz_mm": [
+            102.00053730186,
+            84.054455954706,
+            2.5
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 330,
+          "total_payload_g": 330,
+          "arrangement": "central_total",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.132371125818,
+          "max_upward_mm": 0.0032935627039000002,
+          "max_downward_xyz_mm": [
+            97.038419278006,
+            86.470107319885,
+            2.3
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 660,
+          "total_payload_g": 660,
+          "arrangement": "central_total",
+          "E_effective_MPa": 500,
+          "max_downward_mm": 0.4913834232720001,
+          "max_upward_mm": 0.013394543395200003,
+          "max_downward_xyz_mm": [
+            97.038419278006,
+            86.470107319885,
+            2.3
+          ]
+        }
+      ]
+    },
+    {
+      "geometry": {
+        "name": "compensated1p6",
+        "source_body": "garage_deck_2_Body",
+        "bay_count": 3,
+        "depth_mm": 1.6,
+        "pocket_style": "compensated",
+        "pocket_size_mm": [
+          40.6,
+          80.6
+        ],
+        "corner_radius_mm": 2.3,
+        "finger_relief_mm": [
+          12,
+          4
+        ],
+        "bay_centers_xy_mm": [
+          [
+            50.761923847695385,
+            86.5
+          ],
+          [
+            97.8,
+            86.5
+          ],
+          [
+            144.8380761523046,
+            86.5
+          ]
+        ],
+        "source_volume_mm3": 153497.36653653072,
+        "removed_volume_mm3": -4.3655745685100555e-10,
+        "solid_volume_mm3": 153497.36653653116,
+        "source_faces": 368,
+        "trial_faces": 446,
+        "floor_heights_mm": [
+          3.3999999999999986,
+          3.3999999999999986,
+          3.3999999999999986
+        ],
+        "pocket_floor_thickness_mm": 5.0,
+        "underside_local_extension_mm": 1.6,
+        "minimum_thickness_mm": 4.6,
+        "four_support_keepout_radius_mm": 11,
+        "support_keepout_volume_differences_mm3": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pocket_pitch_x_mm": 47.03807615230461,
+        "minimum_web_between_pockets_mm": 6.43807615230461
+      },
+      "mesh_size_mm": 6.0,
+      "nodes": 32013,
+      "quadratic_tetrahedra": 16037,
+      "solid_self_mass_upper_bound_g": 190.33673450529864,
+      "quadratic_geometry_edges": "linear midsides",
+      "self_only_max_downward_mm": 0.01752632,
+      "reactions_N": [
+        1.8678600721984369,
+        0.9999997661090012,
+        0.9999997464799979
+      ],
+      "volume_relative_error": 0.0003516692621348827,
+      "self_weight_equilibrium_relative_error": 0.0003517060399483217,
+      "setup": {
+        "support_node_counts": [
+          141,
+          127,
+          137,
+          124
+        ],
+        "distributed_contact_patches": [
+          {
+            "center_mm": [
+              40.761923847695385,
+              66.5,
+              3.3999999999999986
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              40.761923847695385,
+              106.5,
+              3.3999999999999986
+            ],
+            "nodes": 6
+          },
+          {
+            "center_mm": [
+              60.761923847695385,
+              66.5,
+              3.3999999999999986
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              60.761923847695385,
+              106.5,
+              3.3999999999999986
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              87.8,
+              66.5,
+              3.3999999999999986
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              87.8,
+              106.5,
+              3.3999999999999986
+            ],
+            "nodes": 6
+          },
+          {
+            "center_mm": [
+              107.8,
+              66.5,
+              3.3999999999999986
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              107.8,
+              106.5,
+              3.3999999999999986
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              134.8380761523046,
+              66.5,
+              3.3999999999999986
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              134.8380761523046,
+              106.5,
+              3.3999999999999986
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              154.8380761523046,
+              66.5,
+              3.3999999999999986
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              154.8380761523046,
+              106.5,
+              3.3999999999999986
+            ],
+            "nodes": 6
+          }
+        ],
+        "central_patch": [
+          {
+            "center_mm": [
+              97.8,
+              86.5,
+              3.3999999999999986
+            ],
+            "nodes": 7
+          }
+        ],
+        "no_stiffness_credit_for_unbonded_trays": true
+      },
+      "scenarios": [
+        {
+          "payload_or_per_car_including_tray_g": 60,
+          "total_payload_g": 180,
+          "arrangement": "distributed",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.046038675838000004,
+          "max_upward_mm": 0.0008415459496400001,
+          "max_downward_xyz_mm": [
+            99.730817801346,
+            81.876143841299,
+            0.9
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 110,
+          "total_payload_g": 330,
+          "arrangement": "distributed",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.06980688020600001,
+          "max_upward_mm": 0.0013638041034400002,
+          "max_downward_xyz_mm": [
+            101.52227124603,
+            84.226889890754,
+            0.9
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 110,
+          "total_payload_g": 330,
+          "arrangement": "distributed",
+          "E_effective_MPa": 500,
+          "max_downward_mm": 0.13961376041200002,
+          "max_upward_mm": 0.0027276082068800004,
+          "max_downward_xyz_mm": [
+            101.52227124603,
+            84.226889890754,
+            0.9
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 330,
+          "total_payload_g": 330,
+          "arrangement": "central_total",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.102355269585,
+          "max_upward_mm": 0.00271147341015,
+          "max_downward_xyz_mm": [
+            96.858009022095,
+            86.917401219897,
+            0.9
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 660,
+          "total_payload_g": 660,
+          "arrangement": "central_total",
+          "E_effective_MPa": 500,
+          "max_downward_mm": 0.37458105834,
+          "max_upward_mm": 0.011002669157640001,
+          "max_downward_xyz_mm": [
+            96.858009022095,
+            86.917401219897,
+            0.9
+          ]
+        }
+      ]
+    },
+    {
+      "geometry": {
+        "name": "flatthick1p6",
+        "source_body": "garage_deck_2_Body",
+        "bay_count": 3,
+        "depth_mm": 1.6,
+        "pocket_style": "flat_thickened",
+        "pocket_size_mm": [
+          40.6,
+          80.6
+        ],
+        "corner_radius_mm": 2.3,
+        "finger_relief_mm": [
+          12,
+          4
+        ],
+        "bay_centers_xy_mm": [
+          [
+            50.761923847695385,
+            86.5
+          ],
+          [
+            97.8,
+            86.5
+          ],
+          [
+            144.8380761523046,
+            86.5
+          ]
+        ],
+        "source_volume_mm3": 153497.36653653072,
+        "removed_volume_mm3": -33494.79195016943,
+        "solid_volume_mm3": 186992.15848670015,
+        "source_faces": 368,
+        "trial_faces": 407,
+        "floor_heights_mm": [
+          3.3999999999999986,
+          3.3999999999999986,
+          3.3999999999999986
+        ],
+        "pocket_floor_thickness_mm": 5.0,
+        "underside_local_extension_mm": 0,
+        "underside_full_extension_mm": 1.6,
+        "minimum_thickness_mm": 5.0,
+        "four_support_keepout_radius_mm": 11,
+        "support_keepout_volume_differences_mm3": [
+          0.0,
+          9.094947017729282e-13,
+          2.2737367544323206e-13,
+          2.2737367544323206e-13
+        ],
+        "pocket_pitch_x_mm": 47.03807615230461,
+        "minimum_web_between_pockets_mm": 6.43807615230461
+      },
+      "mesh_size_mm": 6.0,
+      "nodes": 30029,
+      "quadratic_tetrahedra": 15252,
+      "solid_self_mass_upper_bound_g": 231.87027652350818,
+      "quadratic_geometry_edges": "curved",
+      "self_only_max_downward_mm": 0.01242278,
+      "reactions_N": [
+        2.274654511266009,
+        0.999999996582998,
+        0.9999997696400001
+      ],
+      "volume_relative_error": 3.121118729907272e-06,
+      "self_weight_equilibrium_relative_error": 3.1207343846328783e-06,
+      "setup": {
+        "support_node_counts": [
+          124,
+          121,
+          124,
+          114
+        ],
+        "distributed_contact_patches": [
+          {
+            "center_mm": [
+              40.761923847695385,
+              66.5,
+              3.3999999999999986
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              40.761923847695385,
+              106.5,
+              3.3999999999999986
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              60.761923847695385,
+              66.5,
+              3.3999999999999986
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              60.761923847695385,
+              106.5,
+              3.3999999999999986
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              87.8,
+              66.5,
+              3.3999999999999986
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              87.8,
+              106.5,
+              3.3999999999999986
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              107.8,
+              66.5,
+              3.3999999999999986
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              107.8,
+              106.5,
+              3.3999999999999986
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              134.8380761523046,
+              66.5,
+              3.3999999999999986
+            ],
+            "nodes": 8
+          },
+          {
+            "center_mm": [
+              134.8380761523046,
+              106.5,
+              3.3999999999999986
+            ],
+            "nodes": 7
+          },
+          {
+            "center_mm": [
+              154.8380761523046,
+              66.5,
+              3.3999999999999986
+            ],
+            "nodes": 9
+          },
+          {
+            "center_mm": [
+              154.8380761523046,
+              106.5,
+              3.3999999999999986
+            ],
+            "nodes": 6
+          }
+        ],
+        "central_patch": [
+          {
+            "center_mm": [
+              97.8,
+              86.5,
+              3.3999999999999986
+            ],
+            "nodes": 7
+          }
+        ],
+        "no_stiffness_credit_for_unbonded_trays": true
+      },
+      "scenarios": [
+        {
+          "payload_or_per_car_including_tray_g": 60,
+          "total_payload_g": 180,
+          "arrangement": "distributed",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.031093539574,
+          "max_upward_mm": 0.0005686735535,
+          "max_downward_xyz_mm": [
+            98.168833541036,
+            82.450566853683,
+            0.9
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 110,
+          "total_payload_g": 330,
+          "arrangement": "distributed",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.046661144696,
+          "max_upward_mm": 0.0009122062647500001,
+          "max_downward_xyz_mm": [
+            100.48490380926,
+            84.23616316291,
+            0.9
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 110,
+          "total_payload_g": 330,
+          "arrangement": "distributed",
+          "E_effective_MPa": 500,
+          "max_downward_mm": 0.093322289392,
+          "max_upward_mm": 0.0018244125295000001,
+          "max_downward_xyz_mm": [
+            100.48490380926,
+            84.23616316291,
+            0.9
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 330,
+          "total_payload_g": 330,
+          "arrangement": "central_total",
+          "E_effective_MPa": 1000,
+          "max_downward_mm": 0.071996144038,
+          "max_upward_mm": 0.0015895370922700003,
+          "max_downward_xyz_mm": [
+            97.08918324994,
+            87.075326062432,
+            3.4
+          ]
+        },
+        {
+          "payload_or_per_car_including_tray_g": 660,
+          "total_payload_g": 660,
+          "arrangement": "central_total",
+          "E_effective_MPa": 500,
+          "max_downward_mm": 0.26329365615199996,
+          "max_upward_mm": 0.0063142043490800005,
+          "max_downward_xyz_mm": [
+            97.08918324994,
+            87.075326062432,
+            3.4
+          ]
+        }
+      ]
+    }
+  ]
+}

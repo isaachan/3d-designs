@@ -1,0 +1,178 @@
+{
+  "cases": [
+    {
+      "id": "A",
+      "total_nominal_side_clearance_mm": 0.4,
+      "nominal_end_gap_mm": 1.0,
+      "matched_axial_taper": false,
+      "closing_path": [
+        {
+          "separation_mm": 20,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 10,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 5,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 1,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 0,
+          "overlap_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "total_nominal_side_clearance_mm": 0.4,
+      "nominal_end_gap_mm": 1.0,
+      "matched_axial_taper": true,
+      "closing_path": [
+        {
+          "separation_mm": 20,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 10,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 5,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 1,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 0,
+          "overlap_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "total_nominal_side_clearance_mm": 0.4,
+      "nominal_end_gap_mm": 0.3,
+      "matched_axial_taper": true,
+      "closing_path": [
+        {
+          "separation_mm": 20,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 10,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 5,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 1,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 0,
+          "overlap_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "total_nominal_side_clearance_mm": 0.3,
+      "nominal_end_gap_mm": 0.3,
+      "matched_axial_taper": true,
+      "closing_path": [
+        {
+          "separation_mm": 20,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 10,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 5,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 1,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 0,
+          "overlap_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "total_nominal_side_clearance_mm": 0.2,
+      "nominal_end_gap_mm": 0.3,
+      "matched_axial_taper": true,
+      "closing_path": [
+        {
+          "separation_mm": 20,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 10,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 5,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 1,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 0,
+          "overlap_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "total_nominal_side_clearance_mm": 0.3,
+      "nominal_end_gap_mm": 0.2,
+      "matched_axial_taper": true,
+      "closing_path": [
+        {
+          "separation_mm": 20,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 10,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 5,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 1,
+          "overlap_mm3": 0.0
+        },
+        {
+          "separation_mm": 0,
+          "overlap_mm3": 0.0
+        }
+      ]
+    }
+  ],
+  "back_thickness_mm": 5,
+  "base_thickness_mm": 8,
+  "coupon_height_mm": 52,
+  "male_nominal_length_mm": 14,
+  "physical_fit": "not_tested",
+  "scope": "single back joint only; not a full module or base-joint test"
+}

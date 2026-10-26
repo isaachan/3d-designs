@@ -1,0 +1,699 @@
+{
+  "status": "passed",
+  "bambu_studio": "02.08.02.61",
+  "printer": "Bambu Lab X2D, standard 0.4 mm nozzles",
+  "cad_sha256": "ed005751140ea1b6b79c90b032a2dbc99393b070ec8338a4ff4cc5ed64de6bf7",
+  "projects": [
+    {
+      "project": "bambu-projects/01a-garage-deck-1-two-bays.3mf",
+      "project_sha256": "5e2e696b4940f9891e0ad3a5b40e75fd58a17fdbcb577bf59347873f8458ffdf",
+      "color": "gray",
+      "input_files": [
+        "garage_deck_1.stl"
+      ],
+      "object_count": 1,
+      "input_sha256": {
+        "garage_deck_1.stl": "5ebcac7f51f9a6050ae14889cb0c6ad3eecd1e97c98116efc07009f075bdfecc"
+      },
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "extruder_nozzle_stats": [
+          "Standard#1",
+          "Standard#1"
+        ],
+        "curr_bed_type": "Textured PEI Plate",
+        "filament_type": [
+          "PLA"
+        ],
+        "filament_colour": [
+          "#8C949E"
+        ],
+        "filament_density": [
+          "1.26"
+        ],
+        "textured_plate_temp": [
+          "55"
+        ],
+        "textured_plate_temp_initial_layer": [
+          "55"
+        ],
+        "nozzle_temperature": [
+          "220",
+          "220",
+          "220",
+          "220",
+          "220",
+          "220"
+        ],
+        "layer_height": "0.2",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "sliced_saved_3mf": true,
+      "reload_profile_overrides": false,
+      "print_runs": 1,
+      "slicer_warnings": [],
+      "estimated_seconds": 7419,
+      "estimated_filament_g": 103.38631439208984
+    },
+    {
+      "project": "bambu-projects/01b-garage-deck-2-three-bays.3mf",
+      "project_sha256": "861665e62c9eaa480726fd2978566fdd0c241218b9c630df1dbd384b4ecf650d",
+      "color": "gray",
+      "input_files": [
+        "garage_deck_2.stl"
+      ],
+      "object_count": 1,
+      "input_sha256": {
+        "garage_deck_2.stl": "481504958276c5b4ffa1ec26ee355293a144c72ce13162c1b64ac6293f7f6598"
+      },
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "extruder_nozzle_stats": [
+          "Standard#1",
+          "Standard#1"
+        ],
+        "curr_bed_type": "Textured PEI Plate",
+        "filament_type": [
+          "PLA"
+        ],
+        "filament_colour": [
+          "#8C949E"
+        ],
+        "filament_density": [
+          "1.26"
+        ],
+        "textured_plate_temp": [
+          "55"
+        ],
+        "textured_plate_temp_initial_layer": [
+          "55"
+        ],
+        "nozzle_temperature": [
+          "220",
+          "220",
+          "220",
+          "220",
+          "220",
+          "220"
+        ],
+        "layer_height": "0.2",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "sliced_saved_3mf": true,
+      "reload_profile_overrides": false,
+      "print_runs": 1,
+      "slicer_warnings": [],
+      "estimated_seconds": 7514,
+      "estimated_filament_g": 104.09681701660156
+    },
+    {
+      "project": "bambu-projects/01c-garage-deck-3-plain.3mf",
+      "project_sha256": "9c5dd96f37b2d987f228548757908521c20cdf77c88bceebf40a8440ea21483b",
+      "color": "gray",
+      "input_files": [
+        "garage_deck_3.stl"
+      ],
+      "object_count": 1,
+      "input_sha256": {
+        "garage_deck_3.stl": "654cc30d7f118fe79b542530c13a6b0b2ee3c0aa99574c41808b4adb59f804c4"
+      },
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "extruder_nozzle_stats": [
+          "Standard#1",
+          "Standard#1"
+        ],
+        "curr_bed_type": "Textured PEI Plate",
+        "filament_type": [
+          "PLA"
+        ],
+        "filament_colour": [
+          "#8C949E"
+        ],
+        "filament_density": [
+          "1.26"
+        ],
+        "textured_plate_temp": [
+          "55"
+        ],
+        "textured_plate_temp_initial_layer": [
+          "55"
+        ],
+        "nozzle_temperature": [
+          "220",
+          "220",
+          "220",
+          "220",
+          "220",
+          "220"
+        ],
+        "layer_height": "0.2",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "sliced_saved_3mf": true,
+      "reload_profile_overrides": false,
+      "print_runs": 1,
+      "slicer_warnings": [],
+      "estimated_seconds": 6372,
+      "estimated_filament_g": 100.82181549072266
+    },
+    {
+      "project": "bambu-projects/02-garage-base.3mf",
+      "project_sha256": "23b0f307f3dc7e1cad4dcdca9bdc2b8cbeac87140d861813b1e86b72bf60858d",
+      "color": "gray",
+      "input_files": [
+        "module_1.stl"
+      ],
+      "object_count": 1,
+      "input_sha256": {
+        "module_1.stl": "48d840a978813aa924ff779c62d0f5a56d300039b65804decfa7e00dab37f54d"
+      },
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "extruder_nozzle_stats": [
+          "Standard#1",
+          "Standard#1"
+        ],
+        "curr_bed_type": "Textured PEI Plate",
+        "filament_type": [
+          "PLA"
+        ],
+        "filament_colour": [
+          "#8C949E"
+        ],
+        "filament_density": [
+          "1.26"
+        ],
+        "textured_plate_temp": [
+          "55"
+        ],
+        "textured_plate_temp_initial_layer": [
+          "55"
+        ],
+        "nozzle_temperature": [
+          "220",
+          "220",
+          "220",
+          "220",
+          "220",
+          "220"
+        ],
+        "layer_height": "0.2",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "sliced_saved_3mf": true,
+      "reload_profile_overrides": false,
+      "print_runs": 1,
+      "slicer_warnings": [],
+      "estimated_seconds": 22636,
+      "estimated_filament_g": 369.3890686035156,
+      "validation_reused_with_matching_source_and_project_hashes": true
+    },
+    {
+      "project": "bambu-projects/03-book-left.3mf",
+      "project_sha256": "87c97f55513ad6982c45268783deadda915a8d1836ee2517b4a82aece8d7d1ed",
+      "color": "gray",
+      "input_files": [
+        "module_2.stl"
+      ],
+      "object_count": 1,
+      "input_sha256": {
+        "module_2.stl": "f6816712dfed7550352cefb188fbf53340dca4521b2c59bf9a05c3c547627809"
+      },
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "extruder_nozzle_stats": [
+          "Standard#1",
+          "Standard#1"
+        ],
+        "curr_bed_type": "Textured PEI Plate",
+        "filament_type": [
+          "PLA"
+        ],
+        "filament_colour": [
+          "#8C949E"
+        ],
+        "filament_density": [
+          "1.26"
+        ],
+        "textured_plate_temp": [
+          "55"
+        ],
+        "textured_plate_temp_initial_layer": [
+          "55"
+        ],
+        "nozzle_temperature": [
+          "220",
+          "220",
+          "220",
+          "220",
+          "220",
+          "220"
+        ],
+        "layer_height": "0.2",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "1"
+      },
+      "slice_status": "passed",
+      "sliced_saved_3mf": true,
+      "reload_profile_overrides": false,
+      "print_runs": 1,
+      "slicer_warnings": [],
+      "estimated_seconds": 28455,
+      "estimated_filament_g": 450.4999694824219,
+      "validation_reused_with_matching_source_and_project_hashes": true
+    },
+    {
+      "project": "bambu-projects/04-book-right.3mf",
+      "project_sha256": "ade840766665eecf4d2fc056bf45827d264aa0fa54df2e89d55007f131f444b0",
+      "color": "gray",
+      "input_files": [
+        "module_3.stl"
+      ],
+      "object_count": 1,
+      "input_sha256": {
+        "module_3.stl": "f877f1ce50cc77b5690e7ec6f53163128d903ed23ec76a83a2615f3ddb681f92"
+      },
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "extruder_nozzle_stats": [
+          "Standard#1",
+          "Standard#1"
+        ],
+        "curr_bed_type": "Textured PEI Plate",
+        "filament_type": [
+          "PLA"
+        ],
+        "filament_colour": [
+          "#8C949E"
+        ],
+        "filament_density": [
+          "1.26"
+        ],
+        "textured_plate_temp": [
+          "55"
+        ],
+        "textured_plate_temp_initial_layer": [
+          "55"
+        ],
+        "nozzle_temperature": [
+          "220",
+          "220",
+          "220",
+          "220",
+          "220",
+          "220"
+        ],
+        "layer_height": "0.2",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "sliced_saved_3mf": true,
+      "reload_profile_overrides": false,
+      "print_runs": 1,
+      "slicer_warnings": [],
+      "estimated_seconds": 27377,
+      "estimated_filament_g": 441.80377197265625,
+      "validation_reused_with_matching_source_and_project_hashes": true
+    },
+    {
+      "project": "garage-bookshelf-v4-X2D-print-3mf/05-support-segments-twelve.3mf",
+      "project_sha256": "b2dd2e588e9f4c671674193b32d9ec4374f01ff1dd9cc3ea5df91693c25c48fd",
+      "color": "yellow",
+      "input_files": [
+        "column_1_segment_1.stl",
+        "column_1_segment_1.stl",
+        "column_1_segment_1.stl",
+        "column_1_segment_1.stl",
+        "column_1_segment_1.stl",
+        "column_1_segment_1.stl",
+        "column_1_segment_1.stl",
+        "column_1_segment_1.stl",
+        "column_1_segment_1.stl",
+        "column_1_segment_1.stl",
+        "column_1_segment_1.stl",
+        "column_1_segment_1.stl"
+      ],
+      "object_count": 12,
+      "input_sha256": {
+        "column_1_segment_1.stl": "cea67b1f1eaff4ae62dcd14f471b479af195bec656128debb6176dbc551fce76"
+      },
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "extruder_nozzle_stats": [
+          "Standard#1",
+          "Standard#1"
+        ],
+        "curr_bed_type": "Textured PEI Plate",
+        "filament_type": [
+          "PLA"
+        ],
+        "filament_colour": [
+          "#FABB1A"
+        ],
+        "filament_density": [
+          "1.26"
+        ],
+        "textured_plate_temp": [
+          "55"
+        ],
+        "textured_plate_temp_initial_layer": [
+          "55"
+        ],
+        "nozzle_temperature": [
+          "220",
+          "220",
+          "220",
+          "220",
+          "220",
+          "220"
+        ],
+        "layer_height": "0.2",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "sliced_saved_3mf": true,
+      "reload_profile_overrides": false,
+      "print_runs": 1,
+      "slicer_warnings": [],
+      "estimated_seconds": 8848,
+      "estimated_filament_g": 91.22473907470703,
+      "validation_reused_with_matching_source_and_project_hashes": true
+    },
+    {
+      "project": "bambu-projects/06-top-segments-four.3mf",
+      "project_sha256": "6cf627accd7c5b249ffdfd5fcf67a86d57c1611bffa81b0e025a824a2a4dcc68",
+      "color": "yellow",
+      "input_files": [
+        "column_1_segment_4.stl",
+        "column_1_segment_4.stl",
+        "column_1_segment_4.stl",
+        "column_1_segment_4.stl"
+      ],
+      "object_count": 4,
+      "input_sha256": {
+        "column_1_segment_4.stl": "785fd079da943ab35f2ad203aaecd8a759ba6d36a0a8f806e8d22e3f21d08331"
+      },
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "extruder_nozzle_stats": [
+          "Standard#1",
+          "Standard#1"
+        ],
+        "curr_bed_type": "Textured PEI Plate",
+        "filament_type": [
+          "PLA"
+        ],
+        "filament_colour": [
+          "#FABB1A"
+        ],
+        "filament_density": [
+          "1.26"
+        ],
+        "textured_plate_temp": [
+          "55"
+        ],
+        "textured_plate_temp_initial_layer": [
+          "55"
+        ],
+        "nozzle_temperature": [
+          "220",
+          "220",
+          "220",
+          "220",
+          "220",
+          "220"
+        ],
+        "layer_height": "0.2",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "sliced_saved_3mf": true,
+      "reload_profile_overrides": false,
+      "print_runs": 1,
+      "slicer_warnings": [],
+      "estimated_seconds": 1604,
+      "estimated_filament_g": 15.585352897644043,
+      "validation_reused_with_matching_source_and_project_hashes": true
+    },
+    {
+      "project": "bambu-projects/07-billboard-and-posts-black.3mf",
+      "project_sha256": "32036c70392651dd74fc172f5b1f846d0f5ac40bf49b0d8bea59e7c77de9091a",
+      "color": "black",
+      "input_files": [
+        "billboard.stl",
+        "billboard_post_left.stl",
+        "billboard_post_right.stl"
+      ],
+      "object_count": 3,
+      "input_sha256": {
+        "billboard.stl": "1665648678bb073e2a6e77d59fbef23e1e5477cd51b18d0b8485c9cc866cb2bb",
+        "billboard_post_left.stl": "291f9f3e8fc24a375972ccfd8dc24645579efa042f42fa4d3ee13c8d06f6f22a",
+        "billboard_post_right.stl": "d5f209e6ae478331d750ff43c99b5c38eec327f207a902f3dded47856a1eff9c"
+      },
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "extruder_nozzle_stats": [
+          "Standard#1",
+          "Standard#1"
+        ],
+        "curr_bed_type": "Textured PEI Plate",
+        "filament_type": [
+          "PLA"
+        ],
+        "filament_colour": [
+          "#141414"
+        ],
+        "filament_density": [
+          "1.26"
+        ],
+        "textured_plate_temp": [
+          "55"
+        ],
+        "textured_plate_temp_initial_layer": [
+          "55"
+        ],
+        "nozzle_temperature": [
+          "220",
+          "220",
+          "220",
+          "220",
+          "220",
+          "220"
+        ],
+        "layer_height": "0.2",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "sliced_saved_3mf": true,
+      "reload_profile_overrides": false,
+      "print_runs": 1,
+      "slicer_warnings": [],
+      "estimated_seconds": 5171,
+      "estimated_filament_g": 76.95841217041016,
+      "validation_reused_with_matching_source_and_project_hashes": true
+    },
+    {
+      "project": "bambu-projects/08-billboard-lettering-white.3mf",
+      "project_sha256": "0960c80253153a8d3b053a7050645c4b6e527162c8ee8ddfcace5583f39ed523",
+      "color": "white",
+      "input_files": [
+        "billboard_text_lovely_cars.stl",
+        "billboard_text_ive_driven.stl"
+      ],
+      "object_count": 2,
+      "input_sha256": {
+        "billboard_text_lovely_cars.stl": "aec0a6df3cbdbdf0a4091ae1d3cf396c0a9dba15426d66166961f26b4b66e3e4",
+        "billboard_text_ive_driven.stl": "d2afa0e218206fc0868146b2c6c49fa9c1771c7e3aa5f480169aee4728a637c1"
+      },
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "extruder_nozzle_stats": [
+          "Standard#1",
+          "Standard#1"
+        ],
+        "curr_bed_type": "Textured PEI Plate",
+        "filament_type": [
+          "PLA"
+        ],
+        "filament_colour": [
+          "#F2F2F2"
+        ],
+        "filament_density": [
+          "1.26"
+        ],
+        "textured_plate_temp": [
+          "55"
+        ],
+        "textured_plate_temp_initial_layer": [
+          "55"
+        ],
+        "nozzle_temperature": [
+          "220",
+          "220",
+          "220",
+          "220",
+          "220",
+          "220"
+        ],
+        "layer_height": "0.2",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "sliced_saved_3mf": true,
+      "reload_profile_overrides": false,
+      "print_runs": 1,
+      "slicer_warnings": [],
+      "estimated_seconds": 1085,
+      "estimated_filament_g": 3.188397169113159,
+      "validation_reused_with_matching_source_and_project_hashes": true
+    },
+    {
+      "project": "bambu-projects/09-blue-slogan-sign.3mf",
+      "project_sha256": "c92135250377869beee16ab2bb8c3adc777965e28b69dfd53a1e83f2d0504cd9",
+      "color": "blue",
+      "input_files": [
+        "book_depot_sign.stl"
+      ],
+      "object_count": 1,
+      "input_sha256": {
+        "book_depot_sign.stl": "408a9cd0aa5be56157be620f2c27535319b85efa4265520cbd9b050887ec7797"
+      },
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "extruder_nozzle_stats": [
+          "Standard#1",
+          "Standard#1"
+        ],
+        "curr_bed_type": "Textured PEI Plate",
+        "filament_type": [
+          "PLA"
+        ],
+        "filament_colour": [
+          "#1A5CE0"
+        ],
+        "filament_density": [
+          "1.26"
+        ],
+        "textured_plate_temp": [
+          "55"
+        ],
+        "textured_plate_temp_initial_layer": [
+          "55"
+        ],
+        "nozzle_temperature": [
+          "220",
+          "220",
+          "220",
+          "220",
+          "220",
+          "220"
+        ],
+        "layer_height": "0.2",
+        "wall_loops": "4",
+        "sparse_infill_density": "25%",
+        "brim_width": "4",
+        "brim_type": "auto_brim",
+        "enable_support": "0"
+      },
+      "slice_status": "passed",
+      "sliced_saved_3mf": true,
+      "reload_profile_overrides": false,
+      "print_runs": 1,
+      "slicer_warnings": [],
+      "estimated_seconds": 2479,
+      "estimated_filament_g": 24.160736083984375,
+      "validation_reused_with_matching_source_and_project_hashes": true
+    }
+  ],
+  "gcode_delivered": false,
+  "physical_print_completed": false,
+  "validation": "each saved 3MF reopened and sliced without configuration override"
+}

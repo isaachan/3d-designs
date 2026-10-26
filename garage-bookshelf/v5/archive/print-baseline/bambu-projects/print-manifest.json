@@ -1,0 +1,98 @@
+{
+  "cad_sha256": "ed005751140ea1b6b79c90b032a2dbc99393b070ec8338a4ff4cc5ed64de6bf7",
+  "projects": [
+    {
+      "project": "01a-garage-deck-1-two-bays.3mf",
+      "color": "灰色",
+      "contents": "层板1：双车位，B01轮椅标识",
+      "print_runs": 1,
+      "sha256": "5e2e696b4940f9891e0ad3a5b40e75fd58a17fdbcb577bf59347873f8458ffdf",
+      "reopened_and_sliced": true
+    },
+    {
+      "project": "01b-garage-deck-2-three-bays.3mf",
+      "color": "灰色",
+      "contents": "层板2：三车位",
+      "print_runs": 1,
+      "sha256": "861665e62c9eaa480726fd2978566fdd0c241218b9c630df1dbd384b4ecf650d",
+      "reopened_and_sliced": true
+    },
+    {
+      "project": "01c-garage-deck-3-plain.3mf",
+      "color": "灰色",
+      "contents": "层板3：空白整板",
+      "print_runs": 1,
+      "sha256": "9c5dd96f37b2d987f228548757908521c20cdf77c88bceebf40a8440ea21483b",
+      "reopened_and_sliced": true
+    },
+    {
+      "project": "02-garage-base.3mf",
+      "color": "灰色",
+      "contents": "车库底背一体模块",
+      "print_runs": 1,
+      "sha256": "23b0f307f3dc7e1cad4dcdca9bdc2b8cbeac87140d861813b1e86b72bf60858d",
+      "reopened_and_sliced": true
+    },
+    {
+      "project": "03-book-left.3mf",
+      "color": "灰色",
+      "contents": "书架左模块（含隔板）",
+      "print_runs": 1,
+      "sha256": "87c97f55513ad6982c45268783deadda915a8d1836ee2517b4a82aece8d7d1ed",
+      "reopened_and_sliced": true
+    },
+    {
+      "project": "04-book-right.3mf",
+      "color": "灰色",
+      "contents": "书架右模块（含右侧板）",
+      "print_runs": 1,
+      "sha256": "ade840766665eecf4d2fc056bf45827d264aa0fa54df2e89d55007f131f444b0",
+      "reopened_and_sliced": true
+    },
+    {
+      "project": "05-support-segments-twelve.3mf",
+      "color": "黄色",
+      "contents": "承托柱段 ×12",
+      "print_runs": 1,
+      "sha256": "b2dd2e588e9f4c671674193b32d9ec4374f01ff1dd9cc3ea5df91693c25c48fd",
+      "reopened_and_sliced": true
+    },
+    {
+      "project": "06-top-segments-four.3mf",
+      "color": "黄色",
+      "contents": "封顶柱段 ×4",
+      "print_runs": 1,
+      "sha256": "6cf627accd7c5b249ffdfd5fcf67a86d57c1611bffa81b0e025a824a2a4dcc68",
+      "reopened_and_sliced": true
+    },
+    {
+      "project": "07-billboard-and-posts-black.3mf",
+      "color": "黑色",
+      "contents": "广告牌 ×1＋背面支架 ×2",
+      "print_runs": 1,
+      "sha256": "32036c70392651dd74fc172f5b1f846d0f5ac40bf49b0d8bea59e7c77de9091a",
+      "reopened_and_sliced": true
+    },
+    {
+      "project": "08-billboard-lettering-white.3mf",
+      "color": "白色",
+      "contents": "两行白字，共20个独立字形",
+      "print_runs": 1,
+      "sha256": "0960c80253153a8d3b053a7050645c4b6e527162c8ee8ddfcace5583f39ed523",
+      "reopened_and_sliced": true
+    },
+    {
+      "project": "09-blue-slogan-sign.3mf",
+      "color": "蓝色",
+      "contents": "两句竖向凹刻口号蓝牌 ×1",
+      "print_runs": 1,
+      "sha256": "c92135250377869beee16ab2bb8c3adc777965e28b69dfd53a1e83f2d0504cd9",
+      "reopened_and_sliced": true
+    }
+  ],
+  "print_runs": 11,
+  "physical_solids": 46,
+  "estimated_total_hours": 33.044444444444444,
+  "estimated_total_filament_g": 1781.1153943538666,
+  "gcode_included": false
+}

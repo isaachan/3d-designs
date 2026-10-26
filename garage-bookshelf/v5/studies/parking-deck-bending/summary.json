@@ -1,0 +1,148 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "rib_height_mm": 0.0,
+      "source_mesh_mm": 4.0,
+      "clearance_mm": 58.0,
+      "solid_mass_upper_bound_g": 195.4477318043922,
+      "three_60g_E1000_mm": 0.04603812041000001,
+      "three_100g_E1000_mm": 0.06487502735,
+      "centre_300g_E1000_mm": 0.09659771264,
+      "centre_600g_E500_mm": 0.35082533056000004
+    },
+    {
+      "rib_height_mm": 2.0,
+      "source_mesh_mm": 6,
+      "clearance_mm": 56.0,
+      "solid_mass_upper_bound_g": 201.3203718043922,
+      "three_60g_E1000_mm": 0.044411689212000005,
+      "three_100g_E1000_mm": 0.06241124202000001,
+      "centre_300g_E1000_mm": 0.09228054363,
+      "centre_600g_E500_mm": 0.33429745452000004
+    },
+    {
+      "rib_height_mm": 3.0,
+      "source_mesh_mm": 4.0,
+      "clearance_mm": 55.0,
+      "solid_mass_upper_bound_g": 204.25669180439218,
+      "three_60g_E1000_mm": 0.042144672146,
+      "three_100g_E1000_mm": 0.05919802691,
+      "centre_300g_E1000_mm": 0.08796873605,
+      "centre_600g_E500_mm": 0.31874566419999995
+    },
+    {
+      "rib_height_mm": 4.0,
+      "source_mesh_mm": 6,
+      "clearance_mm": 54.0,
+      "solid_mass_upper_bound_g": 207.19301180439223,
+      "three_60g_E1000_mm": 0.040757105482,
+      "three_100g_E1000_mm": 0.05720646247,
+      "centre_300g_E1000_mm": 0.08466568252000001,
+      "centre_600g_E500_mm": 0.30649659008
+    },
+    {
+      "rib_height_mm": 6.0,
+      "source_mesh_mm": 6,
+      "clearance_mm": 52.0,
+      "solid_mass_upper_bound_g": 213.06565180439222,
+      "three_60g_E1000_mm": 0.036514037003999994,
+      "three_100g_E1000_mm": 0.05125302833999999,
+      "centre_300g_E1000_mm": 0.07633197942,
+      "centre_600g_E500_mm": 0.27651681767999997
+    },
+    {
+      "rib_height_mm": 8.0,
+      "source_mesh_mm": 4.0,
+      "clearance_mm": 50.0,
+      "solid_mass_upper_bound_g": 218.9382918043922,
+      "three_60g_E1000_mm": 0.032059698582,
+      "three_100g_E1000_mm": 0.045059270969999995,
+      "centre_300g_E1000_mm": 0.06823239411,
+      "centre_600g_E500_mm": 0.24780889644
+    }
+  ],
+  "convergence": [
+    {
+      "rib_height_mm": 0.0,
+      "per_car_g": 60,
+      "arrangement": "three_cars",
+      "mesh6_mm": 0.046523765444,
+      "mesh4_mm": 0.04603812041000001,
+      "relative_difference": 0.010548758934443868
+    },
+    {
+      "rib_height_mm": 0.0,
+      "per_car_g": 100,
+      "arrangement": "all_payload_at_centre",
+      "mesh6_mm": 0.0971145005,
+      "mesh4_mm": 0.09659771264,
+      "relative_difference": 0.005349897485937059
+    },
+    {
+      "rib_height_mm": 0.0,
+      "per_car_g": 200,
+      "arrangement": "all_payload_at_centre",
+      "mesh6_mm": 0.176262071,
+      "mesh4_mm": 0.17541266528000002,
+      "relative_difference": 0.004842328338402029
+    },
+    {
+      "rib_height_mm": 3.0,
+      "per_car_g": 60,
+      "arrangement": "three_cars",
+      "mesh6_mm": 0.042719813546000004,
+      "mesh4_mm": 0.042144672146,
+      "relative_difference": 0.01364683531070235
+    },
+    {
+      "rib_height_mm": 3.0,
+      "per_car_g": 100,
+      "arrangement": "all_payload_at_centre",
+      "mesh6_mm": 0.08868814331,
+      "mesh4_mm": 0.08796873605,
+      "relative_difference": 0.0081779879114223
+    },
+    {
+      "rib_height_mm": 3.0,
+      "per_car_g": 200,
+      "arrangement": "all_payload_at_centre",
+      "mesh6_mm": 0.16055964662,
+      "mesh4_mm": 0.15937283209999997,
+      "relative_difference": 0.0074467806360832296
+    },
+    {
+      "rib_height_mm": 8.0,
+      "per_car_g": 60,
+      "arrangement": "three_cars",
+      "mesh6_mm": 0.032441305175999996,
+      "mesh4_mm": 0.032059698582,
+      "relative_difference": 0.01190300005547303
+    },
+    {
+      "rib_height_mm": 8.0,
+      "per_car_g": 100,
+      "arrangement": "all_payload_at_centre",
+      "mesh6_mm": 0.06859514196000001,
+      "mesh4_mm": 0.06823239411,
+      "relative_difference": 0.005316358230303513
+    },
+    {
+      "rib_height_mm": 8.0,
+      "per_car_g": 200,
+      "arrangement": "all_payload_at_centre",
+      "mesh6_mm": 0.12445834392,
+      "mesh4_mm": 0.12390444822,
+      "relative_difference": 0.004470345560286302
+    }
+  ],
+  "selected_deflection_limit_mm": 0.5,
+  "criterion_type": "chosen appearance/serviceability target, not a standard or load rating",
+  "minimum_tested_rib_height_meeting_sensitivity_case_mm": 0.0,
+  "E1000_and_E500_are_assumptions": true,
+  "creep_lifetime_not_predicted": true,
+  "CAD_model_modified": false,
+  "CAD_sha256": "d6570e0a2cb1fd1bf0e168de81b88a00dcb64f4530098762af0e6b2c06b63e4c",
+  "analysis_source": "reference/garage-bookshelf-v4-ribbed-analysis-source.FCStd",
+  "CAD_model_modified_scope": "frozen reference during analysis; production application recorded separately"
+}

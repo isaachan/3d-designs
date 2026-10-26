@@ -1,0 +1,11 @@
+Parking 2 bay Blue: 1 native profile islands
+Parking 2 bay Yellow: 13 native profile islands
+Parking 2 bay White: 17 native profile islands
+Parking 3 bay Yellow: 14 native profile islands
+Parking 3 bay White: 18 native profile islands
+Building vertical sign phrase 1/2: NO HORSEPOWER.
+Building vertical sign phrase 2/2: ONLY BRAINPOWER.
+PASS native solids and sketches {'bodies': 46, 'sketches': 243, 'parking_marking_sketches': 63, 'fully_constrained': True, 'single_solid_each': True, 'invalid_objects': []}
+PASS assembly and engraved slogan
+PASS parameter round-trips
+PASS {'bodies': 46, 'sketches': 243, 'parking_marking_sketches': 63, 'fully_constrained': True, 'single_solid_each': True, 'invalid_objects': []} 28 print files

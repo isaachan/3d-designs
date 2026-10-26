@@ -1,0 +1,763 @@
+{
+  "original_body_count": 35,
+  "original_bodies": [
+    {
+      "body": "module_1_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "module_2_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "module_3_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "garage_deck_1_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "garage_deck_2_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "garage_deck_3_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "column_1_segment_1_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "column_1_segment_2_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "column_1_segment_3_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "column_1_segment_4_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "column_2_segment_1_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "column_2_segment_2_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "column_2_segment_3_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "column_2_segment_4_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "column_3_segment_1_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "column_3_segment_2_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "column_3_segment_3_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "column_3_segment_4_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "column_4_segment_1_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "column_4_segment_2_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "column_4_segment_3_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "column_4_segment_4_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "billboard_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "top_carrier_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "side_receiver_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "side_cartridge_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "hardware_screw_1_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "hardware_nut_1_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "hardware_screw_2_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "hardware_nut_2_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "hardware_screw_3_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "hardware_nut_3_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "hardware_screw_4_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "hardware_nut_4_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    },
+    {
+      "body": "parking_tray_interface_Body",
+      "solid_unchanged": true,
+      "brep_identical": true
+    }
+  ],
+  "original_solid_envelope_preserved": true,
+  "common_width_mm": 36.0,
+  "stripe_width_ratio": [
+    1,
+    1,
+    1
+  ],
+  "stripe_measurements": [
+    {
+      "surface": "Back",
+      "color": "LightBlue",
+      "perpendicular_width_mm": 35.999999999999986
+    },
+    {
+      "surface": "Back",
+      "color": "DarkBlue",
+      "perpendicular_width_mm": 35.999999999999986
+    },
+    {
+      "surface": "Back",
+      "color": "Red",
+      "perpendicular_width_mm": 36.000000000000036
+    },
+    {
+      "surface": "BackJoint",
+      "color": "LightBlue",
+      "perpendicular_width_mm": 35.999999999999986
+    },
+    {
+      "surface": "BackJoint",
+      "color": "DarkBlue",
+      "perpendicular_width_mm": 35.999999999999986
+    },
+    {
+      "surface": "BackJoint",
+      "color": "Red",
+      "perpendicular_width_mm": 36.000000000000036
+    },
+    {
+      "surface": "Floor",
+      "color": "LightBlue",
+      "perpendicular_width_mm": 35.999999999999986
+    },
+    {
+      "surface": "Floor",
+      "color": "DarkBlue",
+      "perpendicular_width_mm": 35.999999999999986
+    },
+    {
+      "surface": "Floor",
+      "color": "Red",
+      "perpendicular_width_mm": 36.000000000000036
+    },
+    {
+      "surface": "TopRim",
+      "color": "LightBlue",
+      "perpendicular_width_mm": 35.999999999999986
+    },
+    {
+      "surface": "TopRim",
+      "color": "DarkBlue",
+      "perpendicular_width_mm": 35.999999999999986
+    },
+    {
+      "surface": "TopRim",
+      "color": "Red",
+      "perpendicular_width_mm": 36.000000000000036
+    },
+    {
+      "surface": "FrontEdge",
+      "color": "LightBlue",
+      "perpendicular_width_mm": 35.999999999999936
+    },
+    {
+      "surface": "FrontEdge",
+      "color": "DarkBlue",
+      "perpendicular_width_mm": 36.000000000000036
+    },
+    {
+      "surface": "FrontEdge",
+      "color": "Red",
+      "perpendicular_width_mm": 36.000000000000036
+    }
+  ],
+  "fully_constrained_new_sketches": 17,
+  "native_appearance_faces": 17,
+  "added_solid_volume_mm3": 0,
+  "display_offset_mm": 0.01,
+  "display_offset_is_material_thickness": false,
+  "color_region_overlap_checks": [
+    {
+      "surface": "Back",
+      "overlap_area_mm2": 0.0
+    },
+    {
+      "surface": "Back",
+      "overlap_area_mm2": 0.0
+    },
+    {
+      "surface": "Floor",
+      "overlap_area_mm2": 0.0
+    },
+    {
+      "surface": "Floor",
+      "overlap_area_mm2": 0.0
+    },
+    {
+      "surface": "TopRim",
+      "overlap_area_mm2": 0.0
+    },
+    {
+      "surface": "TopRim",
+      "overlap_area_mm2": 0.0
+    },
+    {
+      "surface": "FrontEdge",
+      "overlap_area_mm2": 0.0
+    },
+    {
+      "surface": "FrontEdge",
+      "overlap_area_mm2": 0.0
+    }
+  ],
+  "status": "passed",
+  "date": "2026-10-26",
+  "formal_cad": "/Users/kai.han/code/3d-designs/garage-bookshelf/v4/garage-bookshelf-v4-assembly.FCStd",
+  "backup": "/Users/kai.han/code/3d-designs/garage-bookshelf/v4/backups/2026-10-26-before-mpower-colors.FCStd",
+  "before_sha256": "953a522b4d01374917c4059389e7691d33765f07aa986b8fe3a7561fea6dbcbe",
+  "after_sha256": "822d05f79b60b10a8a9958e427d9591d476a89f391914b90d9eaa1d83fde6958",
+  "palette_hex": {
+    "Black": "#16181B",
+    "Recess": "#0E1013",
+    "LightBlue": "#39A9DB",
+    "DarkBlue": "#151B65",
+    "Red": "#ED242A",
+    "White": "#F4F5F6",
+    "Hardware": "#24272B"
+  },
+  "source_body_face_color_counts": {
+    "module_1_Body": {
+      "Black": 638,
+      "White": 26,
+      "DarkBlue": 3,
+      "LightBlue": 4,
+      "Recess": 2
+    },
+    "module_2_Body": {
+      "Black": 62
+    },
+    "module_3_Body": {
+      "Black": 39
+    },
+    "garage_deck_1_Body": {
+      "Black": 597,
+      "LightBlue": 12,
+      "White": 26,
+      "DarkBlue": 3,
+      "Recess": 2
+    },
+    "garage_deck_2_Body": {
+      "Black": 385,
+      "DarkBlue": 8,
+      "White": 27,
+      "LightBlue": 5,
+      "Recess": 3
+    },
+    "garage_deck_3_Body": {
+      "Black": 379,
+      "Red": 8,
+      "White": 27,
+      "LightBlue": 5,
+      "Recess": 3
+    },
+    "column_1_segment_1_Body": {
+      "Black": 9
+    },
+    "column_1_segment_2_Body": {
+      "Black": 9
+    },
+    "column_1_segment_3_Body": {
+      "Black": 9
+    },
+    "column_1_segment_4_Body": {
+      "Black": 5
+    },
+    "column_2_segment_1_Body": {
+      "Black": 9
+    },
+    "column_2_segment_2_Body": {
+      "Black": 9
+    },
+    "column_2_segment_3_Body": {
+      "Black": 9
+    },
+    "column_2_segment_4_Body": {
+      "Black": 5
+    },
+    "column_3_segment_1_Body": {
+      "Black": 9
+    },
+    "column_3_segment_2_Body": {
+      "Black": 9
+    },
+    "column_3_segment_3_Body": {
+      "Black": 9
+    },
+    "column_3_segment_4_Body": {
+      "Black": 5
+    },
+    "column_4_segment_1_Body": {
+      "Black": 9
+    },
+    "column_4_segment_2_Body": {
+      "Black": 9
+    },
+    "column_4_segment_3_Body": {
+      "Black": 9
+    },
+    "column_4_segment_4_Body": {
+      "Black": 5
+    },
+    "billboard_Body": {
+      "Black": 46
+    },
+    "top_carrier_Body": {
+      "Black": 21,
+      "White": 662
+    },
+    "side_receiver_Body": {
+      "Black": 32
+    },
+    "side_cartridge_Body": {
+      "DarkBlue": 1442,
+      "White": 30
+    },
+    "hardware_screw_1_Body": {
+      "Hardware": 13
+    },
+    "hardware_nut_1_Body": {
+      "Hardware": 9
+    },
+    "hardware_screw_2_Body": {
+      "Hardware": 13
+    },
+    "hardware_nut_2_Body": {
+      "Hardware": 9
+    },
+    "hardware_screw_3_Body": {
+      "Hardware": 13
+    },
+    "hardware_nut_3_Body": {
+      "Hardware": 9
+    },
+    "hardware_screw_4_Body": {
+      "Hardware": 13
+    },
+    "hardware_nut_4_Body": {
+      "Hardware": 9
+    },
+    "parking_tray_interface_Body": {
+      "Black": 16
+    }
+  },
+  "normal_reopen_checks": {
+    "original_body_count": 35,
+    "original_bodies": [
+      {
+        "body": "module_1_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "module_2_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "module_3_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "garage_deck_1_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "garage_deck_2_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "garage_deck_3_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_1_segment_1_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_1_segment_2_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_1_segment_3_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_1_segment_4_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_2_segment_1_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_2_segment_2_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_2_segment_3_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_2_segment_4_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_3_segment_1_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_3_segment_2_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_3_segment_3_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_3_segment_4_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_4_segment_1_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_4_segment_2_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_4_segment_3_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_4_segment_4_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "billboard_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "top_carrier_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "side_receiver_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "side_cartridge_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "hardware_screw_1_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "hardware_nut_1_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "hardware_screw_2_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "hardware_nut_2_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "hardware_screw_3_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "hardware_nut_3_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "hardware_screw_4_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "hardware_nut_4_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "parking_tray_interface_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      }
+    ],
+    "original_solid_envelope_preserved": true,
+    "common_width_mm": 36.0,
+    "stripe_width_ratio": [
+      1,
+      1,
+      1
+    ],
+    "stripe_measurements": [
+      {
+        "surface": "Back",
+        "color": "LightBlue",
+        "perpendicular_width_mm": 35.999999999999986
+      },
+      {
+        "surface": "Back",
+        "color": "DarkBlue",
+        "perpendicular_width_mm": 35.999999999999986
+      },
+      {
+        "surface": "Back",
+        "color": "Red",
+        "perpendicular_width_mm": 36.000000000000036
+      },
+      {
+        "surface": "BackJoint",
+        "color": "LightBlue",
+        "perpendicular_width_mm": 35.999999999999986
+      },
+      {
+        "surface": "BackJoint",
+        "color": "DarkBlue",
+        "perpendicular_width_mm": 35.999999999999986
+      },
+      {
+        "surface": "BackJoint",
+        "color": "Red",
+        "perpendicular_width_mm": 36.000000000000036
+      },
+      {
+        "surface": "Floor",
+        "color": "LightBlue",
+        "perpendicular_width_mm": 35.999999999999986
+      },
+      {
+        "surface": "Floor",
+        "color": "DarkBlue",
+        "perpendicular_width_mm": 35.999999999999986
+      },
+      {
+        "surface": "Floor",
+        "color": "Red",
+        "perpendicular_width_mm": 36.000000000000036
+      },
+      {
+        "surface": "TopRim",
+        "color": "LightBlue",
+        "perpendicular_width_mm": 35.999999999999986
+      },
+      {
+        "surface": "TopRim",
+        "color": "DarkBlue",
+        "perpendicular_width_mm": 35.999999999999986
+      },
+      {
+        "surface": "TopRim",
+        "color": "Red",
+        "perpendicular_width_mm": 36.000000000000036
+      },
+      {
+        "surface": "FrontEdge",
+        "color": "LightBlue",
+        "perpendicular_width_mm": 35.999999999999936
+      },
+      {
+        "surface": "FrontEdge",
+        "color": "DarkBlue",
+        "perpendicular_width_mm": 36.000000000000036
+      },
+      {
+        "surface": "FrontEdge",
+        "color": "Red",
+        "perpendicular_width_mm": 36.000000000000036
+      }
+    ],
+    "fully_constrained_new_sketches": 17,
+    "native_appearance_faces": 17,
+    "added_solid_volume_mm3": 0,
+    "display_offset_mm": 0.01,
+    "display_offset_is_material_thickness": false,
+    "color_region_overlap_checks": [
+      {
+        "surface": "Back",
+        "overlap_area_mm2": 0.0
+      },
+      {
+        "surface": "Back",
+        "overlap_area_mm2": 0.0
+      },
+      {
+        "surface": "Floor",
+        "overlap_area_mm2": 0.0
+      },
+      {
+        "surface": "Floor",
+        "overlap_area_mm2": 0.0
+      },
+      {
+        "surface": "TopRim",
+        "overlap_area_mm2": 0.0
+      },
+      {
+        "surface": "TopRim",
+        "overlap_area_mm2": 0.0
+      },
+      {
+        "surface": "FrontEdge",
+        "overlap_area_mm2": 0.0
+      },
+      {
+        "surface": "FrontEdge",
+        "overlap_area_mm2": 0.0
+      }
+    ]
+  },
+  "native_colors_survive_reopen": true,
+  "print_files_unchanged": true,
+  "top_billboard_tricolor": false,
+  "posts": [
+    "LightBlue",
+    "Red"
+  ],
+  "deck_edges_bottom_to_top": [
+    "LightBlue",
+    "DarkBlue",
+    "Red"
+  ],
+  "reference_concept": "/Users/kai.han/.codex/generated_images/01a173a3-7f0f-72b3-92ae-f0a463f27429/exec-4a596b6e-88dc-4a66-a695-16c6108dbd09.png",
+  "gui_preview": "mpower-freecad-preview.png",
+  "saved_front_left_camera": true,
+  "side_sign_tricolor": false,
+  "side_sign_update": "plain-side-sign-validation.json"
+}

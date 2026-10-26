@@ -1,0 +1,232 @@
+{
+  "status": "passed",
+  "source_cad": "/Users/kai.han/code/3d-designs/garage-bookshelf/v4/garage-bookshelf-v4-assembly.FCStd",
+  "cad_sha256": "f0a3745b2729123a568104d439ee20aa02524caa622e71fb83d1110f2c02e749",
+  "formal_cad_unchanged": true,
+  "current_formal_solids_used": true,
+  "project": "TEMP-3bay-deck-and-one-parking-tray.3mf",
+  "sha256": "10090b86ad4baa96e7721b811ba503b10ffb7e7ad36b39824230f427e34fb457",
+  "object_count": 2,
+  "plate_count": 1,
+  "mesh_exports": [
+    {
+      "file": "3bay-parking-deck-301-303.stl",
+      "dimensions_mm": [
+        195.60000610351562,
+        158.60000610351562,
+        6.599999904632568
+      ],
+      "valid_single_solid": true,
+      "watertight": true,
+      "non_manifold": false,
+      "triangles": 5368,
+      "sha256": "c829f07e5f8d98bd817c6a795467178d82551cc08e0a70e6ae3af98dd56cfb69",
+      "relative_mesh_volume_error": 1.8414348391432546e-06
+    },
+    {
+      "file": "parking-tray-foot-with-pull-tab.stl",
+      "dimensions_mm": [
+        40.0,
+        83.0,
+        3.200000047683716
+      ],
+      "valid_single_solid": true,
+      "watertight": true,
+      "non_manifold": false,
+      "triangles": 468,
+      "sha256": "e89a178652d45d07ba53e33675de344bea7651f090b4e0bb1016e51ce22f34c8",
+      "relative_mesh_volume_error": 2.394674495044699e-06
+    }
+  ],
+  "settings": {
+    "printer_model": "Bambu Lab X2D",
+    "nozzle_diameter": [
+      "0.4",
+      "0.4"
+    ],
+    "extruder_nozzle_stats": [
+      "Standard#1",
+      "Standard#1"
+    ],
+    "curr_bed_type": "Textured PEI Plate",
+    "filament_type": [
+      "PLA"
+    ],
+    "filament_colour": [
+      "#141414"
+    ],
+    "filament_density": [
+      "1.26"
+    ],
+    "textured_plate_temp": [
+      "55"
+    ],
+    "textured_plate_temp_initial_layer": [
+      "55"
+    ],
+    "nozzle_temperature": [
+      "220",
+      "220",
+      "220",
+      "220",
+      "220",
+      "220"
+    ],
+    "layer_height": "0.2",
+    "wall_loops": "4",
+    "sparse_infill_density": "25%",
+    "brim_width": "4",
+    "brim_type": "auto_brim",
+    "enable_support": "0"
+  },
+  "object_bounds": [
+    {
+      "min_mm": [
+        40.44998989999999,
+        73.69998989999999,
+        0.0
+      ],
+      "max_mm": [
+        236.0499961,
+        232.2999961,
+        6.5999999
+      ]
+    },
+    {
+      "min_mm": [
+        96.74999,
+        23.699989999999996,
+        0.0
+      ],
+      "max_mm": [
+        179.74999,
+        63.69999,
+        3.20000004
+      ]
+    }
+  ],
+  "recess_depth_mm": 1.6,
+  "floor_thickness_mm": 5,
+  "foot_body_mm": [
+    40,
+    80,
+    2
+  ],
+  "foot_with_pull_tab_mm": [
+    40,
+    83,
+    3.2
+  ],
+  "side_clearance_mm": 0.3,
+  "tray_seated_base_protrusion_mm": 0.4,
+  "geometric_fit_paths": [
+    {
+      "bay": 301,
+      "lift_mm": 0,
+      "forward_translation_mm": 0,
+      "interference_mm3": 0.0
+    },
+    {
+      "bay": 301,
+      "lift_mm": 1.8,
+      "forward_translation_mm": 0,
+      "interference_mm3": 0.0
+    },
+    {
+      "bay": 301,
+      "lift_mm": 1.8,
+      "forward_translation_mm": -10,
+      "interference_mm3": 0.0
+    },
+    {
+      "bay": 301,
+      "lift_mm": 1.8,
+      "forward_translation_mm": -45,
+      "interference_mm3": 0.0
+    },
+    {
+      "bay": 301,
+      "lift_mm": 1.8,
+      "forward_translation_mm": -90,
+      "interference_mm3": 0.0
+    },
+    {
+      "bay": 302,
+      "lift_mm": 0,
+      "forward_translation_mm": 0,
+      "interference_mm3": 0.0
+    },
+    {
+      "bay": 302,
+      "lift_mm": 1.8,
+      "forward_translation_mm": 0,
+      "interference_mm3": 0.0
+    },
+    {
+      "bay": 302,
+      "lift_mm": 1.8,
+      "forward_translation_mm": -10,
+      "interference_mm3": 0.0
+    },
+    {
+      "bay": 302,
+      "lift_mm": 1.8,
+      "forward_translation_mm": -45,
+      "interference_mm3": 0.0
+    },
+    {
+      "bay": 302,
+      "lift_mm": 1.8,
+      "forward_translation_mm": -90,
+      "interference_mm3": 0.0
+    },
+    {
+      "bay": 303,
+      "lift_mm": 0,
+      "forward_translation_mm": 0,
+      "interference_mm3": 0.0
+    },
+    {
+      "bay": 303,
+      "lift_mm": 1.8,
+      "forward_translation_mm": 0,
+      "interference_mm3": 0.0
+    },
+    {
+      "bay": 303,
+      "lift_mm": 1.8,
+      "forward_translation_mm": -10,
+      "interference_mm3": 0.0
+    },
+    {
+      "bay": 303,
+      "lift_mm": 1.8,
+      "forward_translation_mm": -45,
+      "interference_mm3": 0.0
+    },
+    {
+      "bay": 303,
+      "lift_mm": 1.8,
+      "forward_translation_mm": -90,
+      "interference_mm3": 0.0
+    }
+  ],
+  "saved_3mf_reopened_and_sliced": true,
+  "slice_profile_overrides": false,
+  "warnings": "",
+  "estimated_seconds": 8968.388671875,
+  "estimated_filament_g": 125.9638900756836,
+  "preview": {
+    "path": "seated-preview.png",
+    "dimensions_px": [
+      1500,
+      1100
+    ],
+    "triangles": 7052,
+    "renderer": "OpenCascade face tessellation and software Z buffer"
+  },
+  "preview_tray_colour": "amber for identification only",
+  "vehicle_specific_wheel_restraints_included": false,
+  "physical_print_and_fit_tested": false,
+  "gcode_delivered": false
+}

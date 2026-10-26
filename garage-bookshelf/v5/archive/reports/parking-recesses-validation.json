@@ -1,0 +1,1139 @@
+{
+  "native": {
+    "bodies": 35,
+    "fully_constrained_sketches": 282,
+    "all_bodies_single_valid_solids": true,
+    "invalid_objects": []
+  },
+  "unchanged_bodies": [
+    "module_2_Body",
+    "module_3_Body",
+    "column_1_segment_4_Body",
+    "column_2_segment_4_Body",
+    "column_3_segment_4_Body",
+    "column_4_segment_4_Body",
+    "billboard_Body",
+    "top_carrier_Body",
+    "side_receiver_Body",
+    "side_cartridge_Body",
+    "hardware_screw_1_Body",
+    "hardware_nut_1_Body",
+    "hardware_screw_2_Body",
+    "hardware_nut_2_Body",
+    "hardware_screw_3_Body",
+    "hardware_nut_3_Body",
+    "hardware_screw_4_Body",
+    "hardware_nut_4_Body"
+  ],
+  "updated_existing_bodies": [
+    "column_1_segment_1_Body",
+    "column_1_segment_2_Body",
+    "column_1_segment_3_Body",
+    "column_2_segment_1_Body",
+    "column_2_segment_2_Body",
+    "column_2_segment_3_Body",
+    "column_3_segment_1_Body",
+    "column_3_segment_2_Body",
+    "column_3_segment_3_Body",
+    "column_4_segment_1_Body",
+    "column_4_segment_2_Body",
+    "column_4_segment_3_Body",
+    "garage_deck_1_Body",
+    "garage_deck_2_Body",
+    "garage_deck_3_Body",
+    "module_1_Body"
+  ],
+  "recesses": [
+    {
+      "part": "module_1",
+      "recess_count": 3,
+      "recess_depth_from_nominal_top_mm": 1.6,
+      "floor_thickness_mm": 6.4,
+      "local_centers_xy_mm": [
+        [
+          50.96192384769533,
+          86.7
+        ],
+        [
+          98.0,
+          86.7
+        ],
+        [
+          145.03807615230465,
+          86.7
+        ]
+      ],
+      "measured_floor_height_mm": [
+        6.4,
+        6.4,
+        6.4
+      ],
+      "flat_bottom": true,
+      "entry_chamfer_mm": 0.2
+    },
+    {
+      "part": "garage_deck_1",
+      "recess_count": 2,
+      "recess_depth_from_nominal_top_mm": 1.6,
+      "floor_thickness_mm": 5.0,
+      "local_centers_xy_mm": [
+        [
+          62.52144288577149,
+          86.5
+        ],
+        [
+          133.0785571142285,
+          86.5
+        ]
+      ],
+      "measured_floor_height_mm": [
+        5.0000000000000036,
+        5.0000000000000036
+      ],
+      "flat_bottom": true,
+      "entry_chamfer_mm": 0.2
+    },
+    {
+      "part": "garage_deck_2",
+      "recess_count": 3,
+      "recess_depth_from_nominal_top_mm": 1.6,
+      "floor_thickness_mm": 5.0,
+      "local_centers_xy_mm": [
+        [
+          50.76192384769533,
+          86.5
+        ],
+        [
+          97.8,
+          86.5
+        ],
+        [
+          144.83807615230467,
+          86.5
+        ]
+      ],
+      "measured_floor_height_mm": [
+        5.0,
+        5.0,
+        5.0
+      ],
+      "flat_bottom": true,
+      "entry_chamfer_mm": 0.2
+    },
+    {
+      "part": "garage_deck_3",
+      "recess_count": 3,
+      "recess_depth_from_nominal_top_mm": 1.6,
+      "floor_thickness_mm": 5.0,
+      "local_centers_xy_mm": [
+        [
+          50.76192384769533,
+          86.5
+        ],
+        [
+          97.8,
+          86.5
+        ],
+        [
+          144.83807615230467,
+          86.5
+        ]
+      ],
+      "measured_floor_height_mm": [
+        5.0,
+        5.0,
+        5.0
+      ],
+      "flat_bottom": true,
+      "entry_chamfer_mm": 0.2
+    }
+  ],
+  "total_recesses": 11,
+  "assembly_overlaps": [
+    {
+      "a": "module_1_Body",
+      "b": "module_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "garage_deck_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "garage_deck_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "garage_deck_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_1_segment_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_1_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_1_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_1_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_2_segment_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_2_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_2_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_2_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_3_segment_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_3_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_3_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_3_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_4_segment_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_4_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_4_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "column_4_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "billboard_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_1_Body",
+      "b": "parking_tray_interface_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_2_Body",
+      "b": "module_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_2_Body",
+      "b": "billboard_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "module_3_Body",
+      "b": "side_receiver_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_1_Body",
+      "b": "column_1_segment_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_1_Body",
+      "b": "column_1_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_1_Body",
+      "b": "column_2_segment_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_1_Body",
+      "b": "column_2_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_1_Body",
+      "b": "column_3_segment_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_1_Body",
+      "b": "column_3_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_1_Body",
+      "b": "column_4_segment_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_1_Body",
+      "b": "column_4_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_2_Body",
+      "b": "column_1_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_2_Body",
+      "b": "column_1_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_2_Body",
+      "b": "column_2_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_2_Body",
+      "b": "column_2_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_2_Body",
+      "b": "column_3_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_2_Body",
+      "b": "column_3_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_2_Body",
+      "b": "column_4_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_2_Body",
+      "b": "column_4_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_3_Body",
+      "b": "column_1_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_3_Body",
+      "b": "column_1_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_3_Body",
+      "b": "column_2_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_3_Body",
+      "b": "column_2_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_3_Body",
+      "b": "column_3_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_3_Body",
+      "b": "column_3_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_3_Body",
+      "b": "column_4_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_3_Body",
+      "b": "column_4_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "garage_deck_3_Body",
+      "b": "parking_tray_interface_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_1_segment_1_Body",
+      "b": "column_1_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_1_segment_2_Body",
+      "b": "column_1_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_1_segment_3_Body",
+      "b": "column_1_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_2_segment_1_Body",
+      "b": "column_2_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_2_segment_2_Body",
+      "b": "column_2_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_2_segment_3_Body",
+      "b": "column_2_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_3_segment_1_Body",
+      "b": "column_3_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_3_segment_2_Body",
+      "b": "column_3_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_3_segment_3_Body",
+      "b": "column_3_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_4_segment_1_Body",
+      "b": "column_4_segment_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_4_segment_2_Body",
+      "b": "column_4_segment_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "column_4_segment_3_Body",
+      "b": "column_4_segment_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "billboard_Body",
+      "b": "top_carrier_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "billboard_Body",
+      "b": "hardware_screw_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "billboard_Body",
+      "b": "hardware_nut_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "billboard_Body",
+      "b": "hardware_screw_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "billboard_Body",
+      "b": "hardware_nut_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "top_carrier_Body",
+      "b": "hardware_screw_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "top_carrier_Body",
+      "b": "hardware_screw_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "side_receiver_Body",
+      "b": "side_cartridge_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "side_receiver_Body",
+      "b": "hardware_screw_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "side_receiver_Body",
+      "b": "hardware_nut_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "side_receiver_Body",
+      "b": "hardware_screw_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "side_receiver_Body",
+      "b": "hardware_nut_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "side_cartridge_Body",
+      "b": "hardware_screw_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "side_cartridge_Body",
+      "b": "hardware_screw_4_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "hardware_screw_1_Body",
+      "b": "hardware_nut_1_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "hardware_screw_2_Body",
+      "b": "hardware_nut_2_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "hardware_screw_3_Body",
+      "b": "hardware_nut_3_Body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "hardware_screw_4_Body",
+      "b": "hardware_nut_4_Body",
+      "overlap_mm3": 0.0
+    }
+  ],
+  "collar_contacts": [
+    {
+      "layer": 1,
+      "column": 1,
+      "bearing_area_mm2": 280.9761929554372,
+      "unchanged_from_source": true
+    },
+    {
+      "layer": 1,
+      "column": 2,
+      "bearing_area_mm2": 280.4444624904149,
+      "unchanged_from_source": true
+    },
+    {
+      "layer": 1,
+      "column": 3,
+      "bearing_area_mm2": 280.9761929554372,
+      "unchanged_from_source": true
+    },
+    {
+      "layer": 1,
+      "column": 4,
+      "bearing_area_mm2": 280.4444624904149,
+      "unchanged_from_source": true
+    },
+    {
+      "layer": 2,
+      "column": 1,
+      "bearing_area_mm2": 280.9761929554372,
+      "unchanged_from_source": true
+    },
+    {
+      "layer": 2,
+      "column": 2,
+      "bearing_area_mm2": 280.4444624904149,
+      "unchanged_from_source": true
+    },
+    {
+      "layer": 2,
+      "column": 3,
+      "bearing_area_mm2": 280.9761929554372,
+      "unchanged_from_source": true
+    },
+    {
+      "layer": 2,
+      "column": 4,
+      "bearing_area_mm2": 280.4444624904149,
+      "unchanged_from_source": true
+    },
+    {
+      "layer": 3,
+      "column": 1,
+      "bearing_area_mm2": 280.9761929554372,
+      "unchanged_from_source": true
+    },
+    {
+      "layer": 3,
+      "column": 2,
+      "bearing_area_mm2": 280.4444624904149,
+      "unchanged_from_source": true
+    },
+    {
+      "layer": 3,
+      "column": 3,
+      "bearing_area_mm2": 280.9761929554372,
+      "unchanged_from_source": true
+    },
+    {
+      "layer": 3,
+      "column": 4,
+      "bearing_area_mm2": 280.4444624904149,
+      "unchanged_from_source": true
+    }
+  ],
+  "deck_lowering_paths": [
+    {
+      "layer": 1,
+      "lift_mm": 12,
+      "overlap_mm3": 0.0
+    },
+    {
+      "layer": 1,
+      "lift_mm": 8,
+      "overlap_mm3": 0.0
+    },
+    {
+      "layer": 1,
+      "lift_mm": 3,
+      "overlap_mm3": 0.0
+    },
+    {
+      "layer": 1,
+      "lift_mm": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "layer": 2,
+      "lift_mm": 12,
+      "overlap_mm3": 0.0
+    },
+    {
+      "layer": 2,
+      "lift_mm": 8,
+      "overlap_mm3": 0.0
+    },
+    {
+      "layer": 2,
+      "lift_mm": 3,
+      "overlap_mm3": 0.0
+    },
+    {
+      "layer": 2,
+      "lift_mm": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "layer": 3,
+      "lift_mm": 12,
+      "overlap_mm3": 0.0
+    },
+    {
+      "layer": 3,
+      "lift_mm": 8,
+      "overlap_mm3": 0.0
+    },
+    {
+      "layer": 3,
+      "lift_mm": 3,
+      "overlap_mm3": 0.0
+    },
+    {
+      "layer": 3,
+      "lift_mm": 0,
+      "overlap_mm3": 0.0
+    }
+  ],
+  "tray_insertion_and_removal_paths": [
+    {
+      "part": "module_1",
+      "bay": 1,
+      "lift_mm": 0,
+      "front_translation_mm": 0,
+      "interference": []
+    },
+    {
+      "part": "module_1",
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": 0,
+      "interference": []
+    },
+    {
+      "part": "module_1",
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -10,
+      "interference": []
+    },
+    {
+      "part": "module_1",
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -45,
+      "interference": []
+    },
+    {
+      "part": "module_1",
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -90,
+      "interference": []
+    },
+    {
+      "part": "module_1",
+      "bay": 2,
+      "lift_mm": 0,
+      "front_translation_mm": 0,
+      "interference": []
+    },
+    {
+      "part": "module_1",
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": 0,
+      "interference": []
+    },
+    {
+      "part": "module_1",
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -10,
+      "interference": []
+    },
+    {
+      "part": "module_1",
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -45,
+      "interference": []
+    },
+    {
+      "part": "module_1",
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -90,
+      "interference": []
+    },
+    {
+      "part": "module_1",
+      "bay": 3,
+      "lift_mm": 0,
+      "front_translation_mm": 0,
+      "interference": []
+    },
+    {
+      "part": "module_1",
+      "bay": 3,
+      "lift_mm": 1.8,
+      "front_translation_mm": 0,
+      "interference": []
+    },
+    {
+      "part": "module_1",
+      "bay": 3,
+      "lift_mm": 1.8,
+      "front_translation_mm": -10,
+      "interference": []
+    },
+    {
+      "part": "module_1",
+      "bay": 3,
+      "lift_mm": 1.8,
+      "front_translation_mm": -45,
+      "interference": []
+    },
+    {
+      "part": "module_1",
+      "bay": 3,
+      "lift_mm": 1.8,
+      "front_translation_mm": -90,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_1",
+      "bay": 1,
+      "lift_mm": 0,
+      "front_translation_mm": 0,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_1",
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": 0,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_1",
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -10,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_1",
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -45,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_1",
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -90,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_1",
+      "bay": 2,
+      "lift_mm": 0,
+      "front_translation_mm": 0,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_1",
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": 0,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_1",
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -10,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_1",
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -45,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_1",
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -90,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_2",
+      "bay": 1,
+      "lift_mm": 0,
+      "front_translation_mm": 0,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_2",
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": 0,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_2",
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -10,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_2",
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -45,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_2",
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -90,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_2",
+      "bay": 2,
+      "lift_mm": 0,
+      "front_translation_mm": 0,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_2",
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": 0,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_2",
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -10,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_2",
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -45,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_2",
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -90,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_2",
+      "bay": 3,
+      "lift_mm": 0,
+      "front_translation_mm": 0,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_2",
+      "bay": 3,
+      "lift_mm": 1.8,
+      "front_translation_mm": 0,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_2",
+      "bay": 3,
+      "lift_mm": 1.8,
+      "front_translation_mm": -10,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_2",
+      "bay": 3,
+      "lift_mm": 1.8,
+      "front_translation_mm": -45,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_2",
+      "bay": 3,
+      "lift_mm": 1.8,
+      "front_translation_mm": -90,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_3",
+      "bay": 1,
+      "lift_mm": 0,
+      "front_translation_mm": 0,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_3",
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": 0,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_3",
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -10,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_3",
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -45,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_3",
+      "bay": 1,
+      "lift_mm": 1.8,
+      "front_translation_mm": -90,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_3",
+      "bay": 2,
+      "lift_mm": 0,
+      "front_translation_mm": 0,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_3",
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": 0,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_3",
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -10,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_3",
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -45,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_3",
+      "bay": 2,
+      "lift_mm": 1.8,
+      "front_translation_mm": -90,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_3",
+      "bay": 3,
+      "lift_mm": 0,
+      "front_translation_mm": 0,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_3",
+      "bay": 3,
+      "lift_mm": 1.8,
+      "front_translation_mm": 0,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_3",
+      "bay": 3,
+      "lift_mm": 1.8,
+      "front_translation_mm": -10,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_3",
+      "bay": 3,
+      "lift_mm": 1.8,
+      "front_translation_mm": -45,
+      "interference": []
+    },
+    {
+      "part": "garage_deck_3",
+      "bay": 3,
+      "lift_mm": 1.8,
+      "front_translation_mm": -90,
+      "interference": []
+    }
+  ],
+  "original_parameters_mm": {
+    "DeckThickness": 5.0,
+    "DeckFirstZ": 66.0,
+    "SegmentHeight": 58.0,
+    "PinLength": 8.0,
+    "FitClearance": 0.3
+  },
+  "parameters_mm": {
+    "DeckThickness": 6.6,
+    "DeckFirstZ": 64.4,
+    "DeckZ2": 127.4,
+    "DeckZ3": 190.4,
+    "SegmentHeight": 56.4,
+    "PinLength": 9.6,
+    "TopSegmentHeight": 32.99999999999999,
+    "ParkingRecessDepth": 1.6,
+    "ParkingRecessWidth": 40.6,
+    "ParkingRecessLength": 80.6,
+    "TraySideClearance": 0.3,
+    "ParkingEntryChamfer": 0.2
+  },
+  "outer_dimensions_mm": [
+    538.0,
+    173.65,
+    364.2
+  ],
+  "original_F_interfaces_and_removable_signs_preserved": true,
+  "sample_has_vehicle_wheel_restraints": false,
+  "parameter_round_trips": {
+    "side_clearance_0p3_0p35_0p3": "passed",
+    "recess_depth_1p6_1p4_1p6": "passed"
+  },
+  "appearance": {
+    "preserved_original_view_providers": true,
+    "new_view_provider_count": 45,
+    "native_view_provider_count": 1176,
+    "updated_face_material_counts": {
+      "module_1_Body": 122,
+      "garage_deck_1_Body": 381,
+      "garage_deck_2_Body": 443,
+      "garage_deck_3_Body": 89,
+      "parking_tray_interface_Body": 16
+    },
+    "sample_group_default_visible": false,
+    "zip_crc_check": "passed",
+    "geometry_entries_unchanged_by_style_update": true
+  },
+  "status": "passed",
+  "backup": "/Users/kai.han/code/3d-designs/garage-bookshelf/v4/backups/2026-10-25-before-parking-recesses.FCStd",
+  "original_sha256": "2a3f10a9a4c7d0544a9b2cfe2b4e5dfd48f4dd970dbd66d1bd2bd66c1b9191ce",
+  "cad": "/Users/kai.han/code/3d-designs/garage-bookshelf/v4/garage-bookshelf-v4-assembly.FCStd",
+  "cad_sha256": "ab3e0f584073b005c27cfd52e6d21da304093adec2c02e44d36ce911cee54da2",
+  "saved_reopened": true,
+  "three_mf_modified": false,
+  "STEP_STL_regenerated": false,
+  "physical_fit_and_vehicle_wheel_restraints": "not_verified",
+  "outer_envelope_unchanged_from_source": true,
+  "original_outer_dimensions_mm": [
+    538.0,
+    173.65,
+    364.2
+  ]
+}

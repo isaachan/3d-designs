@@ -1,0 +1,73 @@
+{
+  "error_string": "Success.",
+  "export_time": 0,
+  "layer_height": 0.20000000298023224,
+  "plate_index": 0,
+  "prepare_time": 28,
+  "return_code": 0,
+  "sliced_plates": [
+    {
+      "feature_type_times": {
+        "Bottom surface": 576.4710693359375,
+        "Bridge": 1045.596435546875,
+        "Custom": 281.10601806640625,
+        "Flush": 29.0,
+        "Gap infill": 13.384438514709473,
+        "Inner wall": 8920.66015625,
+        "Internal solid infill": 1360.417724609375,
+        "Outer wall": 3991.62548828125,
+        "Sparse infill": 9859.6259765625,
+        "Top surface": 376.9618835449219,
+        "Travel": 953.6994018554688,
+        "Undefined": 952.13037109375
+      },
+      "filament_change_times": 0,
+      "filaments": [
+        {
+          "filament_id": "GFA00",
+          "id": 1,
+          "main_used_g": 441.80377197265625,
+          "total_used_g": 441.80377197265625
+        }
+      ],
+      "generate_support_material_time": 20,
+      "id": 1,
+      "infill_time": 142,
+      "layer_filament_change": 0,
+      "main_predication": 27039.640625,
+      "make_perimeters_time": 80,
+      "obj_cached_cnt": 0,
+      "objects": [
+        {
+          "bbox": {
+            "depth": 170.0,
+            "height": 238.0,
+            "width": 145.0,
+            "x": 65.74999237060547,
+            "y": 43.0,
+            "z": 0.0
+          },
+          "id": 5,
+          "name": "module_3.stl",
+          "triangle_count": 96
+        }
+      ],
+      "sliced_time": 1420,
+      "sliced_time_with_cache": 1135,
+      "total_predication": 27377.177734375,
+      "triangle_count": 96,
+      "warning_message": ""
+    }
+  ],
+  "sparse_infill_density": 25.0,
+  "upward_compatible_machine": [
+    "Bambu Lab A1 0.4 nozzle",
+    "Bambu Lab P2S 0.4 nozzle",
+    "Bambu Lab H2S 0.4 nozzle",
+    "Bambu Lab H2D 0.4 nozzle",
+    "Bambu Lab H2D Pro 0.4 nozzle",
+    "Bambu Lab H2C 0.4 nozzle",
+    "Bambu Lab A2L 0.4 nozzle"
+  ],
+  "wall_loops": 4
+}

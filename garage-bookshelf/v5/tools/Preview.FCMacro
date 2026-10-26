@@ -1,0 +1,8 @@
+from pathlib import Path
+import sys
+from PySide6 import QtCore
+
+project = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(project / 'src'))
+from garage_bookshelf.appearance.view import review
+QtCore.QTimer.singleShot(1500, lambda: review(save=False))

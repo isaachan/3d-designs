@@ -1,0 +1,5 @@
+import sys
+from PySide6 import QtCore
+sys.path.insert(0,'/Users/kai.han/code/3d-designs/garage-bookshelf/v4')
+import gui_review
+QtCore.QTimer.singleShot(1500,gui_review.run)

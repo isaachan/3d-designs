@@ -1,0 +1,4 @@
+work/
+__pycache__/
+*.FCBak
+artifacts/*.FCBak

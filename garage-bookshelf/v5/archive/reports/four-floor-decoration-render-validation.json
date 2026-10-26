@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "cad_sha256": "953a522b4d01374917c4059389e7691d33765f07aa986b8fe3a7561fea6dbcbe",
+  "native_geometry_only": true,
+  "saved_face_materials_used": true,
+  "cad_modified": false,
+  "previews": [
+    {
+      "path": "four-floor-decoration-floor-1.png",
+      "dimensions_px": [
+        1600,
+        1250
+      ],
+      "triangles": 6314,
+      "renderer": "OpenCascade face tessellation and software Z buffer",
+      "floor": 1,
+      "bays": 2,
+      "source_part": "module_1",
+      "proposal_only": false,
+      "base_back_wall_omitted_from_detail": true
+    },
+    {
+      "path": "four-floor-decoration-floor-2.png",
+      "dimensions_px": [
+        1600,
+        1250
+      ],
+      "triangles": 6512,
+      "renderer": "OpenCascade face tessellation and software Z buffer",
+      "floor": 2,
+      "bays": 2,
+      "source_part": "garage_deck_1",
+      "proposal_only": false,
+      "base_back_wall_omitted_from_detail": false
+    },
+    {
+      "path": "four-floor-decoration-floor-3.png",
+      "dimensions_px": [
+        1600,
+        1250
+      ],
+      "triangles": 6504,
+      "renderer": "OpenCascade face tessellation and software Z buffer",
+      "floor": 3,
+      "bays": 3,
+      "source_part": "garage_deck_2",
+      "proposal_only": false,
+      "base_back_wall_omitted_from_detail": false
+    },
+    {
+      "path": "four-floor-decoration-floor-4.png",
+      "dimensions_px": [
+        1600,
+        1250
+      ],
+      "triangles": 6480,
+      "renderer": "OpenCascade face tessellation and software Z buffer",
+      "floor": 4,
+      "bays": 3,
+      "source_part": "garage_deck_3",
+      "proposal_only": false,
+      "base_back_wall_omitted_from_detail": false
+    },
+    {
+      "path": "four-floor-decoration-garage.png",
+      "dimensions_px": [
+        1500,
+        1500
+      ],
+      "triangles": 57192,
+      "renderer": "OpenCascade face tessellation and software Z buffer"
+    }
+  ]
+}

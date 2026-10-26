@@ -1,0 +1,3 @@
+{"rib_height_mm": 0.0, "mesh_size_mm": 4.0, "nodes": 34439, "elements": 17135, "self_only_max_mm": 0.01778276, "central_load_compliance_mm_per_N": 0.02678048}
+{"rib_height_mm": 3.0, "mesh_size_mm": 4.0, "nodes": 34719, "elements": 17231, "self_only_max_mm": 0.01656464, "central_load_compliance_mm_per_N": 0.02426235}
+{"rib_height_mm": 8.0, "mesh_size_mm": 4.0, "nodes": 35080, "elements": 17450, "self_only_max_mm": 0.01256034, "central_load_compliance_mm_per_N": 0.01891677}

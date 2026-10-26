@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "source_cad_sha256": "ab3e0f584073b005c27cfd52e6d21da304093adec2c02e44d36ce911cee54da2",
+  "formal_cad_modified": false,
+  "print_files_modified": false,
+  "proposals": [
+    {
+      "path": "proposed-2-bay.png",
+      "dimensions_px": [
+        1600,
+        1250
+      ],
+      "triangles": 6524,
+      "renderer": "OpenCascade face tessellation and software Z buffer",
+      "bays": 2,
+      "proposal_only": true,
+      "geometry_valid": true,
+      "recess_floor_thickness_mm": 5,
+      "ids_moved_toward_front_mm": 2,
+      "bay_widths_mm": [
+        94.076,
+        47.038
+      ],
+      "accessible_bay": "left",
+      "tray_recess_dimensions_mm": [
+        40.6,
+        80.6
+      ]
+    },
+    {
+      "path": "proposed-3-bay.png",
+      "dimensions_px": [
+        1600,
+        1250
+      ],
+      "triangles": 6504,
+      "renderer": "OpenCascade face tessellation and software Z buffer",
+      "bays": 3,
+      "proposal_only": true,
+      "geometry_valid": true,
+      "recess_floor_thickness_mm": 5,
+      "ids_moved_toward_front_mm": 2,
+      "bay_widths_mm": [
+        47.038,
+        47.038,
+        47.038
+      ],
+      "accessible_bay": null,
+      "tray_recess_dimensions_mm": [
+        40.6,
+        80.6
+      ]
+    }
+  ]
+}

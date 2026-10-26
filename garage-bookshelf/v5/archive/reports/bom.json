@@ -1,0 +1,282 @@
+[
+  {
+    "name": "module_1",
+    "quantity": 1,
+    "print_file": "print-stl/module_1.stl",
+    "dimensions_mm": [
+      213.8000030517578,
+      170.0,
+      238.0
+    ]
+  },
+  {
+    "name": "module_2",
+    "quantity": 1,
+    "print_file": "print-stl/module_2.stl",
+    "dimensions_mm": [
+      158.79998779296875,
+      170.0,
+      238.0
+    ]
+  },
+  {
+    "name": "module_3",
+    "quantity": 1,
+    "print_file": "print-stl/module_3.stl",
+    "dimensions_mm": [
+      145.0,
+      170.0,
+      238.0
+    ]
+  },
+  {
+    "name": "garage_deck_1",
+    "quantity": 1,
+    "print_file": "print-stl/garage_deck_1.stl",
+    "dimensions_mm": [
+      195.60000610351562,
+      158.60000610351562,
+      5.0
+    ]
+  },
+  {
+    "name": "garage_deck_2",
+    "quantity": 1,
+    "print_file": "print-stl/garage_deck_2.stl",
+    "dimensions_mm": [
+      195.60000610351562,
+      158.60000610351562,
+      5.0
+    ]
+  },
+  {
+    "name": "garage_deck_3",
+    "quantity": 1,
+    "print_file": "print-stl/garage_deck_3.stl",
+    "dimensions_mm": [
+      195.60000610351562,
+      158.60000610351562,
+      5.0
+    ]
+  },
+  {
+    "name": "column_1_segment_1",
+    "quantity": 1,
+    "print_file": "print-stl/column_1_segment_1.stl",
+    "dimensions_mm": [
+      19.995525360107422,
+      19.997760772705078,
+      66.0
+    ]
+  },
+  {
+    "name": "column_1_segment_2",
+    "quantity": 1,
+    "print_file": "print-stl/column_1_segment_2.stl",
+    "dimensions_mm": [
+      19.995525360107422,
+      19.997760772705078,
+      66.0
+    ]
+  },
+  {
+    "name": "column_1_segment_3",
+    "quantity": 1,
+    "print_file": "print-stl/column_1_segment_3.stl",
+    "dimensions_mm": [
+      19.995525360107422,
+      19.997760772705078,
+      66.0
+    ]
+  },
+  {
+    "name": "column_1_segment_4",
+    "quantity": 1,
+    "print_file": "print-stl/column_1_segment_4.stl",
+    "dimensions_mm": [
+      13.996867179870605,
+      13.998432159423828,
+      33.0
+    ]
+  },
+  {
+    "name": "column_2_segment_1",
+    "quantity": 1,
+    "print_file": "print-stl/column_2_segment_1.stl",
+    "dimensions_mm": [
+      19.995529174804688,
+      19.997760772705078,
+      66.0
+    ]
+  },
+  {
+    "name": "column_2_segment_2",
+    "quantity": 1,
+    "print_file": "print-stl/column_2_segment_2.stl",
+    "dimensions_mm": [
+      19.995529174804688,
+      19.997760772705078,
+      66.0
+    ]
+  },
+  {
+    "name": "column_2_segment_3",
+    "quantity": 1,
+    "print_file": "print-stl/column_2_segment_3.stl",
+    "dimensions_mm": [
+      19.995529174804688,
+      19.997760772705078,
+      66.0
+    ]
+  },
+  {
+    "name": "column_2_segment_4",
+    "quantity": 1,
+    "print_file": "print-stl/column_2_segment_4.stl",
+    "dimensions_mm": [
+      13.996871948242188,
+      13.998432159423828,
+      33.0
+    ]
+  },
+  {
+    "name": "column_3_segment_1",
+    "quantity": 1,
+    "print_file": "print-stl/column_3_segment_1.stl",
+    "dimensions_mm": [
+      19.995525360107422,
+      19.997772216796875,
+      66.0
+    ]
+  },
+  {
+    "name": "column_3_segment_2",
+    "quantity": 1,
+    "print_file": "print-stl/column_3_segment_2.stl",
+    "dimensions_mm": [
+      19.995525360107422,
+      19.997772216796875,
+      66.0
+    ]
+  },
+  {
+    "name": "column_3_segment_3",
+    "quantity": 1,
+    "print_file": "print-stl/column_3_segment_3.stl",
+    "dimensions_mm": [
+      19.995525360107422,
+      19.997772216796875,
+      66.0
+    ]
+  },
+  {
+    "name": "column_3_segment_4",
+    "quantity": 1,
+    "print_file": "print-stl/column_3_segment_4.stl",
+    "dimensions_mm": [
+      13.996867179870605,
+      13.998443603515625,
+      33.0
+    ]
+  },
+  {
+    "name": "column_4_segment_1",
+    "quantity": 1,
+    "print_file": "print-stl/column_4_segment_1.stl",
+    "dimensions_mm": [
+      19.995529174804688,
+      19.997772216796875,
+      66.0
+    ]
+  },
+  {
+    "name": "column_4_segment_2",
+    "quantity": 1,
+    "print_file": "print-stl/column_4_segment_2.stl",
+    "dimensions_mm": [
+      19.995529174804688,
+      19.997772216796875,
+      66.0
+    ]
+  },
+  {
+    "name": "column_4_segment_3",
+    "quantity": 1,
+    "print_file": "print-stl/column_4_segment_3.stl",
+    "dimensions_mm": [
+      19.995529174804688,
+      19.997772216796875,
+      66.0
+    ]
+  },
+  {
+    "name": "column_4_segment_4",
+    "quantity": 1,
+    "print_file": "print-stl/column_4_segment_4.stl",
+    "dimensions_mm": [
+      13.996871948242188,
+      13.998443603515625,
+      33.0
+    ]
+  },
+  {
+    "name": "billboard",
+    "quantity": 1,
+    "print_file": "print-stl/billboard.stl",
+    "dimensions_mm": [
+      200.0,
+      64.0,
+      6.0
+    ]
+  },
+  {
+    "name": "billboard_post_left",
+    "quantity": 1,
+    "print_file": "print-stl/billboard_post_left.stl",
+    "dimensions_mm": [
+      24.0,
+      150.0,
+      6.0
+    ]
+  },
+  {
+    "name": "billboard_post_right",
+    "quantity": 1,
+    "print_file": "print-stl/billboard_post_right.stl",
+    "dimensions_mm": [
+      24.0,
+      150.0,
+      6.0
+    ]
+  },
+  {
+    "name": "billboard_text_lovely_cars",
+    "quantity": 1,
+    "print_file": "print-stl/billboard_text_lovely_cars.stl",
+    "dimensions_mm": [
+      145.10000610351562,
+      23.0999755859375,
+      1.0
+    ]
+  },
+  {
+    "name": "billboard_text_ive_driven",
+    "quantity": 1,
+    "print_file": "print-stl/billboard_text_ive_driven.stl",
+    "dimensions_mm": [
+      128.10000610351562,
+      21.0999755859375,
+      1.0
+    ]
+  },
+  {
+    "name": "book_depot_sign",
+    "quantity": 1,
+    "print_file": "print-stl/book_depot_sign.stl",
+    "dimensions_mm": [
+      48.0,
+      180.0,
+      14.0
+    ]
+  }
+]

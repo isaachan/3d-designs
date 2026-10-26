@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "cad_sha256": "822d05f79b60b10a8a9958e427d9591d476a89f391914b90d9eaa1d83fde6958",
+  "native_cad_faces_only": true,
+  "saved_face_materials_used": true,
+  "cad_modified": false,
+  "previews": [
+    {
+      "path": "mpower-assembly-preview.png",
+      "dimensions_px": [
+        2000,
+        1350
+      ],
+      "triangles": 113950,
+      "renderer": "OpenCascade face tessellation and software Z buffer"
+    },
+    {
+      "path": "mpower-front-preview.png",
+      "dimensions_px": [
+        2000,
+        1300
+      ],
+      "triangles": 113950,
+      "renderer": "OpenCascade face tessellation and software Z buffer"
+    },
+    {
+      "path": "mpower-stripe-detail.png",
+      "dimensions_px": [
+        1600,
+        1350
+      ],
+      "triangles": 1086,
+      "renderer": "OpenCascade face tessellation and software Z buffer"
+    }
+  ]
+}
