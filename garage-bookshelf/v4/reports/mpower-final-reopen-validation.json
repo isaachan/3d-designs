@@ -29,7 +29,7 @@
     {
       "body": "garage_deck_3_Body",
       "solid_unchanged": true,
-      "brep_identical": false
+      "brep_identical": true
     },
     {
       "body": "column_1_segment_1_Body",
@@ -129,7 +129,7 @@
     {
       "body": "side_cartridge_Body",
       "solid_unchanged": true,
-      "brep_identical": true
+      "brep_identical": false
     },
     {
       "body": "hardware_screw_1_Body",
@@ -261,8 +261,8 @@
       "perpendicular_width_mm": 36.000000000000036
     }
   ],
-  "fully_constrained_new_sketches": 20,
-  "native_appearance_faces": 20,
+  "fully_constrained_new_sketches": 17,
+  "native_appearance_faces": 17,
   "added_solid_volume_mm3": 0,
   "display_offset_mm": 0.01,
   "display_offset_is_material_thickness": false,
@@ -301,7 +301,9 @@
     }
   ],
   "status": "passed",
-  "formal_cad_sha256": "e78eb727ed9cc6e0f7bf9311be972a36c9af7db5826ff3b7d2ce27c62a6c1ade",
+  "formal_cad_sha256": "822d05f79b60b10a8a9958e427d9591d476a89f391914b90d9eaa1d83fde6958",
   "ten_parking_bays_preserved": true,
-  "saved_materials_verified": true
+  "saved_materials_verified": true,
+  "side_sign_tricolor": false,
+  "all_remaining_materials_unchanged": true
 }

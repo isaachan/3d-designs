@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "cad_sha256": "e78eb727ed9cc6e0f7bf9311be972a36c9af7db5826ff3b7d2ce27c62a6c1ade",
+  "cad_sha256": "822d05f79b60b10a8a9958e427d9591d476a89f391914b90d9eaa1d83fde6958",
   "native_cad_faces_only": true,
   "saved_face_materials_used": true,
   "cad_modified": false,
@@ -11,7 +11,7 @@
         2000,
         1350
       ],
-      "triangles": 113956,
+      "triangles": 113950,
       "renderer": "OpenCascade face tessellation and software Z buffer"
     },
     {
@@ -20,7 +20,7 @@
         2000,
         1300
       ],
-      "triangles": 113956,
+      "triangles": 113950,
       "renderer": "OpenCascade face tessellation and software Z buffer"
     },
     {

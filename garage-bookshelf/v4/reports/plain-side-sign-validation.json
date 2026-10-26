@@ -1,0 +1,343 @@
+{
+  "status": "passed",
+  "before_sha256": "f0a3745b2729123a568104d439ee20aa02524caa622e71fb83d1110f2c02e749",
+  "after_sha256": "822d05f79b60b10a8a9958e427d9591d476a89f391914b90d9eaa1d83fde6958",
+  "backup": "/Users/kai.han/code/3d-designs/garage-bookshelf/v4/backups/2026-10-26-before-plain-side-sign.FCStd",
+  "removed_native_objects": [
+    "M_FaceRef_SideSign",
+    "M_FaceRef_SideSign001",
+    "M_FaceRef_SideSign002",
+    "M_FaceRef_SideSign003",
+    "M_FaceRef_SideSign004",
+    "M_FaceRef_SideSign005",
+    "M_FaceRef_SideSign006",
+    "M_FaceRef_SideSign007",
+    "M_FaceRef_SideSign008",
+    "M_FaceRef_SideSign009",
+    "M_FaceRef_SideSign010",
+    "M_FaceRef_SideSign011",
+    "M_FaceRef_SideSign012",
+    "M_FaceRef_SideSign013",
+    "M_Paint_SideSign_DarkBlue",
+    "M_Paint_SideSign_LightBlue",
+    "M_Paint_SideSign_Red",
+    "M_Profile_SideSign_DarkBlue",
+    "M_Profile_SideSign_LightBlue",
+    "M_Profile_SideSign_Red",
+    "M_Sketch_SideSign_DarkBlue",
+    "M_Sketch_SideSign_LightBlue",
+    "M_Sketch_SideSign_Red",
+    "M_Skin_SideSign"
+  ],
+  "remaining_appearance_faces": 17,
+  "other_appearance_geometry_unchanged": true,
+  "original_solid_checks": {
+    "original_body_count": 35,
+    "original_bodies": [
+      {
+        "body": "module_1_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "module_2_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "module_3_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "garage_deck_1_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "garage_deck_2_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "garage_deck_3_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_1_segment_1_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_1_segment_2_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_1_segment_3_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_1_segment_4_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_2_segment_1_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_2_segment_2_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_2_segment_3_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_2_segment_4_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_3_segment_1_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_3_segment_2_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_3_segment_3_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_3_segment_4_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_4_segment_1_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_4_segment_2_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_4_segment_3_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "column_4_segment_4_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "billboard_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "top_carrier_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "side_receiver_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "side_cartridge_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "hardware_screw_1_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "hardware_nut_1_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "hardware_screw_2_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "hardware_nut_2_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "hardware_screw_3_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "hardware_nut_3_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "hardware_screw_4_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "hardware_nut_4_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      },
+      {
+        "body": "parking_tray_interface_Body",
+        "solid_unchanged": true,
+        "brep_identical": true
+      }
+    ],
+    "original_solid_envelope_preserved": true,
+    "common_width_mm": 36.0,
+    "stripe_width_ratio": [
+      1,
+      1,
+      1
+    ],
+    "stripe_measurements": [
+      {
+        "surface": "Back",
+        "color": "LightBlue",
+        "perpendicular_width_mm": 35.999999999999986
+      },
+      {
+        "surface": "Back",
+        "color": "DarkBlue",
+        "perpendicular_width_mm": 35.999999999999986
+      },
+      {
+        "surface": "Back",
+        "color": "Red",
+        "perpendicular_width_mm": 36.000000000000036
+      },
+      {
+        "surface": "BackJoint",
+        "color": "LightBlue",
+        "perpendicular_width_mm": 35.999999999999986
+      },
+      {
+        "surface": "BackJoint",
+        "color": "DarkBlue",
+        "perpendicular_width_mm": 35.999999999999986
+      },
+      {
+        "surface": "BackJoint",
+        "color": "Red",
+        "perpendicular_width_mm": 36.000000000000036
+      },
+      {
+        "surface": "Floor",
+        "color": "LightBlue",
+        "perpendicular_width_mm": 35.999999999999986
+      },
+      {
+        "surface": "Floor",
+        "color": "DarkBlue",
+        "perpendicular_width_mm": 35.999999999999986
+      },
+      {
+        "surface": "Floor",
+        "color": "Red",
+        "perpendicular_width_mm": 36.000000000000036
+      },
+      {
+        "surface": "TopRim",
+        "color": "LightBlue",
+        "perpendicular_width_mm": 35.999999999999986
+      },
+      {
+        "surface": "TopRim",
+        "color": "DarkBlue",
+        "perpendicular_width_mm": 35.999999999999986
+      },
+      {
+        "surface": "TopRim",
+        "color": "Red",
+        "perpendicular_width_mm": 36.000000000000036
+      },
+      {
+        "surface": "FrontEdge",
+        "color": "LightBlue",
+        "perpendicular_width_mm": 35.999999999999936
+      },
+      {
+        "surface": "FrontEdge",
+        "color": "DarkBlue",
+        "perpendicular_width_mm": 36.000000000000036
+      },
+      {
+        "surface": "FrontEdge",
+        "color": "Red",
+        "perpendicular_width_mm": 36.000000000000036
+      }
+    ],
+    "fully_constrained_new_sketches": 17,
+    "native_appearance_faces": 17,
+    "added_solid_volume_mm3": 0,
+    "display_offset_mm": 0.01,
+    "display_offset_is_material_thickness": false,
+    "color_region_overlap_checks": [
+      {
+        "surface": "Back",
+        "overlap_area_mm2": 0.0
+      },
+      {
+        "surface": "Back",
+        "overlap_area_mm2": 0.0
+      },
+      {
+        "surface": "Floor",
+        "overlap_area_mm2": 0.0
+      },
+      {
+        "surface": "Floor",
+        "overlap_area_mm2": 0.0
+      },
+      {
+        "surface": "TopRim",
+        "overlap_area_mm2": 0.0
+      },
+      {
+        "surface": "TopRim",
+        "overlap_area_mm2": 0.0
+      },
+      {
+        "surface": "FrontEdge",
+        "overlap_area_mm2": 0.0
+      },
+      {
+        "surface": "FrontEdge",
+        "overlap_area_mm2": 0.0
+      }
+    ]
+  },
+  "side_sign_tricolor": false,
+  "side_sign_background": "DarkBlue",
+  "side_sign_lettering": "White",
+  "print_files_unchanged": true,
+  "normal_reopen_verified": true,
+  "all_remaining_materials_unchanged": true
+}

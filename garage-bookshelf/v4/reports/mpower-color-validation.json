@@ -29,7 +29,7 @@
     {
       "body": "garage_deck_3_Body",
       "solid_unchanged": true,
-      "brep_identical": false
+      "brep_identical": true
     },
     {
       "body": "column_1_segment_1_Body",
@@ -261,8 +261,8 @@
       "perpendicular_width_mm": 36.000000000000036
     }
   ],
-  "fully_constrained_new_sketches": 20,
-  "native_appearance_faces": 20,
+  "fully_constrained_new_sketches": 17,
+  "native_appearance_faces": 17,
   "added_solid_volume_mm3": 0,
   "display_offset_mm": 0.01,
   "display_offset_is_material_thickness": false,
@@ -305,7 +305,7 @@
   "formal_cad": "/Users/kai.han/code/3d-designs/garage-bookshelf/v4/garage-bookshelf-v4-assembly.FCStd",
   "backup": "/Users/kai.han/code/3d-designs/garage-bookshelf/v4/backups/2026-10-26-before-mpower-colors.FCStd",
   "before_sha256": "953a522b4d01374917c4059389e7691d33765f07aa986b8fe3a7561fea6dbcbe",
-  "after_sha256": "e78eb727ed9cc6e0f7bf9311be972a36c9af7db5826ff3b7d2ce27c62a6c1ade",
+  "after_sha256": "822d05f79b60b10a8a9958e427d9591d476a89f391914b90d9eaa1d83fde6958",
   "palette_hex": {
     "Black": "#16181B",
     "Recess": "#0E1013",
@@ -471,7 +471,7 @@
       {
         "body": "garage_deck_3_Body",
         "solid_unchanged": true,
-        "brep_identical": false
+        "brep_identical": true
       },
       {
         "body": "column_1_segment_1_Body",
@@ -616,7 +616,7 @@
       {
         "body": "parking_tray_interface_Body",
         "solid_unchanged": true,
-        "brep_identical": false
+        "brep_identical": true
       }
     ],
     "original_solid_envelope_preserved": true,
@@ -703,8 +703,8 @@
         "perpendicular_width_mm": 36.000000000000036
       }
     ],
-    "fully_constrained_new_sketches": 20,
-    "native_appearance_faces": 20,
+    "fully_constrained_new_sketches": 17,
+    "native_appearance_faces": 17,
     "added_solid_volume_mm3": 0,
     "display_offset_mm": 0.01,
     "display_offset_is_material_thickness": false,
@@ -757,5 +757,7 @@
   ],
   "reference_concept": "/Users/kai.han/.codex/generated_images/01a173a3-7f0f-72b3-92ae-f0a463f27429/exec-4a596b6e-88dc-4a66-a695-16c6108dbd09.png",
   "gui_preview": "mpower-freecad-preview.png",
-  "saved_front_left_camera": true
+  "saved_front_left_camera": true,
+  "side_sign_tricolor": false,
+  "side_sign_update": "plain-side-sign-validation.json"
 }

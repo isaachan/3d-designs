@@ -1,5 +1,7 @@
 # garage-bookshelf v4 · 49 cm 紧凑版
 
+**右侧灯箱纯色（2026-10-26）：** 已取消右侧口号牌的小三色带，保留深蓝底、白字和原螺钉。主书架等宽三色带、三色层板边和横牌支架配色保留。通过删除关联外观构造对象落实，所有原Body实体不变；入口 `update_plain_side_sign.py`，记录见 `reports/plain-side-sign-validation.json`。
+
 **广告牌竖杆缩短（2026-10-26）：** 按主体上方**露出的部分**计算，原62 mm缩短1/3，保留 **41.333 mm（原来的2/3）**。支架底端仍为Z=150，埋在背板后的88 mm保持；整根竖杆长 **129.333 mm**。牌底由原Z=300降至 **279.333 mm**，含牌总高 **343.333 mm**。可换字牌、两行文字及上方两组M3螺钉/螺母从原位置同步下移 **20.667 mm**，随牌底高度联动。牌面尺寸、字形、螺孔、R3/R2圆角、安装接触区及M Power配色保留。已纠正此前按整根150 mm计算、使露出部分仅剩12 mm的版本。增量入口 `shorten_billboard_posts.py`，原始备份 `backups/2026-10-26-before-shorter-billboard-posts.FCStd`，检查见 `reports/shorter-billboard-posts-validation.json`；未重导打印文件。下方较早预览保留历史状态。
 
 ![缩短竖杆后的实际CAD预览](reports/shorter-billboard-posts-preview.png)

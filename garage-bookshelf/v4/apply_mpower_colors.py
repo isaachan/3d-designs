@@ -187,7 +187,6 @@ def make_graphics(doc):
         'TopRim': skin(doc, helpers, 'TopRim', books, 'Z', top, (0, 0, 1)),
         'FrontEdge': skin(doc, helpers, 'FrontEdge', books, 'Y', 0, (0, -1, 0)),
         'Post': skin(doc, helpers, 'Post', ['billboard_Body'], 'Y', value('BillboardY'), (0, -1, 0)),
-        'SideSign': skin(doc, helpers, 'SideSign', ['side_cartridge_Body'], 'Y', -1.4, (0, -1, 0)),
     }
     # All x boundaries use the same pitch. The perpendicular width on both
     # principal faces is pitch/sqrt(1+slope**2), exactly StripeWidth.
@@ -222,16 +221,6 @@ def make_graphics(doc):
         profile = sketch(helpers, 'M_Sketch_Post'+str(i), [polygon], orientation='XZ',
                         offset=('0 mm', DP+'BillboardY', '0 mm'))
         face_graphic(doc, parent, 'Post_'+str(i), color, profile, surfaces['Post'], (0, -1, 0))
-    # A small motif fits to the right of the lower M3 screw and below lettering.
-    for i, color in enumerate(('LightBlue', 'DarkBlue', 'Red')):
-        a, b = 27+4*i, 31+4*i
-        polygon = [(f'{DP}SignX+{a} mm', f'{DP}SignZ+6 mm'),
-                   (f'{DP}SignX+{b} mm', f'{DP}SignZ+6 mm'),
-                   (f'{DP}SignX+{b+6} mm', f'{DP}SignZ+20 mm'),
-                   (f'{DP}SignX+{a+6} mm', f'{DP}SignZ+20 mm')]
-        profile = sketch(helpers, 'M_Sketch_SideSign_'+color, [polygon], orientation='XZ',
-                        offset=('0 mm', '-1.4 mm', '0 mm'))
-        face_graphic(doc, parent, 'SideSign_'+color, color, profile, surfaces['SideSign'], (0, -1, 0))
     doc.recompute()
     return parent
 
@@ -380,7 +369,8 @@ def check(doc, originals):
         assert len(o.Shape.Solids) == 0 and abs(o.Shape.Volume) < 1e-8, o.Name
         if o.Name.startswith(('M_Paint_Back_', 'M_Paint_Floor_')):
             assert o.Shape.Area > .95*o.Base.Shape.Area, (o.Name, o.Shape.Area, o.Base.Shape.Area)
-    assert len(graphics) == 20
+    assert len(graphics) == 17
+    assert not any(o.Name.startswith('M_Paint_SideSign_') for o in doc.Objects)
     # Adjacent graphic regions may share edges, never overlap in area.
     overlaps = []
     for name in ('Back', 'Floor', 'TopRim', 'FrontEdge'):
@@ -442,7 +432,7 @@ def run():
                   before_sha256=EXPECTED_SHA256, after_sha256=sha(CAD), palette_hex=HEX,
                   source_body_face_color_counts=counts, normal_reopen_checks=reopened,
                   native_colors_survive_reopen=True, print_files_unchanged=True,
-                  top_billboard_tricolor=False, posts=['LightBlue', 'Red'],
+                  top_billboard_tricolor=False, side_sign_tricolor=False, posts=['LightBlue', 'Red'],
                   deck_edges_bottom_to_top=['LightBlue', 'DarkBlue', 'Red'],
                   reference_concept='/Users/kai.han/.codex/generated_images/01a173a3-7f0f-72b3-92ae-f0a463f27429/exec-4a596b6e-88dc-4a66-a695-16c6108dbd09.png')
     REPORT.write_text(json.dumps(result, ensure_ascii=False, indent=2)+'\n')
