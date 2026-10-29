@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "project": "enchery-1-65-mazda-mx5-parking-tray-preview.3mf",
+  "sha256": "8289696db461a35ec83a9d1736a28f32407c75250e5ecccdd4884fe64979ce76",
+  "source_cad": "../../cad/garage-bookshelf-v5-assembly.FCStd",
+  "source_cad_sha256": "822d05f79b60b10a8a9958e427d9591d476a89f391914b90d9eaa1d83fde6958",
+  "source_geometry": "../../studies/enchery-mx5-tray-2026-10-29/enchery-1-65-mazda-mx5-parking-tray-preview.stl",
+  "note": "Preserved from the existing build output after print settings had been adjusted; geometry unchanged.",
+  "nominal_car_mm": [
+    61.2,
+    27.1,
+    19.3
+  ],
+  "object_count": 1,
+  "plate_count": 1,
+  "mesh_triangles": 596,
+  "geometry_matches_source_stl_to_mm": 0.0001,
+  "bounds": [
+    {
+      "min_mm": [
+        118.24999,
+        86.50001,
+        0.0
+      ],
+      "max_mm": [
+        158.24999,
+        169.50001,
+        3.4000001
+      ]
+    }
+  ],
+  "settings": {
+    "printer_model": "Bambu Lab X2D",
+    "nozzle_diameter": [
+      "0.4",
+      "0.4"
+    ],
+    "curr_bed_type": "Textured PEI Plate",
+    "filament_type": [
+      "PLA"
+    ],
+    "filament_colour": [
+      "#141414"
+    ],
+    "layer_height": "0.2",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "brim_type": "auto_brim",
+    "brim_width": "5",
+    "enable_support": "0"
+  },
+  "saved_3mf_reopened_and_sliced": true,
+  "slice_profile_overrides": false,
+  "warnings": "",
+  "estimated_seconds": 929.1023559570312,
+  "estimated_filament_g": 7.4297943115234375,
+  "physical_fit_tested": false
+}

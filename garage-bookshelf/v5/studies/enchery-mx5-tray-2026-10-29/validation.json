@@ -1,0 +1,145 @@
+{
+  "status": "passed",
+  "source_cad": "/Users/kai.han/code/3d-designs/garage-bookshelf/v5/cad/garage-bookshelf-v5-assembly.FCStd",
+  "source_cad_sha256": "822d05f79b60b10a8a9958e427d9591d476a89f391914b90d9eaa1d83fde6958",
+  "formal_cad_unchanged": true,
+  "original_foot_preserved": true,
+  "car_dimensions_mm": [
+    61.2,
+    27.1,
+    19.3
+  ],
+  "parameters": {
+    "VehicleLength": 61.2,
+    "VehicleWidth": 27.1,
+    "VehicleHeight": 19.3,
+    "EstimatedWheelbase": 36.0,
+    "EstimatedTrack": 23.0,
+    "EstimatedTireDiameter": 9.0,
+    "EstimatedTireWidth": 3.0,
+    "SideClearance": 1.0,
+    "RailThickness": 1.6,
+    "RailHeight": 1.4,
+    "RailLength": 56.0,
+    "StopWidth": 5.6,
+    "StopSetback": 5.1,
+    "StopDepth": 1.8,
+    "StopHeight": 1.2
+  },
+  "wheel_geometry_is_estimated": true,
+  "vehicle_retention_tested": false,
+  "dimensions_mm": [
+    40.0,
+    83.0,
+    3.4000000953674316
+  ],
+  "triangles": 596,
+  "mesh_watertight": true,
+  "mesh_components": 1,
+  "object_count": 1,
+  "plate_count": 1,
+  "vehicle_mesh_included": false,
+  "deck_mesh_included": false,
+  "current_slot_interference_checks": [
+    {
+      "floor": "module_1",
+      "index": 0,
+      "interference_mm3": 0.0
+    },
+    {
+      "floor": "module_1",
+      "index": 1,
+      "interference_mm3": 0.0
+    },
+    {
+      "floor": "garage_deck_1",
+      "index": 0,
+      "interference_mm3": 0.0
+    },
+    {
+      "floor": "garage_deck_1",
+      "index": 1,
+      "interference_mm3": 0.0
+    },
+    {
+      "floor": "garage_deck_2",
+      "index": 0,
+      "interference_mm3": 0.0
+    },
+    {
+      "floor": "garage_deck_2",
+      "index": 1,
+      "interference_mm3": 0.0
+    },
+    {
+      "floor": "garage_deck_2",
+      "index": 2,
+      "interference_mm3": 0.0
+    },
+    {
+      "floor": "garage_deck_3",
+      "index": 0,
+      "interference_mm3": 0.0
+    },
+    {
+      "floor": "garage_deck_3",
+      "index": 1,
+      "interference_mm3": 0.0
+    },
+    {
+      "floor": "garage_deck_3",
+      "index": 2,
+      "interference_mm3": 0.0
+    }
+  ],
+  "settings": {
+    "printer_model": "Bambu Lab X2D",
+    "nozzle_diameter": [
+      "0.4",
+      "0.4"
+    ],
+    "extruder_nozzle_stats": [
+      "Standard#1",
+      "Standard#1"
+    ],
+    "curr_bed_type": "Textured PEI Plate",
+    "filament_type": [
+      "PLA"
+    ],
+    "filament_colour": [
+      "#141414"
+    ],
+    "filament_density": [
+      "1.26"
+    ],
+    "textured_plate_temp": [
+      "55"
+    ],
+    "textured_plate_temp_initial_layer": [
+      "55"
+    ],
+    "nozzle_temperature": [
+      "220",
+      "220",
+      "220",
+      "220",
+      "220",
+      "220"
+    ],
+    "layer_height": "0.2",
+    "wall_loops": "4",
+    "sparse_infill_density": "25%",
+    "brim_width": "4",
+    "brim_type": "auto_brim",
+    "enable_support": "0"
+  },
+  "reopened_and_sliced": true,
+  "warnings": "",
+  "estimated_seconds": 935.41796875,
+  "estimated_filament_g": 7.629018306732178,
+  "sha256": {
+    "enchery-1-65-mazda-mx5-parking-tray-preview.FCStd": "a140bc5cb4e75a0c2aea0f5a5669ca708983c44602895103e7daf406afb7dfda",
+    "enchery-1-65-mazda-mx5-parking-tray-preview.stl": "5208db3e55405527eb816d5a7c1de65a59c2e386a8589bb96a327a8d088a7de5",
+    "enchery-1-65-mazda-mx5-parking-tray-preview.3mf": "11eaefd9ed3077a68b99a4e0cf12f14e343de7b3177cb8e91196ed2a8163960f"
+  }
+}

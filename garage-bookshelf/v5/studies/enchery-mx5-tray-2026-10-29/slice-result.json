@@ -1,0 +1,73 @@
+{
+  "error_string": "Success.",
+  "export_time": 0,
+  "layer_height": 0.20000000298023224,
+  "plate_index": 0,
+  "prepare_time": 32,
+  "return_code": 0,
+  "sliced_plates": [
+    {
+      "feature_type_times": {
+        "Bottom surface": 93.3944091796875,
+        "Bridge": 127.50617218017578,
+        "Custom": 287.3318176269531,
+        "Flush": 29.0,
+        "Gap infill": 1.8280205726623535,
+        "Inner wall": 52.00819778442383,
+        "Internal solid infill": 189.0203857421875,
+        "Outer wall": 40.373130798339844,
+        "Sparse infill": 17.147579193115234,
+        "Top surface": 54.64090347290039,
+        "Travel": 50.970218658447266,
+        "Undefined": 43.174251556396484
+      },
+      "filament_change_times": 0,
+      "filaments": [
+        {
+          "filament_id": "GFA00",
+          "id": 1,
+          "main_used_g": 7.629018306732178,
+          "total_used_g": 7.629018306732178
+        }
+      ],
+      "generate_support_material_time": 2,
+      "id": 1,
+      "infill_time": 12,
+      "layer_filament_change": 0,
+      "main_predication": 597.8821411132812,
+      "make_perimeters_time": 11,
+      "obj_cached_cnt": 0,
+      "objects": [
+        {
+          "bbox": {
+            "depth": 83.0,
+            "height": 3.4000000953674316,
+            "width": 39.999996185302734,
+            "x": 118.24999237060547,
+            "y": 86.50000762939453,
+            "z": 2.3162842754942403e-09
+          },
+          "id": 5,
+          "name": "enchery-1-65-mazda-mx5-parking-tray-preview.stl",
+          "triangle_count": 596
+        }
+      ],
+      "sliced_time": 134,
+      "sliced_time_with_cache": 102,
+      "total_predication": 935.41796875,
+      "triangle_count": 596,
+      "warning_message": ""
+    }
+  ],
+  "sparse_infill_density": 25.0,
+  "upward_compatible_machine": [
+    "Bambu Lab A1 0.4 nozzle",
+    "Bambu Lab P2S 0.4 nozzle",
+    "Bambu Lab H2S 0.4 nozzle",
+    "Bambu Lab H2D 0.4 nozzle",
+    "Bambu Lab H2D Pro 0.4 nozzle",
+    "Bambu Lab H2C 0.4 nozzle",
+    "Bambu Lab A2L 0.4 nozzle"
+  ],
+  "wall_loops": 4
+}
