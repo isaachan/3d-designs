@@ -49,7 +49,7 @@
       "parts": [
         "module_3"
       ],
-      "supports": false
+      "supports": true
     },
     {
       "id": "07-support-segments",

@@ -1,0 +1,117 @@
+{
+  "status": "draft",
+  "color_mode": "single-material per plate",
+  "note": "Current solid parts only. Review supports, brim spacing and how to reproduce CAD surface colors before approving a full print release.",
+  "plates": [
+    {
+      "id": "01-garage-deck-1",
+      "color": "black",
+      "parts": [
+        "garage_deck_1"
+      ],
+      "supports": false
+    },
+    {
+      "id": "02-garage-deck-2",
+      "color": "black",
+      "parts": [
+        "garage_deck_2"
+      ],
+      "supports": false
+    },
+    {
+      "id": "03-garage-deck-3",
+      "color": "black",
+      "parts": [
+        "garage_deck_3"
+      ],
+      "supports": false
+    },
+    {
+      "id": "04-module-1",
+      "color": "black",
+      "parts": [
+        "module_1"
+      ],
+      "supports": false
+    },
+    {
+      "id": "05-module-2",
+      "color": "black",
+      "parts": [
+        "module_2"
+      ],
+      "supports": true
+    },
+    {
+      "id": "06-module-3",
+      "color": "black",
+      "parts": [
+        "module_3"
+      ],
+      "supports": true
+    },
+    {
+      "id": "07-support-segments",
+      "color": "black",
+      "parts": [
+        "column_1_segment_1",
+        "column_1_segment_2",
+        "column_1_segment_3",
+        "column_2_segment_1",
+        "column_2_segment_2",
+        "column_2_segment_3",
+        "column_3_segment_1",
+        "column_3_segment_2",
+        "column_3_segment_3",
+        "column_4_segment_1",
+        "column_4_segment_2",
+        "column_4_segment_3"
+      ],
+      "supports": false
+    },
+    {
+      "id": "08-top-segments",
+      "color": "black",
+      "parts": [
+        "column_1_segment_4",
+        "column_2_segment_4",
+        "column_3_segment_4",
+        "column_4_segment_4"
+      ],
+      "supports": false
+    },
+    {
+      "id": "09-billboard",
+      "color": "black",
+      "parts": [
+        "billboard"
+      ],
+      "supports": false
+    },
+    {
+      "id": "10-top-carrier",
+      "color": "black",
+      "parts": [
+        "top_carrier"
+      ],
+      "supports": false
+    },
+    {
+      "id": "11-side-receiver",
+      "color": "blue",
+      "parts": [
+        "side_receiver"
+      ],
+      "supports": false
+    },
+    {
+      "id": "12-side-cartridge",
+      "color": "blue",
+      "parts": [
+        "side_cartridge"
+      ],
+      "supports": false
+    }
+  ]
+}

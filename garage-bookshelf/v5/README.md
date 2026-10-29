@@ -5,7 +5,9 @@ v5整理v4的最新正式设计，模型几何没有变化。唯一正式文件�
 它从v4原样复制；FreeCAD内部对象名、参数表达式和原生外观均保留。
 
 当前：49cm主体、四层2/2/3/3停车位、6.6mm层板、1.6mm托座槽、M3螺钉可换字牌、缩短竖杆、M Power配色。
-目录整理和工具检查已完成，整套打印发行尚未制作；以[当前状态](PROJECT_STATUS.md)为准。
+目录整理和工具检查已完成；[12盘M Power带色3MF](printing/mpower-color-preview-2026-10-29/README.md)已生成并重开切片验证，约3.003kg、128小时41分。
+颜色保存在Bambu Studio三角涂色数据内；此前1.839kg、34小时48分的单色估算不包含完整配色。
+正式打印发行尚未制作；以[当前状态](PROJECT_STATUS.md)为准。
 
 | 目录 | 内容 |
 |---|---|
@@ -34,6 +36,7 @@ v5整理v4的最新正式设计，模型几何没有变化。唯一正式文件�
 在FreeCAD中运行[tools/Preview.FCMacro](tools/Preview.FCMacro)恢复视角和配色，默认不保存正式CAD。
 
 排盘：`python3 tools/make_print_projects.py --export-dir <上一步导出目录> --only 12-side-cartridge`。
+带色项目：用FreeCAD Python执行`tools/make_colored_projects.py --export-dir <几何导出目录> --single-color-dir <配套单色打印结果目录>`。
 完整流程、GUI保存方法及运行环境见[维护说明](docs/maintenance.md)；3MF用途与发行条件见[打印说明](docs/printing.md)。
 
 完整重建生成器尚未追平当前CAD，因此不提供覆盖主模型的重建命令。

@@ -30,8 +30,11 @@ def export(output):
             assembly_file = output / 'stl/assembly' / (name + '.stl')
             mesh.write(str(assembly_file))
             flat = name in ('billboard', 'top_carrier', 'side_receiver', 'side_cartridge')
-            if flat:
-                mesh.transform(App.Placement(App.Vector(), App.Rotation(App.Vector(1, 0, 0), 90)).toMatrix())
+            # The removable signs face -Y; put their broad backs on the bed
+            # so the raised lettering and engraved slogan face upwards.
+            rotation = -90 if name in ('top_carrier', 'side_cartridge') else 90 if flat else 0
+            if rotation:
+                mesh.transform(App.Placement(App.Vector(), App.Rotation(App.Vector(1, 0, 0), rotation)).toMatrix())
             box = mesh.BoundBox
             mesh.translate(-box.XMin, -box.YMin, -box.ZMin)
             file = output / 'stl/print' / (name + '.stl')
@@ -44,7 +47,7 @@ def export(output):
             assert dimensions[0] + 8 <= 235.501 and dimensions[1] + 8 <= 256.001 and dimensions[2] <= 256.001, (name, dimensions)
             records.append(dict(part=name, role=role(body), print_file=str(file.relative_to(output)),
                                 assembly_file=str(assembly_file.relative_to(output)),
-                                dimensions_mm=dimensions, rotated_x_degrees=90 if flat else 0,
+                                dimensions_mm=dimensions, rotated_x_degrees=rotation,
                                 closed=True, solid_components=1, brim_mm=4))
         step_file = output / 'garage-bookshelf-v5-assembly.step'
         shapes = [global_shape(b) for b in bodies(doc)]
