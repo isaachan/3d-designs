@@ -14,6 +14,8 @@ def face_palette(body, old):
     faces = body.Shape.Faces
     old = old if len(old) == len(faces) else old*len(faces)
     colors = [RGB['Black']]*len(faces)
+    if 'SkinColor' in body.PropertiesList:
+        return [RGB[body.SkinColor]]*len(faces)
     if name.startswith('hardware_'):
         return [RGB['Hardware']]*len(faces)
     if name in ('side_cartridge',):
@@ -79,8 +81,13 @@ def refresh_colors(doc, source_colors=None):
             obj.ViewObject.DisplayMode = 'Shaded'
             obj.ViewObject.LineColor = RGB[obj.MColor]
             obj.ViewObject.LineWidth = 1.0
-            obj.ViewObject.Visibility = True
+            obj.ViewObject.Visibility = doc.getObject('SkinParameters') is None or obj.SurfaceRole == 'Post'
             obj.ViewObject.Selectable = False
+    if doc.getObject('SkinConstruction'):
+        for obj in doc.SkinConstruction.Group:
+            obj.ViewObject.Visibility = False
+        doc.SkinConstruction.ViewObject.Visibility = False
+        doc.SkinParameters.ViewObject.Visibility = False
     for obj in doc.Objects:
         if obj.TypeId == 'App::Origin':
             obj.ViewObject.Visibility = False

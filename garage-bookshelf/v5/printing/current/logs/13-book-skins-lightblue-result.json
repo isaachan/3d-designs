@@ -1,0 +1,109 @@
+{
+  "error_string": "Success.",
+  "export_time": 0,
+  "layer_height": 0.20000000298023224,
+  "plate_index": 0,
+  "prepare_time": 22,
+  "return_code": 0,
+  "sliced_plates": [
+    {
+      "feature_type_times": {
+        "Bottom surface": 561.1908569335938,
+        "Custom": 287.5491943359375,
+        "Flush": 29.0,
+        "Inner wall": 61.47150802612305,
+        "Internal solid infill": 174.7024383544922,
+        "Outer wall": 40.54447555541992,
+        "Top surface": 270.5348815917969,
+        "Travel": 81.94107055664062,
+        "Undefined": 74.0051040649414
+      },
+      "filament_change_times": 0,
+      "filaments": [
+        {
+          "filament_id": "GFA00",
+          "id": 3,
+          "main_used_g": 12.419487953186035,
+          "total_used_g": 12.419487953186035
+        }
+      ],
+      "generate_support_material_time": 0,
+      "id": 1,
+      "infill_time": 36,
+      "layer_filament_change": 0,
+      "main_predication": 1161.423828125,
+      "make_perimeters_time": 5,
+      "obj_cached_cnt": 0,
+      "objects": [
+        {
+          "bbox": {
+            "depth": 230.0,
+            "height": 0.600006103515625,
+            "width": 179.9828643798828,
+            "x": 64.34334564208984,
+            "y": 13.0,
+            "z": 2.42187492283108e-10
+          },
+          "id": 5,
+          "name": "book_skin_back_lightblue.stl",
+          "triangle_count": 12
+        },
+        {
+          "bbox": {
+            "depth": 171.1844024658203,
+            "height": 0.5999999046325684,
+            "width": 186.68035888671875,
+            "x": 9.028892517089844,
+            "y": 17.743249893188477,
+            "z": -3.1628416552464955e-10
+          },
+          "id": 9,
+          "name": "book_skin_floor_lightblue.stl",
+          "triangle_count": 12
+        },
+        {
+          "bbox": {
+            "depth": 38.73733901977539,
+            "height": 0.6000000238418579,
+            "width": 38.737335205078125,
+            "x": 105.85905456542969,
+            "y": 101.8974609375,
+            "z": 7.907102750337458e-11
+          },
+          "id": 13,
+          "name": "book_skin_frontedge_lightblue.stl",
+          "triangle_count": 12
+        },
+        {
+          "bbox": {
+            "depth": 34.551265716552734,
+            "height": 0.600006103515625,
+            "width": 34.55126190185547,
+            "x": 154.06101989746094,
+            "y": 134.66845703125,
+            "z": 2.42187492283108e-10
+          },
+          "id": 17,
+          "name": "book_skin_toprim_lightblue.stl",
+          "triangle_count": 12
+        }
+      ],
+      "sliced_time": 136,
+      "sliced_time_with_cache": 78,
+      "total_predication": 1499.0369873046875,
+      "triangle_count": 48,
+      "warning_message": ""
+    }
+  ],
+  "sparse_infill_density": 25.0,
+  "upward_compatible_machine": [
+    "Bambu Lab A1 0.4 nozzle",
+    "Bambu Lab P2S 0.4 nozzle",
+    "Bambu Lab H2S 0.4 nozzle",
+    "Bambu Lab H2D 0.4 nozzle",
+    "Bambu Lab H2D Pro 0.4 nozzle",
+    "Bambu Lab H2C 0.4 nozzle",
+    "Bambu Lab A2L 0.4 nozzle"
+  ],
+  "wall_loops": 3
+}

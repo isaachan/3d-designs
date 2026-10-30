@@ -1,32 +1,24 @@
-# 打印项目和发行
+# 当前打印方案：完整15盘
 
-当前没有正式整机发行版。[2026-10-29 M Power带色预览](../printing/mpower-color-preview-2026-10-29/README.md)已按当前26个实体生成12盘带Bambu涂色的3MF，并逐盘重开切片通过；总耗材3003.3g、估算128小时41分，按80元/kg材料费240.26元。旧单色预览的1838.7g、34小时48分、147.10元不包含完整配色。
-`printing/plate-plan.json`仍为draft，排盘和支撑待实物确认。右半书架已开启支撑，顶部字牌和侧口号板背面贴床、文字面朝上。
-常规STL不保留颜色；`make_colored_projects.py`会把CAD逐面颜色和M Power色面映射成Bambu三角涂色，几何不变。上方字与载板已是一体Body，白字通过涂色分配耗材；不另打旧版独立字件。
+使用[当前完整15盘](../printing/current/README.md)替换05、06、13、14、15。已经打印或正在打印的01–04、07–12继续使用现有文件，无需重印，也不覆盖个人修改的03盘。
 
-| 3MF用途 | 位置 |
-|---|---|
-| 人工持续编辑的排盘和打印设置 | `printing/projects/` |
-| 当前12盘带色预览、逐盘统计及来源记录 | `printing/mpower-color-preview-2026-10-29/` |
-| 旧单色成本基线压缩包 | `printing/garage-bookshelf-v5-cost-preview-2026-10-28.zip` |
-| 自动生成、重开切片验证的结果 | `build/<run-id>/3mf/` |
-| 当前独立试件及其原始检查 | `studies/parking-tray-fit-2026-10-26/` |
-| 已确认整套交付快照 | `releases/<release-id>/printing/3mf/` |
-| 已淘汰的查看模型 | `archive/proposals/` |
+| 盘 | 内容 | 设置 |
+|---|---|---|
+| 05/06 | 带承托槽和胶槽的黑色主体 | 0.20mm、4圈墙、25%填充、仅热床支撑 |
+| 13/14/15 | 浅蓝/深蓝/红饰片，各4片 | 0.20mm、3圈墙、全厚0.60mm，无支撑/擦料塔 |
+| 01–04、07–12 | 其余24个打印件 | 继续使用现有文件、现有设置 |
 
-## 生成和检查
+五盘约17小时02分、919.1g；按80元/kg材料费73.52元，不含胶、电费、人工及损耗。沿用十盘基线的整套估算为42小时59分、1915.7g；个人调整过的盘以自己的切片为准。
 
-1. 用FreeCAD Python执行`tools/export.py --output build/export-001`。
-2. `python3 tools/make_print_projects.py --export-dir build/export-001 --only 12-side-cartridge`可只生成一盘；省略`--only`生成全计划。
-   该工具读取当前验证过的打印STL，保存3MF后重新加载实际切片，不覆盖项目预设；临时G-code留在自动清理的scratch中。
-3. 用FreeCAD Python执行`tools/make_colored_projects.py --export-dir <几何导出目录> --single-color-dir <上一步完整打印结果目录>`生成带色项目。它保留原网格，保存三角涂色后重新打开实际切片，并核对每盘使用的色槽；默认新建`build/`目录。
-4. 手调项目另存到`printing/projects/`，记录源CAD哈希和修改内容；生成器不会写这个目录。
-5. 现有正式打包入口只支持原单材料流程：确认方案及设置后，将计划`status`改为`approved`并完整生成。使用
-   `python3 tools/package_release.py --export-dir build/export-001 --print-dir <完整打印结果目录> --release-id <新版编号>`建立快照。
+05/06凹槽深0.6mm，与0.6mm饰片配套；1.5mm宽承托台阶内另下沉0.2mm存胶。先拼主体、干装饰片，再向胶槽放少量胶并压到无胶台阶。三处转角避让详见[装配说明](assembly.md)。旧recommended、外贴版及重复压缩包已删除。
 
-打包检查当前CAD哈希、输出文件哈希、打印结果与导出关联、全零件覆盖和保存项目重开切片状态。
-历史报告、部分盘结果、已修改却未重验的文件不能冒充完整发行。已存在release不会覆盖。
-若手调或带色3MF准备纳入正式发行，应先扩展/更新发行验证与清单流程，再发行；当前单材料打包入口不接收带色预览。
+## 重新生成
 
-STL有两种坐标：`stl/assembly/`保持装配位置；`stl/print/`按打印方向旋转并归零。
-STEP包含26个打印实体和8个外购硬件；打印STL不包含硬件、托座样件或零厚度外观面。
+1. FreeCAD Python执行`tools/export.py --output build/<run>/export`，强制完整重算并检查47个Body、38个打印件，导出46实体STEP和两种坐标的STL。
+2. `python3 tools/make_print_projects.py --export-dir build/<run>/export --only 05-module-2 06-module-3 13-book-skins-lightblue 14-book-skins-darkblue 15-book-skins-red --output build/<run>/single`生成五盘中间项目并重开切片。
+3. FreeCAD Python执行`tools/make_colored_projects.py --export-dir build/<run>/export --single-color-dir build/<run>/single --output build/<run>/colored`保存配色并独立重开切片。最终使用colored目录中的3MF。
+4. 完整15盘重生成可省略`--only`，随后用`tools/package_release.py`创建新的完整快照；不会覆盖人工维护项目或旧快照。
+
+当前完整15盘已将五盘修正件和另外十盘原文件合并。其余十盘逐件核对输入STL与当前导出完全一致，项目和设置不改动，记录在当前目录内的`reused-plates.json`。`printing/current-release.json`直接指向完整版本，无旧发布依赖。以后通过`tools/package_release.py`打包新版本。
+
+常规STL不含颜色，最终3MF含实际Bambu配色数据。STEP保留8个外购硬件；打印STL/3MF不含硬件、托座样件和零厚度色面。尚未实物干装和粘接，不交付G-code。

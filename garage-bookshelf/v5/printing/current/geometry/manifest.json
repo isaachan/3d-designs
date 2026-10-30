@@ -1,0 +1,715 @@
+{
+  "source_cad": "cad/garage-bookshelf-v5-assembly.FCStd",
+  "cad_sha256": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e",
+  "source_git_commit": "495dba6810bfd591cb3464e1e64840f4ed105a07",
+  "code_files_sha256": {
+    "src/garage_bookshelf/__init__.py": "2d97f949fc8d8d91881de12541b429989db1daafca44a7a55af69dceb64b65d9",
+    "src/garage_bookshelf/appearance/__init__.py": "2d97f949fc8d8d91881de12541b429989db1daafca44a7a55af69dceb64b65d9",
+    "src/garage_bookshelf/appearance/palette.py": "9414e1ccf6611a7c03df27b2444061d552e8149baa3a145665a93e4748031568",
+    "src/garage_bookshelf/appearance/storage.py": "f630ba450db337fffda9e60d6a01b6016a3f3720dc2e342cb13ea3e5eba88d08",
+    "src/garage_bookshelf/appearance/view.py": "c6d7dd6b6dcf7a3396fa438ddbb4ebeabfd33a07ca0b0ba3a7f77735f80d98f5",
+    "src/garage_bookshelf/assembly.py": "9f8305aea7dd00662df44ef3b3e112a4388b5a150ab5ca8e0118ea98133b0f77",
+    "src/garage_bookshelf/connectors.py": "240b7e813be2130f0709b862ae3f4c1b018189b1d734286f0d16eedf4459e5e1",
+    "src/garage_bookshelf/exporting.py": "439fef4d80cd4c7ad4b85fc600318dcb0a9dba61e4b5809204b9e362fb924d74",
+    "src/garage_bookshelf/flush_inlays.py": "50c47721658a3b5db07a8e349363ff7de775c7dbf78abe8de4f401f84ec4b249",
+    "src/garage_bookshelf/geometry/__init__.py": "2d97f949fc8d8d91881de12541b429989db1daafca44a7a55af69dceb64b65d9",
+    "src/garage_bookshelf/geometry/features.py": "ab8ab168c88df2a718a2771591d99134cd1a0249f684d50575cafb85ad9ba4d5",
+    "src/garage_bookshelf/geometry/sketches.py": "ffa919e90c330e387b04c747c74cb08efcd595c4956b35f6568c765d9a63b8df",
+    "src/garage_bookshelf/lettering.py": "57fccce30b317a6f0c51de2270996fe423b81e12b6f5a0d63499ddbfc511ac6b",
+    "src/garage_bookshelf/parameters.py": "83b89c105c96133387855fbd2afcc59ad722e16fb63d383054f0d70beb81202f",
+    "src/garage_bookshelf/parking/__init__.py": "2d97f949fc8d8d91881de12541b429989db1daafca44a7a55af69dceb64b65d9",
+    "src/garage_bookshelf/parking/layout.py": "b39a9a19c8f3e52451bf26d3168ce27b1c73504f6e1f3177b09fbc051c164016",
+    "src/garage_bookshelf/parking/markings.py": "d88b9112abdcf68321f7b93c1569a8264f136eaff1aad2fce206ebedbf50c0ff",
+    "src/garage_bookshelf/parking/recesses.py": "e07df9aa61e9f728f84779ea1c4647657ba2737a337c1f50b8bcf6bd4a26ddc5",
+    "src/garage_bookshelf/parking/vectors.py": "f9ff64682fd21fdad6a28b095a2ff8ad9ad8f713650503ae2c5779870613bcbf",
+    "src/garage_bookshelf/paths.py": "9cc47a44d8aeeb735c11e5b1a677b7316718317e55f469ad6032e5649f1ca320",
+    "src/garage_bookshelf/printing/__init__.py": "2d97f949fc8d8d91881de12541b429989db1daafca44a7a55af69dceb64b65d9",
+    "src/garage_bookshelf/printing/bambu.py": "af546eb49c4168df2bd7f0cb738013b822ba40d274ee839d718aedb7eb377947",
+    "src/garage_bookshelf/printing/manifests.py": "400716e297adfe471f724a9eb1d23044849b488ce7e9dc6df7ae6f0901456fad",
+    "src/garage_bookshelf/printing/paint.py": "4fe18fa96afc24aa4a6e0414eaf0bfd09acab5d78a686fa14268bc14b73da2bd",
+    "src/garage_bookshelf/printing/threemf.py": "41acd5d66ccc5da1783463520df411f2e0d51005d1b1067c8af3206272786a14",
+    "src/garage_bookshelf/rendering/__init__.py": "2d97f949fc8d8d91881de12541b429989db1daafca44a7a55af69dceb64b65d9",
+    "src/garage_bookshelf/rendering/software.py": "3f85adb8efe131aeb7facd633e4a4aebd0059cca021e0ac29371483d3f1d0f6c",
+    "src/garage_bookshelf/skins.py": "09eb77b109af88f4b95ff75a69055a24d5f19a81dfe3329a3ef3134ce14639ed",
+    "src/garage_bookshelf/specification.py": "d7bd21560d47b5bf85f8047785d08efa1468fa7e8282d06f6f500e89da5eb345",
+    "src/garage_bookshelf/validation.py": "c4a756833eff8805d4389438281cfb95ec4b354a64103da575a729b81978edd0",
+    "tools/_bootstrap.py": "47e70925fff66c3ea03c0b95c42bcd6ac55a42e3cd721cfe5f942f347248611e",
+    "tools/export.py": "9885992f359d30c4e4931969da35c38f0939133d0f3bf6f9d26d876ab2b02240",
+    "tools/implement_flush_inlays.py": "89c2b9592e25b453664dcdb8741cfc357ccd271865fccf1f215166c07e9a6590",
+    "tools/implement_separate_skins.py": "24bc136b87305aa735dfe0746c7cf6394a5f799d6fb90a74656d00a6a814cca2",
+    "tools/make_colored_projects.py": "5c58fc4bc43f39906c4c1ea621ceba1fb97d569fd4800d34f2c09f40a27837ea",
+    "tools/make_print_projects.py": "55a878c3af9d0671daff42aadaaec7401d046ac269e5c461f8889d042072db62",
+    "tools/package_flush_correction.py": "a884aaa35809fd08fdaf666a111d59c6185afeb3e9986c3b7c46afa4c57fea0a",
+    "tools/package_release.py": "9381c82c32c00e913001632f90c89eb7067686e732f3631a9d99722d49e877ee",
+    "tools/render.py": "decd968ad41d92be304db37c6a1a57f3ea991229de31725e140ff360c10f9806",
+    "tools/review_cad.py": "45a944c9bccd3546708b553b4c712e27f26263d404e671b5083fc8a1a7c17c12",
+    "tools/validate_cad.py": "aa388d96f2c1e96e58eee8e6d9338b0b918de8ebfad871b22e90b02a10985bc1"
+  },
+  "generated_at": "2026-10-30T11:54:12.046496+00:00",
+  "status": "passed",
+  "kind": "geometry-export",
+  "cad_unchanged": true,
+  "appearance_in_stl": false,
+  "samples_exported": false,
+  "hardware_in_step": true,
+  "hardware_in_stl": false,
+  "print_parts": [
+    {
+      "part": "module_1",
+      "role": "print",
+      "print_file": "stl/print/module_1.stl",
+      "assembly_file": "stl/assembly/module_1.stl",
+      "dimensions_mm": [
+        213.8000030517578,
+        170.0,
+        238.0
+      ],
+      "rotated_x_degrees": 0,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "module_2",
+      "role": "print",
+      "print_file": "stl/print/module_2.stl",
+      "assembly_file": "stl/assembly/module_2.stl",
+      "dimensions_mm": [
+        158.79998779296875,
+        170.0,
+        238.0
+      ],
+      "rotated_x_degrees": 0,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "module_3",
+      "role": "print",
+      "print_file": "stl/print/module_3.stl",
+      "assembly_file": "stl/assembly/module_3.stl",
+      "dimensions_mm": [
+        145.0,
+        170.0,
+        238.0
+      ],
+      "rotated_x_degrees": 0,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "garage_deck_1",
+      "role": "print",
+      "print_file": "stl/print/garage_deck_1.stl",
+      "assembly_file": "stl/assembly/garage_deck_1.stl",
+      "dimensions_mm": [
+        195.60000610351562,
+        158.60000610351562,
+        6.599998474121094
+      ],
+      "rotated_x_degrees": 0,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "garage_deck_2",
+      "role": "print",
+      "print_file": "stl/print/garage_deck_2.stl",
+      "assembly_file": "stl/assembly/garage_deck_2.stl",
+      "dimensions_mm": [
+        195.60000610351562,
+        158.60000610351562,
+        6.599998474121094
+      ],
+      "rotated_x_degrees": 0,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "garage_deck_3",
+      "role": "print",
+      "print_file": "stl/print/garage_deck_3.stl",
+      "assembly_file": "stl/assembly/garage_deck_3.stl",
+      "dimensions_mm": [
+        195.60000610351562,
+        158.60000610351562,
+        6.600006103515625
+      ],
+      "rotated_x_degrees": 0,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "column_1_segment_1",
+      "role": "print",
+      "print_file": "stl/print/column_1_segment_1.stl",
+      "assembly_file": "stl/assembly/column_1_segment_1.stl",
+      "dimensions_mm": [
+        19.995525360107422,
+        19.997760772705078,
+        66.0
+      ],
+      "rotated_x_degrees": 0,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "column_1_segment_2",
+      "role": "print",
+      "print_file": "stl/print/column_1_segment_2.stl",
+      "assembly_file": "stl/assembly/column_1_segment_2.stl",
+      "dimensions_mm": [
+        19.995525360107422,
+        19.997760772705078,
+        66.0
+      ],
+      "rotated_x_degrees": 0,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "column_1_segment_3",
+      "role": "print",
+      "print_file": "stl/print/column_1_segment_3.stl",
+      "assembly_file": "stl/assembly/column_1_segment_3.stl",
+      "dimensions_mm": [
+        19.995525360107422,
+        19.997760772705078,
+        66.0
+      ],
+      "rotated_x_degrees": 0,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "column_1_segment_4",
+      "role": "print",
+      "print_file": "stl/print/column_1_segment_4.stl",
+      "assembly_file": "stl/assembly/column_1_segment_4.stl",
+      "dimensions_mm": [
+        13.996867179870605,
+        13.998432159423828,
+        33.0
+      ],
+      "rotated_x_degrees": 0,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "column_2_segment_1",
+      "role": "print",
+      "print_file": "stl/print/column_2_segment_1.stl",
+      "assembly_file": "stl/assembly/column_2_segment_1.stl",
+      "dimensions_mm": [
+        19.995529174804688,
+        19.997760772705078,
+        66.0
+      ],
+      "rotated_x_degrees": 0,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "column_2_segment_2",
+      "role": "print",
+      "print_file": "stl/print/column_2_segment_2.stl",
+      "assembly_file": "stl/assembly/column_2_segment_2.stl",
+      "dimensions_mm": [
+        19.995529174804688,
+        19.997760772705078,
+        66.0
+      ],
+      "rotated_x_degrees": 0,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "column_2_segment_3",
+      "role": "print",
+      "print_file": "stl/print/column_2_segment_3.stl",
+      "assembly_file": "stl/assembly/column_2_segment_3.stl",
+      "dimensions_mm": [
+        19.995529174804688,
+        19.997760772705078,
+        66.0
+      ],
+      "rotated_x_degrees": 0,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "column_2_segment_4",
+      "role": "print",
+      "print_file": "stl/print/column_2_segment_4.stl",
+      "assembly_file": "stl/assembly/column_2_segment_4.stl",
+      "dimensions_mm": [
+        13.996871948242188,
+        13.998432159423828,
+        33.0
+      ],
+      "rotated_x_degrees": 0,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "column_3_segment_1",
+      "role": "print",
+      "print_file": "stl/print/column_3_segment_1.stl",
+      "assembly_file": "stl/assembly/column_3_segment_1.stl",
+      "dimensions_mm": [
+        19.995525360107422,
+        19.997772216796875,
+        66.0
+      ],
+      "rotated_x_degrees": 0,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "column_3_segment_2",
+      "role": "print",
+      "print_file": "stl/print/column_3_segment_2.stl",
+      "assembly_file": "stl/assembly/column_3_segment_2.stl",
+      "dimensions_mm": [
+        19.995525360107422,
+        19.997772216796875,
+        66.0
+      ],
+      "rotated_x_degrees": 0,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "column_3_segment_3",
+      "role": "print",
+      "print_file": "stl/print/column_3_segment_3.stl",
+      "assembly_file": "stl/assembly/column_3_segment_3.stl",
+      "dimensions_mm": [
+        19.995525360107422,
+        19.997772216796875,
+        66.0
+      ],
+      "rotated_x_degrees": 0,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "column_3_segment_4",
+      "role": "print",
+      "print_file": "stl/print/column_3_segment_4.stl",
+      "assembly_file": "stl/assembly/column_3_segment_4.stl",
+      "dimensions_mm": [
+        13.996867179870605,
+        13.998443603515625,
+        33.0
+      ],
+      "rotated_x_degrees": 0,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "column_4_segment_1",
+      "role": "print",
+      "print_file": "stl/print/column_4_segment_1.stl",
+      "assembly_file": "stl/assembly/column_4_segment_1.stl",
+      "dimensions_mm": [
+        19.995529174804688,
+        19.997772216796875,
+        66.0
+      ],
+      "rotated_x_degrees": 0,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "column_4_segment_2",
+      "role": "print",
+      "print_file": "stl/print/column_4_segment_2.stl",
+      "assembly_file": "stl/assembly/column_4_segment_2.stl",
+      "dimensions_mm": [
+        19.995529174804688,
+        19.997772216796875,
+        66.0
+      ],
+      "rotated_x_degrees": 0,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "column_4_segment_3",
+      "role": "print",
+      "print_file": "stl/print/column_4_segment_3.stl",
+      "assembly_file": "stl/assembly/column_4_segment_3.stl",
+      "dimensions_mm": [
+        19.995529174804688,
+        19.997772216796875,
+        66.0
+      ],
+      "rotated_x_degrees": 0,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "column_4_segment_4",
+      "role": "print",
+      "print_file": "stl/print/column_4_segment_4.stl",
+      "assembly_file": "stl/assembly/column_4_segment_4.stl",
+      "dimensions_mm": [
+        13.996871948242188,
+        13.998443603515625,
+        33.0
+      ],
+      "rotated_x_degrees": 0,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "billboard",
+      "role": "print",
+      "print_file": "stl/print/billboard.stl",
+      "assembly_file": "stl/assembly/billboard.stl",
+      "dimensions_mm": [
+        200.0,
+        193.33334350585938,
+        6.0
+      ],
+      "rotated_x_degrees": 90,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "top_carrier",
+      "role": "print",
+      "print_file": "stl/print/top_carrier.stl",
+      "assembly_file": "stl/assembly/top_carrier.stl",
+      "dimensions_mm": [
+        190.0,
+        58.0,
+        2.399993896484375
+      ],
+      "rotated_x_degrees": -90,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "side_receiver",
+      "role": "print",
+      "print_file": "stl/print/side_receiver.stl",
+      "assembly_file": "stl/assembly/side_receiver.stl",
+      "dimensions_mm": [
+        48.0,
+        180.0,
+        14.0
+      ],
+      "rotated_x_degrees": 90,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "side_cartridge",
+      "role": "print",
+      "print_file": "stl/print/side_cartridge.stl",
+      "assembly_file": "stl/assembly/side_cartridge.stl",
+      "dimensions_mm": [
+        44.0,
+        172.0,
+        1.399999976158142
+      ],
+      "rotated_x_degrees": -90,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "book_skin_back_lightblue",
+      "role": "print",
+      "print_file": "stl/print/book_skin_back_lightblue.stl",
+      "assembly_file": "stl/assembly/book_skin_back_lightblue.stl",
+      "dimensions_mm": [
+        179.9828643798828,
+        230.0,
+        0.600006103515625
+      ],
+      "rotated_x_degrees": 90,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "book_skin_floor_lightblue",
+      "role": "print",
+      "print_file": "stl/print/book_skin_floor_lightblue.stl",
+      "assembly_file": "stl/assembly/book_skin_floor_lightblue.stl",
+      "dimensions_mm": [
+        136.90284729003906,
+        158.1999969482422,
+        0.5999999046325684
+      ],
+      "rotated_x_degrees": 180,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "book_skin_toprim_lightblue",
+      "role": "print",
+      "print_file": "stl/print/book_skin_toprim_lightblue.stl",
+      "assembly_file": "stl/assembly/book_skin_toprim_lightblue.stl",
+      "dimensions_mm": [
+        44.5628662109375,
+        4.3000030517578125,
+        0.600006103515625
+      ],
+      "rotated_x_degrees": 180,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "book_skin_frontedge_lightblue",
+      "role": "print",
+      "print_file": "stl/print/book_skin_frontedge_lightblue.stl",
+      "assembly_file": "stl/assembly/book_skin_frontedge_lightblue.stl",
+      "dimensions_mm": [
+        46.782867431640625,
+        8.0,
+        0.6000000238418579
+      ],
+      "rotated_x_degrees": 90,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "book_skin_back_darkblue",
+      "role": "print",
+      "print_file": "stl/print/book_skin_back_darkblue.stl",
+      "assembly_file": "stl/assembly/book_skin_back_darkblue.stl",
+      "dimensions_mm": [
+        179.98284912109375,
+        230.0,
+        0.600006103515625
+      ],
+      "rotated_x_degrees": 90,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "book_skin_floor_darkblue",
+      "role": "print",
+      "print_file": "stl/print/book_skin_floor_darkblue.stl",
+      "assembly_file": "stl/assembly/book_skin_floor_darkblue.stl",
+      "dimensions_mm": [
+        136.90283203125,
+        158.1999969482422,
+        0.5999999046325684
+      ],
+      "rotated_x_degrees": 180,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "book_skin_toprim_darkblue",
+      "role": "print",
+      "print_file": "stl/print/book_skin_toprim_darkblue.stl",
+      "assembly_file": "stl/assembly/book_skin_toprim_darkblue.stl",
+      "dimensions_mm": [
+        44.5628662109375,
+        4.3000030517578125,
+        0.600006103515625
+      ],
+      "rotated_x_degrees": 180,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "book_skin_frontedge_darkblue",
+      "role": "print",
+      "print_file": "stl/print/book_skin_frontedge_darkblue.stl",
+      "assembly_file": "stl/assembly/book_skin_frontedge_darkblue.stl",
+      "dimensions_mm": [
+        46.7828369140625,
+        8.0,
+        0.6000000238418579
+      ],
+      "rotated_x_degrees": 90,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "book_skin_back_red",
+      "role": "print",
+      "print_file": "stl/print/book_skin_back_red.stl",
+      "assembly_file": "stl/assembly/book_skin_back_red.stl",
+      "dimensions_mm": [
+        179.98284912109375,
+        230.0,
+        0.600006103515625
+      ],
+      "rotated_x_degrees": 90,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "book_skin_floor_red",
+      "role": "print",
+      "print_file": "stl/print/book_skin_floor_red.stl",
+      "assembly_file": "stl/assembly/book_skin_floor_red.stl",
+      "dimensions_mm": [
+        136.90286254882812,
+        158.1999969482422,
+        0.5999999046325684
+      ],
+      "rotated_x_degrees": 180,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "book_skin_toprim_red",
+      "role": "print",
+      "print_file": "stl/print/book_skin_toprim_red.stl",
+      "assembly_file": "stl/assembly/book_skin_toprim_red.stl",
+      "dimensions_mm": [
+        44.5628662109375,
+        4.3000030517578125,
+        0.600006103515625
+      ],
+      "rotated_x_degrees": 180,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    },
+    {
+      "part": "book_skin_frontedge_red",
+      "role": "print",
+      "print_file": "stl/print/book_skin_frontedge_red.stl",
+      "assembly_file": "stl/assembly/book_skin_frontedge_red.stl",
+      "dimensions_mm": [
+        46.7828369140625,
+        8.0,
+        0.6000000238418579
+      ],
+      "rotated_x_degrees": 90,
+      "closed": true,
+      "solid_components": 1,
+      "brim_mm": 4
+    }
+  ],
+  "step_solids": 46,
+  "step_round_trip": {
+    "relative_volume_error": 1.551285074187941e-07,
+    "max_bounds_error_mm": 3.296918293926865e-12
+  },
+  "printing_status": "not_yet_sliced",
+  "physical_print_and_fit_tested": false,
+  "files": {
+    "garage-bookshelf-v5-assembly.step": "3d4f8cb583f3ec05506a6f1df3e5bcdb8595314469b1e4a4bf38593d4ce98f51",
+    "stl/assembly/billboard.stl": "1112397133324d9e2e202f4e5d121d4e4c8b83e97f3c80a1a75466f566028fdd",
+    "stl/assembly/book_skin_back_darkblue.stl": "76724eada41e6860d4a01d202893023d5d3d2a5fae386911958a26da5f229c7e",
+    "stl/assembly/book_skin_back_lightblue.stl": "673889f5251741eb92f72147ee7e8da782f6f57631cd60ae172f32d386c6c99c",
+    "stl/assembly/book_skin_back_red.stl": "9641a8e575980ee9e1830110f53af79d142cb55cee1b95536bdfff2c9ad44622",
+    "stl/assembly/book_skin_floor_darkblue.stl": "d927bc7ead1c210dc546aada6157600729cb9f3cd7ee99c98f8de4d4f857664e",
+    "stl/assembly/book_skin_floor_lightblue.stl": "3fa70466c6448449426f07f3c0c28df8267b9836b9ec58912ebf78e17ebdd1c5",
+    "stl/assembly/book_skin_floor_red.stl": "4b5d66b31ae2b7b08b06757a4141c3d73f34d6bbde8ef10c01b38f94e3b9d574",
+    "stl/assembly/book_skin_frontedge_darkblue.stl": "64453837cc5f96b9ba617d025c28b22816d14dd39afe9acc1a91825f75731463",
+    "stl/assembly/book_skin_frontedge_lightblue.stl": "c0f23582793cfd7595b853864697ec097a5675ce99338917f8241d8da00eb5d2",
+    "stl/assembly/book_skin_frontedge_red.stl": "0403c069c4ea2ac0ae5be49a34193bef2bfe5a44c8cff4ebf7297d65d7e7b95c",
+    "stl/assembly/book_skin_toprim_darkblue.stl": "2b81776a41f583100dfc847eba5df4bb2985f1ae5e34852af15b7b6c2b1f5457",
+    "stl/assembly/book_skin_toprim_lightblue.stl": "d5d10ed73686dc550b4fd5361fc096f6df8fe14cd97ab8192e0a9d732f183637",
+    "stl/assembly/book_skin_toprim_red.stl": "8e0b9b0709209bca2650aff1524cda25e4a43c75307c9224248fba9e761f0ee5",
+    "stl/assembly/column_1_segment_1.stl": "c5d2bfa5b73276978795bbd56ed436f2d002285a91ff922ec6743e69bad72690",
+    "stl/assembly/column_1_segment_2.stl": "bd9c0617f17a05b6278fd5f5ae774738bc4a665a0c8a2c8b69337647b4ee8ccf",
+    "stl/assembly/column_1_segment_3.stl": "8426005bf84d3be08fd6c36515060e80a0714b0a12becc8b58412259f6a66698",
+    "stl/assembly/column_1_segment_4.stl": "dcb38a94a6da1b1c008bc769e776224e5f8f0f23a09b43660867b0c34d5ae924",
+    "stl/assembly/column_2_segment_1.stl": "24fbae6fdddf417fac07ea58157b07b333c22a55e74444d272493973bf49ecf3",
+    "stl/assembly/column_2_segment_2.stl": "e6f589c07704ea62b7f7c75fe65b9bc9573e27c0a366540ce8f6f989905c3862",
+    "stl/assembly/column_2_segment_3.stl": "c28b91bc232305759af6215cc81ee61c56c0d62b0cb71c4ba076e845da7ae564",
+    "stl/assembly/column_2_segment_4.stl": "d422f6bda2b13776696dcd5b55030e2a24b45a5b0791326b57f5896a7dd06b73",
+    "stl/assembly/column_3_segment_1.stl": "0d810bf9e576c61a2ed2ebe48b5c6cb7dcc41cebd7a7d427ac6e618b64e5310c",
+    "stl/assembly/column_3_segment_2.stl": "b4bb1a5fe04bfcad46a14a354b91dcb56fe34b6f5d3c7b6953da1a921be71573",
+    "stl/assembly/column_3_segment_3.stl": "5cc033df7e4b6d2c7610e9066c95e5fb6d517d77ee4f3b82667a08dc00e9f21c",
+    "stl/assembly/column_3_segment_4.stl": "4ffe18694d2c21d1804a6dbcd9cee1f030f7dd520c7283d57e7bd6750cf7c177",
+    "stl/assembly/column_4_segment_1.stl": "11c9a719239e50cb15744dfc9e61cad05419db78fc863a89ff93ddf2af844053",
+    "stl/assembly/column_4_segment_2.stl": "c5ccf4da87a9c36cb70954a191f0564e9069bbfe2cc9c10b71ca4d9ff426c86b",
+    "stl/assembly/column_4_segment_3.stl": "7cd3e1058add70c01772731bc359cd5a94a902349650e26e5ae391687ca182aa",
+    "stl/assembly/column_4_segment_4.stl": "95fd226d5420c061c9e2bc25bd4ce720a89f90c2763d514319883c2d903f3053",
+    "stl/assembly/garage_deck_1.stl": "c473f855d49b0c02e2c64dea0a3218a61b98c0036f28dea42a28b4a833d8511f",
+    "stl/assembly/garage_deck_2.stl": "79ba9414a893b5a99728daf59534c66a26be3b2a266bc478f6e51fbf1ea87393",
+    "stl/assembly/garage_deck_3.stl": "becaf192b7456c556594b0c0fdba44ce9d2aecf3269bfcf2b8a3e76ecc8d1228",
+    "stl/assembly/module_1.stl": "bc07236b631da08bd7b54af540fce9a0c974024f854bb818d029f5b22a23ebbb",
+    "stl/assembly/module_2.stl": "5cf1337727faf6f1a3cc9aa66a71e91d5549a293aecf5f88ff846078173436c1",
+    "stl/assembly/module_3.stl": "30a0a1786ea6d4175f7c4b3fb6867317969947ee8ac4104ee640c6f23af3672a",
+    "stl/assembly/side_cartridge.stl": "1051035436dd30992ab727267b7d7e3dffbeeb0de09ea8b40e2ff45995ed615d",
+    "stl/assembly/side_receiver.stl": "2f94a331bc95f8bd0e1a636c75fad2a39bf899d3f192987bf391156ccb224ff1",
+    "stl/assembly/top_carrier.stl": "8616dfe0ee145c37bac687d18497d6366e578e871bcf9b06c7570f8c125889e8",
+    "stl/print/billboard.stl": "e75aa69486dbad8f2115c2e529ea0fb470a046567a1c76349f7d2a0cc711b5eb",
+    "stl/print/book_skin_back_darkblue.stl": "7a3a364d45d7d5c342377d8754bcebc84bd725e9250d037d6eb6a5fe2b3d572c",
+    "stl/print/book_skin_back_lightblue.stl": "e376b9729dc2a490e2008a451149729cc54194281320f26bd38949618a03bbeb",
+    "stl/print/book_skin_back_red.stl": "7a3a364d45d7d5c342377d8754bcebc84bd725e9250d037d6eb6a5fe2b3d572c",
+    "stl/print/book_skin_floor_darkblue.stl": "e3788e638c5bdc6fe11c2e7865f098367a463d9cd41345fdbc27fea1aba2d800",
+    "stl/print/book_skin_floor_lightblue.stl": "86980d836b7843e9655ada2fac20a59773f1a5f8af9e67b483866e8ddaa9518f",
+    "stl/print/book_skin_floor_red.stl": "8b50f448ae84b1ab613d7025123d4ac9d501e184979ddb7c0866e53db80daceb",
+    "stl/print/book_skin_frontedge_darkblue.stl": "75829c488b482c040e931a207ac56a0668649c12c4d0e66c7b3061ee54caef8f",
+    "stl/print/book_skin_frontedge_lightblue.stl": "014c42482287c6fc35deb13a799fc04c0a9c195516062735df2fd00475f08954",
+    "stl/print/book_skin_frontedge_red.stl": "5788050d31d033fb394a5ac013b326e8a392aed357166c04f2eecc5f05979cc8",
+    "stl/print/book_skin_toprim_darkblue.stl": "0f97e133370a2ee552a3aaca31d8c85c517b5974402742645b7633bcd7e688ef",
+    "stl/print/book_skin_toprim_lightblue.stl": "7243d31aeb7a554e77fc9f01a1abf250e11cbf869c77a48e7e3499264ce39eac",
+    "stl/print/book_skin_toprim_red.stl": "d78659937bcf4ab8afcce7598e7cf37e2bf04acaed69e7d52cdeb27de9b44949",
+    "stl/print/column_1_segment_1.stl": "6f4eae81b5d01db417d2f5c3a691bb5f6d8f4cc0413c995ef480159dd464384b",
+    "stl/print/column_1_segment_2.stl": "061d0d580758128985ae23732d11fb81ae6e022790203bcb661b45df73f45f2d",
+    "stl/print/column_1_segment_3.stl": "deb0cff54041bf49df5b91fe6bdc31ff7444e743683bb89f317426bee6f0c5a7",
+    "stl/print/column_1_segment_4.stl": "b65cefa4676ae7ad39a41e9993f2af468e678e02aad636478f00bed1a9328895",
+    "stl/print/column_2_segment_1.stl": "f7bd8b9524fb424035a2a180769c90c535ce2498e8bd82ddd0a9e260ef05e357",
+    "stl/print/column_2_segment_2.stl": "0ee977ecd3682d4a6f137e70ff3b880b8f268a05351fe3c9f1f321bd1468368e",
+    "stl/print/column_2_segment_3.stl": "7ebb18cc3e3c1a32ccb3adbc91956f33912be82e36eea6ad6ad38e060b3eb4a7",
+    "stl/print/column_2_segment_4.stl": "dc97f7f05ecab783246ebb6c68e46dd2d8e6acaf4a473cdbf8a6b22c96db8493",
+    "stl/print/column_3_segment_1.stl": "30d92a9028c43e70ea569da4fd455a14a31dae531537a63f2612a128529ed743",
+    "stl/print/column_3_segment_2.stl": "b9e7de1384131d813f2fecd980f7c7d18657607f54fdcdd17ddbbd95f1682644",
+    "stl/print/column_3_segment_3.stl": "de61408469334f6aaaee4bb823b8f79485b32e464da94c47e9d0d1d32d1a296c",
+    "stl/print/column_3_segment_4.stl": "97c92745c6b0f7f0318be13063f3bdae49d3435107b079626b69cd2d6ac32f06",
+    "stl/print/column_4_segment_1.stl": "28b1c29f0677aa21d22e47ede56afc71b5ececc8e72696510085caaeb3d80ea7",
+    "stl/print/column_4_segment_2.stl": "8aa12f0de9dfb6f681ae007653d69be1048cc880e8cee70813458d40473256fb",
+    "stl/print/column_4_segment_3.stl": "04ef418b167a8112c74255b78808e047d7628fde7f49c5633b773ac312ccf60c",
+    "stl/print/column_4_segment_4.stl": "b61c61229939124ed2de2894c779fe4b053a03d650372b1aff26cf0c5031c280",
+    "stl/print/garage_deck_1.stl": "a0d326b98c8e35d9d1e5e7a4fe03f9b3af5adc96098bd735b4464e1d81b67bc5",
+    "stl/print/garage_deck_2.stl": "8af9f79dcce343c8f509bb9ea5bdd5aaff8d1072b6fab46ee09eb13f154b576a",
+    "stl/print/garage_deck_3.stl": "386c743ef4f5dfc717a33fb4ae2fd29787011775d14b4071d747f27c5e1c60f1",
+    "stl/print/module_1.stl": "da028d3fe50e3cb419fb226b6fcc43b733984d2ea10a92422e14b31345e7527b",
+    "stl/print/module_2.stl": "b992a30bdd58aef5bc944cf37cbc4a0119897ccc7698e91199e1fe4aa247b7ae",
+    "stl/print/module_3.stl": "d391e333f23ca91be60bc88094d110541f6145481cf3a9ca212b7f32cd52067c",
+    "stl/print/side_cartridge.stl": "79f2e908593da21309d32a203de2e5af00ae89a07501ed20381ed63d77796821",
+    "stl/print/side_receiver.stl": "5ec4ce3c772e013e0f37e9266d83350215e9e24a5bbb8df5b3825e10e771b688",
+    "stl/print/top_carrier.stl": "232c1a0935b4ed63f5016fc18ea3cd14b306a0e54789136fc4b0f1e9dd9c51ca",
+    "validation.json": "738ad5191b258d057d2047f94b069a8b141d5bf9eb994f54b568e96bbbde1c34"
+  }
+}

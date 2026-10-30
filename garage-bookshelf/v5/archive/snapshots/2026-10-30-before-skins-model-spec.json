@@ -1,0 +1,62 @@
+{
+  "design_basis": "v4 formal CAD at c407d75; v5 reorganizes files without redesign",
+  "print_parts": [
+    "module_1",
+    "module_2",
+    "module_3",
+    "garage_deck_1",
+    "garage_deck_2",
+    "garage_deck_3",
+    "column_1_segment_1",
+    "column_1_segment_2",
+    "column_1_segment_3",
+    "column_1_segment_4",
+    "column_2_segment_1",
+    "column_2_segment_2",
+    "column_2_segment_3",
+    "column_2_segment_4",
+    "column_3_segment_1",
+    "column_3_segment_2",
+    "column_3_segment_3",
+    "column_3_segment_4",
+    "column_4_segment_1",
+    "column_4_segment_2",
+    "column_4_segment_3",
+    "column_4_segment_4",
+    "billboard",
+    "top_carrier",
+    "side_receiver",
+    "side_cartridge"
+  ],
+  "hardware": [
+    "hardware_screw_1",
+    "hardware_nut_1",
+    "hardware_screw_2",
+    "hardware_nut_2",
+    "hardware_screw_3",
+    "hardware_nut_3",
+    "hardware_screw_4",
+    "hardware_nut_4"
+  ],
+  "samples": [
+    "parking_tray_interface"
+  ],
+  "parameters_mm": {
+    "OverallWidth": 490,
+    "GarageWidth": 200,
+    "DeckThickness": 6.6,
+    "ParkingRecessDepth": 1.6,
+    "FitClearance": 0.3,
+    "TongueLength": 14,
+    "SocketDepth": 14.2,
+    "BillboardBottom": 279.3333333333333,
+    "PostHeight": 129.3333333333333
+  },
+  "parking_floors": {
+    "module_1": 2,
+    "garage_deck_1": 2,
+    "garage_deck_2": 3,
+    "garage_deck_3": 3
+  },
+  "slogan": "HORSEPOWER LEFT, BRAINPOWER RIGHT"
+}

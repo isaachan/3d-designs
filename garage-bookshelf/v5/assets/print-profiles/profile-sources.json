@@ -21,5 +21,22 @@
   },
   "assumed_nozzles": "two standard 0.4 mm; primary head used",
   "default_bed": "Textured PEI Plate",
-  "nozzle_stat_format_source": "https://github.com/bambulab/BambuStudio/blob/master/src/libslic3r/PrintConfig.cpp"
+  "nozzle_stat_format_source": "https://github.com/bambulab/BambuStudio/blob/master/src/libslic3r/PrintConfig.cpp",
+  "derived_palette_profiles": {
+    "PLA-lightblue.json": {
+      "base": "PLA-black.json",
+      "base_sha256": "7e10f990210dae812fc9e49bd7c3ca7b8023da75f8e9abe0345b7048912f8214",
+      "filament_colour": "#39A9DB"
+    },
+    "PLA-darkblue.json": {
+      "base": "PLA-black.json",
+      "base_sha256": "7e10f990210dae812fc9e49bd7c3ca7b8023da75f8e9abe0345b7048912f8214",
+      "filament_colour": "#151B65"
+    },
+    "PLA-red.json": {
+      "base": "PLA-black.json",
+      "base_sha256": "7e10f990210dae812fc9e49bd7c3ca7b8023da75f8e9abe0345b7048912f8214",
+      "filament_colour": "#ED242A"
+    }
+  }
 }

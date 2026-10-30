@@ -24,3 +24,9 @@ def role(body):
 
 def bodies(doc, roles=('print', 'hardware')):
     return [o for o in doc.Objects if o.TypeId == 'PartDesign::Body' and role(o) in roles]
+
+
+def appearance_graphics(doc):
+    separate = doc.getObject('SkinParameters') is not None
+    return [o for o in doc.Objects if 'MColor' in o.PropertiesList
+            and (not separate or o.SurfaceRole == 'Post')]

@@ -30,6 +30,7 @@ def main():
     output = output_directory(args.output, 'print')
     (output / '3mf').mkdir()
     (output / 'logs').mkdir()
+    (output / 'profiles').mkdir()
     TMP.mkdir(parents=True, exist_ok=True)
     records = []
     for plate in plan['plates']:
@@ -40,12 +41,18 @@ def main():
         project = output / '3mf' / (plate['id'] + '.3mf')
         color, supports = plate['color'], plate['supports']
         process = PROFILES / ('PLA-0.20-support-process.json' if supports else 'PLA-0.20-process.json')
+        overrides = plate.get('process_overrides', {})
+        if overrides:
+            config = read_json(process)
+            config.update(overrides)
+            process = output / 'profiles' / (plate['id'] + '-process.json')
+            write_json(process, config)
         with tempfile.TemporaryDirectory(prefix=plate['id'] + '-', dir=TMP) as temp:
             scratch = Path(temp)
             run_cli(['--load-settings', f'{PROFILES / "X2D-0.4-standard-machine.json"};{process}',
                      '--load-filaments', PROFILES / f'PLA-{color}.json', '--orient', '0', '--arrange', '1',
                      '--export-3mf', project, *files], scratch / 'export-state', output / 'logs' / (plate['id'] + '-export.log'))
-            settings = read_settings(project, color, supports)
+            settings = read_settings(project, color, supports, overrides)
             bounds = project_bounds(project)
             assert len(bounds) == len(files)
             sliced = scratch / 'sliced'

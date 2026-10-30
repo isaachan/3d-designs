@@ -1,0 +1,169 @@
+{
+  "status": "passed",
+  "cad_sha256": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e",
+  "reused_plates": [
+    {
+      "id": "01-garage-deck-1",
+      "project_sha256": "e7b8c1ae579b95d5bcf77b7e804ce42c660182baeef00336be5eda296822f8f0",
+      "source_cad_sha256": "654553d530f690143bef0511f210d1ecd6ff9535d49c1409e386777d2b3ee14d",
+      "parts": [
+        "garage_deck_1"
+      ],
+      "stl_sha256": {
+        "stl/assembly/garage_deck_1.stl": "c473f855d49b0c02e2c64dea0a3218a61b98c0036f28dea42a28b4a833d8511f",
+        "stl/print/garage_deck_1.stl": "a0d326b98c8e35d9d1e5e7a4fe03f9b3af5adc96098bd735b4464e1d81b67bc5"
+      }
+    },
+    {
+      "id": "02-garage-deck-2",
+      "project_sha256": "ba19dc19342228524b6ea40b215db19bf154aff132ea4e5d45813703a178f56c",
+      "source_cad_sha256": "654553d530f690143bef0511f210d1ecd6ff9535d49c1409e386777d2b3ee14d",
+      "parts": [
+        "garage_deck_2"
+      ],
+      "stl_sha256": {
+        "stl/assembly/garage_deck_2.stl": "79ba9414a893b5a99728daf59534c66a26be3b2a266bc478f6e51fbf1ea87393",
+        "stl/print/garage_deck_2.stl": "8af9f79dcce343c8f509bb9ea5bdd5aaff8d1072b6fab46ee09eb13f154b576a"
+      }
+    },
+    {
+      "id": "03-garage-deck-3",
+      "project_sha256": "6ac1610f3e79886e7c050abe12a831ff8e2052a749ce3a0b5314bbc17d1cc08e",
+      "source_cad_sha256": "654553d530f690143bef0511f210d1ecd6ff9535d49c1409e386777d2b3ee14d",
+      "parts": [
+        "garage_deck_3"
+      ],
+      "stl_sha256": {
+        "stl/assembly/garage_deck_3.stl": "becaf192b7456c556594b0c0fdba44ce9d2aecf3269bfcf2b8a3e76ecc8d1228",
+        "stl/print/garage_deck_3.stl": "386c743ef4f5dfc717a33fb4ae2fd29787011775d14b4071d747f27c5e1c60f1"
+      }
+    },
+    {
+      "id": "04-module-1",
+      "project_sha256": "39aa467996e9afbdf59b9d9adb25c4391989aa2889b0eba0f4bd625f00e9a3cd",
+      "source_cad_sha256": "654553d530f690143bef0511f210d1ecd6ff9535d49c1409e386777d2b3ee14d",
+      "parts": [
+        "module_1"
+      ],
+      "stl_sha256": {
+        "stl/assembly/module_1.stl": "bc07236b631da08bd7b54af540fce9a0c974024f854bb818d029f5b22a23ebbb",
+        "stl/print/module_1.stl": "da028d3fe50e3cb419fb226b6fcc43b733984d2ea10a92422e14b31345e7527b"
+      }
+    },
+    {
+      "id": "07-support-segments",
+      "project_sha256": "4a65e2af172e9ae4ca9506817cc67753e1f38e511f030903934f5c4253b4fc78",
+      "source_cad_sha256": "654553d530f690143bef0511f210d1ecd6ff9535d49c1409e386777d2b3ee14d",
+      "parts": [
+        "column_1_segment_1",
+        "column_1_segment_2",
+        "column_1_segment_3",
+        "column_2_segment_1",
+        "column_2_segment_2",
+        "column_2_segment_3",
+        "column_3_segment_1",
+        "column_3_segment_2",
+        "column_3_segment_3",
+        "column_4_segment_1",
+        "column_4_segment_2",
+        "column_4_segment_3"
+      ],
+      "stl_sha256": {
+        "stl/assembly/column_1_segment_1.stl": "c5d2bfa5b73276978795bbd56ed436f2d002285a91ff922ec6743e69bad72690",
+        "stl/print/column_1_segment_1.stl": "6f4eae81b5d01db417d2f5c3a691bb5f6d8f4cc0413c995ef480159dd464384b",
+        "stl/assembly/column_1_segment_2.stl": "bd9c0617f17a05b6278fd5f5ae774738bc4a665a0c8a2c8b69337647b4ee8ccf",
+        "stl/print/column_1_segment_2.stl": "061d0d580758128985ae23732d11fb81ae6e022790203bcb661b45df73f45f2d",
+        "stl/assembly/column_1_segment_3.stl": "8426005bf84d3be08fd6c36515060e80a0714b0a12becc8b58412259f6a66698",
+        "stl/print/column_1_segment_3.stl": "deb0cff54041bf49df5b91fe6bdc31ff7444e743683bb89f317426bee6f0c5a7",
+        "stl/assembly/column_2_segment_1.stl": "24fbae6fdddf417fac07ea58157b07b333c22a55e74444d272493973bf49ecf3",
+        "stl/print/column_2_segment_1.stl": "f7bd8b9524fb424035a2a180769c90c535ce2498e8bd82ddd0a9e260ef05e357",
+        "stl/assembly/column_2_segment_2.stl": "e6f589c07704ea62b7f7c75fe65b9bc9573e27c0a366540ce8f6f989905c3862",
+        "stl/print/column_2_segment_2.stl": "0ee977ecd3682d4a6f137e70ff3b880b8f268a05351fe3c9f1f321bd1468368e",
+        "stl/assembly/column_2_segment_3.stl": "c28b91bc232305759af6215cc81ee61c56c0d62b0cb71c4ba076e845da7ae564",
+        "stl/print/column_2_segment_3.stl": "7ebb18cc3e3c1a32ccb3adbc91956f33912be82e36eea6ad6ad38e060b3eb4a7",
+        "stl/assembly/column_3_segment_1.stl": "0d810bf9e576c61a2ed2ebe48b5c6cb7dcc41cebd7a7d427ac6e618b64e5310c",
+        "stl/print/column_3_segment_1.stl": "30d92a9028c43e70ea569da4fd455a14a31dae531537a63f2612a128529ed743",
+        "stl/assembly/column_3_segment_2.stl": "b4bb1a5fe04bfcad46a14a354b91dcb56fe34b6f5d3c7b6953da1a921be71573",
+        "stl/print/column_3_segment_2.stl": "b9e7de1384131d813f2fecd980f7c7d18657607f54fdcdd17ddbbd95f1682644",
+        "stl/assembly/column_3_segment_3.stl": "5cc033df7e4b6d2c7610e9066c95e5fb6d517d77ee4f3b82667a08dc00e9f21c",
+        "stl/print/column_3_segment_3.stl": "de61408469334f6aaaee4bb823b8f79485b32e464da94c47e9d0d1d32d1a296c",
+        "stl/assembly/column_4_segment_1.stl": "11c9a719239e50cb15744dfc9e61cad05419db78fc863a89ff93ddf2af844053",
+        "stl/print/column_4_segment_1.stl": "28b1c29f0677aa21d22e47ede56afc71b5ececc8e72696510085caaeb3d80ea7",
+        "stl/assembly/column_4_segment_2.stl": "c5ccf4da87a9c36cb70954a191f0564e9069bbfe2cc9c10b71ca4d9ff426c86b",
+        "stl/print/column_4_segment_2.stl": "8aa12f0de9dfb6f681ae007653d69be1048cc880e8cee70813458d40473256fb",
+        "stl/assembly/column_4_segment_3.stl": "7cd3e1058add70c01772731bc359cd5a94a902349650e26e5ae391687ca182aa",
+        "stl/print/column_4_segment_3.stl": "04ef418b167a8112c74255b78808e047d7628fde7f49c5633b773ac312ccf60c"
+      }
+    },
+    {
+      "id": "08-top-segments",
+      "project_sha256": "f0c84ad276b13bc695a5eb4d72ec88824810e91e7583d1410c432cded83c1a41",
+      "source_cad_sha256": "654553d530f690143bef0511f210d1ecd6ff9535d49c1409e386777d2b3ee14d",
+      "parts": [
+        "column_1_segment_4",
+        "column_2_segment_4",
+        "column_3_segment_4",
+        "column_4_segment_4"
+      ],
+      "stl_sha256": {
+        "stl/assembly/column_1_segment_4.stl": "dcb38a94a6da1b1c008bc769e776224e5f8f0f23a09b43660867b0c34d5ae924",
+        "stl/print/column_1_segment_4.stl": "b65cefa4676ae7ad39a41e9993f2af468e678e02aad636478f00bed1a9328895",
+        "stl/assembly/column_2_segment_4.stl": "d422f6bda2b13776696dcd5b55030e2a24b45a5b0791326b57f5896a7dd06b73",
+        "stl/print/column_2_segment_4.stl": "dc97f7f05ecab783246ebb6c68e46dd2d8e6acaf4a473cdbf8a6b22c96db8493",
+        "stl/assembly/column_3_segment_4.stl": "4ffe18694d2c21d1804a6dbcd9cee1f030f7dd520c7283d57e7bd6750cf7c177",
+        "stl/print/column_3_segment_4.stl": "97c92745c6b0f7f0318be13063f3bdae49d3435107b079626b69cd2d6ac32f06",
+        "stl/assembly/column_4_segment_4.stl": "95fd226d5420c061c9e2bc25bd4ce720a89f90c2763d514319883c2d903f3053",
+        "stl/print/column_4_segment_4.stl": "b61c61229939124ed2de2894c779fe4b053a03d650372b1aff26cf0c5031c280"
+      }
+    },
+    {
+      "id": "09-billboard",
+      "project_sha256": "d16d5053dc2758e94b6585eb9acb3c9b946ffbfee4c4b52d807bb7f4ea56ed05",
+      "source_cad_sha256": "654553d530f690143bef0511f210d1ecd6ff9535d49c1409e386777d2b3ee14d",
+      "parts": [
+        "billboard"
+      ],
+      "stl_sha256": {
+        "stl/assembly/billboard.stl": "1112397133324d9e2e202f4e5d121d4e4c8b83e97f3c80a1a75466f566028fdd",
+        "stl/print/billboard.stl": "e75aa69486dbad8f2115c2e529ea0fb470a046567a1c76349f7d2a0cc711b5eb"
+      }
+    },
+    {
+      "id": "10-top-carrier",
+      "project_sha256": "5b0f074f3ff5fca6a27c69552e4e37294b13e5ea30adb2506520278cabaeb3a4",
+      "source_cad_sha256": "654553d530f690143bef0511f210d1ecd6ff9535d49c1409e386777d2b3ee14d",
+      "parts": [
+        "top_carrier"
+      ],
+      "stl_sha256": {
+        "stl/assembly/top_carrier.stl": "8616dfe0ee145c37bac687d18497d6366e578e871bcf9b06c7570f8c125889e8",
+        "stl/print/top_carrier.stl": "232c1a0935b4ed63f5016fc18ea3cd14b306a0e54789136fc4b0f1e9dd9c51ca"
+      }
+    },
+    {
+      "id": "11-side-receiver",
+      "project_sha256": "b51b4d87b692c9a7a2d8fe36d0bd925353facad6cb4dc58b258dd5ceeccf3a69",
+      "source_cad_sha256": "654553d530f690143bef0511f210d1ecd6ff9535d49c1409e386777d2b3ee14d",
+      "parts": [
+        "side_receiver"
+      ],
+      "stl_sha256": {
+        "stl/assembly/side_receiver.stl": "2f94a331bc95f8bd0e1a636c75fad2a39bf899d3f192987bf391156ccb224ff1",
+        "stl/print/side_receiver.stl": "5ec4ce3c772e013e0f37e9266d83350215e9e24a5bbb8df5b3825e10e771b688"
+      }
+    },
+    {
+      "id": "12-side-cartridge",
+      "project_sha256": "1f8ea8bd151215543101fe67fa4ffef4e5a2df11c43ba4274e29b4a1be2e113d",
+      "source_cad_sha256": "654553d530f690143bef0511f210d1ecd6ff9535d49c1409e386777d2b3ee14d",
+      "parts": [
+        "side_cartridge"
+      ],
+      "stl_sha256": {
+        "stl/assembly/side_cartridge.stl": "1051035436dd30992ab727267b7d7e3dffbeeb0de09ea8b40e2ff45995ed615d",
+        "stl/print/side_cartridge.stl": "79f2e908593da21309d32a203de2e5af00ae89a07501ed20381ed63d77796821"
+      }
+    }
+  ],
+  "physical_print_and_fit_tested": false
+}

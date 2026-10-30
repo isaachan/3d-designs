@@ -1,7 +1,7 @@
 {
-  "status": "draft",
-  "color_mode": "single-material per plate",
-  "note": "Current solid parts only. Review supports, brim spacing and how to reproduce CAD surface colors before approving a full print release.",
+  "status": "approved",
+  "color_mode": "CAD face colors; black recessed book bodies and flush color inlays",
+  "note": "Option 3 corrected to flush seated inlays. Replace ONLY 05,06,13,14,15; other ten plates and their interfaces remain unchanged. Physical fit not yet tested.",
   "plates": [
     {
       "id": "01-garage-deck-1",
@@ -9,7 +9,8 @@
       "parts": [
         "garage_deck_1"
       ],
-      "supports": false
+      "supports": false,
+      "color_mode": "cad-painted"
     },
     {
       "id": "02-garage-deck-2",
@@ -17,7 +18,8 @@
       "parts": [
         "garage_deck_2"
       ],
-      "supports": false
+      "supports": false,
+      "color_mode": "cad-painted"
     },
     {
       "id": "03-garage-deck-3",
@@ -25,7 +27,8 @@
       "parts": [
         "garage_deck_3"
       ],
-      "supports": false
+      "supports": false,
+      "color_mode": "cad-painted"
     },
     {
       "id": "04-module-1",
@@ -33,7 +36,8 @@
       "parts": [
         "module_1"
       ],
-      "supports": false
+      "supports": false,
+      "color_mode": "cad-painted"
     },
     {
       "id": "05-module-2",
@@ -41,7 +45,13 @@
       "parts": [
         "module_2"
       ],
-      "supports": true
+      "supports": true,
+      "process_overrides": {
+        "layer_height": "0.2",
+        "top_shell_layers": "4",
+        "bottom_shell_layers": "3"
+      },
+      "color_mode": "single"
     },
     {
       "id": "06-module-3",
@@ -49,7 +59,13 @@
       "parts": [
         "module_3"
       ],
-      "supports": true
+      "supports": true,
+      "process_overrides": {
+        "layer_height": "0.2",
+        "top_shell_layers": "4",
+        "bottom_shell_layers": "3"
+      },
+      "color_mode": "single"
     },
     {
       "id": "07-support-segments",
@@ -68,7 +84,8 @@
         "column_4_segment_2",
         "column_4_segment_3"
       ],
-      "supports": false
+      "supports": false,
+      "color_mode": "single"
     },
     {
       "id": "08-top-segments",
@@ -79,7 +96,8 @@
         "column_3_segment_4",
         "column_4_segment_4"
       ],
-      "supports": false
+      "supports": false,
+      "color_mode": "single"
     },
     {
       "id": "09-billboard",
@@ -87,7 +105,8 @@
       "parts": [
         "billboard"
       ],
-      "supports": false
+      "supports": false,
+      "color_mode": "cad-painted"
     },
     {
       "id": "10-top-carrier",
@@ -95,15 +114,17 @@
       "parts": [
         "top_carrier"
       ],
-      "supports": false
+      "supports": false,
+      "color_mode": "cad-painted"
     },
     {
       "id": "11-side-receiver",
-      "color": "blue",
+      "color": "black",
       "parts": [
         "side_receiver"
       ],
-      "supports": false
+      "supports": false,
+      "color_mode": "single"
     },
     {
       "id": "12-side-cartridge",
@@ -111,7 +132,65 @@
       "parts": [
         "side_cartridge"
       ],
-      "supports": false
+      "supports": false,
+      "color_mode": "cad-painted"
+    },
+    {
+      "id": "13-book-skins-lightblue",
+      "color": "lightblue",
+      "parts": [
+        "book_skin_back_lightblue",
+        "book_skin_floor_lightblue",
+        "book_skin_toprim_lightblue",
+        "book_skin_frontedge_lightblue"
+      ],
+      "supports": false,
+      "process_overrides": {
+        "layer_height": "0.2",
+        "wall_loops": "3",
+        "top_shell_layers": "3",
+        "bottom_shell_layers": "3",
+        "enable_prime_tower": "0"
+      },
+      "color_mode": "single"
+    },
+    {
+      "id": "14-book-skins-darkblue",
+      "color": "darkblue",
+      "parts": [
+        "book_skin_back_darkblue",
+        "book_skin_floor_darkblue",
+        "book_skin_toprim_darkblue",
+        "book_skin_frontedge_darkblue"
+      ],
+      "supports": false,
+      "process_overrides": {
+        "layer_height": "0.2",
+        "wall_loops": "3",
+        "top_shell_layers": "3",
+        "bottom_shell_layers": "3",
+        "enable_prime_tower": "0"
+      },
+      "color_mode": "single"
+    },
+    {
+      "id": "15-book-skins-red",
+      "color": "red",
+      "parts": [
+        "book_skin_back_red",
+        "book_skin_floor_red",
+        "book_skin_toprim_red",
+        "book_skin_frontedge_red"
+      ],
+      "supports": false,
+      "process_overrides": {
+        "layer_height": "0.2",
+        "wall_loops": "3",
+        "top_shell_layers": "3",
+        "bottom_shell_layers": "3",
+        "enable_prime_tower": "0"
+      },
+      "color_mode": "single"
     }
   ]
 }

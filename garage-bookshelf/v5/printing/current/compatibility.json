@@ -1,0 +1,388 @@
+{
+  "status": "passed",
+  "previous_cad_sha256": "654553d530f690143bef0511f210d1ecd6ff9535d49c1409e386777d2b3ee14d",
+  "cad_sha256": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e",
+  "unchanged_bodies": [
+    "module_1",
+    "garage_deck_1",
+    "garage_deck_2",
+    "garage_deck_3",
+    "column_1_segment_1",
+    "column_1_segment_2",
+    "column_1_segment_3",
+    "column_1_segment_4",
+    "column_2_segment_1",
+    "column_2_segment_2",
+    "column_2_segment_3",
+    "column_2_segment_4",
+    "column_3_segment_1",
+    "column_3_segment_2",
+    "column_3_segment_3",
+    "column_3_segment_4",
+    "column_4_segment_1",
+    "column_4_segment_2",
+    "column_4_segment_3",
+    "column_4_segment_4",
+    "billboard",
+    "top_carrier",
+    "side_receiver",
+    "side_cartridge",
+    "hardware_screw_1",
+    "hardware_nut_1",
+    "hardware_screw_2",
+    "hardware_nut_2",
+    "hardware_screw_3",
+    "hardware_nut_3",
+    "hardware_screw_4",
+    "hardware_nut_4",
+    "parking_tray_interface"
+  ],
+  "checks": [
+    {
+      "part": "module_2",
+      "protected_interface_difference_mm3": 0.0
+    },
+    {
+      "part": "module_3",
+      "protected_interface_difference_mm3": 0.0
+    },
+    {
+      "part": "book_skin_back_lightblue",
+      "front_plane_mm": 159.0,
+      "nominal_plane_mm": 159,
+      "thickness_mm": 0.6000000000000512
+    },
+    {
+      "part": "book_skin_floor_lightblue",
+      "front_plane_mm": 8.0,
+      "nominal_plane_mm": 8,
+      "thickness_mm": 0.6000000000000112
+    },
+    {
+      "part": "book_skin_toprim_lightblue",
+      "front_plane_mm": 238.0,
+      "nominal_plane_mm": 238,
+      "thickness_mm": 0.5999999999999943
+    },
+    {
+      "part": "book_skin_frontedge_lightblue",
+      "front_plane_mm": 0.0,
+      "nominal_plane_mm": 0,
+      "thickness_mm": 0.600000000000002
+    },
+    {
+      "part": "book_skin_back_darkblue",
+      "front_plane_mm": 159.0,
+      "nominal_plane_mm": 159,
+      "thickness_mm": 0.6000000000000512
+    },
+    {
+      "part": "book_skin_floor_darkblue",
+      "front_plane_mm": 8.0,
+      "nominal_plane_mm": 8,
+      "thickness_mm": 0.6000000000000112
+    },
+    {
+      "part": "book_skin_toprim_darkblue",
+      "front_plane_mm": 238.0,
+      "nominal_plane_mm": 238,
+      "thickness_mm": 0.5999999999999943
+    },
+    {
+      "part": "book_skin_frontedge_darkblue",
+      "front_plane_mm": 0.0,
+      "nominal_plane_mm": 0,
+      "thickness_mm": 0.600000000000002
+    },
+    {
+      "part": "book_skin_back_red",
+      "front_plane_mm": 159.0,
+      "nominal_plane_mm": 159,
+      "thickness_mm": 0.6000000000000512
+    },
+    {
+      "part": "book_skin_floor_red",
+      "front_plane_mm": 8.0,
+      "nominal_plane_mm": 8,
+      "thickness_mm": 0.6000000000000112
+    },
+    {
+      "part": "book_skin_toprim_red",
+      "front_plane_mm": 238.0,
+      "nominal_plane_mm": 238,
+      "thickness_mm": 0.5999999999999943
+    },
+    {
+      "part": "book_skin_frontedge_red",
+      "front_plane_mm": 0.0,
+      "nominal_plane_mm": 0,
+      "thickness_mm": 0.600000000000002
+    }
+  ],
+  "pockets": [
+    {
+      "core": "module_2",
+      "skin": "book_skin_back_lightblue",
+      "kind": "Seat",
+      "removed_mm3": 4669.038815301494
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_back_lightblue",
+      "kind": "Seat",
+      "removed_mm3": 1238.1799834701233
+    },
+    {
+      "core": "module_2",
+      "skin": "book_skin_back_lightblue",
+      "kind": "GlueWell",
+      "removed_mm3": 1388.6370756373508
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_back_lightblue",
+      "kind": "GlueWell",
+      "removed_mm3": 356.676659316523
+    },
+    {
+      "core": "module_2",
+      "skin": "book_skin_floor_lightblue",
+      "kind": "Seat",
+      "removed_mm3": 3946.966707562562
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_floor_lightblue",
+      "kind": "Seat",
+      "removed_mm3": 75.38004459766671
+    },
+    {
+      "core": "module_2",
+      "skin": "book_skin_floor_lightblue",
+      "kind": "GlueWell",
+      "removed_mm3": 1179.9349026445998
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_floor_lightblue",
+      "kind": "GlueWell",
+      "removed_mm3": 14.617226440575905
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_toprim_lightblue",
+      "kind": "Seat",
+      "removed_mm3": 111.76863122882787
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_toprim_lightblue",
+      "kind": "GlueWell",
+      "removed_mm3": 10.0059135009069
+    },
+    {
+      "core": "module_2",
+      "skin": "book_skin_frontedge_lightblue",
+      "kind": "Seat",
+      "removed_mm3": 153.29532917228062
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_frontedge_lightblue",
+      "kind": "Seat",
+      "removed_mm3": 48.64110801927745
+    },
+    {
+      "core": "module_2",
+      "skin": "book_skin_frontedge_lightblue",
+      "kind": "GlueWell",
+      "removed_mm3": 30.199275622493587
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_frontedge_lightblue",
+      "kind": "GlueWell",
+      "removed_mm3": 8.285007106838748
+    },
+    {
+      "core": "module_2",
+      "skin": "book_skin_back_darkblue",
+      "kind": "Seat",
+      "removed_mm3": 2603.8084462647093
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_back_darkblue",
+      "kind": "Seat",
+      "removed_mm3": 3197.0735343483975
+    },
+    {
+      "core": "module_2",
+      "skin": "book_skin_back_darkblue",
+      "kind": "GlueWell",
+      "removed_mm3": 783.4765206625452
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_back_darkblue",
+      "kind": "GlueWell",
+      "removed_mm3": 963.6972111215582
+    },
+    {
+      "core": "module_2",
+      "skin": "book_skin_floor_darkblue",
+      "kind": "Seat",
+      "removed_mm3": 2767.7125812460436
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_floor_darkblue",
+      "kind": "Seat",
+      "removed_mm3": 1215.5815153756412
+    },
+    {
+      "core": "module_2",
+      "skin": "book_skin_floor_darkblue",
+      "kind": "GlueWell",
+      "removed_mm3": 841.9876499130623
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_floor_darkblue",
+      "kind": "GlueWell",
+      "removed_mm3": 350.65347923652735
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_toprim_darkblue",
+      "kind": "Seat",
+      "removed_mm3": 110.84984240017366
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_toprim_darkblue",
+      "kind": "GlueWell",
+      "removed_mm3": 10.005913492990658
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_frontedge_darkblue",
+      "kind": "Seat",
+      "removed_mm3": 200.26830310944933
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_frontedge_darkblue",
+      "kind": "GlueWell",
+      "removed_mm3": 38.48428247519769
+    },
+    {
+      "core": "module_2",
+      "skin": "book_skin_back_red",
+      "kind": "Seat",
+      "removed_mm3": 1098.2715998665662
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_back_red",
+      "kind": "Seat",
+      "removed_mm3": 4760.257528804592
+    },
+    {
+      "core": "module_2",
+      "skin": "book_skin_back_red",
+      "kind": "GlueWell",
+      "removed_mm3": 310.01005021086894
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_back_red",
+      "kind": "GlueWell",
+      "removed_mm3": 1435.820007965318
+    },
+    {
+      "core": "module_2",
+      "skin": "book_skin_floor_red",
+      "kind": "Seat",
+      "removed_mm3": 1005.9012053661281
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_floor_red",
+      "kind": "Seat",
+      "removed_mm3": 2977.445152672124
+    },
+    {
+      "core": "module_2",
+      "skin": "book_skin_floor_red",
+      "kind": "GlueWell",
+      "removed_mm3": 303.00078797678
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_floor_red",
+      "kind": "GlueWell",
+      "removed_mm3": 889.9146665548906
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_toprim_red",
+      "kind": "Seat",
+      "removed_mm3": 110.90036555682309
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_toprim_red",
+      "kind": "GlueWell",
+      "removed_mm3": 10.0003967594821
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_frontedge_red",
+      "kind": "Seat",
+      "removed_mm3": 200.28635230998043
+    },
+    {
+      "core": "module_3",
+      "skin": "book_skin_frontedge_red",
+      "kind": "GlueWell",
+      "removed_mm3": 38.5755995149957
+    }
+  ],
+  "physical_print_and_fit_tested": false,
+  "manufacturing_mm": {
+    "inlay_thickness": 0.6,
+    "seat_depth": 0.6,
+    "glue_well_depth": 0.2,
+    "seat_width": 1.5,
+    "side_clearance": 0.15,
+    "body_layer_height": 0.2,
+    "corner_clearance": 0.1
+  },
+  "untouched_existing_3mf_files": true,
+  "corner_clearances_mm": {
+    "lightblue": {
+      "front_floor": 0.09999999999999176,
+      "floor_back": 0.09999999999999432,
+      "back_toprim": 0.09999999999993747
+    },
+    "darkblue": {
+      "front_floor": 0.09999999999999176,
+      "floor_back": 0.09999999999999432,
+      "back_toprim": 0.09999999999993747
+    },
+    "red": {
+      "front_floor": 0.09999999999999176,
+      "floor_back": 0.09999999999999432,
+      "back_toprim": 0.09999999999993747
+    }
+  },
+  "full_dependency_recompute_passed": true,
+  "view_only_update": {
+    "previous_cad_sha256": "aded0763715dff056e1dfeadd7b6cb2d304c98cd67fd1b75566cc54eb69c2cc3",
+    "changed_members": [
+      "GuiDocument.xml"
+    ],
+    "all_native_geometry_members_byte_identical": true
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "source_cad": "cad/garage-bookshelf-v5-assembly.FCStd",
+  "cad_sha256": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e",
+  "source_git_commit": "495dba6810bfd591cb3464e1e64840f4ed105a07",
+  "code_files_sha256": {
+    "src/garage_bookshelf/__init__.py": "2d97f949fc8d8d91881de12541b429989db1daafca44a7a55af69dceb64b65d9",
+    "src/garage_bookshelf/appearance/__init__.py": "2d97f949fc8d8d91881de12541b429989db1daafca44a7a55af69dceb64b65d9",
+    "src/garage_bookshelf/appearance/palette.py": "9414e1ccf6611a7c03df27b2444061d552e8149baa3a145665a93e4748031568",
+    "src/garage_bookshelf/appearance/storage.py": "f630ba450db337fffda9e60d6a01b6016a3f3720dc2e342cb13ea3e5eba88d08",
+    "src/garage_bookshelf/appearance/view.py": "c6d7dd6b6dcf7a3396fa438ddbb4ebeabfd33a07ca0b0ba3a7f77735f80d98f5",
+    "src/garage_bookshelf/assembly.py": "9f8305aea7dd00662df44ef3b3e112a4388b5a150ab5ca8e0118ea98133b0f77",
+    "src/garage_bookshelf/connectors.py": "240b7e813be2130f0709b862ae3f4c1b018189b1d734286f0d16eedf4459e5e1",
+    "src/garage_bookshelf/exporting.py": "439fef4d80cd4c7ad4b85fc600318dcb0a9dba61e4b5809204b9e362fb924d74",
+    "src/garage_bookshelf/flush_inlays.py": "50c47721658a3b5db07a8e349363ff7de775c7dbf78abe8de4f401f84ec4b249",
+    "src/garage_bookshelf/geometry/__init__.py": "2d97f949fc8d8d91881de12541b429989db1daafca44a7a55af69dceb64b65d9",
+    "src/garage_bookshelf/geometry/features.py": "ab8ab168c88df2a718a2771591d99134cd1a0249f684d50575cafb85ad9ba4d5",
+    "src/garage_bookshelf/geometry/sketches.py": "ffa919e90c330e387b04c747c74cb08efcd595c4956b35f6568c765d9a63b8df",
+    "src/garage_bookshelf/lettering.py": "57fccce30b317a6f0c51de2270996fe423b81e12b6f5a0d63499ddbfc511ac6b",
+    "src/garage_bookshelf/parameters.py": "83b89c105c96133387855fbd2afcc59ad722e16fb63d383054f0d70beb81202f",
+    "src/garage_bookshelf/parking/__init__.py": "2d97f949fc8d8d91881de12541b429989db1daafca44a7a55af69dceb64b65d9",
+    "src/garage_bookshelf/parking/layout.py": "b39a9a19c8f3e52451bf26d3168ce27b1c73504f6e1f3177b09fbc051c164016",
+    "src/garage_bookshelf/parking/markings.py": "d88b9112abdcf68321f7b93c1569a8264f136eaff1aad2fce206ebedbf50c0ff",
+    "src/garage_bookshelf/parking/recesses.py": "e07df9aa61e9f728f84779ea1c4647657ba2737a337c1f50b8bcf6bd4a26ddc5",
+    "src/garage_bookshelf/parking/vectors.py": "f9ff64682fd21fdad6a28b095a2ff8ad9ad8f713650503ae2c5779870613bcbf",
+    "src/garage_bookshelf/paths.py": "9cc47a44d8aeeb735c11e5b1a677b7316718317e55f469ad6032e5649f1ca320",
+    "src/garage_bookshelf/printing/__init__.py": "2d97f949fc8d8d91881de12541b429989db1daafca44a7a55af69dceb64b65d9",
+    "src/garage_bookshelf/printing/bambu.py": "af546eb49c4168df2bd7f0cb738013b822ba40d274ee839d718aedb7eb377947",
+    "src/garage_bookshelf/printing/manifests.py": "400716e297adfe471f724a9eb1d23044849b488ce7e9dc6df7ae6f0901456fad",
+    "src/garage_bookshelf/printing/paint.py": "4fe18fa96afc24aa4a6e0414eaf0bfd09acab5d78a686fa14268bc14b73da2bd",
+    "src/garage_bookshelf/printing/threemf.py": "41acd5d66ccc5da1783463520df411f2e0d51005d1b1067c8af3206272786a14",
+    "src/garage_bookshelf/rendering/__init__.py": "2d97f949fc8d8d91881de12541b429989db1daafca44a7a55af69dceb64b65d9",
+    "src/garage_bookshelf/rendering/software.py": "3f85adb8efe131aeb7facd633e4a4aebd0059cca021e0ac29371483d3f1d0f6c",
+    "src/garage_bookshelf/skins.py": "09eb77b109af88f4b95ff75a69055a24d5f19a81dfe3329a3ef3134ce14639ed",
+    "src/garage_bookshelf/specification.py": "d7bd21560d47b5bf85f8047785d08efa1468fa7e8282d06f6f500e89da5eb345",
+    "src/garage_bookshelf/validation.py": "c4a756833eff8805d4389438281cfb95ec4b354a64103da575a729b81978edd0",
+    "tools/_bootstrap.py": "47e70925fff66c3ea03c0b95c42bcd6ac55a42e3cd721cfe5f942f347248611e",
+    "tools/export.py": "9885992f359d30c4e4931969da35c38f0939133d0f3bf6f9d26d876ab2b02240",
+    "tools/implement_flush_inlays.py": "89c2b9592e25b453664dcdb8741cfc357ccd271865fccf1f215166c07e9a6590",
+    "tools/implement_separate_skins.py": "24bc136b87305aa735dfe0746c7cf6394a5f799d6fb90a74656d00a6a814cca2",
+    "tools/make_colored_projects.py": "5c58fc4bc43f39906c4c1ea621ceba1fb97d569fd4800d34f2c09f40a27837ea",
+    "tools/make_print_projects.py": "55a878c3af9d0671daff42aadaaec7401d046ac269e5c461f8889d042072db62",
+    "tools/package_flush_correction.py": "02a1ab55c262d7fce07e01607af30fed6780e28ae3d6240c4157cf22cd0b43a3",
+    "tools/package_release.py": "9381c82c32c00e913001632f90c89eb7067686e732f3631a9d99722d49e877ee",
+    "tools/render.py": "decd968ad41d92be304db37c6a1a57f3ea991229de31725e140ff360c10f9806",
+    "tools/review_cad.py": "45a944c9bccd3546708b553b4c712e27f26263d404e671b5083fc8a1a7c17c12",
+    "tools/validate_cad.py": "aa388d96f2c1e96e58eee8e6d9338b0b918de8ebfad871b22e90b02a10985bc1"
+  },
+  "generated_at": "2026-10-30T11:53:16.443852+00:00",
+  "status": "passed",
+  "scope": "native CAD geometry and assembly",
+  "physical_print_and_fit_tested": false,
+  "checks": [
+    "all native Bodies valid, single-solid, classified; all sketches constrained",
+    "current dimensions, 10 recesses, M3 roles, slogan and zero-thickness appearance",
+    "12 native parametric skins, nominal dimensions, saved colours; black book bodies",
+    "12 inlay fronts flush with original planes; native seating pockets and glue wells",
+    "assembly Body-pair overlap < 0.01 mm^3 (sample excluded)"
+  ],
+  "errors": [],
+  "counts": {
+    "bodies": 47,
+    "sketches": 366,
+    "print": 38,
+    "hardware": 8,
+    "sample": 1
+  },
+  "parking_floors": [
+    {
+      "part": "module_1",
+      "bays": 2,
+      "recesses": 2
+    },
+    {
+      "part": "garage_deck_1",
+      "bays": 2,
+      "recesses": 2
+    },
+    {
+      "part": "garage_deck_2",
+      "bays": 3,
+      "recesses": 3
+    },
+    {
+      "part": "garage_deck_3",
+      "bays": 3,
+      "recesses": 3
+    }
+  ],
+  "appearance_faces": 17,
+  "intersection_pairs_checked": 109,
+  "intersection_check_enabled": true,
+  "assembly_dimensions_mm": [
+    538.0,
+    173.65,
+    343.5333333333333
+  ],
+  "cad_unchanged": true
+}

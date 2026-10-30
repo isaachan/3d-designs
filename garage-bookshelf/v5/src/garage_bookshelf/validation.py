@@ -14,7 +14,7 @@ def validate(cad=CAD, intersections=True):
     doc = None
     try:
         doc = App.openDocument(str(cad))
-        doc.recompute()
+        doc.recompute(None, True, True)
         spec = specification()
         all_bodies = [o for o in doc.Objects if o.TypeId == 'PartDesign::Body']
         categorized = {key: [b for b in all_bodies if role(b) == key]
@@ -50,6 +50,40 @@ def validate(cad=CAD, intersections=True):
         report['parking_floors'] = floor_records
         report['appearance_faces'] = len(graphics)
         report['checks'].append('current dimensions, 10 recesses, M3 roles, slogan and zero-thickness appearance')
+        if spec.get('skin_manufacturing'):
+            contract = spec['skin_manufacturing']
+            from garage_bookshelf.rendering.software import saved_colors
+            from garage_bookshelf.appearance.palette import RGB
+            saved = saved_colors(cad)
+            for key, value in contract['parameters_mm'].items():
+                assert abs(doc.SkinParameters.evalExpression(key).Value-value) < 1e-6, key
+            for name, item in contract['parts'].items():
+                body = doc.getObject(name+'_Body')
+                assert body.SkinColor == item['color'] and body.SkinRole == item['role'], name
+                expected = 'Part::Extrusion' if contract['mode'] == 'flush-seated-inlays' else 'Part::Cut'
+                assert body.Tip.TypeId == 'PartDesign::FeatureBase' and body.BaseFeature.TypeId == expected, name
+                if contract['mode'] == 'flush-seated-inlays':
+                    box = global_shape(body).BoundBox
+                    plane = box.YMin if body.SkinNormal.y else box.ZMax
+                    nominal = {'Back':159, 'FrontEdge':0, 'Floor':8, 'TopRim':238}[body.SkinRole]
+                    assert abs(plane-nominal) < 1e-6, (name, plane, nominal)
+                    thickness = box.YLength if body.SkinNormal.y else box.ZLength
+                    assert abs(thickness-contract['parameters_mm']['SkinThickness']) < 1e-6, name
+                    for kind, offset in [('Seat', .15), ('GlueWell', -1.5)]:
+                        outline = doc.getObject(name+'_'+kind+'Outline')
+                        assert abs(float(outline.Value)-offset)<1e-6 and outline.Shape.isValid(), name
+                colors = saved[body.Tip.Name]
+                assert all(max(abs(a-b) for a,b in zip(rgb,RGB[body.SkinColor])) < 1/255 for rgb in colors), name
+            for name in ('module_2', 'module_3'):
+                body = doc.getObject(name+'_Body')
+                assert all(max(rgb)<.2 for rgb in saved[body.Tip.Name]), name
+            report['checks'].append('12 native parametric skins, nominal dimensions, saved colours; black book bodies')
+            if contract['mode'] == 'flush-seated-inlays':
+                for b in (doc.module_2_Body, doc.module_3_Body):
+                    pockets = [o for o in b.Group if o.TypeId == 'PartDesign::Pocket' and
+                               ('_SeatPocket' in o.Name or '_GlueWellPocket' in o.Name)]
+                    assert pockets and all(o.Shape.isValid() for o in pockets), b.Name
+                report['checks'].append('12 inlay fronts flush with original planes; native seating pockets and glue wells')
         shapes = {b.SourcePart: global_shape(b) for b in bodies(doc)}
         overlap_checks = 0
         if intersections:

@@ -1,5 +1,5 @@
 {
-  "design_basis": "v4 formal CAD at c407d75; v5 reorganizes files without redesign",
+  "design_basis": "Original interfaces retained; 2026-10-30 correction recesses only module_2/module_3 for twelve flush, seated inlays. Other 33 Bodies unchanged.",
   "print_parts": [
     "module_1",
     "module_2",
@@ -26,7 +26,19 @@
     "billboard",
     "top_carrier",
     "side_receiver",
-    "side_cartridge"
+    "side_cartridge",
+    "book_skin_back_lightblue",
+    "book_skin_floor_lightblue",
+    "book_skin_toprim_lightblue",
+    "book_skin_frontedge_lightblue",
+    "book_skin_back_darkblue",
+    "book_skin_floor_darkblue",
+    "book_skin_toprim_darkblue",
+    "book_skin_frontedge_darkblue",
+    "book_skin_back_red",
+    "book_skin_floor_red",
+    "book_skin_toprim_red",
+    "book_skin_frontedge_red"
   ],
   "hardware": [
     "hardware_screw_1",
@@ -58,5 +70,66 @@
     "garage_deck_2": 3,
     "garage_deck_3": 3
   },
-  "slogan": "HORSEPOWER LEFT, BRAINPOWER RIGHT"
+  "slogan": "HORSEPOWER LEFT, BRAINPOWER RIGHT",
+  "skin_manufacturing": {
+    "mode": "flush-seated-inlays",
+    "parameters_mm": {
+      "SkinThickness": 0.6,
+      "AdhesiveGap": 0,
+      "CornerGap": 0.1,
+      "FitClearance": 0.15,
+      "SeatWidth": 1.5,
+      "GlueWellDepth": 0.2
+    },
+    "parts": {
+      "book_skin_back_lightblue": {
+        "color": "LightBlue",
+        "role": "Back"
+      },
+      "book_skin_floor_lightblue": {
+        "color": "LightBlue",
+        "role": "Floor"
+      },
+      "book_skin_toprim_lightblue": {
+        "color": "LightBlue",
+        "role": "TopRim"
+      },
+      "book_skin_frontedge_lightblue": {
+        "color": "LightBlue",
+        "role": "FrontEdge"
+      },
+      "book_skin_back_darkblue": {
+        "color": "DarkBlue",
+        "role": "Back"
+      },
+      "book_skin_floor_darkblue": {
+        "color": "DarkBlue",
+        "role": "Floor"
+      },
+      "book_skin_toprim_darkblue": {
+        "color": "DarkBlue",
+        "role": "TopRim"
+      },
+      "book_skin_frontedge_darkblue": {
+        "color": "DarkBlue",
+        "role": "FrontEdge"
+      },
+      "book_skin_back_red": {
+        "color": "Red",
+        "role": "Back"
+      },
+      "book_skin_floor_red": {
+        "color": "Red",
+        "role": "Floor"
+      },
+      "book_skin_toprim_red": {
+        "color": "Red",
+        "role": "TopRim"
+      },
+      "book_skin_frontedge_red": {
+        "color": "Red",
+        "role": "FrontEdge"
+      }
+    }
+  }
 }

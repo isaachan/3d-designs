@@ -1,7 +1,0 @@
-[2026-10-29 11:03:07.350200] [0x00000001f2cda180] [trace]   Initializing StaticPrintConfigs
-[2026-10-29 11:03:07.372293] [0x00000001f2cda180] [warning] cli mode, Current BambuStudio Version 02.08.02.61
-[2026-10-29 11:03:07.405121] [0x00000001f2cda180] [warning] run:2873, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine_full/Bambu Lab X2D 0.4 nozzle.json
-[2026-10-29 11:03:07.405136] [0x00000001f2cda180] [warning] run:2895, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/process_full/0.20mm Standard @BBL X2D.json
-[2026-10-29 11:03:07.405155] [0x00000001f2cda180] [warning] no filament colors found in projects
-[2026-10-29 11:03:07.406197] [0x00000001f2cda180] [warning] load_nozzle_infos_with_compatibility: building nozzle list from filament map and volume types
-

@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-30",
+  "release_id": "2026-10-30-flush-inlays",
+  "path": "current",
+  "plate_count": 15,
+  "print_part_count": 38,
+  "cad_sha256": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e",
+  "replacement_plate_ids": [
+    "05-module-2",
+    "06-module-3",
+    "13-book-skins-lightblue",
+    "14-book-skins-darkblue",
+    "15-book-skins-red"
+  ],
+  "estimated_seconds": 154739.7156982422,
+  "estimated_filament_g": 1915.7354885339737,
+  "replacement_estimated_seconds": 61303.21716308594,
+  "replacement_estimated_filament_g": 919.0590600967407,
+  "physical_print_and_fit_tested": false,
+  "projects_path": "current/3mf",
+  "archive_path": "garage-bookshelf-v5-flush-inlays-2026-10-30.zip"
+}

@@ -33,6 +33,8 @@ def export(output):
             # The removable signs face -Y; put their broad backs on the bed
             # so the raised lettering and engraved slogan face upwards.
             rotation = -90 if name in ('top_carrier', 'side_cartridge') else 90 if flat else 0
+            if 'SkinColor' in body.PropertiesList:
+                rotation = 90 if body.SkinNormal.y < -.999 else 180
             if rotation:
                 mesh.transform(App.Placement(App.Vector(), App.Rotation(App.Vector(1, 0, 0), rotation)).toMatrix())
             box = mesh.BoundBox

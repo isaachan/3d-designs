@@ -22,6 +22,7 @@ from garage_bookshelf.printing.manifests import verified_manifest
 from garage_bookshelf.printing.paint import PALETTE, leaf, paint_triangle, paint_states
 from garage_bookshelf.printing.threemf import NS, transform, project_bounds
 from garage_bookshelf.rendering.software import saved_colors
+from garage_bookshelf.specification import appearance_graphics
 
 ET.register_namespace('', NS['c'])
 ET.register_namespace('p', NS['p'])
@@ -49,9 +50,7 @@ class CADPaint:
         self.records = {p['part']: p for p in geometry['print_parts']}
         self.colors = saved_colors(CAD)
         self.masks = []
-        for obj in doc.Objects:
-            if 'MColor' not in obj.PropertiesList:
-                continue
+        for obj in appearance_graphics(doc):
             state = next(i+1 for i, (name, _) in enumerate(PALETTE) if name == obj.MColor)
             normal = tuple(obj.DisplayNormal)
             axis = max(range(3), key=lambda i: abs(normal[i]))
@@ -70,6 +69,8 @@ class CADPaint:
         shape = global_shape(body)
         mesh = MeshPart.meshFromShape(Shape=shape, LinearDeflection=.02, AngularDeflection=.12, Relative=False)
         colors = self.colors.get(body.Tip.Name, self.colors.get(body.Name))
+        if len(colors) == 1:
+            colors = colors*len(shape.Faces)
         assert len(colors) == len(shape.Faces), name
         lookup, areas, face_info = {}, defaultdict(float), []
         for face, rgb in zip(shape.Faces, colors):
@@ -153,6 +154,9 @@ class CADPaint:
                 data[path] = ET.tostring(model, encoding='utf-8', xml_declaration=True)
             statistics.append(dict(part=name, base_filament=self.backgrounds[name], **counts, ribbon_face_area_mm2=dict(area_by_state)))
         data['Metadata/model_settings.config'] = ET.tostring(config, encoding='utf-8', xml_declaration=True)
+        settings = json.loads(data['Metadata/project_settings.config'])
+        settings['enable_prime_tower'] = '1' if len(used) > 1 else '0'
+        data['Metadata/project_settings.config'] = json.dumps(settings, ensure_ascii=False, indent=2).encode()
         with ZipFile(target, 'x', ZIP_DEFLATED) as z:
             for path, raw in data.items():
                 z.writestr(path, raw)
@@ -199,6 +203,7 @@ def main():
     single = verified_manifest(args.single_color_dir, 'print-projects')
     assert single['export_manifest_sha256'] == sha(args.export_dir/'manifest.json')
     plan = read_json(ROOT/'printing/plate-plan.json')
+    plates_by_id = {p['id']:p for p in plan['plates']}
     assert single['plan_sha256'] == sha(ROOT/'printing/plate-plan.json')
     if args.only:
         assert set(args.only) <= {p['id'] for p in single['projects']}
@@ -228,17 +233,25 @@ def main():
                 continue
             print('Preparing colour', plate_id, flush=True)
             supports = record['settings']['enable_support'] == '1'
+            process = read_json(PROFILES/('PLA-0.20-support-process.json' if supports else 'PLA-0.20-process.json'))
+            process.update(plates_by_id[plate_id].get('process_overrides', {}))
+            process['enable_prime_tower'] = '1'
+            process_file = out/'profiles'/f'{plate_id}-process.json'
+            write_json(process_file, process)
             project = out/'3mf'/f'{plate_id}-mpower.3mf'
             with tempfile.TemporaryDirectory(prefix='color-', dir=TMP) as temp:
                 scratch = Path(temp)
                 configured, painted = scratch/'configured.3mf', scratch/'painted.3mf'
-                run_cli(['--load-settings', f'{PROFILES / "X2D-0.4-standard-machine.json"};{out / "profiles" / f"process-support-{int(supports)}.json"}',
+                run_cli(['--load-settings', f'{PROFILES / "X2D-0.4-standard-machine.json"};{process_file}',
                          '--load-filaments', ';'.join(map(str, profiles)), '--orient', '0', '--arrange', '0',
                          '--export-3mf', configured,
                          *(args.export_dir / next(p['print_file'] for p in geometry['print_parts'] if p['part'] == name)
                            for name in record['parts'])],
                         scratch/'configure', out/'logs'/f'{plate_id}-configure.log')
                 statistics, used = painter.patch(configured, painted)
+                if plates_by_id[plate_id].get('color_mode') == 'single':
+                    slots = dict(black=1,white=2,lightblue=3,darkblue=4,red=5)
+                    assert used == [slots[plates_by_id[plate_id]['color']]], (plate_id,used)
                 run_cli(['--orient', '0', '--arrange', '1', '--allow-multicolor-oneplate',
                          '--export-3mf', project, painted], scratch/'save', out/'logs'/f'{plate_id}-save.log')
                 bounds = project_bounds(project)
@@ -248,7 +261,9 @@ def main():
                 with ZipFile(project) as z:
                     settings = json.loads(z.read('Metadata/project_settings.config'))
                     assert settings['filament_colour'] == [h for _, h in PALETTE]
-                    assert settings['enable_prime_tower'] == '1'
+                    assert settings['enable_prime_tower'] == ('1' if len(used) > 1 else '0')
+                    for k,v in plates_by_id[plate_id].get('process_overrides', {}).items():
+                        assert settings[k] == v, (plate_id,k,settings[k],v)
                     assert all('paint_color=' in z.read(n).decode() for n in z.namelist()
                                if n.startswith('3D/Objects/') and n.endswith('.model'))
                     persisted_states = set()

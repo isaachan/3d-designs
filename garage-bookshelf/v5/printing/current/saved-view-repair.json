@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "previous_cad_sha256": "aded0763715dff056e1dfeadd7b6cb2d304c98cd67fd1b75566cc54eb69c2cc3",
+  "cad_sha256": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e",
+  "changed_members": [
+    "GuiDocument.xml"
+  ],
+  "all_native_geometry_members_byte_identical": true,
+  "non_tip_features_hidden": true,
+  "display_mode_numeric": true,
+  "saved_gui_xml_checked": true,
+  "stale_view_providers": 0
+}

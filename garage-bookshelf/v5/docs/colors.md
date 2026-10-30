@@ -31,4 +31,6 @@
 
 当前维护入口为`garage_bookshelf.appearance.view.review()`；它调用已拆出的palette模块，不调用历史升级脚本。
 默认不保存CAD。使用`tools/render.py`生成只读预览，输出进入`build/`。
-[2026-10-29带色3MF](../printing/mpower-color-preview-2026-10-29/README.md)已生成并逐盘重开实际切片验证。使用黑、白、浅蓝、深蓝、红5色，槽底近黑外观共用黑色；全套12盘，每盘最多4色。三角涂色边界分辨率0.20mm，不改变几何。实物配色与装配仍待验证。
+[当前完整15盘](../printing/current/README.md)保留实际Bambu配色。05/06为黑色主体，13–15分别为浅蓝、深蓝、红色饰片；其他盘保留原配色。
+
+12个饰片Body已修正为齐平内嵌，胶槽与承托台阶分开。旧书架零厚度色面只作隐藏构造参考，`appearance_graphics()`只保留广告支架外观面。旧外贴版和无色成本包已删除。
