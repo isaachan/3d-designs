@@ -2,6 +2,8 @@
 
 [仅连接片3MF](16-reinforcement-plates-only.3mf) · [正式CAD](../../cad/garage-bookshelf-v5-assembly.FCStd) · [CAD检查](native-validation.json) · [兼容性](cad-implementation.json)
 
+Git入库记录：3MF已包含在本地提交`19f4b1b`（`Add four rear reinforcement plates to garage bookshelf v5`）中，仓库路径为`garage-bookshelf/v5/printing/reinforcement-2026-11-02/16-reinforcement-plates-only.3mf`。文件SHA256记录在[交付清单](package-manifest.json)的`project_sha256`字段。
+
 一盘只含四片相同的60 × 30 × 3 mm矩形连接片。车库—左书架、左书架—右书架两处拼缝，各在背面胶粘上、下两片；已有主体不钻孔、不修改、不重印。原有15盘3MF逐个与Git基线核对，字节未变。
 
 ![背面安装位置](rear-installation.png)
