@@ -1,0 +1,136 @@
+{
+  "status": "passed",
+  "units": "mm",
+  "reopened_native": true,
+  "native_object_count": 1403,
+  "delivery_object_count": 219,
+  "closed_brep_solids": 408,
+  "invalid_objects": [],
+  "invalid_feature_states": [],
+  "fully_constrained_sketches": 381,
+  "road": {
+    "connected_solids": 1,
+    "nominal_clear_width_mm": 70.0,
+    "between_section_sample_count": 1116,
+    "maximum_ideal_surface_deviation_mm": 0.0024049648829612817,
+    "floor_pitch_mm": 63.0,
+    "road_thickness_mm": 6.6,
+    "bridge_checks": [
+      {
+        "floor": 1,
+        "width_mm": 70.0,
+        "top_z_mm": 8.0,
+        "road_seam_gap_mm": 0.0,
+        "garage_seam_gap_mm": 0.0
+      },
+      {
+        "floor": 2,
+        "width_mm": 70.0,
+        "top_z_mm": 71.0,
+        "road_seam_gap_mm": 0.0,
+        "garage_seam_gap_mm": 0.0
+      },
+      {
+        "floor": 3,
+        "width_mm": 70.0,
+        "top_z_mm": 134.0,
+        "road_seam_gap_mm": 0.0,
+        "garage_seam_gap_mm": 0.0
+      },
+      {
+        "floor": 4,
+        "width_mm": 70.0,
+        "top_z_mm": 197.0,
+        "road_seam_gap_mm": 1.4210854715202004e-14,
+        "garage_seam_gap_mm": 0.0
+      }
+    ],
+    "four_f_terminal_y_mm": 40,
+    "blind_holes": 18,
+    "blind_hole_removed_volume_mm3": 1130.948637264315,
+    "top_skin_above_each_hole_checked": true
+  },
+  "supports": {
+    "seat_checks": [
+      {
+        "station": "B1",
+        "level": 1,
+        "arm_column_overlap_mm3": 0.0,
+        "bearing_seat_gap_mm": 0.0,
+        "arm_road_overlap_mm3": 0.0
+      },
+      {
+        "station": "B1",
+        "level": 2,
+        "arm_column_overlap_mm3": 0.0,
+        "bearing_seat_gap_mm": 0.0,
+        "arm_road_overlap_mm3": 0.0
+      },
+      {
+        "station": "B1",
+        "level": 3,
+        "arm_column_overlap_mm3": 0.0,
+        "bearing_seat_gap_mm": 0.0,
+        "arm_road_overlap_mm3": 0.0
+      },
+      {
+        "station": "B2",
+        "level": 1,
+        "arm_column_overlap_mm3": 0.0,
+        "bearing_seat_gap_mm": 0.0,
+        "arm_road_overlap_mm3": 0.0
+      },
+      {
+        "station": "B2",
+        "level": 2,
+        "arm_column_overlap_mm3": 0.0,
+        "bearing_seat_gap_mm": 0.0,
+        "arm_road_overlap_mm3": 0.0
+      },
+      {
+        "station": "B2",
+        "level": 3,
+        "arm_column_overlap_mm3": 0.0,
+        "bearing_seat_gap_mm": 0.0,
+        "arm_road_overlap_mm3": 0.0
+      },
+      {
+        "station": "B3",
+        "level": 1,
+        "arm_column_overlap_mm3": 0.0,
+        "bearing_seat_gap_mm": 0.0,
+        "arm_road_overlap_mm3": 0.0
+      },
+      {
+        "station": "B3",
+        "level": 2,
+        "arm_column_overlap_mm3": 0.0,
+        "bearing_seat_gap_mm": 0.0,
+        "arm_road_overlap_mm3": 0.0
+      },
+      {
+        "station": "B3",
+        "level": 3,
+        "arm_column_overlap_mm3": 0.0,
+        "bearing_seat_gap_mm": 0.0,
+        "arm_road_overlap_mm3": 0.0
+      }
+    ],
+    "unchanged_original_column_instances": 29,
+    "hardware_inclusive_minimum_local_clearance_mm": 47.822605485853316
+  },
+  "step": {
+    "reimport_valid": true,
+    "solids": 408,
+    "volume_delta_mm3": -0.07945469720289111,
+    "maximum_individual_solid_volume_delta_mm3": 0.011192711303010583,
+    "relative_volume_delta": 2.3203124922719615e-08
+  },
+  "envelope_mm": [
+    635.0,
+    366.71380795501,
+    325.0
+  ],
+  "scope": "CAD geometry and specified mating checks. No print segmentation, physical fit, load or vehicle turning certification.",
+  "validation_seconds": 21.26
+}

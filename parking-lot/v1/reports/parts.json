@@ -1,0 +1,2849 @@
+[
+  {
+    "name": "InnerCurb_Rise_1",
+    "label": "InnerCurb_Rise_1",
+    "role": "curb",
+    "color": [
+      0.15000000596046448,
+      0.6499999761581421,
+      0.8399999737739563
+    ],
+    "solids": 1,
+    "volume_mm3": 7271.743146720934,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "OuterCurb_Rise_1",
+    "label": "OuterCurb_Rise_1",
+    "role": "curb",
+    "color": [
+      0.15000000596046448,
+      0.6499999761581421,
+      0.8399999737739563
+    ],
+    "solids": 1,
+    "volume_mm3": 13504.66149730411,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "InnerCurb_Rise_2",
+    "label": "InnerCurb_Rise_2",
+    "role": "curb",
+    "color": [
+      0.10999999940395355,
+      0.15000000596046448,
+      0.4000000059604645
+    ],
+    "solids": 1,
+    "volume_mm3": 7271.74314672788,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "OuterCurb_Rise_2",
+    "label": "OuterCurb_Rise_2",
+    "role": "curb",
+    "color": [
+      0.10999999940395355,
+      0.15000000596046448,
+      0.4000000059604645
+    ],
+    "solids": 1,
+    "volume_mm3": 13504.66149730122,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "InnerCurb_Rise_3",
+    "label": "InnerCurb_Rise_3",
+    "role": "curb",
+    "color": [
+      0.8899999856948853,
+      0.12999999523162842,
+      0.17000000178813934
+    ],
+    "solids": 1,
+    "volume_mm3": 7271.743146722787,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "OuterCurb_Rise_3",
+    "label": "OuterCurb_Rise_3",
+    "role": "curb",
+    "color": [
+      0.8899999856948853,
+      0.12999999523162842,
+      0.17000000178813934
+    ],
+    "solids": 1,
+    "volume_mm3": 13504.661497302923,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "InnerCurb_Landing_1_0",
+    "label": "InnerCurb_Landing_1_0",
+    "role": "curb",
+    "color": [
+      0.15000000596046448,
+      0.6499999761581421,
+      0.8399999737739563
+    ],
+    "solids": 1,
+    "volume_mm3": 586.4306286700833,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "InnerCurb_Landing_1_1",
+    "label": "InnerCurb_Landing_1_1",
+    "role": "curb",
+    "color": [
+      0.15000000596046448,
+      0.6499999761581421,
+      0.8399999737739563
+    ],
+    "solids": 1,
+    "volume_mm3": 586.4306286700901,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "OuterCurb_Landing_1_0",
+    "label": "OuterCurb_Landing_1_0",
+    "role": "curb",
+    "color": [
+      0.15000000596046448,
+      0.6499999761581421,
+      0.8399999737739563
+    ],
+    "solids": 1,
+    "volume_mm3": 520.5695624360674,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "OuterCurb_Landing_1_1",
+    "label": "OuterCurb_Landing_1_1",
+    "role": "curb",
+    "color": [
+      0.15000000596046448,
+      0.6499999761581421,
+      0.8399999737739563
+    ],
+    "solids": 1,
+    "volume_mm3": 520.5695624360665,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "BridgeCurb_1_0",
+    "label": "BridgeCurb_1_0",
+    "role": "curb",
+    "color": [
+      0.15000000596046448,
+      0.6499999761581421,
+      0.8399999737739563
+    ],
+    "solids": 1,
+    "volume_mm3": 947.8362823860753,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "BridgeCurb_1_2",
+    "label": "BridgeCurb_1_2",
+    "role": "curb",
+    "color": [
+      0.15000000596046448,
+      0.6499999761581421,
+      0.8399999737739563
+    ],
+    "solids": 1,
+    "volume_mm3": 947.8362823860748,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "InnerCurb_Landing_2_0",
+    "label": "InnerCurb_Landing_2_0",
+    "role": "curb",
+    "color": [
+      0.15000000596046448,
+      0.6499999761581421,
+      0.8399999737739563
+    ],
+    "solids": 1,
+    "volume_mm3": 586.4306286700919,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "InnerCurb_Landing_2_1",
+    "label": "InnerCurb_Landing_2_1",
+    "role": "curb",
+    "color": [
+      0.10999999940395355,
+      0.15000000596046448,
+      0.4000000059604645
+    ],
+    "solids": 1,
+    "volume_mm3": 586.4306286700969,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "OuterCurb_Landing_2_0",
+    "label": "OuterCurb_Landing_2_0",
+    "role": "curb",
+    "color": [
+      0.15000000596046448,
+      0.6499999761581421,
+      0.8399999737739563
+    ],
+    "solids": 1,
+    "volume_mm3": 520.5695624360728,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "OuterCurb_Landing_2_1",
+    "label": "OuterCurb_Landing_2_1",
+    "role": "curb",
+    "color": [
+      0.10999999940395355,
+      0.15000000596046448,
+      0.4000000059604645
+    ],
+    "solids": 1,
+    "volume_mm3": 520.5695624360679,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "BridgeCurb_2_0",
+    "label": "BridgeCurb_2_0",
+    "role": "curb",
+    "color": [
+      0.15000000596046448,
+      0.6499999761581421,
+      0.8399999737739563
+    ],
+    "solids": 1,
+    "volume_mm3": 947.8362823860753,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "BridgeCurb_2_2",
+    "label": "BridgeCurb_2_2",
+    "role": "curb",
+    "color": [
+      0.15000000596046448,
+      0.6499999761581421,
+      0.8399999737739563
+    ],
+    "solids": 1,
+    "volume_mm3": 947.8362823860748,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "InnerCurb_Landing_3_0",
+    "label": "InnerCurb_Landing_3_0",
+    "role": "curb",
+    "color": [
+      0.10999999940395355,
+      0.15000000596046448,
+      0.4000000059604645
+    ],
+    "solids": 1,
+    "volume_mm3": 586.4306286700853,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "InnerCurb_Landing_3_1",
+    "label": "InnerCurb_Landing_3_1",
+    "role": "curb",
+    "color": [
+      0.8899999856948853,
+      0.12999999523162842,
+      0.17000000178813934
+    ],
+    "solids": 1,
+    "volume_mm3": 586.430628670089,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "OuterCurb_Landing_3_0",
+    "label": "OuterCurb_Landing_3_0",
+    "role": "curb",
+    "color": [
+      0.10999999940395355,
+      0.15000000596046448,
+      0.4000000059604645
+    ],
+    "solids": 1,
+    "volume_mm3": 520.5695624360817,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "OuterCurb_Landing_3_1",
+    "label": "OuterCurb_Landing_3_1",
+    "role": "curb",
+    "color": [
+      0.8899999856948853,
+      0.12999999523162842,
+      0.17000000178813934
+    ],
+    "solids": 1,
+    "volume_mm3": 520.5695624360761,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "BridgeCurb_3_0",
+    "label": "BridgeCurb_3_0",
+    "role": "curb",
+    "color": [
+      0.10999999940395355,
+      0.15000000596046448,
+      0.4000000059604645
+    ],
+    "solids": 1,
+    "volume_mm3": 947.8362823860753,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "BridgeCurb_3_2",
+    "label": "BridgeCurb_3_2",
+    "role": "curb",
+    "color": [
+      0.10999999940395355,
+      0.15000000596046448,
+      0.4000000059604645
+    ],
+    "solids": 1,
+    "volume_mm3": 947.8362823860748,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "InnerCurb_Landing_4_0",
+    "label": "InnerCurb_Landing_4_0",
+    "role": "curb",
+    "color": [
+      0.8899999856948853,
+      0.12999999523162842,
+      0.17000000178813934
+    ],
+    "solids": 1,
+    "volume_mm3": 586.4306286700925,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "InnerCurb_Landing_4_1",
+    "label": "InnerCurb_Landing_4_1",
+    "role": "curb",
+    "color": [
+      0.8899999856948853,
+      0.12999999523162842,
+      0.17000000178813934
+    ],
+    "solids": 1,
+    "volume_mm3": 577.6212371555765,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "OuterCurb_Landing_4_0",
+    "label": "OuterCurb_Landing_4_0",
+    "role": "curb",
+    "color": [
+      0.8899999856948853,
+      0.12999999523162842,
+      0.17000000178813934
+    ],
+    "solids": 1,
+    "volume_mm3": 520.5695624360703,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "BridgeCurb_4_2",
+    "label": "BridgeCurb_4_2",
+    "role": "curb",
+    "color": [
+      0.8899999856948853,
+      0.12999999523162842,
+      0.17000000178813934
+    ],
+    "solids": 1,
+    "volume_mm3": 947.8362823860748,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "Curb_1F_EndStop",
+    "label": "Curb_1F_EndStop",
+    "role": "curb",
+    "color": [
+      0.15000000596046448,
+      0.6499999761581421,
+      0.8399999737739563
+    ],
+    "solids": 1,
+    "volume_mm3": 1183.945185946506,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "Curb_4F_FlushEnd",
+    "label": "Curb_4F_FlushEnd",
+    "role": "curb",
+    "color": [
+      0.8899999856948853,
+      0.12999999523162842,
+      0.17000000178813934
+    ],
+    "solids": 1,
+    "volume_mm3": 2155.8471857774857,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "Foundation_And_1F",
+    "label": "Foundation_And_1F",
+    "role": "foundation",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 590696.0776665324,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "FootPad_1",
+    "label": "FootPad_1",
+    "role": "foot-pad",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 1206.3715789784806,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "FootPad_2",
+    "label": "FootPad_2",
+    "role": "foot-pad",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 1206.3715789784806,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "FootPad_3",
+    "label": "FootPad_3",
+    "role": "foot-pad",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 1206.371578978482,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "FootPad_4",
+    "label": "FootPad_4",
+    "role": "foot-pad",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 1206.3715789784817,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "Deck_2F",
+    "label": "Deck_2F",
+    "role": "garage-deck",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 302723.9668885463,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "Deck_3F",
+    "label": "Deck_3F",
+    "role": "garage-deck",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 302723.9668885463,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "Deck_4F",
+    "label": "Deck_4F",
+    "role": "garage-deck",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 302723.9668885463,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "Garage_BackWall",
+    "label": "Garage_BackWall",
+    "role": "back-wall",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 184560.0,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "A1_Column_1",
+    "label": "A1_Column_1",
+    "role": "original-column",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 9711.114496190014,
+    "source": "garage-bookshelf v5 BRep snapshot: standard"
+  },
+  {
+    "name": "A1_Column_2",
+    "label": "A1_Column_2",
+    "role": "original-column",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 9711.114496190014,
+    "source": "garage-bookshelf v5 BRep snapshot: standard"
+  },
+  {
+    "name": "A1_Column_3",
+    "label": "A1_Column_3",
+    "role": "original-column",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 9711.114496190014,
+    "source": "garage-bookshelf v5 BRep snapshot: standard"
+  },
+  {
+    "name": "A1_Column_4",
+    "label": "A1_Column_4",
+    "role": "original-column",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 4970.45118192301,
+    "source": "garage-bookshelf v5 BRep snapshot: top-cap"
+  },
+  {
+    "name": "A2_Column_1",
+    "label": "A2_Column_1",
+    "role": "original-column",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 9711.114496190012,
+    "source": "garage-bookshelf v5 BRep snapshot: standard"
+  },
+  {
+    "name": "A2_Column_2",
+    "label": "A2_Column_2",
+    "role": "original-column",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 9711.114496190012,
+    "source": "garage-bookshelf v5 BRep snapshot: standard"
+  },
+  {
+    "name": "A2_Column_3",
+    "label": "A2_Column_3",
+    "role": "original-column",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 9711.114496190012,
+    "source": "garage-bookshelf v5 BRep snapshot: standard"
+  },
+  {
+    "name": "A2_Column_4",
+    "label": "A2_Column_4",
+    "role": "original-column",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 4970.451181923008,
+    "source": "garage-bookshelf v5 BRep snapshot: top-cap"
+  },
+  {
+    "name": "A3_Column_1",
+    "label": "A3_Column_1",
+    "role": "original-column",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 9711.114496190014,
+    "source": "garage-bookshelf v5 BRep snapshot: standard"
+  },
+  {
+    "name": "A3_Column_2",
+    "label": "A3_Column_2",
+    "role": "original-column",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 9711.114496190014,
+    "source": "garage-bookshelf v5 BRep snapshot: standard"
+  },
+  {
+    "name": "A3_Column_3",
+    "label": "A3_Column_3",
+    "role": "original-column",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 9711.114496190014,
+    "source": "garage-bookshelf v5 BRep snapshot: standard"
+  },
+  {
+    "name": "A3_Column_4",
+    "label": "A3_Column_4",
+    "role": "original-column",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 4970.45118192301,
+    "source": "garage-bookshelf v5 BRep snapshot: top-cap"
+  },
+  {
+    "name": "A4_Column_1",
+    "label": "A4_Column_1",
+    "role": "original-column",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 9711.114496190014,
+    "source": "garage-bookshelf v5 BRep snapshot: standard"
+  },
+  {
+    "name": "A4_Column_2",
+    "label": "A4_Column_2",
+    "role": "original-column",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 9711.114496190014,
+    "source": "garage-bookshelf v5 BRep snapshot: standard"
+  },
+  {
+    "name": "A4_Column_3",
+    "label": "A4_Column_3",
+    "role": "original-column",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 9711.114496190014,
+    "source": "garage-bookshelf v5 BRep snapshot: standard"
+  },
+  {
+    "name": "A4_Column_4",
+    "label": "A4_Column_4",
+    "role": "original-column",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 4970.451181923008,
+    "source": "garage-bookshelf v5 BRep snapshot: top-cap"
+  },
+  {
+    "name": "B1_height_set_foot",
+    "label": "B1_height_set_foot",
+    "role": "post-base",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 7714.853807180271,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B1_original_standard_segment_1",
+    "label": "B1_original_standard_segment_1",
+    "role": "post-standard",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 9711.114496190019,
+    "source": "garage-bookshelf v5 BRep snapshot"
+  },
+  {
+    "name": "B1_original_standard_segment_2",
+    "label": "B1_original_standard_segment_2",
+    "role": "post-standard",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 9711.114496190019,
+    "source": "garage-bookshelf v5 BRep snapshot"
+  },
+  {
+    "name": "B1_original_top_cap",
+    "label": "B1_original_top_cap",
+    "role": "post-cap",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 4970.451181923016,
+    "source": "garage-bookshelf v5 BRep snapshot"
+  },
+  {
+    "name": "B1_foot_bolt_1",
+    "label": "B1_foot_bolt_1",
+    "role": "foot-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.30046399624442,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B1_foot_top_washer_1",
+    "label": "B1_foot_top_washer_1",
+    "role": "foot-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642601,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B1_foot_bottom_washer_1",
+    "label": "B1_foot_bottom_washer_1",
+    "role": "foot-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642597,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B1_foot_nut_1",
+    "label": "B1_foot_nut_1",
+    "role": "foot-nut",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 45.908843985365394,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B1_foot_bolt_2",
+    "label": "B1_foot_bolt_2",
+    "role": "foot-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.30046399624425,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B1_foot_top_washer_2",
+    "label": "B1_foot_top_washer_2",
+    "role": "foot-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.22101640664257,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B1_foot_bottom_washer_2",
+    "label": "B1_foot_bottom_washer_2",
+    "role": "foot-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642567,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B1_foot_nut_2",
+    "label": "B1_foot_nut_2",
+    "role": "foot-nut",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 45.90884398536534,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B1_Level1_bearing_tab_arm",
+    "label": "B1_Level1_bearing_tab_arm",
+    "role": "arm",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 7774.422154510837,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B1_Level1_road_insert_1",
+    "label": "B1_Level1_road_insert_1",
+    "role": "insert",
+    "color": [
+      0.7799999713897705,
+      0.5600000023841858,
+      0.1899999976158142
+    ],
+    "solids": 1,
+    "volume_mm3": 38.20176666765188,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B1_Level1_road_washer_1",
+    "label": "B1_Level1_road_washer_1",
+    "role": "road-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642542,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B1_Level1_road_bolt_1",
+    "label": "B1_Level1_road_bolt_1",
+    "role": "road-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.30046399624442,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B1_Level1_road_insert_2",
+    "label": "B1_Level1_road_insert_2",
+    "role": "insert",
+    "color": [
+      0.7799999713897705,
+      0.5600000023841858,
+      0.1899999976158142
+    ],
+    "solids": 1,
+    "volume_mm3": 38.201766667651924,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B1_Level1_road_washer_2",
+    "label": "B1_Level1_road_washer_2",
+    "role": "road-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642565,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B1_Level1_road_bolt_2",
+    "label": "B1_Level1_road_bolt_2",
+    "role": "road-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.30046399624436,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B1_Level2_bearing_tab_arm",
+    "label": "B1_Level2_bearing_tab_arm",
+    "role": "arm",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 7774.422149473756,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B1_Level2_road_insert_1",
+    "label": "B1_Level2_road_insert_1",
+    "role": "insert",
+    "color": [
+      0.7799999713897705,
+      0.5600000023841858,
+      0.1899999976158142
+    ],
+    "solids": 1,
+    "volume_mm3": 38.20176666765186,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B1_Level2_road_washer_1",
+    "label": "B1_Level2_road_washer_1",
+    "role": "road-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642562,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B1_Level2_road_bolt_1",
+    "label": "B1_Level2_road_bolt_1",
+    "role": "road-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.30046399624453,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B1_Level2_road_insert_2",
+    "label": "B1_Level2_road_insert_2",
+    "role": "insert",
+    "color": [
+      0.7799999713897705,
+      0.5600000023841858,
+      0.1899999976158142
+    ],
+    "solids": 1,
+    "volume_mm3": 38.20176666765194,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B1_Level2_road_washer_2",
+    "label": "B1_Level2_road_washer_2",
+    "role": "road-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.22101640664257,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B1_Level2_road_bolt_2",
+    "label": "B1_Level2_road_bolt_2",
+    "role": "road-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.30046399624442,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B1_Level3_bearing_tab_arm",
+    "label": "B1_Level3_bearing_tab_arm",
+    "role": "arm",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 7774.422148971385,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B1_Level3_road_insert_1",
+    "label": "B1_Level3_road_insert_1",
+    "role": "insert",
+    "color": [
+      0.7799999713897705,
+      0.5600000023841858,
+      0.1899999976158142
+    ],
+    "solids": 1,
+    "volume_mm3": 38.20176666765187,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B1_Level3_road_washer_1",
+    "label": "B1_Level3_road_washer_1",
+    "role": "road-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.22101640664255,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B1_Level3_road_bolt_1",
+    "label": "B1_Level3_road_bolt_1",
+    "role": "road-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.3004639962445,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B1_Level3_road_insert_2",
+    "label": "B1_Level3_road_insert_2",
+    "role": "insert",
+    "color": [
+      0.7799999713897705,
+      0.5600000023841858,
+      0.1899999976158142
+    ],
+    "solids": 1,
+    "volume_mm3": 38.20176666765191,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B1_Level3_road_washer_2",
+    "label": "B1_Level3_road_washer_2",
+    "role": "road-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642534,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B1_Level3_road_bolt_2",
+    "label": "B1_Level3_road_bolt_2",
+    "role": "road-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.30046399624436,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B2_height_set_foot",
+    "label": "B2_height_set_foot",
+    "role": "post-base",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 9687.348014969764,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B2_original_standard_segment_1",
+    "label": "B2_original_standard_segment_1",
+    "role": "post-standard",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 9711.11449619001,
+    "source": "garage-bookshelf v5 BRep snapshot"
+  },
+  {
+    "name": "B2_original_standard_segment_2",
+    "label": "B2_original_standard_segment_2",
+    "role": "post-standard",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 9711.114496190012,
+    "source": "garage-bookshelf v5 BRep snapshot"
+  },
+  {
+    "name": "B2_original_top_cap",
+    "label": "B2_original_top_cap",
+    "role": "post-cap",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 4970.45118192301,
+    "source": "garage-bookshelf v5 BRep snapshot"
+  },
+  {
+    "name": "B2_foot_bolt_1",
+    "label": "B2_foot_bolt_1",
+    "role": "foot-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.30046399624445,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B2_foot_top_washer_1",
+    "label": "B2_foot_top_washer_1",
+    "role": "foot-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642555,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B2_foot_bottom_washer_1",
+    "label": "B2_foot_bottom_washer_1",
+    "role": "foot-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642555,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B2_foot_nut_1",
+    "label": "B2_foot_nut_1",
+    "role": "foot-nut",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 45.90884398536537,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B2_foot_bolt_2",
+    "label": "B2_foot_bolt_2",
+    "role": "foot-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.30046399624453,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B2_foot_top_washer_2",
+    "label": "B2_foot_top_washer_2",
+    "role": "foot-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642562,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B2_foot_bottom_washer_2",
+    "label": "B2_foot_bottom_washer_2",
+    "role": "foot-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642562,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B2_foot_nut_2",
+    "label": "B2_foot_nut_2",
+    "role": "foot-nut",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 45.90884398536539,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B2_Level1_bearing_tab_arm",
+    "label": "B2_Level1_bearing_tab_arm",
+    "role": "arm",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 7774.422147262313,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B2_Level1_road_insert_1",
+    "label": "B2_Level1_road_insert_1",
+    "role": "insert",
+    "color": [
+      0.7799999713897705,
+      0.5600000023841858,
+      0.1899999976158142
+    ],
+    "solids": 1,
+    "volume_mm3": 38.20176666765188,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B2_Level1_road_washer_1",
+    "label": "B2_Level1_road_washer_1",
+    "role": "road-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642535,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B2_Level1_road_bolt_1",
+    "label": "B2_Level1_road_bolt_1",
+    "role": "road-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.3004639962444,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B2_Level1_road_insert_2",
+    "label": "B2_Level1_road_insert_2",
+    "role": "insert",
+    "color": [
+      0.7799999713897705,
+      0.5600000023841858,
+      0.1899999976158142
+    ],
+    "solids": 1,
+    "volume_mm3": 38.20176666765191,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B2_Level1_road_washer_2",
+    "label": "B2_Level1_road_washer_2",
+    "role": "road-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.22101640664255,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B2_Level1_road_bolt_2",
+    "label": "B2_Level1_road_bolt_2",
+    "role": "road-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.3004639962444,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B2_Level2_bearing_tab_arm",
+    "label": "B2_Level2_bearing_tab_arm",
+    "role": "arm",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 7774.422147525332,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B2_Level2_road_insert_1",
+    "label": "B2_Level2_road_insert_1",
+    "role": "insert",
+    "color": [
+      0.7799999713897705,
+      0.5600000023841858,
+      0.1899999976158142
+    ],
+    "solids": 1,
+    "volume_mm3": 38.20176666765188,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B2_Level2_road_washer_1",
+    "label": "B2_Level2_road_washer_1",
+    "role": "road-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642542,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B2_Level2_road_bolt_1",
+    "label": "B2_Level2_road_bolt_1",
+    "role": "road-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.30046399624447,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B2_Level2_road_insert_2",
+    "label": "B2_Level2_road_insert_2",
+    "role": "insert",
+    "color": [
+      0.7799999713897705,
+      0.5600000023841858,
+      0.1899999976158142
+    ],
+    "solids": 1,
+    "volume_mm3": 38.201766667651874,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B2_Level2_road_washer_2",
+    "label": "B2_Level2_road_washer_2",
+    "role": "road-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642553,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B2_Level2_road_bolt_2",
+    "label": "B2_Level2_road_bolt_2",
+    "role": "road-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.30046399624445,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B2_Level3_bearing_tab_arm",
+    "label": "B2_Level3_bearing_tab_arm",
+    "role": "arm",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 7774.42214654051,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B2_Level3_road_insert_1",
+    "label": "B2_Level3_road_insert_1",
+    "role": "insert",
+    "color": [
+      0.7799999713897705,
+      0.5600000023841858,
+      0.1899999976158142
+    ],
+    "solids": 1,
+    "volume_mm3": 38.201766667651846,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B2_Level3_road_washer_1",
+    "label": "B2_Level3_road_washer_1",
+    "role": "road-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642581,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B2_Level3_road_bolt_1",
+    "label": "B2_Level3_road_bolt_1",
+    "role": "road-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.30046399624445,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B2_Level3_road_insert_2",
+    "label": "B2_Level3_road_insert_2",
+    "role": "insert",
+    "color": [
+      0.7799999713897705,
+      0.5600000023841858,
+      0.1899999976158142
+    ],
+    "solids": 1,
+    "volume_mm3": 38.20176666765187,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B2_Level3_road_washer_2",
+    "label": "B2_Level3_road_washer_2",
+    "role": "road-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642542,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B2_Level3_road_bolt_2",
+    "label": "B2_Level3_road_bolt_2",
+    "role": "road-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.3004639962444,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B3_height_set_foot",
+    "label": "B3_height_set_foot",
+    "role": "post-base",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 3708.872469545442,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B3_original_standard_segment_1",
+    "label": "B3_original_standard_segment_1",
+    "role": "post-standard",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 9711.114496190015,
+    "source": "garage-bookshelf v5 BRep snapshot"
+  },
+  {
+    "name": "B3_original_standard_segment_2",
+    "label": "B3_original_standard_segment_2",
+    "role": "post-standard",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 9711.114496190015,
+    "source": "garage-bookshelf v5 BRep snapshot"
+  },
+  {
+    "name": "B3_original_top_cap",
+    "label": "B3_original_top_cap",
+    "role": "post-cap",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 4970.451181923011,
+    "source": "garage-bookshelf v5 BRep snapshot"
+  },
+  {
+    "name": "B3_foot_bolt_1",
+    "label": "B3_foot_bolt_1",
+    "role": "foot-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.3004639962444,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B3_foot_top_washer_1",
+    "label": "B3_foot_top_washer_1",
+    "role": "foot-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.22101640664255,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B3_foot_bottom_washer_1",
+    "label": "B3_foot_bottom_washer_1",
+    "role": "foot-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642542,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B3_foot_nut_1",
+    "label": "B3_foot_nut_1",
+    "role": "foot-nut",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 45.908843985365365,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B3_foot_bolt_2",
+    "label": "B3_foot_bolt_2",
+    "role": "foot-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.30046399624456,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B3_foot_top_washer_2",
+    "label": "B3_foot_top_washer_2",
+    "role": "foot-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642555,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B3_foot_bottom_washer_2",
+    "label": "B3_foot_bottom_washer_2",
+    "role": "foot-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642548,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B3_foot_nut_2",
+    "label": "B3_foot_nut_2",
+    "role": "foot-nut",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 45.90884398536541,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "B3_Level1_bearing_tab_arm",
+    "label": "B3_Level1_bearing_tab_arm",
+    "role": "arm",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 7774.422147588467,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B3_Level1_road_insert_1",
+    "label": "B3_Level1_road_insert_1",
+    "role": "insert",
+    "color": [
+      0.7799999713897705,
+      0.5600000023841858,
+      0.1899999976158142
+    ],
+    "solids": 1,
+    "volume_mm3": 38.20176666765187,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B3_Level1_road_washer_1",
+    "label": "B3_Level1_road_washer_1",
+    "role": "road-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642544,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B3_Level1_road_bolt_1",
+    "label": "B3_Level1_road_bolt_1",
+    "role": "road-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.30046399624442,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B3_Level1_road_insert_2",
+    "label": "B3_Level1_road_insert_2",
+    "role": "insert",
+    "color": [
+      0.7799999713897705,
+      0.5600000023841858,
+      0.1899999976158142
+    ],
+    "solids": 1,
+    "volume_mm3": 38.20176666765188,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B3_Level1_road_washer_2",
+    "label": "B3_Level1_road_washer_2",
+    "role": "road-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.22101640664254,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B3_Level1_road_bolt_2",
+    "label": "B3_Level1_road_bolt_2",
+    "role": "road-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.30046399624433,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B3_Level2_bearing_tab_arm",
+    "label": "B3_Level2_bearing_tab_arm",
+    "role": "arm",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 7774.422155064138,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B3_Level2_road_insert_1",
+    "label": "B3_Level2_road_insert_1",
+    "role": "insert",
+    "color": [
+      0.7799999713897705,
+      0.5600000023841858,
+      0.1899999976158142
+    ],
+    "solids": 1,
+    "volume_mm3": 38.20176666765186,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B3_Level2_road_washer_1",
+    "label": "B3_Level2_road_washer_1",
+    "role": "road-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642546,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B3_Level2_road_bolt_1",
+    "label": "B3_Level2_road_bolt_1",
+    "role": "road-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.30046399624453,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B3_Level2_road_insert_2",
+    "label": "B3_Level2_road_insert_2",
+    "role": "insert",
+    "color": [
+      0.7799999713897705,
+      0.5600000023841858,
+      0.1899999976158142
+    ],
+    "solids": 1,
+    "volume_mm3": 38.20176666765184,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B3_Level2_road_washer_2",
+    "label": "B3_Level2_road_washer_2",
+    "role": "road-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642558,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B3_Level2_road_bolt_2",
+    "label": "B3_Level2_road_bolt_2",
+    "role": "road-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.30046399624436,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B3_Level3_bearing_tab_arm",
+    "label": "B3_Level3_bearing_tab_arm",
+    "role": "arm",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 7774.422147819199,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B3_Level3_road_insert_1",
+    "label": "B3_Level3_road_insert_1",
+    "role": "insert",
+    "color": [
+      0.7799999713897705,
+      0.5600000023841858,
+      0.1899999976158142
+    ],
+    "solids": 1,
+    "volume_mm3": 38.20176666765187,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B3_Level3_road_washer_1",
+    "label": "B3_Level3_road_washer_1",
+    "role": "road-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.221016406642537,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B3_Level3_road_bolt_1",
+    "label": "B3_Level3_road_bolt_1",
+    "role": "road-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.30046399624447,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B3_Level3_road_insert_2",
+    "label": "B3_Level3_road_insert_2",
+    "role": "insert",
+    "color": [
+      0.7799999713897705,
+      0.5600000023841858,
+      0.1899999976158142
+    ],
+    "solids": 1,
+    "volume_mm3": 38.201766667651846,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B3_Level3_road_washer_2",
+    "label": "B3_Level3_road_washer_2",
+    "role": "road-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.22101640664258,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "B3_Level3_road_bolt_2",
+    "label": "B3_Level3_road_bolt_2",
+    "role": "road-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.30046399624442,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "C_sign_base_adapter",
+    "label": "C_sign_base_adapter",
+    "role": "post-base",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 2447.175013440306,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "C_original_standard_segment_1",
+    "label": "C_original_standard_segment_1",
+    "role": "post-standard",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 9711.114496190012,
+    "source": "garage-bookshelf v5 BRep snapshot"
+  },
+  {
+    "name": "C_sign_spacer_1",
+    "label": "C_sign_spacer_1",
+    "role": "spacer",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 1854.4428735058846,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "C_original_standard_segment_2",
+    "label": "C_original_standard_segment_2",
+    "role": "post-standard",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 9711.114496190012,
+    "source": "garage-bookshelf v5 BRep snapshot"
+  },
+  {
+    "name": "C_sign_spacer_2",
+    "label": "C_sign_spacer_2",
+    "role": "spacer",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 1854.4428735058843,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "C_original_standard_segment_3",
+    "label": "C_original_standard_segment_3",
+    "role": "post-standard",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 9711.114496190012,
+    "source": "garage-bookshelf v5 BRep snapshot"
+  },
+  {
+    "name": "C_sign_spacer_3",
+    "label": "C_sign_spacer_3",
+    "role": "spacer",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 1854.4428735058843,
+    "source": "Approved column reuse concept"
+  },
+  {
+    "name": "C_original_top_cap",
+    "label": "C_original_top_cap",
+    "role": "post-cap",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 4970.451181923009,
+    "source": "garage-bookshelf v5 BRep snapshot"
+  },
+  {
+    "name": "C_foot_bolt_1",
+    "label": "C_foot_bolt_1",
+    "role": "foot-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.30046399624416,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "C_foot_top_washer_1",
+    "label": "C_foot_top_washer_1",
+    "role": "foot-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.22101640664251,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "C_foot_bottom_washer_1",
+    "label": "C_foot_bottom_washer_1",
+    "role": "foot-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.22101640664251,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "C_foot_nut_1",
+    "label": "C_foot_nut_1",
+    "role": "foot-nut",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 45.90884398536536,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "C_foot_bolt_2",
+    "label": "C_foot_bolt_2",
+    "role": "foot-bolt",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 133.30046399624413,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "C_foot_top_washer_2",
+    "label": "C_foot_top_washer_2",
+    "role": "foot-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.22101640664251,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "C_foot_bottom_washer_2",
+    "label": "C_foot_bottom_washer_2",
+    "role": "foot-washer",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 15.22101640664251,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "C_foot_nut_2",
+    "label": "C_foot_nut_2",
+    "role": "foot-nut",
+    "color": [
+      0.6499999761581421,
+      0.6899999976158142,
+      0.7200000286102295
+    ],
+    "solids": 1,
+    "volume_mm3": 45.908843985365365,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "Road_Continuous_18BlindHoles",
+    "label": "Road_Continuous_18BlindHoles",
+    "role": "road",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 1188605.3036254388,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "BayNumber_1_1",
+    "label": "BayNumber_1_1",
+    "role": "lettering",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 3,
+    "volume_mm3": 1.6442228255372064,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "BayNumber_1_2",
+    "label": "BayNumber_1_2",
+    "role": "lettering",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 3,
+    "volume_mm3": 1.9475461443706672,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "ParkingP_1",
+    "label": "ParkingP_1",
+    "role": "lettering",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 1,
+    "volume_mm3": 1.9338965908015182,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "ParkingMarks_1F_White",
+    "label": "ParkingMarks_1F_White",
+    "role": "parking-mark",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 11,
+    "volume_mm3": 184.27199999999888,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "ParkingMarks_1F_Cyan",
+    "label": "ParkingMarks_1F_Cyan",
+    "role": "parking-mark",
+    "color": [
+      0.15000000596046448,
+      0.6499999761581421,
+      0.8399999737739563
+    ],
+    "solids": 20,
+    "volume_mm3": 40.560000000000336,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "ParkingMarks_1F_Blue",
+    "label": "ParkingMarks_1F_Blue",
+    "role": "parking-mark",
+    "color": [
+      0.10999999940395355,
+      0.15000000596046448,
+      0.4000000059604645
+    ],
+    "solids": 1,
+    "volume_mm3": 183.60000000000014,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "FrontTrim_1F",
+    "label": "FrontTrim_1F",
+    "role": "trim",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 360.0,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "FloorLabel_1",
+    "label": "FloorLabel_1",
+    "role": "lettering",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 2,
+    "volume_mm3": 1.138441925763645,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "BayNumber_2_1",
+    "label": "BayNumber_2_1",
+    "role": "lettering",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 3,
+    "volume_mm3": 1.9475461443706765,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "BayNumber_2_2",
+    "label": "BayNumber_2_2",
+    "role": "lettering",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 3,
+    "volume_mm3": 2.2508694632041393,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "ParkingP_2",
+    "label": "ParkingP_2",
+    "role": "lettering",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 1,
+    "volume_mm3": 1.9338965908015298,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "ParkingMarks_2F_White",
+    "label": "ParkingMarks_2F_White",
+    "role": "parking-mark",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 11,
+    "volume_mm3": 184.27200000000363,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "ParkingMarks_2F_Cyan",
+    "label": "ParkingMarks_2F_Cyan",
+    "role": "parking-mark",
+    "color": [
+      0.15000000596046448,
+      0.6499999761581421,
+      0.8399999737739563
+    ],
+    "solids": 20,
+    "volume_mm3": 40.56000000000095,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "ParkingMarks_2F_Blue",
+    "label": "ParkingMarks_2F_Blue",
+    "role": "parking-mark",
+    "color": [
+      0.10999999940395355,
+      0.15000000596046448,
+      0.4000000059604645
+    ],
+    "solids": 1,
+    "volume_mm3": 183.59999999999607,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "FrontTrim_2F",
+    "label": "FrontTrim_2F",
+    "role": "trim",
+    "color": [
+      0.15000000596046448,
+      0.6499999761581421,
+      0.8399999737739563
+    ],
+    "solids": 1,
+    "volume_mm3": 360.0,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "FloorLabelPlate_2",
+    "label": "FloorLabelPlate_2",
+    "role": "sign",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 748.8,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "FloorLabel_2",
+    "label": "FloorLabel_2",
+    "role": "lettering",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 2,
+    "volume_mm3": 7.29893655077285,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "BayNumber_3_1",
+    "label": "BayNumber_3_1",
+    "role": "lettering",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 3,
+    "volume_mm3": 1.9129930307442047,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "BayNumber_3_2",
+    "label": "BayNumber_3_2",
+    "role": "lettering",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 3,
+    "volume_mm3": 2.216316349577659,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "BayNumber_3_3",
+    "label": "BayNumber_3_3",
+    "role": "lettering",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 3,
+    "volume_mm3": 2.1817632359512342,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "ParkingMarks_3F_White",
+    "label": "ParkingMarks_3F_White",
+    "role": "parking-mark",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 12,
+    "volume_mm3": 209.32799999998835,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "ParkingMarks_3F_Cyan",
+    "label": "ParkingMarks_3F_Cyan",
+    "role": "parking-mark",
+    "color": [
+      0.15000000596046448,
+      0.6499999761581421,
+      0.8399999737739563
+    ],
+    "solids": 20,
+    "volume_mm3": 40.560000000000905,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "FrontTrim_3F",
+    "label": "FrontTrim_3F",
+    "role": "trim",
+    "color": [
+      0.10999999940395355,
+      0.15000000596046448,
+      0.4000000059604645
+    ],
+    "solids": 1,
+    "volume_mm3": 360.0,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "FloorLabelPlate_3",
+    "label": "FloorLabelPlate_3",
+    "role": "sign",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 748.8,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "FloorLabel_3",
+    "label": "FloorLabel_3",
+    "role": "lettering",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 2,
+    "volume_mm3": 7.124011413039067,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "BayNumber_4_1",
+    "label": "BayNumber_4_1",
+    "role": "lettering",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 3,
+    "volume_mm3": 1.9110753944791932,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "BayNumber_4_2",
+    "label": "BayNumber_4_2",
+    "role": "lettering",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 3,
+    "volume_mm3": 2.2143987133126504,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "BayNumber_4_3",
+    "label": "BayNumber_4_3",
+    "role": "lettering",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 3,
+    "volume_mm3": 2.1798455996862205,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "ParkingMarks_4F_White",
+    "label": "ParkingMarks_4F_White",
+    "role": "parking-mark",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 12,
+    "volume_mm3": 209.32799999999096,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "ParkingMarks_4F_Cyan",
+    "label": "ParkingMarks_4F_Cyan",
+    "role": "parking-mark",
+    "color": [
+      0.15000000596046448,
+      0.6499999761581421,
+      0.8399999737739563
+    ],
+    "solids": 20,
+    "volume_mm3": 40.560000000000905,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "FrontTrim_4F",
+    "label": "FrontTrim_4F",
+    "role": "trim",
+    "color": [
+      0.8899999856948853,
+      0.12999999523162842,
+      0.17000000178813934
+    ],
+    "solids": 1,
+    "volume_mm3": 360.0,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "FloorLabelPlate_4",
+    "label": "FloorLabelPlate_4",
+    "role": "sign",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 748.8,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "FloorLabel_4",
+    "label": "FloorLabel_4",
+    "role": "lettering",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 2,
+    "volume_mm3": 7.114303379447436,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "BillboardPost_28",
+    "label": "BillboardPost_28",
+    "role": "sign",
+    "color": [
+      0.15000000596046448,
+      0.6499999761581421,
+      0.8399999737739563
+    ],
+    "solids": 1,
+    "volume_mm3": 1860.0,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "BillboardPost_151",
+    "label": "BillboardPost_151",
+    "role": "sign",
+    "color": [
+      0.8899999856948853,
+      0.12999999523162842,
+      0.17000000178813934
+    ],
+    "solids": 1,
+    "volume_mm3": 1860.0,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "TopBillboard",
+    "label": "TopBillboard",
+    "role": "sign",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 87808.00000000001,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "TopBillboard_Text1",
+    "label": "TopBillboard_Text1",
+    "role": "lettering",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 10,
+    "volume_mm3": 92.04743476249334,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "TopBillboard_Text2",
+    "label": "TopBillboard_Text2",
+    "role": "lettering",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 11,
+    "volume_mm3": 81.07064677325798,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "SideSignFrame",
+    "label": "SideSignFrame",
+    "role": "sign",
+    "color": [
+      0.0949999988079071,
+      0.10999999940395355,
+      0.12999999523162842
+    ],
+    "solids": 1,
+    "volume_mm3": 18609.991706319524,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "SideSignBlue",
+    "label": "SideSignBlue",
+    "role": "sign",
+    "color": [
+      0.10999999940395355,
+      0.15000000596046448,
+      0.4000000059604645
+    ],
+    "solids": 1,
+    "volume_mm3": 3510.0,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "SideText_593",
+    "label": "SideText_593",
+    "role": "lettering",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 15,
+    "volume_mm3": 28.84656129389975,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "SideText_606",
+    "label": "SideText_606",
+    "role": "lettering",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 15,
+    "volume_mm3": 30.410745771971904,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "RoadArrow_1_1",
+    "label": "RoadArrow_1_1",
+    "role": "road-mark",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 1,
+    "volume_mm3": 10.660879984365378,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "RoadArrow_1_2",
+    "label": "RoadArrow_1_2",
+    "role": "road-mark",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 1,
+    "volume_mm3": 10.660879984364499,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "RoadArrow_2_1",
+    "label": "RoadArrow_2_1",
+    "role": "road-mark",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 1,
+    "volume_mm3": 10.660879984365296,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "RoadArrow_2_2",
+    "label": "RoadArrow_2_2",
+    "role": "road-mark",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 1,
+    "volume_mm3": 10.660879984364225,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "RoadArrow_3_1",
+    "label": "RoadArrow_3_1",
+    "role": "road-mark",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 1,
+    "volume_mm3": 10.660879984365504,
+    "source": "New CAD v1"
+  },
+  {
+    "name": "RoadArrow_3_2",
+    "label": "RoadArrow_3_2",
+    "role": "road-mark",
+    "color": [
+      0.9300000071525574,
+      0.949999988079071,
+      0.9599999785423279
+    ],
+    "solids": 1,
+    "volume_mm3": 10.660879984364504,
+    "source": "New CAD v1"
+  }
+]

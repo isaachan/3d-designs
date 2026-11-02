@@ -1,0 +1,6 @@
+import sys
+sys.path.insert(0, '/Users/kai.han/code/3d-designs/parking-lot/v1')
+import style
+import importlib
+importlib.reload(style)
+style.run()

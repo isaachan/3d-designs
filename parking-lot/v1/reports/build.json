@@ -1,0 +1,103 @@
+{
+  "status": "built",
+  "units": "mm",
+  "final_objects": 219,
+  "native_sketches": 381,
+  "fully_constrained_sketches": 381,
+  "native_road_lofts": 3,
+  "road_connected_solids": 1,
+  "road_blind_holes": 18,
+  "support_checks": [
+    {
+      "arm_column_overlap_mm3": 0.0,
+      "arm_to_collar_distance_mm": 0.0,
+      "station": "B1",
+      "level": 1,
+      "road_z": 46.974576271186436
+    },
+    {
+      "arm_column_overlap_mm3": 0.0,
+      "arm_to_collar_distance_mm": 0.0,
+      "station": "B1",
+      "level": 2,
+      "road_z": 109.97457627118645
+    },
+    {
+      "arm_column_overlap_mm3": 0.0,
+      "arm_to_collar_distance_mm": 0.0,
+      "station": "B1",
+      "level": 3,
+      "road_z": 172.97457627118644
+    },
+    {
+      "arm_column_overlap_mm3": 0.0,
+      "arm_to_collar_distance_mm": 0.0,
+      "station": "B2",
+      "level": 1,
+      "road_z": 59.78813559322033
+    },
+    {
+      "arm_column_overlap_mm3": 0.0,
+      "arm_to_collar_distance_mm": 0.0,
+      "station": "B2",
+      "level": 2,
+      "road_z": 122.78813559322035
+    },
+    {
+      "arm_column_overlap_mm3": 0.0,
+      "arm_to_collar_distance_mm": 0.0,
+      "station": "B2",
+      "level": 3,
+      "road_z": 185.78813559322035
+    },
+    {
+      "arm_column_overlap_mm3": 0.0,
+      "arm_to_collar_distance_mm": 0.0,
+      "station": "B3",
+      "level": 1,
+      "road_z": 21.347457627118644
+    },
+    {
+      "arm_column_overlap_mm3": 0.0,
+      "arm_to_collar_distance_mm": 0.0,
+      "station": "B3",
+      "level": 2,
+      "road_z": 84.34745762711864
+    },
+    {
+      "arm_column_overlap_mm3": 0.0,
+      "arm_to_collar_distance_mm": 0.0,
+      "station": "B3",
+      "level": 3,
+      "road_z": 147.34745762711864
+    }
+  ],
+  "dependencies": [
+    {
+      "file": "parking-lot/v1/parameters.json",
+      "sha256": "2ddd167a6a3d6c72911a097c2845877f446c7ed523215a0af2721d038a919b3c"
+    },
+    {
+      "file": "parking-lot/v1/build.py",
+      "sha256": "8f916f78dfef5615977a1deda88953efd7b026d5c5f6132e28e03aca753415dc"
+    },
+    {
+      "file": "parking-lot/concepts/01-side-helix/geometry-rebuild/installation/mount_parts.py",
+      "sha256": "9ab08c59adfe53f6b312069c8b8b4a14924bdb120a3428322aff06a9426c4107"
+    },
+    {
+      "file": "parking-lot/concepts/01-side-helix/geometry-rebuild/installation/column-reuse/column_parts.py",
+      "sha256": "6ced62f22a931938aff6fc1936728ae93d7e2b66315a66045db676b050453cbd"
+    },
+    {
+      "file": "parking-lot/concepts/01-side-helix/geometry-rebuild/installation/column-reuse/reference/garage-standard-column.brep",
+      "sha256": "ace1b63f9f0da2c204a46c9a299b0668d76e0aae484661e22022a492f27991af"
+    },
+    {
+      "file": "parking-lot/concepts/01-side-helix/geometry-rebuild/installation/column-reuse/reference/garage-top-cap.brep",
+      "sha256": "f340e142c914b4f4cd8cbeae07c08b7d1b6261bb19b807a659bf98ca7d22d070"
+    }
+  ],
+  "build_seconds": 13.43,
+  "scope": "Assembly design CAD v1. Continuous track has no print segmentation or segment joints. Physical fit/load/vehicle turning untested."
+}
