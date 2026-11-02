@@ -41,5 +41,16 @@
   "maximum_inner_edge_grade": 0.14395350386138328,
   "scope": "Geometry only; not a manufacturing or vehicle-steering validation",
   "connected_road_mesh_components": 1,
-  "minimum_clearance_under_brackets_mm": 51.7737053912475
+  "fourth_floor_tail_removed": true,
+  "fourth_floor_terminal_y_mm": 40.0,
+  "minimum_clearance_under_brackets_mm": 47.87261729464737,
+  "overall_envelope_mm": [
+    635.0,
+    366.71147672943925,
+    325.0
+  ],
+  "outer_post_diameter_mm": 14,
+  "support_mounting": "original garage column solids; 6.6 mm bearing-tab arms; height-set feet; underside M3 screws",
+  "reused_external_standard_segments": 9,
+  "reused_external_top_caps": 4
 }

@@ -1,0 +1,19 @@
+{
+  "source_file": "garage-bookshelf/v5/cad/garage-bookshelf-v5-assembly.FCStd",
+  "source_sha256": "3b3e2b9f8c24eb89a2d68df4b70a30069df9d5777310db98706b629d1171c339",
+  "source_modified": false,
+  "solids": [
+    {
+      "source_body": "column_1_segment_1_Body",
+      "file": "garage-standard-column.brep",
+      "volume_mm3": 9711.114496190005,
+      "height_mm": 66.0
+    },
+    {
+      "source_body": "column_1_segment_4_Body",
+      "file": "garage-top-cap.brep",
+      "volume_mm3": 4970.451181923006,
+      "height_mm": 32.99999999999999
+    }
+  ]
+}

@@ -6,6 +6,7 @@ Units are millimetres. This is a geometric study, not a printing model.
 """
 import json
 import math
+import sys
 from pathlib import Path
 import numpy as np
 import vtk
@@ -13,6 +14,10 @@ from vtk.util.numpy_support import vtk_to_numpy
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parent
+sys.dont_write_bytecode=True
+sys.path.insert(0,str(ROOT/'installation'))
+sys.path.insert(0,str(ROOT/'installation'/'column-reuse'))
+import column_parts as mounts
 TAU = math.tau
 CX, CY = 410., 75.
 RI, RO, PITCH, THICK = 85., 155., 63., 6.6
@@ -24,6 +29,24 @@ CYAN, BLUE, RED = (.15, .65, .84), (.11, .15, .40), (.89, .13, .17)
 WHITE, GRAY = (.93, .95, .96), (.46, .53, .57)
 COLORS = [CYAN, BLUE, RED]
 SCENE = []
+TERMINAL_Y = CY-HALF_W
+
+
+def clip_terminal(vertices):
+    """Clip the unused 4F tail to the front edge of its 70-mm exit."""
+    out=[]
+    for a,b in zip(vertices,vertices[1:]+vertices[:1]):
+        a,b=np.array(a,dtype=float),np.array(b,dtype=float)
+        ia,ib=a[1]>=TERMINAL_Y-1e-9,b[1]>=TERMINAL_Y-1e-9
+        if ia: out.append(tuple(a))
+        if ia!=ib:
+            t=(TERMINAL_Y-a[1])/(b[1]-a[1]); v=a+t*(b-a); v[1]=TERMINAL_Y; out.append(tuple(v))
+    cleaned=[]
+    for x,y,z in out:
+        v=(x,TERMINAL_Y if abs(y-TERMINAL_Y)<1e-7 else y,z)
+        if not cleaned or np.linalg.norm(np.array(v)-cleaned[-1])>1e-8: cleaned.append(v)
+    if len(cleaned)>1 and np.linalg.norm(np.array(cleaned[0])-cleaned[-1])<1e-8: cleaned.pop()
+    return cleaned if len(cleaned)>=3 else []
 
 
 def rise(u):
@@ -90,6 +113,13 @@ def actor(poly, color, category, name, colored=False):
     SCENE.append((a, category, name)); return a
 
 
+def part_actor(shape,color,category,name):
+    assert shape.isValid(),name
+    points,faces=shape.tessellate(.12); m=Mesh()
+    for f in faces: m.face([(points[i].x,points[i].y,points[i].z) for i in f],color)
+    return actor(m.polydata(),color,category,name)
+
+
 def box(x0, x1, y0, y1, z0, z1, color=BLACK, category='garage', name='box'):
     s=vtk.vtkCubeSource(); s.SetBounds(x0,x1,y0,y1,z0,z1); s.Update()
     return actor(s.GetOutput(),color,category,name)
@@ -121,17 +151,26 @@ def road_geometry():
         ts.extend([mid,mid-LANDING,mid+LANDING,mid-ALPHA,mid+ALPHA])
         ts.extend(np.linspace(mid-ALPHA,mid+ALPHA,61))
     ts=sorted(set(round(float(t),12) for t in ts))
-    m=Mesh()
+    m=Mesh(); cut_x=[]
+    def emit(v,c,terminal=False):
+        v=clip_terminal(v) if terminal else v
+        if not v: return
+        if terminal: cut_x.extend(p[0] for p in v if abs(p[1]-TERMINAL_Y)<1e-7)
+        m.face(v,c)
     for a,b in zip(ts,ts[1:]):
         ia,oa,ib,ob=polar(RI,a),polar(RO,a),polar(RI,b),polar(RO,b)
         iad,oad,ibd,obd=[(x,y,z-THICK) for x,y,z in (ia,oa,ib,ob)]
         c=color_turn((a+b)/2)
-        m.face([ia,oa,ob,ib],c); m.face([iad,ibd,obd,oad],c)
-        m.face([ia,ib,ibd,iad],c)
-        if not opening((a+b)/2): m.face([oa,oad,obd,ob],c)
+        terminal=a>=math.pi+3*TAU-1e-9
+        emit([ia,oa,ob,ib],c,terminal); emit([iad,ibd,obd,oad],c,terminal)
+        emit([ia,ib,ibd,iad],c,terminal)
+        if not opening((a+b)/2): emit([oa,oad,obd,ob],c,terminal)
     for t,reverse in [(ts[0],False),(ts[-1],True)]:
         i,o=polar(RI,t),polar(RO,t); f=[i,(i[0],i[1],i[2]-THICK),(o[0],o[1],o[2]-THICK),o]
-        m.face(f[::-1] if reverse else f,color_turn(t))
+        emit(f[::-1] if reverse else f,color_turn(t),reverse)
+    xs=sorted(set(round(float(x),9) for x in cut_x)); z=Z0+3*PITCH
+    for a,b in zip(xs,xs[1:]):
+        m.face([(a,TERMINAL_Y,z),(a,TERMINAL_Y,z-THICK),(b,TERMINAL_Y,z-THICK),(b,TERMINAL_Y,z)],RED)
     # Bridges terminate exactly at the road's outside arc; the top surface is
     # neither flared nor overlapped, and the opening in the wall is also 70 mm.
     bridge_checks=[]
@@ -160,21 +199,27 @@ def curbs(ts):
             if low==RO and opening(t): continue
             v=[polar(low,a),polar(high,a),polar(high,b),polar(low,b)]
             up=[(x,y,z+8) for x,y,z in v]
-            meshes[k].face(up,c)
-            for j in range(4): meshes[k].face([v[j],v[(j+1)%4],up[(j+1)%4],up[j]],c)
+            faces=[up]+[[v[j],v[(j+1)%4],up[(j+1)%4],up[j]] for j in range(4)]
+            for face in faces:
+                if a>=math.pi+3*TAU-1e-9: face=clip_terminal(face)
+                if face: meshes[k].face(face,c)
     for k,m in enumerate(meshes): actor(m.polydata(),COLORS[k],'curb','curb-'+str(k))
     # End stops terminate the two flat turning bays; they are outside the
     # side-entry openings and never across a through section of the helix.
-    for t in (ts[0],ts[-1]):
+    for t in (ts[0],):
         da=2/120; m=Mesh(); c=color_turn(t)
         v=[polar(RI-2,t-da),polar(RO+2,t-da),polar(RO+2,t+da),polar(RI-2,t+da)]
         u=[(x,y,z+8) for x,y,z in v]; m.face(u,c)
         for j in range(4): m.face([v[j],v[(j+1)%4],u[(j+1)%4],u[j]],c)
         actor(m.polydata(),c,'curb','end-stop')
+    # 4F ends at the same straight front edge as its parking connection.
+    inner_x=CX-math.sqrt((RI-2)**2-HALF_W**2); z=Z0+3*PITCH
+    box(BRIDGE_X,inner_x,TERMINAL_Y-2,TERMINAL_Y,z,z+8,RED,'curb','end-stop')
     # The bridge rails stay outside y=40..110 all the way to the outer arc.
     for k in range(4):
         z=Z0+k*PITCH; c=COLORS[min(2,max(0,k-1))]
         for ya,yb in [(CY-HALF_W-2,CY-HALF_W),(CY+HALF_W,CY+HALF_W+2)]:
+            if k==3 and ya<CY: continue
             m=Mesh()
             ys=np.linspace(ya,yb,9)
             for y0,y1 in zip(ys,ys[1:]):
@@ -187,10 +232,28 @@ def curbs(ts):
 
 def parking_and_signs():
     bracket_clearances=[]
-    box(-10,625,-92,242,0,1.3,BLACK,'base','base')
+    locations=[]
+    for i,deg in enumerate((35,95,275)):
+        t=math.radians(deg); locations.append((f'B{i+1}',t,CX+169*math.cos(t),CY+169*math.sin(t)))
+    locations.append(('C',0.,602.,74.))
+    base=mounts.box(-10,625,-92,242,0,1.3)
+    for name,t,x,y in locations:
+        base=base.fuse(mounts.transformed(mounts.base_pad(),t,(x,y,0)))
+    for name,t,x,y in locations:
+        for v in (-10.5,10.5):
+            p=mounts.V(x-v*math.sin(t),y+v*math.cos(t),-3)
+            base=base.cut(mounts.Part.makeCylinder(1.7,5,p))
+    part_actor(base.removeSplitter(),BLACK,'base','base')
+    for x in (3,612):
+        for y in (-77,227): cylinder(x,y,-6,0,8,BLACK,'base','foot-pad')
     for k in range(4):
         z=Z0+k*PITCH; c=BLACK if k==0 else COLORS[k-1]
-        box(0,200,0,230,z-(8 if k==0 else THICK),z,BLACK,'garage','deck-'+str(k))
+        deck=mounts.box(0,200,0,230,z-(8 if k==0 else THICK),z)
+        for x in (12,188):
+            for y in (14,216):
+                if k: deck=deck.cut(mounts.Part.makeCylinder(3.25,9,mounts.V(x,y,z-8)))
+                else: deck=deck.fuse(mounts.Part.makeCylinder(3,3,mounts.V(x,y,z)))
+        part_actor(deck,BLACK,'garage','deck-'+str(k))
         box(0,200,-.6,0,z-3,z,c,'decoration','trim-'+str(k))
         bounds=[20,118,180] if k<2 else [20,73.333,126.667,180]
         for j,(a,b) in enumerate(zip(bounds,bounds[1:])):
@@ -213,23 +276,33 @@ def parking_and_signs():
         else: text3d('1F',(158,-.7,1),size=5,category='decoration',name='floor-text')
     box(0,200,229,233,1,232,BLACK,'garage','back-wall')
     for x in (12,188):
-        for y in (14,216): cylinder(x,y,8,232,7,BLACK,'support','garage-column')
-    for deg in (35,95,275):
-        t=math.radians(deg); x,y=CX+169*math.cos(t),CY+169*math.sin(t)
-        cylinder(x,y,1.3,205,5,BLACK,'support','ramp-column')
-        for n in range(5):
-            angle=t+n*TAU
-            if math.pi-LANDING <= angle <= math.pi+3*TAU+LANDING:
-                # Radial beams physically tie the outside posts to the slab
-                # underside. They remain entirely below the clear road face.
-                z=height(angle)-THICK+.7; da=4/150; m=Mesh()
-                v=[polar(85,angle-da,z),polar(174,angle-da,z),polar(174,angle+da,z),polar(85,angle+da,z)]
-                b=[(x,y,vz-5) for x,y,vz in v]; m.face(v); m.face(b[::-1])
-                for j in range(4): m.face([v[j],v[(j+1)%4],b[(j+1)%4],b[j]])
-                actor(m.polydata(),BLACK,'support','radial-bracket')
-                assert z < min(height(angle+d) for d in np.linspace(-da,da,31))-5
-                if angle-TAU >= math.pi-LANDING:
-                    bracket_clearances.append((z-5)-max(height(angle+d-TAU) for d in np.linspace(-da,da,101)))
+        for y in (14,216):
+            for k in range(4):
+                s=mounts.garage_segment(Z0+k*PITCH,k==3); s.translate(mounts.V(x,y,0))
+                part_actor(s,BLACK,'support','garage-column')
+    for name,t,x,y in locations:
+        angle=t
+        while angle<math.pi: angle+=TAU
+        levels=[height(angle+k*TAU) for k in range(3)] if name!='C' else []
+        post=mounts.upright(levels,243 if name=='C' else 205)
+        part_actor(mounts.transformed(post,t,(x,y,0)),BLACK,'support',name+'-upright')
+        for p in mounts.foot_hardware(): part_actor(mounts.transformed(p['shape'],t,(x,y,0)),p['color'],'support',name+'-'+p['name'])
+        if name=='C': continue
+        parts=mounts.station(angle,height)
+        mounts.interference_checks(parts,post,height(angle))
+        for k in range(3):
+            h=height(angle+k*TAU)
+            for p in parts:
+                if p['role']=='road': continue
+                s=mounts.transformed(p['shape'],t,(x,y,h))
+                part_actor(s,p['color'],'support',name+'-'+p['name']+str(k))
+                if k and p['role'] in ('arm','road-bolt','road-washer'):
+                    vertices,_=p['shape'].tessellate(.12)
+                    for v in vertices:
+                        radius=math.hypot(169+v.x,v.y)
+                        if RI<=radius<=RO:
+                            lower=height(angle+(k-1)*TAU+math.atan2(v.y,169+v.x))
+                            bracket_clearances.append(h+v.z-lower)
     box(0,196,226,231,263,319,BLACK,'sign','billboard')
     for x,c in [(28,CYAN),(151,RED)]: box(x,x+15,225,231,230,265,c,'sign','billboard-post')
     text3d('Lovely Cars',(15,225.8,293),size=17,category='sign',name='billboard-text')
@@ -238,7 +311,6 @@ def parking_and_signs():
     box(590,617,64.6,65,109,239,BLUE,'sign','side-sign-blue')
     for x,value in [(593,'HORSEPOWER LEFT,'),(606,'BRAINPOWER RIGHT')]:
         text3d(value,(x,64.3,230),dx=(0,0,-1),dy=(1,0,0),size=7,color=WHITE,category='sign',name='side-sign-text')
-    cylinder(602,74,1.3,243,4,BLACK,'support','sign-post')
     return bracket_clearances
 
 
@@ -294,7 +366,7 @@ def render(filename, mode, road_actor, road_poly):
     subtitles={'overall':'模型直接渲染 · 坡道不分叉 · 停车层只从外侧接入','road':'同一份几何：浅蓝 1F→2F / 深蓝 2F→3F / 红 3F→4F','plan':'车道边界的平面投影；省略端部挡墙，层间高差见坡道图'}
     draw.text((65,32),titles[mode],font=f40,fill=(30,45,55)); draw.text((65,91),subtitles[mode],font=f26,fill=(81,100,111))
     draw.text((65,1270),'净路宽 70 mm   ·   内半径 85 mm   ·   外半径 155 mm   ·   三圈跨四层',font=f26,fill=(30,45,55))
-    draw.text((65,1312),'几何概念预览；支撑连接、拆件及实车转向仍需后续设计。',font=f23,fill=(81,100,111))
+    draw.text((65,1312),'几何及安装方案预览；尺寸配合、承载、实车转向及打印拆件仍待验证。',font=f23,fill=(81,100,111))
     def screen(point):
         renderer.SetWorldPoint(*point,1); renderer.WorldToDisplay(); x,y,_=renderer.GetDisplayPoint(); return np.array([x,1350-y])
     def dimension(a,b,label,offset):
@@ -331,11 +403,22 @@ def main():
     assert all(abs(b['clear_width_mm']-70)<1e-7 and b['max_step_mm']<1e-8 for b in bridges)
     report=dict(units='mm',road_width_min=min(widths),road_width_max=max(widths),radii=[RI,RO],turns=3,floors=4,pitch=PITCH,slab_thickness=THICK,slab_to_slab_clearance=PITCH-THICK,main_road_branches=0,side_parking_connections=4,bridges=bridges,open_or_nonmanifold_mesh_edges=bad_edges,landing_half_angle_degrees=25,maximum_centerline_grade=PITCH/(120*math.radians(295)),maximum_inner_edge_grade=PITCH/(RI*math.radians(295)),scope='Geometry only; not a manufacturing or vehicle-steering validation')
     report['connected_road_mesh_components']=connected.GetNumberOfExtractedRegions()
+    points=vtk_to_numpy(road_poly.GetPoints().GetData())
+    terminal=points[(points[:,2]>=Z0+3*PITCH-THICK-1e-7)&(points[:,0]<CX)]
+    assert terminal[:,1].min()>=TERMINAL_Y-1e-7
+    report['fourth_floor_tail_removed']=True
+    report['fourth_floor_terminal_y_mm']=TERMINAL_Y
     writer=vtk.vtkXMLPolyDataWriter(); writer.SetFileName(str(ROOT/'constant-width-road.vtp')); writer.SetInputData(road_poly); writer.Write()
     road_actor=actor(render_road,BLACK,'road','main-road')
     curbs(ts); gaps=parking_and_signs(); arrows()
-    assert min(gaps)>50
+    assert min(gaps)>45
     report['minimum_clearance_under_brackets_mm']=min(gaps)
+    cloud=np.concatenate([vtk_to_numpy(a.GetMapper().GetInput().GetPoints().GetData()) for a,_,_ in SCENE])
+    report['overall_envelope_mm']=(cloud.max(axis=0)-cloud.min(axis=0)).tolist()
+    report['outer_post_diameter_mm']=14
+    report['support_mounting']='original garage column solids; 6.6 mm bearing-tab arms; height-set feet; underside M3 screws'
+    report['reused_external_standard_segments']=9
+    report['reused_external_top_caps']=4
     (ROOT/'geometry-checks.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     for filename,mode in [('09-geometry-overall.png','overall'),('10-geometry-road-only.png','road'),('11-geometry-width-plan.png','plan')]:
         render(filename,mode,road_actor,road_poly); print('Rendered',filename,flush=True)

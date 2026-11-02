@@ -1,0 +1,101 @@
+{
+  "source_solids_copied_unmodified": true,
+  "standard_height_mm": 56.4,
+  "tab_thickness_mm": 6.6,
+  "pitch_mm": 63,
+  "cap_height_mm": 33,
+  "pin_diameter_mm": 6,
+  "hole_diameter_mm": 6.5,
+  "pin_engagement_mm": 3,
+  "socket_end_gap_mm": 0.3,
+  "outer_curb_clearance_mm": 2,
+  "external_reuse": {
+    "standard_segments": 9,
+    "top_caps": 4
+  },
+  "stations": [
+    {
+      "angle_deg": 35,
+      "first_road_height_mm": 46.97457627118644,
+      "foot_body_height_mm": 34.074576271186444,
+      "collar_top_z_mm": [
+        35.37457627118644,
+        98.37457627118646,
+        161.37457627118644
+      ],
+      "column_pair_max_overlap_mm3": 0.0,
+      "arms": [
+        {
+          "arm_column_overlap_mm3": 0.0,
+          "arm_to_collar_distance_mm": 0.0
+        },
+        {
+          "arm_column_overlap_mm3": 0.0,
+          "arm_to_collar_distance_mm": 0.0
+        },
+        {
+          "arm_column_overlap_mm3": 0.0,
+          "arm_to_collar_distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "angle_deg": 95,
+      "first_road_height_mm": 59.78813559322034,
+      "foot_body_height_mm": 46.88813559322034,
+      "collar_top_z_mm": [
+        48.18813559322034,
+        111.18813559322035,
+        174.18813559322035
+      ],
+      "column_pair_max_overlap_mm3": 0.0,
+      "arms": [
+        {
+          "arm_column_overlap_mm3": 0.0,
+          "arm_to_collar_distance_mm": 0.0
+        },
+        {
+          "arm_column_overlap_mm3": 0.0,
+          "arm_to_collar_distance_mm": 0.0
+        },
+        {
+          "arm_column_overlap_mm3": 0.0,
+          "arm_to_collar_distance_mm": 0.0
+        }
+      ]
+    },
+    {
+      "angle_deg": 275,
+      "first_road_height_mm": 21.347457627118647,
+      "foot_body_height_mm": 8.447457627118647,
+      "collar_top_z_mm": [
+        9.747457627118647,
+        72.74745762711865,
+        135.74745762711865
+      ],
+      "column_pair_max_overlap_mm3": 0.0,
+      "arms": [
+        {
+          "arm_column_overlap_mm3": 0.0,
+          "arm_to_collar_distance_mm": 0.0
+        },
+        {
+          "arm_column_overlap_mm3": 0.0,
+          "arm_to_collar_distance_mm": 0.0
+        },
+        {
+          "arm_column_overlap_mm3": 0.0,
+          "arm_to_collar_distance_mm": 0.0
+        }
+      ]
+    }
+  ],
+  "cad_objects": 36,
+  "brep_solids_valid": true,
+  "assembly": "Stack columns and bearing-tab arms; fit track as segments. Track segmentation not yet designed.",
+  "status": "Concept assembly; physical fit, rigidity and loading not tested.",
+  "sign_column_solids_valid": true,
+  "sign_column_pair_overlap_mm3": 0,
+  "cad_reopen_valid_solids": 36,
+  "step_reopen_valid_solids": 36
+}

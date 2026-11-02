@@ -1,0 +1,19 @@
+{
+  "brep_solids_valid": true,
+  "station_parts": 15,
+  "interferences": {
+    "arm_post_overlap_mm3": 0.0,
+    "cap_post_overlap_mm3": 0.0,
+    "clamp_halves_overlap_mm3": 0.0
+  },
+  "arm_to_seat_distance_mm": 7.105427357601002e-15,
+  "cap_to_seat_distance_mm": 7.105427357601002e-15,
+  "post_diameter_mm": 14,
+  "clamp_bore_mm": 14.4,
+  "garage_pin_mm": 6,
+  "garage_hole_mm": 6.5,
+  "temporary_track_lift_mm": 2,
+  "base_screw_clearance_to_floor_mm": 0.8,
+  "insert": "RX-M3Sx4.0 or dimensionally equivalent, pilot 4 x depth 5",
+  "status": "Proposed assembly; fit and load tests pending"
+}
