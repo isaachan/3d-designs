@@ -1,55 +1,87 @@
 # 四层停车场 · 概念 01
 
-2026-11-01。沿用 garage-bookshelf 最新 v5 的 garage 设计语言，形成独立四层停车场，原书架一侧改为连续螺旋道路。本阶段交付概念图和通行逻辑，不含生产 CAD 或打印文件。
+**当前版本：2026-11-02 等宽单车道几何重建。** 沿用 garage-bookshelf v5 的 garage 造型、四层停车区、黑色与三色收边、顶部广告牌及侧面口号牌。
 
-![四层停车场概念效果图](concepts/01-side-helix/01-parking-lot-concept.png)
+旧的 07/08 两张图存在入口变窄、道路分叉和宽度失真的问题，已否决。当前预览全部从同一份显式三维网格直接渲染，尺寸与连接以本页当前几何为准。
 
-## 方案
+![当前整体几何预览](concepts/01-side-helix/geometry-rebuild/09-geometry-overall.png)
 
-左侧为开放式停车楼，右侧为侧置螺旋坡道，共用底座。首层加三个悬空停车层构成四层，顶层露天，不再增加第五层或顶盖。三圈连续上升的道路依次连接 **1F → 2F → 3F → 4F**；四处接入口位于同一侧，以水平平台衔接每层前方通道。单车道供车模分时上下行。
+## 道路怎样连接
 
-保留黑色主体、圆柱、背板和浅蓝／深蓝／红层板收边；保留白色车位线、编号、箭头、斑马线、浅蓝禁停斜线及深蓝无障碍装饰。车位安排延续 **2／2／3／3，共 10 位**，编号 101–102、201–202、301–303、401–403。
+主坡道是一条等宽的单车道螺旋带，三圈连续上升，依次经过 1F、2F、3F、4F。坡道净宽始终为 **70 mm**，内侧护栏内边界半径 85 mm，外侧护栏内边界半径 155 mm。
 
-顶部广告牌延续黑底白字 **Lovely Cars / I've Driven**，左浅蓝、右红支架。深蓝色螺钉口号牌 **HORSEPOWER LEFT, / BRAINPOWER RIGHT** 移至坡道外侧支撑位置。
+每层只在坡道外侧开一个侧向接口，以 **70 mm 等宽短通道** 接入停车区。主坡道不拆成上下两条路，也不增加下坡捷径。车辆在同一条主坡道上分时上下行；在 2F/3F 接点可转入停车区，也可沿主坡道继续绕行。
 
-旋转道路采用黑色路面、低护边和随高度变化的三色点缀。入口处护边开口，柱位避开通行面。原 garage 的前方通道用于场景装饰，本方案将停车板加深，为转向与坡道接入留出空间。停车位内的展示结构不进入通行道路。
+连接口位于每圈同一角度的水平段内。连接通道的弧形末端与坡道外缘逐点对齐，接缝两边同高。护栏在侧接口处断开，其余部分位于 70 mm 净路面之外。
 
-## 通行逻辑
+![同一几何移除停车楼后的道路](concepts/01-side-helix/geometry-rebuild/10-geometry-road-only.png)
 
-![通行逻辑与概念尺度](concepts/01-side-helix/02-route-diagram.png)
+上图只隐藏停车楼与支撑，并将三段道路表面分别着色以便追踪；道路的几何、宽度与整体图相同。1F/4F 末端水平转向段设端部挡墙，侧接口不被挡墙占用。
 
-[查看可缩放 SVG](concepts/01-side-helix/02-route-diagram.svg)。该图由参数化矢量脚本生成，用于明确道路关系；立柱、广告牌、车辆和装饰以效果图为造型参考。
+[俯视净宽校核图](concepts/01-side-helix/geometry-rebuild/11-geometry-width-plan.png)同时标注入口和弯道路宽。该图显示车道边界的平面投影，省略端部挡墙；上下层投影重合，不表示道路在同一高度。
 
-| 项目 | 概念起点 |
+## 当前概念尺寸
+
+| 项目 | 当前几何 |
 |---|---|
-| 停车楼宽度 | 约 200 mm，沿用原 garage 名义宽度 |
-| 停车楼深度 | 约 220 mm，原版约 159 mm；增加前方转向空间 |
+| 停车区平面 | 200 × 230 mm |
+| 停车位 | 2／2／3／3，共 10 位 |
 | 四个停车面高度 | 8、71、134、197 mm |
-| 层距 | 63 mm |
-| 坡道净路宽 | 约 70 mm |
-| 坡道中心半径 | 约 120 mm |
-| 内／外半径 | 85／155 mm，路面外径约 310 mm，护边另计 |
-| 坡道圈数／总爬升 | 三圈／189 mm |
-| 每圈平接与过渡 | 接入口两侧各 15° 水平段，升坡两端各 15° 坡度缓变 |
-| 中心线最大概念纵坡 | 约 9.55%；63 ÷ (120 × 315° 的弧度值) |
-| 平面占地估计 | 约 550 × 310 mm，护边与外挂牌另计 |
-| 车模比例参考 | 长约 85、宽约 38 mm，仅用于构图与初步路宽 |
+| 主坡道净宽 | 全程 70 mm |
+| 四层接入通道净宽 | 各 70 mm，含 1F 出入口 |
+| 主坡道内／外净半径 | 85／155 mm |
+| 路板厚度 | 6.6 mm |
+| 护栏 | 净路面之外另加 2 mm 厚、8 mm 高 |
+| 每层接点的水平范围 | 接点前后各 25°；升坡两端各 15° 坡度缓变 |
+| 最大纵坡 | 中心线约 10.2%；内缘约 14.4% |
+| 路板之间竖向间距 | 路面至上层路板底为 56.4 mm |
+| 含托梁的最小局部净空 | 约 51.8 mm，详见检查记录 |
+| 概念整体包络 | 含底座和广告牌约 635 × 334 × 319 mm |
 
-路线脚本已检查中心线单调上升、三圈首尾连续以及四层标高对应。以上为概念参数；效果图不承诺尺寸精度。后续 CAD 需要按实际车模核对转向包络、坡道护边净宽、路板厚度、跨层净空、平坡过渡、支撑和拆件连接。
+外侧立柱与道路之间增加了路板下方的径向托梁。立柱位于净路面以外，托梁不露出路面。车位线、编号、斑马线、浅蓝斜线和深蓝停车装饰由几何生成；道路没有暗示双车道的分隔线。
 
-## 文件与生成记录
+当前是几何概念样模，已检查等宽、接缝与网格闭合；实车转向、结构承载及打印拆件尚未完成。
 
-所有本次工作文件均位于本目录。原 garage-bookshelf 文件未修改。
+## 几何检查与复现
 
-| 文件 | 内容 |
+[geometry-checks.json](concepts/01-side-helix/geometry-rebuild/geometry-checks.json)记录：
+
+- 全部采样截面的路宽为 70 mm，浮点误差小于 0.000001 mm。
+- 四个接入通道均为 70 mm，接缝高差为 0。
+- 主道路与四条接入通道合并网格的开放边及非流形边数为 0。
+- 道路网格只有 1 个连通分量，四个接口属于同一个连续实体。
+- 含路板下方托梁的局部净空单独计算，不以板间净空代替。
+
+在 parking-lot 目录运行：
+
+```sh
+/Applications/FreeCAD.app/Contents/Resources/bin/python concepts/01-side-helix/geometry-rebuild/build_geometry.py
+```
+
+本轮使用本地几何生成与 VTK 渲染，不读取或修补旧效果图。以下文件均在 parking-lot 内，未修改 garage-bookshelf。
+
+| 文件 | 用途 |
 |---|---|
-| [01-parking-lot-concept.png](concepts/01-side-helix/01-parking-lot-concept.png) | 1536 × 1024 主概念效果图，已修正层间入口和下两层车位 |
-| [02-route-diagram.png](concepts/01-side-helix/02-route-diagram.png) | 1600 × 1120 通行说明图 |
-| [02-route-diagram.svg](concepts/01-side-helix/02-route-diagram.svg) | 可缩放通行图源文件 |
-| [draw-route.py](concepts/01-side-helix/draw-route.py) | 通行图生成脚本及中心线连续性检查 |
-| [generation-prompts.md](concepts/01-side-helix/generation-prompts.md) | 主概念图完整提示词 |
-| [correction-prompt.md](concepts/01-side-helix/correction-prompt.md) | 接入口、柱位及车位修正的完整提示词 |
-| [drafts/01-initial-render.png](concepts/01-side-helix/drafts/01-initial-render.png) | 初稿，保留供追溯，以修正版为准 |
-| [references/](concepts/01-side-helix/references/) | 原 v5 装配效果图及四层标线参考图的副本 |
+| [09-geometry-overall.png](concepts/01-side-helix/geometry-rebuild/09-geometry-overall.png) | 当前整体预览 |
+| [10-geometry-road-only.png](concepts/01-side-helix/geometry-rebuild/10-geometry-road-only.png) | 同一模型的坡道剥离预览 |
+| [11-geometry-width-plan.png](concepts/01-side-helix/geometry-rebuild/11-geometry-width-plan.png) | 入口、弯道净宽的俯视校核 |
+| [build_geometry.py](concepts/01-side-helix/geometry-rebuild/build_geometry.py) | 同一份三维几何与三张图的生成入口 |
+| [constant-width-road.vtp](concepts/01-side-helix/geometry-rebuild/constant-width-road.vtp) | 主道路及四条接入通道的封闭网格，单位 mm；非打印文件 |
+| [geometry-checks.json](concepts/01-side-helix/geometry-rebuild/geometry-checks.json) | 尺寸、接缝、网格与净空检查结果 |
 
-主效果图使用**内置 image_gen** 生成并编辑，未使用 CLI/API 回退。通行图使用本地 SVG 绘图并由 Chrome 渲染为 PNG，不是 AI 生成的结构验证结果。
+## 历史参考
+
+以下图像仅保留造型探索和过程记录，不作为当前道路几何依据。07/08 已因物理连接错误作废。
+
+| 文件 | 记录 |
+|---|---|
+| [01 初版效果图](concepts/01-side-helix/01-parking-lot-concept.png) | 黑色主体、广告牌及装饰参考 |
+| [02 早期通行示意](concepts/01-side-helix/02-route-diagram.png) / [SVG](concepts/01-side-helix/02-route-diagram.svg) | 早期比例和中心线探索；尺寸已被当前模型替代 |
+| [03 正面](concepts/01-side-helix/03-front-view.png) | 初版多视角 |
+| [04 坡道侧斜视](concepts/01-side-helix/04-ramp-side-view.png) | 初版多视角 |
+| [05 背面](concepts/01-side-helix/05-rear-three-quarter-view.png) | 初版多视角 |
+| [06 连接原理](concepts/01-side-helix/06-ramp-connections.png) / [SVG](concepts/01-side-helix/06-ramp-connections.svg) | 解释各圈共享接点的拓扑关系；不作为当前尺寸图 |
+| [07 已否决整体图](concepts/01-side-helix/07-2f-up-down-connections.png) | 入口宽度及分叉错误 |
+| [08 已否决局部图](concepts/01-side-helix/08-2f-landing-closeup.png) | 同上 |
+
+历史图像使用内置 image_gen 生成／编辑。[主图提示词](concepts/01-side-helix/generation-prompts.md) · [初次接入口修正](concepts/01-side-helix/correction-prompt.md) · [多视角提示词](concepts/01-side-helix/multi-view-prompts.md) · [已否决修图提示词](concepts/01-side-helix/connection-render-prompts.md)。
