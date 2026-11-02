@@ -1,0 +1,141 @@
+{
+  "status": "passed",
+  "measurements_mm": {
+    "S": 51,
+    "Bf": 23,
+    "Br": 23,
+    "Df": 10,
+    "Dr": 10,
+    "Tf": 5.1,
+    "Tr": 5.1
+  },
+  "wheelbase_mm": 41,
+  "front_track_mm": 17.9,
+  "rear_track_mm": 17.9,
+  "side_clearance_mm": 0.2,
+  "radial_clearance_mm": 0.15,
+  "guide_height_mm": 1.6,
+  "slot_width_mm": 5.5,
+  "dimensions_mm": [
+    40,
+    83,
+    3.6
+  ],
+  "native_sketches_fully_constrained": true,
+  "parameter_roundtrip_passed": true,
+  "mesh_watertight": true,
+  "mesh_components": 1,
+  "triangles": 1412,
+  "volume_mm3": 6819.345694618718,
+  "base_matches_current_standard": true,
+  "vehicle_tires_interference_mm3": 0,
+  "slot_fit_checks": [
+    {
+      "floor": "module_1",
+      "index": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "floor": "module_1",
+      "index": 1,
+      "overlap_mm3": 0.0
+    },
+    {
+      "floor": "garage_deck_1",
+      "index": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "floor": "garage_deck_1",
+      "index": 1,
+      "overlap_mm3": 0.0
+    },
+    {
+      "floor": "garage_deck_2",
+      "index": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "floor": "garage_deck_2",
+      "index": 1,
+      "overlap_mm3": 0.0
+    },
+    {
+      "floor": "garage_deck_2",
+      "index": 2,
+      "overlap_mm3": 0.0
+    },
+    {
+      "floor": "garage_deck_3",
+      "index": 0,
+      "overlap_mm3": 0.0
+    },
+    {
+      "floor": "garage_deck_3",
+      "index": 1,
+      "overlap_mm3": 0.0
+    },
+    {
+      "floor": "garage_deck_3",
+      "index": 2,
+      "overlap_mm3": 0.0
+    }
+  ],
+  "formal_cad_unchanged": true,
+  "formal_cad_sha256": "3b3e2b9f8c24eb89a2d68df4b70a30069df9d5777310db98706b629d1171c339",
+  "physical_fit_tested": false,
+  "vertical_lock": false,
+  "settings": {
+    "printer_model": "Bambu Lab X2D",
+    "nozzle_diameter": [
+      "0.4",
+      "0.4"
+    ],
+    "extruder_nozzle_stats": [
+      "Standard#1",
+      "Standard#1"
+    ],
+    "curr_bed_type": "Textured PEI Plate",
+    "filament_type": [
+      "PLA"
+    ],
+    "filament_colour": [
+      "#141414"
+    ],
+    "filament_density": [
+      "1.26"
+    ],
+    "textured_plate_temp": [
+      "55"
+    ],
+    "textured_plate_temp_initial_layer": [
+      "55"
+    ],
+    "nozzle_temperature": [
+      "220",
+      "220",
+      "220",
+      "220",
+      "220",
+      "220"
+    ],
+    "layer_height": "0.2",
+    "wall_loops": "4",
+    "sparse_infill_density": "25%",
+    "brim_width": "4",
+    "brim_type": "auto_brim",
+    "enable_support": "0",
+    "top_shell_layers": "5",
+    "bottom_shell_layers": "3",
+    "enable_prime_tower": "0"
+  },
+  "reopened_and_sliced": true,
+  "slicing_warnings": "",
+  "estimated_seconds": 973.4215087890625,
+  "estimated_filament_g": 7.658701419830322,
+  "sha256": {
+    "parking-tray-s51-b23-d10-t5p1.FCStd": "b915c6c1c2a0e8ee24c3c78e51a26134f3e08770ed807a5a9d0550b4c28ffa40",
+    "parking-tray-s51-b23-d10-t5p1.stl": "193bb468721164ed144784eb8405e48e2d97afc3bd1a864a104d40e08a66f4d3",
+    "parking-tray-s51-b23-d10-t5p1.3mf": "25b4c460c1f3993c2602902b6110da00952748bcc18418a626eba28b9866adb3"
+  }
+}
