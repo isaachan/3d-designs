@@ -2,16 +2,16 @@
   "status": "passed",
   "measurements_mm": {
     "S": 51,
-    "Bf": 23,
-    "Br": 23,
+    "Bf": 28,
+    "Br": 28,
     "Df": 10,
     "Dr": 10,
     "Tf": 5.1,
     "Tr": 5.1
   },
   "wheelbase_mm": 41,
-  "front_track_mm": 17.9,
-  "rear_track_mm": 17.9,
+  "front_track_mm": 22.9,
+  "rear_track_mm": 22.9,
   "side_clearance_mm": 0.2,
   "radial_clearance_mm": 0.15,
   "guide_height_mm": 1.6,
@@ -26,7 +26,7 @@
   "mesh_watertight": true,
   "mesh_components": 1,
   "triangles": 1412,
-  "volume_mm3": 6819.345694618718,
+  "volume_mm3": 6819.34569461872,
   "base_matches_current_standard": true,
   "vehicle_tires_interference_mm3": 0,
   "slot_fit_checks": [
@@ -131,11 +131,20 @@
   },
   "reopened_and_sliced": true,
   "slicing_warnings": "",
-  "estimated_seconds": 973.4215087890625,
-  "estimated_filament_g": 7.658701419830322,
+  "estimated_seconds": 973.950439453125,
+  "estimated_filament_g": 7.658623218536377,
   "sha256": {
-    "parking-tray-s51-b23-d10-t5p1.FCStd": "b915c6c1c2a0e8ee24c3c78e51a26134f3e08770ed807a5a9d0550b4c28ffa40",
-    "parking-tray-s51-b23-d10-t5p1.stl": "193bb468721164ed144784eb8405e48e2d97afc3bd1a864a104d40e08a66f4d3",
-    "parking-tray-s51-b23-d10-t5p1.3mf": "25b4c460c1f3993c2602902b6110da00952748bcc18418a626eba28b9866adb3"
+    "parking-tray-s51-b23-d10-t5p1.FCStd": "89e05c766fd65447cf45eb96d4e8a3fd16423caabf1dbed64b53c742e7db8af7",
+    "parking-tray-s51-b23-d10-t5p1.stl": "f4a198818100ff9d367a084d677f425cc6f3a25421fa7c52ba3030f012c9dd08",
+    "parking-tray-s51-b23-d10-t5p1.3mf": "c86653b8e0ec632951483791fe3b6dbb521307098e311e2e287e0eb676a94b8f"
+  },
+  "width_correction": {
+    "previous_Bf_Br_mm": 23,
+    "corrected_Bf_Br_mm": 28,
+    "each_side_outward_shift_mm": 2.5,
+    "compared_with_previous_cad": true,
+    "foot_and_longitudinal_locations_unchanged": true,
+    "four_cradle_shapes_unchanged": true,
+    "original_delivery_filenames_retained": true
   }
 }

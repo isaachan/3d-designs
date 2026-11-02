@@ -3,39 +3,39 @@
   "export_time": 0,
   "layer_height": 0.20000000298023224,
   "plate_index": 0,
-  "prepare_time": 27,
+  "prepare_time": 35,
   "return_code": 0,
   "sliced_plates": [
     {
       "feature_type_times": {
         "Bottom surface": 93.3943862915039,
-        "Bridge": 127.68348693847656,
+        "Bridge": 127.61297607421875,
         "Custom": 287.3218078613281,
         "Flush": 29.0,
-        "Gap infill": 7.7790703773498535,
-        "Inner wall": 58.63990020751953,
+        "Gap infill": 12.771267890930176,
+        "Inner wall": 58.644065856933594,
         "Internal solid infill": 188.94720458984375,
-        "Outer wall": 48.959388732910156,
+        "Outer wall": 43.86095428466797,
         "Sparse infill": 17.140380859375,
-        "Top surface": 58.551292419433594,
-        "Travel": 63.78758239746094,
-        "Undefined": 56.00161361694336
+        "Top surface": 58.83968734741211,
+        "Travel": 64.2008056640625,
+        "Undefined": 56.41484069824219
       },
       "filament_change_times": 0,
       "filaments": [
         {
           "filament_id": "GFA00",
           "id": 1,
-          "main_used_g": 7.658701419830322,
-          "total_used_g": 7.658701419830322
+          "main_used_g": 7.658623218536377,
+          "total_used_g": 7.658623218536377
         }
       ],
-      "generate_support_material_time": 2,
+      "generate_support_material_time": 3,
       "id": 1,
-      "infill_time": 20,
+      "infill_time": 19,
       "layer_filament_change": 0,
-      "main_predication": 635.8856811523438,
-      "make_perimeters_time": 11,
+      "main_predication": 636.4146118164062,
+      "make_perimeters_time": 12,
       "obj_cached_cnt": 0,
       "objects": [
         {
@@ -52,9 +52,9 @@
           "triangle_count": 1412
         }
       ],
-      "sliced_time": 121,
-      "sliced_time_with_cache": 81,
-      "total_predication": 973.4215087890625,
+      "sliced_time": 130,
+      "sliced_time_with_cache": 90,
+      "total_predication": 973.950439453125,
       "triangle_count": 1412,
       "warning_message": ""
     }

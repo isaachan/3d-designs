@@ -33,6 +33,7 @@ from garage_bookshelf.appearance.storage import material_records, serialize_mate
 
 OUT = study_directory('measured-tray-s51-b23-d10-t5p1')
 STEM = 'parking-tray-s51-b23-d10-t5p1'
+# Retain the original delivery paths for in-place replacement; B is now 28 mm.
 
 
 def sha(path):
@@ -49,7 +50,7 @@ def build():
         sheet.set('B'+str(row), f'{value} mm')
         sheet.setAlias('B'+str(row), name)
     fit = doc.addObject('App::FeaturePython', 'WheelFit')
-    for name, value in dict(Span=51, FrontOutside=23, RearOutside=23,
+    for name, value in dict(Span=51, FrontOutside=28, RearOutside=28,
             FrontDiameter=10, RearDiameter=10, FrontWidth=5.1, RearWidth=5.1,
             SideClearance=.2, RadialClearance=.15, GuideWall=1.2,
             GuideHeight=1.6, CradleLength=10).items():
@@ -64,7 +65,7 @@ def build():
     fit.addProperty('App::PropertyString', 'FitStatus')
     fit.FitStatus = 'Measured wheel geometry; gravity cradle; no snap lock; physical fit pending'
     body = doc.addObject('PartDesign::Body', 'measured_tray_Body')
-    body.Label = 'Measured parking tray - S51 B23 D10 T5.1'
+    body.Label = 'Measured parking tray - S51 B28 D10 T5.1'
     doc.recompute()
     sketch = plane(body, 'Sketch_RoundedFoot')
     rounded_profile(sketch, 'Zero', 'Zero', 'TrayFootWidth', 'TrayFootLength', 'TrayFootRadius')
@@ -202,13 +203,13 @@ def main():
     assert abs(reopened.measured_tray_Body.Shape.Volume-shape.Volume)<1e-6
     assert all(s.FullyConstrained for s in reopened.Objects if s.TypeId=='Sketcher::SketchObject')
     reopened.WheelFit.Span=52
-    reopened.WheelFit.FrontOutside=24
+    reopened.WheelFit.FrontOutside=29
     reopened.recompute()
     assert reopened.measured_tray_Body.Shape.isValid()
     assert abs(reopened.WheelFit.Wheelbase.Value-42)<1e-6
-    assert abs(reopened.WheelFit.FrontTrack.Value-18.9)<1e-6
+    assert abs(reopened.WheelFit.FrontTrack.Value-23.9)<1e-6
     reopened.WheelFit.Span=51
-    reopened.WheelFit.FrontOutside=23
+    reopened.WheelFit.FrontOutside=28
     reopened.recompute()
     assert abs(reopened.measured_tray_Body.Shape.Volume-shape.Volume)<1e-6
     App.closeDocument(reopened.Name)
@@ -233,8 +234,8 @@ def main():
         plate=result['sliced_plates'][0]
         assert len(plate['objects'])==1 and not plate['warning_message']
     assert sha(CAD)==original_hash
-    report=dict(status='passed',measurements_mm=dict(S=51,Bf=23,Br=23,Df=10,Dr=10,Tf=5.1,Tr=5.1),
-        wheelbase_mm=41,front_track_mm=17.9,rear_track_mm=17.9,
+    report=dict(status='passed',measurements_mm=dict(S=51,Bf=28,Br=28,Df=10,Dr=10,Tf=5.1,Tr=5.1),
+        wheelbase_mm=41,front_track_mm=22.9,rear_track_mm=22.9,
         side_clearance_mm=.2,radial_clearance_mm=.15,guide_height_mm=1.6,
         slot_width_mm=5.5,dimensions_mm=[40,83,3.6],native_sketches_fully_constrained=True,
         parameter_roundtrip_passed=True,
