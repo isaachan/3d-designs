@@ -3,7 +3,7 @@
   "export_time": 0,
   "layer_height": 0.20000000298023224,
   "plate_index": 0,
-  "prepare_time": 35,
+  "prepare_time": 34,
   "return_code": 0,
   "sliced_plates": [
     {
@@ -12,30 +12,30 @@
         "Bridge": 127.61297607421875,
         "Custom": 287.3218078613281,
         "Flush": 29.0,
-        "Gap infill": 12.771267890930176,
-        "Inner wall": 58.644065856933594,
+        "Gap infill": 7.88878059387207,
+        "Inner wall": 59.476261138916016,
         "Internal solid infill": 188.94720458984375,
-        "Outer wall": 43.86095428466797,
+        "Outer wall": 55.76203155517578,
         "Sparse infill": 17.140380859375,
-        "Top surface": 58.83968734741211,
-        "Travel": 64.2008056640625,
-        "Undefined": 56.41484069824219
+        "Top surface": 58.889060974121094,
+        "Travel": 70.73212432861328,
+        "Undefined": 62.9461555480957
       },
       "filament_change_times": 0,
       "filaments": [
         {
           "filament_id": "GFA00",
           "id": 1,
-          "main_used_g": 7.658623218536377,
-          "total_used_g": 7.658623218536377
+          "main_used_g": 7.691712856292725,
+          "total_used_g": 7.691712856292725
         }
       ],
-      "generate_support_material_time": 3,
+      "generate_support_material_time": 5,
       "id": 1,
-      "infill_time": 19,
+      "infill_time": 28,
       "layer_filament_change": 0,
-      "main_predication": 636.4146118164062,
-      "make_perimeters_time": 12,
+      "main_predication": 650.8447875976562,
+      "make_perimeters_time": 15,
       "obj_cached_cnt": 0,
       "objects": [
         {
@@ -49,13 +49,13 @@
           },
           "id": 5,
           "name": "parking-tray-s51-b23-d10-t5p1.stl",
-          "triangle_count": 1412
+          "triangle_count": 2472
         }
       ],
-      "sliced_time": 130,
-      "sliced_time_with_cache": 90,
-      "total_predication": 973.950439453125,
-      "triangle_count": 1412,
+      "sliced_time": 170,
+      "sliced_time_with_cache": 112,
+      "total_predication": 988.380615234375,
+      "triangle_count": 2472,
       "warning_message": ""
     }
   ],

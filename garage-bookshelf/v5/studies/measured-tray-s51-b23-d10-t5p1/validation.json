@@ -25,8 +25,8 @@
   "parameter_roundtrip_passed": true,
   "mesh_watertight": true,
   "mesh_components": 1,
-  "triangles": 1412,
-  "volume_mm3": 6819.34569461872,
+  "triangles": 2472,
+  "volume_mm3": 6845.210793894261,
   "base_matches_current_standard": true,
   "vehicle_tires_interference_mm3": 0,
   "slot_fit_checks": [
@@ -131,20 +131,32 @@
   },
   "reopened_and_sliced": true,
   "slicing_warnings": "",
-  "estimated_seconds": 973.950439453125,
-  "estimated_filament_g": 7.658623218536377,
+  "estimated_seconds": 988.380615234375,
+  "estimated_filament_g": 7.691712856292725,
   "sha256": {
-    "parking-tray-s51-b23-d10-t5p1.FCStd": "89e05c766fd65447cf45eb96d4e8a3fd16423caabf1dbed64b53c742e7db8af7",
-    "parking-tray-s51-b23-d10-t5p1.stl": "f4a198818100ff9d367a084d677f425cc6f3a25421fa7c52ba3030f012c9dd08",
-    "parking-tray-s51-b23-d10-t5p1.3mf": "c86653b8e0ec632951483791fe3b6dbb521307098e311e2e287e0eb676a94b8f"
+    "parking-tray-s51-b23-d10-t5p1.FCStd": "f9a76efba17ea05a38fedaf3d788a6f4226674b7e35c7541530665187be65891",
+    "parking-tray-s51-b23-d10-t5p1.stl": "bd1e25038fac5101dc09884979dbf7c072500fea31b3f6bf8f33b502c20e320a",
+    "parking-tray-s51-b23-d10-t5p1.3mf": "70f09505bcd981d68c135e440a1f718b3d8acfc308dca25d56e5def70a9f933b"
   },
-  "width_correction": {
-    "previous_Bf_Br_mm": 23,
-    "corrected_Bf_Br_mm": 28,
-    "each_side_outward_shift_mm": 2.5,
-    "compared_with_previous_cad": true,
-    "foot_and_longitudinal_locations_unchanged": true,
-    "four_cradle_shapes_unchanged": true,
-    "original_delivery_filenames_retained": true
-  }
+  "model_label": {
+    "text": "BMW Z4 E89",
+    "font": "Arial Bold",
+    "lines": 1,
+    "cap_height_mm": 4,
+    "raised_height_mm": 0.4,
+    "width_mm": 32.86493860845839,
+    "height_mm": 4.08731241473397,
+    "bottom_y_mm": -37.7,
+    "base_top_z_mm": 2,
+    "text_top_z_mm": 2.4,
+    "native_sketch_and_pad": true,
+    "character_count": 8,
+    "volume_mm3": 25.865099275546406,
+    "below_cradle_rim_mm": 1.2,
+    "printed_layers_at_0p2_mm": 2
+  },
+  "user_confirmed_unlettered_fit": true,
+  "lettering_only_geometry_change_verified": true,
+  "label_height_only_change_verified": true,
+  "previous_label_height_mm": 0.2
 }

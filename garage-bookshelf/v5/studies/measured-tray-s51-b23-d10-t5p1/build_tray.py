@@ -65,7 +65,7 @@ def build():
     fit.addProperty('App::PropertyString', 'FitStatus')
     fit.FitStatus = 'Measured wheel geometry; gravity cradle; no snap lock; physical fit pending'
     body = doc.addObject('PartDesign::Body', 'measured_tray_Body')
-    body.Label = 'Measured parking tray - S51 B28 D10 T5.1'
+    body.Label = 'BMW Z4 E89 - S51 B28 D10 T5.1'
     doc.recompute()
     sketch = plane(body, 'Sketch_RoundedFoot')
     rounded_profile(sketch, 'Zero', 'Zero', 'TrayFootWidth', 'TrayFootLength', 'TrayFootRadius')
@@ -112,6 +112,23 @@ def build():
         p.Reversed=True
         p.Refine=True
         finish(body,p)
+    # Frozen font outlines are normalized to cap height, so regeneration does
+    # not depend on font installation or GUI font APIs. Every vertex remains
+    # dimension-driven in a native sketch; the raised lettering is a native Pad.
+    outline=json.loads(Path(__file__).with_name('model-label-outline.json').read_text())
+    label=doc.addObject('App::FeaturePython','ModelLabel')
+    label.addProperty('App::PropertyString','Text','Label')
+    label.Text=outline['text']
+    label.addProperty('App::PropertyString','Font','Label');label.Font=outline['font']
+    for name,value in dict(CharacterHeight=4,RaisedHeight=.4,BottomY=-37.7).items():
+        label.addProperty('App::PropertyLength' if name!='BottomY' else 'App::PropertyDistance',name,'Label')
+        setattr(label,name,value)
+    polygons=[[(f'ModelLabel.CharacterHeight*({x})',
+                f'ModelLabel.BottomY+ModelLabel.CharacterHeight*({y})') for x,y in contour]
+              for contour in outline['contours_per_cap_height']]
+    s=loops(body,'Sketch_ModelLabel',polygons,offset=('Zero','Zero','TrayPlateThickness'))
+    text_pad=pad(body,'Pad_ModelLabel',s,'ModelLabel.RaisedHeight')
+    text_pad.Label='BMW Z4 E89 · raised 0.4 mm'
     doc.recompute()
     assert all(s.FullyConstrained for s in doc.Objects if s.TypeId=='Sketcher::SketchObject')
     assert body.Shape.isValid() and len(body.Shape.Solids)==1
@@ -247,6 +264,12 @@ def main():
         reopened_and_sliced=True,slicing_warnings=plate['warning_message'],
         estimated_seconds=plate['total_predication'],estimated_filament_g=plate['filaments'][0]['total_used_g'],
         sha256={p.name:sha(p) for p in (cad,stl,project)})
+    outline=json.loads(Path(__file__).with_name('model-label-outline.json').read_text())
+    report['model_label']=dict(text=outline['text'],font=outline['font'],lines=1,
+        cap_height_mm=4,raised_height_mm=.4,width_mm=outline['nominal_width_mm'],
+        height_mm=outline['nominal_height_mm'],bottom_y_mm=-37.7,
+        base_top_z_mm=2,text_top_z_mm=2.4,native_sketch_and_pad=True)
+    report['user_confirmed_unlettered_fit']=True
     (OUT/'validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps(dict(output=str(OUT),seconds=report['estimated_seconds'],grams=report['estimated_filament_g'])),flush=True)
 
