@@ -29,6 +29,8 @@ review()            # 只恢复内存中的显示和视角
 
 当前完整流程为导出→15盘单色中间检查→CAD涂色→重开切片→完整快照，见`docs/printing.md`。`implement_separate_skins.py`为已完成的一次性迁移，普通维护不重复运行。
 
+2026-11-02之后完整重生成包含16盘、42个打印件。连接片专用入口为`tools/make_reinforcement_project.py`；`tools/add_reinforcement_plates.py`是已执行的增量迁移，不重复运行。尺寸、厚度及上下位置直接编辑正式CAD的`ReinforcementParameters`后重算。原15盘的打印快照保持不变；第16盘单独保存于`printing/reinforcement-2026-11-02/`。
+
 `implement_flush_inlays.py`为外贴版到齐平内嵌版的一次性迁移。名义表面引用原始Fillet特征并复制装配位移的参数表达式，避免开槽后的主体反向依赖轮廓。验证必须强制完整重算，以发现循环引用。当前发布已合并完整15盘，旧外贴版打包脚本和试验输入已删除。日常按完整导出、排盘、涂色和`package_release.py`流程生成新版本，不重跑一次性迁移。
 
 打印交付统一写入`printing/`；当前15盘固定入口为`printing/current/3mf/`。`package_release.py --release-id <id>`的新版本写入`printing/<id>/`，不再创建releases目录。

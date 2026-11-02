@@ -1,0 +1,118 @@
+{
+  "status": "passed",
+  "adopted": true,
+  "previous_cad_sha256": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e",
+  "cad_sha256": "3b3e2b9f8c24eb89a2d68df4b70a30069df9d5777310db98706b629d1171c339",
+  "original_bodies_unchanged": 47,
+  "plates": [
+    {
+      "part": "reinforcement_garage_book_lower",
+      "dimensions_width_height_thickness_mm": [
+        60.0,
+        30.0,
+        3.0
+      ],
+      "assembly_min_mm": [
+        170.0,
+        164.0,
+        18.0
+      ],
+      "assembly_max_mm": [
+        230.0,
+        167.0,
+        48.0
+      ],
+      "bond_area_mm2": {
+        "module_1": 900.0000000000001,
+        "module_2": 900.0
+      },
+      "overlap_volumes_mm3": {
+        "module_1": 0.0,
+        "module_2": 0.0
+      }
+    },
+    {
+      "part": "reinforcement_garage_book_upper",
+      "dimensions_width_height_thickness_mm": [
+        60.0,
+        30.0,
+        3.0
+      ],
+      "assembly_min_mm": [
+        170.0,
+        164.0,
+        200.0
+      ],
+      "assembly_max_mm": [
+        230.0,
+        167.0,
+        230.0
+      ],
+      "bond_area_mm2": {
+        "module_1": 900.0,
+        "module_2": 900.0
+      },
+      "overlap_volumes_mm3": {
+        "module_1": 0.0,
+        "module_2": 0.0,
+        "billboard": 0.0
+      }
+    },
+    {
+      "part": "reinforcement_book_book_lower",
+      "dimensions_width_height_thickness_mm": [
+        60.0,
+        30.0,
+        3.0
+      ],
+      "assembly_min_mm": [
+        315.0,
+        164.0,
+        18.0
+      ],
+      "assembly_max_mm": [
+        375.0,
+        167.0,
+        48.0
+      ],
+      "bond_area_mm2": {
+        "module_2": 900.0000000000001,
+        "module_3": 900.0
+      },
+      "overlap_volumes_mm3": {
+        "module_2": 0.0,
+        "module_3": 0.0
+      }
+    },
+    {
+      "part": "reinforcement_book_book_upper",
+      "dimensions_width_height_thickness_mm": [
+        60.0,
+        30.0,
+        3.0
+      ],
+      "assembly_min_mm": [
+        315.0,
+        164.0,
+        200.0
+      ],
+      "assembly_max_mm": [
+        375.0,
+        167.0,
+        230.0
+      ],
+      "bond_area_mm2": {
+        "module_2": 900.0,
+        "module_3": 900.0
+      },
+      "overlap_volumes_mm3": {
+        "module_2": 0.0,
+        "module_3": 0.0
+      }
+    }
+  ],
+  "fully_constrained_native_sketches": true,
+  "thickness_recompute_passed": true,
+  "saved_candidate_reopened_and_checked": true,
+  "physical_print_and_fit_tested": false
+}

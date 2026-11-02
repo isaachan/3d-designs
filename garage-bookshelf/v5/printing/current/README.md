@@ -1,6 +1,8 @@
 # garage-bookshelf v5 · 当前完整15盘
 
-打印入口统一为`printing/current/3mf/`。这里是唯一当前交付，包含38个打印件。05/06和13–15为齐平内嵌修正版，其余十盘按原文件字节合并，没有改模型或设置；正在打印的其他零件无需重印。
+2026-11-02补充：本目录保留原15盘和当时CAD快照；另加打[四个背面连接片](../reinforcement-2026-11-02/README.md)即可。当前正式CAD在[../../cad/garage-bookshelf-v5-assembly.FCStd](../../cad/garage-bookshelf-v5-assembly.FCStd)，原有打印件几何不变。
+
+本目录包含原有38个打印件。05/06和13–15为齐平内嵌修正版，其余十盘按原文件字节合并，没有改模型或设置；正在打印的其他零件无需重印。
 
 你手动调整过的03盘仍保留在[原位置](../mpower-color-preview-2026-10-29/3mf/03-garage-deck-3-mpower.3mf)，继续按自己的设置打印，不必换成这里的基线03盘。
 

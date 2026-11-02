@@ -18,5 +18,22 @@
   "replacement_estimated_filament_g": 919.0590600967407,
   "physical_print_and_fit_tested": false,
   "projects_path": "current/3mf",
-  "archive_path": "garage-bookshelf-v5-flush-inlays-2026-10-30.zip"
+  "archive_path": "garage-bookshelf-v5-flush-inlays-2026-10-30.zip",
+  "supplements": [
+    {
+      "date": "2026-11-02",
+      "release_id": "reinforcement-2026-11-02",
+      "path": "reinforcement-2026-11-02",
+      "plate_count": 1,
+      "print_part_count": 4,
+      "cad_sha256": "3b3e2b9f8c24eb89a2d68df4b70a30069df9d5777310db98706b629d1171c339",
+      "project_sha256": "df035396206f463f9ddaf9e2bee0fe3131febd8a7b9650900e5173edbb4ee630",
+      "estimated_seconds": 2017.0982666015625,
+      "estimated_filament_g": 26.682451248168945,
+      "existing_15_projects_unchanged": true,
+      "physical_print_and_fit_tested": false
+    }
+  ],
+  "total_plate_count_including_supplements": 16,
+  "total_print_part_count_including_supplements": 42
 }

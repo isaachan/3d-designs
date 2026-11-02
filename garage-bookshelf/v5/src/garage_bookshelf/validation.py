@@ -96,6 +96,12 @@ def validate(cad=CAD, intersections=True):
             report['checks'].append('assembly Body-pair overlap < 0.01 mm^3 (sample excluded)')
         report['intersection_pairs_checked'] = overlap_checks
         report['intersection_check_enabled'] = intersections
+        if spec.get('reinforcement'):
+            from garage_bookshelf.reinforcement import check
+            for name, expected in spec['reinforcement']['parameters_mm'].items():
+                assert abs(doc.ReinforcementParameters.evalExpression(name).Value-expected) < 1e-6, name
+            report['reinforcement'] = check(doc)
+            report['checks'].append('4 native rear plates, both-side bond areas, dimensions and clearances')
         import Part
         box = Part.makeCompound(list(shapes.values())).BoundBox
         report['assembly_dimensions_mm'] = [box.XLength, box.YLength, box.ZLength]

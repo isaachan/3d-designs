@@ -1,0 +1,110 @@
+{
+  "error_string": "Success.",
+  "export_time": 0,
+  "layer_height": 0.20000000298023224,
+  "plate_index": 0,
+  "prepare_time": 24,
+  "return_code": 0,
+  "sliced_plates": [
+    {
+      "feature_type_times": {
+        "Bottom surface": 223.85562133789062,
+        "Custom": 287.4446105957031,
+        "Flush": 29.0,
+        "Inner wall": 162.7086639404297,
+        "Internal solid infill": 515.0559692382812,
+        "Outer wall": 75.53579711914062,
+        "Sparse infill": 546.90478515625,
+        "Top surface": 114.9330062866211,
+        "Travel": 69.35131072998047,
+        "Undefined": 61.535343170166016
+      },
+      "filament_change_times": 0,
+      "filaments": [
+        {
+          "filament_id": "GFA00",
+          "id": 1,
+          "main_used_g": 26.682451248168945,
+          "total_used_g": 26.682451248168945
+        }
+      ],
+      "generate_support_material_time": 1,
+      "id": 1,
+      "infill_time": 15,
+      "layer_filament_change": 0,
+      "main_predication": 1679.4696044921875,
+      "make_perimeters_time": 7,
+      "obj_cached_cnt": 0,
+      "objects": [
+        {
+          "bbox": {
+            "depth": 30.0,
+            "height": 3.0,
+            "width": 60.000003814697266,
+            "x": 124.2499771118164,
+            "y": 144.99996948242188,
+            "z": 0.0
+          },
+          "id": 5,
+          "name": "reinforcement_garage_book_lower.stl",
+          "triangle_count": 12
+        },
+        {
+          "bbox": {
+            "depth": 30.000001907348633,
+            "height": 3.0,
+            "width": 60.000003814697266,
+            "x": 124.2499771118164,
+            "y": 113.00000762939453,
+            "z": 0.0
+          },
+          "id": 9,
+          "name": "reinforcement_garage_book_upper.stl",
+          "triangle_count": 12
+        },
+        {
+          "bbox": {
+            "depth": 29.999996185302734,
+            "height": 3.0,
+            "width": 60.000003814697266,
+            "x": 124.2499771118164,
+            "y": 81.00005340576172,
+            "z": 0.0
+          },
+          "id": 13,
+          "name": "reinforcement_book_book_lower.stl",
+          "triangle_count": 12
+        },
+        {
+          "bbox": {
+            "depth": 60.0,
+            "height": 3.0,
+            "width": 30.0,
+            "x": 92.25,
+            "y": 98.0,
+            "z": 0.0
+          },
+          "id": 17,
+          "name": "reinforcement_book_book_upper.stl",
+          "triangle_count": 12
+        }
+      ],
+      "sliced_time": 158,
+      "sliced_time_with_cache": 114,
+      "total_predication": 2017.0982666015625,
+      "triangle_count": 48,
+      "warning_message": ""
+    }
+  ],
+  "sparse_infill_density": 100.0,
+  "upward_compatible_machine": [
+    "Bambu Lab A1 0.4 nozzle",
+    "Bambu Lab P2S 0.4 nozzle",
+    "Bambu Lab H2S 0.4 nozzle",
+    "Bambu Lab H2D 0.4 nozzle",
+    "Bambu Lab H2D Pro 0.4 nozzle",
+    "Bambu Lab H2C 0.4 nozzle",
+    "Bambu Lab A2L 0.4 nozzle"
+  ],
+  "wall_loops": 4
+}

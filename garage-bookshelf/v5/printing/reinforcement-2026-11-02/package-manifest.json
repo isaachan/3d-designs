@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "kind": "reinforcement-only-supplement",
+  "date": "2026-11-02",
+  "cad_sha256": "3b3e2b9f8c24eb89a2d68df4b70a30069df9d5777310db98706b629d1171c339",
+  "project": "16-reinforcement-plates-only.3mf",
+  "project_sha256": "df035396206f463f9ddaf9e2bee0fe3131febd8a7b9650900e5173edbb4ee630",
+  "plate_count": 1,
+  "print_part_count": 4,
+  "existing_15_projects_unchanged": true,
+  "original_bodies_unchanged": 47,
+  "estimated_seconds": 2017.0982666015625,
+  "estimated_filament_g": 26.682451248168945,
+  "physical_print_and_fit_tested": false,
+  "files": {
+    "16-reinforcement-plates-only.png": "69677b8ed0090d8e79127683a16671d6888c37ada1f56c7e813550d1778c99df",
+    "native-validation.json": "2dda3d44c5d54dfa543184f9734b6b0ddfccb59f9da94636106e9e9f34762515",
+    "README.md": "fdbaa309a8165adad11fd218f6677ccf2ee5e97cd9d0cbc64e3e763cf4ae9af0",
+    "rear-installation.png": "deeb0b9a18b1007048604e6aabd59575db7d1d35e993c7df7dda66695892a979",
+    "manifest.json": "419cafe51c7b0b3da40bde926d4c94ea740e4e740ae899dca082db706183147c",
+    "cad-implementation.json": "e45465161a0633cfbd12821f8cbe1554ab1b229059005d249256d7f890ae36d8",
+    "slice-result.json": "c0c29c853ce318b006a8941326d74d55a75dc6d2fc98cc9faa0bd9886455240a",
+    "16-reinforcement-plates-only.3mf": "df035396206f463f9ddaf9e2bee0fe3131febd8a7b9650900e5173edbb4ee630",
+    "stl/reinforcement_book_book_lower.stl": "760342f8c737c5b04c8fe4125f4ae9bc24d008f9455c1f93b297ef1bf9a3754c",
+    "stl/reinforcement_garage_book_upper.stl": "760342f8c737c5b04c8fe4125f4ae9bc24d008f9455c1f93b297ef1bf9a3754c",
+    "stl/reinforcement_book_book_upper.stl": "760342f8c737c5b04c8fe4125f4ae9bc24d008f9455c1f93b297ef1bf9a3754c",
+    "stl/reinforcement_garage_book_lower.stl": "760342f8c737c5b04c8fe4125f4ae9bc24d008f9455c1f93b297ef1bf9a3754c",
+    "logs/slice.log": "dda71205536b6da6e204d082abdc5129cec2465589a4c713eaae2ea7678c5176",
+    "logs/export.log": "a1ac6267723542bb5deae965951bbd11c5be14f7b503257baf305703e3738eef",
+    "profiles/16-reinforcement-process.json": "cef9f8149c5d9a9aed18bb7ba74d7f1b464d7ec15da62ee8a63a6417558ad512"
+  }
+}

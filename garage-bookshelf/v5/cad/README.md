@@ -1,5 +1,7 @@
 # 唯一正式模型
 
+2026-11-02：正式模型增加`ReinforcementPlates`组内四个60×30×3mm矩形连接片；均为全约束原生草图＋Pad，使用`ReinforcementParameters`控制尺寸及高度。两条背部拼缝X=200/345mm，上片Z=200–230mm、下片Z=18–48mm，胶粘面Y=164mm、外表面Y=167mm。原47个Body几何不变；当前51个Body包含42个打印件、8个硬件和1个样件。下文47/38个数为加片前基线。
+
 `garage-bookshelf-v5-assembly.FCStd`为当前设计源。它以v4正式CAD为基线，2026-10-30加入12个独立三色饰片，随后修正为齐平内嵌：仅module_2/module_3开承托槽和胶槽，其余33个Body几何不变。
 原始CAD快照保存在`../archive/snapshots/2026-10-30-before-separate-skins.FCStd`，原始SHA256为`822d05f79b60b10a8a9958e427d9591d476a89f391914b90d9eaa1d83fde6958`。
 

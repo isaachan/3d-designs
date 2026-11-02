@@ -1,4 +1,6 @@
-# 当前打印方案：完整15盘
+# 当前打印方案：原15盘＋连接片补充一盘
+
+2026-11-02仅需新增[第16盘连接片](../printing/reinforcement-2026-11-02/README.md)：四片60×30×3mm，黑色PLA、0.20mm层高、4圈墙、100%直线填充，无支撑。旧15盘保持不变。仅连接片可用FreeCAD Python运行`tools/make_reinforcement_project.py --output build/<run>/reinforcement-print`生成；输出只含四片，保存后自动重开切片。
 
 使用[当前完整15盘](../printing/current/README.md)替换05、06、13、14、15。已经打印或正在打印的01–04、07–12继续使用现有文件，无需重印，也不覆盖个人修改的03盘。
 
@@ -14,10 +16,10 @@
 
 ## 重新生成
 
-1. FreeCAD Python执行`tools/export.py --output build/<run>/export`，强制完整重算并检查47个Body、38个打印件，导出46实体STEP和两种坐标的STL。
+1. FreeCAD Python执行`tools/export.py --output build/<run>/export`，强制完整重算并检查51个Body、42个打印件，导出50实体STEP和两种坐标的STL。
 2. `python3 tools/make_print_projects.py --export-dir build/<run>/export --only 05-module-2 06-module-3 13-book-skins-lightblue 14-book-skins-darkblue 15-book-skins-red --output build/<run>/single`生成五盘中间项目并重开切片。
 3. FreeCAD Python执行`tools/make_colored_projects.py --export-dir build/<run>/export --single-color-dir build/<run>/single --output build/<run>/colored`保存配色并独立重开切片。最终使用colored目录中的3MF。
-4. 完整15盘重生成可省略`--only`，随后用`tools/package_release.py`创建新的完整快照；不会覆盖人工维护项目或旧快照。
+4. 完整16盘重生成可省略`--only`，随后用`tools/package_release.py`创建新的完整快照；不会覆盖人工维护项目或旧快照。
 
 当前完整15盘已将五盘修正件和另外十盘原文件合并。其余十盘逐件核对输入STL与当前导出完全一致，项目和设置不改动，记录在当前目录内的`reused-plates.json`。`printing/current-release.json`直接指向完整版本，无旧发布依赖。以后通过`tools/package_release.py`打包新版本。
 

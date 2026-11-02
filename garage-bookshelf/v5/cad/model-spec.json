@@ -1,5 +1,5 @@
 {
-  "design_basis": "Original interfaces retained; 2026-10-30 correction recesses only module_2/module_3 for twelve flush, seated inlays. Other 33 Bodies unchanged.",
+  "design_basis": "2026-11-02: four native 60 x 30 x 3 mm adhesive rear reinforcement plates added; all 47 pre-existing Bodies and printed interfaces unchanged. Flush seated inlays retained.",
   "print_parts": [
     "module_1",
     "module_2",
@@ -38,7 +38,11 @@
     "book_skin_back_red",
     "book_skin_floor_red",
     "book_skin_toprim_red",
-    "book_skin_frontedge_red"
+    "book_skin_frontedge_red",
+    "reinforcement_garage_book_lower",
+    "reinforcement_garage_book_upper",
+    "reinforcement_book_book_lower",
+    "reinforcement_book_book_upper"
   ],
   "hardware": [
     "hardware_screw_1",
@@ -131,5 +135,23 @@
         "role": "FrontEdge"
       }
     }
+  },
+  "reinforcement": {
+    "attachment": "rear adhesive bond, no holes or changes to existing bodies",
+    "parameters_mm": {
+      "Width": 60,
+      "Height": 30,
+      "Thickness": 3,
+      "LowerBottom": 18,
+      "TopMargin": 8,
+      "UpperBottom": 200
+    },
+    "parts": [
+      "reinforcement_garage_book_lower",
+      "reinforcement_garage_book_upper",
+      "reinforcement_book_book_lower",
+      "reinforcement_book_book_upper"
+    ],
+    "plate_id": "16-reinforcement-plates-only"
   }
 }

@@ -1,7 +1,7 @@
 {
   "status": "approved",
   "color_mode": "CAD face colors; black recessed book bodies and flush color inlays",
-  "note": "Option 3 corrected to flush seated inlays. Replace ONLY 05,06,13,14,15; other ten plates and their interfaces remain unchanged. Physical fit not yet tested.",
+  "note": "15 existing plates retained; add only plate 16 (four identical rear glue-on reinforcement plates). No existing part needs reprinting.",
   "plates": [
     {
       "id": "01-garage-deck-1",
@@ -188,6 +188,23 @@
         "wall_loops": "3",
         "top_shell_layers": "3",
         "bottom_shell_layers": "3",
+        "enable_prime_tower": "0"
+      },
+      "color_mode": "single"
+    },
+    {
+      "id": "16-reinforcement-plates-only",
+      "color": "black",
+      "parts": [
+        "reinforcement_garage_book_lower",
+        "reinforcement_garage_book_upper",
+        "reinforcement_book_book_lower",
+        "reinforcement_book_book_upper"
+      ],
+      "supports": false,
+      "process_overrides": {
+        "sparse_infill_density": "100%",
+        "sparse_infill_pattern": "zig-zag",
         "enable_prime_tower": "0"
       },
       "color_mode": "single"
