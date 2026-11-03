@@ -24,3 +24,11 @@
 5. 新款先由组装者试装，确认文字方向、贴合和拆换。打印文件放`printing/sign-carriers/<位置>/<款式>/`，附说明、源文件／3MF哈希、验证记录与实物状态。
 
 新增文字款通常不升级主体版本。安装接口若必须改变，应创建新的接口版本，并说明兼容的主体与载板，不能把它标成原接口的直接替换件。
+
+## 生成与复现工具
+
+`tools/make_sign_carrier.py`按`--position upper/side`继承当前原生底板、M3螺孔和外角圆角，使用全约束字形草图与原生绑定轮廓驱动Pad/Pocket，按轮廓并集面积验证小写字形的正常重叠合并。上方沿用黑底白字和1mm凸字，右侧沿用深蓝底白字和0.4mm凹字。
+
+首次制作可用`--text`和两项`--lines`指定完整文字及分行，使用本机DIN Condensed Bold冻结轮廓；该步骤需要FreeCAD环境中的Matplotlib、NumPy和Shapely。以后使用款式目录中的`lettering.json`和`--lettering`复现，不再依赖系统字体。改字需重新冻结轮廓；字高、行距及深度可在原生CAD的`LetteringParameters`中修改并重算、重新验证。
+
+具体可执行命令见[当前两款的CAD维护说明](../../cad/sign-carriers/README.md)。工具只写新的build目录，包含原生CAD、字形、网格、预览、双色3MF、配置、重开切片及验证记录。维护者检查后按组件发布并更新打印目录清单，保留既有款式。

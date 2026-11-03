@@ -5,3 +5,10 @@
 新增款分别放`upper/<款式>/`、`side/<款式>/`，保存独立、原生可编辑的CAD与必要的冻结文字轮廓，说明所继承的接口和总装版本。总装负责整体配合验证；新款以其单独源文件为准，不另存一个可被误认为正式总装的副本。
 
 [文字载板规范](../../docs/interfaces/sign-carriers.md) · [打印款式](../../printing/sign-carriers/README.md)
+
+## 当前定制源文件
+
+| 位置 | 文字 | 唯一源文件 |
+|---|---|---|
+| 上方横牌 | Life's too short to drive boring cars | [原生CAD](upper/lifes-too-short/lifes-too-short.FCStd) · [维护说明](upper/lifes-too-short/README.md) |
+| 右侧竖牌 | Engines Roar. Pages Whisper | [原生CAD](side/engines-roar-pages-whisper/engines-roar-pages-whisper.FCStd) · [维护说明](side/engines-roar-pages-whisper/README.md) |

@@ -1,0 +1,6 @@
+[2026-11-03 22:09:50.542730] [0x00000001f058a180] [warning] [BambuStudio.cpp:1845 run] cli mode, Current BambuStudio Version 02.09.01.70
+[2026-11-03 22:09:50.579377] [0x00000001f058a180] [warning] [BambuStudio.cpp:3155 run] can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine_full/Bambu Lab X2D 0.4 nozzle.json
+[2026-11-03 22:09:50.579393] [0x00000001f058a180] [warning] [BambuStudio.cpp:3177 run] can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/process_full/0.20mm Standard @BBL X2D.json
+[2026-11-03 22:09:50.579413] [0x00000001f058a180] [warning] [BambuStudio.cpp:4326 run] no filament colors found in projects
+[2026-11-03 22:09:50.580613] [0x00000001f058a180] [warning] [MultiNozzleUtils.cpp:217 load_nozzle_infos_with_compatibility] building nozzle list from filament map and volume types
+

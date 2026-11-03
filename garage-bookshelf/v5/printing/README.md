@@ -12,4 +12,4 @@
 
 [组装说明](../docs/assembly.md) · [如何定制](../docs/customization.md) · [维护者打印生成指南](../docs/printing.md)
 
-维护者使用[排盘计划](plate-plan.json)生成整机默认件；[catalog.json](catalog.json)记录默认项目、个人设置、车型试件、文件哈希和历史来源。新增已确认款按组件更新清单；历史交付与原始验证见[归档](../archive/printing/README.md)。
+维护者使用[排盘计划](plate-plan.json)生成整机默认件；[catalog.json](catalog.json)记录默认项目、个人设置、定制文字载板、车型试件、文件哈希和历史来源。定制款通过`custom_carriers`关联独立CAD与验证记录，不加入默认整机排盘。新增已确认款按组件更新清单；历史交付与原始验证见[归档](../archive/printing/README.md)。

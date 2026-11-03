@@ -440,7 +440,17 @@
     "sign-carriers/side/personal/12-side-cartridge-mpower.3mf": "39bea970a54922f3c054960e72697ee6972a3c72fa9e108744a8df28b533f6f3",
     "parking-inserts/bmw-z4-e89/parking-tray-s51-b23-d10-t5p1.3mf": "70f09505bcd981d68c135e440a1f718b3d8acfc308dca25d56e5def70a9f933b",
     "parking-inserts/bmw-z4-e89/tray-preview.png": "dce162a2464936e4d36757a48404ca5d47ca6bd41296594adfc79ec23fd49d24",
-    "main/rear-installation.png": "deeb0b9a18b1007048604e6aabd59575db7d1d35e993c7df7dda66695892a979"
+    "main/rear-installation.png": "deeb0b9a18b1007048604e6aabd59575db7d1d35e993c7df7dda66695892a979",
+    "sign-carriers/upper/lifes-too-short/lifes-too-short.3mf": "976e471f6986e9bec6480216ed933aecbba2ce0de6566bde86bcbacd7957506d",
+    "sign-carriers/upper/lifes-too-short/front-preview.png": "6725fe7e46f532b7141ffbba33300055804eee6e55539bdb102e2e26517233dc",
+    "sign-carriers/upper/lifes-too-short/plate-preview.png": "ab4429ecb3024cdb5022b2901c5c9cff56fbaddbb0c28b891bf68b430c9cc805",
+    "sign-carriers/upper/lifes-too-short/slice-result.json": "2a2a053a8975e54bd1febabebbfca0c6ee50ffeaa63dde6d1096712fdae01256",
+    "sign-carriers/upper/lifes-too-short/validation.json": "b60215fd9f4f9fe120f35bcbb3b410494f8578bbeb1cb68ab6df950c96aef72d",
+    "sign-carriers/side/engines-roar-pages-whisper/engines-roar-pages-whisper.3mf": "175846a13ff55d9a0ac7f83646a769174cb288b89436b531893581e31cb56cfa",
+    "sign-carriers/side/engines-roar-pages-whisper/front-preview.png": "25ad00694c497ae91f27b504afb8e922637253b9a5dfeb4efe1331e19f4358cd",
+    "sign-carriers/side/engines-roar-pages-whisper/plate-preview.png": "f13f7e5248bdadc1c6adc1294a0e64341a5d7a3504fedfd2f44af3f402e3eee8",
+    "sign-carriers/side/engines-roar-pages-whisper/slice-result.json": "35b5d4a5092b02b6716163c5859faf3d0fef9150107de7610fca07cd4700a22b",
+    "sign-carriers/side/engines-roar-pages-whisper/validation.json": "b5290a24c12f99d7b7a8930d8fa9d334909e42e7a911e9f92a3adbf2df59dcc4"
   },
   "provenance": [
     {
@@ -667,6 +677,56 @@
       "path": "main/rear-installation.png",
       "sha256": "deeb0b9a18b1007048604e6aabd59575db7d1d35e993c7df7dda66695892a979",
       "source": "archive/printing/2026-11-02-reinforcement/rear-installation.png"
+    },
+    {
+      "path": "sign-carriers/upper/lifes-too-short/lifes-too-short.3mf",
+      "sha256": "976e471f6986e9bec6480216ed933aecbba2ce0de6566bde86bcbacd7957506d",
+      "source": "archive/printing/2026-11-04-custom-signs/upper/lifes-too-short/lifes-too-short.3mf"
+    },
+    {
+      "path": "sign-carriers/upper/lifes-too-short/front-preview.png",
+      "sha256": "6725fe7e46f532b7141ffbba33300055804eee6e55539bdb102e2e26517233dc",
+      "source": "archive/printing/2026-11-04-custom-signs/upper/lifes-too-short/front-preview.png"
+    },
+    {
+      "path": "sign-carriers/upper/lifes-too-short/plate-preview.png",
+      "sha256": "ab4429ecb3024cdb5022b2901c5c9cff56fbaddbb0c28b891bf68b430c9cc805",
+      "source": "archive/printing/2026-11-04-custom-signs/upper/lifes-too-short/plate-preview.png"
+    },
+    {
+      "path": "sign-carriers/upper/lifes-too-short/slice-result.json",
+      "sha256": "2a2a053a8975e54bd1febabebbfca0c6ee50ffeaa63dde6d1096712fdae01256",
+      "source": "archive/printing/2026-11-04-custom-signs/upper/lifes-too-short/slice-result.json"
+    },
+    {
+      "path": "sign-carriers/upper/lifes-too-short/validation.json",
+      "sha256": "b60215fd9f4f9fe120f35bcbb3b410494f8578bbeb1cb68ab6df950c96aef72d",
+      "source": "archive/printing/2026-11-04-custom-signs/upper/lifes-too-short/validation.json"
+    },
+    {
+      "path": "sign-carriers/side/engines-roar-pages-whisper/engines-roar-pages-whisper.3mf",
+      "sha256": "175846a13ff55d9a0ac7f83646a769174cb288b89436b531893581e31cb56cfa",
+      "source": "archive/printing/2026-11-04-custom-signs/side/engines-roar-pages-whisper/engines-roar-pages-whisper.3mf"
+    },
+    {
+      "path": "sign-carriers/side/engines-roar-pages-whisper/front-preview.png",
+      "sha256": "25ad00694c497ae91f27b504afb8e922637253b9a5dfeb4efe1331e19f4358cd",
+      "source": "archive/printing/2026-11-04-custom-signs/side/engines-roar-pages-whisper/front-preview.png"
+    },
+    {
+      "path": "sign-carriers/side/engines-roar-pages-whisper/plate-preview.png",
+      "sha256": "f13f7e5248bdadc1c6adc1294a0e64341a5d7a3504fedfd2f44af3f402e3eee8",
+      "source": "archive/printing/2026-11-04-custom-signs/side/engines-roar-pages-whisper/plate-preview.png"
+    },
+    {
+      "path": "sign-carriers/side/engines-roar-pages-whisper/slice-result.json",
+      "sha256": "35b5d4a5092b02b6716163c5859faf3d0fef9150107de7610fca07cd4700a22b",
+      "source": "archive/printing/2026-11-04-custom-signs/side/engines-roar-pages-whisper/slice-result.json"
+    },
+    {
+      "path": "sign-carriers/side/engines-roar-pages-whisper/validation.json",
+      "sha256": "b5290a24c12f99d7b7a8930d8fa9d334909e42e7a911e9f92a3adbf2df59dcc4",
+      "source": "archive/printing/2026-11-04-custom-signs/side/engines-roar-pages-whisper/validation.json"
     }
   ],
   "physical_print_and_fit_tested": false,
@@ -684,5 +744,39 @@
       "Tf",
       "Tr"
     ]
-  }
+  },
+  "custom_carriers": [
+    {
+      "id": "lifes-too-short",
+      "position": "upper",
+      "interface": "sign-upper-v1",
+      "text": "Life's too short to drive boring cars",
+      "lines": [
+        "Life's too short",
+        "to drive boring cars"
+      ],
+      "source_cad": "cad/sign-carriers/upper/lifes-too-short/lifes-too-short.FCStd",
+      "source_cad_sha256": "f8f11d3d432ebe32fbf6ff34b6c0a8358e960422b3a615e4423a091c7649b17f",
+      "project": "sign-carriers/upper/lifes-too-short/lifes-too-short.3mf",
+      "sha256": "976e471f6986e9bec6480216ed933aecbba2ce0de6566bde86bcbacd7957506d",
+      "evidence": "printing/sign-carriers/upper/lifes-too-short/validation.json",
+      "physical_fit_tested": false
+    },
+    {
+      "id": "engines-roar-pages-whisper",
+      "position": "side",
+      "interface": "sign-side-v1",
+      "text": "Engines Roar. Pages Whisper",
+      "lines": [
+        "Engines Roar.",
+        "Pages Whisper"
+      ],
+      "source_cad": "cad/sign-carriers/side/engines-roar-pages-whisper/engines-roar-pages-whisper.FCStd",
+      "source_cad_sha256": "4c8ef8e66ecb2563cd594b76df0d6b77d2c31033560442351ae60ecc93597cc8",
+      "project": "sign-carriers/side/engines-roar-pages-whisper/engines-roar-pages-whisper.3mf",
+      "sha256": "175846a13ff55d9a0ac7f83646a769174cb288b89436b531893581e31cb56cfa",
+      "evidence": "printing/sign-carriers/side/engines-roar-pages-whisper/validation.json",
+      "physical_fit_tested": false
+    }
+  ]
 }

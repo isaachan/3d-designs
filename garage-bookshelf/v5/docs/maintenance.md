@@ -1,6 +1,6 @@
 # 项目维护者指南
 
-本指南面向修改模型、生成打印件以及协助定制的维护者。首次接手先读[当前状态](../PROJECT_STATUS.md)，组装者使用[组装说明](assembly.md)和[定制需求说明](customization.md)。
+本指南面向修改模型、生成打印件以及协助定制的维护者。首次接手先读[验证进展与待办](../PROJECT_STATUS.md)，组装者使用[组装说明](assembly.md)和[定制需求说明](customization.md)。
 
 ## 正式源文件与组件
 
@@ -25,7 +25,7 @@ python3 -m unittest discover -s tests -v
 python3 tools/verify_printing.py
 ```
 
-检查应通过且不保存正式CAD；当前预期51个Body、42个整机打印件，详见当前状态。`verify_printing.py`只读核对组件清单、现行文件哈希及其历史来源，不重新切片。
+检查应通过且不保存正式CAD；当前预期51个Body、42个整机打印件，角色与数量见[CAD说明](../cad/README.md)。`verify_printing.py`只读核对组件清单、现行文件哈希及其历史来源，不重新切片。
 
 ## 修改主体
 
@@ -33,7 +33,7 @@ python3 tools/verify_printing.py
 2. 主体参数在`DesignParameters`；饰片厚度、承托及胶槽在`SkinParameters`；条带宽度和斜率在`MColorParameters`；连接片在`ReinforcementParameters`。
 3. 完整重算、检查并保存；有意修改检查尺寸或零件清单时同步更新`cad/model-spec.json`和`printing/plate-plan.json`。确认默认文字载板与通用底脚仍能安装。
 4. 再次运行CAD检查，然后按[打印生成指南](printing.md)从新的导出开始生成。CAD哈希变化后不能复用旧生成目录作为新设计的验证结果。
-5. 更新当前设计和状态，把变更经过写入`CHANGELOG.md`，向组装者指出需要替换的具体组件。
+5. 更新设计说明、组件索引和文件清单，把变更经过写入`CHANGELOG.md`，向组装者指出需要替换的具体组件。验证结论、问题或待办发生变化时更新`PROJECT_STATUS.md`；新增款式记在组件索引中，版本README维护稳定的查找入口。
 
 恢复CAD显示可在FreeCAD中运行`tools/Preview.FCMacro`；默认不保存。只读预览用`tools/render.py`，输出进入`build/`。
 

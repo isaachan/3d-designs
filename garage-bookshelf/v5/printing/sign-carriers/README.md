@@ -12,3 +12,12 @@
 新增款放`upper/<款式>/`或`side/<款式>/`，附原生CAD来源、接口版本、打印设置及试装状态。两种接口不能互换，具体要求见[载板规范](../../docs/interfaces/sign-carriers.md)。
 
 [CAD入口](../../cad/sign-carriers/README.md) · [组装与更换](../../docs/assembly.md) · [提出定制需求](../../docs/customization.md)
+
+## 定制款
+
+默认款继续保留，每个位置选择一款打印即可。
+
+| 位置 | 文字 | 打印与说明 | CAD |
+|---|---|---|---|
+| 上方横牌 | Life's too short to drive boring cars | [lifes-too-short](upper/lifes-too-short/README.md) | [原生CAD](../../cad/sign-carriers/upper/lifes-too-short/lifes-too-short.FCStd) |
+| 右侧竖牌 | Engines Roar. Pages Whisper | [engines-roar-pages-whisper](side/engines-roar-pages-whisper/README.md) | [原生CAD](../../cad/sign-carriers/side/engines-roar-pages-whisper/engines-roar-pages-whisper.FCStd) |

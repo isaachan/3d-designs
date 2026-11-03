@@ -1,4 +1,5 @@
 """Read-only check of the component catalog, current artifacts and provenance."""
+from pathlib import Path
 import _bootstrap
 from garage_bookshelf.paths import CAD, ROOT, read_json, sha
 from garage_bookshelf.printing.components import project_destination
@@ -44,10 +45,32 @@ def verify():
                                          'main_print_part_count', 'default_carrier_part_count'))
     if counts != recorded:
         raise ValueError('Catalog component counts are inconsistent')
-    records = catalog['preserved_personal_projects'] + catalog['parking_inserts']
+    custom_carriers = catalog.get('custom_carriers', [])
+    records = catalog['preserved_personal_projects'] + catalog['parking_inserts'] + custom_carriers
     for record in records:
         if catalog['files'].get(record['project']) != record['sha256']:
             raise ValueError('Variant hash differs from catalog: ' + record['project'])
+    for record in custom_carriers:
+        position, variant = record['position'], record['id']
+        if position not in ('upper', 'side') or record['interface'] != 'sign-' + position + '-v1':
+            raise ValueError('Unknown custom carrier interface')
+        prefix = f'sign-carriers/{position}/{variant}/'
+        if not record['project'].startswith(prefix) or (Path(record['project']).parent.as_posix() + '/') != prefix:
+            raise ValueError('Custom carrier is in the wrong component directory')
+        cad = (ROOT / record['source_cad']).resolve()
+        expected_cad = ROOT / f'cad/sign-carriers/{position}/{variant}/{variant}.FCStd'
+        if cad != expected_cad.resolve() or not cad.is_file() or sha(cad) != record['source_cad_sha256']:
+            raise ValueError('Custom carrier CAD missing or changed')
+        evidence = (ROOT / record['evidence']).resolve()
+        if not evidence.is_relative_to(printing.resolve()):
+            raise ValueError('Custom carrier evidence must be in its printing directory')
+        checked = read_json(evidence)
+        if (checked['status'] != 'passed' or not checked['saved_project_reopened_and_sliced'] or
+            checked['position'] != position or checked['variant'] != variant or
+            checked['interface'] != record['interface'] or checked['text'] != record['text'] or
+            checked['files'][cad.name] != record['source_cad_sha256'] or
+            checked['files'][Path(record['project']).name] != record['sha256']):
+            raise ValueError('Custom carrier verification does not match its source or project')
     for record in catalog['provenance']:
         source = (ROOT / record['source']).resolve()
         if not source.is_relative_to(ROOT.resolve()) or not source.is_file() or sha(source) != record['sha256']:
@@ -55,7 +78,8 @@ def verify():
         if catalog['files'].get(record['path']) != record['sha256']:
             raise ValueError('Provenance differs from catalog: ' + record['path'])
     print('PASS: 3 component families;', len(projects), 'default plates;', len(parts),
-          'parts;', len(catalog['preserved_personal_projects']), 'personal projects preserved')
+          'parts;', len(catalog['preserved_personal_projects']), 'personal projects preserved;',
+          len(custom_carriers), 'custom text carriers')
 
 
 if __name__ == '__main__':
