@@ -1,8 +1,8 @@
-# 唯一正式模型
+# 正式总装与组件CAD
 
-`garage-bookshelf-v5-assembly.FCStd`为当前设计源。
+[garage-bookshelf-v5-assembly.FCStd](garage-bookshelf-v5-assembly.FCStd)为当前总装源。按[主体](main/README.md)、[文字载板](sign-carriers/README.md)、[车型卡槽](parking-inserts/README.md)查找零件与定制源文件。总装仍保存整体配合关系，不为目录分类复制可编辑源。
 
-当前共51个Body（FreeCAD实体建模容器）：42个打印件（包含12片三色饰片和4片背面连接片）、8个外购M3硬件和1个托座样件。`model-spec.json`明确列出角色和检查尺寸；样件不计入整机打印件数量。
+当前共51个Body（FreeCAD实体建模容器）：42个打印件（主体40件、默认文字载板2件）、8个外购M3硬件和1个托座样件。主体包含12片三色饰片和4片背面连接片。`model-spec.json`明确列出角色和检查尺寸；样件及可选车型卡槽不计入整机42个打印件。
 
 `ReinforcementPlates`组包含四个60×30×3mm矩形连接片，均为全约束原生草图＋Pad，使用`ReinforcementParameters`控制尺寸及高度。两条背部拼缝X=200/345mm，上片Z=200–230mm、下片Z=18–48mm，胶粘面Y=164mm、外表面Y=167mm。
 

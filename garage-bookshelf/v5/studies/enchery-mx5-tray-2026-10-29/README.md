@@ -1,6 +1,6 @@
 本目录保存生成脚本和已验证的原始预览快照。重新生成写入 `build/`，不会覆盖本目录文件。
 
-调整过打印参数的手工维护 3MF 另存于 `../../printing/projects/enchery-1-65-mazda-mx5-parking-tray-preview.3mf`，其实际设置与验证见同名说明。
+调整过打印参数的手工维护3MF现见[MX-5卡槽候选件](../../printing/parking-inserts/mazda-mx5/README.md)；原设置与验证保存在[打印归档](../../archive/printing/README.md)。以下为原始预览研究说明，保留当时的参数和验证范围。
 
 # ENCHERY 1:65 Mazda MX-5 停车托座预览
 

@@ -38,4 +38,4 @@
 
 当前维护入口为`garage_bookshelf.appearance.view.review()`；它调用已拆出的palette模块，不调用历史升级脚本。
 默认不保存CAD。使用`tools/render.py`生成只读预览，输出进入`build/`。
-[主体及饰片15盘](../printing/current/README.md)保留实际Bambu配色；背面连接片为黑色单色打印。实际耗材槽位和打印配色以交付3MF为准。设计沿革见[CHANGELOG.md](../CHANGELOG.md)。
+[当前打印文件](../printing/README.md)保留实际Bambu配色；背面连接片为黑色单色打印。实际耗材槽位和打印配色以交付3MF为准。设计沿革见[CHANGELOG.md](../CHANGELOG.md)。

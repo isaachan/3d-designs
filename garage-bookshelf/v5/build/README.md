@@ -1,5 +1,7 @@
 # 自动生成输出
 
-验证、STEP/STL导出、图片、3MF和日志写入独立run目录，记录源CAD和代码哈希。除本说明外不纳入Git。
-`tmp/`仅用于临时切片G-code、Bambu CLI状态及临时打包文件。
-需要继续手工编辑的3MF另存到`../printing/projects/`；完整确认的交付使用`../printing/current/`。
+验证、STEP/STL导出、图片、3MF、候选交付包和日志写入新的运行目录。除本说明外不纳入Git。
+
+`tmp/`用于临时切片G-code、CLI状态和临时打包文件。生成器只写build，不覆盖`printing/`内已确认或人工调整的文件。
+
+完整流程见[维护者打印生成指南](../docs/printing.md)。候选包经维护者检查后，按主体、文字载板、车型卡槽三类更新当前[打印入口](../printing/README.md)，旧交付与证据归档。

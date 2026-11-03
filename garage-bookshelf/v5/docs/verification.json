@@ -3,7 +3,7 @@
   "status": "passed",
   "date": "2026-11-02",
   "cad_sha256": "3b3e2b9f8c24eb89a2d68df4b70a30069df9d5777310db98706b629d1171c339",
-  "native_validation": "printing/reinforcement-2026-11-02/native-validation.json",
+  "native_validation": "archive/printing/2026-11-02-reinforcement/native-validation.json",
   "counts": {
     "bodies": 51,
     "sketches": 370,
@@ -19,15 +19,18 @@
     "assembly Body-pair overlap < 0.01 mm^3 (sample excluded)",
     "4 native rear plates, both-side bond areas, dimensions and clearances"
   ],
-  "reinforcement_cad_implementation": "printing/reinforcement-2026-11-02/cad-implementation.json",
-  "print_project_manifest": "printing/reinforcement-2026-11-02/manifest.json",
-  "package_manifest": "printing/reinforcement-2026-11-02/package-manifest.json",
-  "baseline_print_release": "printing/current",
+  "reinforcement_cad_implementation": "archive/printing/2026-11-02-reinforcement/cad-implementation.json",
+  "print_project_manifest": "archive/printing/2026-11-02-reinforcement/manifest.json",
+  "package_manifest": "archive/printing/2026-11-02-reinforcement/package-manifest.json",
+  "baseline_print_release": "archive/printing/2026-10-30-flush-inlays",
   "baseline_plate_count": 15,
   "baseline_print_part_count": 38,
   "supplement_plate_count": 1,
   "supplement_print_part_count": 4,
   "existing_15_projects_unchanged": true,
   "previous_verification": "archive/reports/2026-10-30-flush-inlays-verification.json",
-  "physical_print_and_fit_tested": false
+  "physical_print_and_fit_tested": false,
+  "current_print_catalog": "printing/catalog.json",
+  "evidence_relocated_on": "2026-11-03",
+  "relocation_note": "Only evidence locations and catalog navigation updated; original validation date and conclusions unchanged."
 }

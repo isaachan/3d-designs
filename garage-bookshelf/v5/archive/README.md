@@ -1,6 +1,6 @@
-# v4历史归档
+# 历史归档
 
-这里保存v4的原始阶段资料，不能作为当前正式CAD或整机打印发行入口。
+这里保存历史阶段资料，不能作为当前正式CAD或打印入口。v5目录整理后的原打印交付与验证证据见[printing/README.md](printing/README.md)；其余内容主要为v4迁移资料。
 
 | 目录 | 内容 |
 |---|---|
@@ -14,7 +14,7 @@
 | `docs/v4/` | v4总说明、打印状态和配色说明的历史副本 |
 
 归档Python入口已加直接执行保护；旧FCMacro按文本保存，不会通过它打开v4。
-原始源文件SHA256及每个v4文件去向在[source-index.json](source-index.json)。
+原始源文件SHA256及每个v4文件去向在[source-index.json](source-index.json)。若索引中的打印目标已再次整理，继续通过[打印迁移映射](printing/relocation.json)查找其归档位置。
 为避免伪造新验证，历史JSON中的原始路径/哈希不被改写；可通过索引找到迁移后的文件。
 复制的资料存在349条源映射；旧交付目录共同的13个文件去重到同一份目标。
 缓存、Finder元数据、自动FCBak和根result.json未迁入；v4原文件全部保留。

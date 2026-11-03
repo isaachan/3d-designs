@@ -1,0 +1,693 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-03",
+  "status": "byte-preserving-reorganization",
+  "source_cad": "cad/garage-bookshelf-v5-assembly.FCStd",
+  "cad_sha256": "3b3e2b9f8c24eb89a2d68df4b70a30069df9d5777310db98706b629d1171c339",
+  "main_print_part_count": 40,
+  "default_carrier_part_count": 2,
+  "default_plate_count": 16,
+  "default_print_part_count": 42,
+  "parking_inserts_included_in_default": false,
+  "components": {
+    "main": [
+      "module_1",
+      "module_2",
+      "module_3",
+      "garage_deck_1",
+      "garage_deck_2",
+      "garage_deck_3",
+      "column_1_segment_1",
+      "column_1_segment_2",
+      "column_1_segment_3",
+      "column_1_segment_4",
+      "column_2_segment_1",
+      "column_2_segment_2",
+      "column_2_segment_3",
+      "column_2_segment_4",
+      "column_3_segment_1",
+      "column_3_segment_2",
+      "column_3_segment_3",
+      "column_3_segment_4",
+      "column_4_segment_1",
+      "column_4_segment_2",
+      "column_4_segment_3",
+      "column_4_segment_4",
+      "billboard",
+      "side_receiver",
+      "book_skin_back_lightblue",
+      "book_skin_floor_lightblue",
+      "book_skin_toprim_lightblue",
+      "book_skin_frontedge_lightblue",
+      "book_skin_back_darkblue",
+      "book_skin_floor_darkblue",
+      "book_skin_toprim_darkblue",
+      "book_skin_frontedge_darkblue",
+      "book_skin_back_red",
+      "book_skin_floor_red",
+      "book_skin_toprim_red",
+      "book_skin_frontedge_red",
+      "reinforcement_garage_book_lower",
+      "reinforcement_garage_book_upper",
+      "reinforcement_book_book_lower",
+      "reinforcement_book_book_upper"
+    ],
+    "sign_carriers": [
+      "top_carrier",
+      "side_cartridge"
+    ],
+    "parking_inserts": [
+      "parking_tray_interface"
+    ]
+  },
+  "default_projects": [
+    {
+      "id": "01-garage-deck-1",
+      "parts": [
+        "garage_deck_1"
+      ],
+      "project": "main/3mf/01-garage-deck-1-mpower.3mf",
+      "project_sha256": "e7b8c1ae579b95d5bcf77b7e804ce42c660182baeef00336be5eda296822f8f0",
+      "source_cad_sha256": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e",
+      "estimated_seconds": 15231.2939453125,
+      "estimated_filament_g": 133.96175146102905,
+      "evidence_source": "archive/printing/2026-10-30-flush-inlays",
+      "physical_print_and_fit_tested": false,
+      "evidence_manifest": "archive/printing/2026-10-30-flush-inlays/manifest.json"
+    },
+    {
+      "id": "02-garage-deck-2",
+      "parts": [
+        "garage_deck_2"
+      ],
+      "project": "main/3mf/02-garage-deck-2-mpower.3mf",
+      "project_sha256": "ba19dc19342228524b6ea40b215db19bf154aff132ea4e5d45813703a178f56c",
+      "source_cad_sha256": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e",
+      "estimated_seconds": 15820.3212890625,
+      "estimated_filament_g": 133.84659004211426,
+      "evidence_source": "archive/printing/2026-10-30-flush-inlays",
+      "physical_print_and_fit_tested": false,
+      "evidence_manifest": "archive/printing/2026-10-30-flush-inlays/manifest.json"
+    },
+    {
+      "id": "03-garage-deck-3",
+      "parts": [
+        "garage_deck_3"
+      ],
+      "project": "main/3mf/03-garage-deck-3-mpower.3mf",
+      "project_sha256": "6ac1610f3e79886e7c050abe12a831ff8e2052a749ce3a0b5314bbc17d1cc08e",
+      "source_cad_sha256": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e",
+      "estimated_seconds": 14007.6123046875,
+      "estimated_filament_g": 133.4300856590271,
+      "evidence_source": "archive/printing/2026-10-30-flush-inlays",
+      "physical_print_and_fit_tested": false,
+      "evidence_manifest": "archive/printing/2026-10-30-flush-inlays/manifest.json"
+    },
+    {
+      "id": "04-module-1",
+      "parts": [
+        "module_1"
+      ],
+      "project": "main/3mf/04-module-1-mpower.3mf",
+      "project_sha256": "39aa467996e9afbdf59b9d9adb25c4391989aa2889b0eba0f4bd625f00e9a3cd",
+      "source_cad_sha256": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e",
+      "estimated_seconds": 25571.431640625,
+      "estimated_filament_g": 374.25128865242004,
+      "evidence_source": "archive/printing/2026-10-30-flush-inlays",
+      "physical_print_and_fit_tested": false,
+      "evidence_manifest": "archive/printing/2026-10-30-flush-inlays/manifest.json"
+    },
+    {
+      "id": "05-module-2",
+      "parts": [
+        "module_2"
+      ],
+      "project": "main/3mf/05-module-2-mpower.3mf",
+      "project_sha256": "e626361ea648953665af3cac2a6b119eecdb6a6ddfdaaab92b1ad53563d095e2",
+      "source_cad_sha256": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e",
+      "estimated_seconds": 28872.419921875,
+      "estimated_filament_g": 445.3096618652344,
+      "evidence_source": "archive/printing/2026-10-30-flush-inlays",
+      "physical_print_and_fit_tested": false,
+      "evidence_manifest": "archive/printing/2026-10-30-flush-inlays/manifest.json"
+    },
+    {
+      "id": "06-module-3",
+      "parts": [
+        "module_3"
+      ],
+      "project": "main/3mf/06-module-3-mpower.3mf",
+      "project_sha256": "af62db2e9020c3f3e845a8c2625242e51cd57513d7d9003ad8d52492aead561c",
+      "source_cad_sha256": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e",
+      "estimated_seconds": 27933.783203125,
+      "estimated_filament_g": 436.4909362792969,
+      "evidence_source": "archive/printing/2026-10-30-flush-inlays",
+      "physical_print_and_fit_tested": false,
+      "evidence_manifest": "archive/printing/2026-10-30-flush-inlays/manifest.json"
+    },
+    {
+      "id": "07-support-segments",
+      "parts": [
+        "column_1_segment_1",
+        "column_1_segment_2",
+        "column_1_segment_3",
+        "column_2_segment_1",
+        "column_2_segment_2",
+        "column_2_segment_3",
+        "column_3_segment_1",
+        "column_3_segment_2",
+        "column_3_segment_3",
+        "column_4_segment_1",
+        "column_4_segment_2",
+        "column_4_segment_3"
+      ],
+      "project": "main/3mf/07-support-segments-mpower.3mf",
+      "project_sha256": "4a65e2af172e9ae4ca9506817cc67753e1f38e511f030903934f5c4253b4fc78",
+      "source_cad_sha256": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e",
+      "estimated_seconds": 8802.5146484375,
+      "estimated_filament_g": 89.82147216796875,
+      "evidence_source": "archive/printing/2026-10-30-flush-inlays",
+      "physical_print_and_fit_tested": false,
+      "evidence_manifest": "archive/printing/2026-10-30-flush-inlays/manifest.json"
+    },
+    {
+      "id": "08-top-segments",
+      "parts": [
+        "column_1_segment_4",
+        "column_2_segment_4",
+        "column_3_segment_4",
+        "column_4_segment_4"
+      ],
+      "project": "main/3mf/08-top-segments-mpower.3mf",
+      "project_sha256": "f0c84ad276b13bc695a5eb4d72ec88824810e91e7583d1410c432cded83c1a41",
+      "source_cad_sha256": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e",
+      "estimated_seconds": 1605.236328125,
+      "estimated_filament_g": 15.581117630004883,
+      "evidence_source": "archive/printing/2026-10-30-flush-inlays",
+      "physical_print_and_fit_tested": false,
+      "evidence_manifest": "archive/printing/2026-10-30-flush-inlays/manifest.json"
+    },
+    {
+      "id": "09-billboard",
+      "parts": [
+        "billboard"
+      ],
+      "project": "main/3mf/09-billboard-mpower.3mf",
+      "project_sha256": "d16d5053dc2758e94b6585eb9acb3c9b946ffbfee4c4b52d807bb7f4ea56ed05",
+      "source_cad_sha256": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e",
+      "estimated_seconds": 4781.7939453125,
+      "estimated_filament_g": 56.00012516975403,
+      "evidence_source": "archive/printing/2026-10-30-flush-inlays",
+      "physical_print_and_fit_tested": false,
+      "evidence_manifest": "archive/printing/2026-10-30-flush-inlays/manifest.json"
+    },
+    {
+      "id": "10-top-carrier",
+      "parts": [
+        "top_carrier"
+      ],
+      "project": "sign-carriers/upper/default/10-top-carrier-mpower.3mf",
+      "project_sha256": "5b0f074f3ff5fca6a27c69552e4e37294b13e5ea30adb2506520278cabaeb3a4",
+      "source_cad_sha256": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e",
+      "estimated_seconds": 3073.177490234375,
+      "estimated_filament_g": 22.550400018692017,
+      "evidence_source": "archive/printing/2026-10-30-flush-inlays",
+      "physical_print_and_fit_tested": false,
+      "evidence_manifest": "archive/printing/2026-10-30-flush-inlays/manifest.json"
+    },
+    {
+      "id": "11-side-receiver",
+      "parts": [
+        "side_receiver"
+      ],
+      "project": "main/3mf/11-side-receiver-mpower.3mf",
+      "project_sha256": "b51b4d87b692c9a7a2d8fe36d0bd925353facad6cb4dc58b258dd5ceeccf3a69",
+      "source_cad_sha256": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e",
+      "estimated_seconds": 2092.153076171875,
+      "estimated_filament_g": 24.747177124023438,
+      "evidence_source": "archive/printing/2026-10-30-flush-inlays",
+      "physical_print_and_fit_tested": false,
+      "evidence_manifest": "archive/printing/2026-10-30-flush-inlays/manifest.json"
+    },
+    {
+      "id": "12-side-cartridge",
+      "parts": [
+        "side_cartridge"
+      ],
+      "project": "sign-carriers/side/default/12-side-cartridge-mpower.3mf",
+      "project_sha256": "1f8ea8bd151215543101fe67fa4ffef4e5a2df11c43ba4274e29b4a1be2e113d",
+      "source_cad_sha256": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e",
+      "estimated_seconds": 2450.9638671875,
+      "estimated_filament_g": 12.486420512199402,
+      "evidence_source": "archive/printing/2026-10-30-flush-inlays",
+      "physical_print_and_fit_tested": false,
+      "evidence_manifest": "archive/printing/2026-10-30-flush-inlays/manifest.json"
+    },
+    {
+      "id": "13-book-skins-lightblue",
+      "parts": [
+        "book_skin_back_lightblue",
+        "book_skin_floor_lightblue",
+        "book_skin_toprim_lightblue",
+        "book_skin_frontedge_lightblue"
+      ],
+      "project": "main/3mf/13-book-skins-lightblue-mpower.3mf",
+      "project_sha256": "3eae35ce0c1f3f5a43529aac3f26b1101b47e464f5dfc8b298b33e6a856bdd60",
+      "source_cad_sha256": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e",
+      "estimated_seconds": 1499.0369873046875,
+      "estimated_filament_g": 12.419487953186035,
+      "evidence_source": "archive/printing/2026-10-30-flush-inlays",
+      "physical_print_and_fit_tested": false,
+      "evidence_manifest": "archive/printing/2026-10-30-flush-inlays/manifest.json"
+    },
+    {
+      "id": "14-book-skins-darkblue",
+      "parts": [
+        "book_skin_back_darkblue",
+        "book_skin_floor_darkblue",
+        "book_skin_toprim_darkblue",
+        "book_skin_frontedge_darkblue"
+      ],
+      "project": "main/3mf/14-book-skins-darkblue-mpower.3mf",
+      "project_sha256": "29c3a33cf8d0c33574fabb241247492437970f8287afe33e85d839f915fecc6c",
+      "source_cad_sha256": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e",
+      "estimated_seconds": 1499.0418701171875,
+      "estimated_filament_g": 12.419486045837402,
+      "evidence_source": "archive/printing/2026-10-30-flush-inlays",
+      "physical_print_and_fit_tested": false,
+      "evidence_manifest": "archive/printing/2026-10-30-flush-inlays/manifest.json"
+    },
+    {
+      "id": "15-book-skins-red",
+      "parts": [
+        "book_skin_back_red",
+        "book_skin_floor_red",
+        "book_skin_toprim_red",
+        "book_skin_frontedge_red"
+      ],
+      "project": "main/3mf/15-book-skins-red-mpower.3mf",
+      "project_sha256": "a4e50f5a21066d1945d8b979dd987d65a1af7bceecf5a0fffbebb529ce212298",
+      "source_cad_sha256": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e",
+      "estimated_seconds": 1498.9351806640625,
+      "estimated_filament_g": 12.419487953186035,
+      "evidence_source": "archive/printing/2026-10-30-flush-inlays",
+      "physical_print_and_fit_tested": false,
+      "evidence_manifest": "archive/printing/2026-10-30-flush-inlays/manifest.json"
+    },
+    {
+      "id": "16-reinforcement-plates-only",
+      "parts": [
+        "reinforcement_garage_book_lower",
+        "reinforcement_garage_book_upper",
+        "reinforcement_book_book_lower",
+        "reinforcement_book_book_upper"
+      ],
+      "project": "main/3mf/16-reinforcement-plates-only.3mf",
+      "project_sha256": "df035396206f463f9ddaf9e2bee0fe3131febd8a7b9650900e5173edbb4ee630",
+      "source_cad_sha256": "3b3e2b9f8c24eb89a2d68df4b70a30069df9d5777310db98706b629d1171c339",
+      "estimated_seconds": 2017.0982666015625,
+      "estimated_filament_g": 26.682451248168945,
+      "evidence_source": "archive/printing/2026-11-02-reinforcement",
+      "physical_print_and_fit_tested": false,
+      "evidence_manifest": "archive/printing/2026-11-02-reinforcement/manifest.json"
+    }
+  ],
+  "preserved_personal_projects": [
+    {
+      "id": "01-garage-deck-1",
+      "project": "main/personal/01-garage-deck-1-mpower.3mf",
+      "sha256": "e91d14fdb46ec022df78f471493bb79aeb1215dc9c3ca067a319438579d10c40",
+      "validation_status": "preserved-personal-settings-not-revalidated",
+      "note": "03盘含已保留的人工调整；其他个人文件也按原字节保留。"
+    },
+    {
+      "id": "02-garage-deck-2",
+      "project": "main/personal/02-garage-deck-2-mpower.3mf",
+      "sha256": "11d6dbe107d24c6180f189382268d8976c1e70c9543aa38c5f9d49efcff55f6e",
+      "validation_status": "preserved-personal-settings-not-revalidated",
+      "note": "03盘含已保留的人工调整；其他个人文件也按原字节保留。"
+    },
+    {
+      "id": "03-garage-deck-3",
+      "project": "main/personal/03-garage-deck-3-mpower.3mf",
+      "sha256": "6e368ce14874993cdaba84f3ecb6a3c3eb78a9b76bb96c90d91fc8db1810b017",
+      "validation_status": "preserved-personal-settings-not-revalidated",
+      "note": "03盘含已保留的人工调整；其他个人文件也按原字节保留。"
+    },
+    {
+      "id": "04-module-1",
+      "project": "main/personal/04-module-1-mpower.3mf",
+      "sha256": "60d44e48f52045a8fa643cf1a15355e7d7be9621d63baeb1de9603640b8a5bcb",
+      "validation_status": "preserved-personal-settings-not-revalidated",
+      "note": "03盘含已保留的人工调整；其他个人文件也按原字节保留。"
+    },
+    {
+      "id": "07-support-segments",
+      "project": "main/personal/07-support-segments-mpower.3mf",
+      "sha256": "663eada70d1d7b1112588651dc084ae29b46070161c6cc23a2db3c94746ae413",
+      "validation_status": "preserved-personal-settings-not-revalidated",
+      "note": "03盘含已保留的人工调整；其他个人文件也按原字节保留。"
+    },
+    {
+      "id": "08-top-segments",
+      "project": "main/personal/08-top-segments-mpower.3mf",
+      "sha256": "1ec8d31a3fd7d6f648a3b02d1ed5de4425f95a1449d3365a9e65d55a2aca197b",
+      "validation_status": "preserved-personal-settings-not-revalidated",
+      "note": "03盘含已保留的人工调整；其他个人文件也按原字节保留。"
+    },
+    {
+      "id": "09-billboard",
+      "project": "main/personal/09-billboard-mpower.3mf",
+      "sha256": "a367d2ef78201fda1a57f48ee5d14adaa3fc5aec166485ebb85440366eb3a8b2",
+      "validation_status": "preserved-personal-settings-not-revalidated",
+      "note": "03盘含已保留的人工调整；其他个人文件也按原字节保留。"
+    },
+    {
+      "id": "10-top-carrier",
+      "project": "sign-carriers/upper/personal/10-top-carrier-mpower.3mf",
+      "sha256": "b0d34b009bc326d7703a4fbdb4147ac3e4ce73a13cc30df66bdaaa240b07edea",
+      "validation_status": "preserved-personal-settings-not-revalidated",
+      "note": "03盘含已保留的人工调整；其他个人文件也按原字节保留。"
+    },
+    {
+      "id": "11-side-receiver",
+      "project": "main/personal/11-side-receiver-mpower.3mf",
+      "sha256": "3a10f0b5f30f731152689903f5901ef0f166ae894bb7a576773ebe2265f4c008",
+      "validation_status": "preserved-personal-settings-not-revalidated",
+      "note": "03盘含已保留的人工调整；其他个人文件也按原字节保留。"
+    },
+    {
+      "id": "12-side-cartridge",
+      "project": "sign-carriers/side/personal/12-side-cartridge-mpower.3mf",
+      "sha256": "39bea970a54922f3c054960e72697ee6972a3c72fa9e108744a8df28b533f6f3",
+      "validation_status": "preserved-personal-settings-not-revalidated",
+      "note": "03盘含已保留的人工调整；其他个人文件也按原字节保留。"
+    }
+  ],
+  "parking_inserts": [
+    {
+      "id": "mazda-mx5",
+      "project": "parking-inserts/mazda-mx5/enchery-1-65-mazda-mx5-parking-tray-preview.3mf",
+      "sha256": "8289696db461a35ec83a9d1736a28f32407c75250e5ecccdd4884fe64979ce76",
+      "evidence": "archive/printing/hand-edited-projects/enchery-1-65-mazda-mx5-parking-tray-preview.json",
+      "interface": "parking-base-v1",
+      "validation_status": "existing-prototype; prescribed-two-object-fit-workflow-pending"
+    },
+    {
+      "id": "bmw-z4-e89",
+      "project": "parking-inserts/bmw-z4-e89/parking-tray-s51-b23-d10-t5p1.3mf",
+      "sha256": "70f09505bcd981d68c135e440a1f718b3d8acfc308dca25d56e5def70a9f933b",
+      "evidence": "studies/measured-tray-s51-b23-d10-t5p1/validation.json",
+      "interface": "parking-base-v1",
+      "validation_status": "existing-prototype; prescribed-two-object-fit-workflow-pending"
+    }
+  ],
+  "files": {
+    "main/3mf/01-garage-deck-1-mpower.3mf": "e7b8c1ae579b95d5bcf77b7e804ce42c660182baeef00336be5eda296822f8f0",
+    "main/3mf/01-garage-deck-1-mpower.png": "e2e8e8b4f6051f7805f66f5c863af3a55da6153207943baca616706657c748be",
+    "main/3mf/02-garage-deck-2-mpower.3mf": "ba19dc19342228524b6ea40b215db19bf154aff132ea4e5d45813703a178f56c",
+    "main/3mf/02-garage-deck-2-mpower.png": "5506d502300b87e6e697aa146f6ed785692334a61456f7a029058856b80dad27",
+    "main/3mf/03-garage-deck-3-mpower.3mf": "6ac1610f3e79886e7c050abe12a831ff8e2052a749ce3a0b5314bbc17d1cc08e",
+    "main/3mf/03-garage-deck-3-mpower.png": "5681cee901f75eb91bc4c6df3c07e330bc23fbfa329da3e9db424dce824e8657",
+    "main/3mf/04-module-1-mpower.3mf": "39aa467996e9afbdf59b9d9adb25c4391989aa2889b0eba0f4bd625f00e9a3cd",
+    "main/3mf/04-module-1-mpower.png": "9c88f66a8d2a9e12882353ff0911186850a5e86a154d0a1ded474f703c00ef27",
+    "main/3mf/05-module-2-mpower.3mf": "e626361ea648953665af3cac2a6b119eecdb6a6ddfdaaab92b1ad53563d095e2",
+    "main/3mf/05-module-2-mpower.png": "d627c922f0a619909aaddda8f6653839231eb7d92f546cbc2bc5a9046448fe43",
+    "main/3mf/06-module-3-mpower.3mf": "af62db2e9020c3f3e845a8c2625242e51cd57513d7d9003ad8d52492aead561c",
+    "main/3mf/06-module-3-mpower.png": "77846e8b56d5c14979cf8d9b8bc71dc88bc0d18690187b80fe308443617ab068",
+    "main/3mf/07-support-segments-mpower.3mf": "4a65e2af172e9ae4ca9506817cc67753e1f38e511f030903934f5c4253b4fc78",
+    "main/3mf/07-support-segments-mpower.png": "25053d3a5b9d38e7fb55ba2a6346ca517a463c024fc3a34ca4a20763f6cc0cde",
+    "main/3mf/08-top-segments-mpower.3mf": "f0c84ad276b13bc695a5eb4d72ec88824810e91e7583d1410c432cded83c1a41",
+    "main/3mf/08-top-segments-mpower.png": "eafafb31eb8d671c354b7884c828f3a79887816bcf3bd9ba48ec0b7b5dda05ce",
+    "main/3mf/09-billboard-mpower.3mf": "d16d5053dc2758e94b6585eb9acb3c9b946ffbfee4c4b52d807bb7f4ea56ed05",
+    "main/3mf/09-billboard-mpower.png": "c3354f8c6f5a0f6bd8da5a3934fbb6aa08709be87b480b2a1e50433781b9fd37",
+    "sign-carriers/upper/default/10-top-carrier-mpower.3mf": "5b0f074f3ff5fca6a27c69552e4e37294b13e5ea30adb2506520278cabaeb3a4",
+    "sign-carriers/upper/default/10-top-carrier-mpower.png": "1496194c0ebc0f1a6bd48636200426b0bd7708b1ced9eb58c72f28f402544387",
+    "main/3mf/11-side-receiver-mpower.3mf": "b51b4d87b692c9a7a2d8fe36d0bd925353facad6cb4dc58b258dd5ceeccf3a69",
+    "main/3mf/11-side-receiver-mpower.png": "7c310758b4fcae5c47f8e67d17b2baad430b1e88d1f972c026761b69f0640a11",
+    "sign-carriers/side/default/12-side-cartridge-mpower.3mf": "1f8ea8bd151215543101fe67fa4ffef4e5a2df11c43ba4274e29b4a1be2e113d",
+    "sign-carriers/side/default/12-side-cartridge-mpower.png": "4db7a3a86a4250982f73ac7c613519c6c54e6046b5620dfcc4eb04bb5ae6e69c",
+    "main/3mf/13-book-skins-lightblue-mpower.3mf": "3eae35ce0c1f3f5a43529aac3f26b1101b47e464f5dfc8b298b33e6a856bdd60",
+    "main/3mf/13-book-skins-lightblue-mpower.png": "9d167975303647fec1c77ec1e29c56f3ba45d8a1c4bbb14d436c2af4e322717c",
+    "main/3mf/14-book-skins-darkblue-mpower.3mf": "29c3a33cf8d0c33574fabb241247492437970f8287afe33e85d839f915fecc6c",
+    "main/3mf/14-book-skins-darkblue-mpower.png": "473f03dafe424c16c49b9212eceb906397e0b4c8fe9bf400cdba458fd52a6d8c",
+    "main/3mf/15-book-skins-red-mpower.3mf": "a4e50f5a21066d1945d8b979dd987d65a1af7bceecf5a0fffbebb529ce212298",
+    "main/3mf/15-book-skins-red-mpower.png": "1c5b8ad6bf9067b3d18751a83dcbb5179e6f20e656d87c2c919eabcf242482fa",
+    "main/3mf/16-reinforcement-plates-only.3mf": "df035396206f463f9ddaf9e2bee0fe3131febd8a7b9650900e5173edbb4ee630",
+    "main/3mf/16-reinforcement-plates-only.png": "69677b8ed0090d8e79127683a16671d6888c37ada1f56c7e813550d1778c99df",
+    "main/personal/01-garage-deck-1-mpower.3mf": "e91d14fdb46ec022df78f471493bb79aeb1215dc9c3ca067a319438579d10c40",
+    "main/personal/02-garage-deck-2-mpower.3mf": "11d6dbe107d24c6180f189382268d8976c1e70c9543aa38c5f9d49efcff55f6e",
+    "main/personal/03-garage-deck-3-mpower.3mf": "6e368ce14874993cdaba84f3ecb6a3c3eb78a9b76bb96c90d91fc8db1810b017",
+    "main/personal/04-module-1-mpower.3mf": "60d44e48f52045a8fa643cf1a15355e7d7be9621d63baeb1de9603640b8a5bcb",
+    "main/personal/07-support-segments-mpower.3mf": "663eada70d1d7b1112588651dc084ae29b46070161c6cc23a2db3c94746ae413",
+    "main/personal/08-top-segments-mpower.3mf": "1ec8d31a3fd7d6f648a3b02d1ed5de4425f95a1449d3365a9e65d55a2aca197b",
+    "main/personal/09-billboard-mpower.3mf": "a367d2ef78201fda1a57f48ee5d14adaa3fc5aec166485ebb85440366eb3a8b2",
+    "sign-carriers/upper/personal/10-top-carrier-mpower.3mf": "b0d34b009bc326d7703a4fbdb4147ac3e4ce73a13cc30df66bdaaa240b07edea",
+    "main/personal/11-side-receiver-mpower.3mf": "3a10f0b5f30f731152689903f5901ef0f166ae894bb7a576773ebe2265f4c008",
+    "sign-carriers/side/personal/12-side-cartridge-mpower.3mf": "39bea970a54922f3c054960e72697ee6972a3c72fa9e108744a8df28b533f6f3",
+    "parking-inserts/mazda-mx5/enchery-1-65-mazda-mx5-parking-tray-preview.3mf": "8289696db461a35ec83a9d1736a28f32407c75250e5ecccdd4884fe64979ce76",
+    "parking-inserts/mazda-mx5/top-fit-preview.png": "ea9d7fde77ab0d1ad8b67fbe0a15fd155f2ef89bda0ac8384b3d19d14f848de4",
+    "parking-inserts/bmw-z4-e89/parking-tray-s51-b23-d10-t5p1.3mf": "70f09505bcd981d68c135e440a1f718b3d8acfc308dca25d56e5def70a9f933b",
+    "parking-inserts/bmw-z4-e89/tray-preview.png": "dce162a2464936e4d36757a48404ca5d47ca6bd41296594adfc79ec23fd49d24",
+    "main/rear-installation.png": "deeb0b9a18b1007048604e6aabd59575db7d1d35e993c7df7dda66695892a979"
+  },
+  "provenance": [
+    {
+      "path": "main/3mf/01-garage-deck-1-mpower.3mf",
+      "sha256": "e7b8c1ae579b95d5bcf77b7e804ce42c660182baeef00336be5eda296822f8f0",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/01-garage-deck-1-mpower.3mf"
+    },
+    {
+      "path": "main/3mf/01-garage-deck-1-mpower.png",
+      "sha256": "e2e8e8b4f6051f7805f66f5c863af3a55da6153207943baca616706657c748be",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/01-garage-deck-1-mpower.png"
+    },
+    {
+      "path": "main/3mf/02-garage-deck-2-mpower.3mf",
+      "sha256": "ba19dc19342228524b6ea40b215db19bf154aff132ea4e5d45813703a178f56c",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/02-garage-deck-2-mpower.3mf"
+    },
+    {
+      "path": "main/3mf/02-garage-deck-2-mpower.png",
+      "sha256": "5506d502300b87e6e697aa146f6ed785692334a61456f7a029058856b80dad27",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/02-garage-deck-2-mpower.png"
+    },
+    {
+      "path": "main/3mf/03-garage-deck-3-mpower.3mf",
+      "sha256": "6ac1610f3e79886e7c050abe12a831ff8e2052a749ce3a0b5314bbc17d1cc08e",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/03-garage-deck-3-mpower.3mf"
+    },
+    {
+      "path": "main/3mf/03-garage-deck-3-mpower.png",
+      "sha256": "5681cee901f75eb91bc4c6df3c07e330bc23fbfa329da3e9db424dce824e8657",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/03-garage-deck-3-mpower.png"
+    },
+    {
+      "path": "main/3mf/04-module-1-mpower.3mf",
+      "sha256": "39aa467996e9afbdf59b9d9adb25c4391989aa2889b0eba0f4bd625f00e9a3cd",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/04-module-1-mpower.3mf"
+    },
+    {
+      "path": "main/3mf/04-module-1-mpower.png",
+      "sha256": "9c88f66a8d2a9e12882353ff0911186850a5e86a154d0a1ded474f703c00ef27",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/04-module-1-mpower.png"
+    },
+    {
+      "path": "main/3mf/05-module-2-mpower.3mf",
+      "sha256": "e626361ea648953665af3cac2a6b119eecdb6a6ddfdaaab92b1ad53563d095e2",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/05-module-2-mpower.3mf"
+    },
+    {
+      "path": "main/3mf/05-module-2-mpower.png",
+      "sha256": "d627c922f0a619909aaddda8f6653839231eb7d92f546cbc2bc5a9046448fe43",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/05-module-2-mpower.png"
+    },
+    {
+      "path": "main/3mf/06-module-3-mpower.3mf",
+      "sha256": "af62db2e9020c3f3e845a8c2625242e51cd57513d7d9003ad8d52492aead561c",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/06-module-3-mpower.3mf"
+    },
+    {
+      "path": "main/3mf/06-module-3-mpower.png",
+      "sha256": "77846e8b56d5c14979cf8d9b8bc71dc88bc0d18690187b80fe308443617ab068",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/06-module-3-mpower.png"
+    },
+    {
+      "path": "main/3mf/07-support-segments-mpower.3mf",
+      "sha256": "4a65e2af172e9ae4ca9506817cc67753e1f38e511f030903934f5c4253b4fc78",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/07-support-segments-mpower.3mf"
+    },
+    {
+      "path": "main/3mf/07-support-segments-mpower.png",
+      "sha256": "25053d3a5b9d38e7fb55ba2a6346ca517a463c024fc3a34ca4a20763f6cc0cde",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/07-support-segments-mpower.png"
+    },
+    {
+      "path": "main/3mf/08-top-segments-mpower.3mf",
+      "sha256": "f0c84ad276b13bc695a5eb4d72ec88824810e91e7583d1410c432cded83c1a41",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/08-top-segments-mpower.3mf"
+    },
+    {
+      "path": "main/3mf/08-top-segments-mpower.png",
+      "sha256": "eafafb31eb8d671c354b7884c828f3a79887816bcf3bd9ba48ec0b7b5dda05ce",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/08-top-segments-mpower.png"
+    },
+    {
+      "path": "main/3mf/09-billboard-mpower.3mf",
+      "sha256": "d16d5053dc2758e94b6585eb9acb3c9b946ffbfee4c4b52d807bb7f4ea56ed05",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/09-billboard-mpower.3mf"
+    },
+    {
+      "path": "main/3mf/09-billboard-mpower.png",
+      "sha256": "c3354f8c6f5a0f6bd8da5a3934fbb6aa08709be87b480b2a1e50433781b9fd37",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/09-billboard-mpower.png"
+    },
+    {
+      "path": "sign-carriers/upper/default/10-top-carrier-mpower.3mf",
+      "sha256": "5b0f074f3ff5fca6a27c69552e4e37294b13e5ea30adb2506520278cabaeb3a4",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/10-top-carrier-mpower.3mf"
+    },
+    {
+      "path": "sign-carriers/upper/default/10-top-carrier-mpower.png",
+      "sha256": "1496194c0ebc0f1a6bd48636200426b0bd7708b1ced9eb58c72f28f402544387",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/10-top-carrier-mpower.png"
+    },
+    {
+      "path": "main/3mf/11-side-receiver-mpower.3mf",
+      "sha256": "b51b4d87b692c9a7a2d8fe36d0bd925353facad6cb4dc58b258dd5ceeccf3a69",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/11-side-receiver-mpower.3mf"
+    },
+    {
+      "path": "main/3mf/11-side-receiver-mpower.png",
+      "sha256": "7c310758b4fcae5c47f8e67d17b2baad430b1e88d1f972c026761b69f0640a11",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/11-side-receiver-mpower.png"
+    },
+    {
+      "path": "sign-carriers/side/default/12-side-cartridge-mpower.3mf",
+      "sha256": "1f8ea8bd151215543101fe67fa4ffef4e5a2df11c43ba4274e29b4a1be2e113d",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/12-side-cartridge-mpower.3mf"
+    },
+    {
+      "path": "sign-carriers/side/default/12-side-cartridge-mpower.png",
+      "sha256": "4db7a3a86a4250982f73ac7c613519c6c54e6046b5620dfcc4eb04bb5ae6e69c",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/12-side-cartridge-mpower.png"
+    },
+    {
+      "path": "main/3mf/13-book-skins-lightblue-mpower.3mf",
+      "sha256": "3eae35ce0c1f3f5a43529aac3f26b1101b47e464f5dfc8b298b33e6a856bdd60",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/13-book-skins-lightblue-mpower.3mf"
+    },
+    {
+      "path": "main/3mf/13-book-skins-lightblue-mpower.png",
+      "sha256": "9d167975303647fec1c77ec1e29c56f3ba45d8a1c4bbb14d436c2af4e322717c",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/13-book-skins-lightblue-mpower.png"
+    },
+    {
+      "path": "main/3mf/14-book-skins-darkblue-mpower.3mf",
+      "sha256": "29c3a33cf8d0c33574fabb241247492437970f8287afe33e85d839f915fecc6c",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/14-book-skins-darkblue-mpower.3mf"
+    },
+    {
+      "path": "main/3mf/14-book-skins-darkblue-mpower.png",
+      "sha256": "473f03dafe424c16c49b9212eceb906397e0b4c8fe9bf400cdba458fd52a6d8c",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/14-book-skins-darkblue-mpower.png"
+    },
+    {
+      "path": "main/3mf/15-book-skins-red-mpower.3mf",
+      "sha256": "a4e50f5a21066d1945d8b979dd987d65a1af7bceecf5a0fffbebb529ce212298",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/15-book-skins-red-mpower.3mf"
+    },
+    {
+      "path": "main/3mf/15-book-skins-red-mpower.png",
+      "sha256": "1c5b8ad6bf9067b3d18751a83dcbb5179e6f20e656d87c2c919eabcf242482fa",
+      "source": "archive/printing/2026-10-30-flush-inlays/3mf/15-book-skins-red-mpower.png"
+    },
+    {
+      "path": "main/3mf/16-reinforcement-plates-only.3mf",
+      "sha256": "df035396206f463f9ddaf9e2bee0fe3131febd8a7b9650900e5173edbb4ee630",
+      "source": "archive/printing/2026-11-02-reinforcement/16-reinforcement-plates-only.3mf"
+    },
+    {
+      "path": "main/3mf/16-reinforcement-plates-only.png",
+      "sha256": "69677b8ed0090d8e79127683a16671d6888c37ada1f56c7e813550d1778c99df",
+      "source": "archive/printing/2026-11-02-reinforcement/16-reinforcement-plates-only.png"
+    },
+    {
+      "path": "main/personal/01-garage-deck-1-mpower.3mf",
+      "sha256": "e91d14fdb46ec022df78f471493bb79aeb1215dc9c3ca067a319438579d10c40",
+      "source": "archive/printing/2026-10-29-personal/3mf/01-garage-deck-1-mpower.3mf"
+    },
+    {
+      "path": "main/personal/02-garage-deck-2-mpower.3mf",
+      "sha256": "11d6dbe107d24c6180f189382268d8976c1e70c9543aa38c5f9d49efcff55f6e",
+      "source": "archive/printing/2026-10-29-personal/3mf/02-garage-deck-2-mpower.3mf"
+    },
+    {
+      "path": "main/personal/03-garage-deck-3-mpower.3mf",
+      "sha256": "6e368ce14874993cdaba84f3ecb6a3c3eb78a9b76bb96c90d91fc8db1810b017",
+      "source": "archive/printing/2026-10-29-personal/3mf/03-garage-deck-3-mpower.3mf"
+    },
+    {
+      "path": "main/personal/04-module-1-mpower.3mf",
+      "sha256": "60d44e48f52045a8fa643cf1a15355e7d7be9621d63baeb1de9603640b8a5bcb",
+      "source": "archive/printing/2026-10-29-personal/3mf/04-module-1-mpower.3mf"
+    },
+    {
+      "path": "main/personal/07-support-segments-mpower.3mf",
+      "sha256": "663eada70d1d7b1112588651dc084ae29b46070161c6cc23a2db3c94746ae413",
+      "source": "archive/printing/2026-10-29-personal/3mf/07-support-segments-mpower.3mf"
+    },
+    {
+      "path": "main/personal/08-top-segments-mpower.3mf",
+      "sha256": "1ec8d31a3fd7d6f648a3b02d1ed5de4425f95a1449d3365a9e65d55a2aca197b",
+      "source": "archive/printing/2026-10-29-personal/3mf/08-top-segments-mpower.3mf"
+    },
+    {
+      "path": "main/personal/09-billboard-mpower.3mf",
+      "sha256": "a367d2ef78201fda1a57f48ee5d14adaa3fc5aec166485ebb85440366eb3a8b2",
+      "source": "archive/printing/2026-10-29-personal/3mf/09-billboard-mpower.3mf"
+    },
+    {
+      "path": "sign-carriers/upper/personal/10-top-carrier-mpower.3mf",
+      "sha256": "b0d34b009bc326d7703a4fbdb4147ac3e4ce73a13cc30df66bdaaa240b07edea",
+      "source": "archive/printing/2026-10-29-personal/3mf/10-top-carrier-mpower.3mf"
+    },
+    {
+      "path": "main/personal/11-side-receiver-mpower.3mf",
+      "sha256": "3a10f0b5f30f731152689903f5901ef0f166ae894bb7a576773ebe2265f4c008",
+      "source": "archive/printing/2026-10-29-personal/3mf/11-side-receiver-mpower.3mf"
+    },
+    {
+      "path": "sign-carriers/side/personal/12-side-cartridge-mpower.3mf",
+      "sha256": "39bea970a54922f3c054960e72697ee6972a3c72fa9e108744a8df28b533f6f3",
+      "source": "archive/printing/2026-10-29-personal/3mf/12-side-cartridge-mpower.3mf"
+    },
+    {
+      "path": "parking-inserts/mazda-mx5/enchery-1-65-mazda-mx5-parking-tray-preview.3mf",
+      "sha256": "8289696db461a35ec83a9d1736a28f32407c75250e5ecccdd4884fe64979ce76",
+      "source": "archive/printing/hand-edited-projects/enchery-1-65-mazda-mx5-parking-tray-preview.3mf"
+    },
+    {
+      "path": "parking-inserts/mazda-mx5/top-fit-preview.png",
+      "sha256": "ea9d7fde77ab0d1ad8b67fbe0a15fd155f2ef89bda0ac8384b3d19d14f848de4",
+      "source": "studies/enchery-mx5-tray-2026-10-29/top-fit-preview.png"
+    },
+    {
+      "path": "parking-inserts/bmw-z4-e89/parking-tray-s51-b23-d10-t5p1.3mf",
+      "sha256": "70f09505bcd981d68c135e440a1f718b3d8acfc308dca25d56e5def70a9f933b",
+      "source": "studies/measured-tray-s51-b23-d10-t5p1/parking-tray-s51-b23-d10-t5p1.3mf"
+    },
+    {
+      "path": "parking-inserts/bmw-z4-e89/tray-preview.png",
+      "sha256": "dce162a2464936e4d36757a48404ca5d47ca6bd41296594adfc79ec23fd49d24",
+      "source": "studies/measured-tray-s51-b23-d10-t5p1/tray-preview.png"
+    },
+    {
+      "path": "main/rear-installation.png",
+      "sha256": "deeb0b9a18b1007048604e6aabd59575db7d1d35e993c7df7dda66695892a979",
+      "source": "archive/printing/2026-11-02-reinforcement/rear-installation.png"
+    }
+  ],
+  "physical_print_and_fit_tested": false,
+  "note": "目录整理不构成新的CAD、切片或实物验证；旧记录按原样归档。"
+}

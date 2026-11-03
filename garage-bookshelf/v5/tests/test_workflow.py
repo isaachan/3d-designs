@@ -29,7 +29,7 @@ class WorkflowTests(unittest.TestCase):
         return manifest
 
     def test_generated_output_cannot_overwrite_authored_directories(self):
-        for name in ('cad', 'printing/projects', 'studies', 'releases', 'src'):
+        for name in ('cad', 'printing/main', 'printing/sign-carriers', 'printing/parking-inserts', 'studies', 'archive', 'src'):
             with self.subTest(name=name), self.assertRaises(ValueError):
                 output_directory(ROOT / name / 'test-output')
 
