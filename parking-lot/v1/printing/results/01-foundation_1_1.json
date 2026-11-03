@@ -1,0 +1,81 @@
+{
+  "error_string": "Success.",
+  "export_time": 0,
+  "layer_height": 0.20000000298023224,
+  "plate_index": 0,
+  "prepare_time": 33,
+  "return_code": 0,
+  "sliced_plates": [
+    {
+      "feature_type_times": {
+        "Bottom surface": 983.21533203125,
+        "Bridge": 1004.2438354492188,
+        "Custom": 287.1672668457031,
+        "Flush": 148.0,
+        "Gap infill": 1.9136959314346313,
+        "Inner wall": 445.29217529296875,
+        "Internal solid infill": 2470.92822265625,
+        "Outer wall": 242.86038208007812,
+        "Overhang wall": 20.18355369567871,
+        "Prime tower": 275.4047546386719,
+        "Sparse infill": 1777.6844482421875,
+        "Top surface": 672.18896484375,
+        "Travel": 281.7387390136719,
+        "Undefined": 274.32275390625
+      },
+      "filament_change_times": 0,
+      "filaments": [
+        {
+          "filament_id": "GFA00",
+          "id": 1,
+          "main_used_g": 132.0284423828125,
+          "total_used_g": 133.22813415527344
+        },
+        {
+          "filament_id": "GFA00",
+          "id": 2,
+          "main_used_g": 0.28962773084640503,
+          "total_used_g": 0.9766885042190552
+        }
+      ],
+      "generate_support_material_time": 22,
+      "id": 1,
+      "infill_time": 321,
+      "layer_filament_change": 0,
+      "main_predication": 7871.22802734375,
+      "make_perimeters_time": 88,
+      "obj_cached_cnt": 0,
+      "objects": [
+        {
+          "bbox": {
+            "depth": 202.0,
+            "height": 11.0,
+            "width": 210.0,
+            "x": 33.24998092651367,
+            "y": 4.475679874420166,
+            "z": 0.0
+          },
+          "id": 5,
+          "name": "foundation_1_1",
+          "triangle_count": 2354
+        }
+      ],
+      "sliced_time": 862,
+      "sliced_time_with_cache": 299,
+      "total_predication": 8603.3837890625,
+      "triangle_count": 2354,
+      "warning_message": ""
+    }
+  ],
+  "sparse_infill_density": 25.0,
+  "upward_compatible_machine": [
+    "Bambu Lab A1 0.4 nozzle",
+    "Bambu Lab P2S 0.4 nozzle",
+    "Bambu Lab H2S 0.4 nozzle",
+    "Bambu Lab H2D 0.4 nozzle",
+    "Bambu Lab H2D Pro 0.4 nozzle",
+    "Bambu Lab H2C 0.4 nozzle",
+    "Bambu Lab A2L 0.4 nozzle"
+  ],
+  "wall_loops": 4
+}

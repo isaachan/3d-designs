@@ -1,0 +1,228 @@
+{
+  "id": "30-arms-feet-frame",
+  "parts": [
+    "B1_height_set_foot",
+    "B1_Level1_bearing_tab_arm",
+    "B1_Level2_bearing_tab_arm",
+    "B1_Level3_bearing_tab_arm",
+    "B2_height_set_foot",
+    "B2_Level1_bearing_tab_arm",
+    "B2_Level2_bearing_tab_arm",
+    "B2_Level3_bearing_tab_arm",
+    "B3_height_set_foot",
+    "B3_Level1_bearing_tab_arm",
+    "B3_Level2_bearing_tab_arm",
+    "B3_Level3_bearing_tab_arm",
+    "C_sign_base_adapter",
+    "SideSignFrame"
+  ],
+  "supports": true,
+  "project": "3mf/30-arms-feet-frame.3mf",
+  "sha256": "6fc91be5b7ffbd3cdd2930bd83076d435a0b2411c6aa035279114149b49e25f8",
+  "colors": [
+    "black"
+  ],
+  "bounds": [
+    {
+      "min_mm": [
+        209.7475804489038,
+        206.99685846409702,
+        0.0
+      ],
+      "max_mm": [
+        237.74443788232296,
+        234.99058060760044,
+        56.4881362
+      ]
+    },
+    {
+      "min_mm": [
+        209.74760814950656,
+        167.00314827281522,
+        0.0
+      ],
+      "max_mm": [
+        237.7444242585268,
+        194.99687969292168,
+        43.6745758
+      ]
+    },
+    {
+      "min_mm": [
+        166.74692,
+        100.99058,
+        0.0
+      ],
+      "max_mm": [
+        197.74692,
+        234.99058,
+        6.0
+      ]
+    },
+    {
+      "min_mm": [
+        217.74716389,
+        61.00315380000001,
+        0.0
+      ],
+      "max_mm": [
+        237.74493611,
+        155.0031462,
+        7.79824448
+      ]
+    },
+    {
+      "min_mm": [
+        134.74899389,
+        140.9905738,
+        0.0
+      ],
+      "max_mm": [
+        154.74676611,
+        234.9905662,
+        7.7982483
+      ]
+    },
+    {
+      "min_mm": [
+        102.75100388999999,
+        140.9905738,
+        0.0
+      ],
+      "max_mm": [
+        122.74877611,
+        234.9905662,
+        7.7982483
+      ]
+    },
+    {
+      "min_mm": [
+        134.74899389,
+        34.990570000000005,
+        0.0
+      ],
+      "max_mm": [
+        154.74676611,
+        128.99057,
+        7.79824542
+      ]
+    },
+    {
+      "min_mm": [
+        70.75302388999998,
+        140.99056,
+        0.0
+      ],
+      "max_mm": [
+        90.75079610999998,
+        234.99056,
+        7.7982483
+      ]
+    },
+    {
+      "min_mm": [
+        102.75101389,
+        34.990570000000005,
+        0.0
+      ],
+      "max_mm": [
+        122.74878611,
+        128.99057,
+        7.7982483
+      ]
+    },
+    {
+      "min_mm": [
+        70.75302388999998,
+        34.990585300000006,
+        0.0
+      ],
+      "max_mm": [
+        90.75079610999998,
+        128.99055470000002,
+        7.79824448
+      ]
+    },
+    {
+      "min_mm": [
+        38.75503388999999,
+        140.9905953,
+        0.0
+      ],
+      "max_mm": [
+        58.752806109999995,
+        234.9905647,
+        7.7982483
+      ]
+    },
+    {
+      "min_mm": [
+        38.75503388999999,
+        34.990585300000006,
+        0.0
+      ],
+      "max_mm": [
+        58.752806109999995,
+        128.99055470000002,
+        7.7982483
+      ]
+    },
+    {
+      "min_mm": [
+        209.74760797815355,
+        21.00942352504163,
+        0.0
+      ],
+      "max_mm": [
+        237.74442684379957,
+        49.00315734818259,
+        9.6999998
+      ]
+    },
+    {
+      "min_mm": [
+        165.7037197979937,
+        60.993993850019,
+        0.0
+      ],
+      "max_mm": [
+        193.69980565648726,
+        88.99008042963754,
+        18.04745864
+      ]
+    }
+  ],
+  "supports_enabled": true,
+  "saved_project_reopened_and_sliced": true,
+  "warning_message": "",
+  "seconds": 15017.431640625,
+  "grams": 107.00166320800781,
+  "materials": [
+    {
+      "color": "black",
+      "grams": 107.00166320800781,
+      "main_grams": 107.00164794921875,
+      "local_filament_id": 1
+    }
+  ],
+  "filament_changes": 0,
+  "wall_loops": 4,
+  "infill_density": "25%",
+  "source_mesh_hashes": {
+    "parts/B1_height_set_foot__black.stl": "cc79e2e0df8624f8e12c8c5f25226ebf010d97f77af606c99625d525db644ba8",
+    "parts/B1_Level1_bearing_tab_arm__black.stl": "9e6c05914adf94cc2cb95a8d02b562648a5180a026f8c7c42bd2e78ce101f160",
+    "parts/B1_Level2_bearing_tab_arm__black.stl": "a8b53b9ff6e8b8464670982ecad19873b0cda67c6cb9eb4480880db2f95b10c0",
+    "parts/B1_Level3_bearing_tab_arm__black.stl": "6e5d41ffcea30c36df1b48b7530816ced6a85e83d8ff9fa3e42fa9f99d93f149",
+    "parts/B2_height_set_foot__black.stl": "d4d8e82a863cfe196693a97a4b294f41cd976bbf85c58e44998e523a20ba099c",
+    "parts/B2_Level1_bearing_tab_arm__black.stl": "9dfaead4b3062cf695f4cbcac387fc217d3183d9c73a34b153cd35d39115efee",
+    "parts/B2_Level2_bearing_tab_arm__black.stl": "2410ff906277e6250b6c5855d4d0d06830c8591fa695eecfdd3139ddfc59a98a",
+    "parts/B2_Level3_bearing_tab_arm__black.stl": "d65e8f1f0c1fc297cd678baf189dc880cdce50320a33e18a2d77ec59e6a59f74",
+    "parts/B3_height_set_foot__black.stl": "539ea06c79db443e12d08114b1772b5135b59bd5a5cf7201544d04e646639a4f",
+    "parts/B3_Level1_bearing_tab_arm__black.stl": "80ef9d6225e55c5594d076a599916e8d8fe202408bab2af30a1639999ec64ae6",
+    "parts/B3_Level2_bearing_tab_arm__black.stl": "be7c214a2d164571f302c4e1c5f81b2b400088329ce014c30cff6a537ad57eeb",
+    "parts/B3_Level3_bearing_tab_arm__black.stl": "c159b7e18f7639bfadfb92871cc66b3e5f354fc7e26d8043d370c1c1962b794f",
+    "parts/C_sign_base_adapter__black.stl": "4a198c274617e141ca1a46fca292dbb18c38e11d3e76f1bd9df03306431d8a82",
+    "parts/SideSignFrame__black.stl": "164746cb3f8f61a01d69d02b955e0a0f05282c98a5280ae8065951bd403acc6a"
+  },
+  "elapsed_generation_seconds": 8.82
+}

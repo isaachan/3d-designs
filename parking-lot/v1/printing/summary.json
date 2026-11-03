@@ -1,0 +1,3836 @@
+{
+  "status": "passed",
+  "date": "2026-11-03",
+  "printer": "Bambu Lab X2D",
+  "nozzle_mm": 0.4,
+  "layer_height_mm": 0.2,
+  "material": "PLA",
+  "infill": "25% with 4 walls; small pins/straps and test coupons 100%",
+  "project_count": 34,
+  "plate_count": 34,
+  "production_plate_count": 33,
+  "production_print_parts": 142,
+  "test_print_parts": 4,
+  "total_grams": 2860.671093136072,
+  "total_seconds": 333895.95654296875,
+  "production_grams": 2832.129905849695,
+  "production_seconds": 331705.1540527344,
+  "test_grams": 28.541187286376953,
+  "test_seconds": 2190.802490234375,
+  "filament_grams": {
+    "black": 2176.070400238037,
+    "white": 35.35411840677261,
+    "lightblue": 226.1615513265133,
+    "darkblue": 218.42607283592224,
+    "red": 204.6589503288269
+  },
+  "main_filament_grams": {
+    "black": 2106.9124450683594,
+    "white": 3.0372376749292016,
+    "lightblue": 195.70627562701702,
+    "darkblue": 184.48544669151306,
+    "red": 184.09186005592346
+  },
+  "source_cad_unchanged": true,
+  "all_saved_projects_reopened_and_sliced": true,
+  "all_delivery_meshes_match_source": true,
+  "all_mechanical_print_parts_connected": true,
+  "warnings": [],
+  "purchased_hardware_excluded": true,
+  "physical_print_and_fit_tested": false,
+  "estimates_include": "Slicer total filament usage and total predicted time, including generated support and colour-change/prime estimates",
+  "estimates_exclude": "Manual plate changes, cooling/removal, fitting, glue curing and assembly",
+  "plates": [
+    {
+      "id": "00-joint-fit-test",
+      "parts": [
+        "joint_coupon_1",
+        "joint_coupon_2",
+        "alignment_pin_39",
+        "alignment_pin_40"
+      ],
+      "supports": false,
+      "project": "3mf/00-joint-fit-test.3mf",
+      "sha256": "6eb34d32e520eb0ee7c19c9f83f1bd5362bfecc7ac16564ab6a23257068d1c33",
+      "colors": [
+        "black"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            141.74963,
+            93.0,
+            0.0
+          ],
+          "max_mm": [
+            166.74963,
+            163.0,
+            6.5999999
+          ]
+        },
+        {
+          "min_mm": [
+            114.74965,
+            93.0,
+            0.0
+          ],
+          "max_mm": [
+            139.74965,
+            163.0,
+            6.5999999
+          ]
+        },
+        {
+          "min_mm": [
+            109.75036686679563,
+            130.1785578022353,
+            0.0
+          ],
+          "max_mm": [
+            112.74968417890798,
+            133.17818477289032,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            109.75033569,
+            135.17771785,
+            0.0
+          ],
+          "max_mm": [
+            112.74966431,
+            138.17738215,
+            10.0
+          ]
+        }
+      ],
+      "supports_enabled": false,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 2190.802490234375,
+      "grams": 28.541187286376953,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 28.541187286376953,
+          "main_grams": 28.541187286376953,
+          "local_filament_id": 1
+        }
+      ],
+      "filament_changes": 0,
+      "wall_loops": 4,
+      "infill_density": "100%",
+      "source_mesh_hashes": {
+        "parts/joint_coupon_1__black.stl": "c30f9e9700365f802c7aa60fc3f9c2512242deb9066b9ec4a109bfb156246def",
+        "parts/joint_coupon_2__black.stl": "1a6cd87248bd04dbea307967a46f4c3e1af2be992cf4828f8aab6b069daf29c8",
+        "parts/alignment_pin_39__black.stl": "148314468ac3d2c0727eaaf977112c9a8bd646cbe1e65777e688984f97f5f7fb",
+        "parts/alignment_pin_40__black.stl": "148314468ac3d2c0727eaaf977112c9a8bd646cbe1e65777e688984f97f5f7fb"
+      },
+      "elapsed_generation_seconds": 1.68
+    },
+    {
+      "id": "01-foundation_1_1",
+      "parts": [
+        "foundation_1_1"
+      ],
+      "supports": false,
+      "project": "3mf/01-foundation_1_1.3mf",
+      "sha256": "d467eaa11653c1576aed24b923460372d234f1d0b93359a7ad38b9e6720a9720",
+      "colors": [
+        "black",
+        "white"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            33.24998,
+            4.47568,
+            0.0
+          ],
+          "max_mm": [
+            243.24998,
+            206.47568,
+            11.0
+          ]
+        }
+      ],
+      "supports_enabled": false,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 8603.3837890625,
+      "grams": 134.2048226594925,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 133.22813415527344,
+          "main_grams": 132.0284423828125,
+          "local_filament_id": 1
+        },
+        {
+          "color": "white",
+          "grams": 0.9766885042190552,
+          "main_grams": 0.28962773084640503,
+          "local_filament_id": 2
+        }
+      ],
+      "filament_changes": 0,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/foundation_1_1__black.stl": "fe3b75cc92c642c23ad8d0d9413fdba73d9b8721cf60fe541c532bdc5299c5d3",
+        "parts/foundation_1_1__white.stl": "29085c77f8e0a719c2fea3a62d0ce0c4da669e2d7fea38ce8523bbf1291df78c"
+      },
+      "elapsed_generation_seconds": 3.04
+    },
+    {
+      "id": "02-foundation_1_2",
+      "parts": [
+        "foundation_1_2"
+      ],
+      "supports": false,
+      "project": "3mf/02-foundation_1_2.3mf",
+      "sha256": "239c8726b4cb47d1920e5ea1e81adeaebd6fd0e19bae52ec834fa16b242a1383",
+      "colors": [
+        "black",
+        "white",
+        "lightblue",
+        "darkblue"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            33.24998,
+            62.00001,
+            0.0
+          ],
+          "max_mm": [
+            243.24998,
+            194.00001,
+            11.0
+          ]
+        }
+      ],
+      "supports_enabled": false,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 7792.0517578125,
+      "grams": 115.07633909583092,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 110.83610534667969,
+          "main_grams": 107.92371368408203,
+          "local_filament_id": 1
+        },
+        {
+          "color": "white",
+          "grams": 0.976807177066803,
+          "main_grams": 0.1587769240140915,
+          "local_filament_id": 2
+        },
+        {
+          "color": "lightblue",
+          "grams": 0.4722450077533722,
+          "main_grams": 0.07918508350849152,
+          "local_filament_id": 3
+        },
+        {
+          "color": "darkblue",
+          "grams": 2.7911815643310547,
+          "main_grams": 2.503710985183716,
+          "local_filament_id": 4
+        }
+      ],
+      "filament_changes": 3,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/foundation_1_2__black.stl": "7ab24f4c59e4e0cf74ac6a35fa2c5a9c1b5eceda7cc9479a022fea3bd082ac7c",
+        "parts/foundation_1_2__white.stl": "545b800bc6813c2e61cda327bd361098963df2d7312256df9fbd8b16e8920f93",
+        "parts/foundation_1_2__lightblue.stl": "ba78fda032f89d58897daf572dc74c30f77ef43db379da0d554472507e4e7742",
+        "parts/foundation_1_2__darkblue.stl": "1e4e6f22c2a66a5de6e12d4cea0af9614b7213ce0107b5d246a6f924930f21db"
+      },
+      "elapsed_generation_seconds": 3.13
+    },
+    {
+      "id": "03-foundation_2_1",
+      "parts": [
+        "foundation_2_1"
+      ],
+      "supports": false,
+      "project": "3mf/03-foundation_2_1.3mf",
+      "sha256": "26673cd24a5f879d59e1f37328c8795836ba5a1c520ab410e0bc9f92b5b15542",
+      "colors": [
+        "black"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            33.249979999999994,
+            24.907264999999995,
+            0.0
+          ],
+          "max_mm": [
+            243.24998,
+            231.100915,
+            1.299999952
+          ]
+        }
+      ],
+      "supports_enabled": false,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 3902.24072265625,
+      "grams": 62.857696533203125,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 62.857696533203125,
+          "main_grams": 62.857696533203125,
+          "local_filament_id": 1
+        }
+      ],
+      "filament_changes": 0,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/foundation_2_1__black.stl": "267789470eb83f8edecff94e30eef27a20d717d40b90d5fe2f83a830d3e96207"
+      },
+      "elapsed_generation_seconds": 1.07
+    },
+    {
+      "id": "04-foundation_2_2",
+      "parts": [
+        "foundation_2_2"
+      ],
+      "supports": false,
+      "project": "3mf/04-foundation_2_2.3mf",
+      "sha256": "a538241bd884b667f4dc3db34134faedabe326aaf8706d2c134f6300e5dbee7d",
+      "colors": [
+        "black"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            33.24999,
+            53.8245902,
+            0.0
+          ],
+          "max_mm": [
+            243.24999,
+            202.1753898,
+            1.299999952
+          ]
+        }
+      ],
+      "supports_enabled": false,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 2778.34130859375,
+      "grams": 41.63180160522461,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 41.63180160522461,
+          "main_grams": 41.63180160522461,
+          "local_filament_id": 1
+        }
+      ],
+      "filament_changes": 0,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/foundation_2_2__black.stl": "efade0a5da9d398642ec1d9226b73673331ed2392a74fd4d0a86cc1bc4afd268"
+      },
+      "elapsed_generation_seconds": 1.15
+    },
+    {
+      "id": "05-foundation_3_1",
+      "parts": [
+        "foundation_3_1"
+      ],
+      "supports": false,
+      "project": "3mf/05-foundation_3_1.3mf",
+      "sha256": "0d17219c7b5c3d2050b19259cffc83f9760d1d43f089e9514d65ee7da41434c6",
+      "colors": [
+        "black"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            30.749979999999994,
+            18.824600000000004,
+            0.0
+          ],
+          "max_mm": [
+            245.74998,
+            237.1754,
+            1.299999952
+          ]
+        }
+      ],
+      "supports_enabled": false,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 4070.1337890625,
+      "grams": 64.88699340820312,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 64.88699340820312,
+          "main_grams": 64.88699340820312,
+          "local_filament_id": 1
+        }
+      ],
+      "filament_changes": 0,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/foundation_3_1__black.stl": "83673c517acc7fd1d2d7115d82ec1a782efa9f172b3ee1cc56d020055176c1ed"
+      },
+      "elapsed_generation_seconds": 1.31
+    },
+    {
+      "id": "06-foundation_3_2",
+      "parts": [
+        "foundation_3_2"
+      ],
+      "supports": false,
+      "project": "3mf/06-foundation_3_2.3mf",
+      "sha256": "6df6cc4d4f23409950b1ced859fac0ca33359be09616cd6216528d31838a15e4",
+      "colors": [
+        "black"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            30.749989999999997,
+            59.89917539999999,
+            0.0
+          ],
+          "max_mm": [
+            245.74999,
+            196.0928246,
+            1.299999952
+          ]
+        }
+      ],
+      "supports_enabled": false,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 2804.654541015625,
+      "grams": 42.02993392944336,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 42.02993392944336,
+          "main_grams": 42.02993392944336,
+          "local_filament_id": 1
+        }
+      ],
+      "filament_changes": 0,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/foundation_3_2__black.stl": "ac497c380e01273eda8d982fad1c3ecb76f2f6e8516721e5ad717ff2493fe3a1"
+      },
+      "elapsed_generation_seconds": 1.18
+    },
+    {
+      "id": "07-deck_2F_aisle",
+      "parts": [
+        "deck_2F_aisle"
+      ],
+      "supports": false,
+      "project": "3mf/07-deck_2F_aisle.3mf",
+      "sha256": "be4be65777ffabb3e0baa8de15b0c414eb5147703b49cae696fa4feb30c573ff",
+      "colors": [
+        "black",
+        "white",
+        "lightblue"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            38.24998,
+            72.7,
+            0.0
+          ],
+          "max_mm": [
+            238.24998,
+            183.2999992,
+            6.799995427
+          ]
+        }
+      ],
+      "supports_enabled": false,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 7041.5478515625,
+      "grams": 91.8985013961792,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 81.73554992675781,
+          "main_grams": 79.940185546875,
+          "local_filament_id": 1
+        },
+        {
+          "color": "white",
+          "grams": 2.542232036590576,
+          "main_grams": 0.4499782621860504,
+          "local_filament_id": 2
+        },
+        {
+          "color": "lightblue",
+          "grams": 7.6207194328308105,
+          "main_grams": 6.162281036376953,
+          "local_filament_id": 3
+        }
+      ],
+      "filament_changes": 5,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/deck_2F_aisle__black.stl": "c18aae29b9b848f4301723b7695b1b8b89f2518c874bd7fbeada9ab567831296",
+        "parts/deck_2F_aisle__white.stl": "ad627d463e30a8eb2d23a3dae9ba14f94849b16154aa1291f8da98013d7c8518",
+        "parts/deck_2F_aisle__lightblue.stl": "1b71b569a71c5a5bb023083694ae75d4bb0c8c9ebb564babc082d7cb2dd3d704"
+      },
+      "elapsed_generation_seconds": 2.55
+    },
+    {
+      "id": "08-deck_2F_bays",
+      "parts": [
+        "deck_2F_bays"
+      ],
+      "supports": false,
+      "project": "3mf/08-deck_2F_bays.3mf",
+      "sha256": "8efa6fa37e32012deea9ba01aa827bd94ee7fa1c0b596d55f86263f5d2a7ef4f",
+      "colors": [
+        "black",
+        "white",
+        "lightblue",
+        "darkblue"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            38.24998,
+            68.00001,
+            0.0
+          ],
+          "max_mm": [
+            238.24998,
+            188.00001,
+            6.799995427
+          ]
+        }
+      ],
+      "supports_enabled": false,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 6743.658203125,
+      "grams": 95.55837231874466,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 91.46638488769531,
+          "main_grams": 89.74160766601562,
+          "local_filament_id": 1
+        },
+        {
+          "color": "white",
+          "grams": 0.9686501622200012,
+          "main_grams": 0.15648388862609863,
+          "local_filament_id": 2
+        },
+        {
+          "color": "lightblue",
+          "grams": 0.37232518196105957,
+          "main_grams": 0.07747200131416321,
+          "local_filament_id": 3
+        },
+        {
+          "color": "darkblue",
+          "grams": 2.751012086868286,
+          "main_grams": 2.503762722015381,
+          "local_filament_id": 4
+        }
+      ],
+      "filament_changes": 2,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/deck_2F_bays__black.stl": "960d3efa973ae0b788ecd6c4c9c8fb11faa0c1a3a7f6e5e09aa8ad7c1852a7ab",
+        "parts/deck_2F_bays__white.stl": "67808ba3441b5f4cffd3402af304011fc712d368273fd53750a9572d835de3c3",
+        "parts/deck_2F_bays__lightblue.stl": "94ef49ed8933bf0a38af7d412dd31ef4ed56cf57b5a847a527c0aed04953ae46",
+        "parts/deck_2F_bays__darkblue.stl": "51ed0cbcbb105ffa662724b36f2d14d98d1749989e13e8b0ff8cb7a110008485"
+      },
+      "elapsed_generation_seconds": 3.29
+    },
+    {
+      "id": "09-deck_3F_aisle",
+      "parts": [
+        "deck_3F_aisle"
+      ],
+      "supports": false,
+      "project": "3mf/09-deck_3F_aisle.3mf",
+      "sha256": "8a2417817026f4cb8c0c40424ad2bf7d41212815ba412030bc0061bb8dbf4634",
+      "colors": [
+        "black",
+        "white",
+        "darkblue"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            38.24998,
+            72.7,
+            0.0
+          ],
+          "max_mm": [
+            238.24998,
+            183.2999992,
+            6.799995422
+          ]
+        }
+      ],
+      "supports_enabled": false,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 7072.61328125,
+      "grams": 92.57419800758362,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 82.73894500732422,
+          "main_grams": 79.9038314819336,
+          "local_filament_id": 1
+        },
+        {
+          "color": "white",
+          "grams": 2.850041151046753,
+          "main_grams": 0.4499782621860504,
+          "local_filament_id": 2
+        },
+        {
+          "color": "darkblue",
+          "grams": 6.9852118492126465,
+          "main_grams": 6.162272930145264,
+          "local_filament_id": 3
+        }
+      ],
+      "filament_changes": 5,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/deck_3F_aisle__black.stl": "54fc12b2566fae06d5c466fe1352a8719770be90ea3488f063baa259eeda2dc6",
+        "parts/deck_3F_aisle__white.stl": "8bc476079de08ef7999e80380dfd15d0ca249cd6d74f18b7637dc427eeba0d73",
+        "parts/deck_3F_aisle__darkblue.stl": "1b71b569a71c5a5bb023083694ae75d4bb0c8c9ebb564babc082d7cb2dd3d704"
+      },
+      "elapsed_generation_seconds": 2.56
+    },
+    {
+      "id": "10-deck_3F_bays",
+      "parts": [
+        "deck_3F_bays"
+      ],
+      "supports": false,
+      "project": "3mf/10-deck_3F_bays.3mf",
+      "sha256": "a44677310136c146da4f55564486c81328ec7a2a79dbac0aaf3aa01b418de91f",
+      "colors": [
+        "black",
+        "white",
+        "lightblue"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            38.24998,
+            68.00001,
+            0.0
+          ],
+          "max_mm": [
+            238.24998,
+            188.00001,
+            6.799995422
+          ]
+        }
+      ],
+      "supports_enabled": false,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 6484.98681640625,
+      "grams": 94.40943706035614,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 93.6955795288086,
+          "main_grams": 92.11878967285156,
+          "local_filament_id": 1
+        },
+        {
+          "color": "white",
+          "grams": 0.3627569377422333,
+          "main_grams": 0.1886683851480484,
+          "local_filament_id": 2
+        },
+        {
+          "color": "lightblue",
+          "grams": 0.3511005938053131,
+          "main_grams": 0.07747200131416321,
+          "local_filament_id": 3
+        }
+      ],
+      "filament_changes": 1,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/deck_3F_bays__black.stl": "a6ddbebed290426e349b6c323621be6e5da0e43a27cf1f168a79a60d2751c06b",
+        "parts/deck_3F_bays__white.stl": "4d688f09bce5e5f41ef5e4c936dacdf5ff29c6db25622e83738c5bca61805800",
+        "parts/deck_3F_bays__lightblue.stl": "89057d722e48b4ead70c08582ead77b07b0de15a52f2b4ea1186308106bc1b9e"
+      },
+      "elapsed_generation_seconds": 3.99
+    },
+    {
+      "id": "11-deck_4F_aisle",
+      "parts": [
+        "deck_4F_aisle"
+      ],
+      "supports": false,
+      "project": "3mf/11-deck_4F_aisle.3mf",
+      "sha256": "665f29e44086b433f4adc9a7cbcc9417798ab1fc2cad4ddd45efed057d87a723",
+      "colors": [
+        "black",
+        "white",
+        "red"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            38.24998,
+            72.7,
+            0.0
+          ],
+          "max_mm": [
+            238.24998,
+            183.2999992,
+            6.800003052
+          ]
+        }
+      ],
+      "supports_enabled": false,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 7086.958984375,
+      "grams": 92.62136054039001,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 82.78610229492188,
+          "main_grams": 79.95100402832031,
+          "local_filament_id": 1
+        },
+        {
+          "color": "white",
+          "grams": 2.850041151046753,
+          "main_grams": 0.4499782621860504,
+          "local_filament_id": 2
+        },
+        {
+          "color": "red",
+          "grams": 6.985217094421387,
+          "main_grams": 6.162278652191162,
+          "local_filament_id": 3
+        }
+      ],
+      "filament_changes": 5,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/deck_4F_aisle__black.stl": "00a84894fd5cdb81bf23ecfceb37502ae5765fbaf0c777814da6cd4486bdc8c5",
+        "parts/deck_4F_aisle__white.stl": "68321225c25efabf75b3eb09feeb7f368ebc90d833c862b68e66d6995447a558",
+        "parts/deck_4F_aisle__red.stl": "d1a61b74cb5af6961f081700aa34ba213db5109da323613b3959147d354d5873"
+      },
+      "elapsed_generation_seconds": 2.65
+    },
+    {
+      "id": "12-deck_4F_bays",
+      "parts": [
+        "deck_4F_bays"
+      ],
+      "supports": false,
+      "project": "3mf/12-deck_4F_bays.3mf",
+      "sha256": "4a24ad9464656a9206fb980fc9cfee08a14156a5fc54c787b2e33ef1e6b2bc3f",
+      "colors": [
+        "black",
+        "white",
+        "lightblue"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            38.24998,
+            68.00001,
+            0.0
+          ],
+          "max_mm": [
+            238.24998,
+            188.00001,
+            6.800003052
+          ]
+        }
+      ],
+      "supports_enabled": false,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 6467.81396484375,
+      "grams": 94.40426588058472,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 93.69020080566406,
+          "main_grams": 92.11341857910156,
+          "local_filament_id": 1
+        },
+        {
+          "color": "white",
+          "grams": 0.3629644811153412,
+          "main_grams": 0.18887589871883392,
+          "local_filament_id": 2
+        },
+        {
+          "color": "lightblue",
+          "grams": 0.3511005938053131,
+          "main_grams": 0.07747200131416321,
+          "local_filament_id": 3
+        }
+      ],
+      "filament_changes": 1,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/deck_4F_bays__black.stl": "cfe6329233b2c3561b43dc39a7e04453548e41f9fd419ef002672fd3dc1c4e94",
+        "parts/deck_4F_bays__white.stl": "7a1a0c281117a907b2fce019b8a6c1f7851365cf7e03a4b252c5d0c51607955c",
+        "parts/deck_4F_bays__lightblue.stl": "6e4285458f727bff30d5e8856b4068424bceee2a38b746e0dd81c8110edaf321"
+      },
+      "elapsed_generation_seconds": 3.79
+    },
+    {
+      "id": "13-road-1-1",
+      "parts": [
+        "road_1_1"
+      ],
+      "supports": true,
+      "project": "3mf/13-road-1-1.3mf",
+      "sha256": "8e3337097849d07b701fee7583e05a27c80d59db36292d492a4c61ebfd250948",
+      "colors": [
+        "black",
+        "white",
+        "lightblue"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            64.81430884593044,
+            48.35398187907245,
+            0.0
+          ],
+          "max_mm": [
+            213.4168298767069,
+            196.95649209111517,
+            19.8438263
+          ]
+        }
+      ],
+      "supports_enabled": true,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 15082.0458984375,
+      "grams": 82.19068121910095,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 39.30695724487305,
+          "main_grams": 36.16426467895508,
+          "local_filament_id": 1
+        },
+        {
+          "color": "white",
+          "grams": 2.6345937252044678,
+          "main_grams": 0.06121920794248581,
+          "local_filament_id": 2
+        },
+        {
+          "color": "lightblue",
+          "grams": 40.24913024902344,
+          "main_grams": 36.53226089477539,
+          "local_filament_id": 3
+        }
+      ],
+      "filament_changes": 6,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/road_1_1__black.stl": "70148cf2281592b7c8eb639febfac47e039e49807c63e1a3eb1afbf7176c0e41",
+        "parts/road_1_1__lightblue.stl": "85f34fcf30c03bd20fdba3302dc291e9afc834aebbdcc54dc236bb442648605b",
+        "parts/road_1_1__white.stl": "b4afaab3269ad9bc27cd9a31ab89387d161c293bdc27add3bdacc7ac3df8d6cc"
+      },
+      "elapsed_generation_seconds": 8.84
+    },
+    {
+      "id": "14-road-1-2",
+      "parts": [
+        "road_1_2"
+      ],
+      "supports": true,
+      "project": "3mf/14-road-1-2.3mf",
+      "sha256": "d4eed891736b0ece109fdeba45f02104fc76a5c38b7ab01307a8ca55c13b6e1a",
+      "colors": [
+        "black",
+        "lightblue"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            64.1730212474234,
+            52.22931428056543,
+            0.0
+          ],
+          "max_mm": [
+            212.89042980599623,
+            200.9467120911152,
+            20.4500962
+          ]
+        }
+      ],
+      "supports_enabled": true,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 13236.6640625,
+      "grams": 79.09786987304688,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 38.305885314941406,
+          "main_grams": 35.9393424987793,
+          "local_filament_id": 1
+        },
+        {
+          "color": "lightblue",
+          "grams": 40.79198455810547,
+          "main_grams": 37.579620361328125,
+          "local_filament_id": 2
+        }
+      ],
+      "filament_changes": 0,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/road_1_2__black.stl": "f35217504cb25b140c4d8cbe1f7ebcb2906a72bff5524229a0305876aa09e212",
+        "parts/road_1_2__lightblue.stl": "fd48ee9f9bf9b43256b5b58a433cbfd8767763825aa554b25a5301953acf7542"
+      },
+      "elapsed_generation_seconds": 7.86
+    },
+    {
+      "id": "15-road-1-3",
+      "parts": [
+        "road_1_3"
+      ],
+      "supports": true,
+      "project": "3mf/15-road-1-3.3mf",
+      "sha256": "fc5e294cce18d523de6cc32303395f9d1759fb992a4552848a02bae800dc07f9",
+      "colors": [
+        "black",
+        "white",
+        "lightblue"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            64.8100012474234,
+            48.190104280565436,
+            0.0
+          ],
+          "max_mm": [
+            213.52739905797316,
+            196.9075020911152,
+            20.4500962
+          ]
+        }
+      ],
+      "supports_enabled": true,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 13868.1142578125,
+      "grams": 85.20112955570221,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 44.127166748046875,
+          "main_grams": 40.944217681884766,
+          "local_filament_id": 1
+        },
+        {
+          "color": "white",
+          "grams": 1.7648464441299438,
+          "main_grams": 0.010484248399734497,
+          "local_filament_id": 2
+        },
+        {
+          "color": "lightblue",
+          "grams": 39.30911636352539,
+          "main_grams": 35.31869888305664,
+          "local_filament_id": 3
+        }
+      ],
+      "filament_changes": 4,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/road_1_3__black.stl": "52f379afa92a6eacc0d7d368468774eedf6f8d3d8938dfb0034379486d4acbac",
+        "parts/road_1_3__lightblue.stl": "b1ed3ef5c3123176f5b8a902ae60048be3c484d56dba81a7aeefb3578c5e76f6",
+        "parts/road_1_3__white.stl": "d7c102c198c592638ab49a3c26722c704c6c7bedf8ac91bf41e1eb835d1a6cc8"
+      },
+      "elapsed_generation_seconds": 12.17
+    },
+    {
+      "id": "16-road-1-4",
+      "parts": [
+        "road_1_4"
+      ],
+      "supports": true,
+      "project": "3mf/16-road-1-4.3mf",
+      "sha256": "17c36c4f240c8d29671b0abcc246fd4307cd788b30d3fa9818ebe7057030639c",
+      "colors": [
+        "black",
+        "white",
+        "lightblue"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            64.83652071420249,
+            48.395751060338725,
+            0.0
+          ],
+          "max_mm": [
+            213.43903898726248,
+            196.99826933339872,
+            19.84355164
+          ]
+        }
+      ],
+      "supports_enabled": true,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 14487.37890625,
+      "grams": 85.30047416687012,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 42.55064392089844,
+          "main_grams": 39.37765121459961,
+          "local_filament_id": 1
+        },
+        {
+          "color": "white",
+          "grams": 2.6304988861083984,
+          "main_grams": 0.05809999257326126,
+          "local_filament_id": 2
+        },
+        {
+          "color": "lightblue",
+          "grams": 40.11933135986328,
+          "main_grams": 36.37855911254883,
+          "local_filament_id": 3
+        }
+      ],
+      "filament_changes": 6,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/road_1_4__black.stl": "209355ccbe14a0f02a00db5267be8702eac8fa731e3179b4e4c0b56f8404fde7",
+        "parts/road_1_4__lightblue.stl": "1e10173a932f0a02ecebab191d5427e64c3780d4950ded2fd5ad2741d0f3daee",
+        "parts/road_1_4__white.stl": "1c9d7026e5794e707e91aa8063ad7a56ef5f425c4c5724c900d8c39af5e6b284"
+      },
+      "elapsed_generation_seconds": 7.39
+    },
+    {
+      "id": "17-road-2-1",
+      "parts": [
+        "road_2_1"
+      ],
+      "supports": true,
+      "project": "3mf/17-road-2-1.3mf",
+      "sha256": "ae50f5a9689346ecf93a239038ede8f8d1a414130be4ae848f36d7a432fb4a95",
+      "colors": [
+        "black",
+        "white",
+        "darkblue"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            64.81431959395354,
+            48.353992627095536,
+            0.0
+          ],
+          "max_mm": [
+            213.41681905797316,
+            196.95649209111517,
+            19.84382248
+          ]
+        }
+      ],
+      "supports_enabled": true,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 15073.2734375,
+      "grams": 82.1875216960907,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 39.31159210205078,
+          "main_grams": 36.16889953613281,
+          "local_filament_id": 1
+        },
+        {
+          "color": "white",
+          "grams": 2.6356570720672607,
+          "main_grams": 0.06228245422244072,
+          "local_filament_id": 2
+        },
+        {
+          "color": "darkblue",
+          "grams": 40.240272521972656,
+          "main_grams": 36.523399353027344,
+          "local_filament_id": 3
+        }
+      ],
+      "filament_changes": 6,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/road_2_1__black.stl": "6390438b5889c493f64388320445de407aef0ba129ca38a08754749ae9a538ce",
+        "parts/road_2_1__darkblue.stl": "97080c52d8b587faf1dde08ba58e70a792a796963b4ca163bd16208380446596",
+        "parts/road_2_1__white.stl": "48dd01618a0fb3c3602f79c66f41fa6ff9e875f936557399460af36494dcb235"
+      },
+      "elapsed_generation_seconds": 5.45
+    },
+    {
+      "id": "18-road-2-2",
+      "parts": [
+        "road_2_2"
+      ],
+      "supports": true,
+      "project": "3mf/18-road-2-2.3mf",
+      "sha256": "a8a7b6260e515e7095eaaacb395901b4090ba0764d7516529f45ba06d5ebbb62",
+      "colors": [
+        "black",
+        "darkblue"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            64.17303124742341,
+            52.229324280565436,
+            0.0
+          ],
+          "max_mm": [
+            212.8904182392394,
+            200.9467220911152,
+            20.4500962
+          ]
+        }
+      ],
+      "supports_enabled": true,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 13244.451171875,
+      "grams": 79.12079238891602,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 38.283241271972656,
+          "main_grams": 35.91670227050781,
+          "local_filament_id": 1
+        },
+        {
+          "color": "darkblue",
+          "grams": 40.83755111694336,
+          "main_grams": 37.625186920166016,
+          "local_filament_id": 2
+        }
+      ],
+      "filament_changes": 0,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/road_2_2__black.stl": "5c3f6f318ffbcdde0961a8f63582b6406a66b14621d87922141759398966effc",
+        "parts/road_2_2__darkblue.stl": "49b9627e2e2432025c5b1a0f6c2ada463e4cf307a692ac98c7c7b0e58b4db96b"
+      },
+      "elapsed_generation_seconds": 4.43
+    },
+    {
+      "id": "19-road-2-3",
+      "parts": [
+        "road_2_3"
+      ],
+      "supports": true,
+      "project": "3mf/19-road-2-3.3mf",
+      "sha256": "cb2b795a1648e2190c205043610778f448208ba5cdc6fe6454addd046bd60b35",
+      "colors": [
+        "black",
+        "white",
+        "darkblue"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            64.80997035797898,
+            48.190104209854766,
+            0.0
+          ],
+          "max_mm": [
+            213.52736823923942,
+            196.9075020911152,
+            20.4500886
+          ]
+        }
+      ],
+      "supports_enabled": true,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 13828.328125,
+      "grams": 85.06804740428925,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 44.07318115234375,
+          "main_grams": 40.890228271484375,
+          "local_filament_id": 1
+        },
+        {
+          "color": "white",
+          "grams": 1.7637566328048706,
+          "main_grams": 0.009394576773047447,
+          "local_filament_id": 2
+        },
+        {
+          "color": "darkblue",
+          "grams": 39.231109619140625,
+          "main_grams": 35.240692138671875,
+          "local_filament_id": 3
+        }
+      ],
+      "filament_changes": 4,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/road_2_3__black.stl": "261a9263bb25d794125d896b1a3645eca641f81b96c0e68fe758be2104a8388c",
+        "parts/road_2_3__darkblue.stl": "faa5f0ddb71ed01ce9f1e275ce982ac671cff3ff0c8a188ea9070274c056ce0b",
+        "parts/road_2_3__white.stl": "84c95429237bd9bcc16681e3928b9adaa9c4544e324d980b0b264066983fe88c"
+      },
+      "elapsed_generation_seconds": 4.92
+    },
+    {
+      "id": "20-road-2-4",
+      "parts": [
+        "road_2_4"
+      ],
+      "supports": true,
+      "project": "3mf/20-road-2-4.3mf",
+      "sha256": "ab1f3288ca8f9a51fdf613be3522948c9e8a6ff8f5c32d8271a78d31f4d074db",
+      "colors": [
+        "black",
+        "white",
+        "darkblue"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            64.83655235167001,
+            48.39576262709555,
+            0.0
+          ],
+          "max_mm": [
+            213.43904905797316,
+            196.99825933339872,
+            19.84355164
+          ]
+        }
+      ],
+      "supports_enabled": true,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 14508.3642578125,
+      "grams": 85.37565684318542,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 42.60573959350586,
+          "main_grams": 39.4327507019043,
+          "local_filament_id": 1
+        },
+        {
+          "color": "white",
+          "grams": 2.630497694015503,
+          "main_grams": 0.058098841458559036,
+          "local_filament_id": 2
+        },
+        {
+          "color": "darkblue",
+          "grams": 40.13941955566406,
+          "main_grams": 36.39864730834961,
+          "local_filament_id": 3
+        }
+      ],
+      "filament_changes": 6,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/road_2_4__black.stl": "d2b4271198e1770048dc8a87b72433c252cdc21156ff2178f025a20e833a2f72",
+        "parts/road_2_4__darkblue.stl": "cac2cf847dc38c4bda13a8dc7893dc04a131257178a11f9164ae5b4e1714b24c",
+        "parts/road_2_4__white.stl": "82d6acab00734bc09d601d4a665ee4d4c1b8e451bf90922ef907cc27f0b11b62"
+      },
+      "elapsed_generation_seconds": 5.03
+    },
+    {
+      "id": "21-road-3-1",
+      "parts": [
+        "road_3_1"
+      ],
+      "supports": true,
+      "project": "3mf/21-road-3-1.3mf",
+      "sha256": "14b23cb8b672ab81626160068667ee90e804466d93a70191ad89e04c4a350ea5",
+      "colors": [
+        "black",
+        "white",
+        "red"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            63.87712634790569,
+            53.628693178392865,
+            0.0
+          ],
+          "max_mm": [
+            212.47904557378502,
+            202.2317728805528,
+            19.8438263
+          ]
+        }
+      ],
+      "supports_enabled": true,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 15076.28125,
+      "grams": 82.1693160533905,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 39.30504608154297,
+          "main_grams": 36.162353515625,
+          "local_filament_id": 1
+        },
+        {
+          "color": "white",
+          "grams": 2.6355979442596436,
+          "main_grams": 0.062223322689533234,
+          "local_filament_id": 2
+        },
+        {
+          "color": "red",
+          "grams": 40.22867202758789,
+          "main_grams": 36.51179885864258,
+          "local_filament_id": 3
+        }
+      ],
+      "filament_changes": 6,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/road_3_1__black.stl": "1366194fa43faae934ed22dd2a201ddd1d0cea28b192e469073411366207dd0f",
+        "parts/road_3_1__red.stl": "29d8f0e20f6e24724305cb7775cc3ea87ab0e9c236f6f76be0fe14373539eb45",
+        "parts/road_3_1__white.stl": "ef2c52cd9f335bf869807e30f99ae94903fcffb54bc55e9a646bfade8e60508f"
+      },
+      "elapsed_generation_seconds": 5.21
+    },
+    {
+      "id": "22-road-3-2",
+      "parts": [
+        "road_3_2"
+      ],
+      "supports": true,
+      "project": "3mf/22-road-3-2.3mf",
+      "sha256": "91879984e45c9afc135f319ec53f25adc2a373092c44f101350361b8c3e813a9",
+      "colors": [
+        "black",
+        "red"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            64.17302199544648,
+            52.22932502858849,
+            0.0
+          ],
+          "max_mm": [
+            212.89040905797316,
+            200.9467120911152,
+            20.4500886
+          ]
+        }
+      ],
+      "supports_enabled": true,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 13236.056640625,
+      "grams": 79.12563705444336,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 38.32081604003906,
+          "main_grams": 35.95427322387695,
+          "local_filament_id": 1
+        },
+        {
+          "color": "red",
+          "grams": 40.8048210144043,
+          "main_grams": 37.59246063232422,
+          "local_filament_id": 2
+        }
+      ],
+      "filament_changes": 0,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/road_3_2__black.stl": "903877f5de0647647b020357beb4d38fe6abd4626f868426f694192e5dd7c02c",
+        "parts/road_3_2__red.stl": "2ede69817ec77a7430f970bad81766a2d8201192ef78eaa1fdad4580f10cd4fb"
+      },
+      "elapsed_generation_seconds": 4.19
+    },
+    {
+      "id": "23-road-3-3",
+      "parts": [
+        "road_3_3"
+      ],
+      "supports": true,
+      "project": "3mf/23-road-3-3.3mf",
+      "sha256": "b4b73654fcfb643dd72cfa04fdd711889778a3beaa60b4ccabc8324225da0052",
+      "colors": [
+        "black",
+        "white",
+        "red"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            64.80998199544649,
+            48.19009502858849,
+            0.0
+          ],
+          "max_mm": [
+            213.52736905797317,
+            196.90748209111518,
+            20.4500886
+          ]
+        }
+      ],
+      "supports_enabled": true,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 13824.9560546875,
+      "grams": 85.06569290161133,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 44.080169677734375,
+          "main_grams": 40.897216796875,
+          "local_filament_id": 1
+        },
+        {
+          "color": "white",
+          "grams": 1.7639007568359375,
+          "main_grams": 0.009538593702018261,
+          "local_filament_id": 2
+        },
+        {
+          "color": "red",
+          "grams": 39.221622467041016,
+          "main_grams": 35.231204986572266,
+          "local_filament_id": 3
+        }
+      ],
+      "filament_changes": 4,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/road_3_3__black.stl": "db2c5e8e0db57a07c68f4c0fb3b36c4ee12896f65502310e2ab3e010ce640745",
+        "parts/road_3_3__red.stl": "a3ce1f193be6aeb8941a6ffbc965aa8f41821f6ee4f869b82c2990f12324f81f",
+        "parts/road_3_3__white.stl": "72f68d95870f4d55994a965783e605668268dbc195de1f1bd68f94dbae62d08b"
+      },
+      "elapsed_generation_seconds": 4.69
+    },
+    {
+      "id": "24-road-3-4",
+      "parts": [
+        "road_3_4"
+      ],
+      "supports": true,
+      "project": "3mf/24-road-3-4.3mf",
+      "sha256": "dcc3d7361714d6731437b0a6b28885f46d7b07b5577f3ebaef8e380b60e3e925",
+      "colors": [
+        "black",
+        "white",
+        "red"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            64.83655235167001,
+            48.39577262709555,
+            0.0
+          ],
+          "max_mm": [
+            213.43904905797316,
+            196.99826933339872,
+            19.84355164
+          ]
+        }
+      ],
+      "supports_enabled": true,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 14526.154296875,
+      "grams": 85.41921973228455,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 42.54330825805664,
+          "main_grams": 39.370323181152344,
+          "local_filament_id": 1
+        },
+        {
+          "color": "white",
+          "grams": 2.6284215450286865,
+          "main_grams": 0.056022658944129944,
+          "local_filament_id": 2
+        },
+        {
+          "color": "red",
+          "grams": 40.24748992919922,
+          "main_grams": 36.5067138671875,
+          "local_filament_id": 3
+        }
+      ],
+      "filament_changes": 6,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/road_3_4__black.stl": "f9e270ce23649d8497da428a65dba4797b1616be91e86ff4d25d8618437c9a77",
+        "parts/road_3_4__red.stl": "1012ad1460c24dde170697774578db1551a95899131fd4d123d716d7d2c68da6",
+        "parts/road_3_4__white.stl": "a6ca01cfe89476e02b0a488675e9689f7d8bd6ed53b8e79ce7be2e603da25d8b"
+      },
+      "elapsed_generation_seconds": 5.03
+    },
+    {
+      "id": "25-landing-1F",
+      "parts": [
+        "landing_1F"
+      ],
+      "supports": false,
+      "project": "3mf/25-landing-1F.3mf",
+      "sha256": "0e6a1039dcf0d6d67ffdabefebe11e97d1a5f419d2bf311dfa7f104d6324ed03",
+      "colors": [
+        "black",
+        "lightblue"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            70.71369,
+            61.05735,
+            0.0
+          ],
+          "max_mm": [
+            205.78507059999998,
+            194.94292439999998,
+            14.60000038
+          ]
+        }
+      ],
+      "supports_enabled": false,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 7435.1328125,
+      "grams": 60.25129318237305,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 33.095027923583984,
+          "main_grams": 31.477214813232422,
+          "local_filament_id": 1
+        },
+        {
+          "color": "lightblue",
+          "grams": 27.156265258789062,
+          "main_grams": 25.846769332885742,
+          "local_filament_id": 2
+        }
+      ],
+      "filament_changes": 0,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/landing_1F__black.stl": "db0cad7e8eb461843c5f24993b45a321f2865f1e82f94d0ed32692f0929ae583",
+        "parts/landing_1F__lightblue.stl": "d37f3eea8ed318be591cc096beca1c1fd48b2e8241ccd00a40278bce6c9a9775"
+      },
+      "elapsed_generation_seconds": 2.54
+    },
+    {
+      "id": "26-landing-2F",
+      "parts": [
+        "landing_2F"
+      ],
+      "supports": false,
+      "project": "3mf/26-landing-2F.3mf",
+      "sha256": "e862ab5cbd0b1b2b0f3050d1910c5e165b8897cd6acf471b07e96afede15f7f6",
+      "colors": [
+        "black",
+        "lightblue",
+        "darkblue"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            70.86176,
+            61.64893,
+            0.0
+          ],
+          "max_mm": [
+            205.6382188,
+            194.3510746,
+            14.59999848
+          ]
+        }
+      ],
+      "supports_enabled": false,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 10491.9853515625,
+      "grams": 75.19372653961182,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 40.667015075683594,
+          "main_grams": 35.23181915283203,
+          "local_filament_id": 1
+        },
+        {
+          "color": "lightblue",
+          "grams": 20.26564598083496,
+          "main_grams": 15.945526123046875,
+          "local_filament_id": 2
+        },
+        {
+          "color": "darkblue",
+          "grams": 14.261065483093262,
+          "main_grams": 7.256385326385498,
+          "local_filament_id": 3
+        }
+      ],
+      "filament_changes": 33,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/landing_2F__black.stl": "d11019e12a1190473f1da301883300ae78722d1e89bfa64978a115ffc41e58ef",
+        "parts/landing_2F__lightblue.stl": "c8728b8a9c7d61dc3a91ebe21d4c70c2b7e5220adb24a06daa71b2c2f2d2839c",
+        "parts/landing_2F__darkblue.stl": "fe9cba88abd9bd56db200cffb98800f45bd3a7da3f696aae12f32b5b0c998c49"
+      },
+      "elapsed_generation_seconds": 3.51
+    },
+    {
+      "id": "27-landing-3F",
+      "parts": [
+        "landing_3F"
+      ],
+      "supports": false,
+      "project": "3mf/27-landing-3F.3mf",
+      "sha256": "c932c15d5c236c1237451dbd99eced39b706359f096238a238c93e7968d53416",
+      "colors": [
+        "black",
+        "darkblue",
+        "red"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            70.86176,
+            61.64893,
+            0.0
+          ],
+          "max_mm": [
+            205.6382188,
+            194.3510746,
+            14.59999848
+          ]
+        }
+      ],
+      "supports_enabled": false,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 9665.5791015625,
+      "grams": 74.96039390563965,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 39.344661712646484,
+          "main_grams": 35.23372268676758,
+          "local_filament_id": 1
+        },
+        {
+          "color": "darkblue",
+          "grams": 25.396909713745117,
+          "main_grams": 15.922769546508789,
+          "local_filament_id": 2
+        },
+        {
+          "color": "red",
+          "grams": 10.218822479248047,
+          "main_grams": 7.275776386260986,
+          "local_filament_id": 3
+        }
+      ],
+      "filament_changes": 33,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/landing_3F__black.stl": "cada636d10bf34e9cc6acaea774125c4152f6504b96b7147f9b39811c017ac5d",
+        "parts/landing_3F__darkblue.stl": "072f64ddb2f6bcf9c101c0688f7f3ec25b8bfed3c7cfd56eed3f870a26016fed",
+        "parts/landing_3F__red.stl": "62a0ea2632f3a7c1f2a57f2325f91b9e4144b514e3f0ebbb25e4850c9cff3a27"
+      },
+      "elapsed_generation_seconds": 5.48
+    },
+    {
+      "id": "28-landing-4F",
+      "parts": [
+        "landing_4F"
+      ],
+      "supports": false,
+      "project": "3mf/28-landing-4F.3mf",
+      "sha256": "425c1032ea8d34e9aa5720dfc13c9820a8d4209ae96d6897fe9b1275c149d13c",
+      "colors": [
+        "black",
+        "red"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            70.86169,
+            76.32305,
+            0.0
+          ],
+          "max_mm": [
+            205.6381488,
+            179.6741242,
+            14.6000061
+          ]
+        }
+      ],
+      "supports_enabled": false,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 6607.10205078125,
+      "grams": 54.88412857055664,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 30.393966674804688,
+          "main_grams": 28.776153564453125,
+          "local_filament_id": 1
+        },
+        {
+          "color": "red",
+          "grams": 24.490161895751953,
+          "main_grams": 23.180667877197266,
+          "local_filament_id": 2
+        }
+      ],
+      "filament_changes": 0,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/landing_4F__black.stl": "050e57c2b8ea11986d3c5cc6da1e2beb4a85051736f5f6aa381206b75940f03a",
+        "parts/landing_4F__red.stl": "f0e6209eaa7f4f6be9b281ee05142e205d4702569b1109b80a5cd5150738a0f8"
+      },
+      "elapsed_generation_seconds": 2.23
+    },
+    {
+      "id": "29-all-original-columns",
+      "parts": [
+        "A1_Column_1",
+        "A1_Column_2",
+        "A1_Column_3",
+        "A1_Column_4",
+        "A2_Column_1",
+        "A2_Column_2",
+        "A2_Column_3",
+        "A2_Column_4",
+        "A3_Column_1",
+        "A3_Column_2",
+        "A3_Column_3",
+        "A3_Column_4",
+        "A4_Column_1",
+        "A4_Column_2",
+        "A4_Column_3",
+        "A4_Column_4",
+        "B1_original_standard_segment_1",
+        "B1_original_standard_segment_2",
+        "B1_original_top_cap",
+        "B2_original_standard_segment_1",
+        "B2_original_standard_segment_2",
+        "B2_original_top_cap",
+        "B3_original_standard_segment_1",
+        "B3_original_standard_segment_2",
+        "B3_original_top_cap",
+        "C_original_standard_segment_1",
+        "C_original_standard_segment_2",
+        "C_original_standard_segment_3",
+        "C_original_top_cap"
+      ],
+      "supports": false,
+      "project": "3mf/29-all-original-columns.3mf",
+      "sha256": "8ee974632e19824ac051203c84925b5e7da8ed8c6c651ac6e6bf9e3c8ac01442",
+      "colors": [
+        "black"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            172.24210185132125,
+            177.99003625895983,
+            0.0
+          ],
+          "max_mm": [
+            192.23984389798028,
+            197.98554363237798,
+            66.0
+          ]
+        },
+        {
+          "min_mm": [
+            172.24210185132125,
+            155.99455625895985,
+            0.0
+          ],
+          "max_mm": [
+            192.23984389798028,
+            175.990063632378,
+            66.0
+          ]
+        },
+        {
+          "min_mm": [
+            150.24649293325388,
+            177.98769610573223,
+            0.0
+          ],
+          "max_mm": [
+            170.24201871048174,
+            197.98544483342474,
+            66.0
+          ]
+        },
+        {
+          "min_mm": [
+            150.24649732,
+            155.99413389,
+            0.0
+          ],
+          "max_mm": [
+            170.24202268,
+            175.99190611,
+            66.0
+          ]
+        },
+        {
+          "min_mm": [
+            172.24209610573223,
+            133.99907128951827,
+            0.0
+          ],
+          "max_mm": [
+            192.23984483342474,
+            153.99459706674614,
+            66.0
+          ]
+        },
+        {
+          "min_mm": [
+            128.25086973721974,
+            177.98825441505187,
+            0.0
+          ],
+          "max_mm": [
+            148.24806767955113,
+            197.98545972791098,
+            66.0
+          ]
+        },
+        {
+          "min_mm": [
+            150.24649105394522,
+            134.00060610573223,
+            0.0
+          ],
+          "max_mm": [
+            170.24201386720077,
+            153.99835517445115,
+            66.0
+          ]
+        },
+        {
+          "min_mm": [
+            128.25099541,
+            155.99314389,
+            0.0
+          ],
+          "max_mm": [
+            148.24652459,
+            175.99091611,
+            66.0
+          ]
+        },
+        {
+          "min_mm": [
+            128.2510011975536,
+            133.9996049293892,
+            0.0
+          ],
+          "max_mm": [
+            148.24652286749864,
+            153.9973633857878,
+            66.0
+          ]
+        },
+        {
+          "min_mm": [
+            172.2420849293892,
+            112.00358713250134,
+            0.0
+          ],
+          "max_mm": [
+            192.2398433857878,
+            131.9991088024464,
+            66.0
+          ]
+        },
+        {
+          "min_mm": [
+            106.25576713996038,
+            177.9882634433131,
+            0.0
+          ],
+          "max_mm": [
+            126.25296951252164,
+            197.98546146447973,
+            66.0
+          ]
+        },
+        {
+          "min_mm": [
+            150.2464944093295,
+            112.0026693923715,
+            0.0
+          ],
+          "max_mm": [
+            170.24201768439042,
+            132.00041908524202,
+            66.0
+          ]
+        },
+        {
+          "min_mm": [
+            106.25550440932952,
+            155.9913693923715,
+            0.0
+          ],
+          "max_mm": [
+            126.25102768439045,
+            175.989119085242,
+            66.0
+          ]
+        },
+        {
+          "min_mm": [
+            128.25099732,
+            112.00605961000001,
+            0.0
+          ],
+          "max_mm": [
+            148.24652268,
+            132.00382039000002,
+            66.0
+          ]
+        },
+        {
+          "min_mm": [
+            106.25550732,
+            133.99782961,
+            0.0
+          ],
+          "max_mm": [
+            126.25103268,
+            153.99559039000002,
+            66.0
+          ]
+        },
+        {
+          "min_mm": [
+            84.26105697161098,
+            177.99002658618593,
+            0.0
+          ],
+          "max_mm": [
+            104.25881715572447,
+            197.98555071364962,
+            66.0
+          ]
+        },
+        {
+          "min_mm": [
+            84.26003180974759,
+            155.99137857519656,
+            0.0
+          ],
+          "max_mm": [
+            104.25554321900464,
+            175.98912978502847,
+            66.0
+          ]
+        },
+        {
+          "min_mm": [
+            172.24208857519656,
+            90.00810678099536,
+            0.0
+          ],
+          "max_mm": [
+            192.23983978502847,
+            110.00361819025241,
+            65.9999924
+          ]
+        },
+        {
+          "min_mm": [
+            150.24649778,
+            90.00914152,
+            0.0
+          ],
+          "max_mm": [
+            170.24204222,
+            110.00689848,
+            66.0
+          ]
+        },
+        {
+          "min_mm": [
+            106.25550448374952,
+            112.00430412526569,
+            0.0
+          ],
+          "max_mm": [
+            126.25102816423185,
+            132.0020312366945,
+            66.0
+          ]
+        },
+        {
+          "min_mm": [
+            128.25100448374954,
+            90.01253412526569,
+            0.0
+          ],
+          "max_mm": [
+            148.24652816423185,
+            110.01026123669449,
+            66.0
+          ]
+        },
+        {
+          "min_mm": [
+            178.24140697002792,
+            74.01127578043193,
+            0.0
+          ],
+          "max_mm": [
+            192.23984013051583,
+            88.00814162894471,
+            33.0
+          ]
+        },
+        {
+          "min_mm": [
+            162.2428006001795,
+            74.01126905777014,
+            0.0
+          ],
+          "max_mm": [
+            176.24122968250896,
+            88.00813079185637,
+            33.0
+          ]
+        },
+        {
+          "min_mm": [
+            146.24420514337257,
+            74.0112780253369,
+            0.0
+          ],
+          "max_mm": [
+            160.24261377646965,
+            88.00813391209411,
+            33.0
+          ]
+        },
+        {
+          "min_mm": [
+            130.2455919903463,
+            74.01127242889434,
+            0.0
+          ],
+          "max_mm": [
+            144.2440182950946,
+            88.0081337063485,
+            33.0
+          ]
+        },
+        {
+          "min_mm": [
+            114.24700402052282,
+            74.0112705822039,
+            0.0
+          ],
+          "max_mm": [
+            128.2453976216517,
+            88.00813775334599,
+            33.0
+          ]
+        },
+        {
+          "min_mm": [
+            178.24140852669223,
+            58.01447353821833,
+            0.0
+          ],
+          "max_mm": [
+            192.23983024734056,
+            72.01132498290798,
+            33.0
+          ]
+        },
+        {
+          "min_mm": [
+            162.24278658469794,
+            58.01444019033518,
+            0.0
+          ],
+          "max_mm": [
+            176.24121947431502,
+            72.01130796945017,
+            33.0
+          ]
+        },
+        {
+          "min_mm": [
+            112.5418064,
+            96.29335583,
+            0.0
+          ],
+          "max_mm": [
+            126.5386936,
+            110.29178417,
+            33.0
+          ]
+        }
+      ],
+      "supports_enabled": false,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 19554.8359375,
+      "grams": 187.821044921875,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 187.821044921875,
+          "main_grams": 187.821044921875,
+          "local_filament_id": 1
+        }
+      ],
+      "filament_changes": 0,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/A1_Column_1__black.stl": "1d5568bff1bff5fa01a239f9bb8b5fcb4285888b1fe35395760efe79e2458208",
+        "parts/A1_Column_2__black.stl": "41b1356c9af94d0e433c6e7ac663d9a06650243d3afde3207ec6a6c39a6b3e2f",
+        "parts/A1_Column_3__black.stl": "99dc52d0b4942239d4fa2d8d25e895f6b197a1bc1d61689aa070366fccf5b69a",
+        "parts/A1_Column_4__black.stl": "fa6204e10f2d9ceaaaba6640b818e6368837b41c50f91d114dac6a78e2d97926",
+        "parts/A2_Column_1__black.stl": "969b5dc28675d1fe134304fbe0b8f000a4236d2537cd470fde8b6a3f10547b55",
+        "parts/A2_Column_2__black.stl": "98935980c7a8ef65a5d13b890107b40c158613a734d4351c25dea1d607adc562",
+        "parts/A2_Column_3__black.stl": "2e3196b19fa5d82c87ce89023d38760f0efd9a667788e862179a5d702eb17f57",
+        "parts/A2_Column_4__black.stl": "523844d257bf9b802a3f893720379dd5e889e543026d6eaa2b2d3e86706a0581",
+        "parts/A3_Column_1__black.stl": "e309fbc4f1caaa9ad0d8512691bca27eb75f8745c2d8256028089c894b6ad26e",
+        "parts/A3_Column_2__black.stl": "168ca6337a5cbb19ce625a4ca0ecbf6b631ec6909a9485b0acc2a0cf20741155",
+        "parts/A3_Column_3__black.stl": "6e5a81f9b129d6509f3c4a830a73bfd8f80bee9b307a8b8e95c9716a60bbceeb",
+        "parts/A3_Column_4__black.stl": "5e9dd1bb440624dfc5ee0fae563e0bbebc91818563fbbb063b9526fd88a8d3dc",
+        "parts/A4_Column_1__black.stl": "e3216d69aeddaeff71c58d74aaee4651ae2d8e58a6a252935b8f74170a2ddb7c",
+        "parts/A4_Column_2__black.stl": "3d84d94d50c41fc42c320860c2c14576d782aef47114452141020d5848103b63",
+        "parts/A4_Column_3__black.stl": "1d4368527b16a0883182fd899a19c92db893b284d972161e00faa7f1ceacfb06",
+        "parts/A4_Column_4__black.stl": "023a93134a6d3e7d0f7d059af0c388680451fc8870b75300f54d35777b770a66",
+        "parts/B1_original_standard_segment_1__black.stl": "0fd206b1e89a532511e3206bc315d89b5b74a117afac069940030fa7b366f8f9",
+        "parts/B1_original_standard_segment_2__black.stl": "9a93356282736f4febeb2b6d8fc0281159201c899858218f8452171029ec4e4e",
+        "parts/B1_original_top_cap__black.stl": "e6eae0b7ecb7b8c59b8c816174a76d610d8bdd320f3e7cb091c0107df35d793e",
+        "parts/B2_original_standard_segment_1__black.stl": "2b4a102f2d1b8805490ca78e620aec966799a8c1523eba3042a0a14445bc03cf",
+        "parts/B2_original_standard_segment_2__black.stl": "f33b01f185a3b87fac5793c6097673bd0bb61db71c8eb1a4d6176a54f27b1e5d",
+        "parts/B2_original_top_cap__black.stl": "b76def70c3a5e3a9db079bbf1f854146b6bbcfb116813cabb0010e55d45092fa",
+        "parts/B3_original_standard_segment_1__black.stl": "21c03ca4cf3f130ceb4b4a4b76608d863f1ac77b688eeda0498a6c5e4a7efa0e",
+        "parts/B3_original_standard_segment_2__black.stl": "ddf29216348d8e6f3e437b790952bc61d760449b3b49888c05b32e61d00f91fd",
+        "parts/B3_original_top_cap__black.stl": "853e2c6d91bad93637845df7aa2c535b9f912893ea6ec1d7ccb779ff1776b235",
+        "parts/C_original_standard_segment_1__black.stl": "511b3fc5f752409e01d3a220472dd0b1c796044632b7bb513b824440a00f140c",
+        "parts/C_original_standard_segment_2__black.stl": "297509bfb37d04e71ed3b163eac3e9a94eb79791e14a50b474cc8c9940becb8e",
+        "parts/C_original_standard_segment_3__black.stl": "3d46355422dae099320d6f699470e04c9309f5b90be3a5866ef4c8a7194517a3",
+        "parts/C_original_top_cap__black.stl": "45bc89b0bc11344482a17501d086d7d420d302070cf32459c733b4ae40b91349"
+      },
+      "elapsed_generation_seconds": 23.69
+    },
+    {
+      "id": "30-arms-feet-frame",
+      "parts": [
+        "B1_height_set_foot",
+        "B1_Level1_bearing_tab_arm",
+        "B1_Level2_bearing_tab_arm",
+        "B1_Level3_bearing_tab_arm",
+        "B2_height_set_foot",
+        "B2_Level1_bearing_tab_arm",
+        "B2_Level2_bearing_tab_arm",
+        "B2_Level3_bearing_tab_arm",
+        "B3_height_set_foot",
+        "B3_Level1_bearing_tab_arm",
+        "B3_Level2_bearing_tab_arm",
+        "B3_Level3_bearing_tab_arm",
+        "C_sign_base_adapter",
+        "SideSignFrame"
+      ],
+      "supports": true,
+      "project": "3mf/30-arms-feet-frame.3mf",
+      "sha256": "6fc91be5b7ffbd3cdd2930bd83076d435a0b2411c6aa035279114149b49e25f8",
+      "colors": [
+        "black"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            209.7475804489038,
+            206.99685846409702,
+            0.0
+          ],
+          "max_mm": [
+            237.74443788232296,
+            234.99058060760044,
+            56.4881362
+          ]
+        },
+        {
+          "min_mm": [
+            209.74760814950656,
+            167.00314827281522,
+            0.0
+          ],
+          "max_mm": [
+            237.7444242585268,
+            194.99687969292168,
+            43.6745758
+          ]
+        },
+        {
+          "min_mm": [
+            166.74692,
+            100.99058,
+            0.0
+          ],
+          "max_mm": [
+            197.74692,
+            234.99058,
+            6.0
+          ]
+        },
+        {
+          "min_mm": [
+            217.74716389,
+            61.00315380000001,
+            0.0
+          ],
+          "max_mm": [
+            237.74493611,
+            155.0031462,
+            7.79824448
+          ]
+        },
+        {
+          "min_mm": [
+            134.74899389,
+            140.9905738,
+            0.0
+          ],
+          "max_mm": [
+            154.74676611,
+            234.9905662,
+            7.7982483
+          ]
+        },
+        {
+          "min_mm": [
+            102.75100388999999,
+            140.9905738,
+            0.0
+          ],
+          "max_mm": [
+            122.74877611,
+            234.9905662,
+            7.7982483
+          ]
+        },
+        {
+          "min_mm": [
+            134.74899389,
+            34.990570000000005,
+            0.0
+          ],
+          "max_mm": [
+            154.74676611,
+            128.99057,
+            7.79824542
+          ]
+        },
+        {
+          "min_mm": [
+            70.75302388999998,
+            140.99056,
+            0.0
+          ],
+          "max_mm": [
+            90.75079610999998,
+            234.99056,
+            7.7982483
+          ]
+        },
+        {
+          "min_mm": [
+            102.75101389,
+            34.990570000000005,
+            0.0
+          ],
+          "max_mm": [
+            122.74878611,
+            128.99057,
+            7.7982483
+          ]
+        },
+        {
+          "min_mm": [
+            70.75302388999998,
+            34.990585300000006,
+            0.0
+          ],
+          "max_mm": [
+            90.75079610999998,
+            128.99055470000002,
+            7.79824448
+          ]
+        },
+        {
+          "min_mm": [
+            38.75503388999999,
+            140.9905953,
+            0.0
+          ],
+          "max_mm": [
+            58.752806109999995,
+            234.9905647,
+            7.7982483
+          ]
+        },
+        {
+          "min_mm": [
+            38.75503388999999,
+            34.990585300000006,
+            0.0
+          ],
+          "max_mm": [
+            58.752806109999995,
+            128.99055470000002,
+            7.7982483
+          ]
+        },
+        {
+          "min_mm": [
+            209.74760797815355,
+            21.00942352504163,
+            0.0
+          ],
+          "max_mm": [
+            237.74442684379957,
+            49.00315734818259,
+            9.6999998
+          ]
+        },
+        {
+          "min_mm": [
+            165.7037197979937,
+            60.993993850019,
+            0.0
+          ],
+          "max_mm": [
+            193.69980565648726,
+            88.99008042963754,
+            18.04745864
+          ]
+        }
+      ],
+      "supports_enabled": true,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 15017.431640625,
+      "grams": 107.00166320800781,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 107.00166320800781,
+          "main_grams": 107.00164794921875,
+          "local_filament_id": 1
+        }
+      ],
+      "filament_changes": 0,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/B1_height_set_foot__black.stl": "cc79e2e0df8624f8e12c8c5f25226ebf010d97f77af606c99625d525db644ba8",
+        "parts/B1_Level1_bearing_tab_arm__black.stl": "9e6c05914adf94cc2cb95a8d02b562648a5180a026f8c7c42bd2e78ce101f160",
+        "parts/B1_Level2_bearing_tab_arm__black.stl": "a8b53b9ff6e8b8464670982ecad19873b0cda67c6cb9eb4480880db2f95b10c0",
+        "parts/B1_Level3_bearing_tab_arm__black.stl": "6e5d41ffcea30c36df1b48b7530816ced6a85e83d8ff9fa3e42fa9f99d93f149",
+        "parts/B2_height_set_foot__black.stl": "d4d8e82a863cfe196693a97a4b294f41cd976bbf85c58e44998e523a20ba099c",
+        "parts/B2_Level1_bearing_tab_arm__black.stl": "9dfaead4b3062cf695f4cbcac387fc217d3183d9c73a34b153cd35d39115efee",
+        "parts/B2_Level2_bearing_tab_arm__black.stl": "2410ff906277e6250b6c5855d4d0d06830c8591fa695eecfdd3139ddfc59a98a",
+        "parts/B2_Level3_bearing_tab_arm__black.stl": "d65e8f1f0c1fc297cd678baf189dc880cdce50320a33e18a2d77ec59e6a59f74",
+        "parts/B3_height_set_foot__black.stl": "539ea06c79db443e12d08114b1772b5135b59bd5a5cf7201544d04e646639a4f",
+        "parts/B3_Level1_bearing_tab_arm__black.stl": "80ef9d6225e55c5594d076a599916e8d8fe202408bab2af30a1639999ec64ae6",
+        "parts/B3_Level2_bearing_tab_arm__black.stl": "be7c214a2d164571f302c4e1c5f81b2b400088329ce014c30cff6a537ad57eeb",
+        "parts/B3_Level3_bearing_tab_arm__black.stl": "c159b7e18f7639bfadfb92871cc66b3e5f354fc7e26d8043d370c1c1962b794f",
+        "parts/C_sign_base_adapter__black.stl": "4a198c274617e141ca1a46fca292dbb18c38e11d3e76f1bd9df03306431d8a82",
+        "parts/SideSignFrame__black.stl": "164746cb3f8f61a01d69d02b955e0a0f05282c98a5280ae8065951bd403acc6a"
+      },
+      "elapsed_generation_seconds": 8.82
+    },
+    {
+      "id": "31-small-parts-pins-straps",
+      "parts": [
+        "base_underpad_1",
+        "base_underpad_2",
+        "base_underpad_3",
+        "base_underpad_4",
+        "foundation_glue_strap_1",
+        "foundation_glue_strap_2",
+        "foundation_glue_strap_3",
+        "foundation_glue_strap_4",
+        "foundation_glue_strap_5",
+        "foundation_glue_strap_6",
+        "foundation_glue_strap_7",
+        "FootPad_1",
+        "FootPad_2",
+        "FootPad_3",
+        "FootPad_4",
+        "C_sign_spacer_1",
+        "C_sign_spacer_2",
+        "C_sign_spacer_3",
+        "billboard_glue_strap_29.5_217",
+        "billboard_glue_strap_29.5_248",
+        "billboard_glue_strap_152.5_217",
+        "billboard_glue_strap_152.5_248",
+        "backwall_angle_1",
+        "backwall_angle_2",
+        "backwall_angle_3",
+        "alignment_pin_01",
+        "alignment_pin_02",
+        "alignment_pin_03",
+        "alignment_pin_04",
+        "alignment_pin_05",
+        "alignment_pin_06",
+        "alignment_pin_07",
+        "alignment_pin_08",
+        "alignment_pin_09",
+        "alignment_pin_10",
+        "alignment_pin_11",
+        "alignment_pin_12",
+        "alignment_pin_13",
+        "alignment_pin_14",
+        "alignment_pin_15",
+        "alignment_pin_16",
+        "alignment_pin_17",
+        "alignment_pin_18",
+        "alignment_pin_19",
+        "alignment_pin_20",
+        "alignment_pin_21",
+        "alignment_pin_22",
+        "alignment_pin_23",
+        "alignment_pin_24",
+        "alignment_pin_25",
+        "alignment_pin_26",
+        "alignment_pin_27",
+        "alignment_pin_28",
+        "alignment_pin_29",
+        "alignment_pin_30",
+        "alignment_pin_31",
+        "alignment_pin_32",
+        "alignment_pin_33",
+        "alignment_pin_34",
+        "alignment_pin_35",
+        "alignment_pin_36",
+        "alignment_pin_37",
+        "alignment_pin_38"
+      ],
+      "supports": false,
+      "project": "3mf/31-small-parts-pins-straps.3mf",
+      "sha256": "4a7f6c28784c8bcc8f32fb3b42fb4d3785f22a44d46fb6ca099f27f6416505ec",
+      "colors": [
+        "black"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            196.80422048,
+            201.73016,
+            0.0
+          ],
+          "max_mm": [
+            211.80421951999998,
+            209.73016,
+            25.0
+          ]
+        },
+        {
+          "min_mm": [
+            196.80422048,
+            191.73019,
+            0.0
+          ],
+          "max_mm": [
+            211.80421951999998,
+            199.73019,
+            25.0
+          ]
+        },
+        {
+          "min_mm": [
+            186.80425,
+            194.73016048000002,
+            0.0
+          ],
+          "max_mm": [
+            194.80425,
+            209.73015952,
+            25.0
+          ]
+        },
+        {
+          "min_mm": [
+            155.03471876,
+            152.96064876,
+            0.0
+          ],
+          "max_mm": [
+            211.60326124000002,
+            209.52919124000002,
+            1.5
+          ]
+        },
+        {
+          "min_mm": [
+            139.47838876,
+            137.40433876,
+            0.0
+          ],
+          "max_mm": [
+            196.04693124000002,
+            193.97288124000002,
+            1.5
+          ]
+        },
+        {
+          "min_mm": [
+            123.92209875999998,
+            121.84798875999999,
+            0.0
+          ],
+          "max_mm": [
+            180.49064124,
+            178.41653124,
+            1.5
+          ]
+        },
+        {
+          "min_mm": [
+            92.80945875999998,
+            121.84798875999999,
+            0.0
+          ],
+          "max_mm": [
+            149.37800124,
+            178.41653124,
+            1.5
+          ]
+        },
+        {
+          "min_mm": [
+            92.80945875999998,
+            90.73534876,
+            0.0
+          ],
+          "max_mm": [
+            149.37800124,
+            147.30389124,
+            1.5
+          ]
+        },
+        {
+          "min_mm": [
+            155.23567875999998,
+            93.76465876,
+            0.0
+          ],
+          "max_mm": [
+            211.80422124,
+            150.33320124,
+            1.5
+          ]
+        },
+        {
+          "min_mm": [
+            155.23567875999998,
+            62.65201876,
+            0.0
+          ],
+          "max_mm": [
+            211.80422124,
+            119.22056124,
+            1.5
+          ]
+        },
+        {
+          "min_mm": [
+            107.51162153111741,
+            171.89601224134955,
+            0.0
+          ],
+          "max_mm": [
+            137.5111011905066,
+            201.89564589649473,
+            2.0
+          ]
+        },
+        {
+          "min_mm": [
+            93.44695638832673,
+            78.49254309061908,
+            0.0
+          ],
+          "max_mm": [
+            123.44659508179952,
+            108.49201847249164,
+            2.0
+          ]
+        },
+        {
+          "min_mm": [
+            123.42376180020645,
+            58.98599127226592,
+            0.0
+          ],
+          "max_mm": [
+            153.42038991956002,
+            88.97925205956356,
+            2.0
+          ]
+        },
+        {
+          "min_mm": [
+            69.33049398257236,
+            133.71825401061568,
+            0.0
+          ],
+          "max_mm": [
+            99.32630178200529,
+            163.71406677305455,
+            2.0
+          ]
+        },
+        {
+          "min_mm": [
+            77.330477599,
+            94.900677599,
+            0.0
+          ],
+          "max_mm": [
+            107.028962401,
+            124.599162401,
+            2.0
+          ]
+        },
+        {
+          "min_mm": [
+            182.105727599,
+            64.066257599,
+            0.0
+          ],
+          "max_mm": [
+            211.804212401,
+            93.76474240099999,
+            2.0
+          ]
+        },
+        {
+          "min_mm": [
+            75.813137599,
+            165.714117599,
+            0.0
+          ],
+          "max_mm": [
+            105.511622401,
+            195.412602401,
+            2.0
+          ]
+        },
+        {
+          "min_mm": [
+            64.695757599,
+            102.064937599,
+            0.0
+          ],
+          "max_mm": [
+            94.394242401,
+            131.763422401,
+            2.0
+          ]
+        },
+        {
+          "min_mm": [
+            140.7949037539713,
+            110.4379516474352,
+            0.0
+          ],
+          "max_mm": [
+            160.7921285524596,
+            130.43515764042144,
+            6.59999848
+          ]
+        },
+        {
+          "min_mm": [
+            148.79627375397132,
+            46.26992164743519,
+            0.0
+          ],
+          "max_mm": [
+            168.7934985524596,
+            66.26712764042142,
+            6.59999848
+          ]
+        },
+        {
+          "min_mm": [
+            170.7832137539713,
+            46.91041164743519,
+            0.0
+          ],
+          "max_mm": [
+            190.78043855245957,
+            66.90761764042142,
+            6.6000061
+          ]
+        },
+        {
+          "min_mm": [
+            145.8236900729964,
+            87.18221603492735,
+            0.0
+          ],
+          "max_mm": [
+            161.82145538008788,
+            103.17997848292214,
+            6.0
+          ]
+        },
+        {
+          "min_mm": [
+            136.42759020707368,
+            190.91872540464573,
+            0.0
+          ],
+          "max_mm": [
+            152.42534251932494,
+            206.91652609622747,
+            6.0
+          ]
+        },
+        {
+          "min_mm": [
+            105.91066170650348,
+            61.103248121977344,
+            0.0
+          ],
+          "max_mm": [
+            121.90882658747356,
+            77.09967085224703,
+            6.0
+          ]
+        },
+        {
+          "min_mm": [
+            81.20648027,
+            193.73373005000002,
+            0.0
+          ],
+          "max_mm": [
+            97.20467973,
+            209.73014995,
+            6.0
+          ]
+        },
+        {
+          "min_mm": [
+            199.69764968914427,
+            150.24758155215534,
+            0.0
+          ],
+          "max_mm": [
+            202.69697280728238,
+            153.24724718310526,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            121.60531594847436,
+            166.9066726372247,
+            0.0
+          ],
+          "max_mm": [
+            124.60488480339625,
+            169.9062624612931,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            203.23257784999998,
+            146.71260515,
+            0.0
+          ],
+          "max_mm": [
+            206.23224215,
+            149.71203485,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            203.23251507,
+            153.78279836000002,
+            0.0
+          ],
+          "max_mm": [
+            206.23206493,
+            156.78240164,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            139.50038572406612,
+            184.80182160791068,
+            0.0
+          ],
+          "max_mm": [
+            142.4999560777616,
+            187.80139933199447,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            206.76759507,
+            150.24779073000002,
+            0.0
+          ],
+          "max_mm": [
+            209.76714493,
+            153.24740927,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            206.7676135568493,
+            143.17746779834806,
+            0.0
+          ],
+          "max_mm": [
+            209.76720028422045,
+            146.17704311754503,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            206.76755834178164,
+            157.31773550123316,
+            0.0
+          ],
+          "max_mm": [
+            209.76713710899392,
+            160.3173211167741,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            199.69759597819007,
+            119.13509053975093,
+            0.0
+          ],
+          "max_mm": [
+            202.6971770640801,
+            122.13467209155966,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            195.78886217335614,
+            184.86696505643113,
+            0.0
+          ],
+          "max_mm": [
+            198.7884281378625,
+            187.86655072912993,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            199.32425992624712,
+            181.33155889014475,
+            0.0
+          ],
+          "max_mm": [
+            202.32384462997274,
+            184.33113671614154,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            192.2228348090157,
+            188.43332000991288,
+            0.0
+          ],
+          "max_mm": [
+            195.22249457321945,
+            191.4326427098062,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            203.2329872901938,
+            122.67024480901568,
+            0.0
+          ],
+          "max_mm": [
+            206.23230999008712,
+            125.66990457321944,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            202.8596487284091,
+            177.79632490893863,
+            0.0
+          ],
+          "max_mm": [
+            205.85897745227666,
+            180.7959885795951,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            163.62498772132264,
+            91.56882512450723,
+            0.0
+          ],
+          "max_mm": [
+            166.62456689309255,
+            94.56840331376276,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            206.3947780496103,
+            174.26117749968296,
+            0.0
+          ],
+          "max_mm": [
+            209.3941015767098,
+            177.2608437103976,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            206.76811837885242,
+            126.20537577327971,
+            0.0
+          ],
+          "max_mm": [
+            209.76744750171343,
+            129.20503028380617,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            200.61789157590397,
+            186.16124348519554,
+            0.0
+          ],
+          "max_mm": [
+            203.6172142750436,
+            189.16090282419532,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            141.0197623795811,
+            91.56987732013366,
+            0.0
+          ],
+          "max_mm": [
+            144.01933826636318,
+            94.56946216300899,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            182.70537888,
+            197.95027836000003,
+            0.0
+          ],
+          "max_mm": [
+            185.70492112,
+            200.94988164,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            204.15344477647892,
+            182.62545214746342,
+            0.0
+          ],
+          "max_mm": [
+            207.15275245038487,
+            185.6250803517245,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            204.52673477647892,
+            117.84114214746339,
+            0.0
+          ],
+          "max_mm": [
+            207.52604245038486,
+            120.8407703517245,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            154.22884621905516,
+            199.53024624697468,
+            0.0
+          ],
+          "max_mm": [
+            157.22842481023886,
+            202.5298240126209,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            207.68871792492243,
+            179.09031577876854,
+            0.0
+          ],
+          "max_mm": [
+            210.6880455746757,
+            182.08996653731964,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            208.0620507157908,
+            121.37625776779859,
+            0.0
+          ],
+          "max_mm": [
+            211.06137702347672,
+            124.37589548568178,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            179.1704664533142,
+            201.48534793970134,
+            0.0
+          ],
+          "max_mm": [
+            182.1700447189126,
+            204.48493453223662,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            101.9166564709195,
+            147.21803942086083,
+            0.0
+          ],
+          "max_mm": [
+            104.91622892790072,
+            150.21762274650652,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            157.76364784999998,
+            203.06551229000002,
+            0.0
+          ],
+          "max_mm": [
+            160.76331215,
+            206.06494771,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            207.00633785,
+            186.7307561,
+            0.0
+          ],
+          "max_mm": [
+            210.00600215,
+            189.7301839,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            184.80013311,
+            202.48954569,
+            0.0
+          ],
+          "max_mm": [
+            187.79976689,
+            205.48887431000003,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            205.82032752280674,
+            113.01244758743393,
+            0.0
+          ],
+          "max_mm": [
+            208.81995037045345,
+            116.01174978960297,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            175.63522785,
+            205.02072557,
+            0.0
+          ],
+          "max_mm": [
+            178.63489215,
+            208.02005443,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            152.26609785,
+            204.12752557000002,
+            0.0
+          ],
+          "max_mm": [
+            155.26576215,
+            207.12685443,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            181.26515785,
+            206.02479229,
+            0.0
+          ],
+          "max_mm": [
+            184.26482215000001,
+            209.02422771,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            161.29890306416388,
+            206.60029534760318,
+            0.0
+          ],
+          "max_mm": [
+            164.29848454481225,
+            209.5998921121754,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            125.43633072826529,
+            92.58623823382304,
+            0.0
+          ],
+          "max_mm": [
+            128.43591420095336,
+            95.58579926106424,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            107.54127270398135,
+            110.48130469926804,
+            0.0
+          ],
+          "max_mm": [
+            110.54082845750747,
+            113.48087887174341,
+            10.0
+          ]
+        },
+        {
+          "min_mm": [
+            156.43849478372658,
+            82.94674746569635,
+            0.0
+          ],
+          "max_mm": [
+            159.43812437467864,
+            85.9460538776812,
+            10.0
+          ]
+        }
+      ],
+      "supports_enabled": false,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 5791.15673828125,
+      "grams": 44.89149475097656,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 44.89149475097656,
+          "main_grams": 44.89149475097656,
+          "local_filament_id": 1
+        }
+      ],
+      "filament_changes": 0,
+      "wall_loops": 4,
+      "infill_density": "100%",
+      "source_mesh_hashes": {
+        "parts/base_underpad_1__black.stl": "f1bef6906000349c99f923aca1bd8417c8f161b5042a62686b154331668080f3",
+        "parts/base_underpad_2__black.stl": "bef7f5c73450b5ed39e9e94052264a851ac8de20f829b013d1b1d4e944c2e7a7",
+        "parts/base_underpad_3__black.stl": "b6d05cc0973d8c7f689c34233912c24bb84cc1f30332883fd5a215996b5d1bef",
+        "parts/base_underpad_4__black.stl": "bfbed6fcf8f4f441588e2e6b39bc84c53c710abfaf4aa0eec9a65da7896549ef",
+        "parts/foundation_glue_strap_1__black.stl": "9433bbc6e89a186d9f8977a3a549ad1a6b621cdd88d155fe03a6aeda5c8a455f",
+        "parts/foundation_glue_strap_2__black.stl": "9433bbc6e89a186d9f8977a3a549ad1a6b621cdd88d155fe03a6aeda5c8a455f",
+        "parts/foundation_glue_strap_3__black.stl": "9433bbc6e89a186d9f8977a3a549ad1a6b621cdd88d155fe03a6aeda5c8a455f",
+        "parts/foundation_glue_strap_4__black.stl": "9433bbc6e89a186d9f8977a3a549ad1a6b621cdd88d155fe03a6aeda5c8a455f",
+        "parts/foundation_glue_strap_5__black.stl": "907c15ce25bfd1cdea983e4aa3903ea744dfa133a64bc5e8a457f5088d36ff7b",
+        "parts/foundation_glue_strap_6__black.stl": "907c15ce25bfd1cdea983e4aa3903ea744dfa133a64bc5e8a457f5088d36ff7b",
+        "parts/foundation_glue_strap_7__black.stl": "907c15ce25bfd1cdea983e4aa3903ea744dfa133a64bc5e8a457f5088d36ff7b",
+        "parts/FootPad_1__black.stl": "70c3f97354b8fe6c61d2a5b5515f192eaf08a0f045dcd9ef1e32673f8bc9bfc7",
+        "parts/FootPad_2__black.stl": "9784f8d9209dfb9784e63bdc3b036bcdc4bd938c0ffc2a700bd58e78257417b2",
+        "parts/FootPad_3__black.stl": "e6dee9da7c747b06b1d9d9488351e1d6b34bbb5deb675bfd587ef3e81de2f44f",
+        "parts/FootPad_4__black.stl": "539420771ebc52d0b6b823198de585934a331b00930bd5d53b346f165bcba5ad",
+        "parts/C_sign_spacer_1__black.stl": "f05a5102709f9d33a8f0583e20d96cc577a8c5e99617ee2909fa44f1253375b4",
+        "parts/C_sign_spacer_2__black.stl": "f05a5102709f9d33a8f0583e20d96cc577a8c5e99617ee2909fa44f1253375b4",
+        "parts/C_sign_spacer_3__black.stl": "f5fc4e6811a2f8357f9cabefae8e433ed97b99c65e62a33359ebc08b16267d96",
+        "parts/billboard_glue_strap_29.5_217__black.stl": "e58b21532027b2efe05bedac24b601350b7aeb405ed1dc74bfbedb878686b4ab",
+        "parts/billboard_glue_strap_29.5_248__black.stl": "e58b21532027b2efe05bedac24b601350b7aeb405ed1dc74bfbedb878686b4ab",
+        "parts/billboard_glue_strap_152.5_217__black.stl": "e58b21532027b2efe05bedac24b601350b7aeb405ed1dc74bfbedb878686b4ab",
+        "parts/billboard_glue_strap_152.5_248__black.stl": "e58b21532027b2efe05bedac24b601350b7aeb405ed1dc74bfbedb878686b4ab",
+        "parts/backwall_angle_1__black.stl": "0479c9cec27c1880c32ca8137c5d148756dc96debdd786aa5e0a5d22e1df94de",
+        "parts/backwall_angle_2__black.stl": "0479c9cec27c1880c32ca8137c5d148756dc96debdd786aa5e0a5d22e1df94de",
+        "parts/backwall_angle_3__black.stl": "0479c9cec27c1880c32ca8137c5d148756dc96debdd786aa5e0a5d22e1df94de",
+        "parts/alignment_pin_01__black.stl": "ed8394ced3324defe93b95c1b81d16a5a8ddb4e48082be171b8577df52d3913f",
+        "parts/alignment_pin_02__black.stl": "dafccf6809a59609970eab6f0a26f505ef12be1755d7edf31f96e9c9a9e29364",
+        "parts/alignment_pin_03__black.stl": "f6d4a50f77e94364b70503a459f4b530301df5b7cdc03e49ad0702f164f766cf",
+        "parts/alignment_pin_04__black.stl": "90e909597ec138754847c4fd9c26660ecefba45b84a7062aadadd994db383506",
+        "parts/alignment_pin_05__black.stl": "9116783c159fb4ea0520ee327e9b9c0c2211e71584bea1e5723abee091893665",
+        "parts/alignment_pin_06__black.stl": "f068ca85ef44b7b10d7ae2e4968c6b9d58f44c6080a4726385be7e4e3fbabbce",
+        "parts/alignment_pin_07__black.stl": "9116783c159fb4ea0520ee327e9b9c0c2211e71584bea1e5723abee091893665",
+        "parts/alignment_pin_08__black.stl": "f068ca85ef44b7b10d7ae2e4968c6b9d58f44c6080a4726385be7e4e3fbabbce",
+        "parts/alignment_pin_09__black.stl": "c6e09e8ed3987c6198c59f69ff4c4d82a088581d02f24df4d5a151d971605d33",
+        "parts/alignment_pin_10__black.stl": "ae7fb477cfe100f7a22bbedafe0e9ee2a7bad45558c15acf7336e08a72bbefa6",
+        "parts/alignment_pin_11__black.stl": "04bc3373c00d52f55d37f3ce5919b04db6e91a7990888ce6012aa103935ba50c",
+        "parts/alignment_pin_12__black.stl": "e08c3d6880bd05c912f2671e17a1e37d755e708f61478f999a8c6fca90820875",
+        "parts/alignment_pin_13__black.stl": "1da5cfda653f6529b63f386283ed97d60a63b508851f9333da07dbfb398533d0",
+        "parts/alignment_pin_14__black.stl": "f7e17cf0b0315d095f2b70e94a8f13e1806dfd1f0f7a585e9b4c32d5b0f4724a",
+        "parts/alignment_pin_15__black.stl": "eb8b79dbdcd856623f56bfaf65a80e5e22b47377e020c371cbaad4251b7281fc",
+        "parts/alignment_pin_16__black.stl": "8e3a90e6de07206180cb236726009fdbecd0437ceae2d0d34d5ed6d6e73d1c45",
+        "parts/alignment_pin_17__black.stl": "43a3dd7dcacaffaf2d06459883b380d1c16406735cc736f805a6f7d6e56851b1",
+        "parts/alignment_pin_18__black.stl": "35ff75cbc934d3b7d1774a61a0852893158b2da340abd4133c52461771940bcd",
+        "parts/alignment_pin_19__black.stl": "7df8f8a94550d5ede4ad14ec745c0636fc1579c223a95097dc8441c811b84862",
+        "parts/alignment_pin_20__black.stl": "2b3d174a790651afdbe154d71f0462d917a11ccf08b9f2b6f6a2718c5b602769",
+        "parts/alignment_pin_21__black.stl": "9b0e7e5bed5cd34d998fb97a015f541ada67a2916fa5f5576de6ea8e0632da9e",
+        "parts/alignment_pin_22__black.stl": "a4c95fc1c1bb31d18f7b59c718a10880054138c6a3aa93a6e5f5ba4785e3fa70",
+        "parts/alignment_pin_23__black.stl": "1d17431955bf70dc9319d4b44b567ff1909ad32c0f0ded4c598c91583c5fbb99",
+        "parts/alignment_pin_24__black.stl": "1d17431955bf70dc9319d4b44b567ff1909ad32c0f0ded4c598c91583c5fbb99",
+        "parts/alignment_pin_25__black.stl": "21556c66e8cc2b8df82ffc9b9d02c25a2991d2ea0d82d9d37992902bd8e71e1b",
+        "parts/alignment_pin_26__black.stl": "ea1b5bcd52073b93611e7d47ed48c083e7ffa9916be3323082f3a17f8595d5d9",
+        "parts/alignment_pin_27__black.stl": "c07720412acee619286d5491d96140cc486573022c4332a57fb41bdb64f1032b",
+        "parts/alignment_pin_28__black.stl": "c3509cbb815b2de26ad473108a2dd5697b54dd53ffb4e8cc3f2a1d14a1b8add2",
+        "parts/alignment_pin_29__black.stl": "410b8bf95193acd8a629a84f0bcaf93d9b950a168bbd0bb3cf6bfa39b829292d",
+        "parts/alignment_pin_30__black.stl": "f69702e73fdd691f3afd83cce3b1c0d8d87da9626eee5e17ded686cbd8c7e10d",
+        "parts/alignment_pin_31__black.stl": "9c803bb670202542c64227d7e0a3577c29e5ae19b49e8be9d4dc271fc81f0226",
+        "parts/alignment_pin_32__black.stl": "dfe2ce17acff45ac7cbcbfc2b1df4ed6abc92c9ec28ff527ddd13f5680fa3a18",
+        "parts/alignment_pin_33__black.stl": "74cbbfd8763db792cc5db4f32680c74df1019d0e3f5c86dc66b90422883c0daa",
+        "parts/alignment_pin_34__black.stl": "be1f94af98504d733f73230399a162226bd38a376432ef1e8ae16509190e8591",
+        "parts/alignment_pin_35__black.stl": "f985c3351f5c2c6a2fda9704fb45d38ef65bdcdba1c8db667b94acb0a0f04588",
+        "parts/alignment_pin_36__black.stl": "0d9acfcabd6967b0448e539c49d25ea54760876031d7a6db0992bd0d856f7f85",
+        "parts/alignment_pin_37__black.stl": "dbe9b08a567ad2a43fa456b4cfe02295009357288e7d6b07424b105c7d308f88",
+        "parts/alignment_pin_38__black.stl": "cb93c2b865b61c89a9b641a333e6485983d77e0abed5faf1fd11323b7e2cbc8a"
+      },
+      "elapsed_generation_seconds": 30.62
+    },
+    {
+      "id": "32-back-wall",
+      "parts": [
+        "Garage_BackWall"
+      ],
+      "supports": false,
+      "project": "3mf/32-back-wall.3mf",
+      "sha256": "c2f5c88c82eadcdc7cfbcd69ee36f9e62af54aacaa27aa41939e5fc12aea2cbc",
+      "colors": [
+        "black"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            38.249979999999994,
+            12.650002,
+            0.0
+          ],
+          "max_mm": [
+            238.24998,
+            243.349998,
+            4.0
+          ]
+        }
+      ],
+      "supports_enabled": false,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 8296.12109375,
+      "grams": 133.09762573242188,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 133.09762573242188,
+          "main_grams": 133.09762573242188,
+          "local_filament_id": 1
+        }
+      ],
+      "filament_changes": 0,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/Garage_BackWall__black.stl": "19c874244fd2b7da2874e6a74c051fe35c3f30aa5f2c5edcf4726ac946724500"
+      },
+      "elapsed_generation_seconds": 1.55
+    },
+    {
+      "id": "33-signs-and-labels",
+      "parts": [
+        "TopBillboard",
+        "BillboardPost_28",
+        "BillboardPost_151",
+        "SideSignBlue",
+        "FloorLabel_2",
+        "FloorLabel_3",
+        "FloorLabel_4"
+      ],
+      "supports": false,
+      "project": "3mf/33-signs-and-labels.3mf",
+      "sha256": "4f284ca5499363843358e9dae61b6c0b193e012bebf6043822b84f5d7472002a",
+      "colors": [
+        "black",
+        "white",
+        "lightblue",
+        "darkblue",
+        "red"
+      ],
+      "bounds": [
+        {
+          "min_mm": [
+            147.34423,
+            211.49999,
+            0.0
+          ],
+          "max_mm": [
+            162.34423,
+            242.49999,
+            4.0
+          ]
+        },
+        {
+          "min_mm": [
+            130.34427,
+            211.49999,
+            0.0
+          ],
+          "max_mm": [
+            145.34427,
+            242.49999,
+            4.0
+          ]
+        },
+        {
+          "min_mm": [
+            106.34423,
+            13.500020000000006,
+            0.0
+          ],
+          "max_mm": [
+            162.34423995791147,
+            209.50002284511757,
+            8.199996952
+          ]
+        },
+        {
+          "min_mm": [
+            88.34424,
+            102.02763,
+            0.0
+          ],
+          "max_mm": [
+            104.34424,
+            138.02763,
+            1.600000082
+          ]
+        },
+        {
+          "min_mm": [
+            88.34425,
+            140.02757,
+            0.0
+          ],
+          "max_mm": [
+            104.34425977506493,
+            176.0275743444733,
+            1.600000082
+          ]
+        },
+        {
+          "min_mm": [
+            88.34425,
+            64.02765,
+            0.0
+          ],
+          "max_mm": [
+            104.34425977506493,
+            100.02765434447329,
+            1.600000082
+          ]
+        },
+        {
+          "min_mm": [
+            59.34427,
+            50.98538,
+            0.0
+          ],
+          "max_mm": [
+            86.34427,
+            180.98538,
+            1.200000763
+          ]
+        }
+      ],
+      "supports_enabled": false,
+      "saved_project_reopened_and_sliced": true,
+      "warning_message": "",
+      "seconds": 8005.35595703125,
+      "grams": 76.55277371406555,
+      "materials": [
+        {
+          "color": "black",
+          "grams": 56.81953811645508,
+          "main_grams": 52.49489212036133,
+          "local_filament_id": 1
+        },
+        {
+          "color": "white",
+          "grams": 2.3761661052703857,
+          "main_grams": 0.31750616431236267,
+          "local_filament_id": 2
+        },
+        {
+          "color": "lightblue",
+          "grams": 9.10258674621582,
+          "main_grams": 1.6309587955474854,
+          "local_filament_id": 3
+        },
+        {
+          "color": "darkblue",
+          "grams": 5.792339324951172,
+          "main_grams": 4.34861946105957,
+          "local_filament_id": 4
+        },
+        {
+          "color": "red",
+          "grams": 2.4621434211730957,
+          "main_grams": 1.6309587955474854,
+          "local_filament_id": 5
+        }
+      ],
+      "filament_changes": 28,
+      "wall_loops": 4,
+      "infill_density": "25%",
+      "source_mesh_hashes": {
+        "parts/TopBillboard__black.stl": "06b44b8d24ac68c28dbb818091f8b7fd2b860b99aa7f6bbf872a672014c550d9",
+        "parts/TopBillboard__white.stl": "f0c44141edc8c4c10492b524498ac1b04728c20f4806410bd570a395cd2b0af6",
+        "parts/BillboardPost_28__lightblue.stl": "3ad51ffc3cde21b9919bf753a7da14ee60a32ac95ee706f9e57dfa9e60c2b76d",
+        "parts/BillboardPost_151__red.stl": "3ad51ffc3cde21b9919bf753a7da14ee60a32ac95ee706f9e57dfa9e60c2b76d",
+        "parts/SideSignBlue__darkblue.stl": "0c4e97151f113870e612e2248546155074358f5b9bf68ef733f835136636bfbd",
+        "parts/SideSignBlue__white.stl": "7e61cb9b924ab2f43e7fc030bde7576d36d81a36b28d8fa96e401f8a8fd68510",
+        "parts/FloorLabel_2__black.stl": "845faabf7fc06d9a6d911f53812f44344ff97af2374e5c53f1d5fc8e07a985d9",
+        "parts/FloorLabel_2__white.stl": "e1c6ec14b9b372f0aced737d9cb052a40c36d51103ca97ff7c614870caa0fd44",
+        "parts/FloorLabel_3__black.stl": "3f64d2780b6f8a71517b0588795bd1cf5860be0aca1f99fe0bb80bd00b6cd5d9",
+        "parts/FloorLabel_3__white.stl": "a1cdacd8e7b23d19f8b7cd4fd1456156e83090bca1b399f4cdddd3de1a2bc567",
+        "parts/FloorLabel_4__black.stl": "a18e74e8816803416ac0283c67eead423f7731f0ef946cc711f3fd33e51a5d98",
+        "parts/FloorLabel_4__white.stl": "cb807b1d3f141345f3ead895dc7305c57ea43596f79210965913f41be7455f87"
+      },
+      "elapsed_generation_seconds": 5.63
+    }
+  ],
+  "geometry_checks": [
+    {
+      "plate": "00-joint-fit-test",
+      "project_sha256": "6eb34d32e520eb0ee7c19c9f83f1bd5362bfecc7ac16564ab6a23257068d1c33",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 6.318578938590676e-08,
+      "mechanical_parts": 4,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "01-foundation_1_1",
+      "project_sha256": "d467eaa11653c1576aed24b923460372d234f1d0b93359a7ad38b9e6720a9720",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 3.84419010649799e-06,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "02-foundation_1_2",
+      "project_sha256": "239c8726b4cb47d1920e5ea1e81adeaebd6fd0e19bae52ec834fa16b242a1383",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 1.1867404158005015e-05,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "03-foundation_2_1",
+      "project_sha256": "26673cd24a5f879d59e1f37328c8795836ba5a1c520ab410e0bc9f92b5b15542",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 8.140742957624138e-07,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "04-foundation_2_2",
+      "project_sha256": "a538241bd884b667f4dc3db34134faedabe326aaf8706d2c134f6300e5dbee7d",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 4.99542023014487e-07,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "05-foundation_3_1",
+      "project_sha256": "0d17219c7b5c3d2050b19259cffc83f9760d1d43f089e9514d65ee7da41434c6",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 7.19021352550229e-07,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "06-foundation_3_2",
+      "project_sha256": "6df6cc4d4f23409950b1ced859fac0ca33359be09616cd6216528d31838a15e4",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 4.804688604385646e-07,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "07-deck_2F_aisle",
+      "project_sha256": "be4be65777ffabb3e0baa8de15b0c414eb5147703b49cae696fa4feb30c573ff",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 4.63928084756275e-06,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "08-deck_2F_bays",
+      "project_sha256": "8efa6fa37e32012deea9ba01aa827bd94ee7fa1c0b596d55f86263f5d2a7ef4f",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 1.0864928988319327e-05,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "09-deck_3F_aisle",
+      "project_sha256": "8a2417817026f4cb8c0c40424ad2bf7d41212815ba412030bc0061bb8dbf4634",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 4.63928084756275e-06,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "10-deck_3F_bays",
+      "project_sha256": "a44677310136c146da4f55564486c81328ec7a2a79dbac0aaf3aa01b418de91f",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 1.0864927952656288e-05,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "11-deck_4F_aisle",
+      "project_sha256": "665f29e44086b433f4adc9a7cbcc9417798ab1fc2cad4ddd45efed057d87a723",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 4.6392784547431365e-06,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "12-deck_4F_bays",
+      "project_sha256": "4a24ad9464656a9206fb980fc9cfee08a14156a5fc54c787b2e33ef1e6b2bc3f",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 1.086492798977124e-05,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "13-road-1-1",
+      "project_sha256": "8e3337097849d07b701fee7583e05a27c80d59db36292d492a4c61ebfd250948",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 2.4268682809587216e-07,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "14-road-1-2",
+      "project_sha256": "d4eed891736b0ece109fdeba45f02104fc76a5c38b7ab01307a8ca55c13b6e1a",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 1.2184121042947223e-07,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "15-road-1-3",
+      "project_sha256": "fc5e294cce18d523de6cc32303395f9d1759fb992a4552848a02bae800dc07f9",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 8.433343070905501e-06,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "16-road-1-4",
+      "project_sha256": "17c36c4f240c8d29671b0abcc246fd4307cd788b30d3fa9818ebe7057030639c",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 1.0219159580800016e-06,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "17-road-2-1",
+      "project_sha256": "ae50f5a9689346ecf93a239038ede8f8d1a414130be4ae848f36d7a432fb4a95",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 2.6334040483366164e-07,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "18-road-2-2",
+      "project_sha256": "a8a7b6260e515e7095eaaacb395901b4090ba0764d7516529f45ba06d5ebbb62",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 1.2112919318559507e-07,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "19-road-2-3",
+      "project_sha256": "cb2b795a1648e2190c205043610778f448208ba5cdc6fe6454addd046bd60b35",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 8.315731747997012e-06,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "20-road-2-4",
+      "project_sha256": "ab1f3288ca8f9a51fdf613be3522948c9e8a6ff8f5c32d8271a78d31f4d074db",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 1.021776280605459e-06,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "21-road-3-1",
+      "project_sha256": "14b23cb8b672ab81626160068667ee90e804466d93a70191ad89e04c4a350ea5",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 4.995035899440782e-07,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "22-road-3-2",
+      "project_sha256": "91879984e45c9afc135f319ec53f25adc2a373092c44f101350361b8c3e813a9",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 1.1632943914699563e-07,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "23-road-3-3",
+      "project_sha256": "b4b73654fcfb643dd72cfa04fdd711889778a3beaa60b4ccabc8324225da0052",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 2.049836337282338e-07,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "24-road-3-4",
+      "project_sha256": "dcc3d7361714d6731437b0a6b28885f46d7b07b5577f3ebaef8e380b60e3e925",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 1.021776280605459e-06,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "25-landing-1F",
+      "project_sha256": "0e6a1039dcf0d6d67ffdabefebe11e97d1a5f419d2bf311dfa7f104d6324ed03",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 8.021806014563205e-06,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "26-landing-2F",
+      "project_sha256": "e862ab5cbd0b1b2b0f3050d1910c5e165b8897cd6acf471b07e96afede15f7f6",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 8.021806831140591e-06,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "27-landing-3F",
+      "project_sha256": "c932c15d5c236c1237451dbd99eced39b706359f096238a238c93e7968d53416",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 8.021806831140591e-06,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "28-landing-4F",
+      "project_sha256": "425c1032ea8d34e9aa5720dfc13c9820a8d4209ae96d6897fe9b1275c149d13c",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 1.1298768714170544e-07,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "29-all-original-columns",
+      "project_sha256": "8ee974632e19824ac051203c84925b5e7da8ed8c6c651ac6e6bf9e3c8ac01442",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 9.907893336671164e-07,
+      "mechanical_parts": 29,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "30-arms-feet-frame",
+      "project_sha256": "6fc91be5b7ffbd3cdd2930bd83076d435a0b2411c6aa035279114149b49e25f8",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 2.557189741057516e-07,
+      "mechanical_parts": 14,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "31-small-parts-pins-straps",
+      "project_sha256": "4a7f6c28784c8bcc8f32fb3b42fb4d3785f22a44d46fb6ca099f27f6416505ec",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 2.3512391727087735e-07,
+      "mechanical_parts": 63,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "32-back-wall",
+      "project_sha256": "c2f5c88c82eadcdc7cfbcd69ee36f9e62af54aacaa27aa41939e5fc12aea2cbc",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 9.482421887696546e-07,
+      "mechanical_parts": 1,
+      "reloaded_slice_passed": true
+    },
+    {
+      "plate": "33-signs-and-labels",
+      "project_sha256": "4f284ca5499363843358e9dae61b6c0b193e012bebf6043822b84f5d7472002a",
+      "mesh_geometry_preserved": true,
+      "maximum_mesh_vertex_deviation_mm": 3.8639200971196094e-06,
+      "mechanical_parts": 7,
+      "reloaded_slice_passed": true
+    }
+  ]
+}

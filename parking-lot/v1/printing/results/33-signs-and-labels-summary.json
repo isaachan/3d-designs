@@ -1,0 +1,163 @@
+{
+  "id": "33-signs-and-labels",
+  "parts": [
+    "TopBillboard",
+    "BillboardPost_28",
+    "BillboardPost_151",
+    "SideSignBlue",
+    "FloorLabel_2",
+    "FloorLabel_3",
+    "FloorLabel_4"
+  ],
+  "supports": false,
+  "project": "3mf/33-signs-and-labels.3mf",
+  "sha256": "4f284ca5499363843358e9dae61b6c0b193e012bebf6043822b84f5d7472002a",
+  "colors": [
+    "black",
+    "white",
+    "lightblue",
+    "darkblue",
+    "red"
+  ],
+  "bounds": [
+    {
+      "min_mm": [
+        147.34423,
+        211.49999,
+        0.0
+      ],
+      "max_mm": [
+        162.34423,
+        242.49999,
+        4.0
+      ]
+    },
+    {
+      "min_mm": [
+        130.34427,
+        211.49999,
+        0.0
+      ],
+      "max_mm": [
+        145.34427,
+        242.49999,
+        4.0
+      ]
+    },
+    {
+      "min_mm": [
+        106.34423,
+        13.500020000000006,
+        0.0
+      ],
+      "max_mm": [
+        162.34423995791147,
+        209.50002284511757,
+        8.199996952
+      ]
+    },
+    {
+      "min_mm": [
+        88.34424,
+        102.02763,
+        0.0
+      ],
+      "max_mm": [
+        104.34424,
+        138.02763,
+        1.600000082
+      ]
+    },
+    {
+      "min_mm": [
+        88.34425,
+        140.02757,
+        0.0
+      ],
+      "max_mm": [
+        104.34425977506493,
+        176.0275743444733,
+        1.600000082
+      ]
+    },
+    {
+      "min_mm": [
+        88.34425,
+        64.02765,
+        0.0
+      ],
+      "max_mm": [
+        104.34425977506493,
+        100.02765434447329,
+        1.600000082
+      ]
+    },
+    {
+      "min_mm": [
+        59.34427,
+        50.98538,
+        0.0
+      ],
+      "max_mm": [
+        86.34427,
+        180.98538,
+        1.200000763
+      ]
+    }
+  ],
+  "supports_enabled": false,
+  "saved_project_reopened_and_sliced": true,
+  "warning_message": "",
+  "seconds": 8005.35595703125,
+  "grams": 76.55277371406555,
+  "materials": [
+    {
+      "color": "black",
+      "grams": 56.81953811645508,
+      "main_grams": 52.49489212036133,
+      "local_filament_id": 1
+    },
+    {
+      "color": "white",
+      "grams": 2.3761661052703857,
+      "main_grams": 0.31750616431236267,
+      "local_filament_id": 2
+    },
+    {
+      "color": "lightblue",
+      "grams": 9.10258674621582,
+      "main_grams": 1.6309587955474854,
+      "local_filament_id": 3
+    },
+    {
+      "color": "darkblue",
+      "grams": 5.792339324951172,
+      "main_grams": 4.34861946105957,
+      "local_filament_id": 4
+    },
+    {
+      "color": "red",
+      "grams": 2.4621434211730957,
+      "main_grams": 1.6309587955474854,
+      "local_filament_id": 5
+    }
+  ],
+  "filament_changes": 28,
+  "wall_loops": 4,
+  "infill_density": "25%",
+  "source_mesh_hashes": {
+    "parts/TopBillboard__black.stl": "06b44b8d24ac68c28dbb818091f8b7fd2b860b99aa7f6bbf872a672014c550d9",
+    "parts/TopBillboard__white.stl": "f0c44141edc8c4c10492b524498ac1b04728c20f4806410bd570a395cd2b0af6",
+    "parts/BillboardPost_28__lightblue.stl": "3ad51ffc3cde21b9919bf753a7da14ee60a32ac95ee706f9e57dfa9e60c2b76d",
+    "parts/BillboardPost_151__red.stl": "3ad51ffc3cde21b9919bf753a7da14ee60a32ac95ee706f9e57dfa9e60c2b76d",
+    "parts/SideSignBlue__darkblue.stl": "0c4e97151f113870e612e2248546155074358f5b9bf68ef733f835136636bfbd",
+    "parts/SideSignBlue__white.stl": "7e61cb9b924ab2f43e7fc030bde7576d36d81a36b28d8fa96e401f8a8fd68510",
+    "parts/FloorLabel_2__black.stl": "845faabf7fc06d9a6d911f53812f44344ff97af2374e5c53f1d5fc8e07a985d9",
+    "parts/FloorLabel_2__white.stl": "e1c6ec14b9b372f0aced737d9cb052a40c36d51103ca97ff7c614870caa0fd44",
+    "parts/FloorLabel_3__black.stl": "3f64d2780b6f8a71517b0588795bd1cf5860be0aca1f99fe0bb80bd00b6cd5d9",
+    "parts/FloorLabel_3__white.stl": "a1cdacd8e7b23d19f8b7cd4fd1456156e83090bca1b399f4cdddd3de1a2bc567",
+    "parts/FloorLabel_4__black.stl": "a18e74e8816803416ac0283c67eead423f7731f0ef946cc711f3fd33e51a5d98",
+    "parts/FloorLabel_4__white.stl": "cb807b1d3f141345f3ead895dc7305c57ea43596f79210965913f41be7455f87"
+  },
+  "elapsed_generation_seconds": 5.63
+}

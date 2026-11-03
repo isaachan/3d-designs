@@ -1,0 +1,88 @@
+{
+  "id": "00-joint-fit-test",
+  "parts": [
+    "joint_coupon_1",
+    "joint_coupon_2",
+    "alignment_pin_39",
+    "alignment_pin_40"
+  ],
+  "supports": false,
+  "project": "3mf/00-joint-fit-test.3mf",
+  "sha256": "6eb34d32e520eb0ee7c19c9f83f1bd5362bfecc7ac16564ab6a23257068d1c33",
+  "colors": [
+    "black"
+  ],
+  "bounds": [
+    {
+      "min_mm": [
+        141.74963,
+        93.0,
+        0.0
+      ],
+      "max_mm": [
+        166.74963,
+        163.0,
+        6.5999999
+      ]
+    },
+    {
+      "min_mm": [
+        114.74965,
+        93.0,
+        0.0
+      ],
+      "max_mm": [
+        139.74965,
+        163.0,
+        6.5999999
+      ]
+    },
+    {
+      "min_mm": [
+        109.75036686679563,
+        130.1785578022353,
+        0.0
+      ],
+      "max_mm": [
+        112.74968417890798,
+        133.17818477289032,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        109.75033569,
+        135.17771785,
+        0.0
+      ],
+      "max_mm": [
+        112.74966431,
+        138.17738215,
+        10.0
+      ]
+    }
+  ],
+  "supports_enabled": false,
+  "saved_project_reopened_and_sliced": true,
+  "warning_message": "",
+  "seconds": 2190.802490234375,
+  "grams": 28.541187286376953,
+  "materials": [
+    {
+      "color": "black",
+      "grams": 28.541187286376953,
+      "main_grams": 28.541187286376953,
+      "local_filament_id": 1
+    }
+  ],
+  "filament_changes": 0,
+  "wall_loops": 4,
+  "infill_density": "100%",
+  "source_mesh_hashes": {
+    "parts/joint_coupon_1__black.stl": "c30f9e9700365f802c7aa60fc3f9c2512242deb9066b9ec4a109bfb156246def",
+    "parts/joint_coupon_2__black.stl": "1a6cd87248bd04dbea307967a46f4c3e1af2be992cf4828f8aab6b069daf29c8",
+    "parts/alignment_pin_39__black.stl": "148314468ac3d2c0727eaaf977112c9a8bd646cbe1e65777e688984f97f5f7fb",
+    "parts/alignment_pin_40__black.stl": "148314468ac3d2c0727eaaf977112c9a8bd646cbe1e65777e688984f97f5f7fb"
+  },
+  "elapsed_generation_seconds": 1.68
+}

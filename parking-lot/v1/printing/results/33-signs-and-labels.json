@@ -1,0 +1,176 @@
+{
+  "error_string": "Success.",
+  "export_time": 0,
+  "layer_height": 0.20000000298023224,
+  "plate_index": 0,
+  "prepare_time": 96,
+  "return_code": 0,
+  "sliced_plates": [
+    {
+      "feature_type_times": {
+        "Bottom surface": 491.9237976074219,
+        "Bridge": 488.7699890136719,
+        "Custom": 287.2420959472656,
+        "Flush": 2424.90283203125,
+        "Gap infill": 9.18896770477295,
+        "Inner wall": 462.3837890625,
+        "Internal solid infill": 972.5928344726562,
+        "Outer wall": 295.20172119140625,
+        "Prime tower": 689.688232421875,
+        "Sparse infill": 1006.8438110351562,
+        "Top surface": 339.7674865722656,
+        "Travel": 544.9406127929688,
+        "Undefined": 537.3846435546875
+      },
+      "filament_change_times": 28,
+      "filaments": [
+        {
+          "filament_id": "GFA00",
+          "id": 1,
+          "main_used_g": 52.49489212036133,
+          "total_used_g": 56.81953811645508
+        },
+        {
+          "filament_id": "GFA00",
+          "id": 2,
+          "main_used_g": 0.31750616431236267,
+          "total_used_g": 2.3761661052703857
+        },
+        {
+          "filament_id": "GFA00",
+          "id": 3,
+          "main_used_g": 1.6309587955474854,
+          "total_used_g": 9.10258674621582
+        },
+        {
+          "filament_id": "GFA00",
+          "id": 4,
+          "main_used_g": 4.34861946105957,
+          "total_used_g": 5.792339324951172
+        },
+        {
+          "filament_id": "GFA00",
+          "id": 5,
+          "main_used_g": 1.6309587955474854,
+          "total_used_g": 2.4621434211730957
+        }
+      ],
+      "generate_support_material_time": 21,
+      "id": 1,
+      "infill_time": 449,
+      "layer_filament_change": 0,
+      "main_predication": 4582.07861328125,
+      "make_perimeters_time": 614,
+      "obj_cached_cnt": 0,
+      "objects": [
+        {
+          "bbox": {
+            "depth": 31.0000057220459,
+            "height": 4.0,
+            "width": 15.000006675720215,
+            "x": 147.34422302246094,
+            "y": 211.49998474121094,
+            "z": 0.0
+          },
+          "id": 5,
+          "name": "BillboardPost_28",
+          "triangle_count": 12
+        },
+        {
+          "bbox": {
+            "depth": 31.0000057220459,
+            "height": 4.0,
+            "width": 15.000000953674316,
+            "x": 130.34426879882812,
+            "y": 211.49998474121094,
+            "z": 0.0
+          },
+          "id": 9,
+          "name": "BillboardPost_151",
+          "triangle_count": 12
+        },
+        {
+          "bbox": {
+            "depth": 196.0,
+            "height": 8.199996948242188,
+            "width": 56.00000762939453,
+            "x": 106.34423065185547,
+            "y": 13.500020027160645,
+            "z": 0.0
+          },
+          "id": 13,
+          "name": "TopBillboard",
+          "triangle_count": 20476
+        },
+        {
+          "bbox": {
+            "depth": 35.999996185302734,
+            "height": 1.600000023841858,
+            "width": 16.000001907348633,
+            "x": 88.34423828125,
+            "y": 102.02763366699219,
+            "z": -7.907108301452581e-11
+          },
+          "id": 17,
+          "name": "FloorLabel_2",
+          "triangle_count": 1684
+        },
+        {
+          "bbox": {
+            "depth": 36.0,
+            "height": 1.600000023841858,
+            "width": 16.0000057220459,
+            "x": 88.34425354003906,
+            "y": 140.02757263183594,
+            "z": -7.907108301452581e-11
+          },
+          "id": 21,
+          "name": "FloorLabel_3",
+          "triangle_count": 3126
+        },
+        {
+          "bbox": {
+            "depth": 36.000003814697266,
+            "height": 1.600000023841858,
+            "width": 16.0000057220459,
+            "x": 88.34425354003906,
+            "y": 64.02764892578125,
+            "z": -7.907108301452581e-11
+          },
+          "id": 25,
+          "name": "FloorLabel_4",
+          "triangle_count": 200
+        },
+        {
+          "bbox": {
+            "depth": 130.0,
+            "height": 1.2000007629394531,
+            "width": 27.000001907348633,
+            "x": 59.344268798828125,
+            "y": 50.98537826538086,
+            "z": 0.0
+          },
+          "id": 29,
+          "name": "SideSignBlue",
+          "triangle_count": 25580
+        }
+      ],
+      "sliced_time": 2283,
+      "sliced_time_with_cache": 1086,
+      "total_predication": 8005.35595703125,
+      "triangle_count": 51090,
+      "warning_message": ""
+    }
+  ],
+  "sparse_infill_density": 25.0,
+  "upward_compatible_machine": [
+    "Bambu Lab A1 0.4 nozzle",
+    "Bambu Lab P2S 0.4 nozzle",
+    "Bambu Lab H2S 0.4 nozzle",
+    "Bambu Lab H2D 0.4 nozzle",
+    "Bambu Lab H2D Pro 0.4 nozzle",
+    "Bambu Lab H2C 0.4 nozzle",
+    "Bambu Lab A2L 0.4 nozzle"
+  ],
+  "wall_loops": 4
+}

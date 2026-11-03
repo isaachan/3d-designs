@@ -1,0 +1,438 @@
+{
+  "id": "29-all-original-columns",
+  "parts": [
+    "A1_Column_1",
+    "A1_Column_2",
+    "A1_Column_3",
+    "A1_Column_4",
+    "A2_Column_1",
+    "A2_Column_2",
+    "A2_Column_3",
+    "A2_Column_4",
+    "A3_Column_1",
+    "A3_Column_2",
+    "A3_Column_3",
+    "A3_Column_4",
+    "A4_Column_1",
+    "A4_Column_2",
+    "A4_Column_3",
+    "A4_Column_4",
+    "B1_original_standard_segment_1",
+    "B1_original_standard_segment_2",
+    "B1_original_top_cap",
+    "B2_original_standard_segment_1",
+    "B2_original_standard_segment_2",
+    "B2_original_top_cap",
+    "B3_original_standard_segment_1",
+    "B3_original_standard_segment_2",
+    "B3_original_top_cap",
+    "C_original_standard_segment_1",
+    "C_original_standard_segment_2",
+    "C_original_standard_segment_3",
+    "C_original_top_cap"
+  ],
+  "supports": false,
+  "project": "3mf/29-all-original-columns.3mf",
+  "sha256": "8ee974632e19824ac051203c84925b5e7da8ed8c6c651ac6e6bf9e3c8ac01442",
+  "colors": [
+    "black"
+  ],
+  "bounds": [
+    {
+      "min_mm": [
+        172.24210185132125,
+        177.99003625895983,
+        0.0
+      ],
+      "max_mm": [
+        192.23984389798028,
+        197.98554363237798,
+        66.0
+      ]
+    },
+    {
+      "min_mm": [
+        172.24210185132125,
+        155.99455625895985,
+        0.0
+      ],
+      "max_mm": [
+        192.23984389798028,
+        175.990063632378,
+        66.0
+      ]
+    },
+    {
+      "min_mm": [
+        150.24649293325388,
+        177.98769610573223,
+        0.0
+      ],
+      "max_mm": [
+        170.24201871048174,
+        197.98544483342474,
+        66.0
+      ]
+    },
+    {
+      "min_mm": [
+        150.24649732,
+        155.99413389,
+        0.0
+      ],
+      "max_mm": [
+        170.24202268,
+        175.99190611,
+        66.0
+      ]
+    },
+    {
+      "min_mm": [
+        172.24209610573223,
+        133.99907128951827,
+        0.0
+      ],
+      "max_mm": [
+        192.23984483342474,
+        153.99459706674614,
+        66.0
+      ]
+    },
+    {
+      "min_mm": [
+        128.25086973721974,
+        177.98825441505187,
+        0.0
+      ],
+      "max_mm": [
+        148.24806767955113,
+        197.98545972791098,
+        66.0
+      ]
+    },
+    {
+      "min_mm": [
+        150.24649105394522,
+        134.00060610573223,
+        0.0
+      ],
+      "max_mm": [
+        170.24201386720077,
+        153.99835517445115,
+        66.0
+      ]
+    },
+    {
+      "min_mm": [
+        128.25099541,
+        155.99314389,
+        0.0
+      ],
+      "max_mm": [
+        148.24652459,
+        175.99091611,
+        66.0
+      ]
+    },
+    {
+      "min_mm": [
+        128.2510011975536,
+        133.9996049293892,
+        0.0
+      ],
+      "max_mm": [
+        148.24652286749864,
+        153.9973633857878,
+        66.0
+      ]
+    },
+    {
+      "min_mm": [
+        172.2420849293892,
+        112.00358713250134,
+        0.0
+      ],
+      "max_mm": [
+        192.2398433857878,
+        131.9991088024464,
+        66.0
+      ]
+    },
+    {
+      "min_mm": [
+        106.25576713996038,
+        177.9882634433131,
+        0.0
+      ],
+      "max_mm": [
+        126.25296951252164,
+        197.98546146447973,
+        66.0
+      ]
+    },
+    {
+      "min_mm": [
+        150.2464944093295,
+        112.0026693923715,
+        0.0
+      ],
+      "max_mm": [
+        170.24201768439042,
+        132.00041908524202,
+        66.0
+      ]
+    },
+    {
+      "min_mm": [
+        106.25550440932952,
+        155.9913693923715,
+        0.0
+      ],
+      "max_mm": [
+        126.25102768439045,
+        175.989119085242,
+        66.0
+      ]
+    },
+    {
+      "min_mm": [
+        128.25099732,
+        112.00605961000001,
+        0.0
+      ],
+      "max_mm": [
+        148.24652268,
+        132.00382039000002,
+        66.0
+      ]
+    },
+    {
+      "min_mm": [
+        106.25550732,
+        133.99782961,
+        0.0
+      ],
+      "max_mm": [
+        126.25103268,
+        153.99559039000002,
+        66.0
+      ]
+    },
+    {
+      "min_mm": [
+        84.26105697161098,
+        177.99002658618593,
+        0.0
+      ],
+      "max_mm": [
+        104.25881715572447,
+        197.98555071364962,
+        66.0
+      ]
+    },
+    {
+      "min_mm": [
+        84.26003180974759,
+        155.99137857519656,
+        0.0
+      ],
+      "max_mm": [
+        104.25554321900464,
+        175.98912978502847,
+        66.0
+      ]
+    },
+    {
+      "min_mm": [
+        172.24208857519656,
+        90.00810678099536,
+        0.0
+      ],
+      "max_mm": [
+        192.23983978502847,
+        110.00361819025241,
+        65.9999924
+      ]
+    },
+    {
+      "min_mm": [
+        150.24649778,
+        90.00914152,
+        0.0
+      ],
+      "max_mm": [
+        170.24204222,
+        110.00689848,
+        66.0
+      ]
+    },
+    {
+      "min_mm": [
+        106.25550448374952,
+        112.00430412526569,
+        0.0
+      ],
+      "max_mm": [
+        126.25102816423185,
+        132.0020312366945,
+        66.0
+      ]
+    },
+    {
+      "min_mm": [
+        128.25100448374954,
+        90.01253412526569,
+        0.0
+      ],
+      "max_mm": [
+        148.24652816423185,
+        110.01026123669449,
+        66.0
+      ]
+    },
+    {
+      "min_mm": [
+        178.24140697002792,
+        74.01127578043193,
+        0.0
+      ],
+      "max_mm": [
+        192.23984013051583,
+        88.00814162894471,
+        33.0
+      ]
+    },
+    {
+      "min_mm": [
+        162.2428006001795,
+        74.01126905777014,
+        0.0
+      ],
+      "max_mm": [
+        176.24122968250896,
+        88.00813079185637,
+        33.0
+      ]
+    },
+    {
+      "min_mm": [
+        146.24420514337257,
+        74.0112780253369,
+        0.0
+      ],
+      "max_mm": [
+        160.24261377646965,
+        88.00813391209411,
+        33.0
+      ]
+    },
+    {
+      "min_mm": [
+        130.2455919903463,
+        74.01127242889434,
+        0.0
+      ],
+      "max_mm": [
+        144.2440182950946,
+        88.0081337063485,
+        33.0
+      ]
+    },
+    {
+      "min_mm": [
+        114.24700402052282,
+        74.0112705822039,
+        0.0
+      ],
+      "max_mm": [
+        128.2453976216517,
+        88.00813775334599,
+        33.0
+      ]
+    },
+    {
+      "min_mm": [
+        178.24140852669223,
+        58.01447353821833,
+        0.0
+      ],
+      "max_mm": [
+        192.23983024734056,
+        72.01132498290798,
+        33.0
+      ]
+    },
+    {
+      "min_mm": [
+        162.24278658469794,
+        58.01444019033518,
+        0.0
+      ],
+      "max_mm": [
+        176.24121947431502,
+        72.01130796945017,
+        33.0
+      ]
+    },
+    {
+      "min_mm": [
+        112.5418064,
+        96.29335583,
+        0.0
+      ],
+      "max_mm": [
+        126.5386936,
+        110.29178417,
+        33.0
+      ]
+    }
+  ],
+  "supports_enabled": false,
+  "saved_project_reopened_and_sliced": true,
+  "warning_message": "",
+  "seconds": 19554.8359375,
+  "grams": 187.821044921875,
+  "materials": [
+    {
+      "color": "black",
+      "grams": 187.821044921875,
+      "main_grams": 187.821044921875,
+      "local_filament_id": 1
+    }
+  ],
+  "filament_changes": 0,
+  "wall_loops": 4,
+  "infill_density": "25%",
+  "source_mesh_hashes": {
+    "parts/A1_Column_1__black.stl": "1d5568bff1bff5fa01a239f9bb8b5fcb4285888b1fe35395760efe79e2458208",
+    "parts/A1_Column_2__black.stl": "41b1356c9af94d0e433c6e7ac663d9a06650243d3afde3207ec6a6c39a6b3e2f",
+    "parts/A1_Column_3__black.stl": "99dc52d0b4942239d4fa2d8d25e895f6b197a1bc1d61689aa070366fccf5b69a",
+    "parts/A1_Column_4__black.stl": "fa6204e10f2d9ceaaaba6640b818e6368837b41c50f91d114dac6a78e2d97926",
+    "parts/A2_Column_1__black.stl": "969b5dc28675d1fe134304fbe0b8f000a4236d2537cd470fde8b6a3f10547b55",
+    "parts/A2_Column_2__black.stl": "98935980c7a8ef65a5d13b890107b40c158613a734d4351c25dea1d607adc562",
+    "parts/A2_Column_3__black.stl": "2e3196b19fa5d82c87ce89023d38760f0efd9a667788e862179a5d702eb17f57",
+    "parts/A2_Column_4__black.stl": "523844d257bf9b802a3f893720379dd5e889e543026d6eaa2b2d3e86706a0581",
+    "parts/A3_Column_1__black.stl": "e309fbc4f1caaa9ad0d8512691bca27eb75f8745c2d8256028089c894b6ad26e",
+    "parts/A3_Column_2__black.stl": "168ca6337a5cbb19ce625a4ca0ecbf6b631ec6909a9485b0acc2a0cf20741155",
+    "parts/A3_Column_3__black.stl": "6e5a81f9b129d6509f3c4a830a73bfd8f80bee9b307a8b8e95c9716a60bbceeb",
+    "parts/A3_Column_4__black.stl": "5e9dd1bb440624dfc5ee0fae563e0bbebc91818563fbbb063b9526fd88a8d3dc",
+    "parts/A4_Column_1__black.stl": "e3216d69aeddaeff71c58d74aaee4651ae2d8e58a6a252935b8f74170a2ddb7c",
+    "parts/A4_Column_2__black.stl": "3d84d94d50c41fc42c320860c2c14576d782aef47114452141020d5848103b63",
+    "parts/A4_Column_3__black.stl": "1d4368527b16a0883182fd899a19c92db893b284d972161e00faa7f1ceacfb06",
+    "parts/A4_Column_4__black.stl": "023a93134a6d3e7d0f7d059af0c388680451fc8870b75300f54d35777b770a66",
+    "parts/B1_original_standard_segment_1__black.stl": "0fd206b1e89a532511e3206bc315d89b5b74a117afac069940030fa7b366f8f9",
+    "parts/B1_original_standard_segment_2__black.stl": "9a93356282736f4febeb2b6d8fc0281159201c899858218f8452171029ec4e4e",
+    "parts/B1_original_top_cap__black.stl": "e6eae0b7ecb7b8c59b8c816174a76d610d8bdd320f3e7cb091c0107df35d793e",
+    "parts/B2_original_standard_segment_1__black.stl": "2b4a102f2d1b8805490ca78e620aec966799a8c1523eba3042a0a14445bc03cf",
+    "parts/B2_original_standard_segment_2__black.stl": "f33b01f185a3b87fac5793c6097673bd0bb61db71c8eb1a4d6176a54f27b1e5d",
+    "parts/B2_original_top_cap__black.stl": "b76def70c3a5e3a9db079bbf1f854146b6bbcfb116813cabb0010e55d45092fa",
+    "parts/B3_original_standard_segment_1__black.stl": "21c03ca4cf3f130ceb4b4a4b76608d863f1ac77b688eeda0498a6c5e4a7efa0e",
+    "parts/B3_original_standard_segment_2__black.stl": "ddf29216348d8e6f3e437b790952bc61d760449b3b49888c05b32e61d00f91fd",
+    "parts/B3_original_top_cap__black.stl": "853e2c6d91bad93637845df7aa2c535b9f912893ea6ec1d7ccb779ff1776b235",
+    "parts/C_original_standard_segment_1__black.stl": "511b3fc5f752409e01d3a220472dd0b1c796044632b7bb513b824440a00f140c",
+    "parts/C_original_standard_segment_2__black.stl": "297509bfb37d04e71ed3b163eac3e9a94eb79791e14a50b474cc8c9940becb8e",
+    "parts/C_original_standard_segment_3__black.stl": "3d46355422dae099320d6f699470e04c9309f5b90be3a5866ef4c8a7194517a3",
+    "parts/C_original_top_cap__black.stl": "45bc89b0bc11344482a17501d086d7d420d302070cf32459c733b4ae40b91349"
+  },
+  "elapsed_generation_seconds": 23.69
+}

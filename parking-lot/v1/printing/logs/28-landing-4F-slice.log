@@ -1,0 +1,42 @@
+[2026-11-03 14:54:00.490380] [0x00000001f058a180] [trace]   Initializing StaticPrintConfigs
+[2026-11-03 14:54:00.505977] [0x00000001f058a180] [warning] cli mode, Current BambuStudio Version 02.08.02.61
+[2026-11-03 14:54:00.524780] [0x00000001f058a180] [warning] run:2873, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine_full/Bambu Lab X2D 0.4 nozzle.json
+[2026-11-03 14:54:00.524791] [0x00000001f058a180] [warning] run:2895, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/process_full/0.20mm Standard @BBL X2D.json
+[2026-11-03 14:54:00.524808] [0x00000001f058a180] [warning] no filament colors found in projects
+[2026-11-03 14:54:00.525724] [0x00000001f058a180] [warning] load_nozzle_infos_with_compatibility: building nozzle list from filament map and volume types
+[2026-11-03 14:54:00.537555] [0x00000001f058a180] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.537650] [0x000000016e207000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.538512] [0x000000016e613000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.538576] [0x000000016ea1f000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.539095] [0x000000016ddfb000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.539433] [0x00000001f058a180] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.539548] [0x000000016d9ef000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.539642] [0x000000016f237000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.539683] [0x000000016ee2b000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.539768] [0x000000016e207000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.540621] [0x000000016e613000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.541205] [0x00000001f058a180] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.541686] [0x000000016ea1f000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.541836] [0x000000016e207000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.542668] [0x000000016e613000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.542926] [0x00000001f058a180] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.543912] [0x000000016e207000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.544396] [0x000000016ee2b000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.544615] [0x000000016ea1f000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.544693] [0x00000001f058a180] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.544704] [0x000000016e613000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.544816] [0x000000016f237000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.545138] [0x000000016ddfb000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.546074] [0x000000016e207000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.546427] [0x00000001f058a180] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.546572] [0x000000016d9ef000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.546741] [0x000000016e613000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.546927] [0x000000016ea1f000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.548281] [0x00000001f058a180] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.548796] [0x000000016ee2b000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.548866] [0x000000016ddfb000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.549943] [0x000000016e613000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.550477] [0x000000016e207000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:54:00.772846] [0x00000001f058a180] [warning] tree support default to organic support
+[2026-11-03 14:54:01.188588] [0x00000001f058a180] [error]   Invalid T command (T65279).
+[2026-11-03 14:54:01.188601] [0x00000001f058a180] [error]   Invalid T command (T65535).

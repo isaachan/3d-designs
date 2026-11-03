@@ -1,0 +1,62 @@
+{
+  "id": "24-road-3-4",
+  "parts": [
+    "road_3_4"
+  ],
+  "supports": true,
+  "project": "3mf/24-road-3-4.3mf",
+  "sha256": "dcc3d7361714d6731437b0a6b28885f46d7b07b5577f3ebaef8e380b60e3e925",
+  "colors": [
+    "black",
+    "white",
+    "red"
+  ],
+  "bounds": [
+    {
+      "min_mm": [
+        64.83655235167001,
+        48.39577262709555,
+        0.0
+      ],
+      "max_mm": [
+        213.43904905797316,
+        196.99826933339872,
+        19.84355164
+      ]
+    }
+  ],
+  "supports_enabled": true,
+  "saved_project_reopened_and_sliced": true,
+  "warning_message": "",
+  "seconds": 14526.154296875,
+  "grams": 85.41921973228455,
+  "materials": [
+    {
+      "color": "black",
+      "grams": 42.54330825805664,
+      "main_grams": 39.370323181152344,
+      "local_filament_id": 1
+    },
+    {
+      "color": "white",
+      "grams": 2.6284215450286865,
+      "main_grams": 0.056022658944129944,
+      "local_filament_id": 2
+    },
+    {
+      "color": "red",
+      "grams": 40.24748992919922,
+      "main_grams": 36.5067138671875,
+      "local_filament_id": 3
+    }
+  ],
+  "filament_changes": 6,
+  "wall_loops": 4,
+  "infill_density": "25%",
+  "source_mesh_hashes": {
+    "parts/road_3_4__black.stl": "f9e270ce23649d8497da428a65dba4797b1616be91e86ff4d25d8618437c9a77",
+    "parts/road_3_4__red.stl": "1012ad1460c24dde170697774578db1551a95899131fd4d123d716d7d2c68da6",
+    "parts/road_3_4__white.stl": "a6ca01cfe89476e02b0a488675e9689f7d8bd6ed53b8e79ce7be2e603da25d8b"
+  },
+  "elapsed_generation_seconds": 5.03
+}

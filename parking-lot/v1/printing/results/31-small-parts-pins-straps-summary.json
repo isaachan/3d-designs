@@ -1,0 +1,914 @@
+{
+  "id": "31-small-parts-pins-straps",
+  "parts": [
+    "base_underpad_1",
+    "base_underpad_2",
+    "base_underpad_3",
+    "base_underpad_4",
+    "foundation_glue_strap_1",
+    "foundation_glue_strap_2",
+    "foundation_glue_strap_3",
+    "foundation_glue_strap_4",
+    "foundation_glue_strap_5",
+    "foundation_glue_strap_6",
+    "foundation_glue_strap_7",
+    "FootPad_1",
+    "FootPad_2",
+    "FootPad_3",
+    "FootPad_4",
+    "C_sign_spacer_1",
+    "C_sign_spacer_2",
+    "C_sign_spacer_3",
+    "billboard_glue_strap_29.5_217",
+    "billboard_glue_strap_29.5_248",
+    "billboard_glue_strap_152.5_217",
+    "billboard_glue_strap_152.5_248",
+    "backwall_angle_1",
+    "backwall_angle_2",
+    "backwall_angle_3",
+    "alignment_pin_01",
+    "alignment_pin_02",
+    "alignment_pin_03",
+    "alignment_pin_04",
+    "alignment_pin_05",
+    "alignment_pin_06",
+    "alignment_pin_07",
+    "alignment_pin_08",
+    "alignment_pin_09",
+    "alignment_pin_10",
+    "alignment_pin_11",
+    "alignment_pin_12",
+    "alignment_pin_13",
+    "alignment_pin_14",
+    "alignment_pin_15",
+    "alignment_pin_16",
+    "alignment_pin_17",
+    "alignment_pin_18",
+    "alignment_pin_19",
+    "alignment_pin_20",
+    "alignment_pin_21",
+    "alignment_pin_22",
+    "alignment_pin_23",
+    "alignment_pin_24",
+    "alignment_pin_25",
+    "alignment_pin_26",
+    "alignment_pin_27",
+    "alignment_pin_28",
+    "alignment_pin_29",
+    "alignment_pin_30",
+    "alignment_pin_31",
+    "alignment_pin_32",
+    "alignment_pin_33",
+    "alignment_pin_34",
+    "alignment_pin_35",
+    "alignment_pin_36",
+    "alignment_pin_37",
+    "alignment_pin_38"
+  ],
+  "supports": false,
+  "project": "3mf/31-small-parts-pins-straps.3mf",
+  "sha256": "4a7f6c28784c8bcc8f32fb3b42fb4d3785f22a44d46fb6ca099f27f6416505ec",
+  "colors": [
+    "black"
+  ],
+  "bounds": [
+    {
+      "min_mm": [
+        196.80422048,
+        201.73016,
+        0.0
+      ],
+      "max_mm": [
+        211.80421951999998,
+        209.73016,
+        25.0
+      ]
+    },
+    {
+      "min_mm": [
+        196.80422048,
+        191.73019,
+        0.0
+      ],
+      "max_mm": [
+        211.80421951999998,
+        199.73019,
+        25.0
+      ]
+    },
+    {
+      "min_mm": [
+        186.80425,
+        194.73016048000002,
+        0.0
+      ],
+      "max_mm": [
+        194.80425,
+        209.73015952,
+        25.0
+      ]
+    },
+    {
+      "min_mm": [
+        155.03471876,
+        152.96064876,
+        0.0
+      ],
+      "max_mm": [
+        211.60326124000002,
+        209.52919124000002,
+        1.5
+      ]
+    },
+    {
+      "min_mm": [
+        139.47838876,
+        137.40433876,
+        0.0
+      ],
+      "max_mm": [
+        196.04693124000002,
+        193.97288124000002,
+        1.5
+      ]
+    },
+    {
+      "min_mm": [
+        123.92209875999998,
+        121.84798875999999,
+        0.0
+      ],
+      "max_mm": [
+        180.49064124,
+        178.41653124,
+        1.5
+      ]
+    },
+    {
+      "min_mm": [
+        92.80945875999998,
+        121.84798875999999,
+        0.0
+      ],
+      "max_mm": [
+        149.37800124,
+        178.41653124,
+        1.5
+      ]
+    },
+    {
+      "min_mm": [
+        92.80945875999998,
+        90.73534876,
+        0.0
+      ],
+      "max_mm": [
+        149.37800124,
+        147.30389124,
+        1.5
+      ]
+    },
+    {
+      "min_mm": [
+        155.23567875999998,
+        93.76465876,
+        0.0
+      ],
+      "max_mm": [
+        211.80422124,
+        150.33320124,
+        1.5
+      ]
+    },
+    {
+      "min_mm": [
+        155.23567875999998,
+        62.65201876,
+        0.0
+      ],
+      "max_mm": [
+        211.80422124,
+        119.22056124,
+        1.5
+      ]
+    },
+    {
+      "min_mm": [
+        107.51162153111741,
+        171.89601224134955,
+        0.0
+      ],
+      "max_mm": [
+        137.5111011905066,
+        201.89564589649473,
+        2.0
+      ]
+    },
+    {
+      "min_mm": [
+        93.44695638832673,
+        78.49254309061908,
+        0.0
+      ],
+      "max_mm": [
+        123.44659508179952,
+        108.49201847249164,
+        2.0
+      ]
+    },
+    {
+      "min_mm": [
+        123.42376180020645,
+        58.98599127226592,
+        0.0
+      ],
+      "max_mm": [
+        153.42038991956002,
+        88.97925205956356,
+        2.0
+      ]
+    },
+    {
+      "min_mm": [
+        69.33049398257236,
+        133.71825401061568,
+        0.0
+      ],
+      "max_mm": [
+        99.32630178200529,
+        163.71406677305455,
+        2.0
+      ]
+    },
+    {
+      "min_mm": [
+        77.330477599,
+        94.900677599,
+        0.0
+      ],
+      "max_mm": [
+        107.028962401,
+        124.599162401,
+        2.0
+      ]
+    },
+    {
+      "min_mm": [
+        182.105727599,
+        64.066257599,
+        0.0
+      ],
+      "max_mm": [
+        211.804212401,
+        93.76474240099999,
+        2.0
+      ]
+    },
+    {
+      "min_mm": [
+        75.813137599,
+        165.714117599,
+        0.0
+      ],
+      "max_mm": [
+        105.511622401,
+        195.412602401,
+        2.0
+      ]
+    },
+    {
+      "min_mm": [
+        64.695757599,
+        102.064937599,
+        0.0
+      ],
+      "max_mm": [
+        94.394242401,
+        131.763422401,
+        2.0
+      ]
+    },
+    {
+      "min_mm": [
+        140.7949037539713,
+        110.4379516474352,
+        0.0
+      ],
+      "max_mm": [
+        160.7921285524596,
+        130.43515764042144,
+        6.59999848
+      ]
+    },
+    {
+      "min_mm": [
+        148.79627375397132,
+        46.26992164743519,
+        0.0
+      ],
+      "max_mm": [
+        168.7934985524596,
+        66.26712764042142,
+        6.59999848
+      ]
+    },
+    {
+      "min_mm": [
+        170.7832137539713,
+        46.91041164743519,
+        0.0
+      ],
+      "max_mm": [
+        190.78043855245957,
+        66.90761764042142,
+        6.6000061
+      ]
+    },
+    {
+      "min_mm": [
+        145.8236900729964,
+        87.18221603492735,
+        0.0
+      ],
+      "max_mm": [
+        161.82145538008788,
+        103.17997848292214,
+        6.0
+      ]
+    },
+    {
+      "min_mm": [
+        136.42759020707368,
+        190.91872540464573,
+        0.0
+      ],
+      "max_mm": [
+        152.42534251932494,
+        206.91652609622747,
+        6.0
+      ]
+    },
+    {
+      "min_mm": [
+        105.91066170650348,
+        61.103248121977344,
+        0.0
+      ],
+      "max_mm": [
+        121.90882658747356,
+        77.09967085224703,
+        6.0
+      ]
+    },
+    {
+      "min_mm": [
+        81.20648027,
+        193.73373005000002,
+        0.0
+      ],
+      "max_mm": [
+        97.20467973,
+        209.73014995,
+        6.0
+      ]
+    },
+    {
+      "min_mm": [
+        199.69764968914427,
+        150.24758155215534,
+        0.0
+      ],
+      "max_mm": [
+        202.69697280728238,
+        153.24724718310526,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        121.60531594847436,
+        166.9066726372247,
+        0.0
+      ],
+      "max_mm": [
+        124.60488480339625,
+        169.9062624612931,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        203.23257784999998,
+        146.71260515,
+        0.0
+      ],
+      "max_mm": [
+        206.23224215,
+        149.71203485,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        203.23251507,
+        153.78279836000002,
+        0.0
+      ],
+      "max_mm": [
+        206.23206493,
+        156.78240164,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        139.50038572406612,
+        184.80182160791068,
+        0.0
+      ],
+      "max_mm": [
+        142.4999560777616,
+        187.80139933199447,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        206.76759507,
+        150.24779073000002,
+        0.0
+      ],
+      "max_mm": [
+        209.76714493,
+        153.24740927,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        206.7676135568493,
+        143.17746779834806,
+        0.0
+      ],
+      "max_mm": [
+        209.76720028422045,
+        146.17704311754503,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        206.76755834178164,
+        157.31773550123316,
+        0.0
+      ],
+      "max_mm": [
+        209.76713710899392,
+        160.3173211167741,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        199.69759597819007,
+        119.13509053975093,
+        0.0
+      ],
+      "max_mm": [
+        202.6971770640801,
+        122.13467209155966,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        195.78886217335614,
+        184.86696505643113,
+        0.0
+      ],
+      "max_mm": [
+        198.7884281378625,
+        187.86655072912993,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        199.32425992624712,
+        181.33155889014475,
+        0.0
+      ],
+      "max_mm": [
+        202.32384462997274,
+        184.33113671614154,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        192.2228348090157,
+        188.43332000991288,
+        0.0
+      ],
+      "max_mm": [
+        195.22249457321945,
+        191.4326427098062,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        203.2329872901938,
+        122.67024480901568,
+        0.0
+      ],
+      "max_mm": [
+        206.23230999008712,
+        125.66990457321944,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        202.8596487284091,
+        177.79632490893863,
+        0.0
+      ],
+      "max_mm": [
+        205.85897745227666,
+        180.7959885795951,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        163.62498772132264,
+        91.56882512450723,
+        0.0
+      ],
+      "max_mm": [
+        166.62456689309255,
+        94.56840331376276,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        206.3947780496103,
+        174.26117749968296,
+        0.0
+      ],
+      "max_mm": [
+        209.3941015767098,
+        177.2608437103976,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        206.76811837885242,
+        126.20537577327971,
+        0.0
+      ],
+      "max_mm": [
+        209.76744750171343,
+        129.20503028380617,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        200.61789157590397,
+        186.16124348519554,
+        0.0
+      ],
+      "max_mm": [
+        203.6172142750436,
+        189.16090282419532,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        141.0197623795811,
+        91.56987732013366,
+        0.0
+      ],
+      "max_mm": [
+        144.01933826636318,
+        94.56946216300899,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        182.70537888,
+        197.95027836000003,
+        0.0
+      ],
+      "max_mm": [
+        185.70492112,
+        200.94988164,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        204.15344477647892,
+        182.62545214746342,
+        0.0
+      ],
+      "max_mm": [
+        207.15275245038487,
+        185.6250803517245,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        204.52673477647892,
+        117.84114214746339,
+        0.0
+      ],
+      "max_mm": [
+        207.52604245038486,
+        120.8407703517245,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        154.22884621905516,
+        199.53024624697468,
+        0.0
+      ],
+      "max_mm": [
+        157.22842481023886,
+        202.5298240126209,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        207.68871792492243,
+        179.09031577876854,
+        0.0
+      ],
+      "max_mm": [
+        210.6880455746757,
+        182.08996653731964,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        208.0620507157908,
+        121.37625776779859,
+        0.0
+      ],
+      "max_mm": [
+        211.06137702347672,
+        124.37589548568178,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        179.1704664533142,
+        201.48534793970134,
+        0.0
+      ],
+      "max_mm": [
+        182.1700447189126,
+        204.48493453223662,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        101.9166564709195,
+        147.21803942086083,
+        0.0
+      ],
+      "max_mm": [
+        104.91622892790072,
+        150.21762274650652,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        157.76364784999998,
+        203.06551229000002,
+        0.0
+      ],
+      "max_mm": [
+        160.76331215,
+        206.06494771,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        207.00633785,
+        186.7307561,
+        0.0
+      ],
+      "max_mm": [
+        210.00600215,
+        189.7301839,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        184.80013311,
+        202.48954569,
+        0.0
+      ],
+      "max_mm": [
+        187.79976689,
+        205.48887431000003,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        205.82032752280674,
+        113.01244758743393,
+        0.0
+      ],
+      "max_mm": [
+        208.81995037045345,
+        116.01174978960297,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        175.63522785,
+        205.02072557,
+        0.0
+      ],
+      "max_mm": [
+        178.63489215,
+        208.02005443,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        152.26609785,
+        204.12752557000002,
+        0.0
+      ],
+      "max_mm": [
+        155.26576215,
+        207.12685443,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        181.26515785,
+        206.02479229,
+        0.0
+      ],
+      "max_mm": [
+        184.26482215000001,
+        209.02422771,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        161.29890306416388,
+        206.60029534760318,
+        0.0
+      ],
+      "max_mm": [
+        164.29848454481225,
+        209.5998921121754,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        125.43633072826529,
+        92.58623823382304,
+        0.0
+      ],
+      "max_mm": [
+        128.43591420095336,
+        95.58579926106424,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        107.54127270398135,
+        110.48130469926804,
+        0.0
+      ],
+      "max_mm": [
+        110.54082845750747,
+        113.48087887174341,
+        10.0
+      ]
+    },
+    {
+      "min_mm": [
+        156.43849478372658,
+        82.94674746569635,
+        0.0
+      ],
+      "max_mm": [
+        159.43812437467864,
+        85.9460538776812,
+        10.0
+      ]
+    }
+  ],
+  "supports_enabled": false,
+  "saved_project_reopened_and_sliced": true,
+  "warning_message": "",
+  "seconds": 5791.15673828125,
+  "grams": 44.89149475097656,
+  "materials": [
+    {
+      "color": "black",
+      "grams": 44.89149475097656,
+      "main_grams": 44.89149475097656,
+      "local_filament_id": 1
+    }
+  ],
+  "filament_changes": 0,
+  "wall_loops": 4,
+  "infill_density": "100%",
+  "source_mesh_hashes": {
+    "parts/base_underpad_1__black.stl": "f1bef6906000349c99f923aca1bd8417c8f161b5042a62686b154331668080f3",
+    "parts/base_underpad_2__black.stl": "bef7f5c73450b5ed39e9e94052264a851ac8de20f829b013d1b1d4e944c2e7a7",
+    "parts/base_underpad_3__black.stl": "b6d05cc0973d8c7f689c34233912c24bb84cc1f30332883fd5a215996b5d1bef",
+    "parts/base_underpad_4__black.stl": "bfbed6fcf8f4f441588e2e6b39bc84c53c710abfaf4aa0eec9a65da7896549ef",
+    "parts/foundation_glue_strap_1__black.stl": "9433bbc6e89a186d9f8977a3a549ad1a6b621cdd88d155fe03a6aeda5c8a455f",
+    "parts/foundation_glue_strap_2__black.stl": "9433bbc6e89a186d9f8977a3a549ad1a6b621cdd88d155fe03a6aeda5c8a455f",
+    "parts/foundation_glue_strap_3__black.stl": "9433bbc6e89a186d9f8977a3a549ad1a6b621cdd88d155fe03a6aeda5c8a455f",
+    "parts/foundation_glue_strap_4__black.stl": "9433bbc6e89a186d9f8977a3a549ad1a6b621cdd88d155fe03a6aeda5c8a455f",
+    "parts/foundation_glue_strap_5__black.stl": "907c15ce25bfd1cdea983e4aa3903ea744dfa133a64bc5e8a457f5088d36ff7b",
+    "parts/foundation_glue_strap_6__black.stl": "907c15ce25bfd1cdea983e4aa3903ea744dfa133a64bc5e8a457f5088d36ff7b",
+    "parts/foundation_glue_strap_7__black.stl": "907c15ce25bfd1cdea983e4aa3903ea744dfa133a64bc5e8a457f5088d36ff7b",
+    "parts/FootPad_1__black.stl": "70c3f97354b8fe6c61d2a5b5515f192eaf08a0f045dcd9ef1e32673f8bc9bfc7",
+    "parts/FootPad_2__black.stl": "9784f8d9209dfb9784e63bdc3b036bcdc4bd938c0ffc2a700bd58e78257417b2",
+    "parts/FootPad_3__black.stl": "e6dee9da7c747b06b1d9d9488351e1d6b34bbb5deb675bfd587ef3e81de2f44f",
+    "parts/FootPad_4__black.stl": "539420771ebc52d0b6b823198de585934a331b00930bd5d53b346f165bcba5ad",
+    "parts/C_sign_spacer_1__black.stl": "f05a5102709f9d33a8f0583e20d96cc577a8c5e99617ee2909fa44f1253375b4",
+    "parts/C_sign_spacer_2__black.stl": "f05a5102709f9d33a8f0583e20d96cc577a8c5e99617ee2909fa44f1253375b4",
+    "parts/C_sign_spacer_3__black.stl": "f5fc4e6811a2f8357f9cabefae8e433ed97b99c65e62a33359ebc08b16267d96",
+    "parts/billboard_glue_strap_29.5_217__black.stl": "e58b21532027b2efe05bedac24b601350b7aeb405ed1dc74bfbedb878686b4ab",
+    "parts/billboard_glue_strap_29.5_248__black.stl": "e58b21532027b2efe05bedac24b601350b7aeb405ed1dc74bfbedb878686b4ab",
+    "parts/billboard_glue_strap_152.5_217__black.stl": "e58b21532027b2efe05bedac24b601350b7aeb405ed1dc74bfbedb878686b4ab",
+    "parts/billboard_glue_strap_152.5_248__black.stl": "e58b21532027b2efe05bedac24b601350b7aeb405ed1dc74bfbedb878686b4ab",
+    "parts/backwall_angle_1__black.stl": "0479c9cec27c1880c32ca8137c5d148756dc96debdd786aa5e0a5d22e1df94de",
+    "parts/backwall_angle_2__black.stl": "0479c9cec27c1880c32ca8137c5d148756dc96debdd786aa5e0a5d22e1df94de",
+    "parts/backwall_angle_3__black.stl": "0479c9cec27c1880c32ca8137c5d148756dc96debdd786aa5e0a5d22e1df94de",
+    "parts/alignment_pin_01__black.stl": "ed8394ced3324defe93b95c1b81d16a5a8ddb4e48082be171b8577df52d3913f",
+    "parts/alignment_pin_02__black.stl": "dafccf6809a59609970eab6f0a26f505ef12be1755d7edf31f96e9c9a9e29364",
+    "parts/alignment_pin_03__black.stl": "f6d4a50f77e94364b70503a459f4b530301df5b7cdc03e49ad0702f164f766cf",
+    "parts/alignment_pin_04__black.stl": "90e909597ec138754847c4fd9c26660ecefba45b84a7062aadadd994db383506",
+    "parts/alignment_pin_05__black.stl": "9116783c159fb4ea0520ee327e9b9c0c2211e71584bea1e5723abee091893665",
+    "parts/alignment_pin_06__black.stl": "f068ca85ef44b7b10d7ae2e4968c6b9d58f44c6080a4726385be7e4e3fbabbce",
+    "parts/alignment_pin_07__black.stl": "9116783c159fb4ea0520ee327e9b9c0c2211e71584bea1e5723abee091893665",
+    "parts/alignment_pin_08__black.stl": "f068ca85ef44b7b10d7ae2e4968c6b9d58f44c6080a4726385be7e4e3fbabbce",
+    "parts/alignment_pin_09__black.stl": "c6e09e8ed3987c6198c59f69ff4c4d82a088581d02f24df4d5a151d971605d33",
+    "parts/alignment_pin_10__black.stl": "ae7fb477cfe100f7a22bbedafe0e9ee2a7bad45558c15acf7336e08a72bbefa6",
+    "parts/alignment_pin_11__black.stl": "04bc3373c00d52f55d37f3ce5919b04db6e91a7990888ce6012aa103935ba50c",
+    "parts/alignment_pin_12__black.stl": "e08c3d6880bd05c912f2671e17a1e37d755e708f61478f999a8c6fca90820875",
+    "parts/alignment_pin_13__black.stl": "1da5cfda653f6529b63f386283ed97d60a63b508851f9333da07dbfb398533d0",
+    "parts/alignment_pin_14__black.stl": "f7e17cf0b0315d095f2b70e94a8f13e1806dfd1f0f7a585e9b4c32d5b0f4724a",
+    "parts/alignment_pin_15__black.stl": "eb8b79dbdcd856623f56bfaf65a80e5e22b47377e020c371cbaad4251b7281fc",
+    "parts/alignment_pin_16__black.stl": "8e3a90e6de07206180cb236726009fdbecd0437ceae2d0d34d5ed6d6e73d1c45",
+    "parts/alignment_pin_17__black.stl": "43a3dd7dcacaffaf2d06459883b380d1c16406735cc736f805a6f7d6e56851b1",
+    "parts/alignment_pin_18__black.stl": "35ff75cbc934d3b7d1774a61a0852893158b2da340abd4133c52461771940bcd",
+    "parts/alignment_pin_19__black.stl": "7df8f8a94550d5ede4ad14ec745c0636fc1579c223a95097dc8441c811b84862",
+    "parts/alignment_pin_20__black.stl": "2b3d174a790651afdbe154d71f0462d917a11ccf08b9f2b6f6a2718c5b602769",
+    "parts/alignment_pin_21__black.stl": "9b0e7e5bed5cd34d998fb97a015f541ada67a2916fa5f5576de6ea8e0632da9e",
+    "parts/alignment_pin_22__black.stl": "a4c95fc1c1bb31d18f7b59c718a10880054138c6a3aa93a6e5f5ba4785e3fa70",
+    "parts/alignment_pin_23__black.stl": "1d17431955bf70dc9319d4b44b567ff1909ad32c0f0ded4c598c91583c5fbb99",
+    "parts/alignment_pin_24__black.stl": "1d17431955bf70dc9319d4b44b567ff1909ad32c0f0ded4c598c91583c5fbb99",
+    "parts/alignment_pin_25__black.stl": "21556c66e8cc2b8df82ffc9b9d02c25a2991d2ea0d82d9d37992902bd8e71e1b",
+    "parts/alignment_pin_26__black.stl": "ea1b5bcd52073b93611e7d47ed48c083e7ffa9916be3323082f3a17f8595d5d9",
+    "parts/alignment_pin_27__black.stl": "c07720412acee619286d5491d96140cc486573022c4332a57fb41bdb64f1032b",
+    "parts/alignment_pin_28__black.stl": "c3509cbb815b2de26ad473108a2dd5697b54dd53ffb4e8cc3f2a1d14a1b8add2",
+    "parts/alignment_pin_29__black.stl": "410b8bf95193acd8a629a84f0bcaf93d9b950a168bbd0bb3cf6bfa39b829292d",
+    "parts/alignment_pin_30__black.stl": "f69702e73fdd691f3afd83cce3b1c0d8d87da9626eee5e17ded686cbd8c7e10d",
+    "parts/alignment_pin_31__black.stl": "9c803bb670202542c64227d7e0a3577c29e5ae19b49e8be9d4dc271fc81f0226",
+    "parts/alignment_pin_32__black.stl": "dfe2ce17acff45ac7cbcbfc2b1df4ed6abc92c9ec28ff527ddd13f5680fa3a18",
+    "parts/alignment_pin_33__black.stl": "74cbbfd8763db792cc5db4f32680c74df1019d0e3f5c86dc66b90422883c0daa",
+    "parts/alignment_pin_34__black.stl": "be1f94af98504d733f73230399a162226bd38a376432ef1e8ae16509190e8591",
+    "parts/alignment_pin_35__black.stl": "f985c3351f5c2c6a2fda9704fb45d38ef65bdcdba1c8db667b94acb0a0f04588",
+    "parts/alignment_pin_36__black.stl": "0d9acfcabd6967b0448e539c49d25ea54760876031d7a6db0992bd0d856f7f85",
+    "parts/alignment_pin_37__black.stl": "dbe9b08a567ad2a43fa456b4cfe02295009357288e7d6b07424b105c7d308f88",
+    "parts/alignment_pin_38__black.stl": "cb93c2b865b61c89a9b641a333e6485983d77e0abed5faf1fd11323b7e2cbc8a"
+  },
+  "elapsed_generation_seconds": 30.62
+}

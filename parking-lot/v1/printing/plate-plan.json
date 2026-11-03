@@ -1,0 +1,356 @@
+{
+  "plates": [
+    {
+      "id": "00-joint-fit-test",
+      "parts": [
+        "joint_coupon_1",
+        "joint_coupon_2",
+        "alignment_pin_39",
+        "alignment_pin_40"
+      ],
+      "supports": false
+    },
+    {
+      "id": "01-foundation_1_1",
+      "parts": [
+        "foundation_1_1"
+      ],
+      "supports": false
+    },
+    {
+      "id": "02-foundation_1_2",
+      "parts": [
+        "foundation_1_2"
+      ],
+      "supports": false
+    },
+    {
+      "id": "03-foundation_2_1",
+      "parts": [
+        "foundation_2_1"
+      ],
+      "supports": false
+    },
+    {
+      "id": "04-foundation_2_2",
+      "parts": [
+        "foundation_2_2"
+      ],
+      "supports": false
+    },
+    {
+      "id": "05-foundation_3_1",
+      "parts": [
+        "foundation_3_1"
+      ],
+      "supports": false
+    },
+    {
+      "id": "06-foundation_3_2",
+      "parts": [
+        "foundation_3_2"
+      ],
+      "supports": false
+    },
+    {
+      "id": "07-deck_2F_aisle",
+      "parts": [
+        "deck_2F_aisle"
+      ],
+      "supports": false
+    },
+    {
+      "id": "08-deck_2F_bays",
+      "parts": [
+        "deck_2F_bays"
+      ],
+      "supports": false
+    },
+    {
+      "id": "09-deck_3F_aisle",
+      "parts": [
+        "deck_3F_aisle"
+      ],
+      "supports": false
+    },
+    {
+      "id": "10-deck_3F_bays",
+      "parts": [
+        "deck_3F_bays"
+      ],
+      "supports": false
+    },
+    {
+      "id": "11-deck_4F_aisle",
+      "parts": [
+        "deck_4F_aisle"
+      ],
+      "supports": false
+    },
+    {
+      "id": "12-deck_4F_bays",
+      "parts": [
+        "deck_4F_bays"
+      ],
+      "supports": false
+    },
+    {
+      "id": "13-road-1-1",
+      "parts": [
+        "road_1_1"
+      ],
+      "supports": true
+    },
+    {
+      "id": "14-road-1-2",
+      "parts": [
+        "road_1_2"
+      ],
+      "supports": true
+    },
+    {
+      "id": "15-road-1-3",
+      "parts": [
+        "road_1_3"
+      ],
+      "supports": true
+    },
+    {
+      "id": "16-road-1-4",
+      "parts": [
+        "road_1_4"
+      ],
+      "supports": true
+    },
+    {
+      "id": "17-road-2-1",
+      "parts": [
+        "road_2_1"
+      ],
+      "supports": true
+    },
+    {
+      "id": "18-road-2-2",
+      "parts": [
+        "road_2_2"
+      ],
+      "supports": true
+    },
+    {
+      "id": "19-road-2-3",
+      "parts": [
+        "road_2_3"
+      ],
+      "supports": true
+    },
+    {
+      "id": "20-road-2-4",
+      "parts": [
+        "road_2_4"
+      ],
+      "supports": true
+    },
+    {
+      "id": "21-road-3-1",
+      "parts": [
+        "road_3_1"
+      ],
+      "supports": true
+    },
+    {
+      "id": "22-road-3-2",
+      "parts": [
+        "road_3_2"
+      ],
+      "supports": true
+    },
+    {
+      "id": "23-road-3-3",
+      "parts": [
+        "road_3_3"
+      ],
+      "supports": true
+    },
+    {
+      "id": "24-road-3-4",
+      "parts": [
+        "road_3_4"
+      ],
+      "supports": true
+    },
+    {
+      "id": "25-landing-1F",
+      "parts": [
+        "landing_1F"
+      ],
+      "supports": false
+    },
+    {
+      "id": "26-landing-2F",
+      "parts": [
+        "landing_2F"
+      ],
+      "supports": false
+    },
+    {
+      "id": "27-landing-3F",
+      "parts": [
+        "landing_3F"
+      ],
+      "supports": false
+    },
+    {
+      "id": "28-landing-4F",
+      "parts": [
+        "landing_4F"
+      ],
+      "supports": false
+    },
+    {
+      "id": "29-all-original-columns",
+      "parts": [
+        "A1_Column_1",
+        "A1_Column_2",
+        "A1_Column_3",
+        "A1_Column_4",
+        "A2_Column_1",
+        "A2_Column_2",
+        "A2_Column_3",
+        "A2_Column_4",
+        "A3_Column_1",
+        "A3_Column_2",
+        "A3_Column_3",
+        "A3_Column_4",
+        "A4_Column_1",
+        "A4_Column_2",
+        "A4_Column_3",
+        "A4_Column_4",
+        "B1_original_standard_segment_1",
+        "B1_original_standard_segment_2",
+        "B1_original_top_cap",
+        "B2_original_standard_segment_1",
+        "B2_original_standard_segment_2",
+        "B2_original_top_cap",
+        "B3_original_standard_segment_1",
+        "B3_original_standard_segment_2",
+        "B3_original_top_cap",
+        "C_original_standard_segment_1",
+        "C_original_standard_segment_2",
+        "C_original_standard_segment_3",
+        "C_original_top_cap"
+      ],
+      "supports": false
+    },
+    {
+      "id": "30-arms-feet-frame",
+      "parts": [
+        "B1_height_set_foot",
+        "B1_Level1_bearing_tab_arm",
+        "B1_Level2_bearing_tab_arm",
+        "B1_Level3_bearing_tab_arm",
+        "B2_height_set_foot",
+        "B2_Level1_bearing_tab_arm",
+        "B2_Level2_bearing_tab_arm",
+        "B2_Level3_bearing_tab_arm",
+        "B3_height_set_foot",
+        "B3_Level1_bearing_tab_arm",
+        "B3_Level2_bearing_tab_arm",
+        "B3_Level3_bearing_tab_arm",
+        "C_sign_base_adapter",
+        "SideSignFrame"
+      ],
+      "supports": true
+    },
+    {
+      "id": "31-small-parts-pins-straps",
+      "parts": [
+        "base_underpad_1",
+        "base_underpad_2",
+        "base_underpad_3",
+        "base_underpad_4",
+        "foundation_glue_strap_1",
+        "foundation_glue_strap_2",
+        "foundation_glue_strap_3",
+        "foundation_glue_strap_4",
+        "foundation_glue_strap_5",
+        "foundation_glue_strap_6",
+        "foundation_glue_strap_7",
+        "FootPad_1",
+        "FootPad_2",
+        "FootPad_3",
+        "FootPad_4",
+        "C_sign_spacer_1",
+        "C_sign_spacer_2",
+        "C_sign_spacer_3",
+        "billboard_glue_strap_29.5_217",
+        "billboard_glue_strap_29.5_248",
+        "billboard_glue_strap_152.5_217",
+        "billboard_glue_strap_152.5_248",
+        "backwall_angle_1",
+        "backwall_angle_2",
+        "backwall_angle_3",
+        "alignment_pin_01",
+        "alignment_pin_02",
+        "alignment_pin_03",
+        "alignment_pin_04",
+        "alignment_pin_05",
+        "alignment_pin_06",
+        "alignment_pin_07",
+        "alignment_pin_08",
+        "alignment_pin_09",
+        "alignment_pin_10",
+        "alignment_pin_11",
+        "alignment_pin_12",
+        "alignment_pin_13",
+        "alignment_pin_14",
+        "alignment_pin_15",
+        "alignment_pin_16",
+        "alignment_pin_17",
+        "alignment_pin_18",
+        "alignment_pin_19",
+        "alignment_pin_20",
+        "alignment_pin_21",
+        "alignment_pin_22",
+        "alignment_pin_23",
+        "alignment_pin_24",
+        "alignment_pin_25",
+        "alignment_pin_26",
+        "alignment_pin_27",
+        "alignment_pin_28",
+        "alignment_pin_29",
+        "alignment_pin_30",
+        "alignment_pin_31",
+        "alignment_pin_32",
+        "alignment_pin_33",
+        "alignment_pin_34",
+        "alignment_pin_35",
+        "alignment_pin_36",
+        "alignment_pin_37",
+        "alignment_pin_38"
+      ],
+      "supports": false
+    },
+    {
+      "id": "32-back-wall",
+      "parts": [
+        "Garage_BackWall"
+      ],
+      "supports": false
+    },
+    {
+      "id": "33-signs-and-labels",
+      "parts": [
+        "TopBillboard",
+        "BillboardPost_28",
+        "BillboardPost_151",
+        "SideSignBlue",
+        "FloorLabel_2",
+        "FloorLabel_3",
+        "FloorLabel_4"
+      ],
+      "supports": false
+    }
+  ],
+  "production_parts": 142,
+  "coupon_parts": 4
+}

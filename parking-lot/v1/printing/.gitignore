@@ -1,0 +1,4 @@
+parts/*.stl
+scratch/
+logs/*-export.log
+*.FCBak

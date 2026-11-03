@@ -1,5 +1,7 @@
 # 四层停车场 · 概念 01
 
+**打印文件：[X2D 3MF 打印包](v1/printing/README.md) · [打印用料和耗时](v1/printing/打印用料与耗时.md)。**
+
 **第一版完整 CAD 已建立：[CAD v1 说明与预览](v1/README.md) · [FreeCAD 主文件](v1/cad/parking-lot-v1-assembly.FCStd) · [STEP 文件](v1/cad/parking-lot-v1-assembly.step)。** 本页继续保留当前概念设计依据；工程实体和装配细化以 v1 说明为准。
 
 **当前版本：2026-11-02 等宽单车道、4F 收口与原车库分段柱复用方案。** 沿用 garage-bookshelf v5 的 garage 造型、四层停车区、黑色与三色收边、顶部广告牌及侧面口号牌。

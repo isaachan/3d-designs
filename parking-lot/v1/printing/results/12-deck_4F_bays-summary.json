@@ -1,0 +1,62 @@
+{
+  "id": "12-deck_4F_bays",
+  "parts": [
+    "deck_4F_bays"
+  ],
+  "supports": false,
+  "project": "3mf/12-deck_4F_bays.3mf",
+  "sha256": "4a24ad9464656a9206fb980fc9cfee08a14156a5fc54c787b2e33ef1e6b2bc3f",
+  "colors": [
+    "black",
+    "white",
+    "lightblue"
+  ],
+  "bounds": [
+    {
+      "min_mm": [
+        38.24998,
+        68.00001,
+        0.0
+      ],
+      "max_mm": [
+        238.24998,
+        188.00001,
+        6.800003052
+      ]
+    }
+  ],
+  "supports_enabled": false,
+  "saved_project_reopened_and_sliced": true,
+  "warning_message": "",
+  "seconds": 6467.81396484375,
+  "grams": 94.40426588058472,
+  "materials": [
+    {
+      "color": "black",
+      "grams": 93.69020080566406,
+      "main_grams": 92.11341857910156,
+      "local_filament_id": 1
+    },
+    {
+      "color": "white",
+      "grams": 0.3629644811153412,
+      "main_grams": 0.18887589871883392,
+      "local_filament_id": 2
+    },
+    {
+      "color": "lightblue",
+      "grams": 0.3511005938053131,
+      "main_grams": 0.07747200131416321,
+      "local_filament_id": 3
+    }
+  ],
+  "filament_changes": 1,
+  "wall_loops": 4,
+  "infill_density": "25%",
+  "source_mesh_hashes": {
+    "parts/deck_4F_bays__black.stl": "cfe6329233b2c3561b43dc39a7e04453548e41f9fd419ef002672fd3dc1c4e94",
+    "parts/deck_4F_bays__white.stl": "7a1a0c281117a907b2fce019b8a6c1f7851365cf7e03a4b252c5d0c51607955c",
+    "parts/deck_4F_bays__lightblue.stl": "6e4285458f727bff30d5e8856b4068424bceee2a38b746e0dd81c8110edaf321"
+  },
+  "elapsed_generation_seconds": 3.79
+}

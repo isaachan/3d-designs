@@ -1,0 +1,25 @@
+[2026-11-03 14:43:01.404371] [0x00000001f058a180] [trace]   Initializing StaticPrintConfigs
+[2026-11-03 14:43:01.435660] [0x00000001f058a180] [warning] cli mode, Current BambuStudio Version 02.08.02.61
+[2026-11-03 14:43:01.473572] [0x00000001f058a180] [warning] run:2873, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine_full/Bambu Lab X2D 0.4 nozzle.json
+[2026-11-03 14:43:01.473587] [0x00000001f058a180] [warning] run:2895, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/process_full/0.20mm Standard @BBL X2D.json
+[2026-11-03 14:43:01.473611] [0x00000001f058a180] [warning] no filament colors found in projects
+[2026-11-03 14:43:01.474574] [0x00000001f058a180] [warning] load_nozzle_infos_with_compatibility: building nozzle list from filament map and volume types
+[2026-11-03 14:43:01.502976] [0x000000016dd1b000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:43:01.504128] [0x00000001f058a180] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:43:01.508072] [0x000000016ed4b000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:43:01.508340] [0x000000016e533000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:43:01.508472] [0x000000016e93f000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:43:01.509018] [0x000000016e127000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:43:01.509799] [0x000000016f563000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:43:01.512292] [0x000000016f157000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:43:01.521988] [0x000000016e533000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:43:01.523869] [0x000000016e93f000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:43:01.523889] [0x000000016ed4b000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:43:01.525013] [0x000000016f157000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:43:01.526743] [0x000000016e127000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:43:01.527775] [0x00000001f058a180] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:43:01.528165] [0x000000016dd1b000] [warning] Detected missing Voronoi vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:43:01.767794] [0x000000016e127000] [error]   ZFiller: encounter idx from clip: 48
+[2026-11-03 14:43:01.931900] [0x00000001f058a180] [warning] tree support default to organic support
+[2026-11-03 14:43:02.235478] [0x00000001f058a180] [error]   Invalid T command (T65279).
+[2026-11-03 14:43:02.235499] [0x00000001f058a180] [error]   Invalid T command (T65535).

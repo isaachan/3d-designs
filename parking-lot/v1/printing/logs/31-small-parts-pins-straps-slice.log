@@ -1,0 +1,71 @@
+[2026-11-03 14:44:56.449456] [0x00000001f058a180] [trace]   Initializing StaticPrintConfigs
+[2026-11-03 14:44:56.473579] [0x00000001f058a180] [warning] cli mode, Current BambuStudio Version 02.08.02.61
+[2026-11-03 14:44:56.607834] [0x00000001f058a180] [warning] run:2873, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine_full/Bambu Lab X2D 0.4 nozzle.json
+[2026-11-03 14:44:56.607851] [0x00000001f058a180] [warning] run:2895, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/process_full/0.20mm Standard @BBL X2D.json
+[2026-11-03 14:44:56.607867] [0x00000001f058a180] [warning] no filament colors found in projects
+[2026-11-03 14:44:56.608745] [0x00000001f058a180] [warning] load_nozzle_infos_with_compatibility: building nozzle list from filament map and volume types
+[2026-11-03 14:44:57.955860] [0x00000001f058a180] [warning] tree support default to organic support
+[2026-11-03 14:44:57.955897] [0x000000016e26b000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.955958] [0x000000016f29b000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.956204] [0x000000016f6a7000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.956311] [0x000000016e677000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.956500] [0x000000016f6a7000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.956530] [0x000000016e677000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.956694] [0x000000016ea83000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.956743] [0x000000016e677000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.956789] [0x000000016ee8f000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.956870] [0x000000016fab3000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.956987] [0x000000016f6a7000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.957145] [0x000000016e677000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.957270] [0x000000016f6a7000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.965419] [0x00000001f058a180] [warning] tree support default to organic support
+[2026-11-03 14:44:57.973077] [0x000000016e26b000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.973735] [0x00000001f058a180] [warning] tree support default to organic support
+[2026-11-03 14:44:57.974877] [0x000000016f29b000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.975757] [0x000000016ee8f000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.976768] [0x000000016e677000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.978234] [0x000000016fab3000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.981580] [0x000000016ea83000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.983201] [0x00000001f058a180] [warning] tree support default to organic support
+[2026-11-03 14:44:57.983385] [0x00000001f058a180] [warning] tree support default to organic support
+[2026-11-03 14:44:57.983554] [0x00000001f058a180] [warning] tree support default to organic support
+[2026-11-03 14:44:57.983719] [0x00000001f058a180] [warning] tree support default to organic support
+[2026-11-03 14:44:57.986879] [0x00000001f058a180] [warning] tree support default to organic support
+[2026-11-03 14:44:57.988564] [0x000000016f29b000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.991375] [0x000000016e26b000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.993309] [0x000000016ee8f000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.993868] [0x000000016e677000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.994251] [0x000000016ea83000] [warning] tree support default to organic support
+[2026-11-03 14:44:57.996665] [0x000000016f6a7000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.000487] [0x000000016f29b000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.004153] [0x000000016fab3000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.006707] [0x00000001f058a180] [warning] tree support default to organic support
+[2026-11-03 14:44:58.007292] [0x000000016ea83000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.011521] [0x000000016e26b000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.017343] [0x000000016e677000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.018060] [0x000000016ee8f000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.020155] [0x000000016f29b000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.022245] [0x000000016fab3000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.025171] [0x000000016e26b000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.025807] [0x000000016f6a7000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.025836] [0x00000001f058a180] [warning] tree support default to organic support
+[2026-11-03 14:44:58.029817] [0x000000016ee8f000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.032644] [0x00000001f058a180] [warning] tree support default to organic support
+[2026-11-03 14:44:58.032758] [0x000000016ea83000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.040336] [0x000000016e677000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.040589] [0x000000016e677000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.066662] [0x000000016e26b000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.083890] [0x000000016f29b000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.084347] [0x000000016ea83000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.084713] [0x000000016fab3000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.085967] [0x000000016ee8f000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.089656] [0x000000016f6a7000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.102790] [0x00000001f058a180] [warning] tree support default to organic support
+[2026-11-03 14:44:58.102953] [0x000000016e677000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.106633] [0x000000016ee8f000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.117648] [0x000000016e26b000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.118776] [0x000000016fab3000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.120590] [0x000000016f29b000] [warning] tree support default to organic support
+[2026-11-03 14:44:58.129915] [0x000000016f29b000] [warning] tree support default to organic support
+[2026-11-03 14:45:04.791544] [0x00000001f058a180] [error]   Invalid T command (T65279).
+[2026-11-03 14:45:04.791553] [0x00000001f058a180] [error]   Invalid T command (T65535).

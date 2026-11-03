@@ -1,0 +1,62 @@
+{
+  "id": "11-deck_4F_aisle",
+  "parts": [
+    "deck_4F_aisle"
+  ],
+  "supports": false,
+  "project": "3mf/11-deck_4F_aisle.3mf",
+  "sha256": "665f29e44086b433f4adc9a7cbcc9417798ab1fc2cad4ddd45efed057d87a723",
+  "colors": [
+    "black",
+    "white",
+    "red"
+  ],
+  "bounds": [
+    {
+      "min_mm": [
+        38.24998,
+        72.7,
+        0.0
+      ],
+      "max_mm": [
+        238.24998,
+        183.2999992,
+        6.800003052
+      ]
+    }
+  ],
+  "supports_enabled": false,
+  "saved_project_reopened_and_sliced": true,
+  "warning_message": "",
+  "seconds": 7086.958984375,
+  "grams": 92.62136054039001,
+  "materials": [
+    {
+      "color": "black",
+      "grams": 82.78610229492188,
+      "main_grams": 79.95100402832031,
+      "local_filament_id": 1
+    },
+    {
+      "color": "white",
+      "grams": 2.850041151046753,
+      "main_grams": 0.4499782621860504,
+      "local_filament_id": 2
+    },
+    {
+      "color": "red",
+      "grams": 6.985217094421387,
+      "main_grams": 6.162278652191162,
+      "local_filament_id": 3
+    }
+  ],
+  "filament_changes": 5,
+  "wall_loops": 4,
+  "infill_density": "25%",
+  "source_mesh_hashes": {
+    "parts/deck_4F_aisle__black.stl": "00a84894fd5cdb81bf23ecfceb37502ae5765fbaf0c777814da6cd4486bdc8c5",
+    "parts/deck_4F_aisle__white.stl": "68321225c25efabf75b3eb09feeb7f368ebc90d833c862b68e66d6995447a558",
+    "parts/deck_4F_aisle__red.stl": "d1a61b74cb5af6961f081700aa34ba213db5109da323613b3959147d354d5873"
+  },
+  "elapsed_generation_seconds": 2.65
+}

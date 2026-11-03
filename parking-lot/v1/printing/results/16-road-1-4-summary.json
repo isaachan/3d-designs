@@ -1,0 +1,62 @@
+{
+  "id": "16-road-1-4",
+  "parts": [
+    "road_1_4"
+  ],
+  "supports": true,
+  "project": "3mf/16-road-1-4.3mf",
+  "sha256": "17c36c4f240c8d29671b0abcc246fd4307cd788b30d3fa9818ebe7057030639c",
+  "colors": [
+    "black",
+    "white",
+    "lightblue"
+  ],
+  "bounds": [
+    {
+      "min_mm": [
+        64.83652071420249,
+        48.395751060338725,
+        0.0
+      ],
+      "max_mm": [
+        213.43903898726248,
+        196.99826933339872,
+        19.84355164
+      ]
+    }
+  ],
+  "supports_enabled": true,
+  "saved_project_reopened_and_sliced": true,
+  "warning_message": "",
+  "seconds": 14487.37890625,
+  "grams": 85.30047416687012,
+  "materials": [
+    {
+      "color": "black",
+      "grams": 42.55064392089844,
+      "main_grams": 39.37765121459961,
+      "local_filament_id": 1
+    },
+    {
+      "color": "white",
+      "grams": 2.6304988861083984,
+      "main_grams": 0.05809999257326126,
+      "local_filament_id": 2
+    },
+    {
+      "color": "lightblue",
+      "grams": 40.11933135986328,
+      "main_grams": 36.37855911254883,
+      "local_filament_id": 3
+    }
+  ],
+  "filament_changes": 6,
+  "wall_loops": 4,
+  "infill_density": "25%",
+  "source_mesh_hashes": {
+    "parts/road_1_4__black.stl": "209355ccbe14a0f02a00db5267be8702eac8fa731e3179b4e4c0b56f8404fde7",
+    "parts/road_1_4__lightblue.stl": "1e10173a932f0a02ecebab191d5427e64c3780d4950ded2fd5ad2741d0f3daee",
+    "parts/road_1_4__white.stl": "1c9d7026e5794e707e91aa8063ad7a56ef5f425c4c5724c900d8c39af5e6b284"
+  },
+  "elapsed_generation_seconds": 7.39
+}

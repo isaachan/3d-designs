@@ -1,0 +1,70 @@
+{
+  "id": "02-foundation_1_2",
+  "parts": [
+    "foundation_1_2"
+  ],
+  "supports": false,
+  "project": "3mf/02-foundation_1_2.3mf",
+  "sha256": "239c8726b4cb47d1920e5ea1e81adeaebd6fd0e19bae52ec834fa16b242a1383",
+  "colors": [
+    "black",
+    "white",
+    "lightblue",
+    "darkblue"
+  ],
+  "bounds": [
+    {
+      "min_mm": [
+        33.24998,
+        62.00001,
+        0.0
+      ],
+      "max_mm": [
+        243.24998,
+        194.00001,
+        11.0
+      ]
+    }
+  ],
+  "supports_enabled": false,
+  "saved_project_reopened_and_sliced": true,
+  "warning_message": "",
+  "seconds": 7792.0517578125,
+  "grams": 115.07633909583092,
+  "materials": [
+    {
+      "color": "black",
+      "grams": 110.83610534667969,
+      "main_grams": 107.92371368408203,
+      "local_filament_id": 1
+    },
+    {
+      "color": "white",
+      "grams": 0.976807177066803,
+      "main_grams": 0.1587769240140915,
+      "local_filament_id": 2
+    },
+    {
+      "color": "lightblue",
+      "grams": 0.4722450077533722,
+      "main_grams": 0.07918508350849152,
+      "local_filament_id": 3
+    },
+    {
+      "color": "darkblue",
+      "grams": 2.7911815643310547,
+      "main_grams": 2.503710985183716,
+      "local_filament_id": 4
+    }
+  ],
+  "filament_changes": 3,
+  "wall_loops": 4,
+  "infill_density": "25%",
+  "source_mesh_hashes": {
+    "parts/foundation_1_2__black.stl": "7ab24f4c59e4e0cf74ac6a35fa2c5a9c1b5eceda7cc9479a022fea3bd082ac7c",
+    "parts/foundation_1_2__white.stl": "545b800bc6813c2e61cda327bd361098963df2d7312256df9fbd8b16e8920f93",
+    "parts/foundation_1_2__lightblue.stl": "ba78fda032f89d58897daf572dc74c30f77ef43db379da0d554472507e4e7742",
+    "parts/foundation_1_2__darkblue.stl": "1e4e6f22c2a66a5de6e12d4cea0af9614b7213ce0107b5d246a6f924930f21db"
+  },
+  "elapsed_generation_seconds": 3.13
+}

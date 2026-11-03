@@ -1,0 +1,247 @@
+{
+  "error_string": "Success.",
+  "export_time": 0,
+  "layer_height": 0.20000000298023224,
+  "plate_index": 0,
+  "prepare_time": 82,
+  "return_code": 0,
+  "sliced_plates": [
+    {
+      "feature_type_times": {
+        "Bottom surface": 190.47201538085938,
+        "Bridge": 1443.807373046875,
+        "Brim": 5.514827251434326,
+        "Custom": 284.7301330566406,
+        "Flush": 29.0,
+        "Gap infill": 13.64260482788086,
+        "Inner wall": 2318.325439453125,
+        "Internal solid infill": 1319.748779296875,
+        "Outer wall": 1216.512451171875,
+        "Overhang wall": 2273.03125,
+        "Sparse infill": 1467.503662109375,
+        "Support": 769.2068481445312,
+        "Support interface": 1193.054443359375,
+        "Support transition": 383.0598449707031,
+        "Top surface": 526.3802490234375,
+        "Travel": 1591.9952392578125,
+        "Undefined": 1586.8492431640625
+      },
+      "filament_change_times": 0,
+      "filaments": [
+        {
+          "filament_id": "GFA00",
+          "id": 1,
+          "main_used_g": 107.00164794921875,
+          "total_used_g": 107.00166320800781
+        }
+      ],
+      "generate_support_material_time": 212,
+      "id": 1,
+      "infill_time": 1004,
+      "layer_filament_change": 0,
+      "main_predication": 14679.84765625,
+      "make_perimeters_time": 1556,
+      "obj_cached_cnt": 0,
+      "objects": [
+        {
+          "bbox": {
+            "depth": 38.55520248413086,
+            "height": 56.488136291503906,
+            "width": 38.55451965332031,
+            "x": 204.47125244140625,
+            "y": 201.71392822265625,
+            "z": -4.5751953337003215e-08
+          },
+          "id": 5,
+          "name": "B2_height_set_foot",
+          "triangle_count": 2736
+        },
+        {
+          "bbox": {
+            "depth": 29.68477439880371,
+            "height": 43.67457580566406,
+            "width": 29.68671989440918,
+            "x": 208.9030303955078,
+            "y": 166.15713500976562,
+            "z": -2.832031498201104e-09
+          },
+          "id": 9,
+          "name": "B1_height_set_foot",
+          "triangle_count": 2736
+        },
+        {
+          "bbox": {
+            "depth": 134.0,
+            "height": 6.0,
+            "width": 31.000001907348633,
+            "x": 166.74691772460938,
+            "y": 100.9905776977539,
+            "z": 0.0
+          },
+          "id": 13,
+          "name": "SideSignFrame",
+          "triangle_count": 820
+        },
+        {
+          "bbox": {
+            "depth": 93.99999237060547,
+            "height": 7.798244476318359,
+            "width": 19.997774124145508,
+            "x": 217.74716186523438,
+            "y": 61.00315475463867,
+            "z": 1.8408203850128757e-09
+          },
+          "id": 17,
+          "name": "B2_Level1_bearing_tab_arm",
+          "triangle_count": 1958
+        },
+        {
+          "bbox": {
+            "depth": 93.99999237060547,
+            "height": 7.798248291015625,
+            "width": 19.997774124145508,
+            "x": 134.74899291992188,
+            "y": 140.99057006835938,
+            "z": 4.492187510862777e-09
+          },
+          "id": 21,
+          "name": "B2_Level2_bearing_tab_arm",
+          "triangle_count": 1962
+        },
+        {
+          "bbox": {
+            "depth": 93.99999237060547,
+            "height": 7.798248291015625,
+            "width": 19.99776840209961,
+            "x": 102.75100708007812,
+            "y": 140.99057006835938,
+            "z": 4.492187510862777e-09
+          },
+          "id": 25,
+          "name": "B2_Level3_bearing_tab_arm",
+          "triangle_count": 1960
+        },
+        {
+          "bbox": {
+            "depth": 94.0,
+            "height": 7.798245429992676,
+            "width": 19.997774124145508,
+            "x": 134.74899291992188,
+            "y": 34.990570068359375,
+            "z": -4.9963380099882215e-09
+          },
+          "id": 29,
+          "name": "B3_Level1_bearing_tab_arm",
+          "triangle_count": 1966
+        },
+        {
+          "bbox": {
+            "depth": 94.00000762939453,
+            "height": 7.798248291015625,
+            "width": 19.997774124145508,
+            "x": 70.75302124023438,
+            "y": 140.9905548095703,
+            "z": 4.492187510862777e-09
+          },
+          "id": 33,
+          "name": "B3_Level2_bearing_tab_arm",
+          "triangle_count": 1966
+        },
+        {
+          "bbox": {
+            "depth": 94.0,
+            "height": 7.798248291015625,
+            "width": 19.997772216796875,
+            "x": 102.75101470947266,
+            "y": 34.990570068359375,
+            "z": 4.492187510862777e-09
+          },
+          "id": 37,
+          "name": "B3_Level3_bearing_tab_arm",
+          "triangle_count": 1966
+        },
+        {
+          "bbox": {
+            "depth": 93.99996948242188,
+            "height": 7.798244476318359,
+            "width": 19.997774124145508,
+            "x": 70.75302124023438,
+            "y": 34.99058532714844,
+            "z": 1.8408203850128757e-09
+          },
+          "id": 41,
+          "name": "B1_Level1_bearing_tab_arm",
+          "triangle_count": 1964
+        },
+        {
+          "bbox": {
+            "depth": 93.99996185302734,
+            "height": 7.798248291015625,
+            "width": 19.997770309448242,
+            "x": 38.755035400390625,
+            "y": 140.9906005859375,
+            "z": 4.492187510862777e-09
+          },
+          "id": 45,
+          "name": "B1_Level2_bearing_tab_arm",
+          "triangle_count": 1964
+        },
+        {
+          "bbox": {
+            "depth": 93.99996948242188,
+            "height": 7.798248291015625,
+            "width": 19.997770309448242,
+            "x": 38.755035400390625,
+            "y": 34.99058532714844,
+            "z": 4.492187510862777e-09
+          },
+          "id": 49,
+          "name": "B1_Level3_bearing_tab_arm",
+          "triangle_count": 1966
+        },
+        {
+          "bbox": {
+            "depth": 29.224733352661133,
+            "height": 9.699999809265137,
+            "width": 29.221715927124023,
+            "x": 209.1383056640625,
+            "y": 20.390653610229492,
+            "z": -4.632568106899271e-09
+          },
+          "id": 53,
+          "name": "C_sign_base_adapter",
+          "triangle_count": 2104
+        },
+        {
+          "bbox": {
+            "depth": 35.18752670288086,
+            "height": 18.04745864868164,
+            "width": 35.186153411865234,
+            "x": 162.10760498046875,
+            "y": 57.3995475769043,
+            "z": -4.340821035953013e-09
+          },
+          "id": 57,
+          "name": "B3_height_set_foot",
+          "triangle_count": 2802
+        }
+      ],
+      "sliced_time": 6931,
+      "sliced_time_with_cache": 3677,
+      "total_predication": 15017.431640625,
+      "triangle_count": 28870,
+      "warning_message": ""
+    }
+  ],
+  "sparse_infill_density": 25.0,
+  "upward_compatible_machine": [
+    "Bambu Lab A1 0.4 nozzle",
+    "Bambu Lab P2S 0.4 nozzle",
+    "Bambu Lab H2S 0.4 nozzle",
+    "Bambu Lab H2D 0.4 nozzle",
+    "Bambu Lab H2D Pro 0.4 nozzle",
+    "Bambu Lab H2C 0.4 nozzle",
+    "Bambu Lab A2L 0.4 nozzle"
+  ],
+  "wall_loops": 4
+}

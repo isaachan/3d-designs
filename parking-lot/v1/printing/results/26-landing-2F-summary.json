@@ -1,0 +1,62 @@
+{
+  "id": "26-landing-2F",
+  "parts": [
+    "landing_2F"
+  ],
+  "supports": false,
+  "project": "3mf/26-landing-2F.3mf",
+  "sha256": "e862ab5cbd0b1b2b0f3050d1910c5e165b8897cd6acf471b07e96afede15f7f6",
+  "colors": [
+    "black",
+    "lightblue",
+    "darkblue"
+  ],
+  "bounds": [
+    {
+      "min_mm": [
+        70.86176,
+        61.64893,
+        0.0
+      ],
+      "max_mm": [
+        205.6382188,
+        194.3510746,
+        14.59999848
+      ]
+    }
+  ],
+  "supports_enabled": false,
+  "saved_project_reopened_and_sliced": true,
+  "warning_message": "",
+  "seconds": 10491.9853515625,
+  "grams": 75.19372653961182,
+  "materials": [
+    {
+      "color": "black",
+      "grams": 40.667015075683594,
+      "main_grams": 35.23181915283203,
+      "local_filament_id": 1
+    },
+    {
+      "color": "lightblue",
+      "grams": 20.26564598083496,
+      "main_grams": 15.945526123046875,
+      "local_filament_id": 2
+    },
+    {
+      "color": "darkblue",
+      "grams": 14.261065483093262,
+      "main_grams": 7.256385326385498,
+      "local_filament_id": 3
+    }
+  ],
+  "filament_changes": 33,
+  "wall_loops": 4,
+  "infill_density": "25%",
+  "source_mesh_hashes": {
+    "parts/landing_2F__black.stl": "d11019e12a1190473f1da301883300ae78722d1e89bfa64978a115ffc41e58ef",
+    "parts/landing_2F__lightblue.stl": "c8728b8a9c7d61dc3a91ebe21d4c70c2b7e5220adb24a06daa71b2c2f2d2839c",
+    "parts/landing_2F__darkblue.stl": "fe9cba88abd9bd56db200cffb98800f45bd3a7da3f696aae12f32b5b0c998c49"
+  },
+  "elapsed_generation_seconds": 3.51
+}

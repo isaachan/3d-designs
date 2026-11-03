@@ -1,0 +1,5400 @@
+{
+  "status": "passed",
+  "source_cad": "parking-lot/v1/cad/parking-lot-v1-assembly.FCStd",
+  "source_sha256": "cb0e5bcdc35c6f813d171c29c1e53169ba19a307dce461f0431879c953c34896",
+  "printed_assembly_scope": "Complete new build; existing reusable column instances remain included",
+  "material": "PLA",
+  "layer_height_mm": 0.2,
+  "nozzle_mm": 0.4,
+  "source_unchanged": true,
+  "hardware_excluded": true,
+  "new_design": {
+    "road_segments": 12,
+    "road_landings": 4,
+    "foundation_panels": 6,
+    "upper_deck_halves": 6,
+    "road_deck_pin_joints": 19,
+    "production_alignment_pins": 38,
+    "coupon_pins": 2,
+    "joint_socket_diameter_mm": 3.3,
+    "pin_diameter_mm": 3,
+    "markings": "0.4 mm embedded + 0.2 mm raised multi-material inlays",
+    "curbs": "Extend through 6.6-mm slab depth for full-height lateral attachment; clear road stays 70 mm"
+  },
+  "parts": [
+    {
+      "name": "base_underpad_1",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        29.996551513671875,
+        29.994354248046875,
+        2.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -380.2718505859375,
+        -228.35690307617188,
+        2.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/base_underpad_1__black.stl",
+          "triangles": 1272,
+          "volume_mm3": 1377.3998830399103,
+          "mesh_volume_mm3": 1376.7142333984375
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "base_underpad_2",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        29.996551513671875,
+        29.994361877441406,
+        2.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -409.7315979003906,
+        108.35126495361328,
+        2.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/base_underpad_2__black.stl",
+          "triangles": 1268,
+          "volume_mm3": 1377.3998830399103,
+          "mesh_volume_mm3": 1376.7169189453125
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "base_underpad_3",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        29.9932861328125,
+        29.99664306640625,
+        2.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -587.0067138671875,
+        -59.001678466796875,
+        2.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/base_underpad_3__black.stl",
+          "triangles": 1264,
+          "volume_mm3": 1377.39988303991,
+          "mesh_volume_mm3": 1376.5784912109375
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "base_underpad_4",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        29.99658203125,
+        29.994308471679688,
+        2.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -533.43896484375,
+        -156.9400634765625,
+        2.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/base_underpad_4__black.stl",
+          "triangles": 1268,
+          "volume_mm3": 1377.399883039909,
+          "mesh_volume_mm3": 1376.5765380859375
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "foundation_1_1",
+      "family": "foundation",
+      "supports": false,
+      "dimensions_mm": [
+        210.0,
+        202.0,
+        11.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        10.0,
+        92.0,
+        -0.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/foundation_1_1__black.stl",
+          "triangles": 2050,
+          "volume_mm3": 202601.16089309714,
+          "mesh_volume_mm3": 202601.75
+        },
+        {
+          "color": 1,
+          "file": "parts/foundation_1_1__white.stl",
+          "triangles": 120,
+          "volume_mm3": 574.8000000000004,
+          "mesh_volume_mm3": 574.7941284179688
+        },
+        {
+          "color": 1,
+          "file": "parts/foundation_1_1__white.stl",
+          "triangles": 152,
+          "volume_mm3": 3.415325777290926,
+          "mesh_volume_mm3": 3.403231382369995
+        }
+      ],
+      "note": "Flat underside; glue straps across panel seams"
+    },
+    {
+      "name": "foundation_1_2",
+      "family": "foundation",
+      "supports": false,
+      "dimensions_mm": [
+        210.0,
+        132.0,
+        11.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        10.0,
+        -110.0,
+        -0.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/foundation_1_2__black.stl",
+          "triangles": 6138,
+          "volume_mm3": 195662.54428800385,
+          "mesh_volume_mm3": 195662.625
+        },
+        {
+          "color": 1,
+          "file": "parts/foundation_1_2__white.stl",
+          "triangles": 4482,
+          "volume_mm3": 362.6259808400892,
+          "mesh_volume_mm3": 362.6281433105469
+        },
+        {
+          "color": 2,
+          "file": "parts/foundation_1_2__lightblue.stl",
+          "triangles": 240,
+          "volume_mm3": 202.80000000000197,
+          "mesh_volume_mm3": 202.81219482421875
+        },
+        {
+          "color": 3,
+          "file": "parts/foundation_1_2__darkblue.stl",
+          "triangles": 24,
+          "volume_mm3": 1315.7999999999997,
+          "mesh_volume_mm3": 1315.7991943359375
+        }
+      ],
+      "note": "Flat underside; glue straps across panel seams"
+    },
+    {
+      "name": "foundation_2_1",
+      "family": "foundation",
+      "supports": false,
+      "dimensions_mm": [
+        210.0,
+        206.1936492919922,
+        1.2999999523162842
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -200.0,
+        96.19364929199219,
+        -0.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/foundation_2_1__black.stl",
+          "triangles": 34,
+          "volume_mm3": 55147.10801949456,
+          "mesh_volume_mm3": 55147.08984375
+        }
+      ],
+      "note": "Flat underside; glue straps across panel seams"
+    },
+    {
+      "name": "foundation_2_2",
+      "family": "foundation",
+      "supports": false,
+      "dimensions_mm": [
+        210.0,
+        148.35079956054688,
+        1.2999999523162842
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -200.0,
+        -110.0,
+        5.21468389351597e-17
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/foundation_2_2__black.stl",
+          "triangles": 1076,
+          "volume_mm3": 36523.590971597,
+          "mesh_volume_mm3": 36523.37890625
+        }
+      ],
+      "note": "Flat underside; glue straps across panel seams"
+    },
+    {
+      "name": "foundation_3_1",
+      "family": "foundation",
+      "supports": false,
+      "dimensions_mm": [
+        215.0,
+        218.35079193115234,
+        1.2999999523162842
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -410.0,
+        108.35079193115234,
+        5.21468389351597e-17
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/foundation_3_1__black.stl",
+          "triangles": 1920,
+          "volume_mm3": 56922.98504439792,
+          "mesh_volume_mm3": 56922.79296875
+        }
+      ],
+      "note": "Flat underside; glue straps across panel seams"
+    },
+    {
+      "name": "foundation_3_2",
+      "family": "foundation",
+      "supports": false,
+      "dimensions_mm": [
+        215.0,
+        136.1936492919922,
+        1.2999999523162842
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -410.0,
+        -110.0,
+        5.21468389351597e-17
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/foundation_3_2__black.stl",
+          "triangles": 884,
+          "volume_mm3": 36871.50209229549,
+          "mesh_volume_mm3": 36871.5
+        }
+      ],
+      "note": "Flat underside; glue straps across panel seams"
+    },
+    {
+      "name": "deck_2F_aisle",
+      "family": "deck",
+      "supports": false,
+      "dimensions_mm": [
+        200.0,
+        110.60000002384186,
+        6.799995422363281
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -0.0,
+        0.6000000238418579,
+        -64.4000015258789
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/deck_2F_aisle__black.stl",
+          "triangles": 1856,
+          "volume_mm3": 144289.83238987924,
+          "mesh_volume_mm3": 144290.390625
+        },
+        {
+          "color": 1,
+          "file": "parts/deck_2F_aisle__white.stl",
+          "triangles": 120,
+          "volume_mm3": 574.7999999999984,
+          "mesh_volume_mm3": 574.7980346679688
+        },
+        {
+          "color": 2,
+          "file": "parts/deck_2F_aisle__lightblue.stl",
+          "triangles": 12,
+          "volume_mm3": 360.0,
+          "mesh_volume_mm3": 360.0
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "deck_2F_bays",
+      "family": "deck",
+      "supports": false,
+      "dimensions_mm": [
+        200.0,
+        120.0,
+        6.799995422363281
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -0.0,
+        -110.0,
+        -64.4000015258789
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/deck_2F_bays__black.stl",
+          "triangles": 7402,
+          "volume_mm3": 156617.6551150639,
+          "mesh_volume_mm3": 156617.375
+        },
+        {
+          "color": 1,
+          "file": "parts/deck_2F_bays__white.stl",
+          "triangles": 5884,
+          "volume_mm3": 364.4659103929557,
+          "mesh_volume_mm3": 364.4462585449219
+        },
+        {
+          "color": 2,
+          "file": "parts/deck_2F_bays__lightblue.stl",
+          "triangles": 240,
+          "volume_mm3": 202.80000000000115,
+          "mesh_volume_mm3": 202.7990264892578
+        },
+        {
+          "color": 3,
+          "file": "parts/deck_2F_bays__darkblue.stl",
+          "triangles": 24,
+          "volume_mm3": 1315.7999999999956,
+          "mesh_volume_mm3": 1315.7945556640625
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "deck_3F_aisle",
+      "family": "deck",
+      "supports": false,
+      "dimensions_mm": [
+        200.0,
+        110.60000002384186,
+        6.799995422363281
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -0.0,
+        0.6000000238418579,
+        -127.4000015258789
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/deck_3F_aisle__black.stl",
+          "triangles": 1856,
+          "volume_mm3": 144289.8323898794,
+          "mesh_volume_mm3": 144290.234375
+        },
+        {
+          "color": 1,
+          "file": "parts/deck_3F_aisle__white.stl",
+          "triangles": 120,
+          "volume_mm3": 574.7999999999985,
+          "mesh_volume_mm3": 574.7868041992188
+        },
+        {
+          "color": 3,
+          "file": "parts/deck_3F_aisle__darkblue.stl",
+          "triangles": 12,
+          "volume_mm3": 360.0,
+          "mesh_volume_mm3": 360.0
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "deck_3F_bays",
+      "family": "deck",
+      "supports": false,
+      "dimensions_mm": [
+        200.0,
+        120.0,
+        6.799995422363281
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -0.0,
+        -110.0,
+        -127.4000015258789
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/deck_3F_bays__black.stl",
+          "triangles": 13610,
+          "volume_mm3": 157410.65022831524,
+          "mesh_volume_mm3": 157410.234375
+        },
+        {
+          "color": 1,
+          "file": "parts/deck_3F_bays__white.stl",
+          "triangles": 13462,
+          "volume_mm3": 490.7732178488149,
+          "mesh_volume_mm3": 490.7351379394531
+        },
+        {
+          "color": 2,
+          "file": "parts/deck_3F_bays__lightblue.stl",
+          "triangles": 240,
+          "volume_mm3": 202.80000000000115,
+          "mesh_volume_mm3": 202.8009490966797
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "deck_4F_aisle",
+      "family": "deck",
+      "supports": false,
+      "dimensions_mm": [
+        200.0,
+        110.60000002384186,
+        6.8000030517578125
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -0.0,
+        0.6000000238418579,
+        -190.39999389648438
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/deck_4F_aisle__black.stl",
+          "triangles": 1856,
+          "volume_mm3": 144289.83238987936,
+          "mesh_volume_mm3": 144290.359375
+        },
+        {
+          "color": 1,
+          "file": "parts/deck_4F_aisle__white.stl",
+          "triangles": 120,
+          "volume_mm3": 574.7999999999985,
+          "mesh_volume_mm3": 574.7941284179688
+        },
+        {
+          "color": 4,
+          "file": "parts/deck_4F_aisle__red.stl",
+          "triangles": 12,
+          "volume_mm3": 360.0,
+          "mesh_volume_mm3": 360.0000305175781
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "deck_4F_bays",
+      "family": "deck",
+      "supports": false,
+      "dimensions_mm": [
+        200.0,
+        120.0,
+        6.8000030517578125
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -0.0,
+        -110.0,
+        -190.39999389648438
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/deck_4F_bays__black.stl",
+          "triangles": 8614,
+          "volume_mm3": 157410.66173727403,
+          "mesh_volume_mm3": 157410.640625
+        },
+        {
+          "color": 1,
+          "file": "parts/deck_4F_bays__white.stl",
+          "triangles": 7470,
+          "volume_mm3": 490.7559591224305,
+          "mesh_volume_mm3": 490.7334899902344
+        },
+        {
+          "color": 2,
+          "file": "parts/deck_4F_bays__lightblue.stl",
+          "triangles": 240,
+          "volume_mm3": 202.80000000000115,
+          "mesh_volume_mm3": 202.77880859375
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "foundation_glue_strap_1",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        60.0,
+        20.0,
+        1.5
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -170.0,
+        55.0,
+        1.5
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/foundation_glue_strap_1__black.stl",
+          "triangles": 12,
+          "volume_mm3": 1800.0,
+          "mesh_volume_mm3": 1800.0
+        }
+      ],
+      "note": "60 x 20 x 1.5; glue underneath, centered on seam"
+    },
+    {
+      "name": "foundation_glue_strap_2",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        60.0,
+        20.0,
+        1.5
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -170.0,
+        -180.0,
+        1.5
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/foundation_glue_strap_2__black.stl",
+          "triangles": 12,
+          "volume_mm3": 1800.0,
+          "mesh_volume_mm3": 1800.0
+        }
+      ],
+      "note": "60 x 20 x 1.5; glue underneath, centered on seam"
+    },
+    {
+      "name": "foundation_glue_strap_3",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        60.0,
+        20.0,
+        1.5
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -380.0,
+        55.0,
+        1.5
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/foundation_glue_strap_3__black.stl",
+          "triangles": 12,
+          "volume_mm3": 1800.0,
+          "mesh_volume_mm3": 1800.0
+        }
+      ],
+      "note": "60 x 20 x 1.5; glue underneath, centered on seam"
+    },
+    {
+      "name": "foundation_glue_strap_4",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        60.0,
+        20.0,
+        1.5
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -380.0,
+        -180.0,
+        1.5
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/foundation_glue_strap_4__black.stl",
+          "triangles": 12,
+          "volume_mm3": 1800.0,
+          "mesh_volume_mm3": 1800.0
+        }
+      ],
+      "note": "60 x 20 x 1.5; glue underneath, centered on seam"
+    },
+    {
+      "name": "foundation_glue_strap_5",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        20.0,
+        60.0,
+        1.5
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -60.0,
+        -80.0,
+        1.5
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/foundation_glue_strap_5__black.stl",
+          "triangles": 12,
+          "volume_mm3": 1800.0,
+          "mesh_volume_mm3": 1800.0
+        }
+      ],
+      "note": "60 x 20 x 1.5; glue underneath, centered on seam"
+    },
+    {
+      "name": "foundation_glue_strap_6",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        20.0,
+        60.0,
+        1.5
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -290.0,
+        -80.0,
+        1.5
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/foundation_glue_strap_6__black.stl",
+          "triangles": 12,
+          "volume_mm3": 1800.0,
+          "mesh_volume_mm3": 1800.0
+        }
+      ],
+      "note": "60 x 20 x 1.5; glue underneath, centered on seam"
+    },
+    {
+      "name": "foundation_glue_strap_7",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        20.0,
+        60.0,
+        1.5
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -525.0,
+        -80.0,
+        1.5
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/foundation_glue_strap_7__black.stl",
+          "triangles": 12,
+          "volume_mm3": 1800.0,
+          "mesh_volume_mm3": 1800.0
+        }
+      ],
+      "note": "60 x 20 x 1.5; glue underneath, centered on seam"
+    },
+    {
+      "name": "road_1_1",
+      "family": "road",
+      "supports": true,
+      "dimensions_mm": [
+        92.25884246826172,
+        198.5236358642578,
+        19.843825340270996
+      ],
+      "rotation_quaternion": [
+        -0.026818492535909327,
+        0.043127644181897545,
+        0.8481063326121437,
+        0.5273864080051749
+      ],
+      "translation_mm": [
+        183.8734130859375,
+        -235.1993865966797,
+        27.89447021484375
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/road_1_1__black.stl",
+          "triangles": 8240,
+          "volume_mm3": 74653.3739091206,
+          "mesh_volume_mm3": 74646.3359375
+        },
+        {
+          "color": 2,
+          "file": "parts/road_1_1__lightblue.stl",
+          "triangles": 988,
+          "volume_mm3": 9479.231686233936,
+          "mesh_volume_mm3": 9478.7587890625
+        },
+        {
+          "color": 1,
+          "file": "parts/road_1_1__white.stl",
+          "triangles": 28,
+          "volume_mm3": 46.19714659891698,
+          "mesh_volume_mm3": 46.19415283203125
+        }
+      ],
+      "note": "Two Ø3 x 10 pins per seam plus glue; drive surface up; remove underside supports before assembly"
+    },
+    {
+      "name": "road_1_2",
+      "family": "road",
+      "supports": true,
+      "dimensions_mm": [
+        92.26092529296875,
+        198.6861114501953,
+        20.450096130371094
+      ],
+      "rotation_quaternion": [
+        -0.0479099309821499,
+        0.016848256522994254,
+        0.33132143713574347,
+        0.942150136687209
+      ],
+      "translation_mm": [
+        -337.5387878417969,
+        -217.3898468017578,
+        10.431260108947754
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/road_1_2__black.stl",
+          "triangles": 5846,
+          "volume_mm3": 74811.91453198498,
+          "mesh_volume_mm3": 74804.5546875
+        },
+        {
+          "color": 2,
+          "file": "parts/road_1_2__lightblue.stl",
+          "triangles": 976,
+          "volume_mm3": 9479.23025171609,
+          "mesh_volume_mm3": 9478.2587890625
+        }
+      ],
+      "note": "Two Ø3 x 10 pins per seam plus glue; drive surface up; remove underside supports before assembly"
+    },
+    {
+      "name": "road_1_3",
+      "family": "road",
+      "supports": true,
+      "dimensions_mm": [
+        92.26763916015625,
+        198.6861114501953,
+        20.450096130371094
+      ],
+      "rotation_quaternion": [
+        0.047909930982840264,
+        0.016848256523236998,
+        0.3313214371357321,
+        -0.9421501366871736
+      ],
+      "translation_mm": [
+        -431.42730712890625,
+        291.5408630371094,
+        -58.099578857421875
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/road_1_3__black.stl",
+          "triangles": 8164,
+          "volume_mm3": 74678.15939708822,
+          "mesh_volume_mm3": 74671.421875
+        },
+        {
+          "color": 2,
+          "file": "parts/road_1_3__lightblue.stl",
+          "triangles": 970,
+          "volume_mm3": 9479.232233418763,
+          "mesh_volume_mm3": 9478.58984375
+        },
+        {
+          "color": 1,
+          "file": "parts/road_1_3__white.stl",
+          "triangles": 24,
+          "volume_mm3": 11.378927096790889,
+          "mesh_volume_mm3": 11.377070426940918
+        }
+      ],
+      "note": "Two Ø3 x 10 pins per seam plus glue; drive surface up; remove underside supports before assembly"
+    },
+    {
+      "name": "road_1_4",
+      "family": "road",
+      "supports": true,
+      "dimensions_mm": [
+        92.26092910766602,
+        198.52365112304688,
+        19.843551635742188
+      ],
+      "rotation_quaternion": [
+        0.02681849253475033,
+        0.0431276441800337,
+        0.8481063326122389,
+        -0.5273864080052334
+      ],
+      "translation_mm": [
+        49.34249496459961,
+        491.5682373046875,
+        -94.76583862304688
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/road_1_4__black.stl",
+          "triangles": 8214,
+          "volume_mm3": 74661.46652035136,
+          "mesh_volume_mm3": 74654.2265625
+        },
+        {
+          "color": 2,
+          "file": "parts/road_1_4__lightblue.stl",
+          "triangles": 988,
+          "volume_mm3": 9479.231686233725,
+          "mesh_volume_mm3": 9479.0478515625
+        },
+        {
+          "color": 1,
+          "file": "parts/road_1_4__white.stl",
+          "triangles": 32,
+          "volume_mm3": 34.81821950212282,
+          "mesh_volume_mm3": 34.81753158569336
+        }
+      ],
+      "note": "Two Ø3 x 10 pins per seam plus glue; drive surface up; remove underside supports before assembly"
+    },
+    {
+      "name": "road_2_1",
+      "family": "road",
+      "supports": true,
+      "dimensions_mm": [
+        92.25884246826172,
+        198.52362060546875,
+        19.843822479248047
+      ],
+      "rotation_quaternion": [
+        -0.026818492537840938,
+        0.0431276441850038,
+        0.8481063326119855,
+        0.5273864080050771
+      ],
+      "translation_mm": [
+        183.8734130859375,
+        -241.59017944335938,
+        -34.780548095703125
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/road_2_1__black.stl",
+          "triangles": 8284,
+          "volume_mm3": 74653.37393050636,
+          "mesh_volume_mm3": 74645.4609375
+        },
+        {
+          "color": 3,
+          "file": "parts/road_2_1__darkblue.stl",
+          "triangles": 988,
+          "volume_mm3": 9479.231686234212,
+          "mesh_volume_mm3": 9478.7392578125
+        },
+        {
+          "color": 1,
+          "file": "parts/road_2_1__white.stl",
+          "triangles": 28,
+          "volume_mm3": 46.197146598916596,
+          "mesh_volume_mm3": 46.19517135620117
+        }
+      ],
+      "note": "Two Ø3 x 10 pins per seam plus glue; drive surface up; remove underside supports before assembly"
+    },
+    {
+      "name": "road_2_2",
+      "family": "road",
+      "supports": true,
+      "dimensions_mm": [
+        92.26092529296875,
+        198.6861114501953,
+        20.450096130371094
+      ],
+      "rotation_quaternion": [
+        -0.04790993098284025,
+        0.016848256523237036,
+        0.33132143713573114,
+        0.942150136687174
+      ],
+      "translation_mm": [
+        -337.5387878417969,
+        -223.78062438964844,
+        -52.24375915527344
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/road_2_2__black.stl",
+          "triangles": 5918,
+          "volume_mm3": 74811.9145319849,
+          "mesh_volume_mm3": 74804.28125
+        },
+        {
+          "color": 3,
+          "file": "parts/road_2_2__darkblue.stl",
+          "triangles": 976,
+          "volume_mm3": 9479.232233419218,
+          "mesh_volume_mm3": 9478.3037109375
+        }
+      ],
+      "note": "Two Ø3 x 10 pins per seam plus glue; drive surface up; remove underside supports before assembly"
+    },
+    {
+      "name": "road_2_3",
+      "family": "road",
+      "supports": true,
+      "dimensions_mm": [
+        92.26763916015625,
+        198.68611907958984,
+        20.450088500976562
+      ],
+      "rotation_quaternion": [
+        0.047909930982840264,
+        0.016848256523236987,
+        0.3313214371357312,
+        -0.9421501366871738
+      ],
+      "translation_mm": [
+        -431.42730712890625,
+        285.15008544921875,
+        -120.77459716796875
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/road_2_3__black.stl",
+          "triangles": 8146,
+          "volume_mm3": 74678.15940567703,
+          "mesh_volume_mm3": 74670.7421875
+        },
+        {
+          "color": 3,
+          "file": "parts/road_2_3__darkblue.stl",
+          "triangles": 970,
+          "volume_mm3": 9479.232233418967,
+          "mesh_volume_mm3": 9478.5478515625
+        },
+        {
+          "color": 1,
+          "file": "parts/road_2_3__white.stl",
+          "triangles": 24,
+          "volume_mm3": 11.378927096791033,
+          "mesh_volume_mm3": 11.377693176269531
+        }
+      ],
+      "note": "Two Ø3 x 10 pins per seam plus glue; drive surface up; remove underside supports before assembly"
+    },
+    {
+      "name": "road_2_4",
+      "family": "road",
+      "supports": true,
+      "dimensions_mm": [
+        92.26092910766602,
+        198.52362060546875,
+        19.843551635742188
+      ],
+      "rotation_quaternion": [
+        0.026818492534750375,
+        0.043127644180033675,
+        0.8481063326122384,
+        -0.5273864080052342
+      ],
+      "translation_mm": [
+        49.34249496459961,
+        485.17742919921875,
+        -157.44085693359375
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/road_2_4__black.stl",
+          "triangles": 8218,
+          "volume_mm3": 74661.46650230665,
+          "mesh_volume_mm3": 74654.2890625
+        },
+        {
+          "color": 3,
+          "file": "parts/road_2_4__darkblue.stl",
+          "triangles": 988,
+          "volume_mm3": 9479.23168623394,
+          "mesh_volume_mm3": 9479.0498046875
+        },
+        {
+          "color": 1,
+          "file": "parts/road_2_4__white.stl",
+          "triangles": 32,
+          "volume_mm3": 34.818219502123505,
+          "mesh_volume_mm3": 34.81869125366211
+        }
+      ],
+      "note": "Two Ø3 x 10 pins per seam plus glue; drive surface up; remove underside supports before assembly"
+    },
+    {
+      "name": "road_3_1",
+      "family": "road",
+      "supports": true,
+      "dimensions_mm": [
+        92.25884246826172,
+        198.52362060546875,
+        19.843826293945312
+      ],
+      "rotation_quaternion": [
+        -0.026818492537840924,
+        0.043127644185003804,
+        0.8481063326119855,
+        0.5273864080050771
+      ],
+      "translation_mm": [
+        183.8734130859375,
+        -247.98095703125,
+        -97.45556640625
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/road_3_1__black.stl",
+          "triangles": 8490,
+          "volume_mm3": 74653.37392916944,
+          "mesh_volume_mm3": 74646.46875
+        },
+        {
+          "color": 4,
+          "file": "parts/road_3_1__red.stl",
+          "triangles": 988,
+          "volume_mm3": 9479.231686233554,
+          "mesh_volume_mm3": 9478.7080078125
+        },
+        {
+          "color": 1,
+          "file": "parts/road_3_1__white.stl",
+          "triangles": 28,
+          "volume_mm3": 46.1971465989173,
+          "mesh_volume_mm3": 46.19562911987305
+        }
+      ],
+      "note": "Two Ø3 x 10 pins per seam plus glue; drive surface up; remove underside supports before assembly"
+    },
+    {
+      "name": "road_3_2",
+      "family": "road",
+      "supports": true,
+      "dimensions_mm": [
+        92.26092529296875,
+        198.68609619140625,
+        20.450088500976562
+      ],
+      "rotation_quaternion": [
+        -0.047909930980079375,
+        0.016848256522266153,
+        0.3313214371357805,
+        0.9421501366873143
+      ],
+      "translation_mm": [
+        -337.5387878417969,
+        -230.17141723632812,
+        -114.91877746582031
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/road_3_2__black.stl",
+          "triangles": 5982,
+          "volume_mm3": 74811.91453198492,
+          "mesh_volume_mm3": 74804.65625
+        },
+        {
+          "color": 4,
+          "file": "parts/road_3_2__red.stl",
+          "triangles": 976,
+          "volume_mm3": 9479.232233419094,
+          "mesh_volume_mm3": 9478.3291015625
+        }
+      ],
+      "note": "Two Ø3 x 10 pins per seam plus glue; drive surface up; remove underside supports before assembly"
+    },
+    {
+      "name": "road_3_3",
+      "family": "road",
+      "supports": true,
+      "dimensions_mm": [
+        92.26763916015625,
+        198.68609619140625,
+        20.450088500976562
+      ],
+      "rotation_quaternion": [
+        0.0479099309800794,
+        0.016848256522266073,
+        0.3313214371357806,
+        -0.9421501366873143
+      ],
+      "translation_mm": [
+        -431.42730712890625,
+        278.75927734375,
+        -183.44961547851562
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/road_3_3__black.stl",
+          "triangles": 8150,
+          "volume_mm3": 74678.15940324312,
+          "mesh_volume_mm3": 74671.2734375
+        },
+        {
+          "color": 4,
+          "file": "parts/road_3_3__red.stl",
+          "triangles": 970,
+          "volume_mm3": 9479.232233419316,
+          "mesh_volume_mm3": 9478.5537109375
+        },
+        {
+          "color": 1,
+          "file": "parts/road_3_3__white.stl",
+          "triangles": 24,
+          "volume_mm3": 11.378927096791863,
+          "mesh_volume_mm3": 11.382149696350098
+        }
+      ],
+      "note": "Two Ø3 x 10 pins per seam plus glue; drive surface up; remove underside supports before assembly"
+    },
+    {
+      "name": "road_3_4",
+      "family": "road",
+      "supports": true,
+      "dimensions_mm": [
+        92.26092910766602,
+        198.52362060546875,
+        19.843551635742188
+      ],
+      "rotation_quaternion": [
+        0.026818492534750382,
+        0.04312764418003366,
+        0.8481063326122384,
+        -0.5273864080052342
+      ],
+      "translation_mm": [
+        49.34249496459961,
+        478.7866516113281,
+        -220.11587524414062
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/road_3_4__black.stl",
+          "triangles": 8206,
+          "volume_mm3": 74661.46650230564,
+          "mesh_volume_mm3": 74654.1796875
+        },
+        {
+          "color": 4,
+          "file": "parts/road_3_4__red.stl",
+          "triangles": 988,
+          "volume_mm3": 9479.231686234634,
+          "mesh_volume_mm3": 9479.0615234375
+        },
+        {
+          "color": 1,
+          "file": "parts/road_3_4__white.stl",
+          "triangles": 32,
+          "volume_mm3": 34.81821950212509,
+          "mesh_volume_mm3": 34.81852722167969
+        }
+      ],
+      "note": "Two Ø3 x 10 pins per seam plus glue; drive surface up; remove underside supports before assembly"
+    },
+    {
+      "name": "landing_1F",
+      "family": "landing",
+      "supports": false,
+      "dimensions_mm": [
+        135.07138061523438,
+        133.8855676651001,
+        14.600000023841858
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -200.0,
+        -8.648932456970215,
+        -1.399999976158142
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/landing_1F__black.stl",
+          "triangles": 1012,
+          "volume_mm3": 73852.86546912369,
+          "mesh_volume_mm3": 73854.234375
+        },
+        {
+          "color": 2,
+          "file": "parts/landing_1F__lightblue.stl",
+          "triangles": 368,
+          "volume_mm3": 9496.014924489895,
+          "mesh_volume_mm3": 9494.837890625
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "landing_2F",
+      "family": "landing",
+      "supports": false,
+      "dimensions_mm": [
+        134.77645874023438,
+        132.70214176177979,
+        14.599998474121094
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -200.0,
+        -8.648932456970215,
+        -64.4000015258789
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/landing_2F__black.stl",
+          "triangles": 1858,
+          "volume_mm3": 74225.91441473016,
+          "mesh_volume_mm3": 74227.4921875
+        },
+        {
+          "color": 2,
+          "file": "parts/landing_2F__lightblue.stl",
+          "triangles": 192,
+          "volume_mm3": 5426.623985700706,
+          "mesh_volume_mm3": 5426.03466796875
+        },
+        {
+          "color": 3,
+          "file": "parts/landing_2F__darkblue.stl",
+          "triangles": 152,
+          "volume_mm3": 1967.0215549919394,
+          "mesh_volume_mm3": 1966.404296875
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "landing_3F",
+      "family": "landing",
+      "supports": false,
+      "dimensions_mm": [
+        134.77645874023438,
+        132.70214176177979,
+        14.599998474121094
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -200.0,
+        -8.648932456970215,
+        -127.4000015258789
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/landing_3F__black.stl",
+          "triangles": 1858,
+          "volume_mm3": 74225.91441473037,
+          "mesh_volume_mm3": 74227.4921875
+        },
+        {
+          "color": 3,
+          "file": "parts/landing_3F__darkblue.stl",
+          "triangles": 192,
+          "volume_mm3": 5426.623985700709,
+          "mesh_volume_mm3": 5426.02294921875
+        },
+        {
+          "color": 4,
+          "file": "parts/landing_3F__red.stl",
+          "triangles": 152,
+          "volume_mm3": 1967.0215549919405,
+          "mesh_volume_mm3": 1966.4029541015625
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "landing_4F",
+      "family": "landing",
+      "supports": false,
+      "dimensions_mm": [
+        134.77645874023438,
+        103.35107421875,
+        14.600006103515625
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -200.0,
+        -38.0,
+        -190.39999389648438
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/landing_4F__black.stl",
+          "triangles": 974,
+          "volume_mm3": 66557.85405049293,
+          "mesh_volume_mm3": 66560.9296875
+        },
+        {
+          "color": 4,
+          "file": "parts/landing_4F__red.stl",
+          "triangles": 272,
+          "volume_mm3": 8685.402642198937,
+          "mesh_volume_mm3": 8684.9619140625
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "FootPad_1",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        15.996419429779053,
+        15.998214721679688,
+        6.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        4.996419429779053,
+        84.99910736083984,
+        6.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/FootPad_1__black.stl",
+          "triangles": 416,
+          "volume_mm3": 1206.3715789784806,
+          "mesh_volume_mm3": 1205.6505126953125
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "FootPad_2",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        15.996419429779053,
+        15.998199462890625,
+        6.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        4.996419429779053,
+        -219.0009002685547,
+        6.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/FootPad_2__black.stl",
+          "triangles": 416,
+          "volume_mm3": 1206.3715789784806,
+          "mesh_volume_mm3": 1205.6505126953125
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "FootPad_3",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        15.99639892578125,
+        15.998214721679688,
+        6.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -604.0036010742188,
+        84.99910736083984,
+        6.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/FootPad_3__black.stl",
+          "triangles": 416,
+          "volume_mm3": 1206.371578978482,
+          "mesh_volume_mm3": 1205.6510009765625
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "FootPad_4",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        15.99639892578125,
+        15.998199462890625,
+        6.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -604.0036010742188,
+        -219.0009002685547,
+        6.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/FootPad_4__black.stl",
+          "triangles": 416,
+          "volume_mm3": 1206.3715789784817,
+          "mesh_volume_mm3": 1205.6502685546875
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "A1_Column_1",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        19.995524406433105,
+        19.997761249542236,
+        66.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -2.0044755935668945,
+        -4.001119136810303,
+        -8.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/A1_Column_1__black.stl",
+          "triangles": 1888,
+          "volume_mm3": 9711.114496190014,
+          "mesh_volume_mm3": 9704.6396484375
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "A1_Column_2",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        19.995524406433105,
+        19.997761249542236,
+        66.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -2.0044755935668945,
+        -4.001119136810303,
+        -71.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/A1_Column_2__black.stl",
+          "triangles": 1888,
+          "volume_mm3": 9711.114496190014,
+          "mesh_volume_mm3": 9704.6396484375
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "A1_Column_3",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        19.995524406433105,
+        19.997761249542236,
+        66.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -2.0044755935668945,
+        -4.001119136810303,
+        -134.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/A1_Column_3__black.stl",
+          "triangles": 1888,
+          "volume_mm3": 9711.114496190014,
+          "mesh_volume_mm3": 9704.63671875
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "A1_Column_4",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        13.996867179870605,
+        13.998432636260986,
+        33.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -5.0031328201293945,
+        -7.000783443450928,
+        -197.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/A1_Column_4__black.stl",
+          "triangles": 836,
+          "volume_mm3": 4970.45118192301,
+          "mesh_volume_mm3": 4967.48583984375
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "A2_Column_1",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        19.995524406433105,
+        19.997772216796875,
+        66.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -2.0044755935668945,
+        -206.00111389160156,
+        -8.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/A2_Column_1__black.stl",
+          "triangles": 1888,
+          "volume_mm3": 9711.114496190012,
+          "mesh_volume_mm3": 9704.6494140625
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "A2_Column_2",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        19.995524406433105,
+        19.997772216796875,
+        66.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -2.0044755935668945,
+        -206.00111389160156,
+        -71.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/A2_Column_2__black.stl",
+          "triangles": 1888,
+          "volume_mm3": 9711.114496190012,
+          "mesh_volume_mm3": 9704.6513671875
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "A2_Column_3",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        19.995524406433105,
+        19.997772216796875,
+        66.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -2.0044755935668945,
+        -206.00111389160156,
+        -134.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/A2_Column_3__black.stl",
+          "triangles": 1888,
+          "volume_mm3": 9711.114496190012,
+          "mesh_volume_mm3": 9704.6416015625
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "A2_Column_4",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        13.996867179870605,
+        13.998443603515625,
+        33.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -5.0031328201293945,
+        -209.0007781982422,
+        -197.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/A2_Column_4__black.stl",
+          "triangles": 836,
+          "volume_mm3": 4970.451181923008,
+          "mesh_volume_mm3": 4967.48193359375
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "A3_Column_1",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        19.995529174804688,
+        19.997761249542236,
+        66.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -178.0044708251953,
+        -4.001119136810303,
+        -8.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/A3_Column_1__black.stl",
+          "triangles": 1888,
+          "volume_mm3": 9711.114496190014,
+          "mesh_volume_mm3": 9704.6494140625
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "A3_Column_2",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        19.995529174804688,
+        19.997761249542236,
+        66.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -178.0044708251953,
+        -4.001119136810303,
+        -71.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/A3_Column_2__black.stl",
+          "triangles": 1888,
+          "volume_mm3": 9711.114496190014,
+          "mesh_volume_mm3": 9704.6494140625
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "A3_Column_3",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        19.995529174804688,
+        19.997761249542236,
+        66.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -178.0044708251953,
+        -4.001119136810303,
+        -134.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/A3_Column_3__black.stl",
+          "triangles": 1888,
+          "volume_mm3": 9711.114496190014,
+          "mesh_volume_mm3": 9704.6513671875
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "A3_Column_4",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        13.996871948242188,
+        13.998432636260986,
+        33.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -181.0031280517578,
+        -7.000783443450928,
+        -197.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/A3_Column_4__black.stl",
+          "triangles": 836,
+          "volume_mm3": 4970.45118192301,
+          "mesh_volume_mm3": 4967.48388671875
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "A4_Column_1",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        19.995529174804688,
+        19.997772216796875,
+        66.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -178.0044708251953,
+        -206.00111389160156,
+        -8.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/A4_Column_1__black.stl",
+          "triangles": 1888,
+          "volume_mm3": 9711.114496190014,
+          "mesh_volume_mm3": 9704.6494140625
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "A4_Column_2",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        19.995529174804688,
+        19.997772216796875,
+        66.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -178.0044708251953,
+        -206.00111389160156,
+        -71.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/A4_Column_2__black.stl",
+          "triangles": 1888,
+          "volume_mm3": 9711.114496190014,
+          "mesh_volume_mm3": 9704.6494140625
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "A4_Column_3",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        19.995529174804688,
+        19.997772216796875,
+        66.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -178.0044708251953,
+        -206.00111389160156,
+        -134.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/A4_Column_3__black.stl",
+          "triangles": 1888,
+          "volume_mm3": 9711.114496190014,
+          "mesh_volume_mm3": 9704.6435546875
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "A4_Column_4",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        13.996871948242188,
+        13.998443603515625,
+        33.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -181.0031280517578,
+        -209.0007781982422,
+        -197.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/A4_Column_4__black.stl",
+          "triangles": 836,
+          "volume_mm3": 4970.451181923008,
+          "mesh_volume_mm3": 4967.48583984375
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "B1_height_set_foot",
+      "family": "arms-feet",
+      "supports": false,
+      "dimensions_mm": [
+        27.99676513671875,
+        27.99468994140625,
+        43.674575090408325
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -534.4388427734375,
+        -157.93968200683594,
+        -1.2999999523162842
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/B1_height_set_foot__black.stl",
+          "triangles": 2736,
+          "volume_mm3": 7714.8538071802695,
+          "mesh_volume_mm3": 7709.58056640625
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "B1_original_standard_segment_1",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        19.9976806640625,
+        19.9962158203125,
+        66.00000381469727
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -538.438232421875,
+        -161.93817138671875,
+        -41.97457504272461
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/B1_original_standard_segment_1__black.stl",
+          "triangles": 1888,
+          "volume_mm3": 9711.114496190017,
+          "mesh_volume_mm3": 9704.6494140625
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "B1_original_standard_segment_2",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        19.9976806640625,
+        19.9962158203125,
+        66.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -538.438232421875,
+        -161.93817138671875,
+        -104.97457885742188
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/B1_original_standard_segment_2__black.stl",
+          "triangles": 1888,
+          "volume_mm3": 9711.114496190017,
+          "mesh_volume_mm3": 9704.6474609375
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "B1_original_top_cap",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        13.9984130859375,
+        13.997344970703125,
+        33.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -541.437744140625,
+        -164.9370574951172,
+        -167.97457885742188
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/B1_original_top_cap__black.stl",
+          "triangles": 836,
+          "volume_mm3": 4970.451181923014,
+          "mesh_volume_mm3": 4967.48486328125
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "B1_Level1_bearing_tab_arm",
+      "family": "arms-feet",
+      "supports": true,
+      "dimensions_mm": [
+        93.99996948242188,
+        19.997772216796875,
+        7.798244476318359
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.30070579950427334,
+        -0.9537169507482268
+      ],
+      "translation_mm": [
+        -463.8705749511719,
+        183.72882080078125,
+        -34.17633056640625
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/B1_Level1_bearing_tab_arm__black.stl",
+          "triangles": 1964,
+          "volume_mm3": 7774.4221545108385,
+          "mesh_volume_mm3": 7777.46435546875
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "B1_Level2_bearing_tab_arm",
+      "family": "arms-feet",
+      "supports": true,
+      "dimensions_mm": [
+        93.99996948242188,
+        19.997772216796875,
+        7.798248291015625
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.30070579950427334,
+        -0.9537169507482268
+      ],
+      "translation_mm": [
+        -463.8705749511719,
+        183.72882080078125,
+        -97.17633056640625
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/B1_Level2_bearing_tab_arm__black.stl",
+          "triangles": 1964,
+          "volume_mm3": 7774.422149473756,
+          "mesh_volume_mm3": 7777.46533203125
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "B1_Level3_bearing_tab_arm",
+      "family": "arms-feet",
+      "supports": true,
+      "dimensions_mm": [
+        93.99996948242188,
+        19.997772216796875,
+        7.798248291015625
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.30070579950427334,
+        -0.9537169507482268
+      ],
+      "translation_mm": [
+        -463.8705749511719,
+        183.72882080078125,
+        -160.17633056640625
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/B1_Level3_bearing_tab_arm__black.stl",
+          "triangles": 1966,
+          "volume_mm3": 7774.422148971384,
+          "mesh_volume_mm3": 7774.71142578125
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "B2_height_set_foot",
+      "family": "arms-feet",
+      "supports": false,
+      "dimensions_mm": [
+        27.996795654296875,
+        27.994674682617188,
+        56.48813557624817
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -381.2717590332031,
+        -229.35694885253906,
+        -1.2999999523162842
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/B2_height_set_foot__black.stl",
+          "triangles": 2736,
+          "volume_mm3": 9687.34801496977,
+          "mesh_volume_mm3": 9680.8896484375
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "B2_original_standard_segment_1",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        19.997711181640625,
+        19.9962158203125,
+        66.00000381469727
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -385.2714538574219,
+        -233.35693359375,
+        -54.78813552856445
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/B2_original_standard_segment_1__black.stl",
+          "triangles": 1888,
+          "volume_mm3": 9711.114496190017,
+          "mesh_volume_mm3": 9704.6435546875
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "B2_original_standard_segment_2",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        19.997711181640625,
+        19.9962158203125,
+        65.99999237060547
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -385.2714538574219,
+        -233.35693359375,
+        -117.78813934326172
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/B2_original_standard_segment_2__black.stl",
+          "triangles": 1888,
+          "volume_mm3": 9711.114496190015,
+          "mesh_volume_mm3": 9704.6416015625
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "B2_original_top_cap",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        13.9984130859375,
+        13.997360229492188,
+        33.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -388.2712097167969,
+        -236.35691833496094,
+        -180.7881317138672
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/B2_original_top_cap__black.stl",
+          "triangles": 836,
+          "volume_mm3": 4970.451181923012,
+          "mesh_volume_mm3": 4967.48095703125
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "B2_Level1_bearing_tab_arm",
+      "family": "arms-feet",
+      "supports": true,
+      "dimensions_mm": [
+        93.99999237060547,
+        19.997772216796875,
+        7.798244476318359
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.7372773368101241,
+        -0.6755902076156602
+      ],
+      "translation_mm": [
+        -123.98075103759766,
+        424.97540283203125,
+        -46.989891052246094
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/B2_Level1_bearing_tab_arm__black.stl",
+          "triangles": 1958,
+          "volume_mm3": 7774.422147262314,
+          "mesh_volume_mm3": 7774.30419921875
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "B2_Level2_bearing_tab_arm",
+      "family": "arms-feet",
+      "supports": true,
+      "dimensions_mm": [
+        93.99999237060547,
+        19.997772216796875,
+        7.798248291015625
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.7372773368101241,
+        -0.6755902076156602
+      ],
+      "translation_mm": [
+        -123.98075103759766,
+        424.97540283203125,
+        -109.9898910522461
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/B2_Level2_bearing_tab_arm__black.stl",
+          "triangles": 1962,
+          "volume_mm3": 7774.422147525329,
+          "mesh_volume_mm3": 7775.06884765625
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "B2_Level3_bearing_tab_arm",
+      "family": "arms-feet",
+      "supports": true,
+      "dimensions_mm": [
+        93.99999237060547,
+        19.997772216796875,
+        7.798248291015625
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.7372773368101241,
+        -0.6755902076156602
+      ],
+      "translation_mm": [
+        -123.98075103759766,
+        424.97540283203125,
+        -172.98988342285156
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/B2_Level3_bearing_tab_arm__black.stl",
+          "triangles": 1960,
+          "volume_mm3": 7774.422146540511,
+          "mesh_volume_mm3": 7774.6484375
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "B3_height_set_foot",
+      "family": "arms-feet",
+      "supports": false,
+      "dimensions_mm": [
+        27.996795654296875,
+        27.99468994140625,
+        18.047457933425903
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -410.7314453125,
+        107.35163879394531,
+        -1.2999999523162842
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/B3_height_set_foot__black.stl",
+          "triangles": 2802,
+          "volume_mm3": 3708.872469545442,
+          "mesh_volume_mm3": 3706.619140625
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "B3_original_standard_segment_1",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        19.997711181640625,
+        19.99620819091797,
+        66.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -414.7308349609375,
+        103.35314178466797,
+        -16.347457885742188
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/B3_original_standard_segment_1__black.stl",
+          "triangles": 1888,
+          "volume_mm3": 9711.114496190015,
+          "mesh_volume_mm3": 9704.623046875
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "B3_original_standard_segment_2",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        19.997711181640625,
+        19.99620819091797,
+        66.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -414.7308349609375,
+        103.35314178466797,
+        -79.34745788574219
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/B3_original_standard_segment_2__black.stl",
+          "triangles": 1888,
+          "volume_mm3": 9711.114496190015,
+          "mesh_volume_mm3": 9704.6259765625
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "B3_original_top_cap",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        13.9984130859375,
+        13.997344970703125,
+        33.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -417.7303771972656,
+        100.3542709350586,
+        -142.3474578857422
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/B3_original_top_cap__black.stl",
+          "triangles": 836,
+          "volume_mm3": 4970.451181923011,
+          "mesh_volume_mm3": 4967.48486328125
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "B3_Level1_bearing_tab_arm",
+      "family": "arms-feet",
+      "supports": true,
+      "dimensions_mm": [
+        94.00000381469727,
+        19.997772216796875,
+        7.798245429992676
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.6755902076156602,
+        0.7372773368101241
+      ],
+      "translation_mm": [
+        -46.01925277709961,
+        -404.9776306152344,
+        -8.549212455749512
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/B3_Level1_bearing_tab_arm__black.stl",
+          "triangles": 1966,
+          "volume_mm3": 7774.422147588464,
+          "mesh_volume_mm3": 7774.7109375
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "B3_Level2_bearing_tab_arm",
+      "family": "arms-feet",
+      "supports": true,
+      "dimensions_mm": [
+        94.00000381469727,
+        19.997772216796875,
+        7.798248291015625
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.6755902076156602,
+        0.7372773368101241
+      ],
+      "translation_mm": [
+        -46.01925277709961,
+        -404.9776306152344,
+        -71.54920959472656
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/B3_Level2_bearing_tab_arm__black.stl",
+          "triangles": 1966,
+          "volume_mm3": 7774.422155064136,
+          "mesh_volume_mm3": 7777.15087890625
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "B3_Level3_bearing_tab_arm",
+      "family": "arms-feet",
+      "supports": true,
+      "dimensions_mm": [
+        94.00000381469727,
+        19.997772216796875,
+        7.798248291015625
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.6755902076156602,
+        0.7372773368101241
+      ],
+      "translation_mm": [
+        -46.01925277709961,
+        -404.9776306152344,
+        -134.54920959472656
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/B3_Level3_bearing_tab_arm__black.stl",
+          "triangles": 1966,
+          "volume_mm3": 7774.4221478191985,
+          "mesh_volume_mm3": 7774.759765625
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "C_sign_base_adapter",
+      "family": "arms-feet",
+      "supports": false,
+      "dimensions_mm": [
+        27.99371337890625,
+        27.996868133544922,
+        9.700000047683716
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -588.0062866210938,
+        -60.00156784057617,
+        -1.2999999523162842
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/C_sign_base_adapter__black.stl",
+          "triangles": 2104,
+          "volume_mm3": 2447.175013440306,
+          "mesh_volume_mm3": 2445.716064453125
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "C_original_standard_segment_1",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        19.99554443359375,
+        19.997756958007812,
+        66.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -592.0044555664062,
+        -64.0011215209961,
+        -8.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/C_original_standard_segment_1__black.stl",
+          "triangles": 1888,
+          "volume_mm3": 9711.114496190012,
+          "mesh_volume_mm3": 9704.6396484375
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "C_sign_spacer_1",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        19.99554443359375,
+        19.997756958007812,
+        6.599998474121094
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -592.0044555664062,
+        -64.0011215209961,
+        -64.4000015258789
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/C_sign_spacer_1__black.stl",
+          "triangles": 840,
+          "volume_mm3": 1854.4428735058846,
+          "mesh_volume_mm3": 1853.3343505859375
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "C_original_standard_segment_2",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        19.99554443359375,
+        19.997756958007812,
+        66.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -592.0044555664062,
+        -64.0011215209961,
+        -71.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/C_original_standard_segment_2__black.stl",
+          "triangles": 1888,
+          "volume_mm3": 9711.114496190012,
+          "mesh_volume_mm3": 9704.6396484375
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "C_sign_spacer_2",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        19.99554443359375,
+        19.997756958007812,
+        6.599998474121094
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -592.0044555664062,
+        -64.0011215209961,
+        -127.4000015258789
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/C_sign_spacer_2__black.stl",
+          "triangles": 840,
+          "volume_mm3": 1854.4428735058843,
+          "mesh_volume_mm3": 1853.3343505859375
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "C_original_standard_segment_3",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        19.99554443359375,
+        19.997756958007812,
+        66.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -592.0044555664062,
+        -64.0011215209961,
+        -134.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/C_original_standard_segment_3__black.stl",
+          "triangles": 1888,
+          "volume_mm3": 9711.114496190012,
+          "mesh_volume_mm3": 9704.642578125
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "C_sign_spacer_3",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        19.99554443359375,
+        19.997756958007812,
+        6.600006103515625
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -592.0044555664062,
+        -64.0011215209961,
+        -190.39999389648438
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/C_sign_spacer_3__black.stl",
+          "triangles": 840,
+          "volume_mm3": 1854.4428735058843,
+          "mesh_volume_mm3": 1853.3353271484375
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "C_original_top_cap",
+      "family": "columns",
+      "supports": false,
+      "dimensions_mm": [
+        13.99688720703125,
+        13.998428344726562,
+        33.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -595.0031127929688,
+        -67.00078582763672,
+        -197.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/C_original_top_cap__black.stl",
+          "triangles": 836,
+          "volume_mm3": 4970.451181923009,
+          "mesh_volume_mm3": 4967.47998046875
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "Garage_BackWall",
+      "family": "wall",
+      "supports": false,
+      "dimensions_mm": [
+        200.0,
+        230.70000004768372,
+        4.0
+      ],
+      "rotation_quaternion": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "translation_mm": [
+        -0.0,
+        -1.2999999523162842,
+        234.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/Garage_BackWall__black.stl",
+          "triangles": 12,
+          "volume_mm3": 184559.99999999997,
+          "mesh_volume_mm3": 184560.0
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "TopBillboard",
+      "family": "signs",
+      "supports": false,
+      "dimensions_mm": [
+        196.0,
+        56.0,
+        8.199996948242188
+      ],
+      "rotation_quaternion": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "translation_mm": [
+        -0.0,
+        -263.0,
+        234.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/TopBillboard__black.stl",
+          "triangles": 10390,
+          "volume_mm3": 87461.76384284157,
+          "mesh_volume_mm3": 87461.6953125
+        },
+        {
+          "color": 1,
+          "file": "parts/TopBillboard__white.stl",
+          "triangles": 10086,
+          "volume_mm3": 519.354244607263,
+          "mesh_volume_mm3": 519.2364501953125
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "BillboardPost_28",
+      "family": "signs",
+      "supports": false,
+      "dimensions_mm": [
+        15.0,
+        31.0,
+        4.0
+      ],
+      "rotation_quaternion": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "translation_mm": [
+        -28.0,
+        -232.0,
+        234.0
+      ],
+      "volumes": [
+        {
+          "color": 2,
+          "file": "parts/BillboardPost_28__lightblue.stl",
+          "triangles": 12,
+          "volume_mm3": 1860.0,
+          "mesh_volume_mm3": 1860.0
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "BillboardPost_151",
+      "family": "signs",
+      "supports": false,
+      "dimensions_mm": [
+        15.0,
+        31.0,
+        4.0
+      ],
+      "rotation_quaternion": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "translation_mm": [
+        -151.0,
+        -232.0,
+        234.0
+      ],
+      "volumes": [
+        {
+          "color": 4,
+          "file": "parts/BillboardPost_151__red.stl",
+          "triangles": 12,
+          "volume_mm3": 1860.0,
+          "mesh_volume_mm3": 1860.0
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "SideSignBlue",
+      "family": "signs",
+      "supports": false,
+      "dimensions_mm": [
+        27.0,
+        130.0,
+        1.2000007629394531
+      ],
+      "rotation_quaternion": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "translation_mm": [
+        -590.0,
+        -109.0,
+        64.0
+      ],
+      "volumes": [
+        {
+          "color": 3,
+          "file": "parts/SideSignBlue__darkblue.stl",
+          "triangles": 12578,
+          "volume_mm3": 3391.485418581263,
+          "mesh_volume_mm3": 3391.502197265625
+        },
+        {
+          "color": 1,
+          "file": "parts/SideSignBlue__white.stl",
+          "triangles": 13002,
+          "volume_mm3": 177.7719211976136,
+          "mesh_volume_mm3": 177.7165985107422
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "SideSignFrame",
+      "family": "sign-frame",
+      "supports": true,
+      "dimensions_mm": [
+        31.0,
+        134.0,
+        6.0
+      ],
+      "rotation_quaternion": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "translation_mm": [
+        -588.0,
+        -107.0,
+        69.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/SideSignFrame__black.stl",
+          "triangles": 820,
+          "volume_mm3": 18609.991706319528,
+          "mesh_volume_mm3": 18613.994140625
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "FloorLabel_2",
+      "family": "signs",
+      "supports": false,
+      "dimensions_mm": [
+        36.0,
+        16.0,
+        1.600000023841858
+      ],
+      "rotation_quaternion": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "translation_mm": [
+        -157.0,
+        -54.0,
+        -0.6000000238418579
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/FloorLabel_2__black.stl",
+          "triangles": 868,
+          "volume_mm3": 791.8021262510758,
+          "mesh_volume_mm3": 791.8037719726562
+        },
+        {
+          "color": 1,
+          "file": "parts/FloorLabel_2__white.stl",
+          "triangles": 816,
+          "volume_mm3": 21.896809652318552,
+          "mesh_volume_mm3": 21.89714241027832
+        }
+      ],
+      "note": "Glue upper band of back surface to the front trim"
+    },
+    {
+      "name": "FloorLabel_3",
+      "family": "signs",
+      "supports": false,
+      "dimensions_mm": [
+        36.0,
+        16.0,
+        1.600000023841858
+      ],
+      "rotation_quaternion": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "translation_mm": [
+        -157.0,
+        -117.0,
+        -0.6000000238418579
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/FloorLabel_3__black.stl",
+          "triangles": 1580,
+          "volume_mm3": 792.1519778116653,
+          "mesh_volume_mm3": 792.151611328125
+        },
+        {
+          "color": 1,
+          "file": "parts/FloorLabel_3__white.stl",
+          "triangles": 1546,
+          "volume_mm3": 21.372034239117205,
+          "mesh_volume_mm3": 21.372533798217773
+        }
+      ],
+      "note": "Glue upper band of back surface to the front trim"
+    },
+    {
+      "name": "FloorLabel_4",
+      "family": "signs",
+      "supports": false,
+      "dimensions_mm": [
+        36.0,
+        16.0,
+        1.600000023841858
+      ],
+      "rotation_quaternion": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "translation_mm": [
+        -157.0,
+        -180.0,
+        -0.6000000238418579
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/FloorLabel_4__black.stl",
+          "triangles": 108,
+          "volume_mm3": 792.1713932411047,
+          "mesh_volume_mm3": 792.1714477539062
+        },
+        {
+          "color": 1,
+          "file": "parts/FloorLabel_4__white.stl",
+          "triangles": 92,
+          "volume_mm3": 21.34291013834227,
+          "mesh_volume_mm3": 21.342979431152344
+        }
+      ],
+      "note": "Glue upper band of back surface to the front trim"
+    },
+    {
+      "name": "billboard_glue_strap_29.5_217",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        12.0,
+        30.0,
+        2.0
+      ],
+      "rotation_quaternion": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "translation_mm": [
+        -29.5,
+        -217.0,
+        236.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/billboard_glue_strap_29.5_217__black.stl",
+          "triangles": 12,
+          "volume_mm3": 720.0,
+          "mesh_volume_mm3": 720.0
+        }
+      ],
+      "note": "Glue to the back across wall/post or post/board seam"
+    },
+    {
+      "name": "billboard_glue_strap_29.5_248",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        12.0,
+        30.0,
+        2.0
+      ],
+      "rotation_quaternion": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "translation_mm": [
+        -29.5,
+        -248.0,
+        236.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/billboard_glue_strap_29.5_248__black.stl",
+          "triangles": 12,
+          "volume_mm3": 720.0,
+          "mesh_volume_mm3": 720.0
+        }
+      ],
+      "note": "Glue to the back across wall/post or post/board seam"
+    },
+    {
+      "name": "billboard_glue_strap_152.5_217",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        12.0,
+        30.0,
+        2.0
+      ],
+      "rotation_quaternion": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "translation_mm": [
+        -152.5,
+        -217.0,
+        236.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/billboard_glue_strap_152.5_217__black.stl",
+          "triangles": 12,
+          "volume_mm3": 720.0,
+          "mesh_volume_mm3": 720.0
+        }
+      ],
+      "note": "Glue to the back across wall/post or post/board seam"
+    },
+    {
+      "name": "billboard_glue_strap_152.5_248",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        12.0,
+        30.0,
+        2.0
+      ],
+      "rotation_quaternion": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "translation_mm": [
+        -152.5,
+        -248.0,
+        236.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/billboard_glue_strap_152.5_248__black.stl",
+          "triangles": 12,
+          "volume_mm3": 720.0,
+          "mesh_volume_mm3": 720.0
+        }
+      ],
+      "note": "Glue to the back across wall/post or post/board seam"
+    },
+    {
+      "name": "backwall_angle_1",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        14.999999284744263,
+        8.0,
+        25.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "translation_mm": [
+        -1.2999999523162842,
+        -234.0,
+        45.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/backwall_angle_1__black.stl",
+          "triangles": 20,
+          "volume_mm3": 1050.0,
+          "mesh_volume_mm3": 1050.0
+        }
+      ],
+      "note": "Glue to foundation and rear wall; place the 25-mm extrusion on bed"
+    },
+    {
+      "name": "backwall_angle_2",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        14.999999284744263,
+        8.0,
+        25.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "translation_mm": [
+        -1.2999999523162842,
+        -234.0,
+        112.5
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/backwall_angle_2__black.stl",
+          "triangles": 20,
+          "volume_mm3": 1050.0,
+          "mesh_volume_mm3": 1050.0
+        }
+      ],
+      "note": "Glue to foundation and rear wall; place the 25-mm extrusion on bed"
+    },
+    {
+      "name": "backwall_angle_3",
+      "family": "small",
+      "supports": false,
+      "dimensions_mm": [
+        14.999999284744263,
+        8.0,
+        25.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "translation_mm": [
+        -1.2999999523162842,
+        -234.0,
+        180.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/backwall_angle_3__black.stl",
+          "triangles": 20,
+          "volume_mm3": 1050.0,
+          "mesh_volume_mm3": 1050.0
+        }
+      ],
+      "note": "Glue to foundation and rear wall; place the 25-mm extrusion on bed"
+    },
+    {
+      "name": "joint_coupon_1",
+      "family": "coupon",
+      "supports": false,
+      "dimensions_mm": [
+        25.0,
+        70.0,
+        6.599999904632568
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        25.0,
+        -0.0,
+        -0.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/joint_coupon_1__black.stl",
+          "triangles": 852,
+          "volume_mm3": 11461.048945606257,
+          "mesh_volume_mm3": 11461.03125
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "joint_coupon_2",
+      "family": "coupon",
+      "supports": false,
+      "dimensions_mm": [
+        25.0,
+        70.0,
+        6.599999904632568
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/joint_coupon_2__black.stl",
+          "triangles": 852,
+          "volume_mm3": 11461.048945606255,
+          "mesh_volume_mm3": 11461.1455078125
+        }
+      ],
+      "note": ""
+    },
+    {
+      "name": "alignment_pin_01",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.999664306640625,
+        2.999328851699829,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ],
+      "translation_mm": [
+        -58.50016784667969,
+        6.150000095367432,
+        -105.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_01__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577036,
+          "mesh_volume_mm3": 70.64368438720703
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_02",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.999664306640625,
+        2.999328851699829,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ],
+      "translation_mm": [
+        -138.5001678466797,
+        6.150000095367432,
+        -105.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_02__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577042,
+          "mesh_volume_mm3": 70.64368438720703
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_03",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.999664306640625,
+        2.99932861328125,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ],
+      "translation_mm": [
+        -58.50016784667969,
+        69.19999694824219,
+        -105.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_03__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577036,
+          "mesh_volume_mm3": 70.6436538696289
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_04",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.999664306640625,
+        2.99932861328125,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ],
+      "translation_mm": [
+        -138.5001678466797,
+        69.19999694824219,
+        -105.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_04__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.6858347057704,
+          "mesh_volume_mm3": 70.64368438720703
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_05",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.999664306640625,
+        2.99932861328125,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ],
+      "translation_mm": [
+        -58.50016784667969,
+        132.1999969482422,
+        -105.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_05__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.6858347057703,
+          "mesh_volume_mm3": 70.6436538696289
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_06",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.999664306640625,
+        2.99932861328125,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ],
+      "translation_mm": [
+        -138.5001678466797,
+        132.1999969482422,
+        -105.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_06__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577033,
+          "mesh_volume_mm3": 70.6436767578125
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_07",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.999664306640625,
+        2.99932861328125,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ],
+      "translation_mm": [
+        -58.50016784667969,
+        195.1999969482422,
+        -105.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_07__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577029,
+          "mesh_volume_mm3": 70.6436538696289
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_08",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.999664306640625,
+        2.99932861328125,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ],
+      "translation_mm": [
+        -138.5001678466797,
+        195.1999969482422,
+        -105.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_08__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577036,
+          "mesh_volume_mm3": 70.6436767578125
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_09",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.999664306640625,
+        2.9994354248046875,
+        10.0
+      ],
+      "rotation_quaternion": [
+        -0.6408563820361038,
+        -0.29883623872094056,
+        0.0,
+        0.7071067812082672
+      ],
+      "translation_mm": [
+        -266.8497314453125,
+        -128.81930541992188,
+        -100.30039978027344
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_09__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.6858347057704,
+          "mesh_volume_mm3": 70.64356994628906
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_10",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.999664306640625,
+        2.9994277954101562,
+        10.0
+      ],
+      "rotation_quaternion": [
+        -0.6408563820361038,
+        -0.29883623872094056,
+        0.0,
+        0.7071067812082672
+      ],
+      "translation_mm": [
+        -239.66049194335938,
+        -116.14076232910156,
+        -100.30039978027344
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_10__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577039,
+          "mesh_volume_mm3": 70.64363098144531
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_11",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.9995498657226562,
+        2.999603271484375,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.1450758201184173,
+        -0.6543947354838905,
+        0.0,
+        0.7421054753793005
+      ],
+      "translation_mm": [
+        -46.75099563598633,
+        114.24720764160156,
+        -411.3590087890625
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_11__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577042,
+          "mesh_volume_mm3": 70.6436538696289
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_12",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.9995498657226562,
+        2.999603271484375,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.1450758201184173,
+        -0.6543947354838905,
+        0.0,
+        0.7421054753793005
+      ],
+      "translation_mm": [
+        -53.24418258666992,
+        143.5360870361328,
+        -411.3590087890625
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_12__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577047,
+          "mesh_volume_mm3": 70.64369201660156
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_13",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.9996337890625,
+        2.99932861328125,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.6702831218319548,
+        -1.641720159347998e-16,
+        0.0,
+        0.7421054753788096
+      ],
+      "translation_mm": [
+        -513.5001831054688,
+        29.905183792114258,
+        -73.28528594970703
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_13__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577042,
+          "mesh_volume_mm3": 70.64351654052734
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_14",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.9996337890625,
+        2.99932861328125,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.6702831218319548,
+        -1.641720159347998e-16,
+        0.0,
+        0.7421054753788096
+      ],
+      "translation_mm": [
+        -543.5001831054688,
+        29.905183792114258,
+        -73.28528594970703
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_14__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577042,
+          "mesh_volume_mm3": 70.64349365234375
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_15",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.999542236328125,
+        2.999603271484375,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.14507582011853412,
+        0.6543947354844214,
+        -0.0,
+        0.7421054753788096
+      ],
+      "translation_mm": [
+        -145.55126953125,
+        -239.3441162109375,
+        381.7161865234375
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_15__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577036,
+          "mesh_volume_mm3": 70.64361572265625
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_16",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.9995574951171875,
+        2.999603271484375,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.14507582011853412,
+        0.6543947354844214,
+        -0.0,
+        0.7421054753788096
+      ],
+      "translation_mm": [
+        -152.04444885253906,
+        -268.63299560546875,
+        381.7161865234375
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_16__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577033,
+          "mesh_volume_mm3": 70.6435775756836
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_17",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.999664306640625,
+        2.999431610107422,
+        10.0
+      ],
+      "rotation_quaternion": [
+        -0.6408563820349182,
+        0.2988362387203877,
+        0.0,
+        0.7071067812095755
+      ],
+      "translation_mm": [
+        -239.99395751953125,
+        39.411128997802734,
+        246.24656677246094
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_17__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.6858347057704,
+          "mesh_volume_mm3": 70.64363861083984
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_18",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.9996490478515625,
+        2.999431610107422,
+        10.0
+      ],
+      "rotation_quaternion": [
+        -0.6408563820349182,
+        0.2988362387203877,
+        0.0,
+        0.7071067812095755
+      ],
+      "translation_mm": [
+        -212.8047332763672,
+        26.732580184936523,
+        246.24656677246094
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_18__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577042,
+          "mesh_volume_mm3": 70.64366912841797
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_19",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.999664306640625,
+        2.9994354248046875,
+        10.0
+      ],
+      "rotation_quaternion": [
+        -0.6408563820368156,
+        -0.2988362387212719,
+        0.0,
+        0.7071067812074822
+      ],
+      "translation_mm": [
+        -240.2247772216797,
+        -185.9167022705078,
+        -100.30039978027344
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_19__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577039,
+          "mesh_volume_mm3": 70.64363861083984
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_20",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.9996490478515625,
+        2.999420166015625,
+        10.0
+      ],
+      "rotation_quaternion": [
+        -0.6408563820368156,
+        -0.2988362387212719,
+        0.0,
+        0.7071067812074822
+      ],
+      "translation_mm": [
+        -213.03555297851562,
+        -173.2381591796875,
+        -100.30039978027344
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_20__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577042,
+          "mesh_volume_mm3": 70.64364624023438
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_21",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.9995508193969727,
+        2.9996109008789062,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.14507582011829948,
+        -0.6543947354833598,
+        0.0,
+        0.7421054753797915
+      ],
+      "translation_mm": [
+        14.438375473022461,
+        127.81256866455078,
+        -417.7497863769531
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_21__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577038,
+          "mesh_volume_mm3": 70.6436996459961
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_22",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.9995498657226562,
+        2.999603271484375,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.14507582011829948,
+        -0.6543947354833598,
+        0.0,
+        0.7421054753797915
+      ],
+      "translation_mm": [
+        7.945186614990234,
+        157.1014404296875,
+        -417.7497863769531
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_22__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577036,
+          "mesh_volume_mm3": 70.64366149902344
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_23",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.9996337890625,
+        2.99932861328125,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.6702831218308676,
+        -3.28344031869067e-16,
+        0.0,
+        0.7421054753797915
+      ],
+      "translation_mm": [
+        -513.5001831054688,
+        92.5802001953125,
+        -79.67607116699219
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_23__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577049,
+          "mesh_volume_mm3": 70.64352416992188
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_24",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.9996337890625,
+        2.99932861328125,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.6702831218308676,
+        -3.28344031869067e-16,
+        0.0,
+        0.7421054753797915
+      ],
+      "translation_mm": [
+        -543.5001831054688,
+        92.5802001953125,
+        -79.67607116699219
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_24__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577049,
+          "mesh_volume_mm3": 70.64352416992188
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_25",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.9995574951171875,
+        2.9996185302734375,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.1450758201187708,
+        0.6543947354854827,
+        -0.0,
+        0.7421054753778276
+      ],
+      "translation_mm": [
+        -206.74063110351562,
+        -225.77874755859375,
+        375.3254089355469
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_25__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577026,
+          "mesh_volume_mm3": 70.64366912841797
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_26",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.999542236328125,
+        2.999603271484375,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.1450758201187708,
+        0.6543947354854827,
+        -0.0,
+        0.7421054753778276
+      ],
+      "translation_mm": [
+        -213.23382568359375,
+        -255.067626953125,
+        375.3254089355469
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_26__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577025,
+          "mesh_volume_mm3": 70.64368438720703
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_27",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.999664306640625,
+        2.999429702758789,
+        10.0
+      ],
+      "rotation_quaternion": [
+        -0.6408563820330208,
+        0.2988362387195031,
+        0.0,
+        0.707106781211669
+      ],
+      "translation_mm": [
+        -266.618896484375,
+        -17.686264038085938,
+        246.24656677246094
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_27__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577026,
+          "mesh_volume_mm3": 70.64366912841797
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_28",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.999664306640625,
+        2.999431610107422,
+        10.0
+      ],
+      "rotation_quaternion": [
+        -0.6408563820330208,
+        0.2988362387195031,
+        0.0,
+        0.707106781211669
+      ],
+      "translation_mm": [
+        -239.42967224121094,
+        -30.364810943603516,
+        246.24656677246094
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_28__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577026,
+          "mesh_volume_mm3": 70.64360809326172
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_29",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.999664306640625,
+        2.9994354248046875,
+        10.0
+      ],
+      "rotation_quaternion": [
+        -0.6408563820368152,
+        -0.2988362387212729,
+        0.0,
+        0.7071067812074822
+      ],
+      "translation_mm": [
+        -213.59982299804688,
+        -243.0140838623047,
+        -100.30039978027344
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_29__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.6858347057703,
+          "mesh_volume_mm3": 70.64359283447266
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_30",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.9996490478515625,
+        2.9994354248046875,
+        10.0
+      ],
+      "rotation_quaternion": [
+        -0.6408563820368152,
+        -0.2988362387212729,
+        0.0,
+        0.7071067812074822
+      ],
+      "translation_mm": [
+        -186.4105987548828,
+        -230.33554077148438,
+        -100.30039978027344
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_30__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577033,
+          "mesh_volume_mm3": 70.6436538696289
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_31",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.9995498657226562,
+        2.9996185302734375,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.14507582011782869,
+        -0.6543947354812369,
+        0.0,
+        0.7421054753817555
+      ],
+      "translation_mm": [
+        75.62774658203125,
+        141.3779296875,
+        -424.14056396484375
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_31__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.6858347057703,
+          "mesh_volume_mm3": 70.64364624023438
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_32",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.9995498657226562,
+        2.9996185302734375,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.14507582011782869,
+        -0.6543947354812369,
+        0.0,
+        0.7421054753817555
+      ],
+      "translation_mm": [
+        69.13455963134766,
+        170.66680908203125,
+        -424.14056396484375
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_32__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577032,
+          "mesh_volume_mm3": 70.64368438720703
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_33",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.9996337890625,
+        2.99932861328125,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.6702831218286931,
+        -4.925160478020026e-16,
+        0.0,
+        0.7421054753817555
+      ],
+      "translation_mm": [
+        -513.5001831054688,
+        155.25521850585938,
+        -86.06685638427734
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_33__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.6858347057705,
+          "mesh_volume_mm3": 70.64352416992188
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_34",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.9996337890625,
+        2.99932861328125,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.6702831218286931,
+        -4.925160478020026e-16,
+        0.0,
+        0.7421054753817555
+      ],
+      "translation_mm": [
+        -543.5001831054688,
+        155.25521850585938,
+        -86.06685638427734
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_34__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577055,
+          "mesh_volume_mm3": 70.64349365234375
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_35",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.99957275390625,
+        2.999603271484375,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.14507582011877093,
+        0.6543947354854827,
+        -0.0,
+        0.7421054753778276
+      ],
+      "translation_mm": [
+        -267.92999267578125,
+        -212.21339416503906,
+        368.93463134765625
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_35__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577029,
+          "mesh_volume_mm3": 70.64360809326172
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_36",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.999542236328125,
+        2.999603271484375,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.14507582011877093,
+        0.6543947354854827,
+        -0.0,
+        0.7421054753778276
+      ],
+      "translation_mm": [
+        -274.4231872558594,
+        -241.5022735595703,
+        368.93463134765625
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_36__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577028,
+          "mesh_volume_mm3": 70.64354705810547
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_37",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.999664306640625,
+        2.9994354248046875,
+        10.0
+      ],
+      "rotation_quaternion": [
+        -0.6408563820330202,
+        0.29883623871950443,
+        0.0,
+        0.707106781211669
+      ],
+      "translation_mm": [
+        -293.2438659667969,
+        -74.78365325927734,
+        246.24656677246094
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_37__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577035,
+          "mesh_volume_mm3": 70.64368438720703
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_38",
+      "family": "pins",
+      "supports": false,
+      "dimensions_mm": [
+        2.999664306640625,
+        2.9994277954101562,
+        10.0
+      ],
+      "rotation_quaternion": [
+        -0.6408563820330202,
+        0.29883623871950443,
+        0.0,
+        0.707106781211669
+      ],
+      "translation_mm": [
+        -266.05462646484375,
+        -87.46220397949219,
+        246.24656677246094
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_38__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577032,
+          "mesh_volume_mm3": 70.6435546875
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_39",
+      "family": "coupon",
+      "supports": false,
+      "dimensions_mm": [
+        2.99932861328125,
+        2.999664306640625,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -678.5006713867188,
+        1.4998321533203125,
+        -0.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_39__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577046,
+          "mesh_volume_mm3": 70.64344024658203
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    },
+    {
+      "name": "alignment_pin_40",
+      "family": "coupon",
+      "supports": false,
+      "dimensions_mm": [
+        2.99932861328125,
+        2.999664306640625,
+        10.0
+      ],
+      "rotation_quaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        -688.5006713867188,
+        1.4998321533203125,
+        -0.0
+      ],
+      "volumes": [
+        {
+          "color": 0,
+          "file": "parts/alignment_pin_40__black.stl",
+          "triangles": 416,
+          "volume_mm3": 70.68583470577046,
+          "mesh_volume_mm3": 70.64344024658203
+        }
+      ],
+      "note": "Ø3 x 10; remove brim and dry-fit before glue"
+    }
+  ],
+  "joints": [
+    {
+      "id": "deck_1F_y110",
+      "centers_mm": [
+        [
+          60.0,
+          110.0,
+          4.65
+        ],
+        [
+          140.0,
+          110.0,
+          4.65
+        ]
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "socket_diameter_mm": 3.3,
+      "half_depth_mm": 5.2,
+      "pin_diameter_mm": 3,
+      "pin_length_mm": 10,
+      "pins": 2,
+      "bonding": "PLA-compatible glue"
+    },
+    {
+      "id": "deck_2F_y110",
+      "centers_mm": [
+        [
+          60.0,
+          110.0,
+          67.7
+        ],
+        [
+          140.0,
+          110.0,
+          67.7
+        ]
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "socket_diameter_mm": 3.3,
+      "half_depth_mm": 5.2,
+      "pin_diameter_mm": 3,
+      "pin_length_mm": 10,
+      "pins": 2,
+      "bonding": "PLA-compatible glue"
+    },
+    {
+      "id": "deck_3F_y110",
+      "centers_mm": [
+        [
+          60.0,
+          110.0,
+          130.7
+        ],
+        [
+          140.0,
+          110.0,
+          130.7
+        ]
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "socket_diameter_mm": 3.3,
+      "half_depth_mm": 5.2,
+      "pin_diameter_mm": 3,
+      "pin_length_mm": 10,
+      "pins": 2,
+      "bonding": "PLA-compatible glue"
+    },
+    {
+      "id": "deck_4F_y110",
+      "centers_mm": [
+        [
+          60.0,
+          110.0,
+          193.7
+        ],
+        [
+          140.0,
+          110.0,
+          193.7
+        ]
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "socket_diameter_mm": 3.3,
+      "half_depth_mm": 5.2,
+      "pin_diameter_mm": 3,
+      "pin_length_mm": 10,
+      "pins": 2,
+      "bonding": "PLA-compatible glue"
+    },
+    {
+      "id": "road_turn1_joint0",
+      "centers_mm": [
+        [
+          314.83768236115174,
+          30.625082517226573,
+          4.7
+        ],
+        [
+          287.64844875005224,
+          17.9465346650056,
+          4.7
+        ]
+      ],
+      "axis": [
+        0.4226182617406993,
+        -0.90630778703665,
+        6.143234069592532e-11
+      ],
+      "socket_diameter_mm": 3.3,
+      "half_depth_mm": 5.2,
+      "pin_diameter_mm": 3,
+      "pin_length_mm": 10,
+      "pins": 2,
+      "bonding": "PLA-compatible glue"
+    },
+    {
+      "id": "road_turn1_joint1",
+      "centers_mm": [
+        [
+          432.72615946350084,
+          -27.511080747592985,
+          19.649152542372885
+        ],
+        [
+          439.21934788164396,
+          -56.799960961190976,
+          19.649152542372885
+        ]
+      ],
+      "axis": [
+        0.9712598325239684,
+        0.21532312091003994,
+        0.1014410731758751
+      ],
+      "socket_diameter_mm": 3.3,
+      "half_depth_mm": 5.2,
+      "pin_diameter_mm": 3,
+      "pin_length_mm": 10,
+      "pins": 2,
+      "bonding": "PLA-compatible glue"
+    },
+    {
+      "id": "road_turn1_joint2",
+      "centers_mm": [
+        [
+          515.0,
+          74.99999999999997,
+          36.2
+        ],
+        [
+          545.0,
+          74.99999999999997,
+          36.2
+        ]
+      ],
+      "axis": [
+        2.4366590385838414e-16,
+        0.9948415495309906,
+        0.10144107317441757
+      ],
+      "socket_diameter_mm": 3.3,
+      "half_depth_mm": 5.2,
+      "pin_diameter_mm": 3,
+      "pin_length_mm": 10,
+      "pins": 2,
+      "bonding": "PLA-compatible glue"
+    },
+    {
+      "id": "road_turn1_joint3",
+      "centers_mm": [
+        [
+          432.7261594635007,
+          177.51108074759304,
+          52.750847457627124
+        ],
+        [
+          439.2193478816438,
+          206.79996096119103,
+          52.750847457627124
+        ]
+      ],
+      "axis": [
+        -0.9712598325241137,
+        0.21532312091007086,
+        0.10144107317441757
+      ],
+      "socket_diameter_mm": 3.3,
+      "half_depth_mm": 5.2,
+      "pin_diameter_mm": 3,
+      "pin_length_mm": 10,
+      "pins": 2,
+      "bonding": "PLA-compatible glue"
+    },
+    {
+      "id": "road_turn1_joint4",
+      "centers_mm": [
+        [
+          314.83768236115174,
+          119.37491748277343,
+          67.7
+        ],
+        [
+          287.64844875005224,
+          132.0534653349944,
+          67.7
+        ]
+      ],
+      "axis": [
+        -0.42261826174069933,
+        -0.90630778703665,
+        6.513308411134251e-11
+      ],
+      "socket_diameter_mm": 3.3,
+      "half_depth_mm": 5.2,
+      "pin_diameter_mm": 3,
+      "pin_length_mm": 10,
+      "pins": 2,
+      "bonding": "PLA-compatible glue"
+    },
+    {
+      "id": "road_turn2_joint0",
+      "centers_mm": [
+        [
+          314.8376823611517,
+          30.625082517226637,
+          67.7
+        ],
+        [
+          287.6484487500522,
+          17.94653466500568,
+          67.7
+        ]
+      ],
+      "axis": [
+        0.42261826174069866,
+        -0.9063077870366504,
+        5.921189464667501e-11
+      ],
+      "socket_diameter_mm": 3.3,
+      "half_depth_mm": 5.2,
+      "pin_diameter_mm": 3,
+      "pin_length_mm": 10,
+      "pins": 2,
+      "bonding": "PLA-compatible glue"
+    },
+    {
+      "id": "road_turn2_joint1",
+      "centers_mm": [
+        [
+          432.72615946350084,
+          -27.511080747593,
+          82.64915254237289
+        ],
+        [
+          439.2193478816439,
+          -56.799960961191005,
+          82.64915254237289
+        ]
+      ],
+      "axis": [
+        0.9712598325238233,
+        0.2153231209100075,
+        0.10144107317733259
+      ],
+      "socket_diameter_mm": 3.3,
+      "half_depth_mm": 5.2,
+      "pin_diameter_mm": 3,
+      "pin_length_mm": 10,
+      "pins": 2,
+      "bonding": "PLA-compatible glue"
+    },
+    {
+      "id": "road_turn2_joint2",
+      "centers_mm": [
+        [
+          515.0,
+          74.99999999999994,
+          99.2
+        ],
+        [
+          545.0,
+          74.99999999999993,
+          99.2
+        ]
+      ],
+      "axis": [
+        4.873318077166226e-16,
+        0.9948415495306933,
+        0.10144107317733259
+      ],
+      "socket_diameter_mm": 3.3,
+      "half_depth_mm": 5.2,
+      "pin_diameter_mm": 3,
+      "pin_length_mm": 10,
+      "pins": 2,
+      "bonding": "PLA-compatible glue"
+    },
+    {
+      "id": "road_turn2_joint3",
+      "centers_mm": [
+        [
+          432.72615946350095,
+          177.51108074759298,
+          115.7508474576271
+        ],
+        [
+          439.21934788164407,
+          206.79996096119098,
+          115.7508474576271
+        ]
+      ],
+      "axis": [
+        -0.9712598325244034,
+        0.21532312091013714,
+        0.10144107317150255
+      ],
+      "socket_diameter_mm": 3.3,
+      "half_depth_mm": 5.2,
+      "pin_diameter_mm": 3,
+      "pin_length_mm": 10,
+      "pins": 2,
+      "bonding": "PLA-compatible glue"
+    },
+    {
+      "id": "road_turn2_joint4",
+      "centers_mm": [
+        [
+          314.8376823611518,
+          119.37491748277345,
+          130.7
+        ],
+        [
+          287.64844875005224,
+          132.05346533499443,
+          130.7
+        ]
+      ],
+      "axis": [
+        -0.42261826174069955,
+        -0.9063077870366499,
+        7.105427357601002e-11
+      ],
+      "socket_diameter_mm": 3.3,
+      "half_depth_mm": 5.2,
+      "pin_diameter_mm": 3,
+      "pin_length_mm": 10,
+      "pins": 2,
+      "bonding": "PLA-compatible glue"
+    },
+    {
+      "id": "road_turn3_joint0",
+      "centers_mm": [
+        [
+          314.8376823611518,
+          30.625082517226495,
+          130.7
+        ],
+        [
+          287.6484487500523,
+          17.946534665005494,
+          130.7
+        ]
+      ],
+      "axis": [
+        0.42261826174070005,
+        -0.9063077870366497,
+        5.921189464667501e-11
+      ],
+      "socket_diameter_mm": 3.3,
+      "half_depth_mm": 5.2,
+      "pin_diameter_mm": 3,
+      "pin_length_mm": 10,
+      "pins": 2,
+      "bonding": "PLA-compatible glue"
+    },
+    {
+      "id": "road_turn3_joint1",
+      "centers_mm": [
+        [
+          432.7261594635008,
+          -27.511080747593,
+          145.6491525423729
+        ],
+        [
+          439.2193478816439,
+          -56.799960961191005,
+          145.6491525423729
+        ]
+      ],
+      "axis": [
+        0.9712598325232429,
+        0.21532312090987862,
+        0.10144107318316262
+      ],
+      "socket_diameter_mm": 3.3,
+      "half_depth_mm": 5.2,
+      "pin_diameter_mm": 3,
+      "pin_length_mm": 10,
+      "pins": 2,
+      "bonding": "PLA-compatible glue"
+    },
+    {
+      "id": "road_turn3_joint2",
+      "centers_mm": [
+        [
+          515.0,
+          74.99999999999993,
+          162.2
+        ],
+        [
+          545.0,
+          74.9999999999999,
+          162.2
+        ]
+      ],
+      "axis": [
+        7.309977115744971e-16,
+        0.9948415495300988,
+        0.10144107318316262
+      ],
+      "socket_diameter_mm": 3.3,
+      "half_depth_mm": 5.2,
+      "pin_diameter_mm": 3,
+      "pin_length_mm": 10,
+      "pins": 2,
+      "bonding": "PLA-compatible glue"
+    },
+    {
+      "id": "road_turn3_joint3",
+      "centers_mm": [
+        [
+          432.72615946350095,
+          177.51108074759298,
+          178.7508474576271
+        ],
+        [
+          439.21934788164407,
+          206.79996096119095,
+          178.7508474576271
+        ]
+      ],
+      "axis": [
+        -0.9712598325244035,
+        0.2153231209101374,
+        0.10144107317150258
+      ],
+      "socket_diameter_mm": 3.3,
+      "half_depth_mm": 5.2,
+      "pin_diameter_mm": 3,
+      "pin_length_mm": 10,
+      "pins": 2,
+      "bonding": "PLA-compatible glue"
+    },
+    {
+      "id": "road_turn3_joint4",
+      "centers_mm": [
+        [
+          314.83768236115185,
+          119.37491748277364,
+          193.7
+        ],
+        [
+          287.64844875005235,
+          132.05346533499468,
+          193.7
+        ]
+      ],
+      "axis": [
+        -0.42261826174070144,
+        -0.9063077870366492,
+        7.105427357601003e-11
+      ],
+      "socket_diameter_mm": 3.3,
+      "half_depth_mm": 5.2,
+      "pin_diameter_mm": 3,
+      "pin_length_mm": 10,
+      "pins": 2,
+      "bonding": "PLA-compatible glue"
+    }
+  ],
+  "build_seconds": 36.93696212768555,
+  "physical_fit_tested": false
+}

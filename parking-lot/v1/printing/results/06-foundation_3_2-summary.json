@@ -1,0 +1,46 @@
+{
+  "id": "06-foundation_3_2",
+  "parts": [
+    "foundation_3_2"
+  ],
+  "supports": false,
+  "project": "3mf/06-foundation_3_2.3mf",
+  "sha256": "6df6cc4d4f23409950b1ced859fac0ca33359be09616cd6216528d31838a15e4",
+  "colors": [
+    "black"
+  ],
+  "bounds": [
+    {
+      "min_mm": [
+        30.749989999999997,
+        59.89917539999999,
+        0.0
+      ],
+      "max_mm": [
+        245.74999,
+        196.0928246,
+        1.299999952
+      ]
+    }
+  ],
+  "supports_enabled": false,
+  "saved_project_reopened_and_sliced": true,
+  "warning_message": "",
+  "seconds": 2804.654541015625,
+  "grams": 42.02993392944336,
+  "materials": [
+    {
+      "color": "black",
+      "grams": 42.02993392944336,
+      "main_grams": 42.02993392944336,
+      "local_filament_id": 1
+    }
+  ],
+  "filament_changes": 0,
+  "wall_loops": 4,
+  "infill_density": "25%",
+  "source_mesh_hashes": {
+    "parts/foundation_3_2__black.stl": "ac497c380e01273eda8d982fad1c3ecb76f2f6e8516721e5ad717ff2493fe3a1"
+  },
+  "elapsed_generation_seconds": 1.18
+}

@@ -1,0 +1,70 @@
+{
+  "id": "08-deck_2F_bays",
+  "parts": [
+    "deck_2F_bays"
+  ],
+  "supports": false,
+  "project": "3mf/08-deck_2F_bays.3mf",
+  "sha256": "8efa6fa37e32012deea9ba01aa827bd94ee7fa1c0b596d55f86263f5d2a7ef4f",
+  "colors": [
+    "black",
+    "white",
+    "lightblue",
+    "darkblue"
+  ],
+  "bounds": [
+    {
+      "min_mm": [
+        38.24998,
+        68.00001,
+        0.0
+      ],
+      "max_mm": [
+        238.24998,
+        188.00001,
+        6.799995427
+      ]
+    }
+  ],
+  "supports_enabled": false,
+  "saved_project_reopened_and_sliced": true,
+  "warning_message": "",
+  "seconds": 6743.658203125,
+  "grams": 95.55837231874466,
+  "materials": [
+    {
+      "color": "black",
+      "grams": 91.46638488769531,
+      "main_grams": 89.74160766601562,
+      "local_filament_id": 1
+    },
+    {
+      "color": "white",
+      "grams": 0.9686501622200012,
+      "main_grams": 0.15648388862609863,
+      "local_filament_id": 2
+    },
+    {
+      "color": "lightblue",
+      "grams": 0.37232518196105957,
+      "main_grams": 0.07747200131416321,
+      "local_filament_id": 3
+    },
+    {
+      "color": "darkblue",
+      "grams": 2.751012086868286,
+      "main_grams": 2.503762722015381,
+      "local_filament_id": 4
+    }
+  ],
+  "filament_changes": 2,
+  "wall_loops": 4,
+  "infill_density": "25%",
+  "source_mesh_hashes": {
+    "parts/deck_2F_bays__black.stl": "960d3efa973ae0b788ecd6c4c9c8fb11faa0c1a3a7f6e5e09aa8ad7c1852a7ab",
+    "parts/deck_2F_bays__white.stl": "67808ba3441b5f4cffd3402af304011fc712d368273fd53750a9572d835de3c3",
+    "parts/deck_2F_bays__lightblue.stl": "94ef49ed8933bf0a38af7d412dd31ef4ed56cf57b5a847a527c0aed04953ae46",
+    "parts/deck_2F_bays__darkblue.stl": "51ed0cbcbb105ffa662724b36f2d14d98d1749989e13e8b0ff8cb7a110008485"
+  },
+  "elapsed_generation_seconds": 3.29
+}

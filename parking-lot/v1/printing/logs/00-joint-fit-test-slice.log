@@ -1,0 +1,12 @@
+[2026-11-03 14:42:41.211111] [0x00000001f058a180] [trace]   Initializing StaticPrintConfigs
+[2026-11-03 14:42:41.224856] [0x00000001f058a180] [warning] cli mode, Current BambuStudio Version 02.08.02.61
+[2026-11-03 14:42:41.244366] [0x00000001f058a180] [warning] run:2873, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine_full/Bambu Lab X2D 0.4 nozzle.json
+[2026-11-03 14:42:41.244378] [0x00000001f058a180] [warning] run:2895, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/process_full/0.20mm Standard @BBL X2D.json
+[2026-11-03 14:42:41.244396] [0x00000001f058a180] [warning] no filament colors found in projects
+[2026-11-03 14:42:41.245303] [0x00000001f058a180] [warning] load_nozzle_infos_with_compatibility: building nozzle list from filament map and volume types
+[2026-11-03 14:42:41.324165] [0x00000001f058a180] [warning] tree support default to organic support
+[2026-11-03 14:42:41.324185] [0x000000016e54f000] [warning] tree support default to organic support
+[2026-11-03 14:42:41.324200] [0x000000016e143000] [warning] tree support default to organic support
+[2026-11-03 14:42:41.324221] [0x000000016ed67000] [warning] tree support default to organic support
+[2026-11-03 14:42:41.717947] [0x00000001f058a180] [error]   Invalid T command (T65279).
+[2026-11-03 14:42:41.717958] [0x00000001f058a180] [error]   Invalid T command (T65535).

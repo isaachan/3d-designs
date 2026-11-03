@@ -1,0 +1,90 @@
+{
+  "error_string": "Success.",
+  "export_time": 0,
+  "layer_height": 0.20000000298023224,
+  "plate_index": 0,
+  "prepare_time": 47,
+  "return_code": 0,
+  "sliced_plates": [
+    {
+      "feature_type_times": {
+        "Bridge": 929.479248046875,
+        "Brim": 3.999885082244873,
+        "Custom": 287.01361083984375,
+        "Flush": 847.7492065429688,
+        "Gap infill": 16.65589714050293,
+        "Inner wall": 2614.94921875,
+        "Internal solid infill": 660.9153442382812,
+        "Outer wall": 1835.0919189453125,
+        "Overhang wall": 1236.5609130859375,
+        "Prime tower": 981.3155517578125,
+        "Sparse infill": 1509.880615234375,
+        "Support": 779.7151489257812,
+        "Support interface": 1072.422119140625,
+        "Support transition": 496.9626159667969,
+        "Top surface": 296.7219543457031,
+        "Travel": 1511.7178955078125,
+        "Undefined": 1504.741943359375
+      },
+      "filament_change_times": 6,
+      "filaments": [
+        {
+          "filament_id": "GFA00",
+          "id": 1,
+          "main_used_g": 36.16889953613281,
+          "total_used_g": 39.31159210205078
+        },
+        {
+          "filament_id": "GFA00",
+          "id": 2,
+          "main_used_g": 0.06228245422244072,
+          "total_used_g": 2.6356570720672607
+        },
+        {
+          "filament_id": "GFA00",
+          "id": 3,
+          "main_used_g": 36.523399353027344,
+          "total_used_g": 40.240272521972656
+        }
+      ],
+      "generate_support_material_time": 271,
+      "id": 1,
+      "infill_time": 746,
+      "layer_filament_change": 0,
+      "main_predication": 12935.1708984375,
+      "make_perimeters_time": 869,
+      "obj_cached_cnt": 0,
+      "objects": [
+        {
+          "bbox": {
+            "depth": 205.6142578125,
+            "height": 19.843822479248047,
+            "width": 205.6142578125,
+            "x": 40.38562774658203,
+            "y": 15.770931243896484,
+            "z": 3.759765832000994e-10
+          },
+          "id": 5,
+          "name": "road_2_1",
+          "triangle_count": 9300
+        }
+      ],
+      "sliced_time": 3467,
+      "sliced_time_with_cache": 1395,
+      "total_predication": 15073.2734375,
+      "triangle_count": 9300,
+      "warning_message": ""
+    }
+  ],
+  "sparse_infill_density": 25.0,
+  "upward_compatible_machine": [
+    "Bambu Lab A1 0.4 nozzle",
+    "Bambu Lab P2S 0.4 nozzle",
+    "Bambu Lab H2S 0.4 nozzle",
+    "Bambu Lab H2D 0.4 nozzle",
+    "Bambu Lab H2D Pro 0.4 nozzle",
+    "Bambu Lab H2C 0.4 nozzle",
+    "Bambu Lab A2L 0.4 nozzle"
+  ],
+  "wall_loops": 4
+}

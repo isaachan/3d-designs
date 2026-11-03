@@ -1,5 +1,7 @@
 # Parking Lot · CAD v1
 
+**2026-11-03 已生成 [X2D 3MF 打印包](printing/README.md) 和 [用料／耗时表](printing/打印用料与耗时.md)。** 打印版增加分片、定位销、连接片及完整厚度的护栏连接；下述原始装配 CAD 作为设计基线保留。
+
 2026-11-02。依据 [当前 concept](../README.md) 制作的第一版完整装配 CAD，单位 **mm**。
 
 - **打开主文件：[parking-lot-v1-assembly.FCStd](cad/parking-lot-v1-assembly.FCStd)**

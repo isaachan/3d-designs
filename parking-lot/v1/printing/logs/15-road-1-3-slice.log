@@ -1,0 +1,10 @@
+[2026-11-03 14:52:58.797615] [0x00000001f058a180] [trace]   Initializing StaticPrintConfigs
+[2026-11-03 14:52:58.817001] [0x00000001f058a180] [warning] cli mode, Current BambuStudio Version 02.08.02.61
+[2026-11-03 14:52:58.854336] [0x00000001f058a180] [warning] run:2873, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine_full/Bambu Lab X2D 0.4 nozzle.json
+[2026-11-03 14:52:58.854349] [0x00000001f058a180] [warning] run:2895, can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/process_full/0.20mm Standard @BBL X2D.json
+[2026-11-03 14:52:58.854370] [0x00000001f058a180] [warning] no filament colors found in projects
+[2026-11-03 14:52:58.855290] [0x00000001f058a180] [warning] load_nozzle_infos_with_compatibility: building nozzle list from filament map and volume types
+[2026-11-03 14:52:59.014985] [0x000000016f447000] [warning] Detected finite Voronoi vertex with non finite vertex, input polygons will be rotated back and forth.
+[2026-11-03 14:52:59.110516] [0x000000016f447000] [error]   Detected finite Voronoi vertex with non finite vertex even after the rotation of input.
+[2026-11-03 14:53:04.154461] [0x00000001f058a180] [error]   Invalid T command (T65279).
+[2026-11-03 14:53:04.154486] [0x00000001f058a180] [error]   Invalid T command (T65535).

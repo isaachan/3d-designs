@@ -1,0 +1,46 @@
+{
+  "id": "32-back-wall",
+  "parts": [
+    "Garage_BackWall"
+  ],
+  "supports": false,
+  "project": "3mf/32-back-wall.3mf",
+  "sha256": "c2f5c88c82eadcdc7cfbcd69ee36f9e62af54aacaa27aa41939e5fc12aea2cbc",
+  "colors": [
+    "black"
+  ],
+  "bounds": [
+    {
+      "min_mm": [
+        38.249979999999994,
+        12.650002,
+        0.0
+      ],
+      "max_mm": [
+        238.24998,
+        243.349998,
+        4.0
+      ]
+    }
+  ],
+  "supports_enabled": false,
+  "saved_project_reopened_and_sliced": true,
+  "warning_message": "",
+  "seconds": 8296.12109375,
+  "grams": 133.09762573242188,
+  "materials": [
+    {
+      "color": "black",
+      "grams": 133.09762573242188,
+      "main_grams": 133.09762573242188,
+      "local_filament_id": 1
+    }
+  ],
+  "filament_changes": 0,
+  "wall_loops": 4,
+  "infill_density": "25%",
+  "source_mesh_hashes": {
+    "parts/Garage_BackWall__black.stl": "19c874244fd2b7da2874e6a74c051fe35c3f30aa5f2c5edcf4726ac946724500"
+  },
+  "elapsed_generation_seconds": 1.55
+}

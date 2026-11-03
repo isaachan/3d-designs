@@ -1,0 +1,437 @@
+{
+  "error_string": "Success.",
+  "export_time": 0,
+  "layer_height": 0.20000000298023224,
+  "plate_index": 0,
+  "prepare_time": 163,
+  "return_code": 0,
+  "sliced_plates": [
+    {
+      "feature_type_times": {
+        "Bridge": 362.86016845703125,
+        "Brim": 259.2946472167969,
+        "Custom": 284.2096252441406,
+        "Flush": 29.0,
+        "Gap infill": 14.853229522705078,
+        "Inner wall": 5201.72607421875,
+        "Internal solid infill": 866.5423583984375,
+        "Outer wall": 4383.39892578125,
+        "Sparse infill": 4217.66357421875,
+        "Top surface": 166.5745849609375,
+        "Travel": 3781.649658203125,
+        "Undefined": 3776.98388671875
+      },
+      "filament_change_times": 0,
+      "filaments": [
+        {
+          "filament_id": "GFA00",
+          "id": 1,
+          "main_used_g": 187.821044921875,
+          "total_used_g": 187.821044921875
+        }
+      ],
+      "generate_support_material_time": 642,
+      "id": 1,
+      "infill_time": 1747,
+      "layer_filament_change": 0,
+      "main_predication": 19217.29296875,
+      "make_perimeters_time": 5702,
+      "obj_cached_cnt": 0,
+      "objects": [
+        {
+          "bbox": {
+            "depth": 24.560836791992188,
+            "height": 66.0,
+            "width": 24.561872482299805,
+            "x": 169.9591827392578,
+            "y": 175.7034454345703,
+            "z": 0.0
+          },
+          "id": 5,
+          "name": "B1_original_standard_segment_2",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 24.56083869934082,
+            "height": 66.0,
+            "width": 24.561872482299805,
+            "x": 169.9591827392578,
+            "y": 153.7079620361328,
+            "z": 0.0
+          },
+          "id": 9,
+          "name": "B1_original_standard_segment_1",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 23.24659538269043,
+            "height": 66.0,
+            "width": 23.24477767944336,
+            "x": 148.6219024658203,
+            "y": 176.3628692626953,
+            "z": 0.0
+          },
+          "id": 13,
+          "name": "A2_Column_1",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 19.997764587402344,
+            "height": 66.0,
+            "width": 19.995532989501953,
+            "x": 150.24649047851562,
+            "y": 155.994140625,
+            "z": 0.0
+          },
+          "id": 17,
+          "name": "A2_Column_2",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 23.24478530883789,
+            "height": 66.0,
+            "width": 23.246585845947266,
+            "x": 170.61727905273438,
+            "y": 132.37440490722656,
+            "z": 0.0
+          },
+          "id": 21,
+          "name": "A2_Column_3",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 27.82539939880371,
+            "height": 66.0,
+            "width": 27.824832916259766,
+            "x": 124.33633422851562,
+            "y": 174.07431030273438,
+            "z": 0.0
+          },
+          "id": 25,
+          "name": "A4_Column_2",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 23.246597290039062,
+            "height": 66.0,
+            "width": 23.244779586791992,
+            "x": 148.6219024658203,
+            "y": 132.3757781982422,
+            "z": 0.0
+          },
+          "id": 29,
+          "name": "A4_Column_3",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 19.997766494750977,
+            "height": 66.0,
+            "width": 19.995532989501953,
+            "x": 128.25099182128906,
+            "y": 155.99314880371094,
+            "z": 0.0
+          },
+          "id": 33,
+          "name": "A4_Column_1",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 27.86176300048828,
+            "height": 66.0,
+            "width": 27.8623046875,
+            "x": 124.31855773925781,
+            "y": 130.06578063964844,
+            "z": 0.0
+          },
+          "id": 37,
+          "name": "A3_Column_1",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 27.862308502197266,
+            "height": 66.0,
+            "width": 27.861764907836914,
+            "x": 168.30825805664062,
+            "y": 108.06924438476562,
+            "z": 0.0
+          },
+          "id": 41,
+          "name": "A3_Column_2",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 23.123870849609375,
+            "height": 66.0,
+            "width": 23.125688552856445,
+            "x": 104.69302368164062,
+            "y": 176.42384338378906,
+            "z": 0.0
+          },
+          "id": 45,
+          "name": "A3_Column_3",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 22.198192596435547,
+            "height": 66.0,
+            "width": 22.196880340576172,
+            "x": 149.146240234375,
+            "y": 110.90304565429688,
+            "z": 0.0
+          },
+          "id": 49,
+          "name": "B3_original_standard_segment_2",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 22.198198318481445,
+            "height": 66.0,
+            "width": 22.19687843322754,
+            "x": 105.1552505493164,
+            "y": 154.89173889160156,
+            "z": 0.0
+          },
+          "id": 53,
+          "name": "B3_original_standard_segment_1",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 19.99776268005371,
+            "height": 66.0,
+            "width": 19.99553108215332,
+            "x": 128.25099182128906,
+            "y": 112.00605773925781,
+            "z": 0.0
+          },
+          "id": 57,
+          "name": "A1_Column_1",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 19.997756958007812,
+            "height": 66.0,
+            "width": 19.99552345275879,
+            "x": 106.25550842285156,
+            "y": 133.99783325195312,
+            "z": 0.0
+          },
+          "id": 61,
+          "name": "A1_Column_3",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 28.259689331054688,
+            "height": 66.0,
+            "width": 28.259809494018555,
+            "x": 80.13155364990234,
+            "y": 173.85406494140625,
+            "z": 0.0
+          },
+          "id": 65,
+          "name": "A1_Column_2",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 27.53905487060547,
+            "height": 66.0,
+            "width": 27.539533615112305,
+            "x": 80.48959350585938,
+            "y": 152.22250366210938,
+            "z": 0.0
+          },
+          "id": 69,
+          "name": "B2_original_standard_segment_1",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 27.53953742980957,
+            "height": 65.99999237060547,
+            "width": 27.5390625,
+            "x": 168.47320556640625,
+            "y": 86.2345199584961,
+            "z": 1.4697263850393938e-08
+          },
+          "id": 73,
+          "name": "B2_original_standard_segment_2",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 19.997758865356445,
+            "height": 66.0,
+            "width": 19.99555206298828,
+            "x": 150.24649047851562,
+            "y": 90.00914001464844,
+            "z": 0.0
+          },
+          "id": 77,
+          "name": "C_original_standard_segment_1",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 27.522323608398438,
+            "height": 66.0,
+            "width": 27.52303695678711,
+            "x": 102.49281311035156,
+            "y": 108.243896484375,
+            "z": 0.0
+          },
+          "id": 81,
+          "name": "C_original_standard_segment_2",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 27.522321701049805,
+            "height": 66.0,
+            "width": 27.52303695678711,
+            "x": 124.48831176757812,
+            "y": 86.25212860107422,
+            "z": 0.0
+          },
+          "id": 85,
+          "name": "C_original_standard_segment_3",
+          "triangle_count": 1888
+        },
+        {
+          "bbox": {
+            "depth": 19.266048431396484,
+            "height": 33.0,
+            "width": 19.26554298400879,
+            "x": 175.6091766357422,
+            "y": 71.37594604492188,
+            "z": 0.0
+          },
+          "id": 89,
+          "name": "A4_Column_4",
+          "triangle_count": 836
+        },
+        {
+          "bbox": {
+            "depth": 19.393596649169922,
+            "height": 33.0,
+            "width": 19.393138885498047,
+            "x": 159.5441436767578,
+            "y": 71.31047058105469,
+            "z": 0.0
+          },
+          "id": 93,
+          "name": "A2_Column_4",
+          "triangle_count": 836
+        },
+        {
+          "bbox": {
+            "depth": 18.463088989257812,
+            "height": 33.0,
+            "width": 18.463638305664062,
+            "x": 144.01235961914062,
+            "y": 71.7776870727539,
+            "z": 0.0
+          },
+          "id": 97,
+          "name": "B3_original_top_cap",
+          "triangle_count": 836
+        },
+        {
+          "bbox": {
+            "depth": 19.59619903564453,
+            "height": 33.0,
+            "width": 19.59588050842285,
+            "x": 127.4481201171875,
+            "y": 71.20909881591797,
+            "z": 0.0
+          },
+          "id": 101,
+          "name": "A3_Column_4",
+          "triangle_count": 836
+        },
+        {
+          "bbox": {
+            "depth": 17.5244140625,
+            "height": 33.0,
+            "width": 17.52511215209961,
+            "x": 112.48350524902344,
+            "y": 72.24726104736328,
+            "z": 0.0
+          },
+          "id": 105,
+          "name": "B1_original_top_cap",
+          "triangle_count": 836
+        },
+        {
+          "bbox": {
+            "depth": 15.780359268188477,
+            "height": 33.0,
+            "width": 15.779461860656738,
+            "x": 177.3522186279297,
+            "y": 57.121070861816406,
+            "z": 0.0
+          },
+          "id": 109,
+          "name": "B2_original_top_cap",
+          "triangle_count": 836
+        },
+        {
+          "bbox": {
+            "depth": 19.042064666748047,
+            "height": 33.0,
+            "width": 19.04266357421875,
+            "x": 159.71990966796875,
+            "y": 55.48890686035156,
+            "z": 0.0
+          },
+          "id": 113,
+          "name": "A1_Column_4",
+          "triangle_count": 836
+        },
+        {
+          "bbox": {
+            "depth": 13.99842643737793,
+            "height": 33.0,
+            "width": 13.9968843460083,
+            "x": 112.54180908203125,
+            "y": 96.2933578491211,
+            "z": 0.0
+          },
+          "id": 117,
+          "name": "C_original_top_cap",
+          "triangle_count": 836
+        }
+      ],
+      "sliced_time": 18764,
+      "sliced_time_with_cache": 9140,
+      "total_predication": 19554.8359375,
+      "triangle_count": 46336,
+      "warning_message": ""
+    }
+  ],
+  "sparse_infill_density": 25.0,
+  "upward_compatible_machine": [
+    "Bambu Lab A1 0.4 nozzle",
+    "Bambu Lab P2S 0.4 nozzle",
+    "Bambu Lab H2S 0.4 nozzle",
+    "Bambu Lab H2D 0.4 nozzle",
+    "Bambu Lab H2D Pro 0.4 nozzle",
+    "Bambu Lab H2C 0.4 nozzle",
+    "Bambu Lab A2L 0.4 nozzle"
+  ],
+  "wall_loops": 4
+}

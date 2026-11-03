@@ -1,0 +1,742 @@
+{
+  "status": "passed",
+  "source_unchanged": true,
+  "print_parts": 146,
+  "all_mechanical_parts_connected": true,
+  "isolated_color_islands": false,
+  "maximum_color_overlap_mm3": 0.002928102563600987,
+  "scope": "CAD connectedness, closed BRep and colour-volume contacts; physical fit and strength remain untested.",
+  "parts": [
+    {
+      "part": "base_underpad_1",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "base_underpad_2",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "base_underpad_3",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "base_underpad_4",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "foundation_1_1",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": -1.0477378964424133e-09
+    },
+    {
+      "part": "foundation_1_2",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": -5.678099114447832e-06
+    },
+    {
+      "part": "foundation_2_1",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "foundation_2_2",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "foundation_3_1",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "foundation_3_2",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "deck_2F_aisle",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": -1.1641532182693481e-10
+    },
+    {
+      "part": "deck_2F_bays",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": -1.228967448696494e-06
+    },
+    {
+      "part": "deck_3F_aisle",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 2.9103830456733704e-11
+    },
+    {
+      "part": "deck_3F_bays",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": -1.7925049178302288e-05
+    },
+    {
+      "part": "deck_4F_aisle",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "deck_4F_bays",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": -1.3811077224090695e-05
+    },
+    {
+      "part": "foundation_glue_strap_1",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "foundation_glue_strap_2",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "foundation_glue_strap_3",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "foundation_glue_strap_4",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "foundation_glue_strap_5",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "foundation_glue_strap_6",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "foundation_glue_strap_7",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "road_1_1",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": -0.002922011088230647
+    },
+    {
+      "part": "road_1_2",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": -0.001981643494218588
+    },
+    {
+      "part": "road_1_3",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": -0.0001259955606656149
+    },
+    {
+      "part": "road_1_4",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": -0.0019239079265389591
+    },
+    {
+      "part": "road_2_1",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": -0.002928102563600987
+    },
+    {
+      "part": "road_2_2",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 5.950278136879206e-08
+    },
+    {
+      "part": "road_2_3",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": -0.00012893749226350337
+    },
+    {
+      "part": "road_2_4",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": -0.0019183518452337012
+    },
+    {
+      "part": "road_3_1",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": -0.0029278503207024187
+    },
+    {
+      "part": "road_3_2",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 5.8964360505342484e-08
+    },
+    {
+      "part": "road_3_3",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": -0.00012806770973838866
+    },
+    {
+      "part": "road_3_4",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": -0.0019183508702553809
+    },
+    {
+      "part": "landing_1F",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 1.3096723705530167e-09
+    },
+    {
+      "part": "landing_2F",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 4.540197551250458e-09
+    },
+    {
+      "part": "landing_3F",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 4.598405212163925e-09
+    },
+    {
+      "part": "landing_4F",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": -2.051820047199726e-09
+    },
+    {
+      "part": "FootPad_1",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "FootPad_2",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "FootPad_3",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "FootPad_4",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "A1_Column_1",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "A1_Column_2",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "A1_Column_3",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "A1_Column_4",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "A2_Column_1",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "A2_Column_2",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "A2_Column_3",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "A2_Column_4",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "A3_Column_1",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "A3_Column_2",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "A3_Column_3",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "A3_Column_4",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "A4_Column_1",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "A4_Column_2",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "A4_Column_3",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "A4_Column_4",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "B1_height_set_foot",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "B1_original_standard_segment_1",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "B1_original_standard_segment_2",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "B1_original_top_cap",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "B1_Level1_bearing_tab_arm",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "B1_Level2_bearing_tab_arm",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "B1_Level3_bearing_tab_arm",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "B2_height_set_foot",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "B2_original_standard_segment_1",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "B2_original_standard_segment_2",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "B2_original_top_cap",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "B2_Level1_bearing_tab_arm",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "B2_Level2_bearing_tab_arm",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "B2_Level3_bearing_tab_arm",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "B3_height_set_foot",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "B3_original_standard_segment_1",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "B3_original_standard_segment_2",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "B3_original_top_cap",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "B3_Level1_bearing_tab_arm",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "B3_Level2_bearing_tab_arm",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "B3_Level3_bearing_tab_arm",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "C_sign_base_adapter",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "C_original_standard_segment_1",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "C_sign_spacer_1",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "C_original_standard_segment_2",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "C_sign_spacer_2",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "C_original_standard_segment_3",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "C_sign_spacer_3",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "C_original_top_cap",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "Garage_BackWall",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "TopBillboard",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 7.040740456432104e-06
+    },
+    {
+      "part": "BillboardPost_28",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "BillboardPost_151",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "SideSignBlue",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 4.812946963284048e-05
+    },
+    {
+      "part": "SideSignFrame",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "FloorLabel_2",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": -6.755251433787635e-07
+    },
+    {
+      "part": "FloorLabel_3",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 7.086035793690826e-07
+    },
+    {
+      "part": "FloorLabel_4",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "billboard_glue_strap_29.5_217",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "billboard_glue_strap_29.5_248",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "billboard_glue_strap_152.5_217",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "billboard_glue_strap_152.5_248",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "backwall_angle_1",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "backwall_angle_2",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "backwall_angle_3",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "joint_coupon_1",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "joint_coupon_2",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_01",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_02",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_03",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_04",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_05",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_06",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_07",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_08",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_09",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_10",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_11",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_12",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_13",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_14",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_15",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_16",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_17",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_18",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_19",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_20",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_21",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_22",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_23",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_24",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_25",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_26",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_27",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_28",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_29",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_30",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_31",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_32",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_33",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_34",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_35",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_36",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_37",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_38",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_39",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    },
+    {
+      "part": "alignment_pin_40",
+      "valid_closed_single_solid": true,
+      "color_volume_overlap_mm3": 0.0
+    }
+  ],
+  "seconds": 44.4046311378479
+}
