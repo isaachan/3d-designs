@@ -2,28 +2,11 @@
 
 当前采用**黑色书架主体＋齐平内嵌三色饰片**。正式源文件是[cad/garage-bookshelf-v5-assembly.FCStd](cad/garage-bookshelf-v5-assembly.FCStd)。
 
-2026-11-02新增[四个背面胶粘连接片](printing/reinforcement-2026-11-02/README.md)：两条主体拼缝各上、下两片，均为60×30×3mm。只需加打一盘连接片，原有主体及15盘均可继续使用；当前CAD为42个打印件、51个Body。
+当前打印文件：[主体及饰片15盘](printing/current/README.md)＋[连接片补充盘](printing/reinforcement-2026-11-02/README.md)。
 
-[当前完整15盘](printing/current/README.md)包含齐平修正的05、06、13、14、15和原样合并的其他十盘，共38个打印件。正在打印的其他零件无需重印，手动调整过的03盘保留原位置；旧外贴版和重复输出已删除。
+[当前状态](PROJECT_STATUS.md) · [装配](docs/assembly.md) · [打印](docs/printing.md) · [维护](docs/maintenance.md) · [变更记录](CHANGELOG.md)
 
-两半书架增加0.6mm深承托凹槽，12片0.6mm饰片齐平装入；1.5mm宽承托台阶内另设0.2mm胶槽。05/06采用0.20mm层高、4圈墙、25%填充。先拼好两半书架，再干装和粘接饰片。CAD、几何和重开切片检查见修正包；实物试配、粘接和载荷尚待验证。
-
-仍保留49cm主体、四层2/2/3/3共10槽、6.6mm层板、1.6mm托座槽、M3螺钉可换字牌、缩短竖杆和M Power配色。
-[当前状态](PROJECT_STATUS.md) · [装配](docs/assembly.md) · [打印](docs/printing.md) · [维护](docs/maintenance.md)
-
-| 目录 | 内容 |
-|---|---|
-| `cad/` | 正式CAD及42件尺寸/角色合同 |
-| `src/garage_bookshelf/` | 共用原生建模、外观、验证及打印库 |
-| `tools/` | 验证、导出、渲染、排盘和打包入口 |
-| `assets/` | 冻结字形与打印预设 |
-| `printing/projects/` | 人工维护的3MF；生成器不覆盖 |
-| `studies/` | 车型、结构与配合试件 |
-| `build/` | 可再生成输出与临时切片结果，忽略提交 |
-| `printing/current/` | 当前完整15盘、CAD及验证记录 |
-| `printing/reinforcement-2026-11-02/` | 新增第16盘，仅四个连接片及其验证记录 |
-| `archive/` | 原始CAD、旧计划及历史记录 |
-| `docs/` | 当前设计、装配、打印及配色说明 |
+目录结构与文件用途统一遵循[项目总览中的版本目录规约](../README.md#版本目录规约从v5开始)。
 
 ## 常用命令
 
@@ -42,4 +25,3 @@ python3 tools/make_print_projects.py --export-dir build/<run>/export --output bu
 
 完整历史重建器尚未追平当前设计，不用于覆盖主CAD；当前原生CAD可以直接修改参数和重算。
 `tools/implement_separate_skins.py`和`tools/implement_flush_inlays.py`是已执行的一次性迁移，普通维护不重复执行。
-[CHANGELOG.md](CHANGELOG.md)记录设计沿革。当前只保留一套完整15盘及正在使用的十盘个人文件，旧外贴版和重复试验已删除。

@@ -1,10 +1,10 @@
-# v4 M Power 黑色配色 · 2026-10-26
+# v5 M Power 配色与制造
 
-正式主模型：`../cad/garage-bookshelf-v5-assembly.FCStd`。以实际 CAD 为结构依据，将用户确认的黑色效果图方案应用为原生外观；白色方案不再使用。
+正式主模型：[garage-bookshelf-v5-assembly.FCStd](../cad/garage-bookshelf-v5-assembly.FCStd)。当前采用黑色主体与齐平内嵌三色饰片；各部位的制造方式见下文。
 
 | 位置 | 颜色 |
 | --- | --- |
-| 主体、书架、圆柱、横牌底板 | 黑 `#16181B` |
+| 主体、书架、圆柱、横牌底板、背面连接片 | 黑 `#16181B` |
 | 停车托座槽底 | 更深黑 `#0E1013` |
 | 三块悬空层板外缘，自下而上 | 浅蓝 `#39A9DB`、深蓝 `#151B65`、红 `#ED242A` |
 | 书架三色带，自左至右 | 浅蓝、深蓝、红，实际宽度 1∶1∶1 |
@@ -16,21 +16,26 @@
 
 这些 HEX 值是本方案的颜色目标，并非官方色卡或已选定的耗材色号。
 
-2026-10-26 追加确认：右侧口号灯箱也去掉小三色标。历史入口 `archive/migrations/update_plain_side_sign.py`，检查见 `../archive/reports/plain-side-sign-validation.json`；书架主体三色带、层板边和横牌支架颜色不变。
+## 实体饰片与表面配色
+
+书架三色带由`BookColorSkins`组中的12个独立实体饰片组成。浅蓝、深蓝、红色各4片，分别覆盖背板、底板、顶沿和前沿。饰片厚0.6mm，装入黑色书架主体的承托槽后与表面齐平；05/06打印黑色主体，13–15分别打印三种颜色的饰片。装配方法见[装配说明](assembly.md)。
+
+广告支架的浅蓝、红色区域仍使用零厚度外观面显示。保存带色3MF时，这些区域映射为支架网格上的打印涂色，不增加实体零件；`appearance_graphics()`仅选取这类广告支架色面。
+
+层板边、停车标线和文字等其他多色部位沿用CAD实体面的配色，最终保存到带色3MF中。常规STL只包含几何，不包含这些颜色信息。
+
+旧书架零厚度色面保留为隐藏构造参考，不作为可见饰片或独立打印件导出。`DisplayOffset = 0.01 mm`用于外观色面的显示偏移，饰片厚度和安装间隙由实体参数控制。
 
 ## 等宽与编辑
 
-`MPowerAppearance` 组内的 `MColorParameters` 表保存共用参数：`StripeWidth = 36 mm`、`Slope = 0.6`。三个颜色均由同一个宽度参数驱动。面上横截距 `Pitch = StripeWidth*sqrt(1+Slope^2)`，因此沿板面垂直条带方向测量的实际宽度全部为36mm。边界平行；背板与底板在折线处镜像衔接；颜色延伸到背板顶边及底板前沿外边缘。实际F接头前表面的0.2mm高差也有对应外观色面，未覆盖或改掉接头。
+`MPowerAppearance`组内的`MColorParameters`表保存共用条带参数：`StripeWidth = 36 mm`、`Slope = 0.6`。三个颜色均由同一个宽度参数驱动。面上横截距`Pitch = StripeWidth*sqrt(1+Slope^2)`，因此沿板面垂直条带方向测量的实际宽度全部为36mm。背板与底板上的条带在折线处镜像衔接。
 
-可双击该表修改 `StripeWidth` 后重算。所有新草图完全约束，面由 FreeCAD 自带的 SubShapeBinder、MultiFuse 和 Common 计算，无外部纹理、网格或自定义Python特征代理依赖。
+`SkinParameters`控制实体饰片的厚度、承托宽度、胶槽、侧边及转角间隙。饰片使用原生特征建立，不依赖外部纹理或自定义Python特征代理。参数与模型维护要求见[CAD说明](../cad/README.md)。
 
-图案是零厚度外观面，不是新增打印件或材料层。`DisplayOffset = 0.01 mm` 只让色面略离开原面以避免深度缓冲闪烁，不改变任何Body的实体或承重厚度。单件制造仍以原Body为准；带色3MF把这些面的颜色区域映射到原网格的三角涂色树，不把外观面作为实体STL导出。
+在FreeCAD中编辑上述参数表后重算、保存并重新验证；条带宽度和斜率变化后，也应重新检查饰片与主体承托槽的配合。
 
-
-## 维护
+## 预览与打印
 
 当前维护入口为`garage_bookshelf.appearance.view.review()`；它调用已拆出的palette模块，不调用历史升级脚本。
 默认不保存CAD。使用`tools/render.py`生成只读预览，输出进入`build/`。
-[当前完整15盘](../printing/current/README.md)保留实际Bambu配色。05/06为黑色主体，13–15分别为浅蓝、深蓝、红色饰片；其他盘保留原配色。
-
-12个饰片Body已修正为齐平内嵌，胶槽与承托台阶分开。旧书架零厚度色面只作隐藏构造参考，`appearance_graphics()`只保留广告支架外观面。旧外贴版和无色成本包已删除。
+[主体及饰片15盘](../printing/current/README.md)保留实际Bambu配色；背面连接片为黑色单色打印。实际耗材槽位和打印配色以交付3MF为准。设计沿革见[CHANGELOG.md](../CHANGELOG.md)。
