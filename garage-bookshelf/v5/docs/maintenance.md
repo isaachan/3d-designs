@@ -41,7 +41,7 @@ python3 tools/verify_printing.py
 
 先按[定制需求说明](customization.md)收集文字、车型实测和试配条件，再按[文字载板规范](interfaces/sign-carriers.md)或[车型卡槽规范](interfaces/parking-inserts.md)制作。两种广告牌接口分别维护；新增文字或车型通常只增加定制款，不创建新的主体版本。
 
-车型卡槽必须沿用`studies/parking-tray-fit-2026-10-26/`的方法。原脚本只检查通用底脚；最终车型件必须进入同样的验证流程，不能仅运行原脚本就宣称定制件通过。
+车型卡槽必须沿用[BMW Z4 E89实测四轮弧形槽方法](interfaces/parking-inserts.md)，实现参考为`studies/measured-tray-s51-b23-d10-t5p1/build_tray.py`。采集该车型的七项轮胎实测值，参数化推导轴距、轮距和轮心，保留通用底脚，完成四轮净空、十车位和单托座重开切片检查；未知的车型尺寸不能以外观估计值代替。
 
 每款记录源文件、接口版本、CAD和3MF哈希、打印参数、验证范围及实物试配状态。既有试件资料可以参考，但不能代替统一规范的检查。批准后把选定文件放入对应的`printing/`组件目录，并更新`printing/catalog.json`。
 

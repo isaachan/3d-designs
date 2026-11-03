@@ -386,20 +386,13 @@
   ],
   "parking_inserts": [
     {
-      "id": "mazda-mx5",
-      "project": "parking-inserts/mazda-mx5/enchery-1-65-mazda-mx5-parking-tray-preview.3mf",
-      "sha256": "8289696db461a35ec83a9d1736a28f32407c75250e5ecccdd4884fe64979ce76",
-      "evidence": "archive/printing/hand-edited-projects/enchery-1-65-mazda-mx5-parking-tray-preview.json",
-      "interface": "parking-base-v1",
-      "validation_status": "existing-prototype; prescribed-two-object-fit-workflow-pending"
-    },
-    {
       "id": "bmw-z4-e89",
       "project": "parking-inserts/bmw-z4-e89/parking-tray-s51-b23-d10-t5p1.3mf",
       "sha256": "70f09505bcd981d68c135e440a1f718b3d8acfc308dca25d56e5def70a9f933b",
       "evidence": "studies/measured-tray-s51-b23-d10-t5p1/validation.json",
       "interface": "parking-base-v1",
-      "validation_status": "existing-prototype; prescribed-two-object-fit-workflow-pending"
+      "validation_status": "native-parameter-four-wheel-ten-bay-and-single-project-checks-passed; lettered-physical-fit-pending",
+      "design_method": "bmw-z4-e89-measured-wheel-cradle-v1"
     }
   ],
   "files": {
@@ -445,8 +438,6 @@
     "sign-carriers/upper/personal/10-top-carrier-mpower.3mf": "b0d34b009bc326d7703a4fbdb4147ac3e4ce73a13cc30df66bdaaa240b07edea",
     "main/personal/11-side-receiver-mpower.3mf": "3a10f0b5f30f731152689903f5901ef0f166ae894bb7a576773ebe2265f4c008",
     "sign-carriers/side/personal/12-side-cartridge-mpower.3mf": "39bea970a54922f3c054960e72697ee6972a3c72fa9e108744a8df28b533f6f3",
-    "parking-inserts/mazda-mx5/enchery-1-65-mazda-mx5-parking-tray-preview.3mf": "8289696db461a35ec83a9d1736a28f32407c75250e5ecccdd4884fe64979ce76",
-    "parking-inserts/mazda-mx5/top-fit-preview.png": "ea9d7fde77ab0d1ad8b67fbe0a15fd155f2ef89bda0ac8384b3d19d14f848de4",
     "parking-inserts/bmw-z4-e89/parking-tray-s51-b23-d10-t5p1.3mf": "70f09505bcd981d68c135e440a1f718b3d8acfc308dca25d56e5def70a9f933b",
     "parking-inserts/bmw-z4-e89/tray-preview.png": "dce162a2464936e4d36757a48404ca5d47ca6bd41296594adfc79ec23fd49d24",
     "main/rear-installation.png": "deeb0b9a18b1007048604e6aabd59575db7d1d35e993c7df7dda66695892a979"
@@ -663,16 +654,6 @@
       "source": "archive/printing/2026-10-29-personal/3mf/12-side-cartridge-mpower.3mf"
     },
     {
-      "path": "parking-inserts/mazda-mx5/enchery-1-65-mazda-mx5-parking-tray-preview.3mf",
-      "sha256": "8289696db461a35ec83a9d1736a28f32407c75250e5ecccdd4884fe64979ce76",
-      "source": "archive/printing/hand-edited-projects/enchery-1-65-mazda-mx5-parking-tray-preview.3mf"
-    },
-    {
-      "path": "parking-inserts/mazda-mx5/top-fit-preview.png",
-      "sha256": "ea9d7fde77ab0d1ad8b67fbe0a15fd155f2ef89bda0ac8384b3d19d14f848de4",
-      "source": "studies/enchery-mx5-tray-2026-10-29/top-fit-preview.png"
-    },
-    {
       "path": "parking-inserts/bmw-z4-e89/parking-tray-s51-b23-d10-t5p1.3mf",
       "sha256": "70f09505bcd981d68c135e440a1f718b3d8acfc308dca25d56e5def70a9f933b",
       "source": "studies/measured-tray-s51-b23-d10-t5p1/parking-tray-s51-b23-d10-t5p1.3mf"
@@ -689,5 +670,19 @@
     }
   ],
   "physical_print_and_fit_tested": false,
-  "note": "目录整理不构成新的CAD、切片或实物验证；旧记录按原样归档。"
+  "note": "当前车型卡槽采用BMW Z4 E89实测四轮弧形槽方法；已否定车型的文件和全部引用已删除。主体及保留打印件未改，未重新执行CAD、切片或实物验证。",
+  "parking_insert_design_method": {
+    "id": "bmw-z4-e89-measured-wheel-cradle-v1",
+    "reference": "studies/measured-tray-s51-b23-d10-t5p1/README.md",
+    "generator": "studies/measured-tray-s51-b23-d10-t5p1/build_tray.py",
+    "measurements": [
+      "S",
+      "Bf",
+      "Br",
+      "Df",
+      "Dr",
+      "Tf",
+      "Tr"
+    ]
+  }
 }

@@ -676,8 +676,6 @@
       "printing/mpower-color-preview-2026-10-29/3mf/12-side-cartridge-mpower.3mf": "39bea970a54922f3c054960e72697ee6972a3c72fa9e108744a8df28b533f6f3",
       "printing/mpower-color-preview-2026-10-29/3mf/08-top-segments-mpower.3mf": "1ec8d31a3fd7d6f648a3b02d1ed5de4425f95a1449d3365a9e65d55a2aca197b",
       "printing/mpower-color-preview-2026-10-29/3mf/02-garage-deck-2-mpower.3mf": "11d6dbe107d24c6180f189382268d8976c1e70c9543aa38c5f9d49efcff55f6e",
-      "printing/projects/enchery-1-65-mazda-mx5-parking-tray-preview.json": "11fd1aa0003e3659cb7bbcd03a356356f0b5eafabf446af60303c148d270b22d",
-      "printing/projects/enchery-1-65-mazda-mx5-parking-tray-preview.3mf": "8289696db461a35ec83a9d1736a28f32407c75250e5ecccdd4884fe64979ce76",
       "cad/garage-bookshelf-v5-assembly.FCStd": "12ed8a464d63924de1e272cea81139c8cc8eddcc101a1c01969092c3da89833e"
     },
     "corrected_five_project_sha256": {
@@ -692,5 +690,9 @@
     "ten_reused_plates_meshes_byte_identical": true
   },
   "current_release_plate_count": 15,
-  "complete_print_manifest": "printing/current/manifest.json"
+  "complete_print_manifest": "printing/current/manifest.json",
+  "record_maintenance": {
+    "date": "2026-11-03",
+    "reason": "Removed references to a rejected vehicle prototype; retained model checks were not rerun."
+  }
 }

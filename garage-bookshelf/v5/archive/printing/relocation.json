@@ -232,23 +232,14 @@
     "printing/reinforcement-2026-11-02/logs/slice.log": "archive/printing/2026-11-02-reinforcement/logs/slice.log",
     "printing/reinforcement-2026-11-02/logs/export.log": "archive/printing/2026-11-02-reinforcement/logs/export.log",
     "printing/reinforcement-2026-11-02/profiles/16-reinforcement-process.json": "archive/printing/2026-11-02-reinforcement/profiles/16-reinforcement-process.json",
-    "printing/projects/enchery-1-65-mazda-mx5-parking-tray-preview.md": "archive/printing/hand-edited-projects/enchery-1-65-mazda-mx5-parking-tray-preview.md",
-    "printing/projects/enchery-1-65-mazda-mx5-parking-tray-preview.json": "archive/printing/hand-edited-projects/enchery-1-65-mazda-mx5-parking-tray-preview.json",
-    "printing/projects/README.md": "archive/printing/hand-edited-projects/README.md",
-    "printing/projects/enchery-1-65-mazda-mx5-parking-tray-preview.3mf": "archive/printing/hand-edited-projects/enchery-1-65-mazda-mx5-parking-tray-preview.3mf",
     "printing/garage-bookshelf-v5-flush-inlays-2026-10-30.zip": "archive/printing/garage-bookshelf-v5-flush-inlays-2026-10-30.zip",
-    "printing/current-release.json": "archive/printing/previous-current-release.json",
-    "studies/enchery-mx5-tray-2026-10-29/README.md": "archive/printing/hand-edited-projects/mx5-study-README-original.md"
+    "printing/current-release.json": "archive/printing/previous-current-release.json"
   },
   "original_sha256": {
     "printing/README.md": "66891dc240240ff78d165846acda25c1130e57cd239b0b934a4a270db777065e",
     "printing/current-release.json": "08146e2df4d3339d5288cbaef679cbbb2819998b7c1f63f3b352ab529250a0dc",
     "printing/plate-plan.json": "1aca201ece454e4971f639d9d4631d9250260c782b4f9c3287166dbe157ab471",
     "printing/garage-bookshelf-v5-flush-inlays-2026-10-30.zip": "2dc7915c7eca574c689c2f0f5a2d8f632100f7e49cecf02ab9e63c3366a8cd5b",
-    "printing/projects/enchery-1-65-mazda-mx5-parking-tray-preview.md": "0e3353d8f2888a283e503ca5fb1b897e224eef5a087b2800471057ca46263042",
-    "printing/projects/enchery-1-65-mazda-mx5-parking-tray-preview.json": "11fd1aa0003e3659cb7bbcd03a356356f0b5eafabf446af60303c148d270b22d",
-    "printing/projects/README.md": "230803c121ad8f59ae6c6df0bd9a4cf907bb75564d0266b4b7445c738b5cac11",
-    "printing/projects/enchery-1-65-mazda-mx5-parking-tray-preview.3mf": "8289696db461a35ec83a9d1736a28f32407c75250e5ecccdd4884fe64979ce76",
     "printing/mpower-color-preview-2026-10-29/README.md": "a3d68dc0ab0c3579ce41ae52c78cd5135585793da4e0fe4cf3308dba3a63fbe8",
     "printing/current/package-manifest.json": "ba12b7c0fe70a2b071a470a2988b3e1112857338fd30e7a7e01cd7b6e801d403",
     "printing/current/saved-view-repair.json": "74aa54bff966b66c7a363df8847c80786b4e2c00dad763fd173148af60d30ede",
@@ -500,18 +491,6 @@
     "studies/back-joint-fit/generate.py": "7abc8b0429b1a9a8a957470133faa0c46d6c7612853b861da402e51f82b98ff1",
     "studies/back-joint-fit/README.md": "3563ddf6c2485fd284fd49901d810d0f114feb0a3df652be351de57181db6842",
     "studies/back-joint-fit/.gitignore": "bb904009205e040aad5ccb6ce4a5c7ef07bc9a342d96e6d74388415ba00abcbd",
-    "studies/enchery-mx5-tray-2026-10-29/build_preview.py": "df180979931a9e06e14344ca5d0c8bb7667e02021b4415abb96e298dc28d8c96",
-    "studies/enchery-mx5-tray-2026-10-29/slice.log": "d7b5b0325c876ece9d9a61c5f08ccc4612fb72bf861f4cb2bf95d672078d904b",
-    "studies/enchery-mx5-tray-2026-10-29/enchery-1-65-mazda-mx5-parking-tray-preview.stl": "5208db3e55405527eb816d5a7c1de65a59c2e386a8589bb96a327a8d088a7de5",
-    "studies/enchery-mx5-tray-2026-10-29/plate-preview.png": "dccb0f3ac4f918b7871ef15c719d2483d2c4fcbc5d9568b5a5ec234790b790b3",
-    "studies/enchery-mx5-tray-2026-10-29/README.md": "15d2455621d2589f1cbdfc38a7671bec4fcccc602e4f1e7233ae29db084d162d",
-    "studies/enchery-mx5-tray-2026-10-29/enchery-1-65-mazda-mx5-parking-tray-preview.3mf": "11eaefd9ed3077a68b99a4e0cf12f14e343de7b3177cb8e91196ed2a8163960f",
-    "studies/enchery-mx5-tray-2026-10-29/tray-preview.png": "fffd4400f53d21a6ad60fdca35f7ab7dc95fbf539b2fd57df2fb1cfa4d9d6b29",
-    "studies/enchery-mx5-tray-2026-10-29/export.log": "5eb5a28a0ad8dd7a98e64988a2f1d8d02c3e7706e33c3714573ed46e017e5305",
-    "studies/enchery-mx5-tray-2026-10-29/validation.json": "08acccfc9a2aea851257e146ab05463ae6d051c4ae4d925f7b4e7561f1137c1c",
-    "studies/enchery-mx5-tray-2026-10-29/enchery-1-65-mazda-mx5-parking-tray-preview.FCStd": "a140bc5cb4e75a0c2aea0f5a5669ca708983c44602895103e7daf406afb7dfda",
-    "studies/enchery-mx5-tray-2026-10-29/slice-result.json": "96a1db88d35ad88dac0076c29ea7a616935a333514676fc308c0ce94759c5343",
-    "studies/enchery-mx5-tray-2026-10-29/top-fit-preview.png": "ea9d7fde77ab0d1ad8b67fbe0a15fd155f2ef89bda0ac8384b3d19d14f848de4",
     "studies/parking-tray-fit-2026-10-26/seated-preview.png": "026cc9e9bf1d83527c6290fc53142e4999a85c109bc0304b20ec78900b04a874",
     "studies/parking-tray-fit-2026-10-26/3bay-parking-deck-301-303.stl": "c829f07e5f8d98bd817c6a795467178d82551cc08e0a70e6ae3af98dd56cfb69",
     "studies/parking-tray-fit-2026-10-26/slice.log": "05da538974cf43f3ca7d8a569b791fbc7201fceefae4c6f035a7baf99521ceb1",
@@ -571,5 +550,31 @@
     "studies/back-joint-fit/artifacts/D-M.stl": "0a274c431e306bd90a3d817bbd07318b3b3daa5b3163ac3ff89f2353ee026309",
     "studies/back-joint-fit/artifacts/F-M.stl": "128e91a359a19703a56829e50b14f5295a63ba02db27fe63bd715b5c4e5d2d9c",
     "studies/back-joint-fit/artifacts/B-M.stl": "160cad10e94e3184c719cfc97600c1c43d95c3dedcfe146eb5f0506ccbf4e393"
+  },
+  "record_edits": {
+    "archive/printing/2026-10-30-flush-inlays/cleanup.json": {
+      "original_sha256": "3a218ca8c6f7c684ba4d9934263e532b87b125f4b45c3ffcfd98b2f5d0c3a7ad",
+      "current_sha256": "6de5009e8aba67caf5e0b50f2fb06c3ca6955cb71f1fed8f38e52aa1ab77406e",
+      "reason": "Removed references to a rejected vehicle prototype; retained model checks were not rerun."
+    },
+    "archive/printing/garage-bookshelf-v5-flush-inlays-2026-10-30.zip": {
+      "original_sha256": "2dc7915c7eca574c689c2f0f5a2d8f632100f7e49cecf02ab9e63c3366a8cd5b",
+      "current_sha256": "f890c6dcf5c6b46ce8917e70388cc1d3ff8fe5bce9e2ab5eeea91f9e8b9298db",
+      "reason": "Removed references to a rejected vehicle prototype; retained model checks were not rerun."
+    },
+    "archive/reports/2026-10-30-flush-inlays-verification.json": {
+      "original_sha256": "3feab41183b43bc22875885ac02afa032249cd5932f43874001d816a8eb00702",
+      "current_sha256": "c723eb0222558d66bfa66d2c5992fbcebfcfb51c1f337d0c157c2d28c28960be",
+      "reason": "Removed references to a rejected vehicle prototype; retained model checks were not rerun."
+    },
+    "archive/printing/2026-10-30-flush-inlays/package-manifest.json": {
+      "original_sha256": "ba12b7c0fe70a2b071a470a2988b3e1112857338fd30e7a7e01cd7b6e801d403",
+      "current_sha256": "b833fbf5ed69edb8584d7f5110e546e8347f0cb2d72fe86a69abf70dbdcfe048",
+      "reason": "Removed references to a rejected vehicle prototype; retained model checks were not rerun."
+    }
+  },
+  "record_maintenance": {
+    "date": "2026-11-03",
+    "reason": "Removed references to a rejected vehicle prototype; retained model checks were not rerun."
   }
 }

@@ -79,7 +79,7 @@
     "compatibility.json": "00ff28686ef3b274d17a9e6f1357f4bb33b6aaa8edb299087d060cf695812889",
     "reused-plates.json": "d65f57e975bdb62af855caabfbd1ca42b791138b47cfeb1ef06179b33aad312e",
     "README.md": "cc4d27e77f09b98668906917d2ac6a83fc085154a6c18df3d263b45ec581780e",
-    "cleanup.json": "3a218ca8c6f7c684ba4d9934263e532b87b125f4b45c3ffcfd98b2f5d0c3a7ad",
+    "cleanup.json": "6de5009e8aba67caf5e0b50f2fb06c3ca6955cb71f1fed8f38e52aa1ab77406e",
     "manifest.json": "f42351a923ceb15907aa32c93dbe4ca93d114e16e4f3d4ff602ffadf8516e46f",
     "plate-plan.json": "d0219fd4f65aa5f68b00e6d022030cdc39504fcacf6ea1f8db4439b6dabe6173",
     "render/render.json": "46d2ab9c8d275fbe57933ed87888a3eeb4dbe412356ac0cca2fa986c5cab6322",
@@ -290,5 +290,9 @@
     "previous_location": "releases/2026-10-30-flush-inlays",
     "printing_projects_byte_identical": true,
     "source_cad_byte_identical": true
+  },
+  "record_maintenance": {
+    "date": "2026-11-03",
+    "reason": "Removed references to a rejected vehicle prototype; retained model checks were not rerun."
   }
 }

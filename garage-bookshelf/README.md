@@ -34,7 +34,7 @@
 | `pyproject.toml` | Python工具包配置，与`src/`、`tools/`和`tests/`配套维护。 |
 | `assets/` | 建模和打印所依赖的固定输入资源，如冻结字形、打印预设；生成工具不得覆写这些输入。 |
 | `docs/` | 维护者通过`maintenance.md`修改和生成，组装者通过`assembly.md`、`customization.md`拼装和提出定制需求；设计与接口规范共同引用。 |
-| `docs/interfaces/` | 文字载板与车型卡槽的唯一接口和验证规范；车型卡槽沿用指定的层板＋托座试件方法。 |
+| `docs/interfaces/` | 文字载板与车型卡槽的唯一接口和验证规范；车型卡槽采用BMW Z4 E89实测四轮弧形槽方法。 |
 | `printing/` | 当前文件入口、排盘计划和带哈希的组件清单；直接分为以下三类，不设current或日期交付层。 |
 | `printing/main/` | 主体打印文件及单独标明的个人设置；不含可换文字载板和车型卡槽。 |
 | `printing/sign-carriers/` | 按上方／右侧及款式保存文字载板，说明接口版本和试装状态。 |
