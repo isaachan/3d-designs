@@ -5,6 +5,8 @@
 | 款式 | 文件与说明 | 当前状态 |
 |---|---|---|
 | BMW Z4 E89 | [款式说明](bmw-z4-e89/README.md) | 实测B28无字版尺寸已确认；当前0.4mm凸字版未打印 |
+| Mazda MX5 · r1 | [单件3MF](mazda-mx5/r1/mazda-mx5-r1.3mf) · [说明](mazda-mx5/r1/README.md) · [验证](mazda-mx5/r1/validation.json) | 2026-11-04原生CAD、七项参数往返、轮胎净空、十车位及重开切片通过；实物试配待完成 |
+| BMW M4 · r1 | [单件3MF](bmw-m4/r1/bmw-m4-r1.3mf) · [说明](bmw-m4/r1/README.md) · [验证](bmw-m4/r1/validation.json) | 2026-11-04原生CAD、七项参数往返、轮胎净空、十车位及重开切片通过；实物试配待完成 |
 
 所有新增车型必须采用[BMW Z4 E89的设计方法](../../docs/interfaces/parking-inserts.md)，使用该车型自己的轮胎实测值，不凭外观估算轮心，也不直接套用参考车尺寸。
 

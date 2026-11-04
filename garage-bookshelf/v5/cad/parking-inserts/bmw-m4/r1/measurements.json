@@ -1,0 +1,33 @@
+{
+  "variant": "bmw-m4",
+  "revision": "r1",
+  "model_label": "BMW M4",
+  "interface": "parking-base-v1",
+  "measurements_mm": {
+    "S": 55,
+    "Bf": 32,
+    "Br": 32,
+    "Df": 11.1,
+    "Dr": 11.1,
+    "Tf": 4.2,
+    "Tr": 4.8
+  },
+  "measurement_source": {
+    "type": "user-measured-handwritten-photo",
+    "path": "assets/measurements/parking-inserts-2026-11-04.jpg",
+    "sha256": "1b60e39f312446efadbe07bd0825b9d54a161c9484834e6c0303d4400b26b3b7",
+    "transcribed_on": "2026-11-04"
+  },
+  "measurement_definitions": {
+    "S": "Same-side front tire foremost edge to rear tire rearmost edge",
+    "Bf": "Left-to-right outside tire width at front axle",
+    "Br": "Left-to-right outside tire width at rear axle",
+    "Df": "Front tire outer diameter",
+    "Dr": "Rear tire outer diameter",
+    "Tf": "Single front tire width",
+    "Tr": "Single rear tire width"
+  },
+  "vehicle_body_clearance_mm": null,
+  "vehicle_brand_and_scale": null,
+  "physical_fit_tested": false
+}

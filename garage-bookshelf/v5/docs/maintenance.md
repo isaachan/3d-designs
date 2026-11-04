@@ -45,6 +45,8 @@ python3 tools/verify_printing.py
 
 每款记录源文件、接口版本、CAD和3MF哈希、打印参数、验证范围及实物试配状态。既有试件资料可以参考，但不能代替统一规范的检查。确认保留后按[证据存放规约](../../README.md#当前交付的证据存放规约)把选定文件放入对应款式目录，更新`printing/catalog.json`，并在组件索引提供验证入口。
 
+新增车型可使用`tools/make_parking_insert.py`，输入为独立款式的`measurements.json`及同目录的`model-label-outline.json`；示例及复现命令见[车型CAD索引](../cad/parking-inserts/README.md)。先用系统Python执行`--freeze-label <measurements.json>`冻结Arial Bold车型字形，再用FreeCAD Python执行`--spec <measurements.json> --output build/<新运行名>`。工具按BMW参考方法生成全约束草图和原生Pad/Pocket，验证七项输入往返、轮胎净空、底脚、十车位及单件重开切片；输出目录必须为空，既有BMW参考文件保持原样。
+
 ## 生成、交付与历史资料
 
 自动生成写入新的`build/<运行名>/`，临时切片及G-code放`build/tmp/`。`tools/package_release.py`也只在build内创建候选交付，不覆盖已确认文件；完整命令见打印生成指南。

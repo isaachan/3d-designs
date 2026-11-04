@@ -7,6 +7,8 @@
 | 款式 | 当前唯一可编辑源 | 当前状态 |
 |---|---|---|
 | BMW Z4 E89 | [原生CAD](../../studies/measured-tray-s51-b23-d10-t5p1/parking-tray-s51-b23-d10-t5p1.FCStd) | 实际参数为B28；目录名b23是旧路径，无字B28版尺寸已确认，当前0.4mm凸字版未打印 |
+| Mazda MX5 · r1 | [原生CAD](mazda-mx5/r1/mazda-mx5-r1.FCStd) · [输入与复现](mazda-mx5/r1/README.md) | 使用用户图片中的七项实测值；原生参数、轮胎净空、十车位及重开切片通过，[实物试配待完成](../../printing/parking-inserts/mazda-mx5/r1/README.md) |
+| BMW M4 · r1 | [原生CAD](bmw-m4/r1/bmw-m4-r1.FCStd) · [输入与复现](bmw-m4/r1/README.md) | 使用用户图片中的七项实测值；原生参数、轮胎净空、十车位及重开切片通过，[实物试配待完成](../../printing/parking-inserts/bmw-m4/r1/README.md) |
 
 BMW的[生成脚本和验证](../../studies/measured-tray-s51-b23-d10-t5p1/README.md)是新增车型的设计参考；源文件保持原位置，不复制第二份可编辑CAD。新增款放本目录`<车型>/<修订>/`，使用该车型实测值和标记，保留相同的原生建模及验证方法。
 
