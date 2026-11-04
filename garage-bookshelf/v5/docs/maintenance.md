@@ -25,7 +25,7 @@ python3 -m unittest discover -s tests -v
 python3 tools/verify_printing.py
 ```
 
-检查应通过且不保存正式CAD；当前预期51个Body、42个整机打印件，角色与数量见[CAD说明](../cad/README.md)。`verify_printing.py`只读核对组件清单、现行文件哈希及其历史来源，不重新切片。
+检查应通过且不保存正式CAD；当前预期51个Body、42个整机打印件，角色与数量见[CAD说明](../cad/README.md)。`verify_printing.py`只读核对组件清单、现行文件哈希及其历史来源，并检查车型CAD、七项实测输入、原始图片、冻结字形和逐款报告的对应关系；旧BMW参考格式单独兼容，不重新切片。
 
 ## 修改主体
 
@@ -45,7 +45,7 @@ python3 tools/verify_printing.py
 
 每款记录源文件、接口版本、CAD和3MF哈希、打印参数、验证范围及实物试配状态。既有试件资料可以参考，但不能代替统一规范的检查。确认保留后按[证据存放规约](../../README.md#当前交付的证据存放规约)把选定文件放入对应款式目录，更新`printing/catalog.json`，并在组件索引提供验证入口。
 
-新增车型可使用`tools/make_parking_insert.py`，输入为独立款式的`measurements.json`及同目录的`model-label-outline.json`；示例及复现命令见[车型CAD索引](../cad/parking-inserts/README.md)。先用系统Python执行`--freeze-label <measurements.json>`冻结Arial Bold车型字形，再用FreeCAD Python执行`--spec <measurements.json> --output build/<新运行名>`。工具按BMW参考方法生成全约束草图和原生Pad/Pocket，验证七项输入往返、轮胎净空、底脚、十车位及单件重开切片；输出目录必须为空，既有BMW参考文件保持原样。
+新增车型可使用`tools/make_parking_insert.py`，输入为独立款式的`measurements.json`及同目录的`model-label-outline.json`；示例及复现命令见[车型CAD索引](../cad/parking-inserts/README.md)。车型与修订标识只使用小写字母、数字及分隔单词的单个连字符，不含路径。先用系统Python执行`--freeze-label <measurements.json>`冻结Arial Bold车型字形，再用FreeCAD Python执行`--spec <measurements.json> --output build/<新运行名>`。工具在加载CAD前拒绝非法标识，写入前再检查目标位于本次build输出目录内且文件尚不存在。建模与验证沿用BMW方法；输出目录必须为空，既有BMW参考文件保持原样。
 
 ## 生成、交付与历史资料
 

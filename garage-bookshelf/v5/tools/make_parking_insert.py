@@ -16,13 +16,15 @@ from zipfile import ZipFile, ZIP_DEFLATED
 
 import _bootstrap
 from garage_bookshelf.paths import CAD, PROFILES, ROOT, TMP, output_directory, read_json, sha, source_record, write_json
+from garage_bookshelf.parking.artifacts import output_artifact, parking_stem
 
 
 def freeze_label(spec_path):
     """Freeze Arial Bold outlines once; CAD generation needs no system font API."""
+    spec = read_json(spec_path)
+    parking_stem(spec.get('variant'), spec.get('revision'))
     from matplotlib.font_manager import FontProperties
     from matplotlib.textpath import TextPath
-    spec = read_json(spec_path)
     font = Path('/System/Library/Fonts/Supplemental/Arial Bold.ttf')
     prop = FontProperties(fname=str(font))
     path = TextPath((0, 0), spec['model_label'], size=10, prop=prop)
@@ -49,6 +51,24 @@ if __name__=='__main__' and '--freeze-label' in sys.argv:
     parser.add_argument('--freeze-label',type=Path,required=True)
     freeze_label(parser.parse_args().freeze_label)
     raise SystemExit(0)
+
+
+def parse_build_args():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--spec', type=Path, required=True)
+    parser.add_argument('--output', required=True)
+    args = parser.parse_args()
+    args.spec_data = read_json(args.spec)
+    try:
+        parking_stem(args.spec_data.get('variant'), args.spec_data.get('revision'))
+    except ValueError as error:
+        parser.error(str(error))
+    return args
+
+
+if __name__ == '__main__':
+    # Reject unsafe identifiers before importing the CAD runtime or creating output.
+    build_args = parse_build_args()
 
 sys.path.insert(0, '/Applications/FreeCAD.app/Contents/Resources/lib')
 import FreeCAD as App
@@ -266,12 +286,10 @@ def parameter_roundtrip(doc, original):
                 changed_tires=changed_tires,restored_symmetric_difference_mm3=difference)
 
 
-def main():
-    parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--spec',type=Path,required=True)
-    parser.add_argument('--output',required=True)
-    args=parser.parse_args()
-    spec=read_json(args.spec)
+def main(args=None):
+    args = args if args is not None else parse_build_args()
+    spec = args.spec_data
+    stem = parking_stem(spec.get('variant'), spec.get('revision'))
     outline_path=args.spec.with_name('model-label-outline.json')
     outline=read_json(outline_path)
     measurements=spec['measurements_mm']
@@ -283,6 +301,9 @@ def main():
     photo=ROOT/spec['measurement_source']['path']
     assert sha(photo)==spec['measurement_source']['sha256']
     out=output_directory(args.output)
+    cad = output_artifact(out, stem + '.FCStd')
+    project = output_artifact(out, stem + '.3mf')
+    stl = output_artifact(out, Path('evidence') / (stem + '.stl'))
     evidence=out/'evidence';evidence.mkdir()
     profiles=evidence/'profiles';profiles.mkdir()
     write_json(out/'measurements.json',spec)
@@ -290,7 +311,6 @@ def main():
     (evidence/'make_parking_insert.py').write_bytes(Path(__file__).read_bytes())
     for name in ('X2D-0.4-standard-machine.json','PLA-0.20-process.json','PLA-black.json'):
         (profiles/name).write_bytes((PROFILES/name).read_bytes())
-    stem=spec['variant']+'-'+spec['revision']
     before=sha(CAD)
     doc,body,foot=build(spec,outline)
     shape=body.Shape.copy()
@@ -313,13 +333,13 @@ def main():
             fit_checks.append(dict(floor=name,index=index,overlap_mm3=overlap))
     assert len(fit_checks)==10
     App.closeDocument(source.Name)
-    cad=out/(stem+'.FCStd');doc.saveAs(str(cad));save_views(cad,doc,body)
+    doc.saveAs(str(cad));save_views(cad,doc,body)
     points,colors=triangles(doc,{body.Tip.Name:[(.38,.43,.49)]},['measured_tray'],local=True)
     render(points,colors,out/'tray-preview.png',[-1.1,-1.65,2.4],width=1400,height=1100)
     render(points,colors,out/'top-preview.png',[0,-.001,1],width=1000,height=1400)
     mesh=MeshPart.meshFromShape(Shape=shape,LinearDeflection=.015,AngularDeflection=.08,Relative=False)
     bb=mesh.BoundBox;mesh.translate(-bb.XMin,-bb.YMin,-bb.ZMin)
-    stl=evidence/(stem+'.stl');mesh.write(str(stl));check=Mesh.Mesh(str(stl))
+    mesh.write(str(stl));check=Mesh.Mesh(str(stl))
     mesh_error=abs(abs(check.Volume)-shape.Volume)/shape.Volume
     assert check.isSolid() and not check.hasNonManifolds() and len(check.getSeparateComponents())==1
     assert mesh_error<.001
@@ -338,7 +358,7 @@ def main():
     native_sketches=sum(o.TypeId=='Sketcher::SketchObject' for o in reopened.Objects)
     App.closeDocument(reopened.Name)
     print('PASS native CAD, seven-input roundtrip, four tires and ten bays:',stem,flush=True)
-    project=out/(stem+'.3mf');TMP.mkdir(parents=True,exist_ok=True)
+    TMP.mkdir(parents=True,exist_ok=True)
     with tempfile.TemporaryDirectory(prefix=stem+'-',dir=TMP) as temporary:
         scratch=Path(temporary)
         run_cli(['--load-settings',f'{profiles}/X2D-0.4-standard-machine.json;{profiles}/PLA-0.20-process.json',
@@ -391,5 +411,5 @@ def main():
 
 
 if __name__=='__main__':
-    main()
+    main(build_args)
 

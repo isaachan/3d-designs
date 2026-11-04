@@ -3,6 +3,7 @@ from pathlib import Path
 import _bootstrap
 from garage_bookshelf.paths import CAD, ROOT, read_json, sha
 from garage_bookshelf.printing.components import project_destination
+from garage_bookshelf.printing.parking import verify_parking_inserts
 
 
 def verify():
@@ -50,6 +51,7 @@ def verify():
     for record in records:
         if catalog['files'].get(record['project']) != record['sha256']:
             raise ValueError('Variant hash differs from catalog: ' + record['project'])
+    verify_parking_inserts(catalog)
     for record in custom_carriers:
         position, variant = record['position'], record['id']
         if position not in ('upper', 'side') or record['interface'] != 'sign-' + position + '-v1':
@@ -79,7 +81,8 @@ def verify():
             raise ValueError('Provenance differs from catalog: ' + record['path'])
     print('PASS: 3 component families;', len(projects), 'default plates;', len(parts),
           'parts;', len(catalog['preserved_personal_projects']), 'personal projects preserved;',
-          len(custom_carriers), 'custom text carriers')
+          len(custom_carriers), 'custom text carriers;', len(catalog['parking_inserts']),
+          'parking inserts with CAD and evidence checked')
 
 
 if __name__ == '__main__':
