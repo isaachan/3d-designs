@@ -41,6 +41,6 @@ python3 tools/package_release.py --export-dir build/handover-r1/export --print-d
 /Applications/FreeCAD.app/Contents/Resources/bin/python tools/make_reinforcement_project.py --output build/reinforcement-r1
 ```
 
-确认几何、保存后的3MF、重开切片和接口后，再由维护者把选中的文件放到`printing/main/`、`printing/sign-carriers/`或`printing/parking-inserts/`，更新目录说明与`printing/catalog.json`。替换前将旧交付及证据归档，保留原哈希；个人设置文件单独保留并说明适用范围。
+确认几何、保存后的3MF、重开切片和接口后，再由维护者把选中的文件放到`printing/main/`、`printing/sign-carriers/`或`printing/parking-inserts/`，更新组件索引与`printing/catalog.json`。新增或更新定制款按[证据存放规约](../../README.md#当前交付的证据存放规约)保留款式根目录的验证／切片结果及`evidence/`中的原始证据，报告用`artifact_locations`对应实际路径。替换前将旧交付及证据归档，保留原哈希；个人设置文件单独保留并说明适用范围。
 
 常规STL不带颜色；最终3MF保留实际Bambu配色。打印文件不含外购硬件、通用托座样件或零厚度色面；车型卡槽使用独立的单托座项目，方法见卡槽规范。确认打印机、喷嘴和实际装料后重新切片使用，不交付G-code。

@@ -33,7 +33,7 @@ python3 tools/verify_printing.py
 2. 主体参数在`DesignParameters`；饰片厚度、承托及胶槽在`SkinParameters`；条带宽度和斜率在`MColorParameters`；连接片在`ReinforcementParameters`。
 3. 完整重算、检查并保存；有意修改检查尺寸或零件清单时同步更新`cad/model-spec.json`和`printing/plate-plan.json`。确认默认文字载板与通用底脚仍能安装。
 4. 再次运行CAD检查，然后按[打印生成指南](printing.md)从新的导出开始生成。CAD哈希变化后不能复用旧生成目录作为新设计的验证结果。
-5. 更新设计说明、组件索引和文件清单，把变更经过写入`CHANGELOG.md`，向组装者指出需要替换的具体组件。验证结论、问题或待办发生变化时更新`PROJECT_STATUS.md`；新增款式记在组件索引中，版本README维护稳定的查找入口。
+5. 更新设计说明、组件索引和文件清单，把变更经过写入`CHANGELOG.md`，向组装者指出需要替换的具体组件。组件层面的验证范围、问题或待办变化时更新`PROJECT_STATUS.md`；新增款式及逐款验证入口只登记在组件索引中，版本README维护稳定的查找入口，详见[状态汇总规约](../../README.md#状态汇总与更新规约)。
 
 恢复CAD显示可在FreeCAD中运行`tools/Preview.FCMacro`；默认不保存。只读预览用`tools/render.py`，输出进入`build/`。
 
@@ -43,12 +43,12 @@ python3 tools/verify_printing.py
 
 车型卡槽必须沿用[BMW Z4 E89实测四轮弧形槽方法](interfaces/parking-inserts.md)，实现参考为`studies/measured-tray-s51-b23-d10-t5p1/build_tray.py`。采集该车型的七项轮胎实测值，参数化推导轴距、轮距和轮心，保留通用底脚，完成四轮净空、十车位和单托座重开切片检查；未知的车型尺寸不能以外观估计值代替。
 
-每款记录源文件、接口版本、CAD和3MF哈希、打印参数、验证范围及实物试配状态。既有试件资料可以参考，但不能代替统一规范的检查。批准后把选定文件放入对应的`printing/`组件目录，并更新`printing/catalog.json`。
+每款记录源文件、接口版本、CAD和3MF哈希、打印参数、验证范围及实物试配状态。既有试件资料可以参考，但不能代替统一规范的检查。确认保留后按[证据存放规约](../../README.md#当前交付的证据存放规约)把选定文件放入对应款式目录，更新`printing/catalog.json`，并在组件索引提供验证入口。
 
 ## 生成、交付与历史资料
 
 自动生成写入新的`build/<运行名>/`，临时切片及G-code放`build/tmp/`。`tools/package_release.py`也只在build内创建候选交付，不覆盖已确认文件；完整命令见打印生成指南。
 
-人工调整的3MF保存到对应组件或定制款目录，并记录差异及重开切片结果。旧版完整交付、原始日志与报告归`archive/`，保存原哈希，不改写为新验证。
+人工调整的3MF保存到对应组件或定制款目录，并记录差异及重开切片结果。当前款式的原始日志、冻结配置和检查网格放其`evidence/`，验证报告与切片结果放款式根目录；被替换的旧交付及证据再归`archive/`。既有历史证据保持原址、原哈希及原验证日期，由当前索引或报告显式引用。
 
 `tools/implement_separate_skins.py`、`tools/implement_flush_inlays.py`、`tools/add_reinforcement_plates.py`均为已执行的一次性迁移，日常维护不重复运行。历史完整builder尚未追平当前设计，不用于覆盖正式总装。

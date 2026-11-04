@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "date": "2026-11-03",
-  "status": "byte-preserving-reorganization",
+  "date": "2026-11-04",
+  "status": "component-library",
   "source_cad": "cad/garage-bookshelf-v5-assembly.FCStd",
   "cad_sha256": "3b3e2b9f8c24eb89a2d68df4b70a30069df9d5777310db98706b629d1171c339",
   "main_print_part_count": 40,
@@ -450,7 +450,41 @@
     "sign-carriers/side/engines-roar-pages-whisper/front-preview.png": "25ad00694c497ae91f27b504afb8e922637253b9a5dfeb4efe1331e19f4358cd",
     "sign-carriers/side/engines-roar-pages-whisper/plate-preview.png": "f13f7e5248bdadc1c6adc1294a0e64341a5d7a3504fedfd2f44af3f402e3eee8",
     "sign-carriers/side/engines-roar-pages-whisper/slice-result.json": "35b5d4a5092b02b6716163c5859faf3d0fef9150107de7610fca07cd4700a22b",
-    "sign-carriers/side/engines-roar-pages-whisper/validation.json": "b5290a24c12f99d7b7a8930d8fa9d334909e42e7a911e9f92a3adbf2df59dcc4"
+    "sign-carriers/side/engines-roar-pages-whisper/validation.json": "b5290a24c12f99d7b7a8930d8fa9d334909e42e7a911e9f92a3adbf2df59dcc4",
+    "sign-carriers/upper/hanks-parking-lot/evidence/generator-snapshot.py.txt": "0b311a9519c30258c71b1b835d50b7b76a36b4a276dd953c1cd50c9e7d64a494",
+    "sign-carriers/upper/hanks-parking-lot/evidence/logs/configure.log": "6b7bba4d15959c7a451c9d872535fe84e9ed2e66c099a1d9e9e2fcbabdff4060",
+    "sign-carriers/upper/hanks-parking-lot/evidence/logs/save.log": "690f984233bf80e9bf9ea5b14a803e6ad98223ab1bde2770b51f2ef7e61e3f3a",
+    "sign-carriers/upper/hanks-parking-lot/evidence/logs/slice.log": "a5eb8727e6516a5b213922b915af855a3cbc1a3f48253da47d8e4cc221a964fc",
+    "sign-carriers/upper/hanks-parking-lot/evidence/profiles/PLA-Black.json": "5a6df4232ae86d61ee3fcf964dfcd3585b8634a06a985020139a2d8826a9ae36",
+    "sign-carriers/upper/hanks-parking-lot/evidence/profiles/PLA-DarkBlue.json": "c40d0c20fe7eed14ba6ce2acc5db3bd12280b0806fb368d4d8f52008feba043b",
+    "sign-carriers/upper/hanks-parking-lot/evidence/profiles/PLA-LightBlue.json": "8f40ac08fa81dddcc785fcd4460856e6fd84367feb00686f99fc499e6d9edf7a",
+    "sign-carriers/upper/hanks-parking-lot/evidence/profiles/PLA-Red.json": "6192d639e232f1d90c2885ceb0aec4affd2b3f08bf553c3f5fe0223574b96249",
+    "sign-carriers/upper/hanks-parking-lot/evidence/profiles/PLA-White.json": "21dc16a3ff3124908bb7e94318100cb81b042b648e5a22fb55b454c9739f2e7f",
+    "sign-carriers/upper/hanks-parking-lot/evidence/profiles/process.json": "2153bb21149f18716bf64cf099aa1dc04fb8199513e0e7e6c36fc2dca28f7e7b",
+    "sign-carriers/upper/hanks-parking-lot/evidence/top_carrier.stl": "da1a1a5400e989f1315d92e749fcb736127c222a6ba404a242aafff945a1a821",
+    "sign-carriers/upper/hanks-parking-lot/front-preview.png": "76b0f02a6aaf7bfa5577e2579fd2e9543316f99fd30900c83a3be64080538505",
+    "sign-carriers/upper/hanks-parking-lot/hanks-parking-lot.3mf": "c623da35fbc3703cb71c31d3174440b92d7e76a388d6aece531515c3ead83fa5",
+    "sign-carriers/upper/hanks-parking-lot/plate-preview.png": "9d8943026168d45cda126ad8b9e76bdc4c2a3896ff2e71f0bd1273788510bebe",
+    "sign-carriers/upper/hanks-parking-lot/slice-result.json": "1678dba55c4a94a68c2cef71325eafbb0aff37cb68ea79092fc25e2a479855a4",
+    "sign-carriers/upper/hanks-parking-lot/validation.json": "2139066653814de3b4db481ffdf0abd5c4fcd7e17ee36978ccc58aaf61f5d961",
+    "sign-carriers/side/on-the-road-between-the-pages/evidence/generator-snapshot.py.txt": "0b311a9519c30258c71b1b835d50b7b76a36b4a276dd953c1cd50c9e7d64a494",
+    "sign-carriers/side/on-the-road-between-the-pages/evidence/logs/configure.log": "073d64f5a7f212fab4f31254b38d87c2dab1a8d931d9a49b0ab9348a2c702cc5",
+    "sign-carriers/side/on-the-road-between-the-pages/evidence/logs/save.log": "c42d2eb77e5fb1f749e495a7aa240ff893383f486c46a3a40ef08479dbcb7044",
+    "sign-carriers/side/on-the-road-between-the-pages/evidence/logs/slice.log": "b244b5574a5a24dd0693f67c2ca675c673a900f703411549492bbff874076252",
+    "sign-carriers/side/on-the-road-between-the-pages/evidence/profiles/PLA-Black.json": "5a6df4232ae86d61ee3fcf964dfcd3585b8634a06a985020139a2d8826a9ae36",
+    "sign-carriers/side/on-the-road-between-the-pages/evidence/profiles/PLA-DarkBlue.json": "c40d0c20fe7eed14ba6ce2acc5db3bd12280b0806fb368d4d8f52008feba043b",
+    "sign-carriers/side/on-the-road-between-the-pages/evidence/profiles/PLA-LightBlue.json": "8f40ac08fa81dddcc785fcd4460856e6fd84367feb00686f99fc499e6d9edf7a",
+    "sign-carriers/side/on-the-road-between-the-pages/evidence/profiles/PLA-Red.json": "6192d639e232f1d90c2885ceb0aec4affd2b3f08bf553c3f5fe0223574b96249",
+    "sign-carriers/side/on-the-road-between-the-pages/evidence/profiles/PLA-White.json": "21dc16a3ff3124908bb7e94318100cb81b042b648e5a22fb55b454c9739f2e7f",
+    "sign-carriers/side/on-the-road-between-the-pages/evidence/profiles/process.json": "2153bb21149f18716bf64cf099aa1dc04fb8199513e0e7e6c36fc2dca28f7e7b",
+    "sign-carriers/side/on-the-road-between-the-pages/evidence/side_cartridge.stl": "49e9b95c71443ce683e288f18d5af19b1f403907e9bf75e041cf51a604a84511",
+    "sign-carriers/side/on-the-road-between-the-pages/front-preview.png": "01a8b684687b78b8a3cb003c42c14319a5f87cf3b2a7581333e1284978ea7728",
+    "sign-carriers/side/on-the-road-between-the-pages/on-the-road-between-the-pages.3mf": "e275e23ccf02e8e3f232ba53717a323835c92cd25426960220182cec403037b0",
+    "sign-carriers/side/on-the-road-between-the-pages/plate-preview.png": "b164b89d1eadd8fed0200500682fc43b9a3a449942390682fa8c7972af1c8458",
+    "sign-carriers/side/on-the-road-between-the-pages/slice-result.json": "a2fd76a7759dab8a498b1cb52890d49996559359388507570810fb84ad7137a2",
+    "sign-carriers/side/on-the-road-between-the-pages/validation.json": "d97da7604dd3d6a3774e1a1c9e4d24970c60282edbdb3ff250aa315656b23658",
+    "sign-carriers/upper/hanks-parking-lot/assembly-preview.png": "36d2b6b1fa1288a7192c13bdd69a85196a46787f09c8d43117d28df05e103681",
+    "sign-carriers/upper/hanks-parking-lot/evidence/paired-assembly-preview.json": "cf763e6c43bcb42da3b6726cabff383e5083726b157194dd802460a37439816a"
   },
   "provenance": [
     {
@@ -730,7 +764,7 @@
     }
   ],
   "physical_print_and_fit_tested": false,
-  "note": "当前车型卡槽采用BMW Z4 E89实测四轮弧形槽方法；已否定车型的文件和全部引用已删除。主体及保留打印件未改，未重新执行CAD、切片或实物验证。",
+  "note": "主体及既有CAD与打印项目保留原字节。新增文字载板按各款验证记录完成原生CAD、接口、网格、配色及保存后重开切片检查；实物打印与试装待反馈。车型卡槽仍采用BMW Z4 E89实测四轮弧形槽方法。",
   "parking_insert_design_method": {
     "id": "bmw-z4-e89-measured-wheel-cradle-v1",
     "reference": "studies/measured-tray-s51-b23-d10-t5p1/README.md",
@@ -776,6 +810,38 @@
       "project": "sign-carriers/side/engines-roar-pages-whisper/engines-roar-pages-whisper.3mf",
       "sha256": "175846a13ff55d9a0ac7f83646a769174cb288b89436b531893581e31cb56cfa",
       "evidence": "printing/sign-carriers/side/engines-roar-pages-whisper/validation.json",
+      "physical_fit_tested": false
+    },
+    {
+      "id": "hanks-parking-lot",
+      "position": "upper",
+      "interface": "sign-upper-v1",
+      "text": "HANK'S PARKING LOT",
+      "lines": [
+        "HANK'S",
+        "PARKING LOT"
+      ],
+      "source_cad": "cad/sign-carriers/upper/hanks-parking-lot/hanks-parking-lot.FCStd",
+      "source_cad_sha256": "3c12c9f54238e7f979884152d8b87f07f90ba13e796fb84180b34f7eef3aef93",
+      "project": "sign-carriers/upper/hanks-parking-lot/hanks-parking-lot.3mf",
+      "sha256": "c623da35fbc3703cb71c31d3174440b92d7e76a388d6aece531515c3ead83fa5",
+      "evidence": "printing/sign-carriers/upper/hanks-parking-lot/validation.json",
+      "physical_fit_tested": false
+    },
+    {
+      "id": "on-the-road-between-the-pages",
+      "position": "side",
+      "interface": "sign-side-v1",
+      "text": "On the Road. Between the Pages.",
+      "lines": [
+        "On the Road.",
+        "Between the Pages."
+      ],
+      "source_cad": "cad/sign-carriers/side/on-the-road-between-the-pages/on-the-road-between-the-pages.FCStd",
+      "source_cad_sha256": "2fbd0c9189c3fd2c5dfd5f328e0c7e687c9ff533ea538c0080c597367eb2f937",
+      "project": "sign-carriers/side/on-the-road-between-the-pages/on-the-road-between-the-pages.3mf",
+      "sha256": "e275e23ccf02e8e3f232ba53717a323835c92cd25426960220182cec403037b0",
+      "evidence": "printing/sign-carriers/side/on-the-road-between-the-pages/validation.json",
       "physical_fit_tested": false
     }
   ]

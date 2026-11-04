@@ -32,4 +32,6 @@
 - [09-billboard](personal/09-billboard-mpower.3mf)
 - [11-side-receiver](personal/11-side-receiver-mpower.3mf)
 
+[总装验证索引](../../docs/verification.json) · [打印来源与哈希](../catalog.json)
+
 [组装说明](../../docs/assembly.md) · [主体CAD](../../cad/main/README.md) · [维护者生成指南](../../docs/printing.md)

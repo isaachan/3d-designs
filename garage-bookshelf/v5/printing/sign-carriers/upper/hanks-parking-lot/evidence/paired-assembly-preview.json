@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "formal_cad_unchanged": true,
+  "cad_sha256": "3b3e2b9f8c24eb89a2d68df4b70a30069df9d5777310db98706b629d1171c339",
+  "carriers": [
+    {
+      "position": "upper",
+      "source": "cad/sign-carriers/upper/hanks-parking-lot/hanks-parking-lot.FCStd",
+      "sha256": "3c12c9f54238e7f979884152d8b87f07f90ba13e796fb84180b34f7eef3aef93"
+    },
+    {
+      "position": "side",
+      "source": "cad/sign-carriers/side/on-the-road-between-the-pages/on-the-road-between-the-pages.FCStd",
+      "sha256": "2fbd0c9189c3fd2c5dfd5f328e0c7e687c9ff533ea538c0080c597367eb2f937"
+    }
+  ],
+  "preview": {
+    "path": "assembly-preview.png",
+    "dimensions_px": [
+      1800,
+      1200
+    ],
+    "triangles": 117982,
+    "renderer": "OpenCascade face tessellation and software Z buffer",
+    "sha256": "36d2b6b1fa1288a7192c13bdd69a85196a46787f09c8d43117d28df05e103681"
+  },
+  "source_cad": "cad/garage-bookshelf-v5-assembly.FCStd",
+  "artifact_locations": {
+    "hanks-parking-lot.FCStd": "cad/sign-carriers/upper/hanks-parking-lot/hanks-parking-lot.FCStd",
+    "on-the-road-between-the-pages.FCStd": "cad/sign-carriers/side/on-the-road-between-the-pages/on-the-road-between-the-pages.FCStd",
+    "assembly-preview.png": "printing/sign-carriers/upper/hanks-parking-lot/assembly-preview.png"
+  }
+}
