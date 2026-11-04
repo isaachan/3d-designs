@@ -33,7 +33,7 @@ class CustomCarrierArtifactTests(unittest.TestCase):
                 tip = props.find('./Property[@name="Tip"]/Link').get('value')
                 self.assertEqual(types[tip], 'PartDesign::Pad' if record['position'] == 'upper' else 'PartDesign::Pocket')
 
-    def test_saved_projects_preserve_position_specific_background_and_white_text(self):
+    def test_saved_projects_preserve_registered_background_and_white_text(self):
         for record in self.records:
             with self.subTest(position=record['position'], variant=record['id']):
                 with ZipFile(ROOT / 'printing' / record['project']) as archive:
@@ -44,7 +44,9 @@ class CustomCarrierArtifactTests(unittest.TestCase):
                         if name.startswith('3D/Objects/') and name.endswith('.model'):
                             for triangle in ET.fromstring(archive.read(name)).findall('.//c:triangle', NS):
                                 states.update(paint_states(triangle.get('paint_color')))
-                    self.assertEqual(states, {1, 2} if record['position'] == 'upper' else {2, 4})
+                    background = record.get('background', 'Black' if record['position'] == 'upper' else 'DarkBlue')
+                    background_slot = next(i+1 for i, (name, _) in enumerate(PALETTE) if name == background)
+                    self.assertEqual(states, {2, background_slot})
                     self.assertFalse(any(name.endswith('.gcode') for name in archive.namelist()))
 
 

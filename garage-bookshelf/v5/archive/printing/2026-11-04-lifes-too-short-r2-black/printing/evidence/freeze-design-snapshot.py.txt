@@ -1,0 +1,26 @@
+from pathlib import Path
+import sys,json,hashlib
+root=Path(__file__).resolve().parents[2]
+sys.path.insert(0,str(root/'tools'))
+import make_sign_carrier as maker
+out=Path(__file__).parent
+rows=[]
+sources=[]
+for text,height,z,font,collection,index in [
+ ("LIFE'S TOO SHORT TO DRIVE",8,43,'AvenirNext-DemiBold','Avenir Next',2),
+ ('BORING CARS',20.5,20,'AvenirNextCondensed-HeavyItalic','Avenir Next Condensed',9)]:
+ path=out/(font+'.ttf')
+ frozen=maker.freeze_lettering(text,[text],path)
+ row=frozen['lines'][0]
+ row.update(ink_height_mm=height,center_x_mm=95,center_z_mm=z,font=frozen['font'])
+ rows.append(row)
+ original=Path('/System/Library/Fonts')/(collection+'.ttc')
+ sources.append(dict(font=frozen['font'],source_font_sha256=frozen['source_font_sha256'],
+                     original_collection=original.name,collection_face_index=index,
+                     original_collection_sha256=hashlib.sha256(original.read_bytes()).hexdigest()))
+data=dict(text=' '.join(row['text'] for row in rows),lines=rows,
+          font='Avenir Next Demi Bold + Avenir Next Condensed Heavy Italic',font_sources=sources,
+          layout_reference_ink_height_mm=18,design_revision='r2-sport-hierarchy',
+          maximum_outline_deviation_mm_at_18mm_ink_height=.015)
+(out/'lettering.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+print('Frozen',data['text'],[(r['font'],r['ink_height_mm']) for r in rows])

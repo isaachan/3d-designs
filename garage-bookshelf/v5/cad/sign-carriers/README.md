@@ -10,7 +10,7 @@
 
 | 位置 | 文字 | 唯一源文件 |
 |---|---|---|
-| 上方横牌 | Life's too short to drive boring cars | [原生CAD](upper/lifes-too-short/lifes-too-short.FCStd) · [维护说明](upper/lifes-too-short/README.md) |
+| 上方横牌 | LIFE'S TOO SHORT TO DRIVE BORING CARS | [原生CAD · r2](upper/lifes-too-short/lifes-too-short.FCStd) · [维护说明](upper/lifes-too-short/README.md) |
 | 右侧竖牌 | Engines Roar. Pages Whisper | [原生CAD](side/engines-roar-pages-whisper/engines-roar-pages-whisper.FCStd) · [维护说明](side/engines-roar-pages-whisper/README.md) |
 | 上方横牌 | HANK'S PARKING LOT | [原生CAD](upper/hanks-parking-lot/hanks-parking-lot.FCStd) · [维护说明](upper/hanks-parking-lot/README.md) |
 | 右侧竖牌 | On the Road. Between the Pages. | [原生CAD](side/on-the-road-between-the-pages/on-the-road-between-the-pages.FCStd) · [维护说明](side/on-the-road-between-the-pages/README.md) |

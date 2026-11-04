@@ -1,0 +1,38 @@
+{
+  "cad/sign-carriers/upper/lifes-too-short/README.md": {
+    "path": "cad/README.md",
+    "sha256": "cde02ba29a7fbb17a553d66fefa13f73f079266d39fb287b8c52eeaacfd9f39f"
+  },
+  "cad/sign-carriers/upper/lifes-too-short/lifes-too-short.FCStd": {
+    "path": "cad/lifes-too-short.FCStd",
+    "sha256": "f8f11d3d432ebe32fbf6ff34b6c0a8358e960422b3a615e4423a091c7649b17f"
+  },
+  "cad/sign-carriers/upper/lifes-too-short/lettering.json": {
+    "path": "cad/lettering.json",
+    "sha256": "8ad102836f694c02432ac0dc28dac29c860375fdb51af8a4ecdad12cdb491af3"
+  },
+  "printing/sign-carriers/upper/lifes-too-short/front-preview.png": {
+    "path": "printing/front-preview.png",
+    "sha256": "6725fe7e46f532b7141ffbba33300055804eee6e55539bdb102e2e26517233dc"
+  },
+  "printing/sign-carriers/upper/lifes-too-short/plate-preview.png": {
+    "path": "printing/plate-preview.png",
+    "sha256": "ab4429ecb3024cdb5022b2901c5c9cff56fbaddbb0c28b891bf68b430c9cc805"
+  },
+  "printing/sign-carriers/upper/lifes-too-short/README.md": {
+    "path": "printing/README.md",
+    "sha256": "5e487f9cff9177dbd5269cca390e9655dd64ac5d1d809328ce7e84f75d795204"
+  },
+  "printing/sign-carriers/upper/lifes-too-short/validation.json": {
+    "path": "printing/validation.json",
+    "sha256": "b60215fd9f4f9fe120f35bcbb3b410494f8578bbeb1cb68ab6df950c96aef72d"
+  },
+  "printing/sign-carriers/upper/lifes-too-short/lifes-too-short.3mf": {
+    "path": "printing/lifes-too-short.3mf",
+    "sha256": "976e471f6986e9bec6480216ed933aecbba2ce0de6566bde86bcbacd7957506d"
+  },
+  "printing/sign-carriers/upper/lifes-too-short/slice-result.json": {
+    "path": "printing/slice-result.json",
+    "sha256": "2a2a053a8975e54bd1febabebbfca0c6ee50ffeaa63dde6d1096712fdae01256"
+  }
+}

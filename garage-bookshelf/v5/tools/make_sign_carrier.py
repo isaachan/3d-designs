@@ -57,8 +57,9 @@ def measure_outline_unions(data):
 
 
 def freeze_lettering(text, lines, font):
-    """Freeze just the requested outlines, with the existing side-sign font."""
+    """Freeze the requested outlines and record the actual selected font face."""
     import numpy as np
+    from matplotlib.ft2font import FT2Font
     from matplotlib.font_manager import FontProperties
     from matplotlib.path import Path as MPath
     from matplotlib.textpath import TextPath
@@ -109,7 +110,9 @@ def freeze_lettering(text, lines, font):
         assert sum(map(len, groups)) == len(polygons)
         rows.append(dict(text=line, width_per_ink_height=bounds.width/bounds.height,
                          polygons=polygons, islands=groups))
-    return measure_outline_unions(dict(text=text, lines=rows, font='DIN Condensed Bold', source_font_sha256=sha(font),
+    face = FT2Font(str(font))
+    font_name = f'{face.family_name} {face.style_name}'.strip()
+    return measure_outline_unions(dict(text=text, lines=rows, font=font_name, source_font_sha256=sha(font),
                                       maximum_outline_deviation_mm_at_18mm_ink_height=.015))
 
 
@@ -173,12 +176,34 @@ def add_lettering(doc, body, data, config):
     for line_index, row in enumerate(data['lines']):
         row_sketches = []
         width = row['width_per_ink_height']
+        explicit_layout = any(key in row for key in ('ink_height_mm', 'center_x_mm', 'center_z_mm'))
+        if explicit_layout:
+            assert config['part'] == 'top_carrier', 'Explicit row placement is for horizontal signs'
+            assert all(key in row for key in ('ink_height_mm', 'center_x_mm', 'center_z_mm'))
+            assert row['ink_height_mm'] > 0
+            reference = data['layout_reference_ink_height_mm']
+            assert reference == config['ink_height']
+            aliases = [f'Line{line_index+1}Height', f'Line{line_index+1}CenterX', f'Line{line_index+1}CenterZ']
+            cells = [f'B{10+line_index*4+i}' for i in range(3)]
+            values = [f'=B1*({row["ink_height_mm"]/reference:.14g})',
+                      f'{row["center_x_mm"]} mm', f'{row["center_z_mm"]} mm']
+            for alias, cell, value in zip(aliases, cells, values):
+                sheet.set('A'+cell[1:], alias)
+                sheet.set(cell, value)
+                sheet.setAlias(cell, alias)
+            doc.recompute()
+            row_height = 'LetteringParameters.'+aliases[0]
+        else:
+            row_height = 'LetteringParameters.InkHeight'
         for island_index, indices in enumerate(row['islands']):
             polygons = []
             for index in indices:
                 points = []
                 for x, y in row['polygons'][index]:
-                    if config['part'] == 'top_carrier':
+                    if explicit_layout:
+                        px = f'LetteringParameters.{aliases[1]}+({x-width/2:.14g})*{row_height}'
+                        pz = f'LetteringParameters.{aliases[2]}+({y-.5:.14g})*{row_height}'
+                    elif config['part'] == 'top_carrier':
                         px = f'95 mm+({x-width/2:.14g})*LetteringParameters.InkHeight'
                         pz = (f'29 mm+({.5-line_index})*(LetteringParameters.InkHeight+'
                               f'LetteringParameters.LineGap)+({y-.5:.14g})*LetteringParameters.InkHeight')
@@ -200,7 +225,9 @@ def add_lettering(doc, body, data, config):
             assert b.XMin > 15 and b.XMax < 175 and b.ZMin > 4 and b.ZMax < 54
         else:
             assert b.XMin >= 4 and b.XMax <= 44 and b.ZMin > 20 and b.ZMax < 160
-        records.append(dict(text=row['text'], bounds_xz_mm=[b.XMin, b.ZMin, b.XMax, b.ZMax]))
+        records.append(dict(text=row['text'], bounds_xz_mm=[b.XMin, b.ZMin, b.XMax, b.ZMax],
+                            ink_height_mm=row.get('ink_height_mm', config['ink_height']),
+                            font=row.get('font', data['font'])))
         print('Built native outlines:', row['text'], flush=True)
     blank = body.Shape.copy()
     kind = 'PartDesign::Pad' if config['part'] == 'top_carrier' else 'PartDesign::Pocket'
@@ -211,7 +238,8 @@ def add_lettering(doc, body, data, config):
     feature.Profile = binder
     feature.setExpression('Length', 'LetteringParameters.TextDepth')
     feature.Refine = True
-    volume = sum(row['union_area_per_ink_height_squared'] for row in data['lines'])*config['ink_height']**2*config['depth']
+    volume = sum(row['union_area_per_ink_height_squared']*row.get('ink_height_mm', config['ink_height'])**2
+                 for row in data['lines'])*config['depth']
     expected = blank.Volume + volume*(1 if kind.endswith('Pad') else -1)
     doc.recompute()
     if feature.Shape.isNull() or abs(feature.Shape.Volume-expected) > 1e-4:
@@ -287,7 +315,11 @@ def main():
     assert len(data['lines']) == 2 and ' '.join(row['text'] for row in data['lines']) == data['text']
     if any(not row.get('outline_union_normalized') for row in data['lines']):
         data = measure_outline_unions(data)
-    config = POSITIONS[args.position]
+    config = dict(POSITIONS[args.position])
+    config['background'] = data.get('background', config['background'])
+    assert config['background'] in ('Black', 'DarkBlue'), 'Use a supported sign background'
+    expected_slots = sorted([2, next(i+1 for i, (name, _) in enumerate(PALETTE)
+                                    if name == config['background'])])
     out = output_directory(args.output, args.variant)
     for folder in ('profiles', 'logs'):
         (out/folder).mkdir()
@@ -355,7 +387,7 @@ def main():
                  '--load-filaments',';'.join(map(str,profiles)),'--orient','0','--arrange','1',
                  '--export-3mf',configured,stl],scratch/'configure',out/'logs/configure.log')
         statistics,used=painter.patch(configured,painted)
-        assert used==([1,2] if args.position=='upper' else [2,4]),used
+        assert used==expected_slots,used
         run_cli(['--orient','0','--arrange','1','--allow-multicolor-oneplate','--export-3mf',project,painted],
                 scratch/'save',out/'logs/save.log')
         assert geometry_signatures(configured)==geometry_signatures(project)
@@ -392,6 +424,7 @@ def main():
                 saved_reopened_recomputed=True,letter_height_roundtrip_passed=True,interference=interference,
                 print_dimensions_mm=actual,mesh_closed_single_component=True,mesh_relative_volume_error=abs(abs(checked.Volume)-shape.Volume)/shape.Volume,
                 palette=[dict(slot=i+1,name=n,hex=h) for i,(n,h) in enumerate(PALETTE)],palette_slots_used=used,
+                background=config['background'],
                 facet_paint=statistics,settings=settings,saved_project_reopened_and_sliced=True,
                 warning_messages=[],filament_changes=plate['filament_change_times'],
                 estimated_seconds=plate['total_predication'],filaments=plate['filaments'],

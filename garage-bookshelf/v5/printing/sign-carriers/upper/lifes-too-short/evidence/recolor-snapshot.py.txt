@@ -1,0 +1,116 @@
+"""Appearance-only correction; retain native geometry and independently re-slice."""
+from pathlib import Path
+import sys,json,shutil,struct,re,hashlib
+from datetime import datetime,timezone
+from zipfile import ZipFile,ZIP_DEFLATED
+import xml.etree.ElementTree as ET
+ROOT=Path(__file__).resolve().parents[2]
+sys.path[:0]=[str(ROOT/'tools'),str(ROOT/'src')]
+import _bootstrap
+import FreeCAD as App
+from garage_bookshelf.appearance.storage import material_records,serialize_material_records,diffuse_rgb
+from garage_bookshelf.rendering.software import saved_colors,triangles,render
+from garage_bookshelf.printing.paint import PALETTE,leaf,paint_states
+from garage_bookshelf.printing.bambu import run_cli
+from garage_bookshelf.printing.threemf import NS
+from make_colored_projects import geometry_signatures
+OUT=Path(__file__).parent
+SOURCECAD=ROOT/'cad/sign-carriers/upper/lifes-too-short'
+SOURCEPRINT=ROOT/'printing/sign-carriers/upper/lifes-too-short'
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+read=lambda p:json.loads(p.read_text())
+def write(p,d):p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
+def pack(path,data):
+ with ZipFile(path,'w',ZIP_DEFLATED) as z:
+  for n,b in data.items():z.writestr(n,b)
+shutil.copytree(SOURCECAD,OUT/'cad');shutil.copytree(SOURCEPRINT,OUT/'printing')
+cad=OUT/'cad/lifes-too-short.FCStd'
+with ZipFile(cad) as z:old={n:z.read(n) for n in z.namelist()}
+data=dict(old);gui=ET.fromstring(data['GuiDocument.xml'])
+providers={p.get('name'):p for p in gui.find('ViewProviderData')}
+resources=set()
+for name in ['top_carrier_Body','Pad_CustomLettering']:
+ resources.add(next(p for p in providers[name].iter('Property') if p.get('name')=='ShapeAppearance')[0].get('file'))
+black=tuple(int('16181B'[i:i+2],16)/255 for i in (0,2,4))
+blue=tuple(int('151B65'[i:i+2],16)/255 for i in (0,2,4))
+replaced=0
+for name in resources:
+ records=[]
+ for raw in material_records(data[name]):
+  record=bytearray(raw)
+  if diffuse_rgb(raw)==black:
+   struct.pack_into('<I',record,4,0x151B65FF);replaced+=1
+  records.append(bytes(record))
+ data[name]=serialize_material_records(records)
+assert replaced>0
+pack(cad,data)
+assert all(data[n]==old[n] for n in old if n not in resources)
+geometry_entries={n:hashlib.sha256(b).hexdigest() for n,b in old.items() if n not in resources}
+colors=saved_colors(cad);assert set(colors['top_carrier_Body'])=={blue,tuple(int('F4F5F6'[i:i+2],16)/255 for i in (0,2,4))}
+doc=App.openDocument(str(cad));body=doc.getObject('top_carrier_Body');assert body.Shape.isValid()
+points,paint=triangles(doc,colors,['top_carrier'],local=True)
+render(points,paint,OUT/'printing/front-preview.png',[0,-1,.00001],1700,700)
+App.closeDocument(doc.Name)
+lettering=read(OUT/'cad/lettering.json');lettering['background']='DarkBlue';write(OUT/'cad/lettering.json',lettering)
+source=SOURCEPRINT/'lifes-too-short.3mf'
+with ZipFile(source) as z:project={n:z.read(n) for n in z.namelist()}
+count=0
+for name in list(project):
+ if name.startswith('3D/Objects/') and name.endswith('.model'):
+  root=ET.fromstring(project[name])
+  for triangle in root.findall('.//c:triangle',NS):
+   state=triangle.get('paint_color');assert state in (leaf(1),leaf(2))
+   if state==leaf(1):triangle.set('paint_color',leaf(4));count+=1
+  project[name]=ET.tostring(root,encoding='utf-8',xml_declaration=True)
+config=ET.fromstring(project['Metadata/model_settings.config'])
+for obj in config.findall('object'):
+ next(p for p in obj.findall('metadata') if p.get('key')=='extruder').set('value','4')
+project['Metadata/model_settings.config']=ET.tostring(config,encoding='utf-8',xml_declaration=True)
+project={n:b for n,b in project.items() if not (n.startswith('Metadata/') and n.endswith('.png'))}
+painted=OUT/'painted.3mf';pack(painted,project)
+assert geometry_signatures(source)==geometry_signatures(painted)
+logs=OUT/'printing/evidence/logs';new=OUT/'saved-blue.3mf'
+run_cli(['--orient','0','--arrange','1','--allow-multicolor-oneplate','--export-3mf',new,painted],OUT/'save-data',logs/'recolor-save.log')
+assert geometry_signatures(source)==geometry_signatures(new)
+with ZipFile(new) as z:
+ settings=json.loads(z.read('Metadata/project_settings.config'))
+ assert settings['filament_colour']==[h for _,h in PALETTE]
+ states=set()
+ for name in z.namelist():
+  if name.startswith('3D/Objects/') and name.endswith('.model'):
+   for triangle in ET.fromstring(z.read(name)).findall('.//c:triangle',NS):states.update(paint_states(triangle.get('paint_color')))
+ assert states=={2,4}
+ assert not any(name.endswith('.gcode') for name in z.namelist())
+ (OUT/'printing/plate-preview.png').write_bytes(z.read('Metadata/plate_1.png'))
+sliced=OUT/'sliced';sliced.mkdir()
+run_cli(['--orient','0','--arrange','0','--outputdir',sliced,'--slice','0',new],OUT/'slice-data',logs/'recolor-slice.log')
+result=read(sliced/'result.json');assert result['return_code']==0 and len(result['sliced_plates'])==1
+plate=result['sliced_plates'][0];assert len(plate['objects'])==1 and not plate['warning_message']
+assert sorted(f['id'] for f in plate['filaments'] if f['total_used_g']>.001)==[2,4]
+new.replace(OUT/'printing/lifes-too-short.3mf');write(OUT/'printing/slice-result.json',result)
+shutil.copy2(__file__,OUT/'printing/evidence/recolor-snapshot.py.txt')
+shutil.copy2(ROOT/'tools/make_sign_carrier.py',OUT/'printing/evidence/rebuild-generator-snapshot.py.txt')
+report=read(OUT/'printing/validation.json')
+report.update(background='DarkBlue',palette_slots_used=[2,4],settings=settings,
+ estimated_seconds=plate['total_predication'],filaments=plate['filaments'],filament_changes=plate['filament_change_times'],
+ estimated_filament_g=sum(f['total_used_g'] for f in plate['filaments']),saved_project_reopened_and_sliced=True,warning_messages=[])
+for item in report['facet_paint']:item['base_filament']=4
+report['appearance_update']=dict(verified_at=datetime.now(timezone.utc).isoformat(),background_hex='#151B65',text_hex='#F4F5F6',
+ geometry_validation_inherited_by_exact_native_content=True,native_geometry_entries_sha256=geometry_entries,
+ changed_native_appearance_resources=sorted(resources),saved_mesh_geometry_identical=True,
+ source_cad_sha256=sha(SOURCECAD/'lifes-too-short.FCStd'),source_project_sha256=sha(source),
+ previous_delivery='archive/printing/2026-11-04-lifes-too-short-r2-black',recolored_cad_records=replaced,recolored_facets=count,
+ recolor_script='printing/sign-carriers/upper/lifes-too-short/evidence/recolor-snapshot.py.txt')
+report['cli_tool_messages']['recolor-save.log']=list(dict.fromkeys(l.strip() for l in (logs/'recolor-save.log').read_text().splitlines() if re.search(r'warn|error|fail',l,re.I)))
+report['cli_tool_messages']['recolor-slice.log']=list(dict.fromkeys(l.strip() for l in (logs/'recolor-slice.log').read_text().splitlines() if re.search(r'warn|error|fail',l,re.I)))
+for name in report['files']:
+ file=(OUT/'cad'/name) if name in ('lifes-too-short.FCStd','lettering.json') else (OUT/'printing/evidence'/name) if name=='top_carrier.stl' else OUT/'printing'/name
+ report['files'][name]=sha(file)
+for file in (OUT/'printing/evidence').rglob('*'):
+ if file.is_file() and file.name!='top_carrier.stl':
+  name=file.relative_to(OUT/'printing').as_posix();report['files'][name]=sha(file)
+  report['artifact_locations'][name]=(Path('printing/sign-carriers/upper/lifes-too-short')/name).as_posix()
+write(OUT/'printing/validation.json',report)
+write(OUT/'review.json',dict(status='passed',native_geometry_unchanged=True,mesh_geometry_unchanged=True,palette_slots_used=[2,4],
+ estimated_seconds=report['estimated_seconds'],estimated_filament_g=report['estimated_filament_g']))
+print('PASS deep blue / white; geometry unchanged; reopened and sliced',report['estimated_seconds'],report['estimated_filament_g'])

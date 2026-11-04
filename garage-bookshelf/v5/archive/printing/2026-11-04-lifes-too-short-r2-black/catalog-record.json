@@ -1,0 +1,17 @@
+{
+  "id": "lifes-too-short",
+  "position": "upper",
+  "interface": "sign-upper-v1",
+  "text": "LIFE'S TOO SHORT TO DRIVE BORING CARS",
+  "lines": [
+    "LIFE'S TOO SHORT TO DRIVE",
+    "BORING CARS"
+  ],
+  "source_cad": "cad/sign-carriers/upper/lifes-too-short/lifes-too-short.FCStd",
+  "source_cad_sha256": "48f803b791ef374e53e02f9d37bef56db3e9ac55a598f80d5488de932f54bd49",
+  "project": "sign-carriers/upper/lifes-too-short/lifes-too-short.3mf",
+  "sha256": "4175237d00d6d52112f6ef8582a99676a4e63736890ec955f60da62b49232dc3",
+  "evidence": "printing/sign-carriers/upper/lifes-too-short/validation.json",
+  "physical_fit_tested": false,
+  "revision": "r2-sport-hierarchy"
+}

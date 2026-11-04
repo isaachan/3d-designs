@@ -21,7 +21,7 @@
 
 | 位置 | 文字 | 打印与说明／实物反馈 | CAD | 验证记录 |
 |---|---|---|---|---|
-| 上方横牌 | Life's too short to drive boring cars | [lifes-too-short](upper/lifes-too-short/README.md) | [原生CAD](../../cad/sign-carriers/upper/lifes-too-short/lifes-too-short.FCStd) | [验证](upper/lifes-too-short/validation.json) |
+| 上方横牌 | LIFE'S TOO SHORT TO DRIVE BORING CARS | [lifes-too-short · r2运动字体版](upper/lifes-too-short/README.md) | [原生CAD](../../cad/sign-carriers/upper/lifes-too-short/lifes-too-short.FCStd) | [验证](upper/lifes-too-short/validation.json) |
 | 右侧竖牌 | Engines Roar. Pages Whisper | [engines-roar-pages-whisper](side/engines-roar-pages-whisper/README.md) | [原生CAD](../../cad/sign-carriers/side/engines-roar-pages-whisper/engines-roar-pages-whisper.FCStd) | [验证](side/engines-roar-pages-whisper/validation.json) |
 | 上方横牌 | HANK'S PARKING LOT | [hanks-parking-lot](upper/hanks-parking-lot/README.md) | [原生CAD](../../cad/sign-carriers/upper/hanks-parking-lot/hanks-parking-lot.FCStd) | [验证](upper/hanks-parking-lot/validation.json) |
 | 右侧竖牌 | On the Road. Between the Pages. | [on-the-road-between-the-pages](side/on-the-road-between-the-pages/README.md) | [原生CAD](../../cad/sign-carriers/side/on-the-road-between-the-pages/on-the-road-between-the-pages.FCStd) | [验证](side/on-the-road-between-the-pages/validation.json) |

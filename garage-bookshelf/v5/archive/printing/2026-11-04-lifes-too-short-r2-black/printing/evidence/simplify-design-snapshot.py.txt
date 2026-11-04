@@ -1,0 +1,29 @@
+from pathlib import Path
+import json
+from shapely.geometry import Polygon
+out=Path(__file__).parent
+p=out/'lettering.json';d=json.loads(p.read_text())
+for row,tolerance in zip(d['lines'],[.020,.008]):
+ polygons=[];islands=[];before_vertices=0;maximum_deviation=0
+ for g in row['islands']:
+  original=Polygon(row['polygons'][g[0]],[row['polygons'][i] for i in g[1:]])
+  simplified=original.simplify(tolerance/row['ink_height_mm'],preserve_topology=True)
+  assert simplified.is_valid and simplified.geom_type=='Polygon'
+  assert len(simplified.interiors)==len(original.interiors)
+  maximum_deviation=max(maximum_deviation,original.boundary.hausdorff_distance(simplified.boundary)*row['ink_height_mm'])
+  before_vertices+=sum(len(row['polygons'][i]) for i in g)
+  group=[]
+  for ring in (simplified.exterior,*simplified.interiors):
+   group.append(len(polygons));polygons.append([[float(x),float(y)] for x,y in list(ring.coords)[:-1]])
+  islands.append(group)
+ row['polygons']=polygons;row['islands']=islands
+ row['union_area_per_ink_height_squared']=sum(Polygon(polygons[g[0]],[polygons[i] for i in g[1:]]).area for g in islands)
+ row['frozen_outline_simplification']=dict(tolerance_mm=tolerance,boundary_hausdorff_distance_mm=maximum_deviation,
+    original_vertex_count=before_vertices,final_vertex_count=sum(len(p) for p in polygons),holes_preserved=True)
+ row['maximum_outline_deviation_mm']=.015*row['ink_height_mm']/18+maximum_deviation
+ assert row['maximum_outline_deviation_mm']<.03
+ print(row['text'],before_vertices,'->',sum(len(p) for p in polygons),'vertices',row['maximum_outline_deviation_mm'])
+d.pop('maximum_outline_deviation_mm_at_18mm_ink_height',None)
+d['maximum_outline_deviation_mm']=.03
+d['outline_precision_note']='Topology-preserving simplification; measured symmetric boundary distance plus the original Bezier flattening bound remains below 0.03 mm at the specified row heights.'
+(out/'lettering-print.json').write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')

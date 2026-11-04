@@ -1,42 +1,44 @@
 {
   "error_string": "Success.",
   "layer_height": 0.20000000298023224,
-  "peak_rss_mb": 104.6875,
+  "peak_rss_mb": 116.53125,
   "plate_index": 0,
   "return_code": 0,
   "sliced_plates": [
     {
       "feature_type_times": {
         "Bottom surface": 291.66552734375,
+        "Bridge": 6.660088062286377,
         "Custom": 287.58514404296875,
         "Flush": 63.0,
-        "Gap infill": 95.93880462646484,
-        "Inner wall": 241.687744140625,
-        "Internal solid infill": 622.4956665039062,
-        "Outer wall": 228.33872985839844,
-        "Prime tower": 54.9488639831543,
-        "Top surface": 223.9361572265625,
-        "Travel": 204.85784912109375,
-        "Undefined": 197.0118865966797
+        "Gap infill": 89.36412811279297,
+        "Inner wall": 265.2470397949219,
+        "Internal solid infill": 838.5531616210938,
+        "Outer wall": 234.08103942871094,
+        "Prime tower": 54.94889831542969,
+        "Sparse infill": 25.36815643310547,
+        "Top surface": 249.3724365234375,
+        "Travel": 234.12881469726562,
+        "Undefined": 226.28285217285156
       },
       "filament_change_times": 0,
       "filaments": [
         {
           "filament_id": "GFA00",
-          "id": 1,
-          "main_used_g": 19.012287139892578,
-          "total_used_g": 19.32112693786621
+          "id": 2,
+          "main_used_g": 3.0099730491638184,
+          "total_used_g": 3.068829298019409
         },
         {
           "filament_id": "GFA00",
-          "id": 2,
-          "main_used_g": 1.701637864112854,
-          "total_used_g": 1.7604941129684448
+          "id": 4,
+          "main_used_g": 18.642894744873047,
+          "total_used_g": 18.95173454284668
         }
       ],
       "id": 1,
       "layer_filament_change": 0,
-      "main_predication": 1879.967529296875,
+      "main_predication": 2205.52783203125,
       "obj_cached_cnt": 0,
       "objects": [
         {
@@ -50,38 +52,38 @@
           },
           "id": 5,
           "name": "top_carrier.stl",
-          "triangle_count": 10120
+          "triangle_count": 7536
         }
       ],
       "times": {
-        "conflict_check_time": 12,
-        "detect_overhangs_time": 7,
-        "export_gcode_time": 281,
+        "conflict_check_time": 21,
+        "detect_overhangs_time": 6,
+        "export_gcode_time": 460,
         "flush_plan_time": 0,
-        "generate_support_material_time": 42,
-        "infill_generate_time": 52,
-        "infill_time": 202,
+        "generate_support_material_time": 34,
+        "infill_generate_time": 223,
+        "infill_time": 536,
         "ironing_time": 0,
-        "make_perimeters_time": 223,
-        "multifilament_segment_2d_time": 118,
-        "other_slice_time": 3,
-        "prepare_infill_time": 150,
+        "make_perimeters_time": 218,
+        "multifilament_segment_2d_time": 110,
+        "other_slice_time": 5,
+        "prepare_infill_time": 313,
         "region_split_time": 0,
-        "skirt_brim_time": 5,
-        "slice_layers_time": 27,
-        "sliced_time": 807,
-        "sliced_time_with_cache": 286,
+        "skirt_brim_time": 7,
+        "slice_layers_time": 25,
+        "sliced_time": 1344,
+        "sliced_time_with_cache": 467,
         "support_detect_time": 0,
         "support_interface_time": 0,
         "support_normal_generate_time": 0,
         "support_toolpath_time": 0,
         "support_tree_generate_time": 0,
-        "toolpath_time": 14,
-        "wall_time": 78,
-        "wipe_tower_time": 16
+        "toolpath_time": 36,
+        "wall_time": 83,
+        "wipe_tower_time": 17
       },
-      "total_predication": 2306.655517578125,
-      "triangle_count": 10120,
+      "total_predication": 2632.216064453125,
+      "triangle_count": 7536,
       "warning_message": ""
     }
   ],
@@ -90,9 +92,9 @@
     "export_3mf_time": 0,
     "export_slicedata_time": 0,
     "export_time": 0,
-    "import_time": 34,
+    "import_time": 51,
     "load_slicedata_time": 0,
-    "prepare_time": 39
+    "prepare_time": 63
   },
   "upward_compatible_machine": [
     "Bambu Lab A1 0.4 nozzle",

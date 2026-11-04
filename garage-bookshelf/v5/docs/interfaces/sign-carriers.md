@@ -28,8 +28,10 @@
 
 ## 生成与复现工具
 
-`tools/make_sign_carrier.py`按`--position upper/side`继承当前原生底板、M3螺孔和外角圆角，使用全约束字形草图与原生绑定轮廓驱动Pad/Pocket，按轮廓并集面积验证小写字形的正常重叠合并。上方沿用黑底白字和1mm凸字，右侧沿用深蓝底白字和0.4mm凹字。
+`tools/make_sign_carrier.py`按`--position upper/side`继承当前原生底板、M3螺孔和外角圆角，使用全约束字形草图与原生绑定轮廓驱动Pad/Pocket，按轮廓并集面积验证小写字形的正常重叠合并。上方默认黑底白字和1mm凸字，右侧默认深蓝底白字和0.4mm凹字；冻结输入的`background`可设为`Black`或`DarkBlue`，按款式记录实际配色。Life's too short横牌r2使用`DarkBlue`深蓝底白字。
 
 首次制作可用`--text`和两项`--lines`指定完整文字及分行，使用本机DIN Condensed Bold冻结轮廓；该步骤需要FreeCAD环境中的Matplotlib、NumPy和Shapely。以后使用款式目录中的`lettering.json`和`--lettering`复现，不再依赖系统字体。改字需重新冻结轮廓；字高、行距及深度可在原生CAD的`LetteringParameters`中修改并重算、重新验证。
+
+横牌可在冻结输入的每行中记录独立字体、`ink_height_mm`、`center_x_mm`及`center_z_mm`，并以`layout_reference_ink_height_mm`指定共用字高基准。生成后分别由`Line1Height`、`Line2Height`及各行`CenterX/Z`参数控制，字高关联共用`InkHeight`；用于小标题与大字主体等有层次的排版。字体来源记录实际选定字体名称及哈希；使用字体集合时另存集合序号与集合哈希。可复现示例见[Life's too short横牌r2](../../cad/sign-carriers/upper/lifes-too-short/README.md)。
 
 具体可执行命令见[各款的CAD维护说明](../../cad/sign-carriers/README.md)。工具只写新的build目录，包含原生CAD、字形、网格、预览、双色3MF、配置、重开切片及验证记录。维护者检查后按上述规约发布并更新打印目录清单，保留既有款式。

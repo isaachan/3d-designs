@@ -493,11 +493,6 @@
     "parking-inserts/bmw-z4-e89/parking-tray-s51-b23-d10-t5p1.3mf": "70f09505bcd981d68c135e440a1f718b3d8acfc308dca25d56e5def70a9f933b",
     "parking-inserts/bmw-z4-e89/tray-preview.png": "dce162a2464936e4d36757a48404ca5d47ca6bd41296594adfc79ec23fd49d24",
     "main/rear-installation.png": "deeb0b9a18b1007048604e6aabd59575db7d1d35e993c7df7dda66695892a979",
-    "sign-carriers/upper/lifes-too-short/lifes-too-short.3mf": "976e471f6986e9bec6480216ed933aecbba2ce0de6566bde86bcbacd7957506d",
-    "sign-carriers/upper/lifes-too-short/front-preview.png": "6725fe7e46f532b7141ffbba33300055804eee6e55539bdb102e2e26517233dc",
-    "sign-carriers/upper/lifes-too-short/plate-preview.png": "ab4429ecb3024cdb5022b2901c5c9cff56fbaddbb0c28b891bf68b430c9cc805",
-    "sign-carriers/upper/lifes-too-short/slice-result.json": "2a2a053a8975e54bd1febabebbfca0c6ee50ffeaa63dde6d1096712fdae01256",
-    "sign-carriers/upper/lifes-too-short/validation.json": "b60215fd9f4f9fe120f35bcbb3b410494f8578bbeb1cb68ab6df950c96aef72d",
     "sign-carriers/side/engines-roar-pages-whisper/engines-roar-pages-whisper.3mf": "175846a13ff55d9a0ac7f83646a769174cb288b89436b531893581e31cb56cfa",
     "sign-carriers/side/engines-roar-pages-whisper/front-preview.png": "25ad00694c497ae91f27b504afb8e922637253b9a5dfeb4efe1331e19f4358cd",
     "sign-carriers/side/engines-roar-pages-whisper/plate-preview.png": "f13f7e5248bdadc1c6adc1294a0e64341a5d7a3504fedfd2f44af3f402e3eee8",
@@ -564,7 +559,30 @@
     "parking-inserts/bmw-m4/r1/slice-result.json": "a7618fbec1541481a04212e6e3555d769d2f8d84319ee1198348246198685ac6",
     "parking-inserts/bmw-m4/r1/top-preview.png": "7fd340474607df22b257d5b04100defa62b36f23700ad9203d86f1ef46b91514",
     "parking-inserts/bmw-m4/r1/tray-preview.png": "3b8653e555a6e152ac478306146d2e6f0d981271a1dc0ad1df5561e835794a0e",
-    "parking-inserts/bmw-m4/r1/validation.json": "25c6ecd9514c3c14f6bbaeeb17055928cbdf66846433ff4dbcd269a14a0ae7d3"
+    "parking-inserts/bmw-m4/r1/validation.json": "25c6ecd9514c3c14f6bbaeeb17055928cbdf66846433ff4dbcd269a14a0ae7d3",
+    "sign-carriers/upper/lifes-too-short/front-preview.png": "face9e229b04c2bd82705966d311bc4a6ba201a84156cb7e0d9c0eebd5718db3",
+    "sign-carriers/upper/lifes-too-short/plate-preview.png": "92f4dbaa9fca5e7f7f6e1e775a341e005b3e87d6938ada28d944abc7fdef77dd",
+    "sign-carriers/upper/lifes-too-short/validation.json": "dc0bf20e8e30ca8ca625294d15a1c05ac85a0b98760b0cea4eeb32d12c8d9d29",
+    "sign-carriers/upper/lifes-too-short/lifes-too-short.3mf": "904a49c391df6649f569c5b247b465ff507e860c016ec063af709d28a530e52d",
+    "sign-carriers/upper/lifes-too-short/slice-result.json": "650a7df95bad9189a66d68cbcde71f8cdb906b9e33863c5ae9b4c4a8b72de6c3",
+    "sign-carriers/upper/lifes-too-short/evidence/rebuild-generator-snapshot.py.txt": "dbbff32632485967aba3d355e42fba4d53c52dfa3c49bfafcbeb12befbfabf7f",
+    "sign-carriers/upper/lifes-too-short/evidence/recolor-snapshot.py.txt": "75af790853d7c2a1db05498c1f49c8baffcb56f90cca130351ca05704b3faf60",
+    "sign-carriers/upper/lifes-too-short/evidence/unsimplified-lettering.json": "bc7801e0493e85d8cf4fa0463f7ccf92524f6bdad3aead3c2d1eb1ea78fbfb27",
+    "sign-carriers/upper/lifes-too-short/evidence/freeze-design-snapshot.py.txt": "25f55f5a0371bd4374feafa9f561d3b08b96349cf72c8a4464b096ff04612d3c",
+    "sign-carriers/upper/lifes-too-short/evidence/generator-snapshot.py.txt": "4da7cdd695c5767245889bcee461d4375f65876f180b09dc6cb871fb04d17e56",
+    "sign-carriers/upper/lifes-too-short/evidence/simplify-design-snapshot.py.txt": "90b15683e82b2defdf74aeb01983f27c6e62621edd9ce2d09b11d8ce0de7321c",
+    "sign-carriers/upper/lifes-too-short/evidence/top_carrier.stl": "a4f74d17cff8a183b440aa72652ee0feb5a6ccb64bb58f52328dbb191ac23b53",
+    "sign-carriers/upper/lifes-too-short/evidence/logs/recolor-save.log": "32f813348aa8ee078e8e8973523d1f865376b0e662ca4c391f973a462d259ffe",
+    "sign-carriers/upper/lifes-too-short/evidence/logs/save.log": "9566d848770c006f6997c4e452fb1b687d05a18c369720a03834dfb73dce84fb",
+    "sign-carriers/upper/lifes-too-short/evidence/logs/configure.log": "691a5d6236317baa03163dbc71bc2b8febb905fad8c55ac4c078bee24dc1c39e",
+    "sign-carriers/upper/lifes-too-short/evidence/logs/slice.log": "e2cc01a9244d065c6baed8b92d3dc7c1378630b20ad9789f7f681b179652a93c",
+    "sign-carriers/upper/lifes-too-short/evidence/logs/recolor-slice.log": "67bb2cd9a19631ac355a0b591e566790dd3632f6cb852096c41c121328fd42ef",
+    "sign-carriers/upper/lifes-too-short/evidence/profiles/PLA-White.json": "21dc16a3ff3124908bb7e94318100cb81b042b648e5a22fb55b454c9739f2e7f",
+    "sign-carriers/upper/lifes-too-short/evidence/profiles/PLA-Red.json": "6192d639e232f1d90c2885ceb0aec4affd2b3f08bf553c3f5fe0223574b96249",
+    "sign-carriers/upper/lifes-too-short/evidence/profiles/PLA-DarkBlue.json": "c40d0c20fe7eed14ba6ce2acc5db3bd12280b0806fb368d4d8f52008feba043b",
+    "sign-carriers/upper/lifes-too-short/evidence/profiles/PLA-LightBlue.json": "8f40ac08fa81dddcc785fcd4460856e6fd84367feb00686f99fc499e6d9edf7a",
+    "sign-carriers/upper/lifes-too-short/evidence/profiles/process.json": "2153bb21149f18716bf64cf099aa1dc04fb8199513e0e7e6c36fc2dca28f7e7b",
+    "sign-carriers/upper/lifes-too-short/evidence/profiles/PLA-Black.json": "5a6df4232ae86d61ee3fcf964dfcd3585b8634a06a985020139a2d8826a9ae36"
   },
   "provenance": [
     {
@@ -793,31 +811,6 @@
       "source": "archive/printing/2026-11-02-reinforcement/rear-installation.png"
     },
     {
-      "path": "sign-carriers/upper/lifes-too-short/lifes-too-short.3mf",
-      "sha256": "976e471f6986e9bec6480216ed933aecbba2ce0de6566bde86bcbacd7957506d",
-      "source": "archive/printing/2026-11-04-custom-signs/upper/lifes-too-short/lifes-too-short.3mf"
-    },
-    {
-      "path": "sign-carriers/upper/lifes-too-short/front-preview.png",
-      "sha256": "6725fe7e46f532b7141ffbba33300055804eee6e55539bdb102e2e26517233dc",
-      "source": "archive/printing/2026-11-04-custom-signs/upper/lifes-too-short/front-preview.png"
-    },
-    {
-      "path": "sign-carriers/upper/lifes-too-short/plate-preview.png",
-      "sha256": "ab4429ecb3024cdb5022b2901c5c9cff56fbaddbb0c28b891bf68b430c9cc805",
-      "source": "archive/printing/2026-11-04-custom-signs/upper/lifes-too-short/plate-preview.png"
-    },
-    {
-      "path": "sign-carriers/upper/lifes-too-short/slice-result.json",
-      "sha256": "2a2a053a8975e54bd1febabebbfca0c6ee50ffeaa63dde6d1096712fdae01256",
-      "source": "archive/printing/2026-11-04-custom-signs/upper/lifes-too-short/slice-result.json"
-    },
-    {
-      "path": "sign-carriers/upper/lifes-too-short/validation.json",
-      "sha256": "b60215fd9f4f9fe120f35bcbb3b410494f8578bbeb1cb68ab6df950c96aef72d",
-      "source": "archive/printing/2026-11-04-custom-signs/upper/lifes-too-short/validation.json"
-    },
-    {
       "path": "sign-carriers/side/engines-roar-pages-whisper/engines-roar-pages-whisper.3mf",
       "sha256": "175846a13ff55d9a0ac7f83646a769174cb288b89436b531893581e31cb56cfa",
       "source": "archive/printing/2026-11-04-custom-signs/side/engines-roar-pages-whisper/engines-roar-pages-whisper.3mf"
@@ -844,7 +837,7 @@
     }
   ],
   "physical_print_and_fit_tested": false,
-  "note": "主体及既有CAD与打印项目保留原字节。新增文字载板按各款验证记录完成原生CAD、接口、网格、配色及保存后重开切片检查；实物打印与试装待反馈。车型卡槽仍采用BMW Z4 E89实测四轮弧形槽方法。",
+  "note": "主体与其他款式CAD、打印项目保留原字节；Life's too short横牌以r2深蓝底白字运动字体版替换r1，旧版完整归档。文字载板按各款验证记录完成原生CAD、接口、网格、配色及保存后重开切片；实物打印与试装待反馈。车型卡槽采用BMW Z4 E89实测四轮弧形槽方法。",
   "parking_insert_design_method": {
     "id": "bmw-z4-e89-measured-wheel-cradle-v1",
     "reference": "studies/measured-tray-s51-b23-d10-t5p1/README.md",
@@ -864,17 +857,23 @@
       "id": "lifes-too-short",
       "position": "upper",
       "interface": "sign-upper-v1",
-      "text": "Life's too short to drive boring cars",
+      "text": "LIFE'S TOO SHORT TO DRIVE BORING CARS",
       "lines": [
-        "Life's too short",
-        "to drive boring cars"
+        "LIFE'S TOO SHORT TO DRIVE",
+        "BORING CARS"
       ],
       "source_cad": "cad/sign-carriers/upper/lifes-too-short/lifes-too-short.FCStd",
-      "source_cad_sha256": "f8f11d3d432ebe32fbf6ff34b6c0a8358e960422b3a615e4423a091c7649b17f",
+      "source_cad_sha256": "c4bcc26b0549e66591c07bb0011c1ee92ae7ec08dd674130d0768da93f9483cb",
       "project": "sign-carriers/upper/lifes-too-short/lifes-too-short.3mf",
-      "sha256": "976e471f6986e9bec6480216ed933aecbba2ce0de6566bde86bcbacd7957506d",
+      "sha256": "904a49c391df6649f569c5b247b465ff507e860c016ec063af709d28a530e52d",
       "evidence": "printing/sign-carriers/upper/lifes-too-short/validation.json",
-      "physical_fit_tested": false
+      "physical_fit_tested": false,
+      "revision": "r2-sport-hierarchy",
+      "background": "DarkBlue",
+      "palette_slots_used": [
+        2,
+        4
+      ]
     },
     {
       "id": "engines-roar-pages-whisper",
