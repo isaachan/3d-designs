@@ -168,7 +168,8 @@ def build(spec, outline):
     label.addProperty('App::PropertyString','Text','Label')
     label.Text=outline['text']
     label.addProperty('App::PropertyString','Font','Label');label.Font=outline['font']
-    for name,value in dict(CharacterHeight=4,RaisedHeight=.4,BottomY=-37.7).items():
+    for name,value in dict(CharacterHeight=spec.get('label_cap_height_mm',4),
+                           RaisedHeight=.4,BottomY=-37.7).items():
         label.addProperty('App::PropertyLength' if name!='BottomY' else 'App::PropertyDistance',name,'Label')
         setattr(label,name,value)
     polygons=[[(f'ModelLabel.CharacterHeight*({x})',
@@ -292,6 +293,10 @@ def main(args=None):
     stem = parking_stem(spec.get('variant'), spec.get('revision'))
     outline_path=args.spec.with_name('model-label-outline.json')
     outline=read_json(outline_path)
+    label_height=spec.get('label_cap_height_mm',4)
+    assert isinstance(label_height,(int,float)) and 0<label_height<=4
+    label_width=outline['nominal_width_mm']*label_height/outline['nominal_cap_height_mm']
+    assert label_width<=36,'Reduce label_cap_height_mm to keep the full model name inside the plate'
     measurements=spec['measurements_mm']
     assert set(measurements)=={'S','Bf','Br','Df','Dr','Tf','Tr'}
     assert all(isinstance(v,(float,int)) and v>0 for v in measurements.values())
@@ -315,6 +320,15 @@ def main(args=None):
     doc,body,foot=build(spec,outline)
     shape=body.Shape.copy()
     assert shape.BoundBox.XLength<=40+1e-6 and shape.BoundBox.YLength<=83+1e-6
+    letters=shape.cut(doc.Pocket_Rear_2_TireArc.Shape)
+    assert letters.Volume>0 and abs(letters.BoundBox.ZLength-.4)<1e-6
+    lowered=letters.copy();lowered.translate(App.Vector(0,0,-.4))
+    unsupported=lowered.cut(foot).Volume
+    guide_overlap=letters.common(doc.Pocket_Rear_2_TireArc.Shape.cut(foot)).Volume
+    assert unsupported<1e-6 and guide_overlap<1e-6
+    label_check=dict(supported_by_foot=True,unsupported_volume_mm3=unsupported,
+                     guide_overlap_mm3=guide_overlap,
+                     dimensions_mm=[letters.BoundBox.XLength,letters.BoundBox.YLength,letters.BoundBox.ZLength])
     tire_checks=measured_tires(doc,shape)
     source=App.openDocument(str(CAD))
     base_difference=[source.parking_tray_interface_Body.Shape.cut(foot).Volume,
@@ -396,8 +410,8 @@ def main(args=None):
         slot_fit_checks=fit_checks,formal_cad_unchanged=True,
         mesh_watertight=True,mesh_components=1,mesh_triangles=check.CountFacets,
         mesh_relative_volume_error=mesh_error,print_dimensions_mm=actual,
-        model_label_geometry=dict(font=outline['font'],cap_height_mm=4,raised_height_mm=.4,
-                                  width_mm=outline['nominal_width_mm'],bottom_y_mm=-37.7),
+        model_label_geometry=dict(font=outline['font'],cap_height_mm=label_height,raised_height_mm=.4,
+                                  width_mm=label_width,bottom_y_mm=-37.7,geometry_check=label_check),
         settings=settings,saved_project_reopened_and_sliced=True,warning_messages=plate['warning_message'],
         estimated_seconds=plate['total_predication'],
         estimated_filament_g=sum(f['total_used_g'] for f in plate['filaments']),

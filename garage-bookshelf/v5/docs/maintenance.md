@@ -47,6 +47,8 @@ python3 tools/verify_printing.py
 
 新增车型可使用`tools/make_parking_insert.py`，输入为独立款式的`measurements.json`及同目录的`model-label-outline.json`；示例及复现命令见[车型CAD索引](../cad/parking-inserts/README.md)。车型与修订标识只使用小写字母、数字及分隔单词的单个连字符，不含路径。先用系统Python执行`--freeze-label <measurements.json>`冻结Arial Bold车型字形，再用FreeCAD Python执行`--spec <measurements.json> --output build/<新运行名>`。工具在加载CAD前拒绝非法标识，写入前再检查目标位于本次build输出目录内且文件尚不存在。建模与验证沿用BMW方法；输出目录必须为空，既有BMW参考文件保持原样。
 
+长车型名可在`measurements.json`设置`label_cap_height_mm`（默认4mm），使完整单行文字宽度不超过36mm；凸起保持0.4mm。生成器检查文字受底板支撑且不侵入轮槽，并在报告中记录实际字高和文字包络。冻结字形需要Matplotlib；系统Python没有该模块时，可用FreeCAD自带Python执行同一冻结命令。
+
 ## 生成、交付与历史资料
 
 自动生成写入新的`build/<运行名>/`，临时切片及G-code放`build/tmp/`。`tools/package_release.py`也只在build内创建候选交付，不覆盖已确认文件；完整命令见打印生成指南。
