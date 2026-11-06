@@ -1,0 +1,25 @@
+{
+  "canvas": { "width_px": 1672, "height_px": 941 },
+  "paper": { "width_mm": 120.0, "height_mm": 67.54, "corner_radius_mm": 2.0, "thickness_mm": 1.8 },
+  "ruled_lines": { "depth_mm": 0.3, "width_mm": 0.22, "row_min_coverage": 0.5, "alpha_threshold": 128 },
+  "border": { "width_mm": 1.0, "depth_mm": 0.3, "inner_corner_radius_mm": 1.0 },
+  "handwriting": { "raise_mm": 1.0, "alpha_threshold": 48, "min_component_px": 180, "simplify_epsilon": 1.7 },
+  "date": {
+    "text": "2026.09.11",
+    "anchor_right_mm": 115.69,
+    "anchor_bottom_mm": 2.52,
+    "base": { "stroke_mm": 0.22, "digit_width_mm": 1.05, "digit_height_mm": 2.15, "digit_advance_mm": 1.42, "dot_advance_mm": 0.85 },
+    "character_scale": 1.5,
+    "stroke_scale": 2.0,
+    "raise_mm": 1.0
+  },
+  "keyring_hole": { "center_mm": [12.45, 10.79], "diameter_mm": 7.68 },
+  "colors": { "paper": "#f5f5f0", "ruled_gray": "#737373", "handwriting_blue": "#006fe6", "date_black": "#1a1a1a" },
+  "extruder_order": ["paper", "ruled_gray", "handwriting_blue", "date_black"],
+  "svg_cosmetics": {
+    "paper_corner_radius_px": 28,
+    "date_text_x_px": 1437,
+    "date_text_y_px": 904,
+    "date_font_size_px": 29
+  }
+}
