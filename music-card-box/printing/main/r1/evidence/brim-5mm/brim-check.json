@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "validated_at": "2026-11-04T14:03:21.982815+00:00",
+  "source_geometry_3mf_sha256": "e2bea9152e81237c810ea91cf1e773b8c206b1b1521753be8a3dc4c2c1447c1d",
+  "current_project_sha256": "3cef22780f620e85ec4a86a70ac7be3e36d7779eb8681587df8fd73aef11ca65",
+  "source_cad_sha256": "30c65f988e367b3da1a5d2f4dd7af34cc4d1d6416b2424605c4ea87718ec0a8d",
+  "geometry_triangle_indices_unchanged": true,
+  "maximum_vertex_rounding_mm": 7.6000000319709216e-06,
+  "orientation": "upright; original bottom remains at Z=0",
+  "brim_type": "outer_only",
+  "brim_width_mm": 5.0,
+  "reopen_saved_settings": true,
+  "plate_instances": 1,
+  "machine": "Bambu Lab X2D",
+  "nozzle_diameter_mm": [
+    "0.4",
+    "0.4"
+  ],
+  "slicing_exit_code": 0,
+  "actual_brim_toolpath": {
+    "extrusion_points": 40,
+    "xy_bounds_mm": [
+      10.358,
+      10.558,
+      209.642,
+      57.574
+    ]
+  },
+  "embedded_gcode_in_delivery": false,
+  "physical_print": "not_tested",
+  "tool_warnings": [
+    "[2026-11-04 21:58:45.119508] [0x00000001f8686180] [warning] [BambuStudio.cpp:1845 run] cli mode, Current BambuStudio Version 02.09.01.70",
+    "[2026-11-04 21:58:45.152997] [0x00000001f8686180] [warning] [BambuStudio.cpp:3155 run] can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine_full/Bambu Lab X2D 0.4 nozzle.json ",
+    "[2026-11-04 21:58:45.153022] [0x00000001f8686180] [warning] [BambuStudio.cpp:3177 run] can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/process_full/0.20mm Standard @BBL X2D.json ",
+    "[2026-11-04 21:58:45.153051] [0x00000001f8686180] [warning] [BambuStudio.cpp:4326 run] no filament colors found in projects",
+    "[2026-11-04 21:58:45.154029] [0x00000001f8686180] [warning] [MultiNozzleUtils.cpp:217 load_nozzle_infos_with_compatibility] building nozzle list from filament map and volume types",
+    "[2026-11-04 21:58:45.345600] [0x00000001f8686180] [warning] [SupportParameters.hpp:204 SupportParameters] tree support default to organic support",
+    "[2026-11-04 21:58:45.392732] [0x00000001f8686180] [error]   [GCode.cpp:2033 do_export] [WARNING]: the parent path slice-check-v2 is not there, create it!",
+    "[2026-11-04 21:58:45.893573] [0x00000001f8686180] [error]   [GCodeProcessor.cpp:5973 process_T] Invalid T command (T65279).",
+    "[2026-11-04 21:58:45.893593] [0x00000001f8686180] [error]   [GCodeProcessor.cpp:5973 process_T] Invalid T command (T65535)."
+  ]
+}

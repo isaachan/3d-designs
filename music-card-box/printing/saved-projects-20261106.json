@@ -1,0 +1,215 @@
+{
+  "recorded_on": "2026-11-06",
+  "validated_at": "2026-11-06T10:49:10.320241+00:00",
+  "note": "Preserve subsequent Bambu Studio saves as-is. Geometry is compared to frozen validated input; current independent projects were sliced without preset overrides. Historical combined-layout validation uses the reference main placement.",
+  "projects": {
+    "printing/main/r1/01-darkblue.3mf": {
+      "sha256": "c6793b0681c797224d03796fb282d4e7882e2ad86b0f79196f4464d4653c4963",
+      "reference": "archive/printing/20261106-before-saved-settings/main/01-darkblue.3mf",
+      "reference_sha256": "3cef22780f620e85ec4a86a70ac7be3e36d7779eb8681587df8fd73aef11ca65",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "brim_type": "auto_brim",
+        "brim_width": "5",
+        "brim_object_gap": "0.1",
+        "layer_height": "0.2",
+        "wall_loops": "2",
+        "sparse_infill_density": "15%",
+        "filament_colour": [
+          "#0A2989",
+          "#FFFFFF",
+          "#F4EE2A",
+          "#4DAFDA",
+          "#FFFFFF",
+          "#F72323"
+        ],
+        "filament_type": [
+          "PLA",
+          "PLA",
+          "PLA",
+          "PLA",
+          "PLA",
+          "PLA"
+        ],
+        "curr_bed_type": "Textured PEI Plate",
+        "enable_support": "0",
+        "enable_prime_tower": "1",
+        "top_shell_layers": "5",
+        "bottom_shell_layers": "3"
+      },
+      "changed_settings": {
+        "brim_type": {
+          "previous": "outer_only",
+          "current": "auto_brim"
+        },
+        "wall_loops": {
+          "previous": "4",
+          "current": "2"
+        },
+        "filament_colour": {
+          "previous": [
+            "#173B70"
+          ],
+          "current": [
+            "#0A2989",
+            "#FFFFFF",
+            "#F4EE2A",
+            "#4DAFDA",
+            "#FFFFFF",
+            "#F72323"
+          ]
+        },
+        "filament_type": {
+          "previous": [
+            "PLA"
+          ],
+          "current": [
+            "PLA",
+            "PLA",
+            "PLA",
+            "PLA",
+            "PLA",
+            "PLA"
+          ]
+        },
+        "enable_prime_tower": {
+          "previous": "0",
+          "current": "1"
+        },
+        "bottom_shell_layers": {
+          "previous": "5",
+          "current": "3"
+        }
+      },
+      "translations_mm": [
+        [
+          28.973580999999996,
+          67.8462552,
+          0.0
+        ]
+      ],
+      "geometry_changed": false,
+      "independent_bed_mm": [
+        256,
+        256
+      ],
+      "embedded_gcode": false,
+      "slice_result": "printing/main/r1/evidence/saved-20261106/slice-result.json",
+      "slice_result_sha256": "8f02b274a5436b55546c611673d58b0a97e34b74345c6ba95d616bf21769c967",
+      "slice_log": "printing/main/r1/evidence/saved-20261106/slice.log"
+    },
+    "printing/decorations/cassette-r1/03-white.3mf": {
+      "sha256": "f29977f89d3c4ba5031c78ce1e2dc78799d63282fba15c162d84a1407c3fc092",
+      "reference": "archive/printing/20261106-before-saved-settings/white/03-white.3mf",
+      "reference_sha256": "eb3fffa71be49a6e281c5696eef05dfd77ae5fe76711fe179e4383cadacf1a15",
+      "settings": {
+        "printer_model": "Bambu Lab X2D",
+        "nozzle_diameter": [
+          "0.4",
+          "0.4"
+        ],
+        "brim_type": "auto_brim",
+        "brim_width": "5",
+        "brim_object_gap": "0.1",
+        "layer_height": "0.2",
+        "wall_loops": "2",
+        "sparse_infill_density": "15%",
+        "filament_colour": [
+          "#FFFFFF",
+          "#C12E1F",
+          "#F4EE2A",
+          "#4DAFDA",
+          "#FFFFFF",
+          "#F72323"
+        ],
+        "filament_type": [
+          "PLA",
+          "PLA",
+          "PLA",
+          "PLA",
+          "PLA",
+          "PLA"
+        ],
+        "curr_bed_type": "Textured PEI Plate",
+        "enable_support": "0",
+        "enable_prime_tower": "1",
+        "top_shell_layers": "5",
+        "bottom_shell_layers": "3"
+      },
+      "changed_settings": {
+        "brim_type": {
+          "previous": "outer_only",
+          "current": "auto_brim"
+        },
+        "wall_loops": {
+          "previous": "4",
+          "current": "2"
+        },
+        "filament_colour": {
+          "previous": [
+            "#F6F7F2"
+          ],
+          "current": [
+            "#FFFFFF",
+            "#C12E1F",
+            "#F4EE2A",
+            "#4DAFDA",
+            "#FFFFFF",
+            "#F72323"
+          ]
+        },
+        "filament_type": {
+          "previous": [
+            "PLA"
+          ],
+          "current": [
+            "PLA",
+            "PLA",
+            "PLA",
+            "PLA",
+            "PLA",
+            "PLA"
+          ]
+        },
+        "enable_prime_tower": {
+          "previous": "0",
+          "current": "1"
+        },
+        "bottom_shell_layers": {
+          "previous": "5",
+          "current": "3"
+        }
+      },
+      "translations_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "geometry_changed": false,
+      "independent_bed_mm": [
+        256,
+        256
+      ],
+      "embedded_gcode": false,
+      "slice_result": "printing/decorations/cassette-r1/evidence/saved-20261106/slice-result.json",
+      "slice_result_sha256": "dd4cf05a36049d6e511d0023c3a000bb4bc181f5d02a36a1443a7a40a16b232a",
+      "slice_log": "printing/decorations/cassette-r1/evidence/saved-20261106/slice.log"
+    }
+  }
+}

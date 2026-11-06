@@ -1,0 +1,14 @@
+[01-darkblue.3mf]
+size_x = 190.399994
+size_y = 38.400002
+size_z = 92.000000
+min_x = -95.199997
+min_y = -19.200001
+min_z = -46.000000
+max_x = 95.199997
+max_y = 19.200001
+max_z = 46.000000
+number_of_facets = 12426
+manifold = yes
+number_of_parts =  1
+volume = 138720.343750

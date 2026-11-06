@@ -1,0 +1,73 @@
+{
+  "revision": "r1",
+  "dimensions_mm": {
+    "CardWidth": 180,
+    "CardHeight": 101,
+    "StackDepth": 20,
+    "InnerWidth": 184,
+    "InnerDepth": 32,
+    "RearStandOff": 7,
+    "Wall": 3.2,
+    "Bottom": 3.2,
+    "BackHeight": 92,
+    "FrontHeight": 76,
+    "FrontGripHeight": 60,
+    "RearGripHeight": 76,
+    "GripWidth": 70,
+    "GripRadius": 10,
+    "PanelWidth": 172,
+    "PanelHeight": 44,
+    "PanelBottom": 14,
+    "PanelThickness": 1.8,
+    "GlueGap": 0.2,
+    "ReelRadius": 14,
+    "ReelHoleRadius": 5.8,
+    "ReelFitClearance": 0.2,
+    "ReelX": 47,
+    "ReelZ": 37,
+    "BadgeThickness": 1.4,
+    "NoteThickness": 1.6
+  },
+  "colors": {
+    "darkblue": "#173B70",
+    "lightblue": "#8DD6ED",
+    "white": "#F6F7F2",
+    "yellow": "#FFD65B"
+  },
+  "print_parts": {
+    "CassetteShell": "darkblue",
+    "SkyPanel": "lightblue",
+    "ReelLeft": "white",
+    "ReelRight": "white",
+    "TapeBadge": "white",
+    "MusicNote": "yellow"
+  },
+  "adhesive_zones_mm": [
+    [
+      -82,
+      10,
+      20,
+      60
+    ],
+    [
+      -35,
+      10,
+      20,
+      60
+    ],
+    [
+      15,
+      10,
+      20,
+      60
+    ],
+    [
+      62,
+      10,
+      20,
+      60
+    ]
+  ],
+  "reference": "reference/cards.jpg",
+  "measurement_source": "User supplied 180 x 101 mm cards, approximately 20 mm stack; photo is appearance reference only."
+}

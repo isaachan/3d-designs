@@ -1,0 +1,824 @@
+{
+  "status": "passed",
+  "checks": {
+    "fully_constrained_sketches": 17,
+    "card_insertion_removal": [
+      {
+        "depth_offset_mm": 0,
+        "lift_mm": 0,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 0,
+        "lift_mm": 0.5,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 0,
+        "lift_mm": 10,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 0,
+        "lift_mm": 35,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 0,
+        "lift_mm": 70,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 0,
+        "lift_mm": 105,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 0,
+        "lift_mm": 130,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 0.01,
+        "lift_mm": 0,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 0.01,
+        "lift_mm": 0.5,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 0.01,
+        "lift_mm": 10,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 0.01,
+        "lift_mm": 35,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 0.01,
+        "lift_mm": 70,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 0.01,
+        "lift_mm": 105,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 0.01,
+        "lift_mm": 130,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 2.5,
+        "lift_mm": 0,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 2.5,
+        "lift_mm": 0.5,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 2.5,
+        "lift_mm": 10,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 2.5,
+        "lift_mm": 35,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 2.5,
+        "lift_mm": 70,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 2.5,
+        "lift_mm": 105,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 2.5,
+        "lift_mm": 130,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 4.99,
+        "lift_mm": 0,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 4.99,
+        "lift_mm": 0.5,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 4.99,
+        "lift_mm": 10,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 4.99,
+        "lift_mm": 35,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 4.99,
+        "lift_mm": 70,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 4.99,
+        "lift_mm": 105,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 4.99,
+        "lift_mm": 130,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 5,
+        "lift_mm": 0,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 5,
+        "lift_mm": 0.5,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 5,
+        "lift_mm": 10,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 5,
+        "lift_mm": 35,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 5,
+        "lift_mm": 70,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 5,
+        "lift_mm": 105,
+        "overlap_mm3": 0.0
+      },
+      {
+        "depth_offset_mm": 5,
+        "lift_mm": 130,
+        "overlap_mm3": 0.0
+      }
+    ],
+    "part_interference": [
+      [
+        "CassetteShell",
+        "SkyPanel",
+        0.0
+      ],
+      [
+        "CassetteShell",
+        "ReelLeft",
+        0.0
+      ],
+      [
+        "CassetteShell",
+        "ReelRight",
+        0.0
+      ],
+      [
+        "CassetteShell",
+        "TapeBadge",
+        0.0
+      ],
+      [
+        "CassetteShell",
+        "MusicNote",
+        0.0
+      ],
+      [
+        "SkyPanel",
+        "ReelLeft",
+        0.0
+      ],
+      [
+        "SkyPanel",
+        "ReelRight",
+        0.0
+      ],
+      [
+        "SkyPanel",
+        "TapeBadge",
+        0.0
+      ],
+      [
+        "SkyPanel",
+        "MusicNote",
+        0.0
+      ],
+      [
+        "ReelLeft",
+        "ReelRight",
+        0.0
+      ],
+      [
+        "ReelLeft",
+        "TapeBadge",
+        0.0
+      ],
+      [
+        "ReelLeft",
+        "MusicNote",
+        0.0
+      ],
+      [
+        "ReelRight",
+        "TapeBadge",
+        0.0
+      ],
+      [
+        "ReelRight",
+        "MusicNote",
+        0.0
+      ],
+      [
+        "TapeBadge",
+        "MusicNote",
+        0.0
+      ]
+    ],
+    "flat_adhesive_zones": [
+      {
+        "rectangle_x_z_w_h_mm": [
+          -82,
+          10,
+          20,
+          60
+        ],
+        "verified_flat_area_mm2": 1199.9999999996696
+      },
+      {
+        "rectangle_x_z_w_h_mm": [
+          -35,
+          10,
+          20,
+          60
+        ],
+        "verified_flat_area_mm2": 1199.9999999996696
+      },
+      {
+        "rectangle_x_z_w_h_mm": [
+          15,
+          10,
+          20,
+          60
+        ],
+        "verified_flat_area_mm2": 1199.9999999996696
+      },
+      {
+        "rectangle_x_z_w_h_mm": [
+          62,
+          10,
+          20,
+          60
+        ],
+        "verified_flat_area_mm2": 1199.9999999996696
+      }
+    ],
+    "wall_back_plane_y_mm": 0,
+    "clearances_mm": {
+      "total_width": 4,
+      "total_depth": 5,
+      "minimum_card_to_wall_gap": 10.2,
+      "front_center_exposed_height": 44.2,
+      "rear_center_exposed_height": 28.200000000000003,
+      "reel_diametral_clearance": 0.4,
+      "glue_gap": 0.2
+    },
+    "saved_cad_reopened": true,
+    "current_color_project_brim_separation": [
+      {
+        "pair": [
+          "CassetteShell",
+          "SkyPanel"
+        ],
+        "axis_gaps_mm": [
+          -181.1999969,
+          21.599998400000004
+        ],
+        "six_mm_envelopes_disjoint": true
+      },
+      {
+        "pair": [
+          "CassetteShell",
+          "ReelLeft"
+        ],
+        "axis_gaps_mm": [
+          -49.19686312619629,
+          97.60156528690186
+        ],
+        "six_mm_envelopes_disjoint": true
+      },
+      {
+        "pair": [
+          "CassetteShell",
+          "ReelRight"
+        ],
+        "axis_gaps_mm": [
+          -99.19686312619629,
+          97.60156528690186
+        ],
+        "six_mm_envelopes_disjoint": true
+      },
+      {
+        "pair": [
+          "CassetteShell",
+          "TapeBadge"
+        ],
+        "axis_gaps_mm": [
+          -78.1999969,
+          103.0999984
+        ],
+        "six_mm_envelopes_disjoint": true
+      },
+      {
+        "pair": [
+          "CassetteShell",
+          "MusicNote"
+        ],
+        "axis_gaps_mm": [
+          -45.6999969,
+          131.5999984
+        ],
+        "six_mm_envelopes_disjoint": true
+      },
+      {
+        "pair": [
+          "SkyPanel",
+          "ReelLeft"
+        ],
+        "axis_gaps_mm": [
+          -39.99686622619629,
+          32.001566886901855
+        ],
+        "six_mm_envelopes_disjoint": true
+      },
+      {
+        "pair": [
+          "SkyPanel",
+          "ReelRight"
+        ],
+        "axis_gaps_mm": [
+          -89.99686622619629,
+          32.001566886901855
+        ],
+        "six_mm_envelopes_disjoint": true
+      },
+      {
+        "pair": [
+          "SkyPanel",
+          "TapeBadge"
+        ],
+        "axis_gaps_mm": [
+          -69.0,
+          37.5
+        ],
+        "six_mm_envelopes_disjoint": true
+      },
+      {
+        "pair": [
+          "SkyPanel",
+          "MusicNote"
+        ],
+        "axis_gaps_mm": [
+          -36.5,
+          66.0
+        ],
+        "six_mm_envelopes_disjoint": true
+      },
+      {
+        "pair": [
+          "ReelLeft",
+          "ReelRight"
+        ],
+        "axis_gaps_mm": [
+          22.006267547607422,
+          -27.99686622619629
+        ],
+        "six_mm_envelopes_disjoint": true
+      },
+      {
+        "pair": [
+          "ReelLeft",
+          "TapeBadge"
+        ],
+        "axis_gaps_mm": [
+          63.00313377380371,
+          -12.498433113098145
+        ],
+        "six_mm_envelopes_disjoint": true
+      },
+      {
+        "pair": [
+          "ReelLeft",
+          "MusicNote"
+        ],
+        "axis_gaps_mm": [
+          95.50313377380371,
+          6.0015668869018555
+        ],
+        "six_mm_envelopes_disjoint": true
+      },
+      {
+        "pair": [
+          "ReelRight",
+          "TapeBadge"
+        ],
+        "axis_gaps_mm": [
+          13.003133773803711,
+          -12.498433113098145
+        ],
+        "six_mm_envelopes_disjoint": true
+      },
+      {
+        "pair": [
+          "ReelRight",
+          "MusicNote"
+        ],
+        "axis_gaps_mm": [
+          45.50313377380371,
+          6.0015668869018555
+        ],
+        "six_mm_envelopes_disjoint": true
+      },
+      {
+        "pair": [
+          "TapeBadge",
+          "MusicNote"
+        ],
+        "axis_gaps_mm": [
+          -33.5,
+          21.5
+        ],
+        "six_mm_envelopes_disjoint": true
+      }
+    ],
+    "current_color_slices": {
+      "02-lightblue.3mf": true,
+      "03-white.3mf": true,
+      "04-yellow.3mf": true
+    },
+    "combined_six_object_geometry_brim_slice": true
+  },
+  "physical_fit": "not_tested",
+  "adhesive_load_test": "not_tested",
+  "slicing": "passed_x2d_0p4_pla_decoration_layout_r2",
+  "parts": {
+    "CassetteShell": {
+      "color": "darkblue",
+      "volume_mm3": 138724.6185761612,
+      "bounds_mm": [
+        -95.2,
+        0.0,
+        -4.6e-14,
+        95.20000000000002,
+        38.400000000000084,
+        92.0
+      ],
+      "native_tip": "PartDesign::Fillet",
+      "solids": 1,
+      "mesh_closed": true,
+      "triangles": 12426,
+      "print_bounds_mm": [
+        14.800003051757812,
+        15.0,
+        -4.6000001225655895e-14,
+        205.1999969482422,
+        53.400001525878906,
+        92.0
+      ]
+    },
+    "SkyPanel": {
+      "color": "lightblue",
+      "volume_mm3": 11173.676995800075,
+      "bounds_mm": [
+        -86.0,
+        38.6,
+        13.999999999999993,
+        86.0,
+        40.40000000000005,
+        57.99999999999999
+      ],
+      "native_tip": "PartDesign::Pocket",
+      "solids": 1,
+      "mesh_closed": true,
+      "triangles": 1344,
+      "print_bounds_mm": [
+        24.0,
+        75.0,
+        0.0,
+        196.0,
+        119.0,
+        1.8000030517578125
+      ]
+    },
+    "ReelLeft": {
+      "color": "white",
+      "volume_mm3": 891.6169818116458,
+      "bounds_mm": [
+        -61.0,
+        38.60000000000001,
+        23.047817097906627,
+        -33.0,
+        40.40000000000003,
+        50.952182902093384
+      ],
+      "native_tip": "PartDesign::Pocket",
+      "solids": 1,
+      "mesh_closed": true,
+      "triangles": 2112,
+      "print_bounds_mm": [
+        36.00313377380371,
+        151.00156688690186,
+        0.0,
+        63.99686622619629,
+        178.99843311309814,
+        1.8000030517578125
+      ]
+    },
+    "ReelRight": {
+      "color": "white",
+      "volume_mm3": 891.6169818116458,
+      "bounds_mm": [
+        33.0,
+        38.60000000000001,
+        23.047817097906627,
+        61.0,
+        40.40000000000003,
+        50.952182902093384
+      ],
+      "native_tip": "PartDesign::Pocket",
+      "solids": 1,
+      "mesh_closed": true,
+      "triangles": 2112,
+      "print_bounds_mm": [
+        86.00313377380371,
+        151.00156688690186,
+        0.0,
+        113.99686622619629,
+        178.99843311309814,
+        1.8000030517578125
+      ]
+    },
+    "TapeBadge": {
+      "color": "white",
+      "volume_mm3": 582.9339835632128,
+      "bounds_mm": [
+        -33.0,
+        38.6,
+        4.499999999999993,
+        33.0,
+        40.00000000000001,
+        11.499999999999993
+      ],
+      "native_tip": "PartDesign::Pocket",
+      "solids": 1,
+      "mesh_closed": true,
+      "triangles": 860,
+      "print_bounds_mm": [
+        127.0,
+        156.5,
+        0.0,
+        193.0,
+        163.5,
+        1.4000015258789062
+      ]
+    },
+    "MusicNote": {
+      "color": "yellow",
+      "volume_mm3": 336.1600000000002,
+      "bounds_mm": [
+        -11.0,
+        40.600000000000016,
+        30.99999999999999,
+        10.0,
+        42.20000000000003,
+        52.99999999999999
+      ],
+      "native_tip": "PartDesign::Pad",
+      "solids": 1,
+      "mesh_closed": true,
+      "triangles": 68,
+      "print_bounds_mm": [
+        159.5,
+        185.0,
+        0.0,
+        180.5,
+        207.0,
+        1.6000022888183594
+      ]
+    }
+  },
+  "warnings": [
+    "Physical print, fit and wall adhesion remain untested.",
+    "Current print projects contain X2D / 0.4 mm / PLA settings and 5 mm outer brim.",
+    "CLI tool warnings are retained in raw logs; combined regression checks one-filament geometry/brim conflicts, not AMS behavior."
+  ],
+  "estimated_pla_mass_g": 189.22477316374338,
+  "mass_note": "Solid-volume estimate at 1.24 g/cm3, excluding cards and glue; sliced mass depends on walls and infill.",
+  "revision": "r1",
+  "validated_at": "2026-11-04T13:37:25.139913+00:00",
+  "cad_sha256": "30c65f988e367b3da1a5d2f4dd7af34cc4d1d6416b2424605c4ea87718ec0a8d",
+  "spec_sha256": "d501f4ec24d6e2c6f10a7db63b9bf954fb27ee8be308deeede3f150e19ba323e",
+  "tool_sha256": {
+    "src/music_card_box/__init__.py": "9961057cc156c6096551ee0d1c3d4db6ec6cf77ffff14ab68a4b831ea5833fe3",
+    "src/music_card_box/artifacts.py": "855e8fec04158a7291dd9dfe3148f3b4225c17cd85ed75d22342decbb7aecee8",
+    "src/music_card_box/model.py": "789e5fe5aea7b19b71d6b5ec786960ca6c4474735aa608f10c7bec875ce195e2",
+    "src/music_card_box/native.py": "85df54f1e74f22a2dd294faddbdeb60e78fa1505fe4d985b0db58a5d31401b37",
+    "src/music_card_box/validation.py": "6844b87165044e1fc258dfe01656541171b30793c4cd40ab7e191cf80936347e",
+    "tools/_bootstrap.py": "1bc1830dff02a40790b787de4e9789500157544f3f3eaad51ff040bc76fc7422",
+    "tools/build.py": "3fa66432f8bb5f55ff7089bfd1accfa9586759285507a155322d66e4591f051e"
+  },
+  "native_freecad_version": [
+    "1",
+    "1",
+    "3",
+    "20260725 (Git shallow)",
+    "Unknown",
+    "2026/07/25 04:52:02",
+    "grafted,grafted",
+    "145529fe741292ff0b3977a01195bf0247425794"
+  ],
+  "artifact_locations": {
+    "music-card-box-r1.FCStd": "cad/music-card-box-r1.FCStd",
+    "music-card-box-r1.step": "cad/music-card-box-r1.step",
+    "music-card-box-assembly.3mf": "printing/assembly/music-card-box-r1.3mf",
+    "01-darkblue.3mf": "archive/printing/20261104-before-brim-5mm/main-r1/01-darkblue.3mf",
+    "02-lightblue.3mf": "printing/decorations/cassette-r1/02-lightblue.3mf",
+    "03-white.3mf": "printing/decorations/cassette-r1/03-white.3mf",
+    "04-yellow.3mf": "printing/decorations/cassette-r1/04-yellow.3mf",
+    "scene.json": "printing/main/r1/evidence/scene.json",
+    "design-snapshot.json": "printing/main/r1/evidence/design-snapshot.json",
+    "preview-provenance.json": "printing/main/r1/evidence/render/preview-provenance.json",
+    "import-result.json": "printing/main/r1/evidence/import-result.json",
+    "01-darkblue-import.log": "printing/main/r1/evidence/import/01-darkblue-import.log",
+    "02-lightblue-import.log": "printing/main/r1/evidence/import/02-lightblue-import.log",
+    "03-white-import.log": "printing/main/r1/evidence/import/03-white-import.log",
+    "04-yellow-import.log": "printing/main/r1/evidence/import/04-yellow-import.log",
+    "CassetteShell.stl": "printing/main/r1/evidence/CassetteShell.stl",
+    "SkyPanel.stl": "printing/decorations/cassette-r1/evidence/SkyPanel.stl",
+    "ReelLeft.stl": "printing/decorations/cassette-r1/evidence/ReelLeft.stl",
+    "ReelRight.stl": "printing/decorations/cassette-r1/evidence/ReelRight.stl",
+    "TapeBadge.stl": "printing/decorations/cassette-r1/evidence/TapeBadge.stl",
+    "MusicNote.stl": "printing/decorations/cassette-r1/evidence/MusicNote.stl",
+    "hero.png": "printing/main/r1/hero.png",
+    "empty.png": "printing/main/r1/empty.png",
+    "rear.png": "printing/main/r1/rear.png",
+    "dimensions.png": "printing/main/r1/dimensions.png",
+    "layout-r2/slice-result.json": "printing/decorations/cassette-r1/slice-result.json",
+    "layout-r2/print-layout.json": "printing/decorations/cassette-r1/evidence/layout-r2/print-layout.json",
+    "layout-r2/04-yellow-filament.json": "printing/decorations/cassette-r1/evidence/layout-r2/04-yellow-filament.json",
+    "layout-r2/04-yellow-settings.json": "printing/decorations/cassette-r1/evidence/layout-r2/04-yellow-settings.json",
+    "layout-r2/04-yellow-slice.log": "printing/decorations/cassette-r1/evidence/layout-r2/04-yellow-slice.log",
+    "layout-r2/02-lightblue-settings.json": "printing/decorations/cassette-r1/evidence/layout-r2/02-lightblue-settings.json",
+    "layout-r2/combined-slice.log": "printing/decorations/cassette-r1/evidence/layout-r2/combined-slice.log",
+    "layout-r2/02-lightblue-filament.json": "printing/decorations/cassette-r1/evidence/layout-r2/02-lightblue-filament.json",
+    "layout-r2/combined-reopen.log": "printing/decorations/cassette-r1/evidence/layout-r2/combined-reopen.log",
+    "layout-r2/03-white-settings.json": "printing/decorations/cassette-r1/evidence/layout-r2/03-white-settings.json",
+    "layout-r2/combined-export.log": "printing/decorations/cassette-r1/evidence/layout-r2/combined-export.log",
+    "layout-r2/03-white-filament.json": "printing/decorations/cassette-r1/evidence/layout-r2/03-white-filament.json",
+    "layout-r2/03-white-slice-result.json": "printing/decorations/cassette-r1/evidence/layout-r2/03-white-slice-result.json",
+    "layout-r2/combined-slice-result.json": "printing/decorations/cassette-r1/evidence/layout-r2/combined-slice-result.json",
+    "layout-r2/03-white-reopen.log": "printing/decorations/cassette-r1/evidence/layout-r2/03-white-reopen.log",
+    "layout-r2/04-yellow-reopen.log": "printing/decorations/cassette-r1/evidence/layout-r2/04-yellow-reopen.log",
+    "layout-r2/04-yellow-slice-result.json": "printing/decorations/cassette-r1/evidence/layout-r2/04-yellow-slice-result.json",
+    "layout-r2/02-lightblue-slice-result.json": "printing/decorations/cassette-r1/evidence/layout-r2/02-lightblue-slice-result.json",
+    "layout-r2/02-lightblue-export.log": "printing/decorations/cassette-r1/evidence/layout-r2/02-lightblue-export.log",
+    "layout-r2/repack_decorations.py": "printing/decorations/cassette-r1/evidence/layout-r2/repack_decorations.py",
+    "layout-r2/02-lightblue-reopen.log": "printing/decorations/cassette-r1/evidence/layout-r2/02-lightblue-reopen.log",
+    "layout-r2/verify.py": "printing/decorations/cassette-r1/evidence/layout-r2/verify.py",
+    "layout-r2/02-lightblue-slice.log": "printing/decorations/cassette-r1/evidence/layout-r2/02-lightblue-slice.log",
+    "layout-r2/04-yellow-export.log": "printing/decorations/cassette-r1/evidence/layout-r2/04-yellow-export.log",
+    "layout-r2/repack-validation.json": "printing/decorations/cassette-r1/evidence/layout-r2/repack-validation.json",
+    "layout-r2/03-white-export.log": "printing/decorations/cassette-r1/evidence/layout-r2/03-white-export.log",
+    "layout-r2/03-white-slice.log": "printing/decorations/cassette-r1/evidence/layout-r2/03-white-slice.log"
+  },
+  "files": {
+    "SkyPanel.stl": "3c1c128b8b32fce57c645cfe4b2df7c92cf9fc33a2633910dce2a629b9673bb0",
+    "02-lightblue.3mf": "f4595ae9b0e6c91fd75c644d70d34feb8d9015e383a63a6f8204716c16f50653",
+    "design-snapshot.json": "c256bad9383e49b051e0bee39e7a6c474e19baa96051b81aa6fec415acfa91e6",
+    "01-darkblue.3mf": "e2bea9152e81237c810ea91cf1e773b8c206b1b1521753be8a3dc4c2c1447c1d",
+    "music-card-box-assembly.3mf": "b6c8663c8b594c538b17de1cc451a228cd6fc8e77f2c7bd9aec370aac45815a7",
+    "04-yellow.3mf": "1f9861b389bdc8aab3ce10fc0e27c2fdaaa15ac1d5f5f82877230689b1e2931c",
+    "MusicNote.stl": "071e2f309f4e31ede707a2dfacdb1eaf0927325985e03f358ce72e493b8dd199",
+    "scene.json": "08b83413427e9e43ab9595e34a815425766b5d2bff3905bd81a134122c80a29e",
+    "CassetteShell.stl": "d964cc8c74a790ac98bfc4cd1144bcd37e37e97e9c3b2548ec6f04d14e51319e",
+    "TapeBadge.stl": "48edea8692aa98775ca1885d54605ae796dbe1cc75233f1e31281b772c79804f",
+    "music-card-box-r1.FCStd": "30c65f988e367b3da1a5d2f4dd7af34cc4d1d6416b2424605c4ea87718ec0a8d",
+    "ReelLeft.stl": "bf029456d5a6a18b2509e40e9716cc65bd97a992a41dcd65bf5dcf5e9e936083",
+    "ReelRight.stl": "e18c8327975df8fde7a134eb9d03f274cea073702e27540577511f34e18b09f6",
+    "music-card-box-r1.step": "41efae98ac2a09236bcf0f113a94c6c2eb242ac037710746689506669c0269d4",
+    "03-white.3mf": "eb3fffa71be49a6e281c5696eef05dfd77ae5fe76711fe179e4383cadacf1a15",
+    "preview-provenance.json": "19e143042dcbc5b4f543b980287a14cadb1c7e1322d12664b7986ebdd1f8aa85",
+    "import-result.json": "9bf8d2eda3496471b994a0c4c2399fea648d0daa52d94932526169b434352470",
+    "01-darkblue-import.log": "d2f971ee854d4862e67d9a2fe7b160b48c111561005deac4b8c390c152ae0263",
+    "02-lightblue-import.log": "56ad11dcee0c906f77bea443877a4a9f1bfab3a92f04149c27f38f036bc12f0d",
+    "03-white-import.log": "cf3aa17e735bf7b8e8509a09d879ae7f734247e00c9dde8b7c1add1dd431138a",
+    "04-yellow-import.log": "0e8b7b110fc571adecb9be2b79c6d1566e7a9e387ff9afc87e8371901ec867c0",
+    "hero.png": "07455dd4ae1971c0f59719ebe1f75a0a5d99ea73dcd3fdbce08364359d6a6bc1",
+    "empty.png": "3f5abbc398a1f4d7ca43b020e7eaa6b54304254819998479b988700c71f761b3",
+    "rear.png": "1f191f561b8ab9a113e3327b06a1a817804f6945ac1f3584f42fe71cff03469c",
+    "dimensions.png": "328f769869908b6d2b163cff81201ed80d6e534b3211212fe375448611a8cdf7",
+    "layout-r2/slice-result.json": "a662d0f86d6bd6dd1295264ee54979e159c02ab86e20eb6fd41caed145e484de",
+    "layout-r2/print-layout.json": "2b602b1a12703bcb1328ec8ea2636f37532b7777b5bbd9d7bf000b54fac4f219",
+    "layout-r2/04-yellow-filament.json": "a29aae2a54a62309a2d57ee61aabf6fe065610c70b26297b8f87477f70e24024",
+    "layout-r2/04-yellow-settings.json": "64c25d7b710ef65740da0fd6b1d537f639a24d2a76237346e654dc3c3e932e2e",
+    "layout-r2/04-yellow-slice.log": "47c79649e320aacce040b6263e718fac2e6c446a1869286ff40c5109dfd0892d",
+    "layout-r2/02-lightblue-settings.json": "4852c3fe25de6b95f5d3c2d2bbf8f184cea5a829a7fbd6f5c89b706ae0e369b8",
+    "layout-r2/combined-slice.log": "5755babffd60044a02fb90c97350666289d1be2054de31be64fe9cbc705ad395",
+    "layout-r2/02-lightblue-filament.json": "e7f11e0689587707f2a30f61a12c0a22a426317a40214e2bcd1cbeebe15aa071",
+    "layout-r2/combined-reopen.log": "28493e51355b40484701c86ea6f192109bc67cd971f85b69de22708946e4d037",
+    "layout-r2/03-white-settings.json": "05cfe798fe56084aeea323c008750c81b5507878fc2e0583f3bb3bcdb3b3283e",
+    "layout-r2/combined-export.log": "c0568634af4a84d75335b02bb30196b41faf4f241b625c20cdfb36c02f3282f0",
+    "layout-r2/03-white-filament.json": "01a5cff13ba940e32a259430c852e973ae201f7c52a3e232b9b5c892f29beacf",
+    "layout-r2/03-white-slice-result.json": "e80ee3df1fcc9f818f05c43324d09216e5ff0145c51476d13e8da1b649b0bafc",
+    "layout-r2/combined-slice-result.json": "de9df410cc70ffc0c815b8706dfeaa93ea1c1059734de3545aa50f67892c03d3",
+    "layout-r2/03-white-reopen.log": "cb2473c7d28a950acdb0fafa73081b4af5310f68fcf62172f767501ce3c8bdf2",
+    "layout-r2/04-yellow-reopen.log": "cfdb1852c0222d758cfc2270edd24d415a01dc8e77639fa10c15b5bd321a6767",
+    "layout-r2/04-yellow-slice-result.json": "5cbaf2bcdff09facdbafc3f72965f6a7b7859336c5d6ca6076148223ac8dd8be",
+    "layout-r2/02-lightblue-slice-result.json": "5bcebef7788bfefae0531399e29dcf861f3b7b6fdabdc27dd73d37b3f9b66b9a",
+    "layout-r2/02-lightblue-export.log": "593a6d5dff704fa0bfc2195ca45a242791bb6edc8b866edd5c1856c1a8940570",
+    "layout-r2/repack_decorations.py": "060cad42ebacdf5719355752edc276d8c184047b5bc78b06823c6c4cdf2d39ef",
+    "layout-r2/02-lightblue-reopen.log": "52c322ed65c24d643ee5cff307e914f1860cabd59af112e89a70bf597c0fe65a",
+    "layout-r2/verify.py": "7d2d4cf39705c852df53629b38660f97973152a3a67db5a8e565fcc17064b0ef",
+    "layout-r2/02-lightblue-slice.log": "fa0e957157c0ad79cede5efa1c13bb3594119ab3ebf247dc1b438aa61282fa6d",
+    "layout-r2/04-yellow-export.log": "2aefee2bacf46469b04462e858c628f7cd8534bc6032549ca5f72f45ee9c3358",
+    "layout-r2/repack-validation.json": "f5ed4424d8e2262b37345ad8eec93bc14f390328e182112875eade99fc722c56",
+    "layout-r2/03-white-export.log": "35543711760e051063db350ce1f89b9e1949aa7ac8e07f1431a3e1db825d6eb6",
+    "layout-r2/03-white-slice.log": "a92c01b87821b1a679c738d9cdcb1d2c7a4c6a6a3d32ebf2a85cf2f4f0b2042b"
+  },
+  "scope": "decorations",
+  "preview_note": "CAD triangles rendered without geometry changes; cards, printed score and yellow tape landing surfaces are illustrative.",
+  "slicer_import_check": {
+    "status": "passed",
+    "tool": "BambuStudio-02.09.01.70 --info",
+    "scope": "geometry import only; not slicing",
+    "checked_at": "2026-11-04T13:39:56.290923+00:00",
+    "files": {
+      "01-darkblue.3mf": {
+        "exit_code": 0,
+        "manifold": true,
+        "objects": 1,
+        "log": "01-darkblue-import.log"
+      },
+      "02-lightblue.3mf": {
+        "exit_code": 0,
+        "manifold": true,
+        "objects": 1,
+        "log": "02-lightblue-import.log"
+      },
+      "03-white.3mf": {
+        "exit_code": 0,
+        "manifold": true,
+        "objects": 3,
+        "log": "03-white-import.log"
+      },
+      "04-yellow.3mf": {
+        "exit_code": 0,
+        "manifold": true,
+        "objects": 1,
+        "log": "04-yellow-import.log"
+      }
+    }
+  },
+  "source_reference_photo_sha256": "1c3f827d9f77ecd3b31754952c20741a050c120ceb59e52a49faf6aa8036519c",
+  "preview_tools_sha256": {
+    "tools/render.py": "77a3e3c6d7295cc05cc690993f1a1b12b89f17e01a42706d1bd4e4e0d8c90039",
+    "tools/dimensions.py": "5c0463c5b2bdcd428b919efc1b636fe75b8216dacde8a812573e897f1bad9150"
+  },
+  "release_packaged_at": "2026-11-04T13:39:56.709101+00:00",
+  "linked_main_file_note": "This original decoration validation references the frozen geometry-only main project; the current main adds print settings without a design change.",
+  "print_layout_validated_at": "2026-11-04T14:28:25.315995+00:00",
+  "print_layout_update": {
+    "revision": "decoration-layout-r2",
+    "evidence": "printing/decorations/cassette-r1/evidence/layout-r2/repack-validation.json",
+    "tool_sha256": "060cad42ebacdf5719355752edc276d8c184047b5bc78b06823c6c4cdf2d39ef",
+    "reader_sha256": "7d2d4cf39705c852df53629b38660f97973152a3a67db5a8e565fcc17064b0ef",
+    "layout_sha256": "2b602b1a12703bcb1328ec8ea2636f37532b7777b5bbd9d7bf000b54fac4f219",
+    "all_color_brim_envelopes_disjoint": true,
+    "geometry_changed": false,
+    "reason": "Different color files shared XY regions and overlapped when imported together.",
+    "archived_original_component": "archive/printing/20261104-before-decoration-repack/cassette-r1",
+    "geometry_validation_date_preserved": true
+  },
+  "original_geometry_import_record_note": "The earlier import record refers to the frozen original export. Current repacked project checks are recorded under print_layout_update."
+}

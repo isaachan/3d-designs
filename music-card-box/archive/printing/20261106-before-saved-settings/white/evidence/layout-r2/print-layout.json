@@ -1,0 +1,13 @@
+{
+  "revision": "decoration-layout-r2",
+  "bed_check_mm": [220, 220],
+  "clearance_envelope_mm": 6,
+  "description": "Distinct XY regions across all color projects, including the unchanged main project; 6 mm envelopes cover the configured 5 mm outer brim.",
+  "decoration_centers_xy_mm": {
+    "SkyPanel": [110, 97],
+    "ReelLeft": [50, 165],
+    "ReelRight": [100, 165],
+    "TapeBadge": [160, 160],
+    "MusicNote": [170, 196]
+  }
+}

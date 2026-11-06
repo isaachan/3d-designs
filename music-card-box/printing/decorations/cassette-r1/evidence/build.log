@@ -1,0 +1,34 @@
+Error: Failed to open library "/Library/Frameworks/3DconnexionNavlib.framework/3DconnexionNavlib"! Error: dlopen(/Library/Frameworks/3DconnexionNavlib.framework/3DconnexionNavlib, 0x0005): tried: '/Library/Frameworks/3DconnexionNavlib.framework/3DconnexionNavlib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/Library/Frameworks/3DconnexionNavlib.framework/3DconnexionNavlib' (no such file), '/Library/Frameworks/3DconnexionNavlib.framework/3DconnexionNavlib' (no such file)!
+QOpenGLWidget is not supported on this platform.
+imageFromFramebuffer failed because no context is active
+QOpenGLWidget is not supported on this platform.
+This plugin does not support grabbing the keyboard
+This plugin does not support propagateSizeHints()
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+This plugin does not support grabbing the keyboard
+PASS /Users/kai.han/code/3d-designs/music-card-box/build/20261104-r1-candidate-10

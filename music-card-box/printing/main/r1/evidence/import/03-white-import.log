@@ -1,0 +1,42 @@
+[03-white.3mf]
+size_x = 27.993732
+size_y = 27.996868
+size_z = 1.800003
+min_x = -13.996868
+min_y = -13.998432
+min_z = -0.900001
+max_x = 13.996864
+max_y = 13.998436
+max_z = 0.900002
+number_of_facets = 2112
+manifold = yes
+number_of_parts =  1
+volume = 891.084778
+[03-white.3mf]
+size_x = 27.993736
+size_y = 27.996868
+size_z = 1.800003
+min_x = -13.996864
+min_y = -13.998432
+min_z = -0.900001
+max_x = 13.996872
+max_y = 13.998436
+max_z = 0.900002
+number_of_facets = 2112
+manifold = yes
+number_of_parts =  1
+volume = 891.084900
+[03-white.3mf]
+size_x = 66.000000
+size_y = 7.000000
+size_z = 1.400001
+min_x = -33.000000
+min_y = -3.500000
+min_z = -0.700001
+max_x = 33.000000
+max_y = 3.500000
+max_z = 0.700001
+number_of_facets = 860
+manifold = yes
+number_of_parts =  1
+volume = 582.943359

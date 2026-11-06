@@ -1,0 +1,14 @@
+[04-yellow.3mf]
+size_x = 21.000000
+size_y = 22.000000
+size_z = 1.600002
+min_x = -10.500000
+min_y = -11.000000
+min_z = -0.800001
+max_x = 10.500000
+max_y = 11.000000
+max_z = 0.800001
+number_of_facets = 68
+manifold = yes
+number_of_parts =  1
+volume = 336.160492

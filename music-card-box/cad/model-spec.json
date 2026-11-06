@@ -1,0 +1,27 @@
+{
+  "revision": "r1",
+  "units": "mm",
+  "coordinates": {
+    "x": "horizontal",
+    "y": "away from wall",
+    "z": "up"
+  },
+  "source": "cad/music-card-box-r1.FCStd",
+  "generator_input": "assets/design.json",
+  "parts": {
+    "CassetteShell": "darkblue",
+    "SkyPanel": "lightblue",
+    "ReelLeft": "white",
+    "ReelRight": "white",
+    "TapeBadge": "white",
+    "MusicNote": "yellow"
+  },
+  "body_bounds_mm": [
+    190.4,
+    38.4,
+    92
+  ],
+  "maximum_depth_with_decoration_mm": 42.2,
+  "input_sha256": "d501f4ec24d6e2c6f10a7db63b9bf954fb27ee8be308deeede3f150e19ba323e",
+  "reference_photo_sha256": "1c3f827d9f77ecd3b31754952c20741a050c120ceb59e52a49faf6aa8036519c"
+}

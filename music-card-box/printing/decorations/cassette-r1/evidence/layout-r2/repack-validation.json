@@ -1,0 +1,485 @@
+{
+  "status": "passed",
+  "validated_at": "2026-11-04T14:28:25.315995+00:00",
+  "source_scene": "printing/main/r1/evidence/scene.json",
+  "source_scene_sha256": "08b83413427e9e43ab9595e34a815425766b5d2bff3905bd81a134122c80a29e",
+  "source_cad_sha256": "30c65f988e367b3da1a5d2f4dd7af34cc4d1d6416b2424605c4ea87718ec0a8d",
+  "layout_sha256": "2b602b1a12703bcb1328ec8ea2636f37532b7777b5bbd9d7bf000b54fac4f219",
+  "tool_sha256": "060cad42ebacdf5719355752edc276d8c184047b5bc78b06823c6c4cdf2d39ef",
+  "parts": {
+    "SkyPanel": {
+      "bounds_mm": [
+        24.0,
+        75.0,
+        0.0,
+        196.0,
+        119.0,
+        1.8000030517578125
+      ],
+      "triangles": 1344
+    },
+    "ReelLeft": {
+      "bounds_mm": [
+        36.00313377380371,
+        151.00156688690186,
+        0.0,
+        63.99686622619629,
+        178.99843311309814,
+        1.8000030517578125
+      ],
+      "triangles": 2112
+    },
+    "ReelRight": {
+      "bounds_mm": [
+        86.00313377380371,
+        151.00156688690186,
+        0.0,
+        113.99686622619629,
+        178.99843311309814,
+        1.8000030517578125
+      ],
+      "triangles": 2112
+    },
+    "TapeBadge": {
+      "bounds_mm": [
+        127.0,
+        156.5,
+        0.0,
+        193.0,
+        163.5,
+        1.4000015258789062
+      ],
+      "triangles": 860
+    },
+    "MusicNote": {
+      "bounds_mm": [
+        159.5,
+        185.0,
+        0.0,
+        180.5,
+        207.0,
+        1.6000022888183594
+      ],
+      "triangles": 68
+    }
+  },
+  "all_color_pairs": [
+    {
+      "pair": [
+        "CassetteShell",
+        "SkyPanel"
+      ],
+      "axis_gaps_mm": [
+        -181.1999969,
+        21.599998400000004
+      ],
+      "six_mm_envelopes_disjoint": true
+    },
+    {
+      "pair": [
+        "CassetteShell",
+        "ReelLeft"
+      ],
+      "axis_gaps_mm": [
+        -49.19686312619629,
+        97.60156528690186
+      ],
+      "six_mm_envelopes_disjoint": true
+    },
+    {
+      "pair": [
+        "CassetteShell",
+        "ReelRight"
+      ],
+      "axis_gaps_mm": [
+        -99.19686312619629,
+        97.60156528690186
+      ],
+      "six_mm_envelopes_disjoint": true
+    },
+    {
+      "pair": [
+        "CassetteShell",
+        "TapeBadge"
+      ],
+      "axis_gaps_mm": [
+        -78.1999969,
+        103.0999984
+      ],
+      "six_mm_envelopes_disjoint": true
+    },
+    {
+      "pair": [
+        "CassetteShell",
+        "MusicNote"
+      ],
+      "axis_gaps_mm": [
+        -45.6999969,
+        131.5999984
+      ],
+      "six_mm_envelopes_disjoint": true
+    },
+    {
+      "pair": [
+        "SkyPanel",
+        "ReelLeft"
+      ],
+      "axis_gaps_mm": [
+        -39.99686622619629,
+        32.001566886901855
+      ],
+      "six_mm_envelopes_disjoint": true
+    },
+    {
+      "pair": [
+        "SkyPanel",
+        "ReelRight"
+      ],
+      "axis_gaps_mm": [
+        -89.99686622619629,
+        32.001566886901855
+      ],
+      "six_mm_envelopes_disjoint": true
+    },
+    {
+      "pair": [
+        "SkyPanel",
+        "TapeBadge"
+      ],
+      "axis_gaps_mm": [
+        -69.0,
+        37.5
+      ],
+      "six_mm_envelopes_disjoint": true
+    },
+    {
+      "pair": [
+        "SkyPanel",
+        "MusicNote"
+      ],
+      "axis_gaps_mm": [
+        -36.5,
+        66.0
+      ],
+      "six_mm_envelopes_disjoint": true
+    },
+    {
+      "pair": [
+        "ReelLeft",
+        "ReelRight"
+      ],
+      "axis_gaps_mm": [
+        22.006267547607422,
+        -27.99686622619629
+      ],
+      "six_mm_envelopes_disjoint": true
+    },
+    {
+      "pair": [
+        "ReelLeft",
+        "TapeBadge"
+      ],
+      "axis_gaps_mm": [
+        63.00313377380371,
+        -12.498433113098145
+      ],
+      "six_mm_envelopes_disjoint": true
+    },
+    {
+      "pair": [
+        "ReelLeft",
+        "MusicNote"
+      ],
+      "axis_gaps_mm": [
+        95.50313377380371,
+        6.0015668869018555
+      ],
+      "six_mm_envelopes_disjoint": true
+    },
+    {
+      "pair": [
+        "ReelRight",
+        "TapeBadge"
+      ],
+      "axis_gaps_mm": [
+        13.003133773803711,
+        -12.498433113098145
+      ],
+      "six_mm_envelopes_disjoint": true
+    },
+    {
+      "pair": [
+        "ReelRight",
+        "MusicNote"
+      ],
+      "axis_gaps_mm": [
+        45.50313377380371,
+        6.0015668869018555
+      ],
+      "six_mm_envelopes_disjoint": true
+    },
+    {
+      "pair": [
+        "TapeBadge",
+        "MusicNote"
+      ],
+      "axis_gaps_mm": [
+        -33.5,
+        21.5
+      ],
+      "six_mm_envelopes_disjoint": true
+    }
+  ],
+  "brim_width_mm": 5,
+  "bed_check_mm": [
+    220,
+    220
+  ],
+  "physical_print": "not_tested",
+  "runs": [
+    {
+      "label": "02-lightblue-export",
+      "exit_code": 0,
+      "command": [
+        "/Applications/BambuStudio.app/Contents/MacOS/BambuStudio",
+        "--debug",
+        "2",
+        "--datadir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/settings-02-lightblue-export",
+        "--load-settings",
+        "/Users/kai.han/code/3d-designs/music-card-box/assets/print-profiles/X2D-0.4-standard-machine.json;/Users/kai.han/code/3d-designs/music-card-box/assets/print-profiles/PLA-0.20-process.json",
+        "--load-filaments",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/02-lightblue-filament.json",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--export-3mf",
+        "02-lightblue-candidate.3mf",
+        "--outputdir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/02-lightblue-geometry.3mf"
+      ]
+    },
+    {
+      "label": "02-lightblue-reopen",
+      "exit_code": 0,
+      "command": [
+        "/Applications/BambuStudio.app/Contents/MacOS/BambuStudio",
+        "--debug",
+        "2",
+        "--datadir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/settings-02-lightblue-reopen",
+        "--export-settings",
+        "02-lightblue-settings.json",
+        "--export-3mf",
+        "02-lightblue.3mf",
+        "--outputdir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/02-lightblue-candidate.3mf"
+      ]
+    },
+    {
+      "label": "02-lightblue-slice",
+      "exit_code": 0,
+      "command": [
+        "/Applications/BambuStudio.app/Contents/MacOS/BambuStudio",
+        "--debug",
+        "2",
+        "--datadir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/settings-02-lightblue-slice",
+        "--slice",
+        "1",
+        "--export-3mf",
+        "slice-check.3mf",
+        "--outputdir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/02-lightblue-slice",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/02-lightblue.3mf"
+      ]
+    },
+    {
+      "label": "03-white-export",
+      "exit_code": 0,
+      "command": [
+        "/Applications/BambuStudio.app/Contents/MacOS/BambuStudio",
+        "--debug",
+        "2",
+        "--datadir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/settings-03-white-export",
+        "--load-settings",
+        "/Users/kai.han/code/3d-designs/music-card-box/assets/print-profiles/X2D-0.4-standard-machine.json;/Users/kai.han/code/3d-designs/music-card-box/assets/print-profiles/PLA-0.20-process.json",
+        "--load-filaments",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/03-white-filament.json",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--export-3mf",
+        "03-white-candidate.3mf",
+        "--outputdir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/03-white-geometry.3mf"
+      ]
+    },
+    {
+      "label": "03-white-reopen",
+      "exit_code": 0,
+      "command": [
+        "/Applications/BambuStudio.app/Contents/MacOS/BambuStudio",
+        "--debug",
+        "2",
+        "--datadir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/settings-03-white-reopen",
+        "--export-settings",
+        "03-white-settings.json",
+        "--export-3mf",
+        "03-white.3mf",
+        "--outputdir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/03-white-candidate.3mf"
+      ]
+    },
+    {
+      "label": "03-white-slice",
+      "exit_code": 0,
+      "command": [
+        "/Applications/BambuStudio.app/Contents/MacOS/BambuStudio",
+        "--debug",
+        "2",
+        "--datadir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/settings-03-white-slice",
+        "--slice",
+        "1",
+        "--export-3mf",
+        "slice-check.3mf",
+        "--outputdir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/03-white-slice",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/03-white.3mf"
+      ]
+    },
+    {
+      "label": "04-yellow-export",
+      "exit_code": 0,
+      "command": [
+        "/Applications/BambuStudio.app/Contents/MacOS/BambuStudio",
+        "--debug",
+        "2",
+        "--datadir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/settings-04-yellow-export",
+        "--load-settings",
+        "/Users/kai.han/code/3d-designs/music-card-box/assets/print-profiles/X2D-0.4-standard-machine.json;/Users/kai.han/code/3d-designs/music-card-box/assets/print-profiles/PLA-0.20-process.json",
+        "--load-filaments",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/04-yellow-filament.json",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--export-3mf",
+        "04-yellow-candidate.3mf",
+        "--outputdir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/04-yellow-geometry.3mf"
+      ]
+    },
+    {
+      "label": "04-yellow-reopen",
+      "exit_code": 0,
+      "command": [
+        "/Applications/BambuStudio.app/Contents/MacOS/BambuStudio",
+        "--debug",
+        "2",
+        "--datadir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/settings-04-yellow-reopen",
+        "--export-settings",
+        "04-yellow-settings.json",
+        "--export-3mf",
+        "04-yellow.3mf",
+        "--outputdir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/04-yellow-candidate.3mf"
+      ]
+    },
+    {
+      "label": "04-yellow-slice",
+      "exit_code": 0,
+      "command": [
+        "/Applications/BambuStudio.app/Contents/MacOS/BambuStudio",
+        "--debug",
+        "2",
+        "--datadir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/settings-04-yellow-slice",
+        "--slice",
+        "1",
+        "--export-3mf",
+        "slice-check.3mf",
+        "--outputdir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/04-yellow-slice",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/04-yellow.3mf"
+      ]
+    },
+    {
+      "label": "combined-export",
+      "exit_code": 0,
+      "command": [
+        "/Applications/BambuStudio.app/Contents/MacOS/BambuStudio",
+        "--debug",
+        "2",
+        "--datadir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/settings-combined-export",
+        "--load-settings",
+        "/Users/kai.han/code/3d-designs/music-card-box/assets/print-profiles/X2D-0.4-standard-machine.json;/Users/kai.han/code/3d-designs/music-card-box/assets/print-profiles/PLA-0.20-process.json",
+        "--load-filaments",
+        "/Users/kai.han/code/3d-designs/music-card-box/assets/print-profiles/PLA-darkblue.json",
+        "--arrange",
+        "0",
+        "--orient",
+        "0",
+        "--export-3mf",
+        "combined-candidate.3mf",
+        "--outputdir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/combined-geometry.3mf"
+      ]
+    },
+    {
+      "label": "combined-reopen",
+      "exit_code": 0,
+      "command": [
+        "/Applications/BambuStudio.app/Contents/MacOS/BambuStudio",
+        "--debug",
+        "2",
+        "--datadir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/settings-combined-reopen",
+        "--export-3mf",
+        "combined.3mf",
+        "--outputdir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/combined-candidate.3mf"
+      ]
+    },
+    {
+      "label": "combined-slice",
+      "exit_code": 0,
+      "command": [
+        "/Applications/BambuStudio.app/Contents/MacOS/BambuStudio",
+        "--debug",
+        "2",
+        "--datadir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/settings-combined-slice",
+        "--slice",
+        "1",
+        "--export-3mf",
+        "slice-check.3mf",
+        "--outputdir",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/combined-slice",
+        "/Users/kai.han/code/3d-designs/music-card-box/build/20261104-decoration-repack-verified/combined.3mf"
+      ]
+    }
+  ],
+  "combined_slice_check": "passed; six objects, one-filament geometry/brim collision regression, no AMS validation",
+  "files": {
+    "02-lightblue.3mf": "f4595ae9b0e6c91fd75c644d70d34feb8d9015e383a63a6f8204716c16f50653",
+    "03-white.3mf": "eb3fffa71be49a6e281c5696eef05dfd77ae5fe76711fe179e4383cadacf1a15",
+    "04-yellow.3mf": "1f9861b389bdc8aab3ce10fc0e27c2fdaaa15ac1d5f5f82877230689b1e2931c"
+  }
+}

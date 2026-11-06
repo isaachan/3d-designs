@@ -1,0 +1,31 @@
+{
+  "original_component_location": "printing/decorations/cassette-r1",
+  "reason": "Freeze original decoration delivery before making all color projects spatially compatible.",
+  "files": {
+    "main-validation-before.json": "4b9c97d392c8ca6c2cbeeecd21326cb1ffa9698a771de7e6c334a7c152c847ff",
+    "catalog-before.json": "89116aa59808f68667461bd0f60b601518569b48215a41b903853698e16a5f75",
+    "cassette-r1/02-lightblue.3mf": "40e5fa05367a737c74887810f5446c7b9290ddfef03a590b92ab43e34ec7c677",
+    "cassette-r1/04-yellow.3mf": "d8939e74caaeb57fbf539ca87d07cda688acc488e2a8dcc5ed62365ab1bcee32",
+    "cassette-r1/README.md": "7551fb12756003dd08451f7cd58b67c41bf2c7e87f98ed45b6604d38bad329ff",
+    "cassette-r1/validation.json": "d3ee3a084483ed00ef15eefd8e8b012e970ecc94ebd25f98e1f1e14c9b890ead",
+    "cassette-r1/03-white.3mf": "eb11e00792f4b4c18e524f9d8fcb256381fd9827b9d4d6d4461b3f2db5204b5b",
+    "cassette-r1/evidence/SkyPanel.stl": "3c1c128b8b32fce57c645cfe4b2df7c92cf9fc33a2633910dce2a629b9673bb0",
+    "cassette-r1/evidence/MusicNote.stl": "071e2f309f4e31ede707a2dfacdb1eaf0927325985e03f358ce72e493b8dd199",
+    "cassette-r1/evidence/TapeBadge.stl": "48edea8692aa98775ca1885d54605ae796dbe1cc75233f1e31281b772c79804f",
+    "cassette-r1/evidence/ReelLeft.stl": "bf029456d5a6a18b2509e40e9716cc65bd97a992a41dcd65bf5dcf5e9e936083",
+    "cassette-r1/evidence/ReelRight.stl": "e18c8327975df8fde7a134eb9d03f274cea073702e27540577511f34e18b09f6",
+    "cassette-r1/evidence/build.log": "71122a0611d680936c15d2314b497aade623fb312df2c0660245935c4016bb49",
+    "cassette-r1/evidence/render/empty-render.log": "9341197b17e80a0ea8f2605a280c01da68a91ace6b2b452a8115b4fb54a23645",
+    "cassette-r1/evidence/render/rear-render.log": "1b6c4d7eda5c581b5029a9a1591a2b86ef2da6efb3cacdf95dfc7b4cf6b37dbe",
+    "cassette-r1/evidence/render/hero-render.log": "0fd7b0130f32aebb08b6762e1da45ecfa8bffb0b6f8a5826c0af5ee0f6bbfade",
+    "cassette-r1/evidence/generator/tools/build.py": "3fa66432f8bb5f55ff7089bfd1accfa9586759285507a155322d66e4591f051e",
+    "cassette-r1/evidence/generator/tools/dimensions.py": "5c0463c5b2bdcd428b919efc1b636fe75b8216dacde8a812573e897f1bad9150",
+    "cassette-r1/evidence/generator/tools/render.py": "77a3e3c6d7295cc05cc690993f1a1b12b89f17e01a42706d1bd4e4e0d8c90039",
+    "cassette-r1/evidence/generator/tools/_bootstrap.py": "1bc1830dff02a40790b787de4e9789500157544f3f3eaad51ff040bc76fc7422",
+    "cassette-r1/evidence/generator/src/music_card_box/__init__.py": "9961057cc156c6096551ee0d1c3d4db6ec6cf77ffff14ab68a4b831ea5833fe3",
+    "cassette-r1/evidence/generator/src/music_card_box/native.py": "85df54f1e74f22a2dd294faddbdeb60e78fa1505fe4d985b0db58a5d31401b37",
+    "cassette-r1/evidence/generator/src/music_card_box/model.py": "789e5fe5aea7b19b71d6b5ec786960ca6c4474735aa608f10c7bec875ce195e2",
+    "cassette-r1/evidence/generator/src/music_card_box/artifacts.py": "855e8fec04158a7291dd9dfe3148f3b4225c17cd85ed75d22342decbb7aecee8",
+    "cassette-r1/evidence/generator/src/music_card_box/validation.py": "6844b87165044e1fc258dfe01656541171b30793c4cd40ab7e191cf80936347e"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "render_input_scene_sha256": "08b83413427e9e43ab9595e34a815425766b5d2bff3905bd81a134122c80a29e",
+  "current_scene_sha256": "08b83413427e9e43ab9595e34a815425766b5d2bff3905bd81a134122c80a29e",
+  "identical_scene": true,
+  "rendered_from_run": "20261104-r1-candidate-08",
+  "current_geometry_run": "20261104-r1-candidate-10",
+  "note": "Only saved FreeCAD camera metadata/generation evidence changed; render scene is byte-identical."
+}

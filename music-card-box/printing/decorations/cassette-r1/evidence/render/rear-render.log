@@ -1,0 +1,8 @@
+/Users/kai.han/code/3d-designs/music-card-box/tools/render.py:23: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new(name); mat.use_nodes=True
+00:56.948  render           | Saved: '/Users/kai.han/code/3d-designs/music-card-box/build/20261104-r1-candidate-08/rear.png'
+Info: Saved as "rear.blend"
+RENDERED build/20261104-r1-candidate-08/rear.png
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

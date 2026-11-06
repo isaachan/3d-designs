@@ -1,0 +1,14 @@
+[02-lightblue.3mf]
+size_x = 172.000000
+size_y = 44.000000
+size_z = 1.800003
+min_x = -86.000000
+min_y = -22.000000
+min_z = -0.900001
+max_x = 86.000000
+max_y = 22.000000
+max_z = 0.900002
+number_of_facets = 1344
+manifold = yes
+number_of_parts =  1
+volume = 11174.974609

@@ -1,0 +1,32 @@
+{
+  "frozen_at": "2026-11-04T14:03:21.982815+00:00",
+  "base_project": "garage-bookshelf/v5",
+  "machine": "Bambu Lab X2D",
+  "nozzles_mm": [
+    0.4,
+    0.4
+  ],
+  "material": "PLA",
+  "bed": "Textured PEI Plate",
+  "process_changes": {
+    "brim_type": "outer_only",
+    "brim_width": "5",
+    "brim_object_gap": "0.1",
+    "layer_height": "0.2",
+    "wall_loops": "4",
+    "sparse_infill_density": "15%",
+    "top_shell_layers": "5",
+    "bottom_shell_layers": "5",
+    "enable_support": "0",
+    "enable_prime_tower": "0"
+  },
+  "filament_colour": [
+    "#173B70"
+  ],
+  "files": {
+    "profile-sources.json": "edbc8b51c7167ae1ce7a5264323d4b8411c5056fff81d4da23613ed8834f511b",
+    "X2D-0.4-standard-machine.json": "6ce7b9ba51564cf7948b6253f2d175a8db9bd6ef1077231d937c25a285ed24b6",
+    "PLA-0.20-process.json": "011e83c046f608093bb1e46535071e185e57dac1915411c29ed740c9856502a6",
+    "PLA-darkblue.json": "3805a1f56a20082baffbc4ca34140ca1e36555ef38363e07b49c5a656bd9dfbe"
+  }
+}

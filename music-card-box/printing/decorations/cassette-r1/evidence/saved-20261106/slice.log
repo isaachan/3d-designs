@@ -1,0 +1,10 @@
+[2026-11-06 18:47:31.023291] [0x00000001f8686180] [warning] [BambuStudio.cpp:1845 run] cli mode, Current BambuStudio Version 02.09.01.70
+[2026-11-06 18:47:31.082080] [0x00000001f8686180] [warning] [BambuStudio.cpp:3155 run] can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/machine_full/Bambu Lab X2D 0.4 nozzle.json 
+[2026-11-06 18:47:31.082115] [0x00000001f8686180] [warning] [BambuStudio.cpp:3177 run] can not find system preset file: /Applications/BambuStudio.app/Contents/Resources/profiles/BBL/process_full/0.20mm Standard @BBL X2D.json 
+[2026-11-06 18:47:31.082180] [0x00000001f8686180] [warning] [BambuStudio.cpp:4326 run] no filament colors found in projects
+[2026-11-06 18:47:31.085472] [0x00000001f8686180] [warning] [MultiNozzleUtils.cpp:217 load_nozzle_infos_with_compatibility] building nozzle list from filament map and volume types
+[2026-11-06 18:47:31.327462] [0x00000001f8686180] [warning] [SupportParameters.hpp:204 SupportParameters] tree support default to organic support
+[2026-11-06 18:47:31.327512] [0x000000016d717000] [warning] [SupportParameters.hpp:204 SupportParameters] tree support default to organic support
+[2026-11-06 18:47:31.327547] [0x000000016caf3000] [warning] [SupportParameters.hpp:204 SupportParameters] tree support default to organic support
+[2026-11-06 18:47:31.689339] [0x00000001f8686180] [error]   [GCodeProcessor.cpp:5973 process_T] Invalid T command (T65279).
+[2026-11-06 18:47:31.689361] [0x00000001f8686180] [error]   [GCodeProcessor.cpp:5973 process_T] Invalid T command (T65535).
