@@ -1,9 +1,9 @@
 {
   "canvas": { "width_px": 1672, "height_px": 941 },
   "paper": { "width_mm": 120.0, "height_mm": 67.54, "corner_radius_mm": 2.0, "thickness_mm": 1.8 },
-  "ruled_lines": { "depth_mm": 0.3, "width_mm": 0.22, "row_min_coverage": 0.5, "alpha_threshold": 128 },
+  "ruled_lines": { "depth_mm": 0.3, "width_mm": 0.22, "row_min_coverage": 0.15, "alpha_threshold": 30 },
   "border": { "width_mm": 1.0, "depth_mm": 0.3, "inner_corner_radius_mm": 1.0 },
-  "handwriting": { "raise_mm": 1.0, "alpha_threshold": 48, "min_component_px": 180, "simplify_epsilon": 1.7 },
+  "handwriting": { "raise_mm": 1.0, "alpha_threshold": 48, "min_component_px": 180, "simplify_epsilon": 1.7, "min_counter_area_mm2": 1.0 },
   "date": {
     "text": "2026.09.11",
     "anchor_right_mm": 115.69,

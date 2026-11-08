@@ -49,11 +49,52 @@ def handwriting_solid(svg_path, cfg):
             continue
         depth = sum(1 for j, other in enumerate(loops) if i != j and _inside(pts[0], other))
         kept.append((face, depth))
-    shape = fuse_all([f for f, d in kept if d % 2 == 0])
-    for f, d in kept:
+
+    # Attach each counter (odd-depth loop) to its innermost containing glyph.
+    def parent_index(idx):
+        best, best_depth = None, -1
+        for j, other in enumerate(loops):
+            if j == idx or j not in valid:
+                continue
+            if _inside(loops[idx][0], other) and depths[j] < depths[idx] and depths[j] > best_depth:
+                best, best_depth = j, depths[j]
+        return best
+
+    valid = {i for i, (f, d) in enumerate(kept)}
+    depths = {i: d for i, (f, d) in enumerate(kept)}
+    min_counter = cfg['handwriting'].get('min_counter_area_mm2', 1.0)
+
+    def poly_area(p):
+        return abs(sum(p[k][0] * p[(k + 1) % len(p)][1] - p[(k + 1) % len(p)][0] * p[k][1]
+                       for k in range(len(p)))) / 2.0
+
+    holes_of = {i: [] for i in valid}
+    for i, (f, d) in enumerate(kept):
         if d % 2 == 1:
-            shape = shape.cut(f)
-    return shape.extrude(App.Vector(0, 0, cfg['handwriting']['raise_mm']))
+            if poly_area(loops[i]) < min_counter:
+                continue  # degenerate or printer-irrelevant counter: fill it
+            p = parent_index(i)
+            if p is not None:
+                holes_of[p].append(f)
+
+    # Extrude each glyph first, then subtract only its own counters in 3D;
+    # coplanar 2D cut-then-extrude and cross-glyph booleans both yield invalid shapes.
+    vec = App.Vector(0, 0, cfg['handwriting']['raise_mm'])
+    solids = []
+    for i, (face, d) in enumerate(kept):
+        if d % 2 != 0:
+            continue
+        sol = face.extrude(vec)
+        for hole in holes_of[i]:
+            cut = sol.cut(hole.extrude(vec))
+            if not cut.isNull() and cut.isValid():
+                sol = cut
+        if sol.isNull() or not sol.isValid():
+            raise RuntimeError('handwriting glyph %d produced invalid geometry' % i)
+        solids.append(sol)
+    if not solids:
+        raise RuntimeError('no handwriting contours traced from SVG')
+    return fuse_all(solids)
 
 
 SEGMENTS = {
@@ -129,10 +170,10 @@ def build(project_dir, cfg, svg_dir, out_path):
     inner = rounded_solid(W - 2 * bw, H - 2 * bw, cfg['border']['inner_corner_radius_mm'],
                           TH - bd - 0.01, bd + 0.02, bw, bw)
     border = outer.cut(inner)
-    gray = fuse_all(gray_parts).fuse(border)
+    gray = fuse_all(gray_parts)
 
     # ---- white base: rounded plate minus grooves, border recess, hole --
-    base_solid = rounded_solid(W, H, R, 0, TH).cut(gray)
+    base_solid = rounded_solid(W, H, R, 0, TH).cut(gray).cut(border)
     hole_cfg = cfg.get('keyring_hole')
     if hole_cfg:
         cx, cy = hole_cfg['center_mm']
@@ -140,7 +181,7 @@ def build(project_dir, cfg, svg_dir, out_path):
         base_solid = base_solid.cut(Part.makeCylinder(r, TH + 2.0, App.Vector(cx, cy, -1.0)))
 
     base = doc.addObject('Part::Feature', 'Paper_Base')
-    base.Label = 'White paper base — %.1f mm' % TH
+    base.Label = 'Paper base — %.1f mm' % TH
     base.Shape = base_solid
     base.addProperty('App::PropertyLength', 'Thickness').Thickness = TH
     base.addProperty('App::PropertyString', 'Description').Description = \
@@ -151,22 +192,29 @@ def build(project_dir, cfg, svg_dir, out_path):
             'X=%.2f mm, Y=%.2f mm' % tuple(hole_cfg['center_mm'])
 
     gray_obj = doc.addObject('Part::Feature', 'Ruled_Lines_Grooves')
-    gray_obj.Label = 'Gray ruled lines and %.1f mm border — %.1f mm flush inlay' % (bw, line_depth)
+    gray_obj.Label = 'Ruled lines — %.1f mm flush inlay' % line_depth
     gray_obj.Shape = gray
     gray_obj.addProperty('App::PropertyLength', 'RecessDepth').RecessDepth = line_depth
     gray_obj.addProperty('App::PropertyLength', 'Height').Height = line_depth
-    gray_obj.addProperty('App::PropertyLength', 'BorderWidth').BorderWidth = bw
     gray_obj.addProperty('App::PropertyString', 'Description').Description = \
-        'Straight line inlays plus perimeter frame, flush with the paper top face'
+        'Straight line inlays, flush with the paper top face'
+
+    border_obj = doc.addObject('Part::Feature', 'Border_Frame')
+    border_obj.Label = 'Border frame — %.1f mm wide, %.1f mm flush inlay' % (bw, bd)
+    border_obj.Shape = border
+    border_obj.addProperty('App::PropertyLength', 'BorderWidth').BorderWidth = bw
+    border_obj.addProperty('App::PropertyLength', 'Height').Height = bd
+    border_obj.addProperty('App::PropertyString', 'Description').Description = \
+        'Perimeter frame inlay, flush with the paper top face'
 
     hand = doc.addObject('Part::Feature', 'Handwriting_Raised')
-    hand.Label = 'Blue handwriting — %.1f mm raised' % cfg['handwriting']['raise_mm']
+    hand.Label = 'Handwriting — %.1f mm raised' % cfg['handwriting']['raise_mm']
     hand.Shape = handwriting_solid(os.path.join(svg_dir, 'handwriting.svg'), cfg)
     hand.addProperty('App::PropertyLength', 'Height').Height = cfg['handwriting']['raise_mm']
     hand.addProperty('App::PropertyString', 'Source').Source = 'step_4_layered_svgs/handwriting.svg'
 
     date = doc.addObject('Part::Feature', 'Date_Raised')
-    date.Label = 'Black date %s — %d%% size, %d%% bold, %.1f mm raised' % (
+    date.Label = 'Date %s — %d%% size, %d%% bold, %.1f mm raised' % (
         cfg['date']['text'], round(cfg['date']['character_scale'] * 100),
         round(cfg['date']['stroke_scale'] * 100), cfg['date']['raise_mm'])
     date.Shape = date_solid(cfg)
@@ -176,7 +224,7 @@ def build(project_dir, cfg, svg_dir, out_path):
     date.addProperty('App::PropertyFloat', 'StrokeScale').StrokeScale = cfg['date']['stroke_scale']
 
     doc.recompute()
-    for obj in (base, gray_obj, hand, date):
+    for obj in (base, gray_obj, border_obj, hand, date):
         if obj.Shape.isNull() or not obj.Shape.isValid():
             raise RuntimeError('invalid geometry in %s' % obj.Name)
     doc.saveAs(out_path)

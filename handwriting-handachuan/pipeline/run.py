@@ -152,7 +152,7 @@ def main():
     log('cad', '%s - ruled rows: %s' % (os.path.relpath(fcstd, project), [round(r, 1) for r in rows]))
 
     out_dir = os.path.join(project, 'step_6_printables')
-    export3mf.export_stls(doc, out_dir)
+    export3mf.export_stls(doc, out_dir, cfg)
     mf = export3mf.export_3mf(doc, cfg, os.path.join(out_dir, 'nameplate_multicolor.3mf'))
     log('stl', ', '.join(sorted(f for f in os.listdir(out_dir) if f.endswith('.stl'))))
     log('3mf', os.path.relpath(mf, project))

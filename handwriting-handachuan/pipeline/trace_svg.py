@@ -95,7 +95,10 @@ def boundary_loops(mask, w, h, epsilon, min_loop_points=12):
                 del nxt[current]
             current = outs[-1]
         if len(loop) > min_loop_points:
-            loops.append(_rdp(loop + [loop[0]], epsilon))
+            area = abs(sum(loop[k][0] * loop[(k + 1) % len(loop)][1] - loop[(k + 1) % len(loop)][0] * loop[k][1]
+                           for k in range(len(loop) - 1))) / 2.0
+            if area >= 0.01:  # drop degenerate collinear loops
+                loops.append(_rdp(loop + [loop[0]], epsilon))
     return loops
 
 
