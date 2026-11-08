@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 676 414" width="676" height="414" role="img" aria-labelledby="title desc">
+  <title id="title">收纳盒背面贴胶定位</title>
+  <desc id="desc">两条 25 × 80 mm 的胶带，每条胶的外侧距盒边 24.5 mm，底端距盒底 9 mm。</desc>
+  <defs>
+    <pattern id="tape" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="7" height="7" fill="#e2ac66"/>
+      <path d="M0 0V7" stroke="#ca8d47" stroke-width="2"/>
+    </pattern>
+    <marker id="tip" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#566661"/>
+    </marker>
+  </defs>
+  <rect width="676" height="414" rx="16" fill="#f7f3e9"/>
+  <text x="36" y="48" fill="#203832" font-family="PingFang SC, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="600">背面贴胶定位</text>
+  <text x="640" y="48" fill="#566661" font-family="sans-serif" font-size="14" text-anchor="end">mm</text>
+  <g stroke="#647f75">
+    <rect x="78" y="124" width="520" height="245" rx="2" fill="#e1ebe5" stroke-width="1.5"/>
+    <path d="M95.5 124V369 M580.5 124V369" fill="none" stroke-dasharray="4 4" opacity="0.55"/>
+  </g>
+  <g stroke="#a5642d" stroke-width="1">
+    <rect x="139.25" y="146.5" width="62.5" height="200" rx="2" fill="url(#tape)"/>
+    <rect x="474.25" y="146.5" width="62.5" height="200" rx="2" fill="url(#tape)"/>
+  </g>
+  <g fill="none" stroke="#566661" stroke-width="1">
+    <path d="M78 120V89 M598 120V89 M139.25 143V96 M536.75 143V96"/>
+    <path d="M539 146.5H564 M539 346.5H564 M539 369H564"/>
+    <path d="M78 373V396 M598 373V396"/>
+  </g>
+  <g fill="none" stroke="#566661" stroke-width="1.1" marker-start="url(#tip)" marker-end="url(#tip)">
+    <path d="M79 104H138.25 M537.75 104H597"/>
+    <path d="M556 147.5V345.5 M556 347.5V368"/>
+    <path d="M79 391H597"/>
+  </g>
+  <rect x="313" y="379" width="50" height="23" fill="#f7f3e9"/>
+  <g fill="#203832" font-family="sans-serif" text-anchor="middle" font-size="15">
+    <text x="108.6" y="94">24.5</text>
+    <text x="567.4" y="94">24.5</text>
+    <text x="170.5" y="251">25</text>
+    <text x="505.5" y="251">25</text>
+    <text x="574" y="251">80</text>
+    <text x="571" y="363">9</text>
+    <text x="338" y="396">208</text>
+  </g>
+</svg>

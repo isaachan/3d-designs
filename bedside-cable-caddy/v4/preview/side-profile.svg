@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="515" viewBox="0 0 560 515" role="img" aria-labelledby="title desc">
+  <title id="title">斜口盒与墙的侧视图</title>
+  <desc id="desc">盒底下方的斜撑向前伸 90 毫米，背板沿墙下延 45 毫米。上、下胶区贴在同一平面。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#586761"/>
+    </marker>
+  </defs>
+  <rect width="560" height="515" rx="15" fill="#f7f4ed"/>
+  <g font-family="PingFang SC, Noto Sans CJK SC, sans-serif" fill="#233b34">
+    <text x="30" y="44" font-size="23" font-weight="600">贴墙侧视</text>
+    <text x="143" y="103" font-size="15" text-anchor="end">墙面</text>
+    <text x="426" y="331" font-size="15">盒底</text>
+    <text x="293" y="408" font-size="15">三角斜撑</text>
+    <text x="104" y="392" font-size="15" text-anchor="middle">45 mm</text>
+    <text x="279" y="485" font-size="15" text-anchor="middle">90 mm</text>
+  </g>
+  <rect x="154" y="64" width="20" height="391" fill="#ded9cc"/>
+  <path d="M174 64V455" stroke="#7b776e" stroke-width="1.5"/>
+  <g fill="#d2994d">
+    <rect x="174" y="115.8" width="6" height="187"/>
+    <rect x="174" y="349" width="6" height="77"/>
+  </g>
+  <path d="M180 74L400 162V338H180Z" fill="#bfd8cd" stroke="#4f766b" stroke-width="2"/>
+  <path d="M180 338H378L197.6 437H180Z" fill="#86afa1" stroke="#4f766b" stroke-width="2"/>
+  <g fill="none" stroke="#586761" stroke-width="1">
+    <path d="M401 338H447 M287 393L263 388"/>
+    <path d="M129 338H154 M129 437H154 M180 442V467 M378 341V467"/>
+  </g>
+  <g fill="none" stroke="#586761" stroke-width="1" marker-start="url(#arrow)" marker-end="url(#arrow)">
+    <path d="M137 339V436 M181 460H377"/>
+  </g>
+</svg>
