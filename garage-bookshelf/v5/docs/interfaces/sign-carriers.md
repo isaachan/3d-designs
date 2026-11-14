@@ -28,7 +28,7 @@
 
 ## 生成与复现工具
 
-`tools/make_sign_carrier.py`按`--position upper/side`继承当前原生底板、M3螺孔和外角圆角，使用全约束字形草图与原生绑定轮廓驱动Pad/Pocket，按轮廓并集面积验证小写字形的正常重叠合并。上方默认黑底白字和1mm凸字，右侧默认深蓝底白字和0.4mm凹字；冻结输入的`background`可设为`Black`或`DarkBlue`，按款式记录实际配色。Life's too short横牌r2使用`DarkBlue`深蓝底白字。
+`tools/make_sign_carrier.py`按`--position upper/side`继承当前原生底板、M3螺孔和外角圆角，使用全约束字形草图与原生绑定轮廓驱动Pad/Pocket，按轮廓并集面积验证小写字形的正常重叠合并。上方默认黑底白字和1mm凸字，右侧默认深蓝底白字和0.4mm凹字；冻结输入的`background`可设为`Black`、`DarkBlue`或`Red`，按款式记录实际配色。Life's too short横牌r2使用`DarkBlue`深蓝底白字。Some Cars Stay with You 上方横牌采用红底白字，通过冻结轮廓定义双栏文字和分隔线。
 
 首次制作可用`--text`和两项`--lines`指定完整文字及分行，使用本机DIN Condensed Bold冻结轮廓；该步骤需要FreeCAD环境中的Matplotlib、NumPy和Shapely。以后使用款式目录中的`lettering.json`和`--lettering`复现，不再依赖系统字体。改字需重新冻结轮廓；字高、行距及深度可在原生CAD的`LetteringParameters`中修改并重算、重新验证。
 

@@ -1,0 +1,447 @@
+"""Build one native custom M3 text carrier and a reopened, coloured 3MF in build/."""
+import argparse
+import json
+from pathlib import Path
+import re
+import struct
+import tempfile
+import xml.etree.ElementTree as ET
+from zipfile import ZipFile, ZIP_DEFLATED
+
+import _bootstrap
+import FreeCAD as App
+import Mesh
+import MeshPart
+import Part
+from garage_bookshelf.appearance.storage import material_records, preserve_views, serialize_material_records
+from garage_bookshelf.assembly import global_shape
+from garage_bookshelf.geometry.features import finish
+from garage_bookshelf.geometry.sketches import loops
+from garage_bookshelf.parameters import evaluate
+from garage_bookshelf.paths import CAD, PROFILES, TMP, output_directory, read_json, sha, source_record, write_json
+from garage_bookshelf.printing.bambu import run_cli
+from garage_bookshelf.printing.paint import PALETTE, paint_states
+from garage_bookshelf.printing.threemf import NS, project_bounds
+from garage_bookshelf.rendering.software import render, saved_colors, triangles
+from make_colored_projects import CADPaint, geometry_signatures
+
+POSITIONS = {
+    'upper': dict(part='top_carrier', width=190, height=58, ink_height=18, gap=8,
+                  depth=1, interface='sign-upper-v1', background='Black'),
+    'side': dict(part='side_cartridge', width=48, height=180, ink_height=16, gap=6,
+                 depth=.4, interface='sign-side-v1', background='DarkBlue'),
+}
+
+
+def measure_outline_unions(data):
+    """Resolve touching glyph outlines in 2D before native CAD recomputation."""
+    from shapely.geometry import Polygon
+    from shapely.ops import unary_union
+    for row in data['lines']:
+        polygons = [Polygon(row['polygons'][group[0]], [row['polygons'][i] for i in group[1:]])
+                    for group in row['islands']]
+        assert all(p.is_valid for p in polygons)
+        merged = unary_union(polygons)
+        contours, islands = [], []
+        pieces = list(merged.geoms) if merged.geom_type == 'MultiPolygon' else [merged]
+        for polygon in sorted(pieces, key=lambda p: (p.bounds[0], p.bounds[1])):
+            group = []
+            for ring in (polygon.exterior, *polygon.interiors):
+                group.append(len(contours))
+                contours.append([[float(x), float(y)] for x, y in list(ring.coords)[:-1]])
+            islands.append(group)
+        row['polygons'], row['islands'] = contours, islands
+        row['union_area_per_ink_height_squared'] = merged.area
+        row['outline_union_normalized'] = True
+    return data
+
+
+def freeze_lettering(text, lines, font):
+    """Freeze the requested outlines and record the actual selected font face."""
+    import numpy as np
+    from matplotlib.ft2font import FT2Font
+    from matplotlib.font_manager import FontProperties
+    from matplotlib.path import Path as MPath
+    from matplotlib.textpath import TextPath
+
+    def flatten(points, tolerance):
+        a, b = points[0], points[-1]
+        chord = b-a
+        length = np.linalg.norm(chord)
+        distance = max(abs(chord[0]*(p-a)[1]-chord[1]*(p-a)[0])/length
+                       if length else np.linalg.norm(p-a) for p in points[1:-1])
+        if distance <= tolerance:
+            return [b]
+        levels = [points]
+        while len(levels[-1]) > 1:
+            levels.append((levels[-1][:-1]+levels[-1][1:])/2)
+        return (flatten(np.array([level[0] for level in levels]), tolerance) +
+                flatten(np.array([level[-1] for level in reversed(levels)]), tolerance))
+
+    assert ' '.join(lines) == text, 'Line breaks must preserve the exact requested wording'
+    rows = []
+    for line in lines:
+        path = TextPath((0, 0), line, size=10, prop=FontProperties(fname=str(font)))
+        bounds = path.get_extents()
+        polygons, current, last = [], [], None
+        for values, code in path.iter_segments(curves=True, simplify=False):
+            points = np.asarray(values).reshape(-1, 2)
+            if code == MPath.MOVETO:
+                current, last = [points[0]], points[0]
+            elif code == MPath.LINETO:
+                current.append(points[0]); last = points[0]
+            elif code in (MPath.CURVE3, MPath.CURVE4):
+                current.extend(flatten(np.vstack([last, points]), .015*bounds.height/18))
+                last = points[-1]
+            elif code == MPath.CLOSEPOLY:
+                if np.linalg.norm(current[-1]-current[0]) < 1e-8:
+                    current.pop()
+                polygons.append([[(float(x)-bounds.xmin)/bounds.height,
+                                  (float(y)-bounds.ymin)/bounds.height] for x, y in current])
+        areas = [abs(sum(a[0]*b[1]-b[0]*a[1] for a, b in zip(p, p[1:]+p[:1])))/2
+                 for p in polygons]
+        parents = []
+        for i, polygon in enumerate(polygons):
+            enclosing = [j for j, other in enumerate(polygons) if j != i and
+                         MPath(np.array(other+[other[0]])).contains_point(polygon[0])]
+            parents.append(min(enclosing, key=lambda j: areas[j]) if enclosing else None)
+        groups = [[i]+[j for j, parent in enumerate(parents) if parent == i]
+                  for i, parent in enumerate(parents) if parent is None]
+        assert sum(map(len, groups)) == len(polygons)
+        rows.append(dict(text=line, width_per_ink_height=bounds.width/bounds.height,
+                         polygons=polygons, islands=groups))
+    face = FT2Font(str(font))
+    font_name = f'{face.family_name} {face.style_name}'.strip()
+    return measure_outline_unions(dict(text=text, lines=rows, font=font_name, source_font_sha256=sha(font),
+                                      maximum_outline_deviation_mm_at_18mm_ink_height=.015))
+
+
+def endpoints(edge):
+    return sorted(tuple(round(v, 6) for v in p.Point) for p in edge.Vertexes)
+
+
+def native_blank(source, config):
+    """Reuse current native base/sketch geometry, then rebuild its holes and fillet."""
+    original = source.getObject(config['part']+'_Body')
+    corner_edges = [endpoints(original.Tip.Base[0].Shape.Edges[int(e[4:])-1])
+                    for e in original.Tip.Base[1]]
+    original_hole = next(o for o in original.Group if o.TypeId == 'PartDesign::Hole')
+    profile = original_hole.Profile
+    profile_name = (profile[0] if isinstance(profile, tuple) else profile).Name
+    doc = App.newDocument('CustomSignCarrier')
+    body = doc.copyObject(original, True)
+    base = body.Group[1]
+    keep = {body.Group[0].Name, base.Name, profile_name}
+    body.Tip = base
+    for obj in reversed(list(body.Group)):
+        if obj.Name not in keep:
+            doc.removeObject(obj.Name)
+    body.Tip = base
+    doc.recompute()
+    hole = body.newObject('PartDesign::Hole', original_hole.Name)
+    hole.Profile = doc.getObject(profile_name)
+    for prop in ('Diameter', 'Depth', 'DepthType', 'DrillPoint', 'Reversed'):
+        setattr(hole, prop, getattr(original_hole, prop))
+    doc.recompute()
+    edges = []
+    for pair in corner_edges:
+        matches = [i for i, edge in enumerate(hole.Shape.Edges, 1) if endpoints(edge) == pair]
+        assert len(matches) == 1, matches
+        edges.append('Edge'+str(matches[0]))
+    fillet = body.newObject('PartDesign::Fillet', original.Tip.Name)
+    fillet.Base = (hole, edges)
+    fillet.Radius = original.Tip.Radius
+    finish(body, fillet)
+    assert len([o for o in doc.Objects if o.TypeId == 'PartDesign::Body']) == 1
+    return doc, body, original
+
+
+def add_lettering(doc, body, data, config):
+    sheet = doc.addObject('Spreadsheet::Sheet', 'LetteringParameters')
+    for row, (alias, value) in enumerate((('InkHeight', config['ink_height']),
+                                        ('LineGap', config['gap']), ('TextDepth', config['depth'])), 1):
+        sheet.set('A'+str(row), alias)
+        sheet.set('B'+str(row), f'{value} mm')
+        sheet.setAlias('B'+str(row), alias)
+    sheet.set('A5', 'Text (regenerate from lettering.json to change wording)')
+    sheet.set('B5', data['text'])
+    sheet.set('A6', 'Font'); sheet.set('B6', data['font'])
+    doc.recompute()
+    body.Label = data['text']
+    if 'EngravedSlogan' in body.PropertiesList:
+        body.EngravedSlogan = data['text']
+    body.addProperty('App::PropertyString', 'CustomText', 'Custom lettering')
+    body.CustomText = data['text']
+    sketches, records = [], []
+    for line_index, row in enumerate(data['lines']):
+        row_sketches = []
+        width = row['width_per_ink_height']
+        explicit_layout = any(key in row for key in ('ink_height_mm', 'center_x_mm', 'center_z_mm'))
+        if explicit_layout:
+            assert all(key in row for key in ('ink_height_mm', 'center_x_mm', 'center_z_mm'))
+            assert row['ink_height_mm'] > 0
+            reference = data['layout_reference_ink_height_mm']
+            assert reference == config['ink_height']
+            aliases = [f'Line{line_index+1}Height', f'Line{line_index+1}CenterX', f'Line{line_index+1}CenterZ']
+            cells = [f'B{10+line_index*4+i}' for i in range(3)]
+            values = [f'=B1*({row["ink_height_mm"]/reference:.14g})',
+                      f'{row["center_x_mm"]} mm', f'{row["center_z_mm"]} mm']
+            for alias, cell, value in zip(aliases, cells, values):
+                sheet.set('A'+cell[1:], alias)
+                sheet.set(cell, value)
+                sheet.setAlias(cell, alias)
+            doc.recompute()
+            row_height = 'LetteringParameters.'+aliases[0]
+        else:
+            row_height = 'LetteringParameters.InkHeight'
+        for island_index, indices in enumerate(row['islands']):
+            polygons = []
+            for index in indices:
+                points = []
+                for x, y in row['polygons'][index]:
+                    if explicit_layout:
+                        px = f'LetteringParameters.{aliases[1]}+({x-width/2:.14g})*{row_height}'
+                        pz = f'LetteringParameters.{aliases[2]}+({y-.5:.14g})*{row_height}'
+                    elif config['part'] == 'top_carrier':
+                        px = f'95 mm+({x-width/2:.14g})*LetteringParameters.InkHeight'
+                        pz = (f'29 mm+({.5-line_index})*(LetteringParameters.InkHeight+'
+                              f'LetteringParameters.LineGap)+({y-.5:.14g})*LetteringParameters.InkHeight')
+                    else:
+                        # Clockwise columns: the first reading line is on the right.
+                        px = (f'24 mm+({.5-line_index})*(LetteringParameters.InkHeight+'
+                              f'LetteringParameters.LineGap)+({y-.5:.14g})*LetteringParameters.InkHeight')
+                        pz = f'90 mm-({x-width/2:.14g})*LetteringParameters.InkHeight'
+                    points.append((px, pz))
+                polygons.append(points)
+            sketch = loops(body, f'Sketch_CustomText_{line_index+1}_{island_index+1}', polygons,
+                           orientation='XZ', offset=('Zero', 'DesignParameters.CarrierFront', 'Zero'))
+            sketch.Label = f'{row["text"]} · outline {island_index+1}'
+            sketches.append(sketch); row_sketches.append(sketch)
+        faces = Part.makeCompound([Part.makeFace(s.Shape.Wires, 'Part::FaceMakerBullseye')
+                                   for s in row_sketches])
+        b = faces.BoundBox
+        if config['part'] == 'top_carrier':
+            assert b.XMin > 15 and b.XMax < 175 and b.ZMin > 4 and b.ZMax < 54
+        else:
+            assert b.XMin >= 4 and b.XMax <= 44 and b.ZMin > 20 and b.ZMax < 160
+        records.append(dict(text=row['text'], bounds_xz_mm=[b.XMin, b.ZMin, b.XMax, b.ZMax],
+                            ink_height_mm=row.get('ink_height_mm', config['ink_height']),
+                            font=row.get('font', data['font'])))
+        print('Built native outlines:', row['text'], flush=True)
+    blank = body.Shape.copy()
+    kind = 'PartDesign::Pad' if config['part'] == 'top_carrier' else 'PartDesign::Pocket'
+    binder = body.newObject('PartDesign::SubShapeBinder', 'Binder_SignLettering')
+    binder.Support = [(sketch, []) for sketch in sketches]
+    doc.recompute()
+    feature = body.newObject(kind, 'Pad_CustomLettering' if kind.endswith('Pad') else 'Pocket_CustomLettering')
+    feature.Profile = binder
+    feature.setExpression('Length', 'LetteringParameters.TextDepth')
+    feature.Refine = True
+    volume = sum(row['union_area_per_ink_height_squared']*row.get('ink_height_mm', config['ink_height'])**2
+                 for row in data['lines'])*config['depth']
+    expected = blank.Volume + volume*(1 if kind.endswith('Pad') else -1)
+    doc.recompute()
+    if feature.Shape.isNull() or abs(feature.Shape.Volume-expected) > 1e-4:
+        feature.Reversed = True
+        doc.recompute()
+    finish(body, feature)
+    difference = abs(expected-body.Shape.Volume)
+    assert difference < 1e-4, ('Native text differs from the frozen outline union', difference)
+    print('PASS native glyph union; volume difference', difference, flush=True)
+    return blank, records, dict(outline_union_volume_mm3=volume, native_volume_error_mm3=difference)
+
+
+def face_colors(body, config):
+    rgb = {name: tuple(int(value[i:i+2], 16)/255 for i in (1, 3, 5)) for name, value in PALETTE}
+    colors = []
+    for face in body.Shape.Faces:
+        b = face.BoundBox
+        if config['part'] == 'top_carrier':
+            white = b.YMin < -1.400001
+        else:
+            white = b.YMin >= -1.400001 and b.YMax <= -1.4+config['depth']+.000001 and b.YMax > -1.399999
+        colors.append(rgb[config.get('foreground', 'White') if white else config['background']])
+    assert len(set(colors)) == 2
+    return colors
+
+
+def save_colored_cad(path, source, doc, body, colors, config):
+    doc.saveAs(str(path))
+    preserve_views(CAD, path, doc, [body.Name])
+    with ZipFile(path) as archive:
+        contents = {name: archive.read(name) for name in archive.namelist()}
+    xml = ET.fromstring(contents['GuiDocument.xml'])
+    providers = {p.get('name'): p for p in xml.find('ViewProviderData')}
+    file = next(p for p in providers[body.Name].iter('Property') if p.get('name') == 'ShapeAppearance')[0].get('file')
+    base = material_records(contents[file])[0]
+    records = []
+    for color in colors:
+        record = bytearray(base)
+        rgba = sum(round(c*255) << shift for c, shift in zip(color, (24, 16, 8))) | 255
+        struct.pack_into('<I', record, 4, rgba)
+        records.append(bytes(record))
+    contents[file] = serialize_material_records(records)
+    w, h = config['width'], config['height']
+    xml.find('Camera').set('settings', 'OrthographicCamera {\n'
+        f' position {w/2} -500 {h/2}\n orientation 1 0 0 1.570796326794897\n'
+        f' nearDistance 1\n farDistance 1000\n aspectRatio 1.5\n focalDistance 500\n height {max(h+20,w*.75+20)}\n}}\n')
+    contents['GuiDocument.xml'] = ET.tostring(xml, encoding='utf-8', xml_declaration=True)
+    with ZipFile(path, 'w', ZIP_DEFLATED) as archive:
+        for name, raw in contents.items():
+            archive.writestr(name, raw)
+    stored = saved_colors(path)
+    assert stored[body.Name] == colors and stored[body.Tip.Name] == colors
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--position', required=True, choices=POSITIONS)
+    parser.add_argument('--variant', required=True)
+    parser.add_argument('--text')
+    parser.add_argument('--lines', nargs=2)
+    parser.add_argument('--lettering', type=Path, help='Frozen lettering JSON; no font dependency when provided')
+    parser.add_argument('--font', type=Path, default=Path('/System/Library/Fonts/Supplemental/DIN Condensed Bold.ttf'))
+    parser.add_argument('--output')
+    args = parser.parse_args()
+    if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', args.variant):
+        parser.error('Use a lowercase hyphenated variant ID')
+    if args.lettering:
+        data = read_json(args.lettering)
+    else:
+        if not args.text or not args.lines:
+            parser.error('Supply --lettering or both --text and --lines')
+        data = freeze_lettering(args.text, args.lines, args.font)
+    rows = data['lines']
+    explicit_layout = all(
+        {'ink_height_mm', 'center_x_mm', 'center_z_mm'} <= row.keys() for row in rows
+    )
+    assert rows and (explicit_layout or len(rows) == 2)
+    assert ' '.join(row['text'] for row in rows if row['text']) == data['text']
+    if any(not row.get('outline_union_normalized') for row in data['lines']):
+        data = measure_outline_unions(data)
+    config = dict(POSITIONS[args.position])
+    config['background'] = data.get('background', config['background'])
+    assert config['background'] in ('Black', 'DarkBlue', 'Red'), 'Use a supported sign background'
+    config['foreground'] = data.get('foreground', 'White')
+    palette_slots = {name: i for i, (name, _) in enumerate(PALETTE, 1)}
+    assert config['foreground'] != config['background']
+    expected_slots = sorted(palette_slots[config[key]] for key in ('foreground', 'background'))
+    out = output_directory(args.output, args.variant)
+    for folder in ('profiles', 'logs'):
+        (out/folder).mkdir()
+    write_json(out/'lettering.json', data)
+    before = sha(CAD)
+    source = App.openDocument(str(CAD))
+    doc, body, original = native_blank(source, config)
+    placement = original.getGlobalPlacement()
+    blank, lines, text_check = add_lettering(doc, body, data, config)
+    shape = body.Shape.copy()
+    rear = Part.makeBox(config['width']+2, 1, config['height']+2, App.Vector(-1,-1,-1))
+    old_core, new_core = original.Shape.common(rear), shape.common(rear)
+    core_difference = old_core.cut(new_core).Volume+new_core.cut(old_core).Volume
+    assert core_difference < 1e-6
+    candidate = shape.copy(); candidate.Placement = placement.multiply(candidate.Placement)
+    interference = []
+    for fixed in source.Objects:
+        if fixed.TypeId != 'PartDesign::Body' or fixed == original:
+            continue
+        fixed_shape = global_shape(fixed)
+        if candidate.BoundBox.intersect(fixed_shape.BoundBox):
+            volume = candidate.common(fixed_shape).Volume
+            assert volume < .01, (fixed.Name, volume)
+            interference.append(dict(body=fixed.Name, overlap_mm3=volume))
+    print('PASS native lettering, unchanged rear interface and assembly clearances', flush=True)
+    colors = face_colors(body, config)
+    cad = out/(args.variant+'.FCStd')
+    save_colored_cad(cad, source, doc, body, colors, config)
+    points, paint = triangles(doc, {body.Tip.Name:colors}, [config['part']], local=True)
+    render(points, paint, out/'front-preview.png', [0,-1,.00001], width=1700 if args.position=='upper' else 700,
+           height=700 if args.position=='upper' else 1400)
+    App.closeDocument(doc.Name)
+    doc = App.openDocument(str(cad)); body = doc.getObject(config['part']+'_Body')
+    for obj in doc.Objects:
+        obj.touch()
+    doc.recompute()
+    assert body.Shape.isValid() and len(body.Shape.Solids) == 1
+    assert abs(body.Shape.Volume-shape.Volume) < 1e-5
+    assert all(s.FullyConstrained for s in doc.Objects if s.TypeId=='Sketcher::SketchObject')
+    sheet = doc.LetteringParameters
+    sheet.set('B1', str(config['ink_height']*.99)+' mm'); doc.recompute()
+    assert body.Shape.isValid()
+    sheet.set('B1', str(config['ink_height'])+' mm'); doc.recompute()
+    assert abs(body.Shape.Volume-shape.Volume) < 1e-5
+    assert colors == face_colors(body, config), 'Face colours changed after parameter round-trip'
+    mesh = MeshPart.meshFromShape(Shape=shape, LinearDeflection=.02, AngularDeflection=.12, Relative=False)
+    mesh.transform(App.Placement(App.Vector(),App.Rotation(App.Vector(1,0,0),-90)).toMatrix())
+    b = mesh.BoundBox; mesh.translate(-b.XMin,-b.YMin,-b.ZMin)
+    stl = out/(config['part']+'.stl'); mesh.write(str(stl)); checked=Mesh.Mesh(str(stl))
+    assert checked.isSolid() and not checked.hasNonManifolds() and len(checked.getSeparateComponents())==1
+    assert abs(abs(checked.Volume)-shape.Volume)/shape.Volume < .001
+    geometry=dict(print_parts=[dict(part=config['part'],rotated_x_degrees=-90)])
+    painter=CADPaint(doc,geometry); painter.colors={body.Name:colors,body.Tip.Name:colors}
+    profiles=[]
+    for name,hexcode in PALETTE:
+        profile=read_json(PROFILES/'PLA-black.json');profile['filament_colour']=[hexcode]
+        file=out/'profiles'/('PLA-'+name+'.json');write_json(file,profile);profiles.append(file)
+    process=read_json(PROFILES/'PLA-0.20-process.json');process['enable_prime_tower']='1'
+    process_file=out/'profiles/process.json';write_json(process_file,process)
+    project=out/(args.variant+'.3mf');TMP.mkdir(parents=True,exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix='custom-sign-',dir=TMP) as temporary:
+        scratch=Path(temporary)
+        configured,painted=scratch/'configured.3mf',scratch/'painted.3mf'
+        run_cli(['--load-settings',f'{PROFILES}/X2D-0.4-standard-machine.json;{process_file}',
+                 '--load-filaments',';'.join(map(str,profiles)),'--orient','0','--arrange','1',
+                 '--export-3mf',configured,stl],scratch/'configure',out/'logs/configure.log')
+        statistics,used=painter.patch(configured,painted)
+        assert used==expected_slots,used
+        run_cli(['--orient','0','--arrange','1','--allow-multicolor-oneplate','--export-3mf',project,painted],
+                scratch/'save',out/'logs/save.log')
+        assert geometry_signatures(configured)==geometry_signatures(project)
+        bounds=project_bounds(project);assert len(bounds)==1
+        actual=[hi-lo for lo,hi in zip(bounds[0]['min_mm'],bounds[0]['max_mm'])]
+        expected=[checked.BoundBox.XLength,checked.BoundBox.YLength,checked.BoundBox.ZLength]
+        assert all(abs(a-b)<.002 for a,b in zip(actual,expected)),(actual,expected)
+        with ZipFile(project) as archive:
+            settings=json.loads(archive.read('Metadata/project_settings.config'))
+            assert settings['filament_colour']==[value for _,value in PALETTE]
+            states=set()
+            for name in archive.namelist():
+                if name.startswith('3D/Objects/') and name.endswith('.model'):
+                    for triangle in ET.fromstring(archive.read(name)).findall('.//c:triangle',NS):
+                        states.update(paint_states(triangle.get('paint_color')))
+            assert sorted(states)==used
+            assert not any(name.endswith('.gcode') for name in archive.namelist())
+            (out/'plate-preview.png').write_bytes(archive.read('Metadata/plate_1.png'))
+        print('Saved coloured 3MF; independently reopening for slicing', flush=True)
+        sliced=scratch/'sliced';sliced.mkdir()
+        run_cli(['--orient','0','--arrange','0','--outputdir',sliced,'--slice','0',project],
+                scratch/'reload',out/'logs/slice.log')
+        result=read_json(sliced/'result.json');write_json(out/'slice-result.json',result)
+        assert result['return_code']==0 and len(result['sliced_plates'])==1
+        plate=result['sliced_plates'][0]
+        assert len(plate['objects'])==1 and not plate['warning_message'],plate
+        assert sorted(f['id'] for f in plate['filaments'] if f['total_used_g']>.001)==used
+    report=dict(source_record(),status='passed',position=args.position,variant=args.variant,
+                text=data['text'],lines=lines,interface=config['interface'],
+                text_geometry_check=text_check,
+                source_body=config['part']+'_Body',assembly_placement=str(placement),
+                rear_interface_difference_mm3=core_difference,corner_radius_mm=3,m3_clearance_mm=3.4,
+                single_native_body=True,fully_constrained_sketches=sum(o.TypeId=='Sketcher::SketchObject' for o in doc.Objects),
+                saved_reopened_recomputed=True,letter_height_roundtrip_passed=True,interference=interference,
+                print_dimensions_mm=actual,mesh_closed_single_component=True,mesh_relative_volume_error=abs(abs(checked.Volume)-shape.Volume)/shape.Volume,
+                palette=[dict(slot=i+1,name=n,hex=h) for i,(n,h) in enumerate(PALETTE)],palette_slots_used=used,
+                background=config['background'],
+                facet_paint=statistics,settings=settings,saved_project_reopened_and_sliced=True,
+                warning_messages=[],filament_changes=plate['filament_change_times'],
+                estimated_seconds=plate['total_predication'],filaments=plate['filaments'],
+                estimated_filament_g=sum(f['total_used_g'] for f in plate['filaments']),
+                physical_fit_tested=False,gcode_delivered=False,
+                files={p.name:sha(p) for p in (cad,stl,project,out/'lettering.json',out/'front-preview.png',out/'plate-preview.png')})
+    App.closeDocument(doc.Name);App.closeDocument(source.Name)
+    assert sha(CAD)==before
+    write_json(out/'validation.json',report)
+    print('PASS',project,'seconds',report['estimated_seconds'],'grams',report['estimated_filament_g'],flush=True)
+
+
+if __name__=='__main__':
+    main()

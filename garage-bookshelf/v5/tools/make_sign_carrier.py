@@ -178,7 +178,6 @@ def add_lettering(doc, body, data, config):
         width = row['width_per_ink_height']
         explicit_layout = any(key in row for key in ('ink_height_mm', 'center_x_mm', 'center_z_mm'))
         if explicit_layout:
-            assert config['part'] == 'top_carrier', 'Explicit row placement is for horizontal signs'
             assert all(key in row for key in ('ink_height_mm', 'center_x_mm', 'center_z_mm'))
             assert row['ink_height_mm'] > 0
             reference = data['layout_reference_ink_height_mm']
@@ -261,7 +260,7 @@ def face_colors(body, config):
             white = b.YMin < -1.400001
         else:
             white = b.YMin >= -1.400001 and b.YMax <= -1.4+config['depth']+.000001 and b.YMax > -1.399999
-        colors.append(rgb['White' if white else config['background']])
+        colors.append(rgb[config.get('foreground', 'White') if white else config['background']])
     assert len(set(colors)) == 2
     return colors
 
@@ -312,14 +311,21 @@ def main():
         if not args.text or not args.lines:
             parser.error('Supply --lettering or both --text and --lines')
         data = freeze_lettering(args.text, args.lines, args.font)
-    assert len(data['lines']) == 2 and ' '.join(row['text'] for row in data['lines']) == data['text']
+    rows = data['lines']
+    explicit_layout = all(
+        {'ink_height_mm', 'center_x_mm', 'center_z_mm'} <= row.keys() for row in rows
+    )
+    assert rows and (explicit_layout or len(rows) == 2)
+    assert ' '.join(row['text'] for row in rows if row['text']) == data['text']
     if any(not row.get('outline_union_normalized') for row in data['lines']):
         data = measure_outline_unions(data)
     config = dict(POSITIONS[args.position])
     config['background'] = data.get('background', config['background'])
-    assert config['background'] in ('Black', 'DarkBlue'), 'Use a supported sign background'
-    expected_slots = sorted([2, next(i+1 for i, (name, _) in enumerate(PALETTE)
-                                    if name == config['background'])])
+    assert config['background'] in ('Black', 'DarkBlue', 'Red'), 'Use a supported sign background'
+    config['foreground'] = data.get('foreground', 'White')
+    palette_slots = {name: i for i, (name, _) in enumerate(PALETTE, 1)}
+    assert config['foreground'] != config['background']
+    expected_slots = sorted(palette_slots[config[key]] for key in ('foreground', 'background'))
     out = output_directory(args.output, args.variant)
     for folder in ('profiles', 'logs'):
         (out/folder).mkdir()

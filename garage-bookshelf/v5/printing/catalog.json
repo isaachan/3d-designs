@@ -746,7 +746,23 @@
     "parking-inserts/benz-e-cabriolet/r1/slice-result.json": "2fad6bb792b8eafc5d7f70824c28970b3c3d274d2b166fba4d21580fbb27e179",
     "parking-inserts/benz-e-cabriolet/r1/top-preview.png": "e0fda959d999d226b7e5193b53a0e4eb37ce2842ab2db39cc5f46c982045a32f",
     "parking-inserts/benz-e-cabriolet/r1/tray-preview.png": "033639ad6875dabbf2abf7c465bc4a234611904ce4fd6098bafaa0a0e907eed7",
-    "parking-inserts/benz-e-cabriolet/r1/validation.json": "010f4592928c3682854b6021d826fbfb4fc04f78d633c79d6c77463f5644c7f7"
+    "parking-inserts/benz-e-cabriolet/r1/validation.json": "010f4592928c3682854b6021d826fbfb4fc04f78d633c79d6c77463f5644c7f7",
+    "sign-carriers/upper/some-cars-stay-with-you/evidence/generator-snapshot.py.txt": "035b4a102107d9b22026cf5dbafe84c672c615bde38729815b2e99a795ae4d18",
+    "sign-carriers/upper/some-cars-stay-with-you/evidence/logs/configure.log": "791aef65c8a80f49e1e4052b13542fca300f475e8ba174f28320f14f18316ce3",
+    "sign-carriers/upper/some-cars-stay-with-you/evidence/logs/save.log": "7a7067c0b45e7a2516f22a0f4e028c7a25bf2ecf3bfe7207b01ce4c2e019e009",
+    "sign-carriers/upper/some-cars-stay-with-you/evidence/logs/slice.log": "5e2982aded15871c7aef86bb8d0f2b03616dc3b707601d5bc3667a83d8591c2e",
+    "sign-carriers/upper/some-cars-stay-with-you/evidence/profiles/PLA-Black.json": "5a6df4232ae86d61ee3fcf964dfcd3585b8634a06a985020139a2d8826a9ae36",
+    "sign-carriers/upper/some-cars-stay-with-you/evidence/profiles/PLA-DarkBlue.json": "c40d0c20fe7eed14ba6ce2acc5db3bd12280b0806fb368d4d8f52008feba043b",
+    "sign-carriers/upper/some-cars-stay-with-you/evidence/profiles/PLA-LightBlue.json": "8f40ac08fa81dddcc785fcd4460856e6fd84367feb00686f99fc499e6d9edf7a",
+    "sign-carriers/upper/some-cars-stay-with-you/evidence/profiles/PLA-Red.json": "6192d639e232f1d90c2885ceb0aec4affd2b3f08bf553c3f5fe0223574b96249",
+    "sign-carriers/upper/some-cars-stay-with-you/evidence/profiles/PLA-White.json": "21dc16a3ff3124908bb7e94318100cb81b042b648e5a22fb55b454c9739f2e7f",
+    "sign-carriers/upper/some-cars-stay-with-you/evidence/profiles/process.json": "2153bb21149f18716bf64cf099aa1dc04fb8199513e0e7e6c36fc2dca28f7e7b",
+    "sign-carriers/upper/some-cars-stay-with-you/evidence/top_carrier.stl": "332a591154b7d178a056e5bfd11df5d87829777fa3a9bc7c30ec126ea4957847",
+    "sign-carriers/upper/some-cars-stay-with-you/front-preview.png": "05ec2d7f4156ddc8e5cb805b487104cb9579873dafdb9201d6f9b09ee9fb6b00",
+    "sign-carriers/upper/some-cars-stay-with-you/plate-preview.png": "4f45854d4df4d657caee29e21016358101940a78399dea363562e3c5a64fac9f",
+    "sign-carriers/upper/some-cars-stay-with-you/slice-result.json": "3ddba27465a2abb8766597f637e2988b61700b556839dfa71ec9a369c159001c",
+    "sign-carriers/upper/some-cars-stay-with-you/some-cars-stay-with-you.3mf": "c8713e1b7bbb004f3b855324e42736dc5d2a5ca9c8505643544a4ab6e0d17926",
+    "sign-carriers/upper/some-cars-stay-with-you/validation.json": "6630007145ff6c5e2dd22f65b883d3f7a6e755d5e147f4c327ec46d7771ebfee"
   },
   "provenance": [
     {
@@ -1085,6 +1101,25 @@
       "project": "sign-carriers/side/on-the-road-between-the-pages/on-the-road-between-the-pages.3mf",
       "sha256": "e275e23ccf02e8e3f232ba53717a323835c92cd25426960220182cec403037b0",
       "evidence": "printing/sign-carriers/side/on-the-road-between-the-pages/validation.json",
+      "physical_fit_tested": false
+    },
+    {
+      "id": "some-cars-stay-with-you",
+      "position": "upper",
+      "interface": "sign-upper-v1",
+      "text": "SOME CARS STAY WITH YOU",
+      "lines": [
+        "SOME",
+        "CARS",
+        "STAY",
+        "WITH YOU",
+        ""
+      ],
+      "source_cad": "cad/sign-carriers/upper/some-cars-stay-with-you/some-cars-stay-with-you.FCStd",
+      "source_cad_sha256": "69c687ee8b601ae947d80684f2df8a4215046538431dee90366e171e9fcdf7c5",
+      "project": "sign-carriers/upper/some-cars-stay-with-you/some-cars-stay-with-you.3mf",
+      "sha256": "c8713e1b7bbb004f3b855324e42736dc5d2a5ca9c8505643544a4ab6e0d17926",
+      "evidence": "printing/sign-carriers/upper/some-cars-stay-with-you/validation.json",
       "physical_fit_tested": false
     }
   ]
