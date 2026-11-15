@@ -1,0 +1,38 @@
+{
+  "variant": "mini-cooper",
+  "revision": "r1",
+  "model_label": "MINI COOPER",
+  "label_cap_height_mm": 3.8,
+  "interface": "parking-base-v1",
+  "measurements_mm": {
+    "S": 53.5,
+    "Bf": 26.5,
+    "Br": 26.5,
+    "Df": 10.2,
+    "Dr": 10.2,
+    "Tf": 4,
+    "Tr": 4
+  },
+  "measurement_source": {
+    "type": "user-measured-handwritten-photo",
+    "path": "assets/measurements/parking-insert-mini-cooper-2026-11-15.jpg",
+    "sha256": "1b795a03610bc7033b63932b5ae94b01fd63f73bf8845dc10f16fb54bc89a382",
+    "transcribed_on": "2026-11-15",
+    "assumptions_mm": {
+      "Df": 10.2
+    },
+    "assumption_note": "The front tire diameter entry is crossed out. For this revision, Df is assumed equal to the marked Dr of 10.2 mm."
+  },
+  "measurement_definitions": {
+    "S": "Same-side front tire foremost edge to rear tire rearmost edge",
+    "Bf": "Left-to-right outside tire width at front axle",
+    "Br": "Left-to-right outside tire width at rear axle",
+    "Df": "Front tire outer diameter",
+    "Dr": "Rear tire outer diameter",
+    "Tf": "Single front tire width",
+    "Tr": "Single rear tire width"
+  },
+  "vehicle_body_clearance_mm": null,
+  "vehicle_scale": null,
+  "physical_fit_tested": false
+}

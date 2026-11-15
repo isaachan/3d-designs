@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "date": "2026-11-06",
+  "date": "2026-11-15",
   "status": "component-library",
   "source_cad": "cad/garage-bookshelf-v5-assembly.FCStd",
   "cad_sha256": "3b3e2b9f8c24eb89a2d68df4b70a30069df9d5777310db98706b629d1171c339",
@@ -553,6 +553,33 @@
       "label_cap_height_mm": 2.6,
       "estimated_seconds": 987.6801147460938,
       "estimated_filament_g": 7.626568794250488
+    },
+    {
+      "id": "mini-cooper",
+      "revision": "r1",
+      "model_label": "MINI COOPER",
+      "project": "parking-inserts/mini-cooper/r1/mini-cooper-r1.3mf",
+      "sha256": "1bd2c652c9e9d9e054d8d984f82648766932b419a5f5f6cee50c59330a605b66",
+      "source_cad": "cad/parking-inserts/mini-cooper/r1/mini-cooper-r1.FCStd",
+      "source_cad_sha256": "07bcbe192b719732ba91c866248b9c2a804e6b1d1020a1ed7baf28bb3934425c",
+      "evidence": "printing/parking-inserts/mini-cooper/r1/validation.json",
+      "measurements": "cad/parking-inserts/mini-cooper/r1/measurements.json",
+      "measurements_mm": {
+        "S": 53.5,
+        "Bf": 26.5,
+        "Br": 26.5,
+        "Df": 10.2,
+        "Dr": 10.2,
+        "Tf": 4,
+        "Tr": 4
+      },
+      "interface": "parking-base-v1",
+      "validation_status": "native-parameter-four-wheel-ten-bay-and-single-project-checks-passed; front-diameter-assumed; physical-fit-pending",
+      "design_method": "bmw-z4-e89-measured-wheel-cradle-v1",
+      "physical_fit_tested": false,
+      "label_cap_height_mm": 3.8,
+      "estimated_seconds": 985.7020874023438,
+      "estimated_filament_g": 7.648074626922607
     }
   ],
   "files": {
@@ -762,7 +789,21 @@
     "sign-carriers/upper/some-cars-stay-with-you/plate-preview.png": "4f45854d4df4d657caee29e21016358101940a78399dea363562e3c5a64fac9f",
     "sign-carriers/upper/some-cars-stay-with-you/slice-result.json": "3ddba27465a2abb8766597f637e2988b61700b556839dfa71ec9a369c159001c",
     "sign-carriers/upper/some-cars-stay-with-you/some-cars-stay-with-you.3mf": "c8713e1b7bbb004f3b855324e42736dc5d2a5ca9c8505643544a4ab6e0d17926",
-    "sign-carriers/upper/some-cars-stay-with-you/validation.json": "6630007145ff6c5e2dd22f65b883d3f7a6e755d5e147f4c327ec46d7771ebfee"
+    "sign-carriers/upper/some-cars-stay-with-you/validation.json": "6630007145ff6c5e2dd22f65b883d3f7a6e755d5e147f4c327ec46d7771ebfee",
+    "parking-inserts/mini-cooper/r1/evidence/export.log": "cb552e06e94e481023b08873db46e795294101ace4d45f90a223aaadbfef3b2e",
+    "parking-inserts/mini-cooper/r1/evidence/make_parking_insert.py": "40ccbfd7318d8f935e18b82095751da80b3d0da515bc3a3651a7df223653653e",
+    "parking-inserts/mini-cooper/r1/evidence/mini-cooper-r1.stl": "6369d4f08632b070a291cdb8ef8aaeb62441d4b3d8d60037d308958d582ad71d",
+    "parking-inserts/mini-cooper/r1/evidence/profiles/PLA-0.20-process.json": "7c43fd772ec71e238d5e8146f4dbcdedee5756779e7fb3db8ce34a462212d4bd",
+    "parking-inserts/mini-cooper/r1/evidence/profiles/PLA-black.json": "7e10f990210dae812fc9e49bd7c3ca7b8023da75f8e9abe0345b7048912f8214",
+    "parking-inserts/mini-cooper/r1/evidence/profiles/X2D-0.4-standard-machine.json": "4c17d3a278fe85969749820539d0dce982f048cfa8249ff6d110e442fd8b2ee2",
+    "parking-inserts/mini-cooper/r1/evidence/slice.log": "ee84c1217082ab9147df7b42e6407f0dffbbf63216d8f55c224a586187743887",
+    "parking-inserts/mini-cooper/r1/mini-cooper-r1.3mf": "1bd2c652c9e9d9e054d8d984f82648766932b419a5f5f6cee50c59330a605b66",
+    "parking-inserts/mini-cooper/r1/plate-preview.png": "be9112d7ef386b19c139026e18500be06dbd177798dba1bc82bf66d5eddd193b",
+    "parking-inserts/mini-cooper/r1/slice-result.json": "5fc1c79f28b6cf219e8f3f676701fb4e4da707927f451b1bec76e110f406a48a",
+    "parking-inserts/mini-cooper/r1/top-preview.png": "2cf65f33bc71c719819ef93c8ab4358267b51cc3e95f5a5d307fcf78c6a78425",
+    "parking-inserts/mini-cooper/r1/tray-preview.png": "81272434b421553876d3cae047a24592b39054f9880a6647f630a013d4a5fce3",
+    "parking-inserts/mini-cooper/r1/validation.json": "ed52c7bb2b3c877f9ffd18d8689f9c3b43b24c5eb6d8a644d36d811991dff2d4",
+    "parking-inserts/mini-cooper/r1/README.md": "7f0c8b906bd4f97f041ddbd7a6b3b928ee4ed7280a258432d8442644f6f96d57"
   },
   "provenance": [
     {
