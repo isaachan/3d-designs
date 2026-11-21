@@ -13,7 +13,9 @@
 | Citroen C2 · r1 | [原生CAD](citroen-c2/r1/citroen-c2-r1.FCStd) · [输入与复现](citroen-c2/r1/README.md) | 2026-11-06实测四轮槽；原生参数、文字支撑、轮胎净空、十车位及重开切片通过，[实物试配待完成](../../printing/parking-inserts/citroen-c2/r1/README.md) |
 | Teramont Pro · r1 | [原生CAD](teramont-pro/r1/teramont-pro-r1.FCStd) · [输入与复现](teramont-pro/r1/README.md) | 2026-11-06实测四轮槽，字高3.2mm；原生参数、文字支撑、轮胎净空、十车位及重开切片通过，[实物试配待完成](../../printing/parking-inserts/teramont-pro/r1/README.md) |
 | Benz E Cabriolet · r1 | [原生CAD](benz-e-cabriolet/r1/benz-e-cabriolet-r1.FCStd) · [输入与复现](benz-e-cabriolet/r1/README.md) | 2026-11-06实测四轮槽，字高2.6mm；原生参数、文字支撑、轮胎净空、十车位及重开切片通过，[实物试配待完成](../../printing/parking-inserts/benz-e-cabriolet/r1/README.md) |
+| MINI Countryman · r1 | [原生CAD](mini-countryman/r1/mini-countryman-r1.FCStd) · [输入与复现](mini-countryman/r1/README.md) | 2026-11-11实测四轮槽，前后轮距分别建模、字高2.7mm；原生参数、文字支撑、轮胎净空、十车位及重开切片通过，[实物试配待完成](../../printing/parking-inserts/mini-countryman/r1/README.md) |
 | MINI Cooper · r1 | [原生CAD](mini-cooper/r1/mini-cooper-r1.FCStd) · [输入与复现](mini-cooper/r1/README.md) | 前胎直径暂按 10.2 mm，CAD 重算和十车位干涉检查通过。[试配状态](../../printing/parking-inserts/mini-cooper/r1/README.md) |
+| BMW Z4 GT3 · r1 | [原生 CAD](bmw-z4-gt3/r1/bmw-z4-gt3-r1.FCStd) · [输入与复现](bmw-z4-gt3/r1/README.md) | CAD 重算和十车位干涉检查通过。[试配状态](../../printing/parking-inserts/bmw-z4-gt3/r1/README.md) |
 
 BMW的[生成脚本和验证](../../studies/measured-tray-s51-b23-d10-t5p1/README.md)是新增车型的设计参考；源文件保持原位置，不复制第二份可编辑CAD。新增款放本目录`<车型>/<修订>/`，使用该车型实测值和标记，保留相同的原生建模及验证方法。
 
