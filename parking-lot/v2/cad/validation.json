@@ -1,0 +1,89 @@
+{
+  "status": "passed",
+  "solids": 19,
+  "source_parts": 15,
+  "source_sha256": "3b3e2b9f8c24eb89a2d68df4b70a30069df9d5777310db98706b629d1171c339",
+  "lofts": 6,
+  "sketches": 162,
+  "deck_dimensions_mm": [
+    195.6,
+    158.6,
+    6.6
+  ],
+  "design_colors_verified": true,
+  "step_valid": true,
+  "step_contains_colors": true,
+  "interface_checks": [
+    {
+      "ramp": "Right",
+      "floor": 1,
+      "xyz_mm": [
+        97.8,
+        -40.0,
+        6.600000000000005
+      ],
+      "width_mm": 34.0,
+      "step_mm": 5.329070518200751e-15,
+      "contact_mm2": 193.40000000000396
+    },
+    {
+      "ramp": "Right",
+      "floor": 2,
+      "xyz_mm": [
+        97.8,
+        40.0,
+        69.60000000000001
+      ],
+      "width_mm": 34.0,
+      "step_mm": 1.4210854715202004e-14,
+      "contact_mm2": 193.40000000000435
+    },
+    {
+      "ramp": "Right",
+      "minimum_column_clearance_mm": 2.2452843881661924,
+      "pedestal_seat_gap_mm": 8.881784197001252e-16,
+      "support_column_center_xy_mm": [
+        245.44,
+        0.0
+      ],
+      "support_foot_to_ramp_plan_gap_mm": 3.0,
+      "support_column_plan_overlap": false
+    },
+    {
+      "ramp": "Left",
+      "floor": 2,
+      "xyz_mm": [
+        -97.8,
+        -40.0,
+        69.60000000000001
+      ],
+      "width_mm": 34.0,
+      "step_mm": 1.4210854715202004e-14,
+      "contact_mm2": 193.40000000000438
+    },
+    {
+      "ramp": "Left",
+      "floor": 3,
+      "xyz_mm": [
+        -97.8,
+        40.0,
+        132.6
+      ],
+      "width_mm": 34.0,
+      "step_mm": 0.0,
+      "contact_mm2": 193.4000000000033
+    },
+    {
+      "ramp": "Left",
+      "minimum_column_clearance_mm": 5.356954417547461,
+      "pedestal_seat_gap_mm": 0.0,
+      "support_column_center_xy_mm": [
+        -245.44,
+        0.0
+      ],
+      "support_foot_to_ramp_plan_gap_mm": 3.0,
+      "support_column_plan_overlap": false
+    }
+  ],
+  "baseline_parts_verified_unchanged": 17
+}

@@ -4,6 +4,8 @@
 
 [多角度效果图与动线说明](concepts/02-alternating-half-turn/README.md)
 
+[三层车库 CAD v2](v2/README.md)
+
 ![原版层板三层车库右前视角](concepts/02-alternating-half-turn/original-parts/01-front-right.png)
 
 [已停用的四层方案](concepts/01-side-helix/README.md)
