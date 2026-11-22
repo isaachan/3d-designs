@@ -66,6 +66,7 @@ def uid(tag):
 
 def count_letters(sentence):
     counts = {}
+    sequence = []
     unknown = []
     seen = set()
     for char in sentence:
@@ -82,7 +83,8 @@ def count_letters(sentence):
                 unknown.append(char)
             continue
         counts[letter] = counts.get(letter, 0) + 1
-    return counts, unknown
+        sequence.append(letter)
+    return counts, sequence, unknown
 
 
 def read_object(zf, file_no):
@@ -171,11 +173,7 @@ def validate_printer_settings(settings):
             raise ValueError("filament_extruder_variant 与 filament_self_index 长度不一致")
 
 
-def layout(counts, spacing, columns, plate_w, plate_h):
-    order = sorted(counts, key=lambda c: (c == APOSTROPHE, c))
-    sequence = []
-    for letter in order:
-        sequence.extend([letter] * counts[letter])
+def layout(sequence, spacing, columns, plate_w, plate_h):
     if columns is None:
         columns = max(1, math.ceil(math.sqrt(len(sequence))))
     rows = math.ceil(len(sequence) / columns)
@@ -337,7 +335,7 @@ def main():
         if not settings_path.is_file():
             sys.exit(f"不认识的打印机预设：{args.printer}（可选 x2d / p1s，或 profile JSON 路径）")
 
-    counts, unknown = count_letters(args.sentence)
+    counts, sequence, unknown = count_letters(args.sentence)
     if not counts:
         sys.exit("句子里没有可打印的字母")
     if unknown:
@@ -367,7 +365,8 @@ def main():
                 object_info[letter] = info
             face_counts[letter] = object_info[letter]["faces"]
 
-    cells, columns, rows = layout(counts, args.spacing, args.columns, plate_w, plate_h)
+    order = sorted(counts, key=lambda c: (c == APOSTROPHE, c))
+    cells, columns, rows = layout(sequence, args.spacing, args.columns, plate_w, plate_h)
 
     instances = []
     for letter, cell_x, cell_y in cells:
@@ -402,7 +401,6 @@ def main():
             file=sys.stderr,
         )
 
-    order = sorted(counts, key=lambda c: (c == APOSTROPHE, c))
     slug_source = re.sub(r"[^A-Za-z0-9]+", "-", args.sentence).strip("-").lower()
     output = Path(args.output) if args.output else Path(f"{slug_source or 'letters'}.3mf")
 
@@ -436,6 +434,7 @@ def main():
     print(f"句子：{args.sentence}")
     print(f"打印机：{printer_name}")
     print(f"用件：{summary}")
+    print(f"顺序：{' '.join(sequence)}")
     print(
         f"布局：{columns} 列 × {rows} 行，格距 {args.spacing:g} mm，"
         f"占用约 {extent:.0f} mm（板 {plate_w:g} × {plate_h:g} mm）"
